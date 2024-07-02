@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Viet Nguyen",
+    "section": "",
+    "text": "About me\nHi, I am currently a junior student majoring in Data Science at University of Economics Ho Chi Minh City (UEH). My research lies in multimodal models  and generative models. I’m also keen to work on improving models’ interpretability.\n\n\nNews\n\nApr 2024: I received the UEH Young Researcher 2024 Award.\nFeb 2024: Our paper has been accepted at Journal of Uncertain Systems.\nMar 2023: Our paper has been accepted at ICICCT - 2023.\nFeb 2023: I received the UEH Young Researcher 2023 Award.\nAug 2021: I was awarded the UEH Admission Scholarship.\n\n\n\nMedia Coverage\n\nUEH Data Science student published 3 Scopus-indexed papers (in Vietnamese)\n\n\n\nContact\nEmail: quocviethere [at] gmail.com"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Performance Insights of Attention-free Language Models in Sentiment Analysis: A Case Study for E-commerce Platforms in Vietnam Nguyen Q. Viet, Nguyen N. Quang, Nguyen King, Dang N.H. Thanh. 8th International Conference on Inventive Communication and Computational Technologies (ICICCT2024)\nAn Exploratory Comparison of LSTM and BiLSTM in Stock Prediction Nguyen Q. Viet, Nguyen N. Quang, Nguyen King, Dinh T. Huu, Nguyen D. Toan, Dang N.H. Thanh. 7th International Conference on Inventive Communication and Computational Technologies (ICICCT2023)"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nKL-Divergence\n\n\n\n\n\n\n123\n\n\nSecond Tag\n\n\n\nThis is a test post. In this post, I try out different functionalities\n\n\n\n\n\nJul 2, 2022\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "hello.html#markdown",
+    "href": "hello.html#markdown",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "hello.html#code-cell",
+    "href": "hello.html#code-cell",
+    "title": "Hello, Quarto",
+    "section": "Code Cell",
+    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n10"
+  },
+  {
+    "objectID": "hello.html#equation",
+    "href": "hello.html#equation",
+    "title": "Hello, Quarto",
+    "section": "Equation",
+    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]"
+  },
+  {
+    "objectID": "gaussian-distritbution.html",
+    "href": "gaussian-distritbution.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "gaussian-distritbution.html#markdown",
+    "href": "gaussian-distritbution.html#markdown",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "gaussian-distritbution.html#code-cell",
+    "href": "gaussian-distritbution.html#code-cell",
+    "title": "Hello, Quarto",
+    "section": "Code Cell",
+    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n10"
+  },
+  {
+    "objectID": "gaussian-distritbution.html#equation",
+    "href": "gaussian-distritbution.html#equation",
+    "title": "Hello, Quarto",
+    "section": "Equation",
+    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]"
+  },
+  {
+    "objectID": "pubs.html#conferences",
+    "href": "pubs.html#conferences",
+    "title": "Publications",
+    "section": "",
+    "text": "Performance Insights of Attention-free Language Models in Sentiment Analysis: A Case Study for E-commerce Platforms in Vietnam Nguyen Q. Viet, Nguyen N. Quang, Nguyen King, Dang N.H. Thanh. 8th International Conference on Inventive Communication and Computational Technologies (ICICCT2024)\nAn Exploratory Comparison of LSTM and BiLSTM in Stock Prediction Nguyen Q. Viet, Nguyen N. Quang, Nguyen King, Dinh T. Huu, Nguyen D. Toan, Dang N.H. Thanh. 7th International Conference on Inventive Communication and Computational Technologies (ICICCT2023)"
+  },
+  {
+    "objectID": "pubs.html#journals",
+    "href": "pubs.html#journals",
+    "title": "Publications",
+    "section": "Journals",
+    "text": "Journals\nCustomer Intent Mining from Service Inquiries with Improved Deep Embedded Clustering Nguyen Q.K. Ha, Nguyen T.T. Huyen, Mai T.M. Uyen, Nguyen Q. Viet, Nguyen N. Quang, Dang N.H. Thanh. Journal of Uncertain Systems"
+  },
+  {
+    "objectID": "notes/kl-divergence/kl-divergence.html",
+    "href": "notes/kl-divergence/kl-divergence.html",
+    "title": "KL-Divergence",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nThis is inline code plus a small code chunk.\n\\[\ns_\\theta(\\mathbf{x}) := \\nabla_{\\mathbf{x}} \\log p_{data}(\\mathbf{x})\n\\]\nprint('hello world')"
+  },
+  {
+    "objectID": "notes/kl-divergence/kl-divergence.html#merriweather",
+    "href": "notes/kl-divergence/kl-divergence.html#merriweather",
+    "title": "KL-Divergence",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nThis is inline code plus a small code chunk.\n\\[\ns_\\theta(\\mathbf{x}) := \\nabla_{\\mathbf{x}} \\log p_{data}(\\mathbf{x})\n\\]\nprint('hello world')"
+  }
+]

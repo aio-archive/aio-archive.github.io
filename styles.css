@@ -1,0 +1,7 @@
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.justified-text {
+    text-align: justify; /* Justifies text alignment */
+}
