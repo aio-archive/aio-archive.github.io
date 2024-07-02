@@ -6,22 +6,14 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: About
-      - pubs.qmd
-      - notes.qmd
-  twitter-card:
-    creator: "@dragonstyle"
-    site: "@rstudio"
+        text: Home
+      - about.qmd
 
 format:
   html:
     theme: Simplex
-    max-width: 2000px	
-    linkcolor: "#16537e"
-    toc-color: "#16537e"
     css: styles.css
     toc: true
 
-theme:
-  light: flatly
-  dark: darkly
+
+
