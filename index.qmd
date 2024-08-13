@@ -1,7 +1,7 @@
 ---
-title: "Viet Nguyen"
+title: "AIO2023 Course"
 ---
 
-This is a Quarto website.
+*"All models are wrong, but some are useful"* George Box
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![](intro.mov)

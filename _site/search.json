@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AIO2023 Course",
+    "section": "",
+    "text": "“All models are wrong, but some are useful” George Box\nVideo"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,10 +14,38 @@
     "text": "About this site"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Viet Nguyen",
+    "objectID": "module1.html",
+    "href": "module1.html",
+    "title": "Module 1: Introduction to Python Programming",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python Programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture.\n\n\n\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications\n\n\n\n\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.\n\n\n\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
+  },
+  {
+    "objectID": "module1.html#main-lessons",
+    "href": "module1.html#main-lessons",
+    "title": "Module 1: Introduction to Python Programming",
+    "section": "",
+    "text": "Welcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python Programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture."
+  },
+  {
+    "objectID": "module1.html#projects",
+    "href": "module1.html#projects",
+    "title": "Module 1: Introduction to Python Programming",
+    "section": "",
+    "text": "Regarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications"
+  },
+  {
+    "objectID": "module1.html#competition-training",
+    "href": "module1.html#competition-training",
+    "title": "Module 1: Introduction to Python Programming",
+    "section": "",
+    "text": "As for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation."
+  },
+  {
+    "objectID": "module1.html#extra-class",
+    "href": "module1.html#extra-class",
+    "title": "Module 1: Introduction to Python Programming",
+    "section": "",
+    "text": "The central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
   }
 ]
