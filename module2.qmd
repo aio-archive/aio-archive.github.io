@@ -1,0 +1,92 @@
+---
+title: Module 2 - Calculus and Linear Algebra for AI 
+tbl-colwidths: [25,47,80,40,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+---
+
+<div class="alert alert-dismissible alert-warning">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <h4 class="alert-heading">Warning</h4>
+  <p class="mb-0">This website is still under construction. Some contents and functions might temporarily not be available or not working properly.</a></p>
+</div>
+
+# Course Schedule and Material
+
+## Main Lessons
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 30/05/23   | <span class="badge rounded-pill bg-success">Assignment</span>  | [Interpolation and Application Exercises](https://drive.google.com/file/d/172-dNwjMsx7o80lD69K3jDQCUMPv3aL4/view)           | Dr. Đình Vinh  | [[solution]](https://drive.google.com/file/d/1ydigi-L45x7psF6yAXR6tk2w965yVuhq/view)      |                 |
+| 31/05/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Construct loss functions with different targets](https://www.youtube.com/watch?v=CGz55B04ENY) | Dr. Vinh       | [230531 - M02ML01](https://drive.google.com/drive/folders/1tq87w8zWS-NWS8Vvh0GxNQ-KygW7l2-A) |                 |
+| 02/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Interpolation and Image upsampling](https://www.youtube.com/watch?v=rJ_5xIq2PtI)            |                | [230602 - M02ML02](https://drive.google.com/drive/folders/11U_atSj5XlegbZ9vhGB7y3EZ5P_8Z2Mz) |                 |
+| 04/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=ARNTc7Ler5I)                             | Dr. Đình Vinh  | [230604 - M02ES01](https://drive.google.com/drive/folders/1BFTmS0JFsFyw6wsg358ZVGpx7E61VAoY) |                 |
+| 05/06/23   | <span class="badge rounded-pill bg-success">Assignment</span>  | [Calculus Exercise](https://drive.google.com/file/d/1VuI4k1NB5tWoNMZrKRqQrqzMrAY30nPD/view)                                 |                | [[solution]](https://drive.google.com/file/d/114d7oDMEFs7YCY3_QPiEtMhvpYoh9SBX/view) |       |
+| 07/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Understanding Derivative and Gradient](https://www.youtube.com/watch?v=oDukLU4f97o)        | Dr. Vinh       | [230607 - M02ML03](https://drive.google.com/drive/folders/1OJFbnm6SKOPMx3CVzlssf89C1RlmOhvq) |                 |
+| 09/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Edge Detection and Gradient-based Optimization](https://www.youtube.com/watch?v=mF8XR7KfnUM) |                | [230609 - M02ML04](https://drive.google.com/drive/folders/1PMhyNKd1x25PPvhIgRVBhToBekFZULP4) |                 |
+| 11/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=gP1Ki14Bz8A)                             | Dr. Đình Vinh  | [230611 - M02ES02](https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc) |                 |
+| 14/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (L1, L2 and Huber loss - Level 1)](https://www.youtube.com/watch?v=MG4JZIQcUGk) | Dr. Vinh  | [230614 - M02ML05](https://drive.google.com/drive/folders/1BF_cGNrZWy2gKWr-92ra5JpTEJ0ocSip) |           |
+| 16/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (L1, L2 and Huber loss - Level 2)](https://www.youtube.com/watch?v=6j3Dkb4dD_k) |              | [230616 - M02ML06](https://drive.google.com/drive/folders/1lcdigaepT1grAPZB1ltPM6IDdJ4dirNg) |           |
+| 18/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=nUavRivww30&feature=youtu.be)                             | Dr. Đình Vinh  | [230618 - M02ES03](https://drive.google.com/drive/folders/1mf_Qku7PAIbU7x0fZOAKQd3sZGYDvof1) |                 |
+| 21/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Vectorization for Linear Regression (1)](https://www.youtube.com/watch?v=kZbTAmmWngc&feature=youtu.be) | Dr. Vinh | [230621 - M02ML07](https://drive.google.com/drive/folders/14d29aV_WNvJ9seOCEgEcy4rYYGYUq1-_) |   |
+| 23/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> |[ Vectorization for Linear Regression (2)](https://www.youtube.com/watch?v=6j3Dkb4dD_k&feature=youtu.be) | | [230623 - M02ML08](https://drive.google.com/drive/folders/1k1aoklmarP9RzpS0gk7v2xNI_OzzPFCy) |   |
+| 25/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=2mcr-uQUkyw)                             | Dr. Đình Vinh  | [230625 - M02ES04](https://drive.google.com/drive/folders/17wPKwX5UR5bSpmd-WTIxv61RCHtu8R4x) |                 |
+| 26/06/23   | <span class="badge rounded-pill bg-success">Assignment</span>  | [Cosine Background subtraction Exercise](https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view)            |                | [[solution]](https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view) | |
+| 28/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Basic Linear Algebra and Its Applications](https://www.youtube.com/watch?v=04MiYSvuay4)    | Dr. Vinh       | [230628 - M02ML09](https://drive.google.com/drive/folders/1-Q-XeI9r0bGIcn82V4ttU9kczp_dVTL1) |                 |
+| 30/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Cosine Similarity and Decomposition](https://www.youtube.com/watch?v=1mag0t9xN38)           |                | [230630 - M02ML10](https://drive.google.com/drive/folders/1W1wTFw4rpFi3BK_m7RvZIslpmBuPGwM1) |                 |
+| 02/07/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=7jvTTLx1Hp0)                             | Dr. Đình Vinh  | [230702 - M02ES05](https://drive.google.com/drive/folders/1ScS_voc1D4G4jLLLrl-I1_7Fs3XpoHs7) |                 |
+
+## Project Tutorials
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 09/07/23   | Project tutorial - PT | SVD and its Applications               | Dr. Đình Vinh  | 230709 - M02ET01 |                 |
+| 10/07/23   | Project Handout | Image Project: Depth Information Reconstruction | TA Thắng   | [proposal]      |                 |
+| 10/07/23   | Project Handout | Text Project: Text Retrieval (using Pretrained Embedding) | | [Exercise] [solution] | |
+| 10/07/23   | Project Handout | Tabular Data Project: Sales Prediction (Linear and non-linear regression) | TA Thái | [proposal] | |
+| 12/07/23   | Project tutorial - PT | Tabular Data Project: Sales Prediction (Linear and non-linear regression) | | 230716 - M02PT03 | |
+| 14/07/23   | Project tutorial - PT | Text Project: Text Retrieval (using Pretrained Embedding) | TA Thắng | 230714 - M02PT02 | |
+| 16/07/23   | Project tutorial - PT | Image Project: Depth Information Reconstruction | | 230712 - M02PT01 | |
+
+## Python Tutorial Sessions
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 30/05/23   | Python Support | List for 2D Data                             | TA Tiềm        | 230530 - M02CR02 |                 |
+| 06/06/23   | Python Support | List for 3D data                             |                | 230606 - M02CR03 |                 |
+| 13/06/23   | Python Support | Array 1D using NumPy                          |                | 230613 - M02CR04 |                 |
+| 20/06/23   | Python Support | Array 2D and 3D using NumPy                   |                | 230620 - M02CR05 |                 |
+| 27/06/23   | Python Support | Basic Numpy                                   |                | 230627 - M02CR06 |                 |
+
+## Extra Classes: Database and SQL
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 03/06/23   | Extra class: Database and SQL | Toward Data Science: Database-SQL (1) | TA Bảo    | 230603 - M02EC01 |                 |
+| 10/06/23   | Extra class: Database and SQL | Database-SQL (2)                    |                | 230611 - M02ES02 |                 |
+| 17/06/23   | Extra class: Database and SQL | Database-SQL (3)                    |                | 230617 - M02EC03 |                 |
+| 24/06/23   | Extra class: Database and SQL | Database-NoSQL                      | TA Thái        | 230624 - M02EC04 |                 |
+| 01/07/23   | Extra class: Database and SQL | Database-NoSQL (2)                  |                | 230701 - M02EC05 |                 |
+| 08/07/23   | Extra class: Database and SQL | SQL for Big Data                    | TA Thắng       | 230708 - M02EC06 |                 |
+
+## Competition Training
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 01/06/23   | Competition | Hyper-parameter optimization                     | TA Hùng        | 230601 - M02AC01 |                 |
+| 08/06/23   | Competition | Ensembling                                       |                | 230608 - M02AC02 |                 |
+| 15/06/23   | Competition | Augmentation Strategies and Albumentation        |                | 230615 - M02AC03 |                 |
+| 22/06/23   | Competition | Nestquant                                        |                | 230622 - M02AC04 |                 |
+| 29/06/23   | Competition | OOD-CV                                           |                | 230629 - M02AC05 |                 |
+| 06/07/23   | Competition | Vision Transformer                               |                | 230706 - M02AC06 |                 |
+
+## Summer School on Deep Learning
+
+| Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
+|------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
+| 05/07/23   | Summer school on Deep Learning | VIASM Summer school on Recent Advances in Deep Learning | | Sildes        |                 |
+
+

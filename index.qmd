@@ -1,7 +1,8 @@
 ---
 title: "AIO2023 Course"
+sidebar: false
 ---
 
 *"All models are wrong, but some are useful"* George Box
 
-![](intro.mov)
+![](intro_2.gif)

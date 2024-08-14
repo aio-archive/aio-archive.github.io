@@ -4,48 +4,592 @@
     "href": "index.html",
     "title": "AIO2023 Course",
     "section": "",
-    "text": "“All models are wrong, but some are useful” George Box\nVideo"
+    "text": "“All models are wrong, but some are useful” George Box\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
   },
   {
     "objectID": "module1.html",
     "href": "module1.html",
-    "title": "Module 1: Introduction to Python Programming",
+    "title": "Module 1 - Introduction to Python Programming",
     "section": "",
-    "text": "Welcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python Programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture.\n\n\n\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications\n\n\n\n\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.\n\n\n\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 1"
+    ]
   },
   {
     "objectID": "module1.html#main-lessons",
     "href": "module1.html#main-lessons",
     "title": "Module 1: Introduction to Python Programming",
     "section": "",
-    "text": "Welcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python Programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture."
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\n[solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\nNote\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\nNote\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\n[solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\n\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03\n\n\n\n\n22/05/23 | Project handout | Object Detection with YOLOv8 Project | TA Thắng | [solution] | |\n22/05/23 | Project handout | Data Manipulation and Crawling Project | TA Thắng | [solution] | |\n22/05/23 | Project handout | ChatGPT Applications Project | TA Thái | [solution] | |\n24/05/23 | Project tutorial | Image Project: Yolov8 for Object Detection| TA Thắng | 230524 - M01PT01 | |\n26/05/23 | Project tutorial | Data Manipulation using Python Libraries | TA Thắng | 230526 - M01PT02 | |\n28/05/23 | Project tutorial | Text Project: ChatGPT-based Application | TA Thái | 230528 - M01PT03 | |\n23/05/23 | Python Support | For, List and Dictionary | TA Tiềm | 230523 - M02CR01 | |\n11/05/23 | Competition | Data Visualization | TA Hùng | 230511 - M01AC01 | |\n18/05/23 |Competition | Competition tasks and metrics | TA Hùng | 230518 - M01AC02 | |\n25/05/23 | Competition | Design Validation | TA Hùng | 230525 - M01AC03 | |\n06/05/23 | Algorithms & Complexity | Big-O (Time analysis) | TA Thái | 230506 - M01EC01 | |\n13/05/23 | Algorithms & Complexity | Brute-force Exhaustive | TA Thái | 230513 - M01EC02 | |\n20/05/23 | Algorithms & Complexity | Recursion and Two Pointer | TA Thái | 230520 - M01EC03 | |\n27/05/23 | Algorithms & Complexity | Dynamic Programming | TA Thái | 230527 - M01EC04 | |\n: {.striped .hover}"
   },
   {
     "objectID": "module1.html#projects",
     "href": "module1.html#projects",
-    "title": "Module 1: Introduction to Python Programming",
-    "section": "",
-    "text": "Regarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications"
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Projects",
+    "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 1"
+    ]
   },
   {
     "objectID": "module1.html#competition-training",
     "href": "module1.html#competition-training",
-    "title": "Module 1: Introduction to Python Programming",
-    "section": "",
-    "text": "As for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation."
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition Training",
+    "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 1"
+    ]
   },
   {
     "objectID": "module1.html#extra-class",
     "href": "module1.html#extra-class",
-    "title": "Module 1: Introduction to Python Programming",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class",
+    "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "The central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
+    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\n\nBooks\nBlogs\nCourses\nFundamental Papers\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "misc.html",
+    "href": "misc.html",
+    "title": "Misc",
+    "section": "",
+    "text": "Simple Tokenizer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Misc"
+    ]
+  },
+  {
+    "objectID": "resources.html#math",
+    "href": "resources.html#math",
+    "title": "Resources",
+    "section": "Math",
+    "text": "Math\n\nProbability and Statistics\n\nIntroduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\nLinear Algebra\n\n\nOptimization\n\n\nOthers\n\nMathematics for Machine Learning by Garret Thomas",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#machine-learning",
+    "href": "resources.html#machine-learning",
+    "title": "Resources",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\nProbabilistic Machine Learning: An Introduction by Kevin P. Murphy\nProbabilistic Machine Learning: Advanced Topics by Kevin P. Murphy",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#deep-learning",
+    "href": "resources.html#deep-learning",
+    "title": "Resources",
+    "section": "Deep Learning",
+    "text": "Deep Learning\n\nNLP",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "module2.html",
+    "href": "module2.html",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "blogs.html",
+    "href": "blogs.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "https://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Books",
+    "section": "",
+    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\n\n\n\n\n\n\n\n\nMathematics for Machine Learning by Garret Thomas"
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "Machine Learning\n\nCS189/289A Introduction to Machine Learning, UC Berkeley\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "books.html#probability-and-statistics",
+    "href": "books.html#probability-and-statistics",
+    "title": "Books",
+    "section": "",
+    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media."
+  },
+  {
+    "objectID": "books.html#others",
+    "href": "books.html#others",
+    "title": "Books",
+    "section": "",
+    "text": "Mathematics for Machine Learning by Garret Thomas"
+  },
+  {
+    "objectID": "books.html#nlp",
+    "href": "books.html#nlp",
+    "title": "Books",
+    "section": "NLP",
+    "text": "NLP"
+  },
+  {
+    "objectID": "courses.html#nlp",
+    "href": "courses.html#nlp",
+    "title": "Courses",
+    "section": "NLP",
+    "text": "NLP"
+  },
+  {
+    "objectID": "courses.html#computer-vision",
+    "href": "courses.html#computer-vision",
+    "title": "Courses",
+    "section": "Computer Vision",
+    "text": "Computer Vision"
+  },
+  {
+    "objectID": "courses.html#multimodal",
+    "href": "courses.html#multimodal",
+    "title": "Courses",
+    "section": "Multimodal",
+    "text": "Multimodal"
+  },
+  {
+    "objectID": "module7.html",
+    "href": "module7.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module3.html",
+    "href": "contents/module3.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module1.html",
+    "href": "contents/module1.html",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available.."
+  },
+  {
+    "objectID": "contents/module1.html#projects",
+    "href": "contents/module1.html#projects",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Projects",
+    "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications"
+  },
+  {
+    "objectID": "contents/module1.html#competition-training",
+    "href": "contents/module1.html#competition-training",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition Training",
+    "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation."
+  },
+  {
+    "objectID": "contents/module1.html#extra-class",
+    "href": "contents/module1.html#extra-class",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class",
+    "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
+  },
+  {
+    "objectID": "contents/module4.html",
+    "href": "contents/module4.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module7.html",
+    "href": "contents/module7.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module9.html",
+    "href": "contents/module9.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module8.html",
+    "href": "contents/module8.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module10.html",
+    "href": "contents/module10.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module6.html",
+    "href": "contents/module6.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module5.html",
+    "href": "contents/module5.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "contents/module2.html",
+    "href": "contents/module2.html",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "",
+    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available..\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "module3.html",
+    "href": "module3.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "module4.html",
+    "href": "module4.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "module9.html",
+    "href": "module9.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "module8.html",
+    "href": "module8.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "module10.html",
+    "href": "module10.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "module6.html",
+    "href": "module6.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "module5.html",
+    "href": "module5.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "module2.html#main-lessons",
+    "href": "module2.html#main-lessons",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\n[solution]\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\n[solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES04\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\n[solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#project-tutorials",
+    "href": "module2.html#project-tutorials",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Project Tutorials",
+    "text": "Project Tutorials\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject tutorial - PT\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject Handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject Handout\nText Project: Text Retrieval (using Pretrained Embedding)\n\n[Exercise] [solution]\n\n\n\n10/07/23\nProject Handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject tutorial - PT\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\n\n230716 - M02PT03\n\n\n\n14/07/23\nProject tutorial - PT\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject tutorial - PT\nImage Project: Depth Information Reconstruction\n\n230712 - M02PT01",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#python-tutorial-sessions",
+    "href": "module2.html#python-tutorial-sessions",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Python Tutorial Sessions",
+    "text": "Python Tutorial Sessions\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nPython Support\nList for 2D Data\nTA Tiềm\n230530 - M02CR02\n\n\n\n06/06/23\nPython Support\nList for 3D data\n\n230606 - M02CR03\n\n\n\n13/06/23\nPython Support\nArray 1D using NumPy\n\n230613 - M02CR04\n\n\n\n20/06/23\nPython Support\nArray 2D and 3D using NumPy\n\n230620 - M02CR05\n\n\n\n27/06/23\nPython Support\nBasic Numpy\n\n230627 - M02CR06",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#extra-classes-database-and-sql",
+    "href": "module2.html#extra-classes-database-and-sql",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Extra Classes: Database and SQL",
+    "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n03/06/23\nExtra class: Database and SQL\nToward Data Science: Database-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nExtra class: Database and SQL\nDatabase-SQL (2)\n\n230611 - M02ES02\n\n\n\n17/06/23\nExtra class: Database and SQL\nDatabase-SQL (3)\n\n230617 - M02EC03\n\n\n\n24/06/23\nExtra class: Database and SQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nExtra class: Database and SQL\nDatabase-NoSQL (2)\n\n230701 - M02EC05\n\n\n\n08/07/23\nExtra class: Database and SQL\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#competition-training",
+    "href": "module2.html#competition-training",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Competition Training",
+    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling\n\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\n\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\n\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\n\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\n\n230706 - M02AC06",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#summer-school-on-deep-learning",
+    "href": "module2.html#summer-school-on-deep-learning",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Summer School on Deep Learning",
+    "text": "Summer School on Deep Learning\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n05/07/23\nSummer school on Deep Learning\nVIASM Summer school on Recent Advances in Deep Learning\n\nSildes",
+    "crumbs": [
+      "Home",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "misc/working-with-text.html",
+    "href": "misc/working-with-text.html",
+    "title": "Working with Text Data",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "misc/working-with-text/working-with-text.html",
+    "href": "misc/working-with-text/working-with-text.html",
+    "title": "Working with Text Data",
+    "section": "",
+    "text": "Code\nwith open(\"the-verdict.txt\",\"r\", encoding=\"utf-8\") as f:\n    raw_text = f.read()\nprint(f\"Total number of character: {len(raw_text)}\")\n\n\nTotal number of character: 20479\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "misc/working-with-text/SimpleTokenizer.html",
+    "href": "misc/working-with-text/SimpleTokenizer.html",
+    "title": "Converting tokens into token IDs",
+    "section": "",
+    "text": "with open(\"the-verdict.txt\",\"r\", encoding=\"utf-8\") as f:\n    raw_text = f.read()\nprint(f\"Total number of character: {len(raw_text)}\")\n\nTotal number of character: 20479\n\n\n\nprint(raw_text[:99])\n\nI HAD always thought Jack Gisburn rather a cheap genius--though a good fellow enough--so it was no \n\n\n\n# Simplest tokenization using regex\n\nimport re\ntext = \"Hello world, I am learning AI.\"\n\n# tokenization scheme 1\nresult = re.split(r'(\\s)',text)\nprint(result)\n\n['Hello', ' ', 'world,', ' ', 'I', ' ', 'am', ' ', 'learning', ' ', 'AI.']\n\n\n\n# tokenization scheme 2\nresult = re.split(r'[,.]|\\s',text)\nprint(result)\n\n['Hello', 'world', '', 'I', 'am', 'learning', 'AI', '']\n\n\n\n# tokenization scheme 3: removing whitespaces\nresult = [item for item in result if item.strip()]\nprint(result)\n\n['Hello', 'world', 'I', 'am', 'learning', 'AI']\n\n\n\ntext = \"Hello, world. Is this-- a test?\"\nresult = re.split(r'([,.:;?_!\"()\\']|--|\\s)', text)\nresult = [item.strip() for item in result if item.strip()]\nprint(result)\n\n['Hello', ',', 'world', '.', 'Is', 'this', '--', 'a', 'test', '?']\n\n\n\n# apply the basic tokenizer to the initial raw text\npreprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', raw_text)\npreprocessed = [item.strip() for item in preprocessed if item.strip()]\nprint(len(preprocessed))\n\n4649\n\n\n\nprint(preprocessed[:30])\n\n['I', 'HAD', 'always', 'thought', 'Jack', 'Gisburn', 'rather', 'a', 'cheap', 'genius', '--', 'though', 'a', 'good', 'fellow', 'enough', '--', 'so', 'it', 'was', 'no', 'great', 'surprise', 'to', 'me', 'to', 'hear', 'that', ',', 'in']\n\n\n\n# convert from Python string to integers (token IDs)\n\n# create a list of unique tokens and sort aphabetically to create vocabulary\nall_words = sorted(set(preprocessed))\nvocab_size = len(all_words)\nprint(vocab_size)\n\n1159\n\n\n\nvocab = {token:integer for integer, token in enumerate(all_words)}\nfor i, item in enumerate(vocab.items()):\n    print(item)\n    if i&gt;20:\n        break\n\n('!', 0)\n('\"', 1)\n(\"'\", 2)\n('(', 3)\n(')', 4)\n(',', 5)\n('--', 6)\n('.', 7)\n(':', 8)\n(';', 9)\n('?', 10)\n('A', 11)\n('Ah', 12)\n('Among', 13)\n('And', 14)\n('Are', 15)\n('Arrt', 16)\n('As', 17)\n('At', 18)\n('Be', 19)\n('Begin', 20)\n('Burlington', 21)\n\n\n\n# implementing a simple tokenizer\n\nclass SimpleTokenizerv1:\n    def __init__(self,vocab):\n        self.str_to_int = vocab\n        self.int_to_str = {i:s for s,i in vocab.items()}\n\n    def encode(self,text):\n        preprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', text)\n        preprocessed = [item.strip() for item in preprocessed if item.strip()]\n        ids = [self.str_to_int[s] for s in preprocessed]\n        return ids\n\n    def decode(self,ids):\n        text = \" \".join([self.int_to_str[i] for i in ids])\n        text = re.sub(r'\\s+([,.?!\"()\\'])', r'\\1', text)\n        return text\n\n\ntokenizer = SimpleTokenizerv1(vocab)\ntext = \"\"\"\"It's the last he painted, you know,\" \n           Mrs. Gisburn said with pardonable pride.\"\"\"\nids = tokenizer.encode(text)\nprint(ids)\n\n[1, 58, 2, 872, 1013, 615, 541, 763, 5, 1155, 608, 5, 1, 69, 7, 39, 873, 1136, 773, 812, 7]\n\n\n\ntokenizer.decode(ids)\n\n'\" It\\' s the last he painted, you know,\" Mrs. Gisburn said with pardonable pride.'\n\n\n\ntokenizer.decode(tokenizer.encode(text))\n\n'\" It\\' s the last he painted, you know,\" Mrs. Gisburn said with pardonable pride.'\n\n\n\n# problem with unknown words (words that are not in the vocabulary)\n\n# text = \"I like AI.\"\n#tokenizer.encode(text) # throws a KeyError\n\n\nAdding speical context tokens\n\n# modifying the tokenizer to handle unknown words (could be an exercise)\n\nall_tokens = sorted(list(set(preprocessed)))\nall_tokens.extend([\"&lt;|endoftext|&gt;\",\"&lt;|unk|&gt;\"])\nvocab = {token:integer for integer,token in enumerate(all_tokens)}\nprint(len(vocab.items()))\n\n1161\n\n\n\nfor i, item in enumerate(list(vocab.items())[-5:]):\n    print(item)\n\n('younger', 1156)\n('your', 1157)\n('yourself', 1158)\n('&lt;|endoftext|&gt;', 1159)\n('&lt;|unk|&gt;', 1160)\n\n\n\nclass SimpleTokenizerv2:\n    def __init__(self,vocab):\n        self.str_to_int = vocab\n        self.int_to_str = {i:s for s,i in vocab.items()}\n\n    def encode(self,str):\n        preprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', text)\n        preprocessed = [item.strip() for item in preprocessed if item.strip()]\n        preprocessed = [item if item in self.str_to_int else \"&lt;|unk|&gt;\" for item in preprocessed]\n        ids = [self.str_to_int[s] for s in preprocessed]\n        return ids\n\n    def decode(self,ids):\n        text = \" \".join([self.int_to_str[i] for i in ids])\n        text = re.sub(r'\\s+([,.?!\"()\\'])', r'\\1', text)\n        return text\n\n\ntext1 = \"Hello world. I am learning AI.\"\ntext2 = \"In the sunlit terraces of the palace.\"\ntext = \" &lt;|endoftext|&gt; \".join((text1,text2))\nprint(text)\n\nHello world. I am learning AI. &lt;|endoftext|&gt; In the sunlit terraces of the palace.\n\n\n\ntokenizer = SimpleTokenizerv2(vocab)\nprint(tokenizer.encode(text))\n\n[1160, 1160, 7, 55, 155, 1160, 1160, 7, 1159, 57, 1013, 981, 1009, 738, 1013, 1160, 7]\n\n\n\nprint(tokenizer.decode(tokenizer.encode(text)))\n\n&lt;|unk|&gt; &lt;|unk|&gt;. I am &lt;|unk|&gt; &lt;|unk|&gt;. &lt;|endoftext|&gt; In the sunlit terraces of the &lt;|unk|&gt;.\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "misc/working-with-text/misc.html",
+    "href": "misc/working-with-text/misc.html",
+    "title": "Misc",
+    "section": "",
+    "text": "Simple Tokenizer\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/resources.html",
+    "href": "resources/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\n\nBooks\nBlogs\nCourses\nFundamental Papers\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/papers.html",
+    "href": "resources/papers.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "resources/books.html",
+    "href": "resources/books.html",
+    "title": "Books",
+    "section": "",
+    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\n\n\n\n\n\n\n\n\nMathematics for Machine Learning by Garret Thomas"
+  },
+  {
+    "objectID": "resources/books.html#probability-and-statistics",
+    "href": "resources/books.html#probability-and-statistics",
+    "title": "Books",
+    "section": "",
+    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media."
+  },
+  {
+    "objectID": "resources/books.html#others",
+    "href": "resources/books.html#others",
+    "title": "Books",
+    "section": "",
+    "text": "Mathematics for Machine Learning by Garret Thomas"
+  },
+  {
+    "objectID": "resources/books.html#nlp",
+    "href": "resources/books.html#nlp",
+    "title": "Books",
+    "section": "NLP",
+    "text": "NLP"
+  },
+  {
+    "objectID": "resources/courses.html#nlp",
+    "href": "resources/courses.html#nlp",
+    "title": "Courses",
+    "section": "NLP",
+    "text": "NLP"
+  },
+  {
+    "objectID": "resources/courses.html#computer-vision",
+    "href": "resources/courses.html#computer-vision",
+    "title": "Courses",
+    "section": "Computer Vision",
+    "text": "Computer Vision"
+  },
+  {
+    "objectID": "resources/courses.html#multimodal",
+    "href": "resources/courses.html#multimodal",
+    "title": "Courses",
+    "section": "Multimodal",
+    "text": "Multimodal"
+  },
+  {
+    "objectID": "resources/blogs.html",
+    "href": "resources/blogs.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "https://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "misc/misc.html",
+    "href": "misc/misc.html",
+    "title": "Misc",
+    "section": "",
+    "text": "Simple Tokenizer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Others",
+      "Misc"
+    ]
   }
 ]
