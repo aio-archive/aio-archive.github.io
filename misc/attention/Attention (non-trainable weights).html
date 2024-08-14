@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-08-14">
+<meta name="description" content="The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.">
 
-<title>Misc – AIO Course</title>
+<title>Spelled-out Introduction to Simple Self-Attention mechanism, in code – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../resources/resources.html" rel="prev">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +103,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean",
@@ -142,17 +146,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -163,7 +167,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -172,53 +176,53 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="../module1.html">
+    <a class="dropdown-item" href="../../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module2.html">
+    <a class="dropdown-item" href="../../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module3.html">
+    <a class="dropdown-item" href="../../module3.html">
  <span class="dropdown-text">Module 3 |</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module4.html">
+    <a class="dropdown-item" href="../../module4.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module5.html">
+    <a class="dropdown-item" href="../../module5.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module6.html">
+    <a class="dropdown-item" href="../../module6.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module7.html">
+    <a class="dropdown-item" href="../../module7.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module8.html">
+    <a class="dropdown-item" href="../../module8.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module9.html">
+    <a class="dropdown-item" href="../../module9.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module10.html">
+    <a class="dropdown-item" href="../../module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../resources/resources.html"> 
+    <a class="nav-link" href="../../resources/resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../misc/misc.html"> 
+    <a class="nav-link" href="../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
 </ul>
@@ -234,20 +238,52 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Misc</h1>
+          <h1 class="quarto-secondary-nav-title">Spelled-out Introduction to Simple Self-Attention mechanism, in code</h1>
         </a>     
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">Spelled-out Introduction to Simple Self-Attention mechanism, in code</h1>
+                  <div>
+        <div class="description">
+          The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">nlp</div>
+                <div class="quarto-category">attention</div>
+                <div class="quarto-category">LLMs</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 14, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -262,61 +298,61 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module6.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module7.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module8.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module9.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module10.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 10</span></a>
   </div>
 </li>
@@ -333,13 +369,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../../resources/resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../misc/misc.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../misc/misc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Misc</span></a>
   </div>
 </li>
@@ -351,110 +387,168 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="attention">attention <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nlp">nlp <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#capturing-data-dependencies-with-attention-mechanisms" id="toc-capturing-data-dependencies-with-attention-mechanisms" class="nav-link" data-scroll-target="#capturing-data-dependencies-with-attention-mechanisms">Capturing data dependencies with Attention mechanisms</a></li>
+  <li><a href="#simple-attention-mechanism-without-trainable-weights" id="toc-simple-attention-mechanism-without-trainable-weights" class="nav-link" data-scroll-target="#simple-attention-mechanism-without-trainable-weights">Simple Attention mechanism without trainable weights</a></li>
+  <li><a href="#computing-attention-weights-for-all-input-tokens" id="toc-computing-attention-weights-for-all-input-tokens" class="nav-link" data-scroll-target="#computing-attention-weights-for-all-input-tokens">Computing attention weights for all input tokens</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">Misc</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>The Attention mechanism itself can easily become a comprehensive topic. There are four different variants of the attention mechanism, including:</p>
+<ol type="1">
+<li><p><strong>Simplified self-attention</strong></p></li>
+<li><p>Self-attention</p></li>
+<li><p>Casual attention</p></li>
+<li><p>Multi-head attention.</p></li>
+</ol>
+</section>
+<section id="capturing-data-dependencies-with-attention-mechanisms" class="level1">
+<h1>Capturing data dependencies with Attention mechanisms</h1>
+<p>The Attention mechanism is a foundation to every LLM that are based on the Transformer architecture. In self-attention, the <em>self</em> refers to the fact that the Attention mechanism is able to compute the attention weights by relating different positions within a single input sequence. It assesses and learns the relationships and dependencies between various parts of the input itself.</p>
+</section>
+<section id="simple-attention-mechanism-without-trainable-weights" class="level1">
+<h1>Simple Attention mechanism without trainable weights</h1>
+<p>In self-attention, context vectors play a crucial role. Their purpose is to create enriched representations of each element in an input sequence (like a sentence) by incorporating information from all other elements in the sequence.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> torch.tensor(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  [[<span class="fl">0.43</span>, <span class="fl">0.15</span>, <span class="fl">0.89</span>], <span class="co"># Your     (x^1)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.55</span>, <span class="fl">0.87</span>, <span class="fl">0.66</span>], <span class="co"># journey  (x^2)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.57</span>, <span class="fl">0.85</span>, <span class="fl">0.64</span>], <span class="co"># starts   (x^3)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.22</span>, <span class="fl">0.58</span>, <span class="fl">0.33</span>], <span class="co"># with     (x^4)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.77</span>, <span class="fl">0.25</span>, <span class="fl">0.10</span>], <span class="co"># one      (x^5)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.05</span>, <span class="fl">0.80</span>, <span class="fl">0.55</span>]] <span class="co"># step     (x^6)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The very first step of implementing self-attention is to compute the attention scores <span class="math inline">\(\omega\)</span>, which are determined by computing the dot product of the query with every other input token.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> inputs[<span class="dv">1</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>attn_scores_2 <span class="op">=</span> torch.empty(inputs.shape[<span class="dv">0</span>])</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    attn_scores_2[i] <span class="op">=</span> torch.dot(x_i, query)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865])</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># understanding dot product</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, element <span class="kw">in</span> <span class="bu">enumerate</span>(inputs[<span class="dv">0</span>]):</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    result <span class="op">+=</span> inputs[<span class="dv">0</span>][idx]<span class="op">*</span>query[idx]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(torch.dot(inputs[<span class="dv">0</span>],query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor(0.9544)
+tensor(0.9544)</code></pre>
+<p>After calculating the attention weights, the next step is to normalize these attention weights so that the sum of these weights equals 1. In so doing, we can have nice probabilistic interpretation of the attention weights as well as maintain training stability for an LLM. In code, we could achieve this step as follows:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>attn_weights_2_tmp <span class="op">=</span> attn_scores_2 <span class="op">/</span> attn_scores_2.<span class="bu">sum</span>()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Attention weights: </span><span class="ch">\t</span><span class="st">"</span>, attn_weights_2_tmp)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sum: </span><span class="ch">\t\t\t</span><span class="st">"</span>, attn_weights_2_tmp.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>Attention weights:   tensor([0.1455, 0.2278, 0.2249, 0.1285, 0.1077, 0.1656])
+Sum:             tensor(1.0000)</code></pre>
+<p>In practice, it’s more common to instead use the softmax function for normalization because it is better at handling extreme values and offers more favorable gradient properties during training.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> softmax_naive(x):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> torch.exp(x)<span class="op">/</span>torch.exp(x).<span class="bu">sum</span>(dim<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>attn_weights_2_naive <span class="op">=</span> softmax_naive(attn_scores_2)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Attention weights: "</span>, attn_weights_2_naive)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sum: "</span>, attn_weights_2_naive.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>Attention weights:  tensor([0.1385, 0.2379, 0.2333, 0.1240, 0.1082, 0.1581])
+Sum:  tensor(1.)</code></pre>
+<p>Now that we have the attention weights, the next step is to calculate the context vector <span class="math inline">\(z\)</span> b multiplying the embedded input tokens <span class="math inline">\(x^{(i)}\)</span> with the corresponding attention weights and summing the resulting vectors.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>attn_weights_2 <span class="op">=</span> torch.softmax(attn_scores_2, dim<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> inputs[<span class="dv">1</span>]</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>context_vec_2 <span class="op">=</span> torch.zeros(query.shape)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    context_vec_2 <span class="op">+=</span> attn_weights_2[i] <span class="op">*</span> x_i</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(context_vec_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([0.4419, 0.6515, 0.5683])</code></pre>
+</section>
+<section id="computing-attention-weights-for-all-input-tokens" class="level1">
+<h1>Computing attention weights for all input tokens</h1>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>attn_scores <span class="op">=</span> torch.empty(<span class="dv">6</span>,<span class="dv">6</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>start_time <span class="op">=</span> time.time()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># naive for loops</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j, x_j <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        attn_scores[i,j] <span class="op">=</span> torch.dot(x_i, x_j)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>end_time <span class="op">=</span> time.time()</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>execution_time <span class="op">=</span> <span class="bu">round</span>(end_time <span class="op">-</span> start_time,<span class="dv">4</span>)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Execution Time: </span><span class="sc">{</span>execution_time<span class="sc">}</span><span class="ss"> seconds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([[0.9995, 0.9544, 0.9422, 0.4753, 0.4576, 0.6310],
+        [0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865],
+        [0.9422, 1.4754, 1.4570, 0.8296, 0.7154, 1.0605],
+        [0.4753, 0.8434, 0.8296, 0.4937, 0.3474, 0.6565],
+        [0.4576, 0.7070, 0.7154, 0.3474, 0.6654, 0.2935],
+        [0.6310, 1.0865, 1.0605, 0.6565, 0.2935, 0.9450]])
+Execution Time: 0.0044 seconds</code></pre>
+<p>For loop is slow, using two for loops is even slower. A smarter way to compute the attention weights is to use matrix multiplication as follows:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>start_time <span class="op">=</span> time.time()</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>attn_scores  <span class="op">=</span> inputs <span class="op">@</span> inputs.T</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>end_time <span class="op">=</span> time.time()</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>execution_time <span class="op">=</span> <span class="bu">round</span>(end_time <span class="op">-</span> start_time,<span class="dv">4</span>)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Execution Time: </span><span class="sc">{</span>execution_time<span class="sc">}</span><span class="ss"> seconds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([[0.9995, 0.9544, 0.9422, 0.4753, 0.4576, 0.6310],
+        [0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865],
+        [0.9422, 1.4754, 1.4570, 0.8296, 0.7154, 1.0605],
+        [0.4753, 0.8434, 0.8296, 0.4937, 0.3474, 0.6565],
+        [0.4576, 0.7070, 0.7154, 0.3474, 0.6654, 0.2935],
+        [0.6310, 1.0865, 1.0605, 0.6565, 0.2935, 0.9450]])
+Execution Time: 0.0004 seconds</code></pre>
+<p>Nice, we are now 10 times faster than using two for loops. Next, we compute the attention weights via the softmax function.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>attn_weights <span class="op">=</span> torch.softmax(attn_scores, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_weights)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([[0.2098, 0.2006, 0.1981, 0.1242, 0.1220, 0.1452],
+        [0.1385, 0.2379, 0.2333, 0.1240, 0.1082, 0.1581],
+        [0.1390, 0.2369, 0.2326, 0.1242, 0.1108, 0.1565],
+        [0.1435, 0.2074, 0.2046, 0.1462, 0.1263, 0.1720],
+        [0.1526, 0.1958, 0.1975, 0.1367, 0.1879, 0.1295],
+        [0.1385, 0.2184, 0.2128, 0.1420, 0.0988, 0.1896]])</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#verify that the rows sum to 1</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"All rows sum: "</span>, attn_weights.<span class="bu">sum</span>(dim<span class="op">=</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>All rows sum:  tensor([1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000])</code></pre>
+<p>The final step is to compute the context vector. Recall that we can do so by multiplying the attention weights with the embedded vector of the inputs.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>all_context_vecs <span class="op">=</span> attn_weights <span class="op">@</span> inputs</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(all_context_vecs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>tensor([[0.4421, 0.5931, 0.5790],
+        [0.4419, 0.6515, 0.5683],
+        [0.4431, 0.6496, 0.5671],
+        [0.4304, 0.6298, 0.5510],
+        [0.4671, 0.5910, 0.5266],
+        [0.4177, 0.6503, 0.5645]])</code></pre>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="nlp,attention,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723632876523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020">
-<div class="thumbnail">
-<p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">Spelled-out Introduction to Simple Self-Attention mechanism, in code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('attention'); return false;">
-attention
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="nlp,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723639103914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1058">
-<div class="thumbnail">
-<p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">Tokenization and Word Embeddings</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1019,15 +1113,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../resources/resources.html" class="pagination-link" aria-label="Resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Resources</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

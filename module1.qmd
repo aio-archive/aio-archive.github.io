@@ -6,6 +6,7 @@ format:
   html:
     grid:
       body-width: 1000px
+title-block-banner: true
 ---
 
 <div class="alert alert-dismissible alert-warning">

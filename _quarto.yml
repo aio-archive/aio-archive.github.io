@@ -45,6 +45,7 @@ website:
         text: Misc
   back-to-top-navigation: true
   page-navigation: true
+  bread-crumbs: false
   page-footer: 
     ' "*(AI) will rank among our greatest technological achievements, and everyone deserves to play a role in shaping it*". — Fei-Fei Li' 
   sidebar:

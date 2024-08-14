@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-08-14">
+<meta name="description" content="The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.">
 
-<title>Module 2 - Calculus and Linear Algebra for AI – AIO Course</title>
+<title>Tokenization and Word Embeddings – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./module3.html" rel="next">
-<link href="./module1.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -93,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -104,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -113,53 +147,53 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./module1.html">
+    <a class="dropdown-item" href="../../../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module2.html">
+    <a class="dropdown-item" href="../../../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module3.html">
+    <a class="dropdown-item" href="../../../module3.html">
  <span class="dropdown-text">Module 3 |</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module4.html">
+    <a class="dropdown-item" href="../../../module4.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module5.html">
+    <a class="dropdown-item" href="../../../module5.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module6.html">
+    <a class="dropdown-item" href="../../../module6.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module7.html">
+    <a class="dropdown-item" href="../../../module7.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module8.html">
+    <a class="dropdown-item" href="../../../module8.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module9.html">
+    <a class="dropdown-item" href="../../../module9.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module10.html">
+    <a class="dropdown-item" href="../../../module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources/resources.html"> 
+    <a class="nav-link" href="../../../resources/resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
 </ul>
@@ -175,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Module 2 - Calculus and Linear Algebra for AI</h1>
+          <h1 class="quarto-secondary-nav-title">Tokenization and Word Embeddings</h1>
         </a>     
     </div>
   </nav>
@@ -184,14 +218,29 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Module 2 - Calculus and Linear Algebra for AI</h1>
-                      </div>
+      <h1 class="title d-none d-lg-block">Tokenization and Word Embeddings</h1>
+                  <div>
+        <div class="description">
+          The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">nlp</div>
+                <div class="quarto-category">LLMs</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 14, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -204,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -219,61 +268,61 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module6.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module7.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module8.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module9.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module10.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../module10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 10</span></a>
   </div>
 </li>
@@ -290,13 +339,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../resources/resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./misc/misc.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../misc/misc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Misc</span></a>
   </div>
 </li>
@@ -312,15 +361,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-schedule-and-material" id="toc-course-schedule-and-material" class="nav-link active" data-scroll-target="#course-schedule-and-material">Course Schedule and Material</a>
-  <ul class="collapse">
-  <li><a href="#main-lessons" id="toc-main-lessons" class="nav-link" data-scroll-target="#main-lessons">Main Lessons</a></li>
-  <li><a href="#project-tutorials" id="toc-project-tutorials" class="nav-link" data-scroll-target="#project-tutorials">Project Tutorials</a></li>
-  <li><a href="#python-tutorial-sessions" id="toc-python-tutorial-sessions" class="nav-link" data-scroll-target="#python-tutorial-sessions">Python Tutorial Sessions</a></li>
-  <li><a href="#extra-classes-database-and-sql" id="toc-extra-classes-database-and-sql" class="nav-link" data-scroll-target="#extra-classes-database-and-sql">Extra Classes: Database and SQL</a></li>
-  <li><a href="#competition-training" id="toc-competition-training" class="nav-link" data-scroll-target="#competition-training">Competition Training</a></li>
-  <li><a href="#summer-school-on-deep-learning" id="toc-summer-school-on-deep-learning" class="nav-link" data-scroll-target="#summer-school-on-deep-learning">Summer School on Deep Learning</a></li>
-  </ul></li>
+  <li><a href="#converting-tokens-into-token-ids" id="toc-converting-tokens-into-token-ids" class="nav-link active" data-scroll-target="#converting-tokens-into-token-ids">Converting tokens into token IDs</a></li>
+  <li><a href="#adding-speical-context-tokens" id="toc-adding-speical-context-tokens" class="nav-link" data-scroll-target="#adding-speical-context-tokens">Adding speical context tokens</a></li>
   </ul>
 </nav>
     </div>
@@ -331,513 +373,172 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="alert alert-dismissible alert-warning">
-<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-<h4 class="alert-heading anchored">
-Warning
-</h4>
-<p class="mb-0">
-This website is still under construction. Some contents and functions might temporarily not be available or not working properly.
-</p>
-</div>
-<section id="course-schedule-and-material" class="level1">
-<h1>Course Schedule and Material</h1>
-<section id="main-lessons" class="level2">
-<h2 class="anchored" data-anchor-id="main-lessons">Main Lessons</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>30/05/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/172-dNwjMsx7o80lD69K3jDQCUMPv3aL4/view">Interpolation and Application Exercises</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/file/d/1ydigi-L45x7psF6yAXR6tk2w965yVuhq/view">[solution]</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>31/05/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=CGz55B04ENY">Construct loss functions with different targets</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1tq87w8zWS-NWS8Vvh0GxNQ-KygW7l2-A">230531 - M02ML01</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>02/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=rJ_5xIq2PtI">Interpolation and Image upsampling</a></td>
-<td></td>
-<td><a href="https://drive.google.com/drive/folders/11U_atSj5XlegbZ9vhGB7y3EZ5P_8Z2Mz">230602 - M02ML02</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>04/06/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=ARNTc7Ler5I">TA Exercise</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1BFTmS0JFsFyw6wsg358ZVGpx7E61VAoY">230604 - M02ES01</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>05/06/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/1VuI4k1NB5tWoNMZrKRqQrqzMrAY30nPD/view">Calculus Exercise</a></td>
-<td></td>
-<td><a href="https://drive.google.com/file/d/114d7oDMEFs7YCY3_QPiEtMhvpYoh9SBX/view">[solution]</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>07/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=oDukLU4f97o">Understanding Derivative and Gradient</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1OJFbnm6SKOPMx3CVzlssf89C1RlmOhvq">230607 - M02ML03</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>09/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=mF8XR7KfnUM">Edge Detection and Gradient-based Optimization</a></td>
-<td></td>
-<td><a href="https://drive.google.com/drive/folders/1PMhyNKd1x25PPvhIgRVBhToBekFZULP4">230609 - M02ML04</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11/06/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=gP1Ki14Bz8A">TA Exercise</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc">230611 - M02ES02</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>14/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=MG4JZIQcUGk">Linear Regression (L1, L2 and Huber loss - Level 1)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1BF_cGNrZWy2gKWr-92ra5JpTEJ0ocSip">230614 - M02ML05</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>16/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=6j3Dkb4dD_k">Linear Regression (L1, L2 and Huber loss - Level 2)</a></td>
-<td></td>
-<td><a href="https://drive.google.com/drive/folders/1lcdigaepT1grAPZB1ltPM6IDdJ4dirNg">230616 - M02ML06</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>18/06/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=nUavRivww30&amp;feature=youtu.be">TA Exercise</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1mf_Qku7PAIbU7x0fZOAKQd3sZGYDvof1">230618 - M02ES03</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>21/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=kZbTAmmWngc&amp;feature=youtu.be">Vectorization for Linear Regression (1)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/14d29aV_WNvJ9seOCEgEcy4rYYGYUq1-_">230621 - M02ML07</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>23/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=6j3Dkb4dD_k&amp;feature=youtu.be">Vectorization for Linear Regression (2)</a></td>
-<td></td>
-<td><a href="https://drive.google.com/drive/folders/1k1aoklmarP9RzpS0gk7v2xNI_OzzPFCy">230623 - M02ML08</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>25/06/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=2mcr-uQUkyw">TA Exercise</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/17wPKwX5UR5bSpmd-WTIxv61RCHtu8R4x">230625 - M02ES04</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>26/06/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view">Cosine Background subtraction Exercise</a></td>
-<td></td>
-<td><a href="https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view">[solution]</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>28/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=04MiYSvuay4">Basic Linear Algebra and Its Applications</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1-Q-XeI9r0bGIcn82V4ttU9kczp_dVTL1">230628 - M02ML09</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>30/06/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=1mag0t9xN38">Cosine Similarity and Decomposition</a></td>
-<td></td>
-<td><a href="https://drive.google.com/drive/folders/1W1wTFw4rpFi3BK_m7RvZIslpmBuPGwM1">230630 - M02ML10</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>02/07/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=7jvTTLx1Hp0">TA Exercise</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1ScS_voc1D4G4jLLLrl-I1_7Fs3XpoHs7">230702 - M02ES05</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="project-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="project-tutorials">Project Tutorials</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>09/07/23</td>
-<td>Project tutorial - PT</td>
-<td>SVD and its Applications</td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230709 - M02ET01</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10/07/23</td>
-<td>Project Handout</td>
-<td>Image Project: Depth Information Reconstruction</td>
-<td>TA Thắng</td>
-<td>[proposal]</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10/07/23</td>
-<td>Project Handout</td>
-<td>Text Project: Text Retrieval (using Pretrained Embedding)</td>
-<td></td>
-<td>[Exercise] [solution]</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10/07/23</td>
-<td>Project Handout</td>
-<td>Tabular Data Project: Sales Prediction (Linear and non-linear regression)</td>
-<td>TA Thái</td>
-<td>[proposal]</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>12/07/23</td>
-<td>Project tutorial - PT</td>
-<td>Tabular Data Project: Sales Prediction (Linear and non-linear regression)</td>
-<td></td>
-<td>230716 - M02PT03</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>14/07/23</td>
-<td>Project tutorial - PT</td>
-<td>Text Project: Text Retrieval (using Pretrained Embedding)</td>
-<td>TA Thắng</td>
-<td>230714 - M02PT02</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>16/07/23</td>
-<td>Project tutorial - PT</td>
-<td>Image Project: Depth Information Reconstruction</td>
-<td></td>
-<td>230712 - M02PT01</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="python-tutorial-sessions" class="level2">
-<h2 class="anchored" data-anchor-id="python-tutorial-sessions">Python Tutorial Sessions</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>30/05/23</td>
-<td>Python Support</td>
-<td>List for 2D Data</td>
-<td>TA Tiềm</td>
-<td>230530 - M02CR02</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>06/06/23</td>
-<td>Python Support</td>
-<td>List for 3D data</td>
-<td></td>
-<td>230606 - M02CR03</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>13/06/23</td>
-<td>Python Support</td>
-<td>Array 1D using NumPy</td>
-<td></td>
-<td>230613 - M02CR04</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>20/06/23</td>
-<td>Python Support</td>
-<td>Array 2D and 3D using NumPy</td>
-<td></td>
-<td>230620 - M02CR05</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>27/06/23</td>
-<td>Python Support</td>
-<td>Basic Numpy</td>
-<td></td>
-<td>230627 - M02CR06</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="extra-classes-database-and-sql" class="level2">
-<h2 class="anchored" data-anchor-id="extra-classes-database-and-sql">Extra Classes: Database and SQL</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>03/06/23</td>
-<td>Extra class: Database and SQL</td>
-<td>Toward Data Science: Database-SQL (1)</td>
-<td>TA Bảo</td>
-<td>230603 - M02EC01</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10/06/23</td>
-<td>Extra class: Database and SQL</td>
-<td>Database-SQL (2)</td>
-<td></td>
-<td>230611 - M02ES02</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>17/06/23</td>
-<td>Extra class: Database and SQL</td>
-<td>Database-SQL (3)</td>
-<td></td>
-<td>230617 - M02EC03</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>24/06/23</td>
-<td>Extra class: Database and SQL</td>
-<td>Database-NoSQL</td>
-<td>TA Thái</td>
-<td>230624 - M02EC04</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>01/07/23</td>
-<td>Extra class: Database and SQL</td>
-<td>Database-NoSQL (2)</td>
-<td></td>
-<td>230701 - M02EC05</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>08/07/23</td>
-<td>Extra class: Database and SQL</td>
-<td>SQL for Big Data</td>
-<td>TA Thắng</td>
-<td>230708 - M02EC06</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="competition-training" class="level2">
-<h2 class="anchored" data-anchor-id="competition-training">Competition Training</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>01/06/23</td>
-<td>Competition</td>
-<td>Hyper-parameter optimization</td>
-<td>TA Hùng</td>
-<td>230601 - M02AC01</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>08/06/23</td>
-<td>Competition</td>
-<td>Ensembling</td>
-<td></td>
-<td>230608 - M02AC02</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>15/06/23</td>
-<td>Competition</td>
-<td>Augmentation Strategies and Albumentation</td>
-<td></td>
-<td>230615 - M02AC03</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>22/06/23</td>
-<td>Competition</td>
-<td>Nestquant</td>
-<td></td>
-<td>230622 - M02AC04</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>29/06/23</td>
-<td>Competition</td>
-<td>OOD-CV</td>
-<td></td>
-<td>230629 - M02AC05</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>06/07/23</td>
-<td>Competition</td>
-<td>Vision Transformer</td>
-<td></td>
-<td>230706 - M02AC06</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="summer-school-on-deep-learning" class="level2">
-<h2 class="anchored" data-anchor-id="summer-school-on-deep-learning">Summer School on Deep Learning</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>05/07/23</td>
-<td>Summer school on Deep Learning</td>
-<td>VIASM Summer school on Recent Advances in Deep Learning</td>
-<td></td>
-<td>Sildes</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/chap2/the-verdict.txt"</span>,<span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> f:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    raw_text <span class="op">=</span> f.read()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total number of character: </span><span class="sc">{</span><span class="bu">len</span>(raw_text)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>Total number of character: 20479</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(raw_text[:<span class="dv">99</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>I HAD always thought Jack Gisburn rather a cheap genius--though a good fellow enough--so it was no </code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simplest tokenization using regex</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Hello world, I am learning AI."</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tokenization scheme 1</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> re.split(<span class="vs">r'(\s)'</span>,text)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>['Hello', ' ', 'world,', ' ', 'I', ' ', 'am', ' ', 'learning', ' ', 'AI.']</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tokenization scheme 2</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> re.split(<span class="vs">r'[,.]|\s'</span>,text)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>['Hello', 'world', '', 'I', 'am', 'learning', 'AI', '']</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tokenization scheme 3: removing whitespaces</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> [item <span class="cf">for</span> item <span class="kw">in</span> result <span class="cf">if</span> item.strip()]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>['Hello', 'world', 'I', 'am', 'learning', 'AI']</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Hello, world. Is this-- a test?"</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> re.split(<span class="vs">r'([,.:;?_!"()\']|--|\s)'</span>, text)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> [item.strip() <span class="cf">for</span> item <span class="kw">in</span> result <span class="cf">if</span> item.strip()]</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>['Hello', ',', 'world', '.', 'Is', 'this', '--', 'a', 'test', '?']</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># apply the basic tokenizer to the initial raw text</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>preprocessed <span class="op">=</span> re.split(<span class="vs">r'([,.?_!"()\']|--|\s)'</span>, raw_text)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>preprocessed <span class="op">=</span> [item.strip() <span class="cf">for</span> item <span class="kw">in</span> preprocessed <span class="cf">if</span> item.strip()]</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(preprocessed))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>4649</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(preprocessed[:<span class="dv">30</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>['I', 'HAD', 'always', 'thought', 'Jack', 'Gisburn', 'rather', 'a', 'cheap', 'genius', '--', 'though', 'a', 'good', 'fellow', 'enough', '--', 'so', 'it', 'was', 'no', 'great', 'surprise', 'to', 'me', 'to', 'hear', 'that', ',', 'in']</code></pre>
+<section id="converting-tokens-into-token-ids" class="level1">
+<h1>Converting tokens into token IDs</h1>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert from Python string to integers (token IDs)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># create a list of unique tokens and sort aphabetically to create vocabulary</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>all_words <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">set</span>(preprocessed))</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>vocab_size <span class="op">=</span> <span class="bu">len</span>(all_words)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vocab_size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>1159</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>vocab <span class="op">=</span> {token:integer <span class="cf">for</span> integer, token <span class="kw">in</span> <span class="bu">enumerate</span>(all_words)}</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, item <span class="kw">in</span> <span class="bu">enumerate</span>(vocab.items()):</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(item)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i<span class="op">&gt;</span><span class="dv">20</span>:</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>('!', 0)
+('"', 1)
+("'", 2)
+('(', 3)
+(')', 4)
+(',', 5)
+('--', 6)
+('.', 7)
+(':', 8)
+(';', 9)
+('?', 10)
+('A', 11)
+('Ah', 12)
+('Among', 13)
+('And', 14)
+('Are', 15)
+('Arrt', 16)
+('As', 17)
+('At', 18)
+('Be', 19)
+('Begin', 20)
+('Burlington', 21)</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># implementing a simple tokenizer</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> SimpleTokenizerv1:</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>,vocab):</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.str_to_int <span class="op">=</span> vocab</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.int_to_str <span class="op">=</span> {i:s <span class="cf">for</span> s,i <span class="kw">in</span> vocab.items()}</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> encode(<span class="va">self</span>,text):</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        preprocessed <span class="op">=</span> re.split(<span class="vs">r'([,.?_!"()\']|--|\s)'</span>, text)</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>        preprocessed <span class="op">=</span> [item.strip() <span class="cf">for</span> item <span class="kw">in</span> preprocessed <span class="cf">if</span> item.strip()]</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        ids <span class="op">=</span> [<span class="va">self</span>.str_to_int[s] <span class="cf">for</span> s <span class="kw">in</span> preprocessed]</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> ids</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> decode(<span class="va">self</span>,ids):</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>        text <span class="op">=</span> <span class="st">" "</span>.join([<span class="va">self</span>.int_to_str[i] <span class="cf">for</span> i <span class="kw">in</span> ids])</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>        text <span class="op">=</span> re.sub(<span class="vs">r'\s+([,.?!"()\'])'</span>, <span class="vs">r'\1'</span>, text)</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> SimpleTokenizerv1(vocab)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">""""It's the last he painted, you know," </span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="st">           Mrs. Gisburn said with pardonable pride."""</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>ids <span class="op">=</span> tokenizer.encode(text)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ids)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>[1, 58, 2, 872, 1013, 615, 541, 763, 5, 1155, 608, 5, 1, 69, 7, 39, 873, 1136, 773, 812, 7]</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>tokenizer.decode(ids)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>'" It\' s the last he painted, you know," Mrs. Gisburn said with pardonable pride.'</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>tokenizer.decode(tokenizer.encode(text))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>'" It\' s the last he painted, you know," Mrs. Gisburn said with pardonable pride.'</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># problem with unknown words (words that are not in the vocabulary)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"I like AI."</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>tokenizer.encode(text) <span class="co"># throws a KeyError</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>---------------------------------------------------------------------------
+
+KeyError                                  Traceback (most recent call last)
+
+Cell In[58], line 4
+      1 # problem with unknown words (words that are not in the vocabulary)
+      3 text = "I like AI."
+----&gt; 4 tokenizer.encode(text)
 
 
+Cell In[46], line 11, in SimpleTokenizerv1.encode(self, text)
+      9 preprocessed = re.split(r'([,.?_!"()\']|--|\s)', text)
+     10 preprocessed = [item.strip() for item in preprocessed if item.strip()]
+---&gt; 11 ids = [self.str_to_int[s] for s in preprocessed]
+     12 return ids
+
+
+KeyError: 'AI'</code></pre>
 </section>
+<section id="adding-speical-context-tokens" class="level1">
+<h1>Adding speical context tokens</h1>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># modifying the tokenizer to handle unknown words (could be an exercise)</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>all_tokens <span class="op">=</span> <span class="bu">sorted</span>(<span class="bu">list</span>(<span class="bu">set</span>(preprocessed)))</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>all_tokens.extend([<span class="st">"&lt;|endoftext|&gt;"</span>,<span class="st">"&lt;|unk|&gt;"</span>])</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>vocab <span class="op">=</span> {token:integer <span class="cf">for</span> integer,token <span class="kw">in</span> <span class="bu">enumerate</span>(all_tokens)}</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(vocab.items()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>1161</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, item <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">list</span>(vocab.items())[<span class="op">-</span><span class="dv">5</span>:]):</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(item)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>('younger', 1156)
+('your', 1157)
+('yourself', 1158)
+('&lt;|endoftext|&gt;', 1159)
+('&lt;|unk|&gt;', 1160)</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> SimpleTokenizerv2:</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>,vocab):</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.str_to_int <span class="op">=</span> vocab</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.int_to_str <span class="op">=</span> {i:s <span class="cf">for</span> s,i <span class="kw">in</span> vocab.items()}</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> encode(<span class="va">self</span>,<span class="bu">str</span>):</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>        preprocessed <span class="op">=</span> re.split(<span class="vs">r'([,.?_!"()\']|--|\s)'</span>, text)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>        preprocessed <span class="op">=</span> [item.strip() <span class="cf">for</span> item <span class="kw">in</span> preprocessed <span class="cf">if</span> item.strip()]</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>        preprocessed <span class="op">=</span> [item <span class="cf">if</span> item <span class="kw">in</span> <span class="va">self</span>.str_to_int <span class="cf">else</span> <span class="st">"&lt;|unk|&gt;"</span> <span class="cf">for</span> item <span class="kw">in</span> preprocessed]</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>        ids <span class="op">=</span> [<span class="va">self</span>.str_to_int[s] <span class="cf">for</span> s <span class="kw">in</span> preprocessed]</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> ids</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> decode(<span class="va">self</span>,ids):</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>        text <span class="op">=</span> <span class="st">" "</span>.join([<span class="va">self</span>.int_to_str[i] <span class="cf">for</span> i <span class="kw">in</span> ids])</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>        text <span class="op">=</span> re.sub(<span class="vs">r'\s+([,.?!"()\'])'</span>, <span class="vs">r'\1'</span>, text)</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>text1 <span class="op">=</span> <span class="st">"Hello world. I am learning AI."</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>text2 <span class="op">=</span> <span class="st">"In the sunlit terraces of the palace."</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">" &lt;|endoftext|&gt; "</span>.join((text1,text2))</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>Hello world. I am learning AI. &lt;|endoftext|&gt; In the sunlit terraces of the palace.</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> SimpleTokenizerv2(vocab)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tokenizer.encode(text))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>[1160, 1160, 7, 55, 155, 1160, 1160, 7, 1159, 57, 1013, 981, 1009, 738, 1013, 1160, 7]</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tokenizer.decode(tokenizer.encode(text)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>&lt;|unk|&gt; &lt;|unk|&gt;. I am &lt;|unk|&gt; &lt;|unk|&gt;. &lt;|endoftext|&gt; In the sunlit terraces of the &lt;|unk|&gt;.</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -1405,18 +1106,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./module1.html" class="pagination-link" aria-label="Module 1">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 1</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./module3.html" class="pagination-link" aria-label="Module 3">
-        <span class="nav-page-text">Module 3</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
