@@ -6,7 +6,7 @@
     "section": "",
     "text": "“All models are wrong, but some are useful” George Box\n\n\n\n\n Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Introduction"
     ]
   },
@@ -15,11 +15,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "About"
-    ]
+    "text": "About this site\n\n\n\n Back to top"
   },
   {
     "objectID": "module1.html",
@@ -28,7 +24,7 @@
     "section": "",
     "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 1"
     ]
@@ -47,7 +43,7 @@
     "section": "Projects",
     "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 1"
     ]
@@ -59,7 +55,7 @@
     "section": "Competition Training",
     "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 1"
     ]
@@ -71,7 +67,7 @@
     "section": "Extra class",
     "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 1"
     ]
@@ -510,9 +506,9 @@
     "href": "resources/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\n\nBooks\nBlogs\nCourses\nFundamental Papers\n\n\n\n\n Back to top",
+    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\nNEW: Generative AI course by Stanford\n\nBooks\nBlogs\nCourses\nFundamental Papers\n\n\n\n\n Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Others",
       "Resources"
     ]
@@ -520,9 +516,9 @@
   {
     "objectID": "resources/papers.html",
     "href": "resources/papers.html",
-    "title": "AIO Course",
+    "title": "Papers",
     "section": "",
-    "text": "Back to top"
+    "text": "sorted in random order\n\nWord2Vec | Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space. International Conference on Learning Representations.\nBERT | Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. Proceedings of the 2019 Conference of the North, 4171–4186.\nTransformer | Vaswani, A., Shazeer, N. M., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., & Polosukhin, I. (2017).Attention is All you Need. Neural Information Processing Systems, 5998–6008.\nCLIP | Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., & Sutskever, I. (2021). Learning Transferable Visual Models From Natural Language Supervision. International Conference on Machine Learning, 8748–8763.\nAlexNet | Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Conference on Neural Information Processing Systems (NeurIPS), 1106–1114.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "resources/books.html",
@@ -587,7 +583,7 @@
     "section": "",
     "text": "Spelled-out Introduction to Simple Self-Attention mechanism, in code\n\n\n\n\n\n\nnlp\n\n\nattention\n\n\nLLMs\n\n\n\nThe backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.\n\n\n\n\n\nAug 14, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nTokenization and Word Embeddings\n\n\n\n\n\n\nnlp\n\n\nLLMs\n\n\n\nThe two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.\n\n\n\n\n\nAug 14, 2024\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Others",
       "Misc"
     ]
@@ -612,5 +608,12 @@
     "title": "Tokenization and Word Embeddings",
     "section": "",
     "text": "with open(\"data/chap2/the-verdict.txt\",\"r\", encoding=\"utf-8\") as f:\n    raw_text = f.read()\nprint(f\"Total number of character: {len(raw_text)}\")\nTotal number of character: 20479\nprint(raw_text[:99])\nI HAD always thought Jack Gisburn rather a cheap genius--though a good fellow enough--so it was no \n# Simplest tokenization using regex\n\nimport re\ntext = \"Hello world, I am learning AI.\"\n\n# tokenization scheme 1\nresult = re.split(r'(\\s)',text)\nprint(result)\n['Hello', ' ', 'world,', ' ', 'I', ' ', 'am', ' ', 'learning', ' ', 'AI.']\n# tokenization scheme 2\nresult = re.split(r'[,.]|\\s',text)\nprint(result)\n['Hello', 'world', '', 'I', 'am', 'learning', 'AI', '']\n# tokenization scheme 3: removing whitespaces\nresult = [item for item in result if item.strip()]\nprint(result)\n['Hello', 'world', 'I', 'am', 'learning', 'AI']\ntext = \"Hello, world. Is this-- a test?\"\nresult = re.split(r'([,.:;?_!\"()\\']|--|\\s)', text)\nresult = [item.strip() for item in result if item.strip()]\nprint(result)\n['Hello', ',', 'world', '.', 'Is', 'this', '--', 'a', 'test', '?']\n# apply the basic tokenizer to the initial raw text\npreprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', raw_text)\npreprocessed = [item.strip() for item in preprocessed if item.strip()]\nprint(len(preprocessed))\n4649\nprint(preprocessed[:30])\n['I', 'HAD', 'always', 'thought', 'Jack', 'Gisburn', 'rather', 'a', 'cheap', 'genius', '--', 'though', 'a', 'good', 'fellow', 'enough', '--', 'so', 'it', 'was', 'no', 'great', 'surprise', 'to', 'me', 'to', 'hear', 'that', ',', 'in']\n\nConverting tokens into token IDs\n# convert from Python string to integers (token IDs)\n\n# create a list of unique tokens and sort aphabetically to create vocabulary\nall_words = sorted(set(preprocessed))\nvocab_size = len(all_words)\nprint(vocab_size)\n1159\nvocab = {token:integer for integer, token in enumerate(all_words)}\nfor i, item in enumerate(vocab.items()):\n    print(item)\n    if i&gt;20:\n        break\n('!', 0)\n('\"', 1)\n(\"'\", 2)\n('(', 3)\n(')', 4)\n(',', 5)\n('--', 6)\n('.', 7)\n(':', 8)\n(';', 9)\n('?', 10)\n('A', 11)\n('Ah', 12)\n('Among', 13)\n('And', 14)\n('Are', 15)\n('Arrt', 16)\n('As', 17)\n('At', 18)\n('Be', 19)\n('Begin', 20)\n('Burlington', 21)\n# implementing a simple tokenizer\n\nclass SimpleTokenizerv1:\n    def __init__(self,vocab):\n        self.str_to_int = vocab\n        self.int_to_str = {i:s for s,i in vocab.items()}\n\n    def encode(self,text):\n        preprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', text)\n        preprocessed = [item.strip() for item in preprocessed if item.strip()]\n        ids = [self.str_to_int[s] for s in preprocessed]\n        return ids\n\n    def decode(self,ids):\n        text = \" \".join([self.int_to_str[i] for i in ids])\n        text = re.sub(r'\\s+([,.?!\"()\\'])', r'\\1', text)\n        return text\ntokenizer = SimpleTokenizerv1(vocab)\ntext = \"\"\"\"It's the last he painted, you know,\" \n           Mrs. Gisburn said with pardonable pride.\"\"\"\nids = tokenizer.encode(text)\nprint(ids)\n[1, 58, 2, 872, 1013, 615, 541, 763, 5, 1155, 608, 5, 1, 69, 7, 39, 873, 1136, 773, 812, 7]\ntokenizer.decode(ids)\n'\" It\\' s the last he painted, you know,\" Mrs. Gisburn said with pardonable pride.'\ntokenizer.decode(tokenizer.encode(text))\n'\" It\\' s the last he painted, you know,\" Mrs. Gisburn said with pardonable pride.'\n# problem with unknown words (words that are not in the vocabulary)\n\ntext = \"I like AI.\"\ntokenizer.encode(text) # throws a KeyError\n---------------------------------------------------------------------------\n\nKeyError                                  Traceback (most recent call last)\n\nCell In[58], line 4\n      1 # problem with unknown words (words that are not in the vocabulary)\n      3 text = \"I like AI.\"\n----&gt; 4 tokenizer.encode(text)\n\n\nCell In[46], line 11, in SimpleTokenizerv1.encode(self, text)\n      9 preprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', text)\n     10 preprocessed = [item.strip() for item in preprocessed if item.strip()]\n---&gt; 11 ids = [self.str_to_int[s] for s in preprocessed]\n     12 return ids\n\n\nKeyError: 'AI'\n\n\nAdding speical context tokens\n# modifying the tokenizer to handle unknown words (could be an exercise)\n\nall_tokens = sorted(list(set(preprocessed)))\nall_tokens.extend([\"&lt;|endoftext|&gt;\",\"&lt;|unk|&gt;\"])\nvocab = {token:integer for integer,token in enumerate(all_tokens)}\nprint(len(vocab.items()))\n1161\nfor i, item in enumerate(list(vocab.items())[-5:]):\n    print(item)\n('younger', 1156)\n('your', 1157)\n('yourself', 1158)\n('&lt;|endoftext|&gt;', 1159)\n('&lt;|unk|&gt;', 1160)\nclass SimpleTokenizerv2:\n    def __init__(self,vocab):\n        self.str_to_int = vocab\n        self.int_to_str = {i:s for s,i in vocab.items()}\n\n    def encode(self,str):\n        preprocessed = re.split(r'([,.?_!\"()\\']|--|\\s)', text)\n        preprocessed = [item.strip() for item in preprocessed if item.strip()]\n        preprocessed = [item if item in self.str_to_int else \"&lt;|unk|&gt;\" for item in preprocessed]\n        ids = [self.str_to_int[s] for s in preprocessed]\n        return ids\n\n    def decode(self,ids):\n        text = \" \".join([self.int_to_str[i] for i in ids])\n        text = re.sub(r'\\s+([,.?!\"()\\'])', r'\\1', text)\n        return text\ntext1 = \"Hello world. I am learning AI.\"\ntext2 = \"In the sunlit terraces of the palace.\"\ntext = \" &lt;|endoftext|&gt; \".join((text1,text2))\nprint(text)\nHello world. I am learning AI. &lt;|endoftext|&gt; In the sunlit terraces of the palace.\ntokenizer = SimpleTokenizerv2(vocab)\nprint(tokenizer.encode(text))\n[1160, 1160, 7, 55, 155, 1160, 1160, 7, 1159, 57, 1013, 981, 1009, 738, 1013, 1160, 7]\nprint(tokenizer.decode(tokenizer.encode(text)))\n&lt;|unk|&gt; &lt;|unk|&gt;. I am &lt;|unk|&gt; &lt;|unk|&gt;. &lt;|endoftext|&gt; In the sunlit terraces of the &lt;|unk|&gt;.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ainews.html",
+    "href": "ainews.html",
+    "title": "AI News",
+    "section": "",
+    "text": "Podcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\nConference 11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)\n\n\n\n\n Back to top"
   }
 ]

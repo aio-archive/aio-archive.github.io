@@ -11,12 +11,10 @@ website:
     location: navbar
     type: overlay
   navbar:
-    background: '#687a96'
-    foreground: "#f5f6f7"
+    background: '#434445'
+    foreground: "#ffffff"
     search: true
     left:
-      - href: index.qmd
-        text: Home
       - text: "Lectures"
         menu:
           - href: module1.qmd
@@ -43,6 +41,8 @@ website:
         text: Resources
       - href: misc/misc.qmd
         text: Misc
+      - href: ainews.qmd
+        text: AI News
   back-to-top-navigation: true
   page-navigation: true
   bread-crumbs: false

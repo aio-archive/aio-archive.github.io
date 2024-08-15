@@ -5,5 +5,55 @@
       "/misc/posts/attention/Attention (non-trainable weights).html",
       "/misc/posts/working-with-text/SimpleTokenizer.html"
     ]
+  },
+  {
+    "listing": "/ainews.html",
+    "items": [
+      "/index.html",
+      "/about.html",
+      "/resources/blogs.html",
+      "/resources/books.html",
+      "/resources/courses.html",
+      "/misc/misc.html",
+      "/module1.html",
+      "/module2.html",
+      "/resources/resources.html",
+      "/misc/posts/attention/Attention (non-trainable weights).html",
+      "/misc/posts/working-with-text/SimpleTokenizer.html",
+      "/module8.html",
+      "/module9.html",
+      "/resources/papers.html",
+      "/module10.html",
+      "/module7.html",
+      "/module6.html",
+      "/module4.html",
+      "/module5.html",
+      "/module3.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/ainews.html",
+      "/about.html",
+      "/resources/blogs.html",
+      "/resources/books.html",
+      "/resources/courses.html",
+      "/misc/misc.html",
+      "/module1.html",
+      "/module2.html",
+      "/resources/resources.html",
+      "/misc/posts/attention/Attention (non-trainable weights).html",
+      "/misc/posts/working-with-text/SimpleTokenizer.html",
+      "/module8.html",
+      "/module9.html",
+      "/resources/papers.html",
+      "/module10.html",
+      "/module7.html",
+      "/module6.html",
+      "/module4.html",
+      "/module5.html",
+      "/module3.html"
+    ]
   }
 ]

@@ -1,0 +1,9 @@
+---
+title: AI News
+title-block-banner: true
+description: A compilation of latest AI news and updates.
+---
+
+- <span class="badge rounded-pill bg-primary">Podcast</span> **14 Aug, 2024:** [Unreasonably Effective AI](https://www.youtube.com/watch?v=pZybROKrj2Q), a podcast by Google DeepMind's CEO Demis Hassabis, hosted by Prof. Hannah Fry
+
+- <span class="badge rounded-pill bg-info">Conference</span> **11 Aug, 2024:** [The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)](https://2024.aclweb.org/)
