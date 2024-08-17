@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A compilation of write-up notes">
 
-<title>Misc – AIO Course</title>
+<title>Memes – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,27 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../resources/resources.html" rel="prev">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,77 +67,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -156,61 +94,61 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="../module1.html">
+    <a class="dropdown-item" href="./module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module2.html">
+    <a class="dropdown-item" href="./module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module3.html">
+    <a class="dropdown-item" href="./module3.html">
  <span class="dropdown-text">Module 3 |</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module4.html">
+    <a class="dropdown-item" href="./module4.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module5.html">
+    <a class="dropdown-item" href="./module5.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module6.html">
+    <a class="dropdown-item" href="./module6.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module7.html">
+    <a class="dropdown-item" href="./module7.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module8.html">
+    <a class="dropdown-item" href="./module8.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module9.html">
+    <a class="dropdown-item" href="./module9.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../module10.html">
+    <a class="dropdown-item" href="./module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../resources/resources.html" aria-current="page"> 
+    <a class="nav-link active" href="./resources/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../misc/misc.html"> 
+    <a class="nav-link" href="./misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ainews.html"> 
+    <a class="nav-link" href="./ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../memes.html"> 
+    <a class="nav-link" href="./memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -226,7 +164,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Misc</h1>
+          <h1 class="quarto-secondary-nav-title">Memes</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -235,28 +173,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Misc</h1>
-                  <div>
-        <div class="description">
-          A compilation of write-up notes
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -268,7 +185,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -283,61 +200,61 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module1.html" class="sidebar-item-text sidebar-link">
+  <a href="./module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module2.html" class="sidebar-item-text sidebar-link">
+  <a href="./module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module3.html" class="sidebar-item-text sidebar-link">
+  <a href="./module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module4.html" class="sidebar-item-text sidebar-link">
+  <a href="./module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module5.html" class="sidebar-item-text sidebar-link">
+  <a href="./module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module6.html" class="sidebar-item-text sidebar-link">
+  <a href="./module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module7.html" class="sidebar-item-text sidebar-link">
+  <a href="./module7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module8.html" class="sidebar-item-text sidebar-link">
+  <a href="./module8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module9.html" class="sidebar-item-text sidebar-link">
+  <a href="./module9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module10.html" class="sidebar-item-text sidebar-link">
+  <a href="./module10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 10</span></a>
   </div>
 </li>
@@ -354,13 +271,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/resources.html" class="sidebar-item-text sidebar-link">
+  <a href="./resources/resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../misc/misc.html" class="sidebar-item-text sidebar-link active">
+  <a href="./misc/misc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Misc</span></a>
   </div>
 </li>
@@ -371,96 +288,51 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="attention">attention <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nlp">nlp <span class="quarto-category-count">(2)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Memes</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="4">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 23.3%;justify-content: center;">
+<p><img src="memes/Screenshot 2024-08-16 at 01.00.30.png" class="img-fluid" width="300"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.2%;justify-content: center;">
+<p><img src="memes/Screenshot 2024-08-16 at 01.06.44.png" class="img-fluid" width="390"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 23.3%;justify-content: center;">
+<p><img src="memes/Screenshot 2024-08-16 at 01.09.01.png" class="img-fluid" width="300"></p>
+</div>
+</div>
+</div>
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="nlp,attention,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723632876523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020">
-<div class="thumbnail">
-<p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">Spelled-out Introduction to Simple Self-Attention mechanism, in code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('attention'); return false;">
-attention
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="nlp,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723639103914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1058">
-<div class="thumbnail">
-<p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">Tokenization and Word Embeddings</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1025,15 +897,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../resources/resources.html" class="pagination-link" aria-label="Resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Resources</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

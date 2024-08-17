@@ -6,6 +6,8 @@ format:
   html:
     grid:
       body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
 title-block-banner: true
 ---
 
@@ -37,7 +39,9 @@ As for competition training, this module contains three lectures with the goal o
 The central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role. 
 
 
-# Schedule
+# Course Schedule and Material
+
+## Main Lessons
 
 | Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
 |------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
@@ -55,17 +59,32 @@ The central theme of the extra class for this module is about Algorithms and Com
 | 17/05/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span>              | [OOP with Python](https://www.youtube.com/watch?v=xdvi9Dzr6Qw)                           | Dr. Đình Vinh  | [230517 - M01ML05](https://drive.google.com/drive/folders/1BB5CjrmLIOcTahQg7eGO2g6UIvrigPqK)          | [Previous offering by Dr. Vinh](https://www.youtube.com/watch?si=L9C_yrUrpA1pRFH_&v=jgHnlmbr2C8&feature=youtu.be)            |
 | 19/05/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span>              | [OOP with Python](https://www.youtube.com/watch?v=8oDDxWeiL8A&feature=youtu.be)                           | Dr. Đình Vinh  | [230519 - M01ML06](https://drive.google.com/drive/folders/1nunyJYSXD_9k1ybzvl_fmQbxfnoRhX_K)          |                                          |
 | 21/05/23   | <span class="badge rounded-pill bg-info">Exercise Session</span>        | [TA-Exercise](https://www.youtube.com/watch?v=RGPQgXzOqhg)                               | Dr. Vinh       | [230521 - M01ES03](https://drive.google.com/drive/folders/1gUZqdRAeIyqN-em8-1l0zjHKCZVIzOvT)          |                                          |
+
+## Project handout and material
+
+| Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
+|------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
 | 22/05/23   | <span class="badge rounded-pill bg-danger">Project handout</span>              | [Object Detection with YOLOv8 Project](https://drive.google.com/file/d/1bzM445pd7SMjgFgwA7hzjrjgT6Y3nmWL/view)      | TA Thắng       | [[solution]](https://drive.google.com/file/d/1bEAONvHpShFyB-LfmBSSzBsLNiWXdX-H/view)                |                                          |
 | 22/05/23   | <span class="badge rounded-pill bg-danger">Project handout</span>            | [Data Manipulation and Crawling Project](https://drive.google.com/file/d/1I8WKELOqHDDFxrhSkaoAoYN1eTxlbzqn/view)    | TA Thắng       | [[solution]](https://drive.google.com/file/d/1ryoNAvV8TsZAn_PX-2PPf780zswEqGKE/view)                |                                          |
 | 22/05/23   | <span class="badge rounded-pill bg-danger">Project handout</span>              | [ChatGPT Applications Project](https://drive.google.com/file/d/1h4gQH9UeItUf6UPNoRTL-nmda0fxFD3D/view)              | TA Thái        | [[solution]](https://drive.google.com/file/d/1wDuqMjj_2d3od7hkoYa2dEd9hpXc3AC2/view)                |                                          |
-| 24/05/23   | <span class="badge rounded-pill bg-light">Project tutorial</span>        | [Image Project: Yolov8 for Object Detection](https://www.youtube.com/watch?v=L6Sin-ieEfM)| TA Thắng       | [230524 - M01PT01](https://drive.google.com/drive/folders/1ddidsMv8ISUrKzUViUtxnjpHwJXr6bv-)          |                                          |
-| 26/05/23   | <span class="badge rounded-pill bg-light">Project tutorial</span>        | [Data Manipulation using Python Libraries](https://www.youtube.com/watch?v=LRiMeQdzDPA)  | TA Thắng       | [230526 - M01PT02](https://drive.google.com/drive/folders/11ikSSLi_Hjmt3EHlSWadFohowyxD_44U)          |                                          |
-| 28/05/23   | <span class="badge rounded-pill bg-light">Project tutorial</span>        | [Text Project: ChatGPT-based Application](https://www.youtube.com/watch?v=i-fXB0CFOMY)   | TA Thái        | [230528 - M01PT03](https://drive.google.com/drive/folders/13LVFM_r7ipY-umR6b_-yAs4NiEPIWv37)          |                                          |
+| 24/05/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span>         | [Image Project: Yolov8 for Object Detection](https://www.youtube.com/watch?v=L6Sin-ieEfM)| TA Thắng       | [230524 - M01PT01](https://drive.google.com/drive/folders/1ddidsMv8ISUrKzUViUtxnjpHwJXr6bv-)          |                                          |
+| 26/05/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span>        | [Data Manipulation using Python Libraries](https://www.youtube.com/watch?v=LRiMeQdzDPA)  | TA Thắng       | [230526 - M01PT02](https://drive.google.com/drive/folders/11ikSSLi_Hjmt3EHlSWadFohowyxD_44U)          |                                          |
+| 28/05/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span>        | [Text Project: ChatGPT-based Application](https://www.youtube.com/watch?v=i-fXB0CFOMY)   | TA Thái        | [230528 - M01PT03](https://drive.google.com/drive/folders/13LVFM_r7ipY-umR6b_-yAs4NiEPIWv37)          |                                          |
 | 23/05/23   | <span class="badge rounded-pill bg-light">Python Support</span>         | [For, List and Dictionary](https://www.youtube.com/watch?v=_WkMMGINOVA)                  | TA Tiềm        | [230523 - M02CR01](https://drive.google.com/drive/folders/1mEwkeD_DAaDMoBVY44zjhl4B15snHTcd)          |                                          |
+
+## Competition training
+
+| Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
+|------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
 | 11/05/23   | <span class="badge rounded-pill bg-warning">Competition</span>                  | [Data Visualization](https://www.youtube.com/watch?v=BtAIW83TCvc)                        | TA Hùng        | [230511 - M01AC01](https://drive.google.com/drive/folders/1p1s-HXHjuwZyRDyWhZqkDiIkeAa93Rlq)          |                                          |
 | 18/05/23   |<span class="badge rounded-pill bg-warning">Competition</span> | [Competition tasks and metrics](https://www.youtube.com/watch?v=98JL_UFpxlQ)                                          |       TA Hùng          | [230518 - M01AC02](https://drive.google.com/drive/folders/1TZvYRpntsLQdYhKieewtItkAo3YhfBbp)          |         |
 | 25/05/23   | <span class="badge rounded-pill bg-warning">Competition</span>                  | [Design Validation](https://www.youtube.com/watch?v=TyVCXo45c1Y)                         |      TA Hùng           | [230525 - M01AC03](https://drive.google.com/drive/folders/1WnLoiazazGWNxKtmt9IjH0ppAikqtLpk)          |                                          |
-| 06/05/23   | <span class="badge rounded-pill bg-dark">Algorithms & Complexity</span> | [Big-O (Time analysis)](https://www.youtube.com/watch?v=i97kAPZtq4A)                     | TA Thái        | [230506 - M01EC01](https://drive.google.com/drive/folders/1yof63zCXcoyIIZWvU2CQ4cYWOPIGeT-H)          |                                        |
+
+## Extra class: Algorithms and Complexity
+
+| Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
+|------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
+| 06/05/23   | <span class="badge rounded-pill bg-dark">Algorithms & Complexity</span> | [Big-O (Time analysis)](https://www.youtube.com/watch?v=i97kAPZtq4A)         | TA Thái        | [230506 - M01EC01](https://drive.google.com/drive/folders/1yof63zCXcoyIIZWvU2CQ4cYWOPIGeT-H)          |                                        |
 | 13/05/23   | <span class="badge rounded-pill bg-dark">Algorithms & Complexity</span>    | [Brute-force Exhaustive](https://www.youtube.com/watch?v=4J3D5it9ugA)                    |  TA Thái              | [230513 - M01EC02](https://drive.google.com/drive/folders/1deNcaXHYAbE5A3cgKKv1z7wUAdLmfcC6)          |                                          |
 | 20/05/23   | <span class="badge rounded-pill bg-dark">Algorithms & Complexity</span>    | [Recursion and Two Pointer](https://www.youtube.com/watch?v=dOrQveeQz90)                 |  TA Thái        | [230520 - M01EC03](https://drive.google.com/drive/folders/1EmyHR-SB0L1Lw5OYUQw770iLfuKB1JxZ)          |                                          |
 | 27/05/23   | <span class="badge rounded-pill bg-dark">Algorithms & Complexity</span>    | [Dynamic Programming](https://www.youtube.com/watch?v=38gV3ggD0Pg)                       |    TA Thái              | [230527 - M01EC04](https://drive.google.com/drive/folders/1aEtoJ-i6WbrmA7_-xDXIIhcpjMBzvFch)          |                                       |

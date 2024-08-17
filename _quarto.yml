@@ -3,18 +3,14 @@ project:
 
 website:
   title: "AIO Course"
-  comments: 
-    hypothesis:
-      theme: clean
-      openSidebar: false
+  bread-crumbs: false
   search:
-    location: navbar
-    type: overlay
+    location: sidebar
+    type: textbox
   navbar:
     background: '#434445'
-    foreground: "#ffffff"
     search: true
-    left:
+    right:
       - text: "Lectures"
         menu:
           - href: module1.qmd
@@ -43,9 +39,10 @@ website:
         text: Misc
       - href: ainews.qmd
         text: AI News
+      - href: memes.qmd
+        text: Memes
   back-to-top-navigation: true
   page-navigation: true
-  bread-crumbs: false
   page-footer: 
     ' "*(AI) will rank among our greatest technological achievements, and everyone deserves to play a role in shaping it*". — Fei-Fei Li' 
   sidebar:
@@ -82,20 +79,22 @@ website:
             href: resources/resources.qmd
           - text: Misc 
             href: misc/misc.qmd
-      
+language:
+  search-box-placeholder: Search this website
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
+      light: [flatly, custom-theme.scss]
+      dark: [darkly, custom-theme.scss]
     css: styles.css
     toc: true
+    linkcolor: "#3b9ced"
+    fontsize: 0.85em
     grid:
       sidebar-width: 220px
       body-width: 1000px
       margin-width: 220px
       gutter-width: 1.4rem
-
 
 
 

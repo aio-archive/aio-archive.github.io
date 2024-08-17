@@ -44,11 +44,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,18 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean",
-  "openSidebar": false
-}
-</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -97,17 +86,16 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lectures</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-lectures">    
         <li>
     <a class="dropdown-item" href="./module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
@@ -162,6 +150,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./memes.html"> 
+<span class="menu-text">Memes</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -177,6 +169,9 @@ ul.task-list li input[type="checkbox"] {
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
           <h1 class="quarto-secondary-nav-title">Module 1 - Introduction to Python Programming</h1>
         </a>     
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
     </div>
   </nav>
 </header>
@@ -200,6 +195,11 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -318,7 +318,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#competition-training" id="toc-competition-training" class="nav-link" data-scroll-target="#competition-training">Competition Training</a></li>
   <li><a href="#extra-class" id="toc-extra-class" class="nav-link" data-scroll-target="#extra-class">Extra class</a></li>
   </ul></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#course-schedule-and-material" id="toc-course-schedule-and-material" class="nav-link" data-scroll-target="#course-schedule-and-material">Course Schedule and Material</a>
+  <ul class="collapse">
+  <li><a href="#main-lessons" id="toc-main-lessons" class="nav-link" data-scroll-target="#main-lessons">Main Lessons</a></li>
+  <li><a href="#project-handout-and-material" id="toc-project-handout-and-material" class="nav-link" data-scroll-target="#project-handout-and-material">Project handout and material</a></li>
+  <li><a href="#competition-training-1" id="toc-competition-training-1" class="nav-link" data-scroll-target="#competition-training-1">Competition training</a></li>
+  <li><a href="#extra-class-algorithms-and-complexity" id="toc-extra-class-algorithms-and-complexity" class="nav-link" data-scroll-target="#extra-class-algorithms-and-complexity">Extra class: Algorithms and Complexity</a></li>
+  </ul></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   </ul>
 </nav>
@@ -360,9 +366,11 @@ This website is still under construction. Some contents and functions might temp
 <p>The central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.</p>
 </section>
 </section>
-<section id="schedule" class="level1">
-<h1>Schedule</h1>
-<table class="table-striped table-hover caption-top table">
+<section id="course-schedule-and-material" class="level1">
+<h1>Course Schedule and Material</h1>
+<section id="main-lessons" class="level2">
+<h2 class="anchored" data-anchor-id="main-lessons">Main Lessons</h2>
+<table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
 <col style="width: 15%">
@@ -494,6 +502,31 @@ This website is still under construction. Some contents and functions might temp
 <td><a href="https://drive.google.com/drive/folders/1gUZqdRAeIyqN-em8-1l0zjHKCZVIzOvT">230521 - M01ES03</a></td>
 <td></td>
 </tr>
+</tbody>
+</table>
+</section>
+<section id="project-handout-and-material" class="level2">
+<h2 class="anchored" data-anchor-id="project-handout-and-material">Project handout and material</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>22/05/23</td>
 <td><span class="badge rounded-pill bg-danger">Project handout</span></td>
@@ -520,7 +553,7 @@ This website is still under construction. Some contents and functions might temp
 </tr>
 <tr class="even">
 <td>24/05/23</td>
-<td><span class="badge rounded-pill bg-light">Project tutorial</span></td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
 <td><a href="https://www.youtube.com/watch?v=L6Sin-ieEfM">Image Project: Yolov8 for Object Detection</a></td>
 <td>TA Thắng</td>
 <td><a href="https://drive.google.com/drive/folders/1ddidsMv8ISUrKzUViUtxnjpHwJXr6bv-">230524 - M01PT01</a></td>
@@ -528,7 +561,7 @@ This website is still under construction. Some contents and functions might temp
 </tr>
 <tr class="odd">
 <td>26/05/23</td>
-<td><span class="badge rounded-pill bg-light">Project tutorial</span></td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
 <td><a href="https://www.youtube.com/watch?v=LRiMeQdzDPA">Data Manipulation using Python Libraries</a></td>
 <td>TA Thắng</td>
 <td><a href="https://drive.google.com/drive/folders/11ikSSLi_Hjmt3EHlSWadFohowyxD_44U">230526 - M01PT02</a></td>
@@ -536,7 +569,7 @@ This website is still under construction. Some contents and functions might temp
 </tr>
 <tr class="even">
 <td>28/05/23</td>
-<td><span class="badge rounded-pill bg-light">Project tutorial</span></td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
 <td><a href="https://www.youtube.com/watch?v=i-fXB0CFOMY">Text Project: ChatGPT-based Application</a></td>
 <td>TA Thái</td>
 <td><a href="https://drive.google.com/drive/folders/13LVFM_r7ipY-umR6b_-yAs4NiEPIWv37">230528 - M01PT03</a></td>
@@ -550,7 +583,32 @@ This website is still under construction. Some contents and functions might temp
 <td><a href="https://drive.google.com/drive/folders/1mEwkeD_DAaDMoBVY44zjhl4B15snHTcd">230523 - M02CR01</a></td>
 <td></td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</section>
+<section id="competition-training-1" class="level2">
+<h2 class="anchored" data-anchor-id="competition-training-1">Competition training</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>11/05/23</td>
 <td><span class="badge rounded-pill bg-warning">Competition</span></td>
 <td><a href="https://www.youtube.com/watch?v=BtAIW83TCvc">Data Visualization</a></td>
@@ -558,7 +616,7 @@ This website is still under construction. Some contents and functions might temp
 <td><a href="https://drive.google.com/drive/folders/1p1s-HXHjuwZyRDyWhZqkDiIkeAa93Rlq">230511 - M01AC01</a></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>18/05/23</td>
 <td><span class="badge rounded-pill bg-warning">Competition</span></td>
 <td><a href="https://www.youtube.com/watch?v=98JL_UFpxlQ">Competition tasks and metrics</a></td>
@@ -566,7 +624,7 @@ This website is still under construction. Some contents and functions might temp
 <td><a href="https://drive.google.com/drive/folders/1TZvYRpntsLQdYhKieewtItkAo3YhfBbp">230518 - M01AC02</a></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>25/05/23</td>
 <td><span class="badge rounded-pill bg-warning">Competition</span></td>
 <td><a href="https://www.youtube.com/watch?v=TyVCXo45c1Y">Design Validation</a></td>
@@ -574,6 +632,31 @@ This website is still under construction. Some contents and functions might temp
 <td><a href="https://drive.google.com/drive/folders/1WnLoiazazGWNxKtmt9IjH0ppAikqtLpk">230525 - M01AC03</a></td>
 <td></td>
 </tr>
+</tbody>
+</table>
+</section>
+<section id="extra-class-algorithms-and-complexity" class="level2">
+<h2 class="anchored" data-anchor-id="extra-class-algorithms-and-complexity">Extra class: Algorithms and Complexity</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>06/05/23</td>
 <td><span class="badge rounded-pill bg-dark">Algorithms &amp; Complexity</span></td>
@@ -608,6 +691,7 @@ This website is still under construction. Some contents and functions might temp
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 <section id="further-resources" class="level1">
 <h1>Further Resources</h1>
@@ -1216,4 +1300,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

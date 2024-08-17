@@ -32,9 +32,14 @@
   {
     "objectID": "module1.html#main-lessons",
     "href": "module1.html#main-lessons",
-    "title": "Module 1: Introduction to Python Programming",
-    "section": "",
-    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\n[solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\nNote\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\nNote\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\n[solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\n\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03\n\n\n\n\n22/05/23 | Project handout | Object Detection with YOLOv8 Project | TA Thắng | [solution] | |\n22/05/23 | Project handout | Data Manipulation and Crawling Project | TA Thắng | [solution] | |\n22/05/23 | Project handout | ChatGPT Applications Project | TA Thái | [solution] | |\n24/05/23 | Project tutorial | Image Project: Yolov8 for Object Detection| TA Thắng | 230524 - M01PT01 | |\n26/05/23 | Project tutorial | Data Manipulation using Python Libraries | TA Thắng | 230526 - M01PT02 | |\n28/05/23 | Project tutorial | Text Project: ChatGPT-based Application | TA Thái | 230528 - M01PT03 | |\n23/05/23 | Python Support | For, List and Dictionary | TA Tiềm | 230523 - M02CR01 | |\n11/05/23 | Competition | Data Visualization | TA Hùng | 230511 - M01AC01 | |\n18/05/23 |Competition | Competition tasks and metrics | TA Hùng | 230518 - M01AC02 | |\n25/05/23 | Competition | Design Validation | TA Hùng | 230525 - M01AC03 | |\n06/05/23 | Algorithms & Complexity | Big-O (Time analysis) | TA Thái | 230506 - M01EC01 | |\n13/05/23 | Algorithms & Complexity | Brute-force Exhaustive | TA Thái | 230513 - M01EC02 | |\n20/05/23 | Algorithms & Complexity | Recursion and Two Pointer | TA Thái | 230520 - M01EC03 | |\n27/05/23 | Algorithms & Complexity | Dynamic Programming | TA Thái | 230527 - M01EC04 | |\n: {.striped .hover}"
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\n[solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\nNote\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\nNote\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\n[solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\n\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
   },
   {
     "objectID": "module1.html#projects",
@@ -139,7 +144,7 @@
     "section": "",
     "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -336,7 +341,7 @@
     "section": "",
     "text": "Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 4"
     ]
@@ -360,7 +365,7 @@
     "section": "",
     "text": "Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 8"
     ]
@@ -372,7 +377,7 @@
     "section": "",
     "text": "Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 10"
     ]
@@ -396,7 +401,7 @@
     "section": "",
     "text": "Back to top",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 5"
     ]
@@ -408,7 +413,7 @@
     "section": "Main Lessons",
     "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\n[solution]\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\n[solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES04\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\n[solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -418,9 +423,9 @@
     "href": "module2.html#project-tutorials",
     "title": "Module 2 - Calculus and Linear Algebra for AI",
     "section": "Project Tutorials",
-    "text": "Project Tutorials\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject tutorial - PT\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject Handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject Handout\nText Project: Text Retrieval (using Pretrained Embedding)\n\n[Exercise] [solution]\n\n\n\n10/07/23\nProject Handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject tutorial - PT\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\n\n230716 - M02PT03\n\n\n\n14/07/23\nProject tutorial - PT\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject tutorial - PT\nImage Project: Depth Information Reconstruction\n\n230712 - M02PT01",
+    "text": "Project Tutorials\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject tutorial - PT\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject Handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject Handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n\n\n\n10/07/23\nProject Handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject tutorial - PT\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject tutorial - PT\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject tutorial - PT\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -432,7 +437,7 @@
     "section": "Python Tutorial Sessions",
     "text": "Python Tutorial Sessions\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nPython Support\nList for 2D Data\nTA Tiềm\n230530 - M02CR02\n\n\n\n06/06/23\nPython Support\nList for 3D data\n\n230606 - M02CR03\n\n\n\n13/06/23\nPython Support\nArray 1D using NumPy\n\n230613 - M02CR04\n\n\n\n20/06/23\nPython Support\nArray 2D and 3D using NumPy\n\n230620 - M02CR05\n\n\n\n27/06/23\nPython Support\nBasic Numpy\n\n230627 - M02CR06",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -444,7 +449,7 @@
     "section": "Extra Classes: Database and SQL",
     "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n03/06/23\nExtra class: Database and SQL\nToward Data Science: Database-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nExtra class: Database and SQL\nDatabase-SQL (2)\n\n230611 - M02ES02\n\n\n\n17/06/23\nExtra class: Database and SQL\nDatabase-SQL (3)\n\n230617 - M02EC03\n\n\n\n24/06/23\nExtra class: Database and SQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nExtra class: Database and SQL\nDatabase-NoSQL (2)\n\n230701 - M02EC05\n\n\n\n08/07/23\nExtra class: Database and SQL\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -456,7 +461,7 @@
     "section": "Competition Training",
     "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling\n\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\n\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\n\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\n\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\n\n230706 - M02AC06",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -468,7 +473,7 @@
     "section": "Summer School on Deep Learning",
     "text": "Summer School on Deep Learning\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n05/07/23\nSummer school on Deep Learning\nVIASM Summer school on Recent Advances in Deep Learning\n\nSildes",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 2"
     ]
@@ -506,7 +511,7 @@
     "href": "resources/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\nNEW: Generative AI course by Stanford\n\nBooks\nBlogs\nCourses\nFundamental Papers\n\n\n\n\n Back to top",
+    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\nNEW: Generative AI course by Stanford\n\nBooks\nBlogs\nCourses\nFundamental Papers\nGitHub repository\n\n\n\n\n Back to top",
     "crumbs": [
       "Resources",
       "Others",
@@ -574,7 +579,7 @@
     "href": "resources/blogs.html",
     "title": "Blogs",
     "section": "",
-    "text": "https://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\n\n\n\n\n Back to top"
+    "text": "Fabian Pedregosa’s blog\nhttps://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\n\n\n\n\n Back to top"
   },
   {
     "objectID": "misc/misc.html",
@@ -614,6 +619,56 @@
     "href": "ainews.html",
     "title": "AI News",
     "section": "",
-    "text": "Podcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\nConference 11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)\n\n\n\n\n Back to top"
+    "text": "Papers\n\nNLP MMToM-QA: Multimodal Theory of Mind Question Answering at ACL2024, Outstanding Paper Award.\n\n\n\nPress\n\nEvent Jeff Dean and other prestigious guests are arriving to Vietnam to attend the GenAI Summit.\nPodcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\n\n\n\nConferences\n\n11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024).\nACL is not an AI conference.\nGloVe wins the test-of-time award.\n3rd Workshop on Advances in Language and Vision Research (ALVR)\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "memes.html",
+    "href": "memes.html",
+    "title": "Memes",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "resources/repo.html",
+    "href": "resources/repo.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "PyTorch Tutorial for Deep Learning Researchers\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "module1.html#project-handout-and-material",
+    "href": "module1.html#project-handout-and-material",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Project handout and material",
+    "text": "Project handout and material\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n22/05/23\nProject handout\nObject Detection with YOLOv8 Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nData Manipulation and Crawling Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nChatGPT Applications Project\nTA Thái\n[solution]\n\n\n\n24/05/23\nProject Tutorial\nImage Project: Yolov8 for Object Detection\nTA Thắng\n230524 - M01PT01\n\n\n\n26/05/23\nProject Tutorial\nData Manipulation using Python Libraries\nTA Thắng\n230526 - M01PT02\n\n\n\n28/05/23\nProject Tutorial\nText Project: ChatGPT-based Application\nTA Thái\n230528 - M01PT03\n\n\n\n23/05/23\nPython Support\nFor, List and Dictionary\nTA Tiềm\n230523 - M02CR01",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "module1.html#competition-training-1",
+    "href": "module1.html#competition-training-1",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition training",
+    "text": "Competition training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n11/05/23\nCompetition\nData Visualization\nTA Hùng\n230511 - M01AC01\n\n\n\n18/05/23\nCompetition\nCompetition tasks and metrics\nTA Hùng\n230518 - M01AC02\n\n\n\n25/05/23\nCompetition\nDesign Validation\nTA Hùng\n230525 - M01AC03",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "module1.html#extra-class-algorithms-and-complexity",
+    "href": "module1.html#extra-class-algorithms-and-complexity",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class: Algorithms and Complexity",
+    "text": "Extra class: Algorithms and Complexity\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n06/05/23\nAlgorithms & Complexity\nBig-O (Time analysis)\nTA Thái\n230506 - M01EC01\n\n\n\n13/05/23\nAlgorithms & Complexity\nBrute-force Exhaustive\nTA Thái\n230513 - M01EC02\n\n\n\n20/05/23\nAlgorithms & Complexity\nRecursion and Two Pointer\nTA Thái\n230520 - M01EC03\n\n\n\n27/05/23\nAlgorithms & Complexity\nDynamic Programming\nTA Thái\n230527 - M01EC04",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
   }
 ]
