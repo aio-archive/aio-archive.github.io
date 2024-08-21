@@ -59,8 +59,10 @@ The central theme of the extra class for this module is about Algorithms and Com
 | 17/05/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span>              | [OOP with Python](https://www.youtube.com/watch?v=xdvi9Dzr6Qw)                           | Dr. Đình Vinh  | [230517 - M01ML05](https://drive.google.com/drive/folders/1BB5CjrmLIOcTahQg7eGO2g6UIvrigPqK)          | [Previous offering by Dr. Vinh](https://www.youtube.com/watch?si=L9C_yrUrpA1pRFH_&v=jgHnlmbr2C8&feature=youtu.be)            |
 | 19/05/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span>              | [OOP with Python](https://www.youtube.com/watch?v=8oDDxWeiL8A&feature=youtu.be)                           | Dr. Đình Vinh  | [230519 - M01ML06](https://drive.google.com/drive/folders/1nunyJYSXD_9k1ybzvl_fmQbxfnoRhX_K)          |                                          |
 | 21/05/23   | <span class="badge rounded-pill bg-info">Exercise Session</span>        | [TA-Exercise](https://www.youtube.com/watch?v=RGPQgXzOqhg)                               | Dr. Vinh       | [230521 - M01ES03](https://drive.google.com/drive/folders/1gUZqdRAeIyqN-em8-1l0zjHKCZVIzOvT)          |                                          |
+:   {.striped .hover}
 
 ## Project handout and material
+
 
 | Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
 |------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
@@ -71,14 +73,17 @@ The central theme of the extra class for this module is about Algorithms and Com
 | 26/05/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span>        | [Data Manipulation using Python Libraries](https://www.youtube.com/watch?v=LRiMeQdzDPA)  | TA Thắng       | [230526 - M01PT02](https://drive.google.com/drive/folders/11ikSSLi_Hjmt3EHlSWadFohowyxD_44U)          |                                          |
 | 28/05/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span>        | [Text Project: ChatGPT-based Application](https://www.youtube.com/watch?v=i-fXB0CFOMY)   | TA Thái        | [230528 - M01PT03](https://drive.google.com/drive/folders/13LVFM_r7ipY-umR6b_-yAs4NiEPIWv37)          |                                          |
 | 23/05/23   | <span class="badge rounded-pill bg-light">Python Support</span>         | [For, List and Dictionary](https://www.youtube.com/watch?v=_WkMMGINOVA)                  | TA Tiềm        | [230523 - M02CR01](https://drive.google.com/drive/folders/1mEwkeD_DAaDMoBVY44zjhl4B15snHTcd)          |                                          |
+:   {.striped .hover}
 
 ## Competition training
+
 
 | Date       | Type                        | Content                                   | Instructor     | Handout                   | Further Reading                          |
 |------------|-----------------------------|-------------------------------------------|----------------|---------------------------|------------------------------------------|
 | 11/05/23   | <span class="badge rounded-pill bg-warning">Competition</span>                  | [Data Visualization](https://www.youtube.com/watch?v=BtAIW83TCvc)                        | TA Hùng        | [230511 - M01AC01](https://drive.google.com/drive/folders/1p1s-HXHjuwZyRDyWhZqkDiIkeAa93Rlq)          |                                          |
 | 18/05/23   |<span class="badge rounded-pill bg-warning">Competition</span> | [Competition tasks and metrics](https://www.youtube.com/watch?v=98JL_UFpxlQ)                                          |       TA Hùng          | [230518 - M01AC02](https://drive.google.com/drive/folders/1TZvYRpntsLQdYhKieewtItkAo3YhfBbp)          |         |
 | 25/05/23   | <span class="badge rounded-pill bg-warning">Competition</span>                  | [Design Validation](https://www.youtube.com/watch?v=TyVCXo45c1Y)                         |      TA Hùng           | [230525 - M01AC03](https://drive.google.com/drive/folders/1WnLoiazazGWNxKtmt9IjH0ppAikqtLpk)          |                                          |
+:   {.striped .hover}
 
 ## Extra class: Algorithms and Complexity
 

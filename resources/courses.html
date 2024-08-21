@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -67,18 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean",
-  "openSidebar": false
-}
-</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -116,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../module3.html">
- <span class="dropdown-text">Module 3 |</span></a>
+ <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../module4.html">
@@ -159,6 +147,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../ainews.html"> 
 <span class="menu-text">AI News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../memes.html"> 
+<span class="menu-text">Memes</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -303,11 +295,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning">Machine Learning</a></li>
   <li><a href="#deep-learning" id="toc-deep-learning" class="nav-link" data-scroll-target="#deep-learning">Deep Learning</a>
   <ul class="collapse">
-  <li><a href="#nlp" id="toc-nlp" class="nav-link" data-scroll-target="#nlp">NLP</a></li>
+  <li><a href="#nlp" id="toc-nlp" class="nav-link" data-scroll-target="#nlp">NLP</a>
+  <ul class="collapse">
+  <li><a href="#llms" id="toc-llms" class="nav-link" data-scroll-target="#llms">LLMs</a></li>
+  </ul></li>
   <li><a href="#computer-vision" id="toc-computer-vision" class="nav-link" data-scroll-target="#computer-vision">Computer Vision</a></li>
   <li><a href="#multimodal" id="toc-multimodal" class="nav-link" data-scroll-target="#multimodal">Multimodal</a></li>
   </ul></li>
-  <li><a href="#llms" id="toc-llms" class="nav-link" data-scroll-target="#llms">LLMs</a></li>
   <li><a href="#others" id="toc-others" class="nav-link" data-scroll-target="#others">Others</a></li>
   </ul>
 </nav>
@@ -341,34 +335,241 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="probability-and-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="probability-and-statistics">Probability and Statistics</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://projects.iq.harvard.edu/stat110/home">Stat110: Probability</a></td>
+<td>Harvard University</td>
+<td><a href="https://youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&amp;si=5oxds9NTL7dSkzVd">Lectures</a></td>
+<td>[x]</td>
+</tr>
+<tr class="even">
+<td>Easy</td>
+<td><a href="https://web.stanford.edu/class/cs109/">CS109: Probability for Computer Scientists</a></td>
+<td>Stanford University</td>
+<td><a href="https://youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg&amp;si=YTF4-_xWp1WDxCDF">Lectures</a></td>
+<td>[x]</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://web.stanford.edu/class/stats116/syllabus.html">Stats 116: Introduction to Probability</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td><a href="https://youtube.com/playlist?list=PLqOZ6FD_RQ7k-j-86QUC2_0nEu0QOP-Wy&amp;si=-fG6RSqNq7zQWSOd">Math 131B: Introduction to Probability and Statistics</a></td>
+<td>UC Irvine</td>
+<td><a href="https://youtube.com/playlist?list=PLqOZ6FD_RQ7k-j-86QUC2_0nEu0QOP-Wy&amp;si=-fG6RSqNq7zQWSOd">Lectures</a></td>
+<td>[x]</td>
+</tr>
+<tr class="odd">
+<td>Difficult</td>
+<td><a href="https://web.stanford.edu/class/stats300b/syllabus.html">Stats 300B: Theory of Statistics II</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Difficult</td>
+<td><a href="https://web.stanford.edu/class/stats305a/">Statistics 305a: Applied Statistics (Linear Models and More)</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="optimization" class="level2">
 <h2 class="anchored" data-anchor-id="optimization">Optimization</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Difficult</td>
+<td><a href="https://web.stanford.edu/class/ee364m/syllabus.html">EE364m: The Mathematics of Convexity</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="machine-learning" class="level1">
 <h1>Machine Learning</h1>
-<ul>
-<li><a href="https://eecs189.org/">CS189/289A Introduction to Machine Learning</a>, UC Berkeley</li>
-</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://eecs189.org/">CS189/289A Introduction to Machine Learning</a></td>
+<td>UC Berkeley</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td><a href="https://www.cs.cornell.edu/courses/cs4780/2024sp/">CS 4/5780: Intro to Machine Learning</a></td>
+<td>Cornell University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="deep-learning" class="level1">
 <h1>Deep Learning</h1>
 <section id="nlp" class="level2">
 <h2 class="anchored" data-anchor-id="nlp">NLP</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://web.stanford.edu/class/cs224n/">CS224N: Natural Language Processing with Deep Learning</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td><a href="https://web.stanford.edu/class/cs224u/index.html">CS224U: Natural Language Understanding</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
+<section id="llms" class="level3">
+<h3 class="anchored" data-anchor-id="llms">LLMs</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS 597G: Understanding Large Language Models</a></td>
+<td>Princeton University</td>
+<td>(No lecture video)</td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td><a href="https://nlp.cs.princeton.edu/cos484-sp21/cos584.html">COS584: Advanced Natural Language Processing</a></td>
+<td>Princeton University</td>
+<td>(No lecture video)</td>
+<td>[ ]</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://stanford-cs324.github.io/winter2022/">CS324: Large Language Models</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="computer-vision" class="level2">
 <h2 class="anchored" data-anchor-id="computer-vision">Computer Vision</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://cs231n.stanford.edu/">CS231N: Deep Learning for Computer Vision</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="multimodal" class="level2">
 <h2 class="anchored" data-anchor-id="multimodal">Multimodal</h2>
 </section>
 </section>
-<section id="llms" class="level1">
-<h1>LLMs</h1>
-</section>
 <section id="others" class="level1">
 <h1>Others</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Difficulty</th>
+<th>Course</th>
+<th>University</th>
+<th>Additional Resources</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium</td>
+<td><a href="https://deepgenerativemodels.github.io/syllabus.html">CS236: Generative Models</a></td>
+<td>Stanford University</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+<tr class="even">
+<td>Difficult</td>
+<td><a href="https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/">Stat 241B / CS 281B: Advanced Topics in Statistical Learning</a></td>
+<td>UC Berkeley</td>
+<td></td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

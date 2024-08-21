@@ -30,8 +30,8 @@ title-block-banner: true
 | 07/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Understanding Derivative and Gradient](https://www.youtube.com/watch?v=oDukLU4f97o)        | Dr. Vinh       | [230607 - M02ML03](https://drive.google.com/drive/folders/1OJFbnm6SKOPMx3CVzlssf89C1RlmOhvq) |                 |
 | 09/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Edge Detection and Gradient-based Optimization](https://www.youtube.com/watch?v=mF8XR7KfnUM) |                | [230609 - M02ML04](https://drive.google.com/drive/folders/1PMhyNKd1x25PPvhIgRVBhToBekFZULP4) |                 |
 | 11/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=gP1Ki14Bz8A)                             | Dr. Đình Vinh  | [230611 - M02ES02](https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc) |                 |
-| 14/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (L1, L2 and Huber loss - Level 1)](https://www.youtube.com/watch?v=MG4JZIQcUGk) | Dr. Vinh  | [230614 - M02ML05](https://drive.google.com/drive/folders/1BF_cGNrZWy2gKWr-92ra5JpTEJ0ocSip) |           |
-| 16/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (L1, L2 and Huber loss - Level 2)](https://www.youtube.com/watch?v=6j3Dkb4dD_k) |              | [230616 - M02ML06](https://drive.google.com/drive/folders/1lcdigaepT1grAPZB1ltPM6IDdJ4dirNg) |           |
+| 14/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (1)](https://www.youtube.com/watch?v=MG4JZIQcUGk) | Dr. Vinh  | [230614 - M02ML05](https://drive.google.com/drive/folders/1BF_cGNrZWy2gKWr-92ra5JpTEJ0ocSip) |           |
+| 16/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Linear Regression (2)](https://www.youtube.com/watch?v=6j3Dkb4dD_k) |              | [230616 - M02ML06](https://drive.google.com/drive/folders/1lcdigaepT1grAPZB1ltPM6IDdJ4dirNg) |           |
 | 18/06/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=nUavRivww30&feature=youtu.be)                             | Dr. Đình Vinh  | [230618 - M02ES03](https://drive.google.com/drive/folders/1mf_Qku7PAIbU7x0fZOAKQd3sZGYDvof1) |                 |
 | 21/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Vectorization for Linear Regression (1)](https://www.youtube.com/watch?v=kZbTAmmWngc&feature=youtu.be) | Dr. Vinh | [230621 - M02ML07](https://drive.google.com/drive/folders/14d29aV_WNvJ9seOCEgEcy4rYYGYUq1-_) |   |
 | 23/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> |[ Vectorization for Linear Regression (2)](https://www.youtube.com/watch?v=6j3Dkb4dD_k&feature=youtu.be) | | [230623 - M02ML08](https://drive.google.com/drive/folders/1k1aoklmarP9RzpS0gk7v2xNI_OzzPFCy) |   |
@@ -40,55 +40,60 @@ title-block-banner: true
 | 28/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Basic Linear Algebra and Its Applications](https://www.youtube.com/watch?v=04MiYSvuay4)    | Dr. Vinh       | [230628 - M02ML09](https://drive.google.com/drive/folders/1-Q-XeI9r0bGIcn82V4ttU9kczp_dVTL1) |                 |
 | 30/06/23   | <span class="badge rounded-pill bg-primary">Main Lesson</span> | [Cosine Similarity and Decomposition](https://www.youtube.com/watch?v=1mag0t9xN38)           |                | [230630 - M02ML10](https://drive.google.com/drive/folders/1W1wTFw4rpFi3BK_m7RvZIslpmBuPGwM1) |                 |
 | 02/07/23   | <span class="badge rounded-pill bg-info">Exercise Session</span> | [TA Exercise](https://www.youtube.com/watch?v=7jvTTLx1Hp0)                             | Dr. Đình Vinh  | [230702 - M02ES05](https://drive.google.com/drive/folders/1ScS_voc1D4G4jLLLrl-I1_7Fs3XpoHs7) |                 |
+:   {.striped .hover}
 
-## Project Tutorials
+## Project Tutorial
 
 | Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
 |------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
-| 09/07/23   | Project tutorial - PT | [SVD and its Applications](https://www.youtube.com/watch?v=5NTdCNYof-8&feature=youtu.be)               | Dr. Đình Vinh  | [230709 - M02ET01](https://drive.google.com/drive/folders/19_yKWCIYHAlVeptABt45bX8BdHRDO8mE) |                 |
-| 10/07/23   | Project Handout | [Image Project: Depth Information Reconstruction](https://www.youtube.com/watch?v=i-fXB0CFOMY) | TA Thắng   | [[proposal]](https://drive.google.com/file/d/1r87T7EfRPHDg84ZaCkWXtdsM_hqgWtHn/view)      | |
-| 10/07/23   | Project Handout | [Text Project: Text Retrieval (using Pretrained Embedding)](https://drive.google.com/file/d/1L7H0FJKrtLG1YaS633t9xtGNE0AJxMlP/view) | TA Thắng  | [[solution]](https://drive.google.com/file/d/1BQvZFPuFpE8D8zcsd24CXeHHiDxOsT0s/view) | |
-| 10/07/23   | Project Handout | [Tabular Data Project: Sales Prediction (Linear and non-linear regression)](https://www.youtube.com/watch?v=dowyGFU-3Js) | TA Thái | [[proposal]](https://drive.google.com/file/d/1wJkcwxmgk0wgUlQQDilQ_nv4WAIjblsc/view) | |
-| 12/07/23   | Project tutorial - PT | [Tabular Data Project: Sales Prediction (Linear and non-linear regression)](https://www.youtube.com/watch?v=_WkMMGINOVA) |  TA Thái | [230716 - M02PT03](https://drive.google.com/drive/folders/1YPuN5HMD8di90z6otMGrZwV-swTCUQZW) | |
-| 14/07/23   | Project tutorial - PT | [Text Project: Text Retrieval (using Pretrained Embedding)](https://www.youtube.com/watch?v=dbRLrAkaE5U) | TA Thắng | [230714 - M02PT02](https://drive.google.com/drive/folders/13JQ7DreVfI_vvwz7jmKZaIjZXZtJdxac) | |
-| 16/07/23   | Project tutorial - PT | [Image Project: Depth Information Reconstruction](https://www.youtube.com/watch?v=8znPv3xhQsc) | TA Thắng | [230712 - M02PT01](https://drive.google.com/drive/folders/1rvXAcRdN7HQyuLHNIjU5aDHSJ-XAp2us) | |
+| 09/07/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span> | [SVD and its Applications](https://www.youtube.com/watch?v=5NTdCNYof-8&feature=youtu.be)               | Dr. Đình Vinh  | [230709 - M02ET01](https://drive.google.com/drive/folders/19_yKWCIYHAlVeptABt45bX8BdHRDO8mE) |                 |
+| 10/07/23   | <span class="badge rounded-pill bg-danger">Project handout</span> | [Image Project: Depth Information Reconstruction](https://www.youtube.com/watch?v=i-fXB0CFOMY) | TA Thắng   | [[proposal]](https://drive.google.com/file/d/1r87T7EfRPHDg84ZaCkWXtdsM_hqgWtHn/view)      | |
+| 10/07/23   | <span class="badge rounded-pill bg-danger">Project handout</span> | [Text Project: Text Retrieval (using Pretrained Embedding)](https://drive.google.com/file/d/1L7H0FJKrtLG1YaS633t9xtGNE0AJxMlP/view) | TA Thắng  | [[solution]](https://drive.google.com/file/d/1BQvZFPuFpE8D8zcsd24CXeHHiDxOsT0s/view) | |
+| 10/07/23   | <span class="badge rounded-pill bg-danger">Project handout</span> | [Tabular Data Project: Sales Prediction (Linear and non-linear regression)](https://www.youtube.com/watch?v=dowyGFU-3Js) | TA Thái | [[proposal]](https://drive.google.com/file/d/1wJkcwxmgk0wgUlQQDilQ_nv4WAIjblsc/view) | |
+| 12/07/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span> | [Tabular Data Project: Sales Prediction (Linear and non-linear regression)](https://www.youtube.com/watch?v=_WkMMGINOVA) |  TA Thái | [230716 - M02PT03](https://drive.google.com/drive/folders/1YPuN5HMD8di90z6otMGrZwV-swTCUQZW) | |
+| 14/07/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span> | [Text Project: Text Retrieval (using Pretrained Embedding)](https://www.youtube.com/watch?v=dbRLrAkaE5U) | TA Thắng | [230714 - M02PT02](https://drive.google.com/drive/folders/13JQ7DreVfI_vvwz7jmKZaIjZXZtJdxac) | |
+| 16/07/23   | <span class="badge rounded-pill bg-info">Project Tutorial</span> | [Image Project: Depth Information Reconstruction](https://www.youtube.com/watch?v=8znPv3xhQsc) | TA Thắng | [230712 - M02PT01](https://drive.google.com/drive/folders/1rvXAcRdN7HQyuLHNIjU5aDHSJ-XAp2us) | |
+:   {.striped .hover}
 
 ## Python Tutorial Sessions
 
 | Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
 |------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
-| 30/05/23   | Python Support | L[ist for 2D Data](https://www.youtube.com/watch?v=YcWIexC_Eas)                             | TA Tiềm        | [230530 - M02CR02](https://drive.google.com/drive/folders/1fC86gbjNcTpsd90vVKseut0wZyZVVxxT) |                 |
-| 06/06/23   | Python Support | [List for 3D data](https://www.youtube.com/watch?v=c8ziannz3fI)                             |                | [230606 - M02CR03](https://drive.google.com/drive/folders/1SO4-iYC9-vQvJkuK3yzxO6ImtQvnE6gB) |                 |
-| 13/06/23   | Python Support | [Array 1D using NumPy](https://www.youtube.com/watch?v=WD8eP-44IyQ)                          |                | [230613 - M02CR04](https://drive.google.com/drive/folders/1XKjGWdgmHbCAxet43KgsK2Y781HuxvTi) |                 |
-| 20/06/23   | Python Support | [Array 2D and 3D using NumPy](https://www.youtube.com/watch?v=PLwvP1gmuxM)                   |                | [230620 - M02CR05](https://drive.google.com/drive/folders/1DD87KbYIr7ac2z0KLd8hxVEpLprxqxMY) |                 |
-| 27/06/23   | Python Support | [Basic Numpy](https://www.youtube.com/watch?v=_Qe_IZeJi8U)                                   |                | [230627 - M02CR06](https://drive.google.com/drive/folders/10UMs015f318PV3pJYObKrrK8nY7YSzmm) |                 |
+| 30/05/23   | <span class="badge rounded-pill bg-primary">Python Support</span> | [List for 2D Data](https://www.youtube.com/watch?v=YcWIexC_Eas)                             | TA Tiềm        | [230530 - M02CR02](https://drive.google.com/drive/folders/1fC86gbjNcTpsd90vVKseut0wZyZVVxxT) |                 |
+| 06/06/23   | <span class="badge rounded-pill bg-primary">Python Support</span> | [List for 3D data](https://www.youtube.com/watch?v=c8ziannz3fI)                             |                | [230606 - M02CR03](https://drive.google.com/drive/folders/1SO4-iYC9-vQvJkuK3yzxO6ImtQvnE6gB) |                 |
+| 13/06/23   | <span class="badge rounded-pill bg-primary">Python Support</span> | [Array 1D using NumPy](https://www.youtube.com/watch?v=WD8eP-44IyQ)                          |                | [230613 - M02CR04](https://drive.google.com/drive/folders/1XKjGWdgmHbCAxet43KgsK2Y781HuxvTi) |                 |
+| 20/06/23   | <span class="badge rounded-pill bg-primary">Python Support</span> | [Array 2D and 3D using NumPy](https://www.youtube.com/watch?v=PLwvP1gmuxM)                   |                | [230620 - M02CR05](https://drive.google.com/drive/folders/1DD87KbYIr7ac2z0KLd8hxVEpLprxqxMY) |                 |
+| 27/06/23   | <span class="badge rounded-pill bg-primary">Python Support</span> | [Basic Numpy](https://www.youtube.com/watch?v=_Qe_IZeJi8U)                                   |                | [230627 - M02CR06](https://drive.google.com/drive/folders/10UMs015f318PV3pJYObKrrK8nY7YSzmm) |                 |
+:   {.striped .hover}
 
 ## Extra Classes: Database and SQL
 
 | Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
 |------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
-| 03/06/23   | Extra class: Database and SQL | Toward Data Science: Database-SQL (1) | TA Bảo    | 230603 - M02EC01 |                 |
-| 10/06/23   | Extra class: Database and SQL | Database-SQL (2)                    |                | 230611 - M02ES02 |                 |
-| 17/06/23   | Extra class: Database and SQL | Database-SQL (3)                    |                | 230617 - M02EC03 |                 |
-| 24/06/23   | Extra class: Database and SQL | Database-NoSQL                      | TA Thái        | 230624 - M02EC04 |                 |
-| 01/07/23   | Extra class: Database and SQL | Database-NoSQL (2)                  |                | 230701 - M02EC05 |                 |
-| 08/07/23   | Extra class: Database and SQL | SQL for Big Data                    | TA Thắng       | 230708 - M02EC06 |                 |
+| 03/06/23   | <span class="badge rounded-pill bg-info">Database and SQL</span>  | [Database-SQL (1)](https://www.youtube.com/watch?v=BG4-tWchfWg) | TA Bảo    | [230603 - M02EC01](https://drive.google.com/drive/folders/1mcU9_cP77SrcCaqSr6fNOkHXi-l7IWoa) |                 |
+| 10/06/23   | <span class="badge rounded-pill bg-info">Database and SQL</span> | [Database-SQL (2)](https://www.youtube.com/watch?v=kkbPzohUJ5U)                    | TA Bảo               | [230611 - M02ES02](https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc) |                 |
+| 17/06/23   | <span class="badge rounded-pill bg-info">Database and SQL</span> | [Database-SQL (3)](https://www.youtube.com/watch?v=KLlLPcyhTrM)                    | TA Bảo               | [230617 - M02EC03](https://drive.google.com/drive/folders/1fXl7f3QLJ_UlpA70vgMe9j9ZbaFT9YYs) |                 |
+| 24/06/23   | <span class="badge rounded-pill bg-success">NoSQL</span>| [Database-NoSQL](https://www.youtube.com/watch?v=qIhsAYTsUn8)                      | TA Thái        | 230624 - M02EC04 |                 |
+| 01/07/23   | <span class="badge rounded-pill bg-success">NoSQL</span> | [Database-NoSQL (2)](https://www.youtube.com/watch?v=QdMSN0jPrwE)                  | TA Thái               | 230701 - M02EC05 |                 |
+| 08/07/23   | <span class="badge rounded-pill bg-success">Big Data</span> | [SQL for Big Data](https://www.youtube.com/watch?v=bjMdetZq69o)                    | TA Thắng       | 230708 - M02EC06 |                 |
+:   {.striped .hover}
 
-## Competition Training
+## Competition
 
 | Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
 |------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
-| 01/06/23   | Competition | Hyper-parameter optimization                     | TA Hùng        | 230601 - M02AC01 |                 |
-| 08/06/23   | Competition | Ensembling                                       |                | 230608 - M02AC02 |                 |
-| 15/06/23   | Competition | Augmentation Strategies and Albumentation        |                | 230615 - M02AC03 |                 |
-| 22/06/23   | Competition | Nestquant                                        |                | 230622 - M02AC04 |                 |
-| 29/06/23   | Competition | OOD-CV                                           |                | 230629 - M02AC05 |                 |
-| 06/07/23   | Competition | Vision Transformer                               |                | 230706 - M02AC06 |                 |
+| 01/06/23   | <span class="badge rounded-pill bg-warning">Competition</span> | [Hyper-parameter optimization](https://www.youtube.com/watch?v=Cps2e1Y2W8o)                     | TA Hùng        | [230601 - M02AC01](https://drive.google.com/drive/folders/1jvcirpEWUlUgpqqvYmm56UqtiERiJMY3) |                 |
+| 08/06/23   | <span class="badge rounded-pill bg-warning">Competition</span> | [Ensembling (Voting, Averaging, and Stacked Generalization)](https://www.youtube.com/watch?v=Gfa7UkBjm_w&feature=youtu.be)                                       |  TA Hùng              | [230608 - M02AC02](https://drive.google.com/drive/folders/17YPmCN1SgcnQba5wBnyf7hClX0Jf0Sws) |                 |
+| 15/06/23   | <span class="badge rounded-pill bg-warning">Competition</span> | [Augmentation Strategies and Albumentation](https://www.youtube.com/watch?v=Gfa7UkBjm_w)        |  TA Hùng              | [230615 - M02AC03](https://drive.google.com/drive/folders/19rg8MpzE02CIGmMYF30hPGtJskqbX1Ew) |                 |
+| 22/06/23   | <span class="badge rounded-pill bg-warning">Competition</span> | [Nestquant](https://www.youtube.com/watch?v=5RZAYlfnqSI)                                        | TA Hùng               | [230622 - M02AC04](https://drive.google.com/drive/folders/1TxUeUSJJQd1WaM7x6aXEQhWnOKEiKFFj) |                 |
+| 29/06/23   | <span class="badge rounded-pill bg-warning">Competition</span> | [OOD-CV](https://www.youtube.com/watch?v=mJ4HQa69cqI)                                           | TA Hùng               | [230629 - M02AC05](https://drive.google.com/drive/folders/1G1h5U3AjPbtmJpjP6llG3ucleOMKJFDQ) |                 |
+| 06/07/23   | <span class="badge rounded-pill bg-warning">Competition</span> |[ Vision Transformer](https://www.youtube.com/watch?v=9toC7w9BqKk)                               | TA Hùng               | [230706 - M02AC06](https://drive.google.com/drive/folders/1SH5yW3QZg_kpgRkU8yQtZmNRi0wwhDjG) |                 |
+:   {.striped .hover}
 
 ## Summer School on Deep Learning
 
 | Date       | Type       | Content                                           | Instructor     | Handout         | Further Reading |
 |------------|------------|---------------------------------------------------|----------------|-----------------|-----------------|
-| 05/07/23   | Summer school on Deep Learning | VIASM Summer school on Recent Advances in Deep Learning | | Sildes        |                 |
-
+| 05/07/23   | Summer school on Deep Learning | [VIASM Summer school on Recent Advances in Deep Learning](https://youtube.com/playlist?list=PLPbtQr3ZQ6L02px09JN8K38GjYx0zuWbQ) | | [Sildes](https://drive.google.com/drive/folders/1NzxzO2GrtEWibtyjxY0b7gOHG_QUhTIy)        |                 |
+:   {.striped .hover}
 

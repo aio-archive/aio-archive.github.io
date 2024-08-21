@@ -5,12 +5,12 @@ website:
   title: "AIO Course"
   bread-crumbs: false
   search:
-    location: sidebar
+    location: navbar
     type: textbox
   navbar:
     background: '#434445'
     search: true
-    right:
+    left:
       - text: "Lectures"
         menu:
           - href: module1.qmd
@@ -18,7 +18,7 @@ website:
           - href: module2.qmd
             text: Module 2 | Calculus and Linear Algebra for AI
           - href: module3.qmd
-            text: Module 3 | 
+            text: Module 3 | Probability and Statistics for AI
           - href: module4.qmd
             text: Module 4
           - href: module5.qmd

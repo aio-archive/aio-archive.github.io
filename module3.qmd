@@ -1,0 +1,83 @@
+---
+title: Module 3 - Probability and Statistics for AI
+tbl-colwidths: [25,47,80,40,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+# Course Schedule and Resources
+
+## Main lesson
+
+| Date       | Type                        | Content                                                                | Instructor     | Handout  | Further Reading |
+|------------|-----------------------------|------------------------------------------------------------------------|----------------|----------|-----------------|
+| 18/07/23   | Assignment                  | [Probability Exercise](https://drive.google.com/file/d/1QWfngARqyx2b9a6A04HyhOKmsWmre7rG/view)                                                   | Dr. Đình Vinh  |          |                 |
+| 19/07/23   | Main lesson - ML            | [Basic Probability, Histogram and Image Enhancement](https://www.youtube.com/watch?v=_3Geo5GvqBk)                     | Dr. Vinh       | [230719](https://drive.google.com/drive/folders/11CKymyiLRW3QHd0gCo5Xz160qkDESAMX)   |                 |
+| 21/07/23   | Main lesson - ML            | [Naive Bayes Classifier](https://www.youtube.com/watch?v=6VLK-lCWLVQ)                                                 | Dr. Vinh       | [230721](https://drive.google.com/drive/folders/144O9MGnOPwsXQNsHnNr3bRxDu3dyZlwW)   |                 |
+| 23/07/23   | Exercise session - ES       | [TA-Exercise](https://www.youtube.com/watch?v=KwUBo4nKQpA)                                                            | Dr. Đình Vinh  | [230723](https://drive.google.com/drive/folders/1aKid4NxC1cIrMimHdYTuYSv9hT25CDbz)   |                 |
+| 31/07/23   | Assignment                  | [Statistic Exercise](https://drive.google.com/file/d/15yY-SPtzUwl_4jl3Bnfg6CtzCShlh0rp/view)                                                     | Dr. Đình Vinh  | [Solution](https://drive.google.com/file/d/1YwnAW5VwyWhGmGvr9uNv5Cr-4JcLi9qe/view) |                 |
+| 26/07/23   | Main lesson - ML            | [Basic Statistics and Correlation Coefficient (Basic Tracking)](https://www.youtube.com/watch?v=jJyKPBKCZQI)          | Dr. Vinh       | [230726](https://drive.google.com/drive/folders/1yoyR9fW96c9PYqDxIg3Y9QPE2_pUuWZn)   |                 |
+| 28/07/23   | Main lesson - ML            | [Template Matching (Cosine Similarity vs. Correlation Coefficient)](https://youtu.be/x5z0TNgjlLU)      | Dr. Đình Vinh  | [230728](https://drive.google.com/drive/folders/181U2CKdLEVibpMSORz0gcfuKEM3zCojk)   |                 |
+| 30/07/23   | Exercise session - ES       | [TA-Exercise](https://www.youtube.com/watch?v=SkeI4eFR6KQ)                                                            | Dr. Đình Vinh  | [230730](https://drive.google.com/drive/folders/1w7ogaMH7wPLhxvfhDy_tv-RFA7J46sFf)   |                 |
+| 31/07/23   | Assignment                  | [Genetic Algorithms and its Applications Exercise](https://drive.google.com/file/d/1j6GrKkqXnXyvFScnTEc0nR8zf1h_Up27/view)                       | Dr. Đình Vinh  |          |                 |
+| 02/08/23   | Main lesson - ML            | [Randomness and Genetic Algorithms](https://youtu.be/vkjCagePwkk)                                      | Dr. Vinh       | [230802](https://drive.google.com/drive/folders/1Xqu0RhYsJO48817t4Sf4smj7nsD8I7St)   |                 |
+| 04/08/23   | Main lesson - ML            | [Genetic Algorithms (Optimization and Linear Regression)](https://www.youtube.com/watch?v=ujlajSEnMOk&feature=youtu.be)                | Dr. Vinh       | [230804](https://drive.google.com/drive/folders/1-svKPSGIHduxw7_CWQSWzemzI_Gfc1Tp)   |                 |
+| 06/08/23   | Exercise session - ES       | [TA-Exercise](https://www.youtube.com/watch?v=lXlROjef-6s)                                                            | Dr. Đình Vinh  | [230806](https://drive.google.com/drive/folders/1BwX4liwVoAEQsTO4gD0aypbJw6ADB33o?usp=drive_link)   |                 |
+| 07/08/23   | Assignment                  | [Genetic Algorithms and its Applications Exercise](https://drive.google.com/file/d/1j6GrKkqXnXyvFScnTEc0nR8zf1h_Up27/view)                       | Dr. Đình Vinh  |          |                 |
+| 07/08/23   | Exercise session - ES       | [Data Analysis Exercise](https://drive.google.com/file/d/1pW6pdMDjPFrf4X1OG676DaIncS3xYWBo/view)                                                 | TA Thắng       | [[solution]](https://drive.google.com/file/d/1rpOfzSwTYV5-Q5qcIijA1QNizmXA4WhA/view) |                 |
+| 09/08/23   | Main lesson - ML            | [Data visualization and Data Analysis (1)](https://www.youtube.com/watch?v=qylk5_xJJ3E)                               | Dr. Vinh       | [230809](https://drive.google.com/drive/folders/1Yo2OB5ePkLoWYurxVGGebHI6q-ZF68RH)   | [note]          |
+| 11/08/23   | Main lesson - ML            | [Data visualization and Data Analysis (2)](https://www.youtube.com/watch?v=WO7tyfpt-Kc)                               | Dr. Vinh       | [230811](https://drive.google.com/drive/folders/1JSdyFbOAdoCOP835AOzrSuC9qR3eWr-u)   |                 |
+| 13/08/23   | Exercise session - ES       | [TA-Exercise (Polar)](https://youtu.be/VvBjgYkdN5w)                                                    | TA Thắng       | [230813](https://drive.google.com/drive/folders/1YHSJ59ttIBCf8CYp7hatbs9MBBWXyGG2)   | [[Polar doc](https://pola-rs.github.io/polars-book/getting-started/intro/)]     |
+:   {.striped .hover}
+
+## Project Tutorial
+
+| Date       | Type                        | Content                                                                | Instructor     | Handout  | Further Reading |
+|------------|-----------------------------|------------------------------------------------------------------------|----------------|----------|-----------------|
+| 17/08/23   | Assignment       | Big Data Frameworks (1)                          | Dr. Đình Vinh  | 230818   |  |
+| 17/08/23   | Assignment       | Big Data Frameworks (1)                          | Dr. Đình Vinh  | 230818   |  |
+| 17/08/23   | Project tutorial - PT       | [Big Data Frameworks (1)](https://www.youtube.com/watch?v=Bv-_9yoj2LY)                          | Dr. Đình Vinh  | 230818   | [LSFS and MapReduce] |
+| 20/08/23   |                              | [Big Data Frameworks (2)](https://www.youtube.com/watch?v=gV-KJNPBIsI)                          | Dr. Đình Vinh  | 230820   |                 |
+| 22/08/23   |                              | [Image Data Project: Image Retrieval](https://drive.google.com/file/d/1KjZ6VHiehGOoB_ZlrOAUkBJzyTO0IooM/view?usp=drivesdk)                                    | TA Thắng       |          |                 |
+| 23/08/23   |                              | [Big Data Frameworks (3)](https://www.youtube.com/watch?v=wLdHXNNDeh0)                          | Dr. Đình Vinh  | 230823   | [C9, Feng 2021] |
+| 25/08/23   |                              | [Image Data Project: Image Retrieval](https://www.youtube.com/watch?v=kqy-HF5moQM)                                    | TA Thắng       | 230825   | [Dosovitskiy et al., 2021] |
+:   {.striped .hover}
+
+## Extra class: Introduction to NLP
+
+| Date       | Type                        | Content                                                                | Instructor     | Handout  | Further Reading |
+|------------|-----------------------------|------------------------------------------------------------------------|----------------|----------|-----------------|
+| 29/07/23   | <span class="badge rounded-pill bg-info">NLP Introduction</span>            | [Introduction, Preprocessing](https://www.youtube.com/watch?v=Mhr0Bsj0gDo)                                            | TA Thái        | [230729](https://drive.google.com/drive/folders/1h9leCEzTwqY6vTqQ_1xXfL2RWJNtjyzw)   |                 |
+| 05/08/23   | <span class="badge rounded-pill bg-info">NLP Introduction</span>                             | [Preprocessing, Tokenization](https://www.youtube.com/watch?v=QEXrwFc7gzQ)                                            |TA Thái                | [230805](https://drive.google.com/drive/folders/1MxmpGbd5WkZrPY1RetAx_lYD5VeemYEm)   | [[note](https://vietqnguyen.notion.site/AIO2023-Introduction-to-NLP-Notes-f97570244fef4fea9f85520fbe864832)] [[C2, Jurafsky et al., 2023](https://web.stanford.edu/~jurafsky/slp3/2.pdf)] |
+| 12/08/23   | <span class="badge rounded-pill bg-info">NLP Introduction</span>                             | [Statistical Language Model](https://www.youtube.com/watch?v=WxHTNG4EvRo)                                             | TA Thái               | [230812](https://drive.google.com/drive/folders/107_NYnwBYZv3kISBEbIaKuz4M9_QDMks)   | [[C3, Jurafsky et al., 2023](https://web.stanford.edu/~jurafsky/slp3/3.pdf)] [[Andrej Karpathy's Lecture](https://www.youtube.com/watch?v=PaCmpygFfXo)] |
+| 18/08/23   | <span class="badge rounded-pill bg-info">NLP Introduction</span>                             | [Part-of-Speech Tagging](https://www.youtube.com/watch?v=t90KOh4gvg4)                                                 |  TA Thái              | [230819](https://drive.google.com/drive/folders/1ovB_ny3oANqatI8a2L--tnbUr_iqtaUV)   | [CA Jurafsky et al., 2023] |
+| 26/08/23   | <span class="badge rounded-pill bg-info">NLP Introduction</span>                             | [Constituency Parsing](https://www.youtube.com/watch?v=bye0wJatGQA)                                                   |  TA Thái              | [230826](https://drive.google.com/drive/folders/1un0wqxHwr7O299fSpc0oDAKzAZxMIj1c)   |                 |
+:   {.striped .hover}
+
+## Python Tutorial Session
+
+| Date       | Type                        | Content                                                                | Instructor     | Handout  | Further Reading |
+|------------|-----------------------------|------------------------------------------------------------------------|----------------|----------|-----------------|
+| 18/07/23   | <span class="badge rounded-pill bg-dark">Python Support</span>              | Probability                                                            | TA Tiềm        | 230718   |                 |
+| 25/07/23   | <span class="badge rounded-pill bg-dark">Python Support</span>                             | Statistics                                                             | TA Bảo         | 230725   |                 |
+| 01/08/23   | <span class="badge rounded-pill bg-dark">Python Support</span>                             | Genetic Algorithms                                                     | TA Tiềm        | 230801   |                 |
+| 08/08/23   | <span class="badge rounded-pill bg-dark">Python Support</span>                             | Pandas (1)                                                             | TA Bảo         | 230808   |                 |
+| 14/08/23   | <span class="badge rounded-pill bg-dark">Python Support</span>                             | Pandas (2)                                                             | TA Bảo         | 230815   | [note] [C7, McKinney 2023] |
+:   {.striped .hover}
+
+## Competition Training
+
+| Date       | Type                        | Content                                                                | Instructor     | Handout  | Further Reading |
+|------------|-----------------------------|------------------------------------------------------------------------|----------------|----------|-----------------|
+| 20/07/23   | <span class="badge rounded-pill bg-warning">Competition</span>                 | Tricks to improve performance                                          | TA Hùng        | 230720   |                 |
+| 27/07/23   | <span class="badge rounded-pill bg-warning">Competition</span>                             | HCM AI Challenge                                                       | TA Hùng               | 230727   |                 |
+| 03/08/23   | <span class="badge rounded-pill bg-warning">Competition</span>                             | Web API + Docker                                                       | TA Hùng                | 230803   |                 |
+| 17/08/23   | <span class="badge rounded-pill bg-warning">Competition</span>                              | Onnx                                                                   | TA Hùng               | 230817   |                 |
+| 24/08/23   | <span class="badge rounded-pill bg-warning">Competition</span>                             | Semi-supervised Learning                                               | TA Hùng                | 230824   | [Lil'Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017] |
+:   {.striped .hover}

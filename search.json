@@ -325,11 +325,11 @@
   {
     "objectID": "module3.html",
     "href": "module3.html",
-    "title": "AIO Course",
+    "title": "Module 3 - Probability and Statistics for AI",
     "section": "",
-    "text": "Back to top",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n18/07/23\nAssignment\nProbability Exercise\nDr. Đình Vinh\n\n\n\n\n19/07/23\nMain lesson - ML\nBasic Probability, Histogram and Image Enhancement\nDr. Vinh\n230719\n\n\n\n21/07/23\nMain lesson - ML\nNaive Bayes Classifier\nDr. Vinh\n230721\n\n\n\n23/07/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230723\n\n\n\n31/07/23\nAssignment\nStatistic Exercise\nDr. Đình Vinh\nSolution\n\n\n\n26/07/23\nMain lesson - ML\nBasic Statistics and Correlation Coefficient (Basic Tracking)\nDr. Vinh\n230726\n\n\n\n28/07/23\nMain lesson - ML\nTemplate Matching (Cosine Similarity vs. Correlation Coefficient)\nDr. Đình Vinh\n230728\n\n\n\n30/07/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230730\n\n\n\n31/07/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n02/08/23\nMain lesson - ML\nRandomness and Genetic Algorithms\nDr. Vinh\n230802\n\n\n\n04/08/23\nMain lesson - ML\nGenetic Algorithms (Optimization and Linear Regression)\nDr. Vinh\n230804\n\n\n\n06/08/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230806\n\n\n\n07/08/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n07/08/23\nExercise session - ES\nData Analysis Exercise\nTA Thắng\n[solution]\n\n\n\n09/08/23\nMain lesson - ML\nData visualization and Data Analysis (1)\nDr. Vinh\n230809\n[note]\n\n\n11/08/23\nMain lesson - ML\nData visualization and Data Analysis (2)\nDr. Vinh\n230811\n\n\n\n13/08/23\nExercise session - ES\nTA-Exercise (Polar)\nTA Thắng\n230813\n[Polar doc]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n\n\n\n17/08/23\nProject tutorial - PT\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n[LSFS and MapReduce]\n\n\n20/08/23\n\nBig Data Frameworks (2)\nDr. Đình Vinh\n230820\n\n\n\n22/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n\n\n\n\n23/08/23\n\nBig Data Frameworks (3)\nDr. Đình Vinh\n230823\n[C9, Feng 2021]\n\n\n25/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n230825\n[Dosovitskiy et al., 2021]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n29/07/23\nNLP Introduction\nIntroduction, Preprocessing\nTA Thái\n230729\n\n\n\n05/08/23\nNLP Introduction\nPreprocessing, Tokenization\nTA Thái\n230805\n[note] [C2, Jurafsky et al., 2023]\n\n\n12/08/23\nNLP Introduction\nStatistical Language Model\nTA Thái\n230812\n[C3, Jurafsky et al., 2023] [Andrej Karpathy’s Lecture]\n\n\n18/08/23\nNLP Introduction\nPart-of-Speech Tagging\nTA Thái\n230819\n[CA Jurafsky et al., 2023]\n\n\n26/08/23\nNLP Introduction\nConstituency Parsing\nTA Thái\n230826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n18/07/23\nPython Support\nProbability\nTA Tiềm\n230718\n\n\n\n25/07/23\nPython Support\nStatistics\nTA Bảo\n230725\n\n\n\n01/08/23\nPython Support\nGenetic Algorithms\nTA Tiềm\n230801\n\n\n\n08/08/23\nPython Support\nPandas (1)\nTA Bảo\n230808\n\n\n\n14/08/23\nPython Support\nPandas (2)\nTA Bảo\n230815\n[note] [C7, McKinney 2023]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n20/07/23\nCompetition\nTricks to improve performance\nTA Hùng\n230720\n\n\n\n27/07/23\nCompetition\nHCM AI Challenge\nTA Hùng\n230727\n\n\n\n03/08/23\nCompetition\nWeb API + Docker\nTA Hùng\n230803\n\n\n\n17/08/23\nCompetition\nOnnx\nTA Hùng\n230817\n\n\n\n24/08/23\nCompetition\nSemi-supervised Learning\nTA Hùng\n230824\n[Lil’Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017]",
     "crumbs": [
-      "Home",
+      "Resources",
       "Course content",
       "Module 3"
     ]
@@ -411,7 +411,7 @@
     "href": "module2.html#main-lessons",
     "title": "Module 2 - Calculus and Linear Algebra for AI",
     "section": "Main Lessons",
-    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\n[solution]\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\n[solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (L1, L2 and Huber loss - Level 2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES04\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\n[solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\n[solution]\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\n[solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES04\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\n[solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
     "crumbs": [
       "Resources",
       "Course content",
@@ -423,7 +423,7 @@
     "href": "module2.html#project-tutorials",
     "title": "Module 2 - Calculus and Linear Algebra for AI",
     "section": "Project Tutorials",
-    "text": "Project Tutorials\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject tutorial - PT\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject Handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject Handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n\n\n\n10/07/23\nProject Handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject tutorial - PT\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject tutorial - PT\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject tutorial - PT\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
+    "text": "Project Tutorials\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject Tutorial - PT\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n\n\n\n10/07/23\nProject handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject Tutorial - PT\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject Tutorial - PT\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject Tutorial - PT\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
     "crumbs": [
       "Resources",
       "Course content",
@@ -447,7 +447,7 @@
     "href": "module2.html#extra-classes-database-and-sql",
     "title": "Module 2 - Calculus and Linear Algebra for AI",
     "section": "Extra Classes: Database and SQL",
-    "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n03/06/23\nExtra class: Database and SQL\nToward Data Science: Database-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nExtra class: Database and SQL\nDatabase-SQL (2)\n\n230611 - M02ES02\n\n\n\n17/06/23\nExtra class: Database and SQL\nDatabase-SQL (3)\n\n230617 - M02EC03\n\n\n\n24/06/23\nExtra class: Database and SQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nExtra class: Database and SQL\nDatabase-NoSQL (2)\n\n230701 - M02EC05\n\n\n\n08/07/23\nExtra class: Database and SQL\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
+    "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n03/06/23\nDatabase and SQL\nDatabase-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nDatabase and SQL\nDatabase-SQL (2)\nTA Bảo\n230611 - M02ES02\n\n\n\n17/06/23\nDatabase and SQL\nDatabase-SQL (3)\nTA Bảo\n230617 - M02EC03\n\n\n\n24/06/23\nNoSQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nNoSQL\nDatabase-NoSQL (2)\nTA Thái\n230701 - M02EC05\n\n\n\n08/07/23\nBig Data\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
     "crumbs": [
       "Resources",
       "Course content",
@@ -459,7 +459,7 @@
     "href": "module2.html#competition-training",
     "title": "Module 2 - Calculus and Linear Algebra for AI",
     "section": "Competition Training",
-    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling\n\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\n\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\n\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\n\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\n\n230706 - M02AC06",
+    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling (Voting, Averaging, and Stacked Generalization)\nTA Hùng\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\nTA Hùn\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\nTA Hùng\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\nTA Hùng\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\nTA Hùng\n230706 - M02AC06",
     "crumbs": [
       "Resources",
       "Course content",
@@ -528,28 +528,28 @@
   {
     "objectID": "resources/books.html",
     "href": "resources/books.html",
-    "title": "Books",
+    "title": "Books and other preprint materials",
     "section": "",
-    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\n\n\n\n\n\n\n\n\nMathematics for Machine Learning by Garret Thomas"
+    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\n\n\n\n\n\nIntroductory Lectures on Stochastic Convex Optimization by John C. Duchi\nInformation Theory and Statistics by John C. Duchi\n\n\n\n\n\nMathematics for Machine Learning by Garret Thomas"
   },
   {
     "objectID": "resources/books.html#probability-and-statistics",
     "href": "resources/books.html#probability-and-statistics",
-    "title": "Books",
+    "title": "Books and other preprint materials",
     "section": "",
     "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media."
   },
   {
     "objectID": "resources/books.html#others",
     "href": "resources/books.html#others",
-    "title": "Books",
+    "title": "Books and other preprint materials",
     "section": "",
     "text": "Mathematics for Machine Learning by Garret Thomas"
   },
   {
     "objectID": "resources/books.html#nlp",
     "href": "resources/books.html#nlp",
-    "title": "Books",
+    "title": "Books and other preprint materials",
     "section": "NLP",
     "text": "NLP"
   },
@@ -558,14 +558,14 @@
     "href": "resources/courses.html#nlp",
     "title": "Courses",
     "section": "NLP",
-    "text": "NLP"
+    "text": "NLP\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS224N: Natural Language Processing with Deep Learning\nStanford University\n\n[ ]\n\n\nMedium\nCS224U: Natural Language Understanding\nStanford University\n\n[ ]\n\n\n\n\nLLMs\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCOS 597G: Understanding Large Language Models\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCOS584: Advanced Natural Language Processing\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCS324: Large Language Models\nStanford University\n\n[ ]"
   },
   {
     "objectID": "resources/courses.html#computer-vision",
     "href": "resources/courses.html#computer-vision",
     "title": "Courses",
     "section": "Computer Vision",
-    "text": "Computer Vision"
+    "text": "Computer Vision\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS231N: Deep Learning for Computer Vision\nStanford University\n\n[ ]"
   },
   {
     "objectID": "resources/courses.html#multimodal",
@@ -669,6 +669,118 @@
       "Resources",
       "Course content",
       "Module 1"
+    ]
+  },
+  {
+    "objectID": "module2.html#competition",
+    "href": "module2.html#competition",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Competition",
+    "text": "Competition\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling (Voting, Averaging, and Stacked Generalization)\nTA Hùng\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\nTA Hùng\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\nTA Hùng\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\nTA Hùng\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\nTA Hùng\n230706 - M02AC06",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "module2.html#project-tutorial",
+    "href": "module2.html#project-tutorial",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Project Tutorial",
+    "text": "Project Tutorial\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/07/23\nProject Tutorial\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n\n\n\n10/07/23\nProject handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject Tutorial\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject Tutorial\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject Tutorial\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "resources/courses.html",
+    "href": "resources/courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nLectures\n[x]\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nLectures\n[x]\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#probability-and-statistics",
+    "href": "resources/courses.html#probability-and-statistics",
+    "title": "Courses",
+    "section": "",
+    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nLectures\n[x]\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nLectures\n[x]\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#optimization",
+    "href": "resources/courses.html#optimization",
+    "title": "Courses",
+    "section": "",
+    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/books.html#optimization",
+    "href": "resources/books.html#optimization",
+    "title": "Books and other preprint materials",
+    "section": "",
+    "text": "Introductory Lectures on Stochastic Convex Optimization by John C. Duchi\nInformation Theory and Statistics by John C. Duchi"
+  },
+  {
+    "objectID": "module3.html#project-tutorial",
+    "href": "module3.html#project-tutorial",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n\n\n\n17/08/23\nProject tutorial - PT\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n[LSFS and MapReduce]\n\n\n20/08/23\n\nBig Data Frameworks (2)\nDr. Đình Vinh\n230820\n\n\n\n22/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n\n\n\n\n23/08/23\n\nBig Data Frameworks (3)\nDr. Đình Vinh\n230823\n[C9, Feng 2021]\n\n\n25/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n230825\n[Dosovitskiy et al., 2021]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "module3.html#extra-class-introduction-to-nlp",
+    "href": "module3.html#extra-class-introduction-to-nlp",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n29/07/23\nNLP Introduction\nIntroduction, Preprocessing\nTA Thái\n230729\n\n\n\n05/08/23\nNLP Introduction\nPreprocessing, Tokenization\nTA Thái\n230805\n[note] [C2, Jurafsky et al., 2023]\n\n\n12/08/23\nNLP Introduction\nStatistical Language Model\nTA Thái\n230812\n[C3, Jurafsky et al., 2023] [Andrej Karpathy’s Lecture]\n\n\n18/08/23\nNLP Introduction\nPart-of-Speech Tagging\nTA Thái\n230819\n[CA Jurafsky et al., 2023]\n\n\n26/08/23\nNLP Introduction\nConstituency Parsing\nTA Thái\n230826",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "module3.html#main-lesson",
+    "href": "module3.html#main-lesson",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n18/07/23\nAssignment\nProbability Exercise\nDr. Đình Vinh\n\n\n\n\n19/07/23\nMain lesson - ML\nBasic Probability, Histogram and Image Enhancement\nDr. Vinh\n230719\n\n\n\n21/07/23\nMain lesson - ML\nNaive Bayes Classifier\nDr. Vinh\n230721\n\n\n\n23/07/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230723\n\n\n\n31/07/23\nAssignment\nStatistic Exercise\nDr. Đình Vinh\nSolution\n\n\n\n26/07/23\nMain lesson - ML\nBasic Statistics and Correlation Coefficient (Basic Tracking)\nDr. Vinh\n230726\n\n\n\n28/07/23\nMain lesson - ML\nTemplate Matching (Cosine Similarity vs. Correlation Coefficient)\nDr. Đình Vinh\n230728\n\n\n\n30/07/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230730\n\n\n\n31/07/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n02/08/23\nMain lesson - ML\nRandomness and Genetic Algorithms\nDr. Vinh\n230802\n\n\n\n04/08/23\nMain lesson - ML\nGenetic Algorithms (Optimization and Linear Regression)\nDr. Vinh\n230804\n\n\n\n06/08/23\nExercise session - ES\nTA-Exercise\nDr. Đình Vinh\n230806\n\n\n\n07/08/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n07/08/23\nExercise session - ES\nData Analysis Exercise\nTA Thắng\n[solution]\n\n\n\n09/08/23\nMain lesson - ML\nData visualization and Data Analysis (1)\nDr. Vinh\n230809\n[note]\n\n\n11/08/23\nMain lesson - ML\nData visualization and Data Analysis (2)\nDr. Vinh\n230811\n\n\n\n13/08/23\nExercise session - ES\nTA-Exercise (Polar)\nTA Thắng\n230813\n[Polar doc]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "module3.html#python-tutorial-session",
+    "href": "module3.html#python-tutorial-session",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n18/07/23\nPython Support\nProbability\nTA Tiềm\n230718\n\n\n\n25/07/23\nPython Support\nStatistics\nTA Bảo\n230725\n\n\n\n01/08/23\nPython Support\nGenetic Algorithms\nTA Tiềm\n230801\n\n\n\n08/08/23\nPython Support\nPandas (1)\nTA Bảo\n230808\n\n\n\n14/08/23\nPython Support\nPandas (2)\nTA Bảo\n230815\n[note] [C7, McKinney 2023]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "module3.html#competition-training",
+    "href": "module3.html#competition-training",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n20/07/23\nCompetition\nTricks to improve performance\nTA Hùng\n230720\n\n\n\n27/07/23\nCompetition\nHCM AI Challenge\nTA Hùng\n230727\n\n\n\n03/08/23\nCompetition\nWeb API + Docker\nTA Hùng\n230803\n\n\n\n17/08/23\nCompetition\nOnnx\nTA Hùng\n230817\n\n\n\n24/08/23\nCompetition\nSemi-supervised Learning\nTA Hùng\n230824\n[Lil’Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
     ]
   }
 ]
