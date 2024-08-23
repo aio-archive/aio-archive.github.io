@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AIO2023 Course – AIO Course</title>
+<title>Central Limit Theorem – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./module1.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,18 +68,47 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -96,61 +124,61 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./module1.html">
+    <a class="dropdown-item" href="../../../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module2.html">
+    <a class="dropdown-item" href="../../../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module3.html">
+    <a class="dropdown-item" href="../../../module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module4.html">
+    <a class="dropdown-item" href="../../../module4.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module5.html">
+    <a class="dropdown-item" href="../../../module5.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module6.html">
+    <a class="dropdown-item" href="../../../module6.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module7.html">
+    <a class="dropdown-item" href="../../../module7.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module8.html">
+    <a class="dropdown-item" href="../../../module8.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module9.html">
+    <a class="dropdown-item" href="../../../module9.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module10.html">
+    <a class="dropdown-item" href="../../../module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources/resources.html"> 
+    <a class="nav-link active" href="../../../resources/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ainews.html"> 
+    <a class="nav-link" href="../../../ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./memes.html"> 
+    <a class="nav-link" href="../../../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -160,20 +188,145 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Central Limit Theorem</h1>
+        </a>     
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course content</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Others</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../resources/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../misc/misc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Misc</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#applications" id="toc-applications" class="nav-link active" data-scroll-target="#applications">Applications</a></li>
+  <li><a href="#how-large-does-n-need-to-be" id="toc-how-large-does-n-need-to-be" class="nav-link" data-scroll-target="#how-large-does-n-need-to-be">How large does <span class="math inline">\(n\)</span> need to be ?</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AIO2023 Course</h1>
+<h1 class="title d-none d-lg-block">Central Limit Theorem</h1>
 </div>
 
 
@@ -190,10 +343,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>“All models are wrong, but some are useful”</em> George Box</p>
-<p><img src="intro_2.gif" class="img-fluid"></p>
+<p>We know from the [[llns | Law of Large Numbers]] that <span class="math inline">\(\hat{X}_{n}-\mu \rightarrow 0\)</span> with probability 1. But what does the distribution look like ?</p>
+<p>The Central Limit Theorem tells us that: <span class="math display">\[
+\dfrac{\sqrt{n} (\hat{X}_{n}-\mu)}{\sigma} \rightarrow \mathcal{N}(0,1)
+\]</span> Equivalently, we can write this as: <span class="math display">\[
+\dfrac{\sum\limits_{j=1}^{n}X_{j} - n\mu}{\sqrt{n} \sigma} \rightarrow \mathcal{N}(0,1)
+\]</span></p>
+<p><strong>Proof</strong>. Without loss generality, assume that <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(\sigma = 1\)</span> and that the Moment Generating Function <span class="math inline">\(M(t)\)</span> of <span class="math inline">\(X\)</span> exists. Let <span class="math inline">\(S_{n}=\sum\limits_{j=1}^{n}X_{j}\)</span>. Show that that MGF of <span class="math inline">\(\dfrac{S_{n}}{\sqrt{n}}\)</span> goes to the MGF of <span class="math inline">\(\mathcal{N}(0,1)\)</span>. <span class="math display">\[
+\mathbb{E}\left(\exp \left(t \dfrac{S_{n}}{\sqrt{n}}\right)\right) = \mathbb{E} \left(\exp \left(t \dfrac{X_{1}}{\sqrt{n}}\right)\right) \cdots \left(\exp \left(t \dfrac{X_{n}}{\sqrt{n}}\right)\right) = \left(M\left(\dfrac{t}{\sqrt{n}}\right)\right)^{n}
+\]</span></p>
+<p>Taking the log and the limit of the MGF, we obtain that: <span class="math display">\[
+\begin{aligned}
+\underset{y \rightarrow 0}{\lim} n \log M\left(\frac{t}{\sqrt{n}}\right)
+&amp;= \underset{y \rightarrow 0}{\lim} \dfrac{\log M(\frac{t}{\sqrt{n}})}{\frac{1}{n}} &amp;&amp; (\text{simple rewrite})\\
+&amp;= \underset{y \rightarrow 0}{\lim} \dfrac{\log M(yt)}{y^{2}} &amp;&amp; (\text{for $y = 1/\sqrt{n} $})\\
+&amp;= \underset{y \rightarrow 0}{\lim} \dfrac{tM'(yt)}{2y M(yt)} &amp;&amp; (\text{using L'Hôpital's rule}) \\
+&amp;= \dfrac{t}{2} \underset{y \rightarrow 0}{\lim} \dfrac{M'(yt)}{y} &amp;&amp; (M(0)=1) \\
+&amp; = \dfrac{t^{2}}{2} \underset{y \rightarrow 0}{\lim} \dfrac{M''(yt)}{1} = \frac{t^{2}}{2} &amp;&amp; (\text{using  L'Hôpital's rule again and $M''(0)=1$})
+\end{aligned}
+\]</span></p>
+<hr>
+<section id="applications" class="level1">
+<h1>Applications</h1>
+<ol type="a">
+<li>If we flip a fair coin 100 times. What is the probability that it lands more than 55 heads ?</li>
+<li>If we flip a fair coin 400 times. What is the probability that it lands more than 220 heads ?</li>
+</ol>
+<p><strong>Solution:</strong> (a) Let <span class="math inline">\(X_{j}\)</span> be the result of the <span class="math inline">\(j^{th}\)</span> flip, so that <span class="math inline">\(X_{j}= 1\)</span> for heads and <span class="math inline">\(X_{j}=0\)</span> for tails. The total number of head is therefore: <span class="math display">\[
+S = X_{1}+ X_{2} + \cdots + X_{100}
+\]</span> We know that <span class="math inline">\(\mathbb{E}[X_{j}] = 0.5\)</span> and <span class="math inline">\(\text{Var}(X_{j}) = 1/4\)</span>. Since <span class="math inline">\(n=100\)</span>, we have: <span class="math display">\[\mathbb{E}[S] = 50 \qquad \text{Var}(S) = 25 \qquad \sigma_{S}=5\]</span> Now, the Central Limit Theorem says that <span class="math inline">\(Z = \dfrac{S-\mathbb{E}[S]}{\sigma_{S}}\)</span> is approximately <span class="math inline">\(\mathcal{N}(0,1)\)</span>. We get: <span class="math display">\[
+P(S &gt; 55) = P\left(\dfrac{S-50}{5} &gt; \dfrac{55-50}{5}\right) \approx P(Z&gt;1) = 0.16
+\]</span> (b) Going through an analogous process as we did in (a), using the Central Limit Theorem, we get: <span class="math display">\[
+P(S &gt; 220) = P\left(\dfrac{S-200}{10} &gt; \dfrac{220-200}{10}\right) \approx P(Z&gt;2) = 0.025
+\]</span></p>
+<blockquote class="blockquote">
+<p>[!remark] Although 55/100 is exactly equal to 220/400, the probability of more than 55 heads in 100 flips is larger than the probability of more than 220 heads in 400 flips. This is due to the [[llns | Law of Large Numbers]].</p>
+</blockquote>
+</section>
+<section id="how-large-does-n-need-to-be" class="level1">
+<h1>How large does <span class="math inline">\(n\)</span> need to be ?</h1>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -760,15 +954,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./module1.html" class="pagination-link" aria-label="Module 1">
-        <span class="nav-page-text">Module 1</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

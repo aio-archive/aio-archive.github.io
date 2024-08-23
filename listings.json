@@ -2,6 +2,11 @@
   {
     "listing": "/misc/misc.html",
     "items": [
+      "/misc/posts/kl-divergence/kl-divergence.html",
+      "/misc/posts/fisher-information/fisher-information.html",
+      "/misc/posts/clt/clt.html",
+      "/misc/posts/score-matching-ref/sm-ref.html",
+      "/misc/posts/vae/vae.html",
       "/misc/posts/attention/Attention (non-trainable weights).html",
       "/misc/posts/working-with-text/SimpleTokenizer.html"
     ]

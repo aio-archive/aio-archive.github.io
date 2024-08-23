@@ -16,6 +16,10 @@ title-block-banner: true
   <p class="mb-0">This website is still under construction. Some contents and functions might temporarily not be available or not working properly.</a></p>
 </div>
 
+# Introduction
+
+Welcome to the second module of the AIO2023 course. The central theme of this module is about Calculus and Linear Algebra, the two subfields of mathematics that I cannot emphasize enough the importance of them in understanding and developing machine learning models. My take on whether to learn math when you want to learn AI is that although it is often the case that many modern ready-made libraries (*eg* Numpy, Sklearn, Tensorflow, PyTorch, JAX, ...) already support the underlying math, having a thorough understanding of the math behind the machine learning models makes you significantly more efficient in debugging  , *i.e.* knowing what's wrong with the model, or what particular model specification to apply for your specific problem.
+
 # Course Schedule and Material
 
 ## Main Lessons
@@ -97,3 +101,10 @@ title-block-banner: true
 | 05/07/23   | Summer school on Deep Learning | [VIASM Summer school on Recent Advances in Deep Learning](https://youtube.com/playlist?list=PLPbtQr3ZQ6L02px09JN8K38GjYx0zuWbQ) | | [Sildes](https://drive.google.com/drive/folders/1NzxzO2GrtEWibtyjxY0b7gOHG_QUhTIy)        |                 |
 :   {.striped .hover}
 
+# Further Resources
+- [Essence of linear algebra by 3Blue1Brown](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&si=SCgFbDbQyRlICl1f)
+- [Esssence of calculus by 3Blue1Brown](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&si=-dyLAYqwnV2y4oel)
+- [Mathematics for Machine Learning](https://mml-book.github.io/)
+- [Mathematics for Machine Learning](https://gwthomas.github.io/docs/math4ml.pdf) by Garret Thomas
+- [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+- [For the NLP extra class]: [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/)

@@ -1,0 +1,58 @@
+---
+title: Module 4 - Machine Learning and Data Science
+tbl-colwidths: [25,47,80,40,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+# Course Schedule and Resources
+
+## Main Lessons
+
+| Date       | Type                         | Content                                                              | Instructor    | Handout   | Further Reading                              |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+                            |                                                                      |               |           |                                              |
+| 28/08/23   | Assignment                    | K-Nearest Neighbor and Decision Tree Exercise                        | TA Thái       | [solution] |                                              |
+| 30/08/23   | Main lesson - ML              | K-Nearest Neighbors                                                  | Dr. Đình Vinh | 230830    | [note] [CS4780 Lecture 3]                    |
+| 01/09/23   | Main lesson - ML              | Decision Tree for Classification                                     | Dr. Đình Vinh | 230901    |                                              |
+| 03/09/23   | Exercise session - ES         | TA Exercise                                                          | TA Thái       | 230903    |                                              |
+| 06/09/23   | Main lesson - ML              | Decision Tree for Regression                                         | Dr. Đình Vinh | 230906    | [Choi et al., 2017]                          |
+| 08/09/23   | Main lesson - ML              | Random Forest                                                        | Dr. Đình Vinh | 230908    | [Louppe et al., 2015]                        |
+| 10/09/23   | Exercise session - ES         | TA Exercise                                                          | TA Thắng      | 230910    |                                              |
+| 11/09/23   | Assignment                    | XGBoost                                                              | TA Khoa       | [solution] |                                              |
+| 13/09/23   | Main lesson - ML              | Basic XGBoost: Understanding Gradient Boost and AdaBoost             | Dr. Đình Vinh | 230913    | [note] [Trevor Lecture]                      |
+| 15/09/23   | Main lesson - ML              | Advanced XGBoost: Fully XGBoost and its mathematics                  | Dr. Đình Vinh | 230915    |                                              |
+| 17/09/23   | Exercise session - ES         | TA Exercise                                                          | TA Khoa       | 230917    |                                              |
+| 18/09/23   | Assignment                    | Support Vector Machine Exercise                                      | TA Thắng      | [solution] |                                              |
+| 20/09/23   | Main lesson - ML              | Review on Tree-based Approaches and Discussion                       | Dr. Đình Vinh | 230920    |                                              |
+| 22/09/23   | Main lesson - ML              | Support Vector Machine (1)                                           | Dr. Đình Vinh | 230922    | [CS229 Note] [MLCB]                          |
+| 24/09/23   | Main lesson - ML              | Support Vector Machine (2)                                           | Dr. Đình Vinh | 230924    |                                              |
+| 27/09/23   | Exercise session - ES         | TA-Exercise                                                          | TA Thắng      | 230927    |                                              |
+| 29/09/23   | Project Tutorial              | Tabular Data Project: Heart Disease Prediction                       | Dr. Đình Vinh | 230929    |                                              |
+| 01/10/23   | Project Tutorial              | Image Project: Object Detection                                      | TA Thắng      | 231001    | [HoG paper]                                  |
+
+## Python Tutorial
+
+| Date       | Type                         | Content                                                              | Instructor    | Handout   | Further Reading                              |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+              |                                                                      |               |           |                                              |
+| 29/08/23   | Preview                       | K-Nearest Neighbors (Warm-up)                                        | Dr. Vinh      | 230829    | [STAT451 Note]                               |
+| 05/09/23   | Python Tutorial               | Decision Tree                                                        |               | 230905    |                                              |
+| 12/09/23   | Python Tutorial               | Random Forest and AdaBoost (Warm-up)                                 |               | 230912    |                                              |
+| 21/09/23   | Python Tutorial               | SVM                                                                  | TA Thắng      | 230921    | [CS4780 Note]                                |
+
+## Extra class: Advanced NLP
+
+| Date       | Type                         | Content                                                              | Instructor    | Handout   | Further Reading                              |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+             |                                                                      |               |           |                                              |
+| 09/09/23   | NLP Advanced                  | Foundations for an NLP topic                                         | TA Thái       | 230909    | [note] [CS324 note]                          |
+| 16/09/23   | NLP Advanced                  | Language Models and Prompting Techniques                             |               | 230916    |                                              |
+| 23/09/23   | NLP Advanced                  | Parameter-Efficient Fine-tuning                                      |               | 230923    | [Houlsby et al., 2019] [COS597G Slides]      |
+| 30/09/23   | NLP Advanced                  | Efficient Fine-tuning of quantized LLMs                              |               | 230930    | [LoRA paper]                                 |

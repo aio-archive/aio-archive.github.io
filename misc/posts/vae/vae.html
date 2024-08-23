@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-14">
-<meta name="description" content="The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.">
+<meta name="dcterms.date" content="2024-08-20">
+<meta name="description" content="In this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.">
 
-<title>Spelled-out Introduction to Simple Self-Attention mechanism, in code – AIO Course</title>
+<title>Variational Autoencoders - Fundamental concepts – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -137,7 +123,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -230,7 +216,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Spelled-out Introduction to Simple Self-Attention mechanism, in code</h1>
+          <h1 class="quarto-secondary-nav-title">Variational Autoencoders - Fundamental concepts</h1>
         </a>     
     </div>
   </nav>
@@ -239,16 +225,14 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Spelled-out Introduction to Simple Self-Attention mechanism, in code</h1>
+      <h1 class="title d-none d-lg-block">Variational Autoencoders - Fundamental concepts</h1>
                   <div>
         <div class="description">
-          The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.
+          In this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">nlp</div>
-                <div class="quarto-category">attention</div>
-                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Generative models</div>
               </div>
                   </div>
   </div>
@@ -260,7 +244,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 14, 2024</p>
+        <p class="date">August 20, 2024</p>
       </div>
     </div>
     
@@ -383,164 +367,303 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#capturing-data-dependencies-with-attention-mechanisms" id="toc-capturing-data-dependencies-with-attention-mechanisms" class="nav-link" data-scroll-target="#capturing-data-dependencies-with-attention-mechanisms">Capturing data dependencies with Attention mechanisms</a></li>
-  <li><a href="#simple-attention-mechanism-without-trainable-weights" id="toc-simple-attention-mechanism-without-trainable-weights" class="nav-link" data-scroll-target="#simple-attention-mechanism-without-trainable-weights">Simple Attention mechanism without trainable weights</a></li>
-  <li><a href="#computing-attention-weights-for-all-input-tokens" id="toc-computing-attention-weights-for-all-input-tokens" class="nav-link" data-scroll-target="#computing-attention-weights-for-all-input-tokens">Computing attention weights for all input tokens</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link active" data-scroll-target="#preliminaries">Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#jensens-inequality" id="toc-jensens-inequality" class="nav-link" data-scroll-target="#jensens-inequality">Jensen’s inequality</a></li>
+  <li><a href="#kl-divergence" id="toc-kl-divergence" class="nav-link" data-scroll-target="#kl-divergence">KL Divergence</a></li>
+  <li><a href="#autoencoder" id="toc-autoencoder" class="nav-link" data-scroll-target="#autoencoder">Autoencoder</a></li>
+  </ul></li>
+  <li><a href="#vae-setting" id="toc-vae-setting" class="nav-link" data-scroll-target="#vae-setting">VAE Setting</a>
+  <ul class="collapse">
+  <li><a href="#proxy-distributions" id="toc-proxy-distributions" class="nav-link" data-scroll-target="#proxy-distributions">Proxy distributions</a></li>
+  </ul></li>
+  <li><a href="#evidence-lower-bound-elbo" id="toc-evidence-lower-bound-elbo" class="nav-link" data-scroll-target="#evidence-lower-bound-elbo">Evidence Lower Bound (ELBO)</a></li>
+  <li><a href="#training-vae" id="toc-training-vae" class="nav-link" data-scroll-target="#training-vae">Training VAE</a>
+  <ul class="collapse">
+  <li><a href="#encoder" id="toc-encoder" class="nav-link" data-scroll-target="#encoder">Encoder</a></li>
+  <li><a href="#decoder" id="toc-decoder" class="nav-link" data-scroll-target="#decoder">Decoder</a></li>
+  </ul></li>
+  <li><a href="#loss-function" id="toc-loss-function" class="nav-link" data-scroll-target="#loss-function">Loss function</a></li>
+  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">Inference</a></li>
+  <li><a href="#vae-implementation" id="toc-vae-implementation" class="nav-link" data-scroll-target="#vae-implementation">VAE Implementation</a></li>
+  
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>The Attention mechanism itself can easily become a comprehensive topic. There are four different variants of the attention mechanism, including:</p>
-<ol type="1">
-<li><p><strong>Simplified self-attention</strong></p></li>
-<li><p>Self-attention</p></li>
-<li><p>Casual attention</p></li>
-<li><p>Multi-head attention.</p></li>
+<blockquote class="blockquote">
+<p><em>Probabilistic modeling is one of the most fundamental ways in which we reason about the world. This paper spearheaded the integration of deep learning with scalable probabilistic inference (amortized mean-field variational inference via a so-called reparameterization trick), giving rise to the Variational Autoencoder (VAE). The lasting value of this work is rooted in its elegance. The principles used to develop VAEs deepened our understanding of the interplay between deep learning and probabilistic modeling, and sparked the development of many subsequent interesting probabilistic models and encoding approaches. </em></p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This article is an excerpt from Tutorial on Diffusion Models for Imaging and Vision by <span class="citation" data-cites="chan2024tutorial">(<a href="#ref-chan2024tutorial" role="doc-biblioref">Chan 2024</a>)</span> with some add-ons and modifications.</p>
+</div>
+</div>
+<div class="no-row-height column-margin column-container"><div id="ref-chan2024tutorial" class="csl-entry" role="listitem">
+Chan, Stanley H. 2024. <span>“Tutorial on <span>Diffusion</span> <span>Models</span> for <span>Imaging</span> and <span>Vision</span>.”</span> <em>arXiv</em> abs/2403.18103.
+</div></div><section id="preliminaries" class="level1 page-columns page-full">
+<h1>Preliminaries</h1>
+<p>Before diving into VAE, we first explore about the (statistical) tools that are useful later to understand how VAE works.</p>
+<section id="jensens-inequality" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="jensens-inequality">Jensen’s inequality</h2>
+<p>Jensen’s inequality is a useful concept for any <em>convex function</em> that has many applications in generative models. A convex function can be defined as follows:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition of convex function <span class="citation" data-cites="boyd2004convex">(<a href="#ref-boyd2004convex" role="doc-biblioref">Boyd and Vandenberghe 2004</a>)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A function <span class="math inline">\(f: \mathbb{R}^n \mapsto \mathbb{R}\)</span> is said to be <em>convex</em> if its domain <span class="math inline">\(\textbf{dom}f\)</span> is a convex set and if for all <span class="math inline">\(x,y \in \textbf{dom}f\)</span>, <span class="math inline">\(\theta \in [0,1]\)</span>, we have:</p>
+<p><span class="math display">\[f(\theta x + (1-\theta) y) \leq \theta f(x) + (1-\theta) f(y)\]</span></p>
+</div>
+</div>
+<div class="no-row-height column-margin column-container"><div id="ref-boyd2004convex" class="csl-entry" role="listitem">
+Boyd, Stephen, and Lieven Vandenberghe. 2004. <em>Convex Optimization</em>. Cambridge University Press.
+</div></div><p>For example, consider the figure below where the figure on the left is the graph of a convex function <span class="math inline">\(f(x) = x^2\)</span>, the line (sometimes also referred to as chord) between any two points <span class="math inline">\(x,y\)</span> on the graph lies above the graph, <em>i.e.</em> every chord is below the function. In contrast, the function on the right does not have such property so it is not a convex function. The <a href="#callout-1">definition</a> that we have for a convex function is just a generalization and mathematical expression of this property.</p>
+<iframe src="cvx.html" width="800" height="400">
+</iframe>
+<p>Given a convex function <span class="math inline">\(f\)</span> and a random variable <span class="math inline">\(X\)</span>, Jensen’s inequality states that:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Jensen’s inequality
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[\mathbb{E}[f(X)] \geq f(\mathbb{E}[X])\]</span></p>
+</div>
+</div>
+<p>Later in this section, we will apply the Jensen’s inequality to derive the Evidence Lower Bound, which is the workhorse of VAE.</p>
+</section>
+<section id="kl-divergence" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="kl-divergence">KL Divergence</h2>
+<p>Sometimes it is useful for us to have a <em>measure</em> <span class="math inline">\(D\)</span> to quantify the difference between two distributions. We require that measure to have the following properties <span class="citation" data-cites="pml2Book">(<a href="#ref-pml2Book" role="doc-biblioref">Murphy 2023</a>)</span>:</p>
+<div class="no-row-height column-margin column-container"></div><ul>
+<li>Continuous in its arguments</li>
+<li>Nonnegativity</li>
+<li>Permutation invariant</li>
+<li>Monotonic</li>
+<li>Satisfy the natural chain rule</li>
+</ul>
+<p>KL divergence turns out to be that useful tool and it is defined as follows:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+KL Divergence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[D_{KL} = \int p(x) \log \dfrac{p(x)}{q(x)} dx\]</span></p>
+</div>
+</div>
+<p>Interested readers can refer to <span class="citation" data-cites="pml2Book">(<a href="#ref-pml2Book" role="doc-biblioref">Murphy 2023</a>)</span> to see the proof that KL Divergence satisfies all of the desiderata.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-pml2Book" class="csl-entry" role="listitem">
+Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press. <a href="http://probml.github.io/book2">http://probml.github.io/book2</a>.
+</div></div></section>
+<section id="autoencoder" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="autoencoder">Autoencoder</h2>
+<p>While VAEs <span class="citation" data-cites="kingma2013autoencoding">(<a href="#ref-kingma2013autoencoding" role="doc-biblioref">Kingma and Welling 2013</a>)</span> and the deterministic autoencoder (AE) are very similar, there are two main differences:</p>
+<div class="no-row-height column-margin column-container"><div id="ref-kingma2013autoencoding" class="csl-entry" role="listitem">
+Kingma, Diederik P., and M. Welling. 2013. <span>“Auto-<span>Encoding</span> <span>Variational</span> <span>Bayes</span>.”</span> In <em>International <span>Conference</span> on <span>Learning</span> <span>Representations</span></em>. Vol. abs/1312.6114. 1. Explorandum Ltd.
+</div></div><ol type="1">
+<li><p>in the AE, the objective is the log likelihood of the reconstruction without any KL term</p></li>
+<li><p>The encoding is deterministic, so that the encoder network just needs to compute <span class="math inline">\(\mathbb{E}[\mathbf{z} \vert \mathbf{x}]\)</span> and not <span class="math inline">\(\text{Var}[\mathbf{z} \vert \mathbf{x}]\)</span>.</p></li>
 </ol>
+<p>The main advantage of VAE over a deterministic autoencoder is that it defines a proper generative model that can create natural-looking novel images by decoding prior samples <span class="math inline">\(\mathbf{z} \sim \mathcal{N}(0, \mathbf{I})\)</span>. This is in constrast with the autoencoder, where it only knows how to decode the latent codes derived from the training set, so it does poorly on random inputs, as shown in Figure</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-08-21 at 18.42.43.png" class="img-fluid figure-img" width="700"></p>
+<figcaption>celebA produced by Autoencoder, VAE, and beta-VAE</figcaption>
+</figure>
+</div>
 </section>
-<section id="capturing-data-dependencies-with-attention-mechanisms" class="level1">
-<h1>Capturing data dependencies with Attention mechanisms</h1>
-<p>The Attention mechanism is a foundation to every LLM that are based on the Transformer architecture. In self-attention, the <em>self</em> refers to the fact that the Attention mechanism is able to compute the attention weights by relating different positions within a single input sequence. It assesses and learns the relationships and dependencies between various parts of the input itself.</p>
 </section>
-<section id="simple-attention-mechanism-without-trainable-weights" class="level1">
-<h1>Simple Attention mechanism without trainable weights</h1>
-<p>In self-attention, context vectors play a crucial role. Their purpose is to create enriched representations of each element in an input sequence (like a sentence) by incorporating information from all other elements in the sequence.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> torch.tensor(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  [[<span class="fl">0.43</span>, <span class="fl">0.15</span>, <span class="fl">0.89</span>], <span class="co"># Your     (x^1)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.55</span>, <span class="fl">0.87</span>, <span class="fl">0.66</span>], <span class="co"># journey  (x^2)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.57</span>, <span class="fl">0.85</span>, <span class="fl">0.64</span>], <span class="co"># starts   (x^3)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.22</span>, <span class="fl">0.58</span>, <span class="fl">0.33</span>], <span class="co"># with     (x^4)</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.77</span>, <span class="fl">0.25</span>, <span class="fl">0.10</span>], <span class="co"># one      (x^5)</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>   [<span class="fl">0.05</span>, <span class="fl">0.80</span>, <span class="fl">0.55</span>]] <span class="co"># step     (x^6)</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The very first step of implementing self-attention is to compute the attention scores <span class="math inline">\(\omega\)</span>, which are determined by computing the dot product of the query with every other input token.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> inputs[<span class="dv">1</span>]</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>attn_scores_2 <span class="op">=</span> torch.empty(inputs.shape[<span class="dv">0</span>])</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    attn_scores_2[i] <span class="op">=</span> torch.dot(x_i, query)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865])</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># understanding dot product</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, element <span class="kw">in</span> <span class="bu">enumerate</span>(inputs[<span class="dv">0</span>]):</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    result <span class="op">+=</span> inputs[<span class="dv">0</span>][idx]<span class="op">*</span>query[idx]</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(torch.dot(inputs[<span class="dv">0</span>],query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor(0.9544)
-tensor(0.9544)</code></pre>
-<p>After calculating the attention weights, the next step is to normalize these attention weights so that the sum of these weights equals 1. In so doing, we can have nice probabilistic interpretation of the attention weights as well as maintain training stability for an LLM. In code, we could achieve this step as follows:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>attn_weights_2_tmp <span class="op">=</span> attn_scores_2 <span class="op">/</span> attn_scores_2.<span class="bu">sum</span>()</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Attention weights: </span><span class="ch">\t</span><span class="st">"</span>, attn_weights_2_tmp)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sum: </span><span class="ch">\t\t\t</span><span class="st">"</span>, attn_weights_2_tmp.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>Attention weights:   tensor([0.1455, 0.2278, 0.2249, 0.1285, 0.1077, 0.1656])
-Sum:             tensor(1.0000)</code></pre>
-<p>In practice, it’s more common to instead use the softmax function for normalization because it is better at handling extreme values and offers more favorable gradient properties during training.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> softmax_naive(x):</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> torch.exp(x)<span class="op">/</span>torch.exp(x).<span class="bu">sum</span>(dim<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>attn_weights_2_naive <span class="op">=</span> softmax_naive(attn_scores_2)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Attention weights: "</span>, attn_weights_2_naive)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sum: "</span>, attn_weights_2_naive.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>Attention weights:  tensor([0.1385, 0.2379, 0.2333, 0.1240, 0.1082, 0.1581])
-Sum:  tensor(1.)</code></pre>
-<p>Now that we have the attention weights, the next step is to calculate the context vector <span class="math inline">\(z\)</span> b multiplying the embedded input tokens <span class="math inline">\(x^{(i)}\)</span> with the corresponding attention weights and summing the resulting vectors.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>attn_weights_2 <span class="op">=</span> torch.softmax(attn_scores_2, dim<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> inputs[<span class="dv">1</span>]</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>context_vec_2 <span class="op">=</span> torch.zeros(query.shape)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    context_vec_2 <span class="op">+=</span> attn_weights_2[i] <span class="op">*</span> x_i</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(context_vec_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([0.4419, 0.6515, 0.5683])</code></pre>
+<section id="vae-setting" class="level1 page-columns page-full">
+<h1>VAE Setting</h1>
+<p>The <em>autoencoder</em> has an input variable <span class="math inline">\(\mathbf{x}\)</span> and a latent variable <span class="math inline">\(\mathbf{z}\)</span>, where <span class="math inline">\(\mathbf{x}\)</span> is an input image and <span class="math inline">\(\mathbf{z}\)</span> is some latent vector in high dimensional space.</p>
+<p><img src="Screenshot 2024-08-21 at 19.19.47.png" class="img-fluid" width="800"></p>
+<p>The term <em>variational</em> in Variational Autoencoder refers to the fact that we use probability distributions to describe <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{z}\)</span>.</p>
+<p>There are four main distributions that we need to consider for VAE</p>
+<ul>
+<li><p><span class="math inline">\(p(\mathbf{x})\)</span> is the distribution of <span class="math inline">\(\mathbf{x}\)</span>, we never have access to this distribution and the goal of generative models in general is to find ways to draw samples from <span class="math inline">\(p(\mathbf{x})\)</span>.</p></li>
+<li><p><span class="math inline">\(p(\mathbf{z})\)</span> is the distribution of the latent vector <span class="math inline">\(\mathbf{z}\)</span>. We assume that <span class="math inline">\(p(\mathbf{z}) \sim \mathcal{N}(0, \mathbf{I})\)</span>.</p></li>
+<li><p><span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span> is the conditional distribution that is associated with the encoder, which tells us the likelihood of <span class="math inline">\(\mathbf{z}\)</span> given <span class="math inline">\(\mathbf{x}\)</span>.</p></li>
+<li><p><span class="math inline">\(p(\mathbf{x} \vert \mathbf{z})\)</span> is the conditional distribution that is associated with the decoder that tells us the likelihood of <span class="math inline">\(\mathbf{x}\)</span> given <span class="math inline">\(\mathbf{z}\)</span>.</p></li>
+</ul>
+<section id="proxy-distributions" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="proxy-distributions">Proxy distributions</h2>
+<p>Since we don’t have access to the two high-dimensional distributions associated with the encoder <span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span> and the decoder <span class="math inline">\(p(\mathbf{x} \vert \mathbf{z})\)</span>, we need to come up with a way to approximate it. Consider the following two distributions:</p>
+<ul>
+<li><span class="math inline">\(q_{\phi}(\mathbf{z} \vert \mathbf{x})\)</span>, which is the proxy for <span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span> and we assume this to be a Gaussian distribution.</li>
+<li><span class="math inline">\(p_{\theta}(\mathbf{x} \vert \mathbf{z})\)</span>, which is the proxy for <span class="math inline">\(p(\mathbf{x} \vert \mathbf{z})\)</span>, and we also assume this to be a Gaussian distribution.</li>
+</ul>
+<p>![[Screenshot 2024-08-11 at 19.31.17.png]]</p>
+<div class="page-columns page-full"><p>Here, <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\theta\)</span> are the parameters that we need to optimize. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><em>Proxy distributions</em> are ditributions that are approximate of other true distributions.</span></div></div>
 </section>
-<section id="computing-attention-weights-for-all-input-tokens" class="level1">
-<h1>Computing attention weights for all input tokens</h1>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>attn_scores <span class="op">=</span> torch.empty(<span class="dv">6</span>,<span class="dv">6</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>start_time <span class="op">=</span> time.time()</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># naive for loops</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, x_i <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j, x_j <span class="kw">in</span> <span class="bu">enumerate</span>(inputs):</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        attn_scores[i,j] <span class="op">=</span> torch.dot(x_i, x_j)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>end_time <span class="op">=</span> time.time()</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores)</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>execution_time <span class="op">=</span> <span class="bu">round</span>(end_time <span class="op">-</span> start_time,<span class="dv">4</span>)</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Execution Time: </span><span class="sc">{</span>execution_time<span class="sc">}</span><span class="ss"> seconds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([[0.9995, 0.9544, 0.9422, 0.4753, 0.4576, 0.6310],
-        [0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865],
-        [0.9422, 1.4754, 1.4570, 0.8296, 0.7154, 1.0605],
-        [0.4753, 0.8434, 0.8296, 0.4937, 0.3474, 0.6565],
-        [0.4576, 0.7070, 0.7154, 0.3474, 0.6654, 0.2935],
-        [0.6310, 1.0865, 1.0605, 0.6565, 0.2935, 0.9450]])
-Execution Time: 0.0044 seconds</code></pre>
-<p>For loop is slow, using two for loops is even slower. A smarter way to compute the attention weights is to use matrix multiplication as follows:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>start_time <span class="op">=</span> time.time()</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>attn_scores  <span class="op">=</span> inputs <span class="op">@</span> inputs.T</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>end_time <span class="op">=</span> time.time()</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_scores)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>execution_time <span class="op">=</span> <span class="bu">round</span>(end_time <span class="op">-</span> start_time,<span class="dv">4</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Execution Time: </span><span class="sc">{</span>execution_time<span class="sc">}</span><span class="ss"> seconds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([[0.9995, 0.9544, 0.9422, 0.4753, 0.4576, 0.6310],
-        [0.9544, 1.4950, 1.4754, 0.8434, 0.7070, 1.0865],
-        [0.9422, 1.4754, 1.4570, 0.8296, 0.7154, 1.0605],
-        [0.4753, 0.8434, 0.8296, 0.4937, 0.3474, 0.6565],
-        [0.4576, 0.7070, 0.7154, 0.3474, 0.6654, 0.2935],
-        [0.6310, 1.0865, 1.0605, 0.6565, 0.2935, 0.9450]])
-Execution Time: 0.0004 seconds</code></pre>
-<p>Nice, we are now 10 times faster than using two for loops. Next, we compute the attention weights via the softmax function.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>attn_weights <span class="op">=</span> torch.softmax(attn_scores, dim<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(attn_weights)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([[0.2098, 0.2006, 0.1981, 0.1242, 0.1220, 0.1452],
-        [0.1385, 0.2379, 0.2333, 0.1240, 0.1082, 0.1581],
-        [0.1390, 0.2369, 0.2326, 0.1242, 0.1108, 0.1565],
-        [0.1435, 0.2074, 0.2046, 0.1462, 0.1263, 0.1720],
-        [0.1526, 0.1958, 0.1975, 0.1367, 0.1879, 0.1295],
-        [0.1385, 0.2184, 0.2128, 0.1420, 0.0988, 0.1896]])</code></pre>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#verify that the rows sum to 1</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"All rows sum: "</span>, attn_weights.<span class="bu">sum</span>(dim<span class="op">=</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>All rows sum:  tensor([1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000])</code></pre>
-<p>The final step is to compute the context vector. Recall that we can do so by multiplying the attention weights with the embedded vector of the inputs.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>all_context_vecs <span class="op">=</span> attn_weights <span class="op">@</span> inputs</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(all_context_vecs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>tensor([[0.4421, 0.5931, 0.5790],
-        [0.4419, 0.6515, 0.5683],
-        [0.4431, 0.6496, 0.5671],
-        [0.4304, 0.6298, 0.5510],
-        [0.4671, 0.5910, 0.5266],
-        [0.4177, 0.6503, 0.5645]])</code></pre>
+</section>
+<section id="evidence-lower-bound-elbo" class="level1">
+<h1>Evidence Lower Bound (ELBO)</h1>
+<div class="callout callout-style-default callout-tip callout-titled" title="Evidence Lower Bound (ELBO)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Evidence Lower Bound (ELBO)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><span class="math display">\[\text{ELBO}(\mathbf{x})= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right]\]</span></p>
+</blockquote>
+</div>
+</div>
+<p>ELBO is a <strong>lower bound</strong> for the prior distribution <span class="math inline">\(\log p(\mathbf{x})\)</span> because we can show that <span class="math inline">\(\log p(\mathbf{x}) \geq \text{ELBO}(\mathbf{x})\)</span>. There are two derivation that can lead us to the same ELBO term using Jensen’s inequality and the KL Divergence.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="ELBO Derivation using Jensen's inequality">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ELBO Derivation using Jensen’s inequality
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>Starting with <span class="math inline">\(\log p(\mathbf{x})\)</span>, we have: <span class="math display">\[\begin{aligned}
+\log p(\mathbf{x}) &amp;= \log \int_{\mathbf{z}} p(\mathbf{x},\mathbf{z})d\mathbf{z} \\
+&amp;= \log\int_\mathbf{z} p(\mathbf{x},\mathbf{z}) \dfrac{q_{\phi}(\mathbf{z} \vert \mathbf{x})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})} d\mathbf{z} \\
+&amp;= \log \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\dfrac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] \\
+&amp; \geq  \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log\dfrac{p(\mathbf{x}, \mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] &amp;&amp; \text{(by Jensen's inequality)}
+\end{aligned}
+\]</span></p>
+</blockquote>
+</div>
+</div>
+<p>While this derivation is straightforward, it does not give us the insight into what exactly is the difference between the ELBO term and the actual <span class="math inline">\(\log p(\mathbf{x})\)</span>. The following derivation using KL Divergence tells us explicitly that that difference is exactly the KL Divergence term between the proxy distribution of the decoder <span class="math inline">\(q_{\phi}(\mathbf{z} \vert \mathbf{x})\)</span> and <span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span>. Figure 3 gives an illustration for this gap between the ELBO and <span class="math inline">\(\log p(\mathbf{x})\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="ELBO Derivation using KL Divergence">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ELBO Derivation using KL Divergence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>We’ll again start with <span class="math inline">\(\log p(\mathbf{x})\)</span> because that’s the main term that we need to find. <span class="math display">\[\begin{aligned}
+\log p(\mathbf{x}) &amp;= \log p(\mathbf{x})\int q_{\phi}(\mathbf{x} \vert \mathbf{z})d\mathbf{z}  &amp;&amp; \text{(multiply by 1)}\\
+&amp;= \int \log p(\mathbf{x})q_{\phi}(\mathbf{x} \vert \mathbf{z})d\mathbf{z}\\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})} [\log p(\mathbf{x})] &amp;&amp; \text{(by definition of expectation)}\\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})} \left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{p(\mathbf{x} \vert \mathbf{z})}\right] &amp;&amp; \text{(by Bayes' theorem)}\\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})} \left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{p(\mathbf{x} \vert \mathbf{z})} \times \dfrac{q_{\phi}(\mathbf{z} \vert \mathbf{x})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] &amp;&amp; \text{(multiply and divide by 1)}\\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})} \left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})} \right] + \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})} \left[\log \dfrac{q_{\phi}(\mathbf{z} \vert \mathbf{x})}{p(\mathbf{x} \vert \mathbf{z})} \right] &amp;&amp; \text{(split the expectation)}\\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})}\left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})} \right] + \underbrace{D_{KL}(q_{\phi}(\mathbf{z} \vert \mathbf{x}) \| p(\mathbf{x} \vert \mathbf{z}))}_{\geq 0} &amp;&amp; \text{(by definition of KL Divergence)}\\
+&amp; \geq \mathbb{E}_{q_{\phi}(\mathbf{x} \vert \mathbf{z})}\left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})} \right]
+\end{aligned}\]</span></p>
+</blockquote>
+</div>
+</div>
+<p>![[Screenshot 2024-08-13 at 10.05.37.png]]</p>
+<p>While the ELBO is useful, still, we can not use it because of the term <span class="math inline">\(p(\mathbf{x}, \mathbf{z})\)</span>, which we don’t know. Therefore we need to do further derivation so that the ELBO only contain the terms that we know and can work with. Consider the following derivation: <span class="math display">\[
+\begin{aligned}
+\text{ELBO}(\mathbf{x}) &amp;= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] \\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log \dfrac{p(\mathbf{x} \vert \mathbf{z})p(\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] \\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})} [\log p(\mathbf{x} \vert \mathbf{z})] + \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log \dfrac{p(\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] \\
+&amp;= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})} [\log p_{\theta}(\mathbf{x} \vert \mathbf{z})] - D_{KL}(q_{\phi}(\mathbf{z} \vert \mathbf{x}) \|p(\mathbf{z} ))
+\end{aligned}
+\]</span> Now the ELBO only contains terms that have Gaussian distribution. In particular, we obtain that: <span class="math display">\[\text{ELBO}(\mathbf{x}) = \underbrace{\mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})} [\log p_{\theta}(\mathbf{x} \vert \mathbf{z})]}_{\text{how good your decoder is}} - \underbrace{D_{KL}(q_{\phi}(\mathbf{z} \vert \mathbf{x}) \|p(\mathbf{z} ))}_\text{how good your encoder is}\]</span> Note that there are now two terms in the equation, the reconstruction term and the prior matching term. The reconstruction term <span class="math inline">\(\mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})} [\log p_{\theta}(\mathbf{x} \vert \mathbf{z})]\)</span> is about the decoder. We want the decoder to produce a good image <span class="math inline">\(\mathbf{x}\)</span> given the latent vector <span class="math inline">\(\mathbf{z}\)</span>. Therefore, we want to maximize <span class="math inline">\(\log p_{\theta}(\mathbf{x} \vert \mathbf{z})\)</span>. The prior matching term is the KL divergence for the encoder. We want the encoder to turn an image <span class="math inline">\(\mathbf{x}\)</span> into a latent vector <span class="math inline">\(\mathbf{z}\)</span> such that the latent vector will be normally distributed, i.e <span class="math inline">\(\mathbf{z} \sim \mathcal{N}(0, \mathbf{I})\)</span>,</p>
+</section>
+<section id="training-vae" class="level1">
+<h1>Training VAE</h1>
+<section id="encoder" class="level2">
+<h2 class="anchored" data-anchor-id="encoder">Encoder</h2>
+<p>To train the VAE, we need to know the ground truth pair <span class="math inline">\((\mathbf{x},\mathbf{z})\)</span>. We know that <span class="math inline">\(\mathbf{z}\)</span> is generated from the distribution <span class="math inline">\(q_{\phi}(\mathbf{z} \vert \mathbf{x})\)</span>, and we also know that <span class="math inline">\(q_{\phi}(\mathbf{z} \vert \mathbf{x})\)</span> is also a Gaussian. Assume that this Gaussian has mean <span class="math inline">\(\boldsymbol{\mu}\)</span> and variance <span class="math inline">\(\sigma^{2}\mathbf{I}\)</span>. Now, the difficult part is how to obtain <span class="math inline">\(\boldsymbol{\mu}\)</span> and covariance <span class="math inline">\(\sigma^2\mathbf{I}\)</span> from the input image <span class="math inline">\(\mathbf{x}\)</span>. The answer is, we will construct a neural network such that <span class="math display">\[\boldsymbol{\mu} = \underbrace{\boldsymbol{\mu}_\phi(\mathbf{x})}_{\text{neural network}}\]</span> <span class="math display">\[\sigma^{2}= \underbrace{\sigma^{2}_{\phi}(\mathbf{x})}_{\text{neural network}}\]</span> Now, the <span class="math inline">\(\ell^{th}\)</span> training sample of the training set <span class="math inline">\(\mathbf{z}^{(\ell)}\)</span> can be sampled from the Gaussian distribution: <span class="math display">\[\mathbf{z}^{(\ell)} \sim q_{\phi}(\mathbf{z} \vert \mathbf{x}^{(\ell)}),\quad \text{where } q_{\phi}(\mathbf{z} \vert \mathbf{x}^{(\ell)})=\mathcal{N}(\mathbf{z} \vert \boldsymbol{\mu}_\phi(\mathbf{x}^{(\ell)}), \sigma^{2}_{\phi}(\mathbf{x}^{(\ell)}))\]</span> Here, note that <span class="math inline">\(\boldsymbol{\mu}_\phi(\mathbf{x}^{(\ell)})\)</span> and <span class="math inline">\(\sigma^{2}_{\phi}(\mathbf{x}^{(\ell)})\)</span> are functions of <span class="math inline">\(\mathbf{x}^{(\ell)}\)</span>, so for every different <span class="math inline">\(\mathbf{x}^{(\ell)}\)</span>, we need to come up with a different Gaussian.</p>
+</section>
+<section id="decoder" class="level2">
+<h2 class="anchored" data-anchor-id="decoder">Decoder</h2>
+<p>The job of the decoder network is to reconstruct the image <span class="math inline">\(\mathbf{x}\)</span> given the latent vector <span class="math inline">\(\mathbf{z}\)</span>, which is encoded from the original image via the encoder. <span class="math display">\[\hat{\mathbf{x}} = \text{decode}_\theta(\mathbf{z})\]</span> One assumption that we’ll make is that the error between the reconstructed image <span class="math inline">\(\hat{\mathbf{x}}\)</span> and the original input image <span class="math inline">\(\mathbf{x}\)</span> is Gaussian, i.e. <span class="math display">\[(\hat{\mathbf{x}}-\mathbf{x}) \sim \mathcal{N}(0, \sigma^{2}_\text{dec})\]</span> It then follows that the distribution <span class="math inline">\(p_{\theta}(\mathbf{x} \vert \mathbf{z})\)</span> is: <span class="math display">\[
+\begin{aligned}
+\log p_{\theta}(\mathbf{x} \vert \mathbf{z})
+&amp;= \log \mathcal{N}(\mathbf{x} \vert \text{decode}_{\theta}(\mathbf{x}), \sigma^{2}_\text{dec}\mathbf{I}) \\
+&amp;= \log \dfrac{1}{\sqrt{(2\pi \sigma^{2}_\text{dec})^{D}}} \exp \left(- \dfrac{\|\mathbf{x} - \text{decode}_{\theta}(\mathbf{z})\|^2}{2 \sigma^{2}_\text{dec}}\right)\\
+&amp;= - \dfrac{\|\mathbf{x} - \text{decode}_{\theta}(\mathbf{z})\|^2}{2 \sigma^{2}_\text{dec}}-\log\sqrt{(2\pi\sigma^2_\text{dec})^D}\end{aligned}
+\]</span> where <span class="math inline">\(D\)</span> is the dimension of <span class="math inline">\(\mathbf{x}\)</span>. Through this derivation, we know that maximizing the likelihood term in ELBO is equivalent to minimizing the <span class="math inline">\(\ell_{2}\)</span> loss between the ground truth image and the reconstructed image, which makes a lot of sense.</p>
+</section>
+</section>
+<section id="loss-function" class="level1">
+<h1>Loss function</h1>
+<p>The loss function can be approximated via Monte-Carlo simulation <span class="math display">\[\mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}[\log p_{\theta}(\mathbf{z} \vert \mathbf{x})] \approx \dfrac{1}{L} \sum\limits_{\ell=1}^{L}\log p_{\theta}(\mathbf{x}^{(\ell)} \vert \mathbf{z}^{(\ell)}), \quad \mathbf{z}^{(\ell)} \sim q_{\phi}(\mathbf{z} \vert \mathbf{x}^{(\ell)})\]</span> Therefore we obtain the loss function of VAE, which can be defined as follows:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Training loss of VAE">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Training loss of VAE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><span class="math display">\[\underset{\phi, \theta}{\text{argmax}} \left[\dfrac{1}{L}\sum\limits_{\ell=1}^{L}\log p_{\theta}(\mathbf{x}^{(\ell)} \vert \mathbf{z}^{(\ell)}) -D_{KL}(q_{\phi}(\mathbf{z} \vert \mathbf{x}^{(\ell)})\| p(\mathbf{z}))\right],  \]</span></p>
+</blockquote>
+</div>
+</div>
+</section>
+<section id="inference" class="level1">
+<h1>Inference</h1>
+<p>For inference, we can simply feed a latent vector <span class="math inline">\(\mathbf{z}\)</span> which we sampled from <span class="math inline">\(p(\mathbf{z}) = \mathcal{N}(0, \mathbf{I})\)</span> into the decoder <span class="math inline">\(\text{decode}_\theta\)</span> and get an image <span class="math inline">\(\mathbf{x}\)</span>.</p>
+</section>
+<section id="vae-implementation" class="level1">
+<h1>VAE Implementation</h1>
+</section>
+
+<section id="further-reading" class="level1">
+<h1>Further Reading</h1>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="appendix-a-proof-of-kl-nonnegativity" class="level1 appendix"><h2 class="anchored quarto-appendix-heading">Appendix A: Proof of KL Nonnegativity</h2><div class="quarto-appendix-contents">
+
+<p><span class="math inline">\(D_{KL}(p \| q) \geq 0\)</span> with equality iff <span class="math inline">\(p=q\)</span>.</p>
+<p><span class="math display">\[\begin{aligned}
+D_{\mathrm{KL}}(P\|Q)&amp; =\sum_{x\in\mathcal{X}}P(x)\log\frac{P(x)}{Q(x)} &amp;&amp; \text{(by definition for discrete case)}  \\
+&amp;=-\sum_{x\in\mathcal{X}}P(x)\log\frac{Q(x)}{P(x)} &amp;&amp; \text{(changing the sign of the $\log$)}\\
+&amp;=\mathbb{E}\bigg[-\log\frac{Q(x)}{P(x)}\bigg] &amp;&amp; \text{(by Law of Unconscious stastistician)}\\
+&amp;\geq-\log \mathbb{E}\Big[\frac{Q(x)}{P(x)}\Big] &amp;&amp; \text{(by Jensen's inequality)}\\
+&amp;=-\log\Big(\sum_{x\in\mathcal{X}}P(x)\frac{Q(x)}{P(x)}\Big) &amp;&amp; \text{(deriving the expectation term)}\\
+&amp;=-\log\sum_{x\in\mathcal{X}}Q(x) &amp;&amp; \text{(cancelling out the $P(x)$)}\\
+&amp;=-\log1 =0
+\end{aligned}\]</span></p>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

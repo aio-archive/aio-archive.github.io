@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AIO2023 Course – AIO Course</title>
+<title>Fisher Information – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./module1.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,18 +68,47 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -96,61 +124,61 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./module1.html">
+    <a class="dropdown-item" href="../../../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module2.html">
+    <a class="dropdown-item" href="../../../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module3.html">
+    <a class="dropdown-item" href="../../../module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module4.html">
+    <a class="dropdown-item" href="../../../module4.html">
  <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module5.html">
+    <a class="dropdown-item" href="../../../module5.html">
  <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module6.html">
+    <a class="dropdown-item" href="../../../module6.html">
  <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module7.html">
+    <a class="dropdown-item" href="../../../module7.html">
  <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module8.html">
+    <a class="dropdown-item" href="../../../module8.html">
  <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module9.html">
+    <a class="dropdown-item" href="../../../module9.html">
  <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module10.html">
+    <a class="dropdown-item" href="../../../module10.html">
  <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources/resources.html"> 
+    <a class="nav-link active" href="../../../resources/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ainews.html"> 
+    <a class="nav-link" href="../../../ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./memes.html"> 
+    <a class="nav-link" href="../../../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -160,20 +188,144 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Fisher Information</h1>
+        </a>     
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course content</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../module10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Others</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../resources/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../misc/misc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Misc</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries">Preliminaries</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AIO2023 Course</h1>
+<h1 class="title d-none d-lg-block">Fisher Information</h1>
 </div>
 
 
@@ -190,10 +342,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>“All models are wrong, but some are useful”</em> George Box</p>
-<p><img src="intro_2.gif" class="img-fluid"></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Fisher information provides a way to measure the amount of information that a random variable contains about some parameter&nbsp;<span class="math inline">\(\theta\)</span> (such as the true mean) of the random variable’s assumed probability distribution.</p>
+</section>
+<section id="preliminaries" class="level1">
+<h1>Preliminaries</h1>
+<p>A standard problem in statistical estimation is to determine the parameters of a distribution from a sample of data drawn from that distribution. Let <span class="math inline">\(X_{1}, \cdots, X_{n}\)</span> be drawn i.i.d. from <span class="math inline">\(\mathcal{N}(\theta,1)\)</span>. Suppose we wish to estimate <span class="math inline">\(\theta\)</span> from a sample of size <span class="math inline">\(n\)</span>. We guess that the sample mean <span class="math inline">\(\bar{X}_{n} = \dfrac{1}{n}\sum\limits X_i\)</span> is the best estimate of <span class="math inline">\(\theta\)</span> and we can indeed show that <span class="math inline">\(\bar{X}_{n}\)</span> is the minimum MSE unbiased estimator.</p>
+<p>Let <span class="math inline">\(\{f(x;\theta)\}, \theta \in \Theta\)</span> denote an indexed family of densities so that <span class="math inline">\(f(x;\theta) \geq 0, \int f(x;\theta)dx=1\)</span> for all <span class="math inline">\(\theta \in \Theta\)</span>, where <span class="math inline">\(\Theta\)</span> is called the <em>parameter set</em>.</p>
+<blockquote class="blockquote">
+<p>[!definition] Estimator An estimator for <span class="math inline">\(\theta\)</span> for a sample size <span class="math inline">\(n\)</span> is a function <span class="math inline">\(T\)</span>: <span class="math inline">\(\mathcal{X}^{n}\rightarrow \Theta\)</span>.</p>
+</blockquote>
+<p>An estimator is meant to approximate the value of the parameter, therefore it is desirable to have some idea of the <em>goodness</em> of the approximator. We call the difference <span class="math inline">\(T-\theta\)</span> the <strong>error</strong> of the estimator. This error itself is a random variable.</p>
+<blockquote class="blockquote">
+<p>[!definition] Bias The bias of an estimator <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n})\)</span> for the parameter <span class="math inline">\(\theta\)</span> is the expected value of the error of the estimator, i.e.&nbsp;<span class="math display">\[\mathbb{E}_{\theta}[T(X_{1}, X_{2},\cdots, X_{n})-\theta]\]</span></p>
+</blockquote>
+<p>The estimator is said to be unbiased if the bias is 0 for all <span class="math inline">\(\theta \in \Theta\)</span>.</p>
+<blockquote class="blockquote">
+<p>[!definition] Consistency of probability An estimator <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n})\)</span> for <span class="math inline">\(\theta\)</span> is said to be <em>consistent in probability</em> if <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n}) \rightarrow \theta\)</span> in probability as <span class="math inline">\(n\rightarrow \theta\)</span>.</p>
+</blockquote>
+<p>While consistency is a desirable asymptotic property, we are also interested in the behavior for small sample size.</p>
+<blockquote class="blockquote">
+<p>[!definition] Dominate An estimator <span class="math inline">\(T_{1}(X_{1},X_{2},\cdots, X_{n})\)</span> is said to dominate another estimator <span class="math inline">\(T_{2}(X_{1},X_{2},\cdots, X_n)\)</span> if for all <span class="math inline">\(\theta\)</span> we have: <span class="math display">\[\mathbb{E}[T_{1}(X_{1},X_{2}, \cdots, X_{n})-\theta ]^{2}\leq \mathbb{E}[T_{2}(X_{1},X_{2}, \cdots, X_{n})-\theta ]^{2}\]</span></p>
+</blockquote>
+<p>This raises a natural question: Is there a best estimator of <span class="math inline">\(\theta\)</span> that dominates every other estimator ? To answer this, we derive the Cramér-Rao lower bound on the MSE of any estimator.</p>
+<blockquote class="blockquote">
+<p>[!definition] Score The score <span class="math inline">\(V\)</span> is a random variable defined by: <span class="math display">\[V = \dfrac{\partial}{\partial \theta} \log f(X;\theta)\]</span></p>
+</blockquote>
+<p>The mean value of the score is: <span class="math display">\[
+\begin{aligned}
+\mathbb{E}[V] &amp;= \int \dfrac{\partial}{\partial \theta}\log f(x;\theta) f(x;\theta)dx \\
+&amp;= \int \dfrac{\frac{\partial}{\partial \theta}f(x;\theta)}{f(x;\theta)} f(x;\theta)dx \\
+&amp;= \int \dfrac{\partial}{\partial \theta}f(x;\theta)dx \\
+&amp;= \dfrac{\partial}{\partial\theta}\int f(x;\theta)dx = 0
+\end{aligned}
+\]</span> therefore <span class="math inline">\(\mathbb{E}[V]^{2}= var(V)\)</span>. The variance of the score has a special significance.</p>
+<blockquote class="blockquote">
+<p>[!definition] Fisher information The Fisher information <span class="math inline">\(J(\theta)\)</span> is the variance of the score: <span class="math display">\[J(\theta) = \mathbb{E}_{\theta}\left[\dfrac{\partial}{\partial \theta}\log f(X;\theta)\right]^2\]</span></p>
+</blockquote>
+<p>If we consider a sample of <span class="math inline">\(n\)</span> random variable <span class="math inline">\(X_{1},X_{2},\cdots, X_{n}\)</span> drawn i.i.d. from <span class="math inline">\(f(x;\theta)\)</span>, we have: <span class="math display">\[
+f(x_{1},x_{2},\cdots, x_{n;\theta)}= \prod_{i=1}^{n}f(x_{i};\theta)
+\]</span> and the score function is the sum of the individual score functions: <span class="math display">\[
+\begin{aligned}
+V(X_{1}, X_{2}, \cdots, X_{n})
+&amp;= \dfrac{\partial}{\partial \theta} \log f(X_{1},X_{2}, \cdots, X_{n}; \theta) \\
+&amp;= \sum\limits_{i=1}^{n}\dfrac{\partial}{\partial \theta} \log f(X_{i}; \theta) \\
+&amp;= \sum\limits_{i=1}^{n}V(X_{i})
+\end{aligned}
+\]</span> where the <span class="math inline">\(V(X_{i})\)</span> are i.i.d. with zero mean, therefore the <span class="math inline">\(n\)</span>-sample Fisher information is: <span class="math display">\[
+\begin{aligned}
+J_{n}(\theta) &amp;= \mathbb{E}_{\theta}\left[\dfrac{\partial}{\partial \theta} \log f(X_{1},X_{2},\cdots, X_{n};\theta)\right]^{2} \\
+&amp;= \mathbb{E}_{\theta}[V^{2}(X_{1},X_{2},\cdots, X_{n})] \\&amp;= \mathbb{E}_{\theta}\left(\sum\limits_{i=1}^{n}V(X_{i})\right)^{2} \\
+&amp;= \sum\limits_{i=1}^{n}\mathbb{E}_{\theta}[V^{2}(X_{i})] = nJ(\theta)
+\end{aligned}
+\]</span></p>
+<hr>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -760,15 +966,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./module1.html" class="pagination-link" aria-label="Module 1">
-        <span class="nav-page-text">Module 1</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

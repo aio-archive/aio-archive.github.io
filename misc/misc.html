@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -366,7 +366,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="attention">attention <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nlp">nlp <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Generative models">Generative models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="attention">attention <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nlp">nlp <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -378,78 +378,130 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="nlp,attention,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723632876523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020">
-<div class="thumbnail">
-<p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">Spelled-out Introduction to Simple Self-Attention mechanism, in code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('attention'); return false;">
-attention
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="nlp,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723639103914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1058">
-<div class="thumbnail">
-<p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">Tokenization and Word Embeddings</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('nlp'); return false;">
-nlp
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-</div>
-<div class="listing-description">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="no-external">
-<div class="listing-date">
-Aug 14, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1724405380704" data-listing-reading-time-sort="3" data-listing-word-count-sort="519" data-listing-title-sort="KL Divergence" data-listing-filename-sort="kl-divergence.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../misc/posts/kl-divergence/kl-divergence.html" class="title listing-title">KL Divergence</a>
+</td>
+<td>
+<span class="listing-description">#prob-stats #divergence # KL Divergence # Introduction</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-file-modified-sort="1724405580492" data-listing-reading-time-sort="3" data-listing-word-count-sort="475" data-listing-title-sort="Fisher Information" data-listing-filename-sort="fisher-information.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../misc/posts/fisher-information/fisher-information.html" class="title listing-title">Fisher Information</a>
+</td>
+<td>
+<span class="listing-description">Fisher information provides a way to measure the amount of information that a random variable contains about some parameter&nbsp;<span class="math inline">\(\theta\)</span> (such as the true mean) of the random…</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-file-modified-sort="1724405305015" data-listing-reading-time-sort="2" data-listing-word-count-sort="360" data-listing-title-sort="Central Limit Theorem" data-listing-filename-sort="clt.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../misc/posts/clt/clt.html" class="title listing-title">Central Limit Theorem</a>
+</td>
+<td>
+<span class="listing-description">We know from the [[llns | Law of Large Numbers]] that <span class="math inline">\(\hat{X}_{n}-\mu \rightarrow 0\)</span> with probability 1. But what does the distribution look like ?</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-file-modified-sort="1724405185621" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Score Matching Reading" data-listing-filename-sort="sm-ref.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../misc/posts/score-matching-ref/sm-ref.html" class="title listing-title">Score Matching Reading</a>
+</td>
+<td>
+<span class="listing-description">https://jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="Generative models" data-listing-date-sort="1724086800000" data-listing-file-modified-sort="1724400934181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1738" data-listing-title-sort="Variational Autoencoders - Fundamental concepts" data-listing-filename-sort="vae.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Aug 20, 2024</span>
+</td>
+<td>
+<a href="../misc/posts/vae/vae.html" class="title listing-title">Variational Autoencoders - Fundamental concepts</a>
+</td>
+<td>
+<span class="listing-description">In this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="nlp,attention,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723632876523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020" data-listing-title-sort="Spelled-out Introduction to Simple Self-Attention mechanism, in code" data-listing-filename-sort="Attention (non-trainable weights).md" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Aug 14, 2024</span>
+</td>
+<td>
+<a href="../misc/posts/attention/Attention (non-trainable weights).html" class="title listing-title">Spelled-out Introduction to Simple Self-Attention mechanism, in code</a>
+</td>
+<td>
+<span class="listing-description">The backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="nlp,LLMs" data-listing-date-sort="1723568400000" data-listing-file-modified-sort="1723639103914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1058" data-listing-title-sort="Tokenization and Word Embeddings" data-listing-filename-sort="SimpleTokenizer.md" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Aug 14, 2024</span>
+</td>
+<td>
+<a href="../misc/posts/working-with-text/SimpleTokenizer.html" class="title listing-title">Tokenization and Word Embeddings</a>
+</td>
+<td>
+<span class="listing-description">The two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
