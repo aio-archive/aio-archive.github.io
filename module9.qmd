@@ -1,0 +1,39 @@
+---
+title: Module 9 - Generative Models
+tbl-colwidths: [35,120,30,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+| **Type**      | **Content**       | **Instructor**   | **Handout**     | **Further Reading**        |
+|---------------|---------------------------------------------------|------------------|-------------------------------------------------|--------------------------------------------------|
+| **<span class="badge rounded-pill bg-primary">Main Lesson</span> ** ||       |     |      |
+| <span class="badge rounded-pill bg-success">Assignment</span>    | Style Transfer Exercise     | TA Khoa          |     |      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Basic Style Transfer       | Dr. Vinh         | 240306-23M09-MC|      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Multimodal Style Transfer   | Dr. Vinh         | 240308-23M09-MC|      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span>  | TA Exercise  | TA Khoa          | 240310-23M09-MC|      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span>  | TA Exercise  | TA Thái          | 240317-23M09-MC|      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | GAN and DCGAN    | Dr. Vinh         | 240320-23M09-MC|      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Pix2Pix and CycleGAN        | Dr. Vinh         | 240322-23M09-MC|      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span>  | Text to Image Synthesis with DCGAN | TA Thái          | 240324-23M09-MC|      |
+| <span class="badge rounded-pill bg-success">Assignment</span>    | Image Inpainting with DDPMs  | TA Thái          | [solution]     |      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Diffusion Models (1)         | Dr. Đình Vinh    | 240327-23M09-MC| Tutorial on Diffusion Models for Imaging and Vision |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Diffusion Models (2)         | Dr. Đình Vinh    | 240329-23M09-MC|      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span>  | Diffusion-based Image Inpainting   | TA Thái          | 240331-23M09-MC|      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Project: VAE-based Image Colorization  | Dr. Tài          | 240403-23M09-MC|      |
+| Project tutorial - PT | Project: Diffusion-based Image Colorization    | Dr. Tài          | 240407-23M09-MC|      |
+| <span class="badge rounded-pill bg-success">Assignment</span>    | Text to Image Synthesis with Stable Diffusion (and CLIP) | TA Thái          |     |      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Stable Diffusion  | Dr. Đình Vinh    | 240410-23M09-MC|      |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | Introduction to OpenAI's Sora          | Dr. Đình Vinh    | 240412-23M09-MC|      |
+| Project tutorial - PT | Text to Image Synthesis with Stable Diffusion (and CLIP) | TA Thái  | 240414-23M09-MC|      |
+| **Extra class: Introduction to Large Language Models (LLMs)** |          |       |     |      |
+| LLMs          | Training a minChatGPT        | TA Thái          | 240406-23M10-EC1          |      |
+| LLMs          | LLM Finetuning for Math Solver          | TA Thắng         | 240413-23M10-EC1          |      |
+| **Extra class: MLOps** |  |       |     |      |
+| MLOps         | Model Pruning     | TA Bách          | 240309-23M09

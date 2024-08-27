@@ -1,0 +1,33 @@
+---
+title: Module 10 - Reinforcement Learning, GNN, and LLMs
+tbl-colwidths: [35,120,30,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+| Type        | Content                                    | Instructor     | Handout      | Further Reading                            |
+|-------------|------------------------------------------------------------------|----------------|--------------|--------------------------------------------|
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | <span class="badge rounded-pill bg-success">Assignment</span>: Reinforcement Learning Exercise                      | TA Thắng       |              |                                            |
+| Preview     | Introduction to Reinforcement Learning                           | TA Thuận       | 240416-23M10-EC2 |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Reinforcement Learning (CartPole)                                | Dr. Hoàng      | 240417-23M10-MC |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Reinforcement Learning (Deep Deterministic Policy Gradient)      | Dr. Hoàng      | 240419-23M10-MC |                                            |
+| Exercise    | TA Exercise                                                      | TA Thắng       | 240421-23M10-MC |                                            |
+| <span class="badge rounded-pill bg-success">Assignment</span>  | Point Cloud Techniques and Applications Project                  | Dr. Tuấn       |              |                                            |
+| <span class="badge rounded-pill bg-success">Assignment</span>  | Multimodal Large Language Models Exercise                        | TA Thái        |              |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Classification for 3D Point Cloud Data                           | Dr. Tuấn       | 240424-23M10-MC |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Advances in 3D Point Cloud Data                                  | Dr. Tuấn       | 240426-23M10-MC |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | GNN Node Classification                                          | Dr. Đình Vinh  | 240428-23M10-MC |                                            |
+| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | GNN (Molecular Property Prediction)                              | Dr. Đình Vinh  | 240501-23M10-MC |                                            |
+| Exercise    | TA Exercise                                                      | TA Đức         | 240503-23M10-MC |                                            |
+| Project PT  | Multitasking networks for Vision                                 | TA Thái        | 240505-23M10-MC | [Exercise]                                 |
+| Project PT  | VideoCLIP for Video Classification                               | TA Đức         | 240508-23M10-MC |                                            |
+| Project PT  | Multi-agent LLM                                                  | TA Thắng       | 240510-23M10-MC |                                            |
+| Extra class | LLM RAG for Applications                                         | TA Bách        | 240421-23M10-MC |                                            |
+| Extra class | LLMs for Multimodal Data                                         | TA Thái        | 240427-23M10-EC1 | [Modaverse] [BLIP-2] [NExT-GPT]            |
+| Extra class | LLM Deployment with LangChain                                    | TA Thắng       | 240504-23M10-EC1 |                                            |

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="A compilation of blogs">
 
-<title>Module 4 - Machine Learning and Data Science – AIO Course</title>
+<title>Blogs – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./module5.html" rel="next">
-<link href="./module3.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,10 +70,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -82,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -98,61 +156,61 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./module1.html">
+    <a class="dropdown-item" href="../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module2.html">
+    <a class="dropdown-item" href="../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module3.html">
+    <a class="dropdown-item" href="../module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module4.html">
- <span class="dropdown-text">Module 4 | Machine Learning and Data Science</span></a>
+    <a class="dropdown-item" href="../module4.html">
+ <span class="dropdown-text">Module 4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module5.html">
- <span class="dropdown-text">Module 5 | Deep Learning Prerequisites</span></a>
+    <a class="dropdown-item" href="../module5.html">
+ <span class="dropdown-text">Module 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module6.html">
- <span class="dropdown-text">Module 6 | Introduction to Deep Learning</span></a>
+    <a class="dropdown-item" href="../module6.html">
+ <span class="dropdown-text">Module 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module7.html">
- <span class="dropdown-text">Module 7 | Advanced Model Architectures for Computer Vision</span></a>
+    <a class="dropdown-item" href="../module7.html">
+ <span class="dropdown-text">Module 7</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module8.html">
- <span class="dropdown-text">Module 8 | Applications of Deep Learning for NLP</span></a>
+    <a class="dropdown-item" href="../module8.html">
+ <span class="dropdown-text">Module 8</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module9.html">
- <span class="dropdown-text">Module 9 | Generative Models</span></a>
+    <a class="dropdown-item" href="../module9.html">
+ <span class="dropdown-text">Module 9</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module10.html">
- <span class="dropdown-text">Module 10 | Reinforcement Learning, GNN, and LLMs</span></a>
+    <a class="dropdown-item" href="../module10.html">
+ <span class="dropdown-text">Module 10</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./resources/resources.html" aria-current="page"> 
+    <a class="nav-link active" href="../resources/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ainews.html"> 
+    <a class="nav-link" href="../ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./memes.html"> 
+    <a class="nav-link" href="../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -168,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Module 4 - Machine Learning and Data Science</h1>
+          <h1 class="quarto-secondary-nav-title">Blogs</h1>
         </a>     
     </div>
   </nav>
@@ -177,8 +235,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Module 4 - Machine Learning and Data Science</h1>
-                      </div>
+      <h1 class="title d-none d-lg-block">Blogs</h1>
+                  <div>
+        <div class="description">
+          A compilation of blogs
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -197,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -212,61 +275,61 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module4.html" class="sidebar-item-text sidebar-link active">
+  <a href="../module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module6.html" class="sidebar-item-text sidebar-link">
+  <a href="../module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module7.html" class="sidebar-item-text sidebar-link">
+  <a href="../module7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module8.html" class="sidebar-item-text sidebar-link">
+  <a href="../module8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module9.html" class="sidebar-item-text sidebar-link">
+  <a href="../module9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./module10.html" class="sidebar-item-text sidebar-link">
+  <a href="../module10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 10</span></a>
   </div>
 </li>
@@ -283,13 +346,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./misc/misc.html" class="sidebar-item-text sidebar-link">
+  <a href="../misc/misc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Misc</span></a>
   </div>
 </li>
@@ -301,20 +364,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#course-schedule-and-resources" id="toc-course-schedule-and-resources" class="nav-link" data-scroll-target="#course-schedule-and-resources">Course Schedule and Resources</a>
-  <ul class="collapse">
-  <li><a href="#main-lessons" id="toc-main-lessons" class="nav-link" data-scroll-target="#main-lessons">Main Lessons</a></li>
-  <li><a href="#python-support" id="toc-python-support" class="nav-link" data-scroll-target="#python-support">Python Support</a></li>
-  <li><a href="#extra-class-advanced-nlp" id="toc-extra-class-advanced-nlp" class="nav-link" data-scroll-target="#extra-class-advanced-nlp">Extra class: Advanced NLP</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Generative models">Generative models <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -322,325 +373,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Hi, welcome to Module 4: Machine Learning and Data Science of the AIO2023 course. The main lessons of this module involves around <em>traditional</em> machine learning algorithms, ranging from simple to complex one such as kNN, Decision tree, Random Forest, XGBoost, and Support Vector Machines (SVMs). There are two projects, including one where we’d work with tabular type of data for the problem of heart disease protection. The second project is on Object detection.</p>
-<p>As of the extra class for this module, it aims is to provide you with the knowledge involving around Large Language Models (LLMs), from the most fundamental knowledge to more recent techniques such as Prompting and Fine-tuning.</p>
-</section>
-<section id="course-schedule-and-resources" class="level1">
-<h1>Course Schedule and Resources</h1>
-<section id="main-lessons" class="level2">
-<h2 class="anchored" data-anchor-id="main-lessons">Main Lessons</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>28/08/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/1NT361wyjqp8vveexxqAIAYIeJ3g7ULkr/view">K-Nearest Neighbor and Decision Tree Exercise</a></td>
-<td>TA Thái</td>
-<td>[<a href="https://drive.google.com/file/d/1tz95nt4dGWCiRUB_IsS4EZnUgE5_hlD-/view">solution</a>]</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>30/08/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=kdZilIIK3XI">K-Nearest Neighbors</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1b5tR7eCcbKuWtDm98Wc-3WgJWRf4yeC1">230830</a></td>
-<td>[<a href="https://drive.google.com/file/d/1z0ByjtVln-KLWpj_iZ_vdE-dJGmCRnvb/view">note</a>] [<a href="https://www.youtube.com/watch?v=oymtGlGdT-k">CS4780 Lecture 3</a>]</td>
-</tr>
-<tr class="even">
-<td>01/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=JUV-6puCuuM">Decision Tree for Classification</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/1tMGaqDXOuSUnPR3N8q1hrNu0DoxsW3yq">230901</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>03/09/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=JUV-6puCuuM">TA Exercise</a></td>
-<td>TA Thái</td>
-<td><a href="https://drive.google.com/drive/folders/15Y7_YXc68l0iJKvbn779zKexIDQDKKqQ">230903</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>06/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=8Q4yXGP82t8">Decision Tree for Regression</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td><a href="https://drive.google.com/drive/folders/16jKw65BedmWftFMRgHxuMocqXn9JcwXY">230906</a></td>
-<td>[<a href="https://www.math.snu.ac.kr/~hichoi/machinelearning/lecturenotes/CART.pdf">Choi et al., 2017</a>]</td>
-</tr>
-<tr class="odd">
-<td>08/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=88uBBMau0k0">Random Forest</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230908</td>
-<td>[Louppe et al., 2015]</td>
-</tr>
-<tr class="even">
-<td>10/09/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=23nAt9Mal28">TA Exercise</a></td>
-<td>TA Thắng</td>
-<td>230910</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>11/09/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/132b0nWRX0AhpqutLsAc32yO6p5uE8QqO/view?usp=drivesdk">XGBoost</a></td>
-<td>TA Khoa</td>
-<td>[solution]</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>13/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=qZ1n0oDQ8eQ">Basic XGBoost: Understanding Gradient Boost and AdaBoost</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230913</td>
-<td>[note] [Trevor Lecture]</td>
-</tr>
-<tr class="odd">
-<td>15/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=B4B6XtWRacs">Advanced XGBoost: Fully XGBoost and its mathematics</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230915</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>17/09/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=lBxxuy-MXL0">TA Exercise</a></td>
-<td>TA Khoa</td>
-<td>230917</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>18/09/23</td>
-<td><span class="badge rounded-pill bg-success">Assignment</span></td>
-<td><a href="https://drive.google.com/file/d/12fWYVlcIPWZb47KAJThp8Hd8LWu12ZEj/view">Support Vector Machine Exercise</a></td>
-<td>TA Thắng</td>
-<td>[solution]</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>20/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=b0na2ulwqfs">Review on Tree-based Approaches and Discussion</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230920</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>22/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=OHKsqkvTb4E">Support Vector Machine (1)</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230922</td>
-<td>[CS229 Note] [MLCB]</td>
-</tr>
-<tr class="even">
-<td>24/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
-<td><a href="https://www.youtube.com/watch?v=Zlgm2er07zM">Support Vector Machine (2)</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230924</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>27/09/23</td>
-<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
-<td><a href="https://www.youtube.com/watch?v=Xmi2Re_VI2k">TA-Exercise</a></td>
-<td>TA Thắng</td>
-<td>230927</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>29/09/23</td>
-<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
-<td><a href="https://www.youtube.com/watch?v=tBgS6ccF_RI">Tabular Data Project: Heart Disease Prediction</a></td>
-<td>Dr.&nbsp;Đình Vinh</td>
-<td>230929</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>01/10/23</td>
-<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
-<td><a href="https://www.youtube.com/watch?v=W_jUEuetCh8">Image Project: Object Detection</a></td>
-<td>TA Thắng</td>
-<td>231001</td>
-<td>[HoG paper]</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="python-support" class="level2">
-<h2 class="anchored" data-anchor-id="python-support">Python Support</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>29/08/23</td>
-<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
-<td><a href="https://www.youtube.com/watch?v=q48CIhjqYdA">K-Nearest Neighbors (Warm-up)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>230829</td>
-<td>[STAT451 Note]</td>
-</tr>
-<tr class="odd">
-<td>05/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
-<td><a href="https://www.youtube.com/watch?v=2CJAdtMFw9Y">Decision Tree</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>230905</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>12/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
-<td><a href="https://www.youtube.com/watch?v=fy4hhYCdz_s">Random Forest and AdaBoost (Warm-up)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>230912</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>21/09/23</td>
-<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
-<td><a href="https://www.youtube.com/watch?v=ervuznbyj_Q">SVM</a></td>
-<td>TA Thắng</td>
-<td>230921</td>
-<td>[CS4780 Note]</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="extra-class-advanced-nlp" class="level2">
-<h2 class="anchored" data-anchor-id="extra-class-advanced-nlp">Extra class: Advanced NLP</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 26%">
-<col style="width: 13%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>09/09/23</td>
-<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
-<td><a href="https://www.youtube.com/watch?v=D45Ub4E39Pc">Foundations for an NLP topic</a></td>
-<td>TA Thái</td>
-<td>230909</td>
-<td>[note] [CS324 note]</td>
-</tr>
-<tr class="odd">
-<td>16/09/23</td>
-<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
-<td><a href="https://www.youtube.com/watch?v=8Jm_KoOkQNI">Language Models and Prompting Techniques</a></td>
-<td></td>
-<td>230916</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>23/09/23</td>
-<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
-<td><a href="https://www.youtube.com/watch?v=v7ppJh-gi7Y">Parameter-Efficient Fine-tuning</a></td>
-<td></td>
-<td>230923</td>
-<td>[Houlsby et al., 2019] [COS597G Slides]</td>
-</tr>
-<tr class="odd">
-<td>30/09/23</td>
-<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
-<td><a href="https://www.youtube.com/watch?v=v4z4dEszvXY">Efficient Fine-tuning of quantized LLMs</a></td>
-<td></td>
-<td>230930</td>
-<td>[LoRA paper]</td>
-</tr>
-</tbody>
-</table>
 
 
-</section>
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Generative models" data-listing-date-sort="1724086800000" data-listing-file-modified-sort="1724400934181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1738">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../misc/posts/blogs/vae/vae.html" class="no-external">Variational Autoencoders - Fundamental concepts</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../misc/posts/blogs/vae/vae.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../misc/posts/blogs/vae/vae.html" class="no-external">In this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../misc/posts/blogs/vae/vae.html" class="no-external">
+<div class="listing-date">
+Aug 20, 2024
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1205,18 +968,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./module3.html" class="pagination-link" aria-label="Module 3">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 3</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./module5.html" class="pagination-link" aria-label="Module 5">
-        <span class="nav-page-text">Module 5</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1235,5 +986,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -20,19 +20,19 @@ website:
           - href: module3.qmd
             text: Module 3 | Probability and Statistics for AI
           - href: module4.qmd
-            text: Module 4
+            text: Module 4 | Machine Learning and Data Science
           - href: module5.qmd
-            text: Module 5
+            text: Module 5 | Deep Learning Prerequisites
           - href: module6.qmd
-            text: Module 6
+            text: Module 6 | Introduction to Deep Learning
           - href: module7.qmd
-            text: Module 7
+            text: Module 7 | Advanced Model Architectures for Computer Vision
           - href: module8.qmd
-            text: Module 8
+            text: Module 8 | Applications of Deep Learning for NLP
           - href: module9.qmd
-            text: Module 9
+            text: Module 9 | Generative Models
           - href: module10.qmd
-            text: Module 10
+            text: Module 10 | Reinforcement Learning, GNN, and LLMs
       - href: resources/resources.qmd
         text: Resources
       - href: misc/misc.qmd

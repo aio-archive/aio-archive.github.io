@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module7 – AIO Course</title>
+<title>Module 7 - Advanced Model Architectures for Computer Vision – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,18 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean",
-  "openSidebar": false
-}
-</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -89,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -103,10 +92,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lectures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lectures</span>
@@ -122,45 +107,53 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./module3.html">
- <span class="dropdown-text">Module 3 |</span></a>
+ <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module4.html">
- <span class="dropdown-text">Module 4</span></a>
+ <span class="dropdown-text">Module 4 | Machine Learning and Data Science</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module5.html">
- <span class="dropdown-text">Module 5</span></a>
+ <span class="dropdown-text">Module 5 | Deep Learning Prerequisites</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module6.html">
- <span class="dropdown-text">Module 6</span></a>
+ <span class="dropdown-text">Module 6 | Introduction to Deep Learning</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module7.html">
- <span class="dropdown-text">Module 7</span></a>
+ <span class="dropdown-text">Module 7 | Advanced Model Architectures for Computer Vision</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module8.html">
- <span class="dropdown-text">Module 8</span></a>
+ <span class="dropdown-text">Module 8 | Applications of Deep Learning for NLP</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module9.html">
- <span class="dropdown-text">Module 9</span></a>
+ <span class="dropdown-text">Module 9 | Generative Models</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./module10.html">
- <span class="dropdown-text">Module 10</span></a>
+ <span class="dropdown-text">Module 10 | Reinforcement Learning, GNN, and LLMs</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources/resources.html"> 
+    <a class="nav-link active" href="./resources/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ainews.html"> 
+<span class="menu-text">AI News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./memes.html"> 
+<span class="menu-text">Memes</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -174,14 +167,30 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module1.html">Course content</a></li><li class="breadcrumb-item"><a href="./module7.html">Module 7</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Module 7 - Advanced Model Architectures for Computer Vision</h1>
+        </a>     
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">Module 7 - Advanced Model Architectures for Computer Vision</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -291,17 +300,349 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-schedule-and-material" id="toc-course-schedule-and-material" class="nav-link active" data-scroll-target="#course-schedule-and-material">Course Schedule and Material</a>
+  <ul class="collapse">
+  <li><a href="#main-lessons" id="toc-main-lessons" class="nav-link" data-scroll-target="#main-lessons">Main lessons</a></li>
+  <li><a href="#lesson-preview" id="toc-lesson-preview" class="nav-link" data-scroll-target="#lesson-preview">Lesson Preview</a></li>
+  <li><a href="#extra-class-research-and-paper-writing" id="toc-extra-class-research-and-paper-writing" class="nav-link" data-scroll-target="#extra-class-research-and-paper-writing">Extra Class: Research and Paper Writing</a></li>
+  <li><a href="#seminars" id="toc-seminars" class="nav-link" data-scroll-target="#seminars">Seminars</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="course-schedule-and-material" class="level1">
+<h1>Course Schedule and Material</h1>
+<section id="main-lessons" class="level2">
+<h2 class="anchored" data-anchor-id="main-lessons">Main lessons</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 39%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Domain Conversion Exercise</td>
+<td>TA Khoa</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Domain Conversion - Denoising and Segmentation</td>
+<td>Dr.&nbsp;Vinh</td>
+<td>231220-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Domain Conversion - Colorization and Super Resolution</td>
+<td>Dr.&nbsp;Vinh</td>
+<td>231222-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td>TA Exercise</td>
+<td>TA Khoa</td>
+<td>231224-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Object Detection Project</td>
+<td>TA Hùng</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Object Detection (1)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>231227-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Object Detection (2)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>231229-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td>TA Exercise</td>
+<td>TA Hùng</td>
+<td>231231-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Object Detection</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>240103-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Object Detection</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>240105-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td>TA-Exercise</td>
+<td>TA Hùng</td>
+<td>240107-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Imbalanced Data Exercise</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Advanced Topic: Imbalanced Data</td>
+<td>Dr.&nbsp;Vinh</td>
+<td>240110-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Advanced Topic: Self/semi-supervised Learning</td>
+<td>Dr.&nbsp;Hưng</td>
+<td>240112-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td>Advanced Topic: Knowledge Distillation</td>
+<td>Dr.&nbsp;Hưng</td>
+<td>240114-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td>Image Project: Tracking by Detection</td>
+<td>TA Thắng</td>
+<td>240117-23M07MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td>Image Project: Medical Image Analysis (1)</td>
+<td>TA Huy</td>
+<td>240119-23M07MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td>Image Project: Medical Image Analysis (2)</td>
+<td>TA Huy</td>
+<td>240121-23M07MC</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lesson-preview" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-preview">Lesson Preview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 39%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preview</td>
+<td>UNet</td>
+<td>TA Thái</td>
+<td>231219-23M07-EC2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Preview</td>
+<td>Object Detection using Pretrained Models</td>
+<td></td>
+<td>231226-23M07-EC2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Preview</td>
+<td>Yolov1</td>
+<td></td>
+<td>240102-23M07-EC2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Preview</td>
+<td>Introduction to Imbalanced Data</td>
+<td></td>
+<td>240109-23M07-EC2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>How to write a research paper (cont.)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="extra-class-research-and-paper-writing" class="level2">
+<h2 class="anchored" data-anchor-id="extra-class-research-and-paper-writing">Extra Class: Research and Paper Writing</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 39%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Research and Paper</td>
+<td>Group Report (1)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Research and Paper</td>
+<td>Group Report (2)</td>
+<td></td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Research and Paper</td>
+<td>How to Write a Paper (1)</td>
+<td></td>
+<td>240106-23M07-EC1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Research and Paper</td>
+<td>How to Write a Paper (2)</td>
+<td></td>
+<td>240113-23M07-EC1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="seminars" class="level2">
+<h2 class="anchored" data-anchor-id="seminars">Seminars</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 39%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Seminar</td>
+<td>Advanced UNet and LLMs Introduction</td>
+<td>Dr.&nbsp;Vinh</td>
+<td>231224-23M07-EC3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Seminar</td>
+<td>Seminar: Multimodal Language Models</td>
+<td></td>
+<td>231231-23M07-EC3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Seminar</td>
+<td>Seminar: Visual Instruction Tuning (LlaVa) and QLoRA</td>
+<td></td>
+<td>240107-23M07-EC3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Seminar</td>
+<td>Data Augmentation and Imbalanced Data</td>
+<td></td>
+<td>240114-23M07-EC3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Seminar</td>
+<td>RNN-based Forecasting and Toolformer</td>
+<td></td>
+<td>240121-23M07-EC3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
+
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -898,4 +1239,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

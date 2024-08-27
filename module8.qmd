@@ -1,0 +1,46 @@
+---
+title: Module 8 - Applications of Deep Learning for NLP
+tbl-colwidths: [35,120,30,50,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+| Type  | Content   | Instructor   | Handout| Further Reading |
+|-----------------------------|-----------------------------------------------------------------------------|--------------|-------------------|-----------------|
+| Main lesson      ||   |        |      |
+| <span class="badge rounded-pill bg-success">Assignment</span>       | POS and Medical NER Exercise    | TA Thái      |        |      |
+| Preview          | Introduction to POS Tagging     | TA Khoa      | 240130-23M08-EC2  |      |
+| Main lesson - ML | From Text Classification to POS Tagging    | Dr. Vinh     | 240131-23M08MC    |      |
+| Main lesson - ML | NER for Medical Data | Dr. Vinh     | 240202-23M08MC    |      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span> - ES       | TA-Exercise          | TA Thái      | 240204-23M08MC    |      |
+| Project handout  | Aspect-based Sentiment Analysis Project    | TA Thái      | 240206-23M08MC    |      |
+| Project Tutorial | Text Project: Aspect Extraction and Content Classification (Text Classification + NER) | TA Thái      | 240206-23M08MC    |      |
+| Project Tutorial | Text Project: QA for Content Inquiry (Text Classification + NER) | TA Thắng     | 240216-23M08MC    |      |
+| Project Tutorial | Text Project: End-to-end Question Answering (Building a Searching System)   | TA Thắng     | 240218-23M08MC    |      |
+| Main lesson - ML | Text Generation      | Dr. Vinh     | 240221-23M08MC    |      |
+| Main lesson - ML | Machine Translation  | Dr. Vinh     | 240223-23M08MC    |      |
+| <span class="badge rounded-pill bg-info">Exercise Session</span> - ES       | TA Exercise (Neural Machine Translation)   | TA Thái      | 240225-23M08MC    |      |
+| Project handout  | Neural Machine Translation      | TA Thái      | [handout]         |      |
+| Project Tutorial | Poem Generation Project         | TA Thắng     | 240228-23M08MC    |      |
+| Project Tutorial | Low-resource Machine Translation Project   | TA Thái      | 240301-23M08MC    |      |
+| Project Tutorial | Text classification with Mamba Project     | TA Đức       |        |      |
+| Project handout  | Text Project: Poem Generation   | TA Thái      | 240228-23M08MC    |      |
+| Project handout  | Text Project: Low-resource Machine Translation        | TA Thắng     | 240301-23M08MC    |      |
+| How to write a research paper (cont.) ||   |        |      |
+| Research and Paper          | How to write a paper (3)        | Dr. Đình Vinh| 240127-23M08-EC1  |      |
+| Research and Paper          | How to write a paper (4)        | Dr. Đình Vinh| 240203-23M08-EC1  |      |
+| MLOps ||   |        |      |
+| MLOps | Model Quantization   | TA Bách      | 240302-23M09-EC1  |      |
+| Seminar          ||   |        |      |
+| Seminar          | CLIP      | TA Đức       | 240128-23M08-EC3  |      |
+| Seminar          | Detecting violation of helmet rule for motorcyclists (CVPRW2024) | Dr. Vinh     | 240204-23M08-EC3  |      |
+| Seminar          | Direct Preference Optimization  | Dr. Vinh     | 240225-23M08-EC3  |      |
+| Seminar          | Seminar: Study and Job in the USA          |   |        |      |
+| Extra class: Introduction to Large Language Models (LLMs) |  |   |        |      |
+| LLMs  | Introduction to Text Generation | Dr. Vinh     | 240220-23M08-EC2  |      |

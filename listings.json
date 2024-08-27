@@ -6,7 +6,7 @@
       "/misc/posts/fisher-information/fisher-information.html",
       "/misc/posts/clt/clt.html",
       "/misc/posts/score-matching-ref/sm-ref.html",
-      "/misc/posts/vae/vae.html",
+      "/misc/posts/blogs/vae/vae.html",
       "/misc/posts/attention/Attention (non-trainable weights).html",
       "/misc/posts/working-with-text/SimpleTokenizer.html"
     ]
@@ -59,6 +59,12 @@
       "/module4.html",
       "/module5.html",
       "/module3.html"
+    ]
+  },
+  {
+    "listing": "/misc/blog.html",
+    "items": [
+      "/misc/posts/blogs/vae/vae.html"
     ]
   }
 ]

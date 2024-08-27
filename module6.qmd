@@ -1,0 +1,73 @@
+---
+title: Module 6 - Introduction to Deep Learning
+tbl-colwidths: [25,35,105,40,40,70]
+css: styles.css
+format:
+  html:
+    grid:
+      body-width: 1000px
+    smooth-scroll: true
+    fontsize: 0.85em
+title-block-banner: true
+---
+
+# Course schedule and Material
+
+## Main lessons
+| Date       | Type  | Content          | Instructor   | Handout  | Further Reading  |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|----------|----------------------------------------|
+| 06/11/23| <span class="badge rounded-pill bg-success">Assignment</span>       | Convolutional Neural Network Exercise  | TA Thái      | [solution] |       |
+| 08/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Basic CNN (1)    | Dr. Vinh     | 231108   | [CS231N Note] [CNN Explainer]          |
+| 10/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Basic CNN (2)    | Dr. Vinh     | 231110   |       |
+| 12/11/23| <span class="badge rounded-pill bg-info">Exercise Session</span>       | TA-Exercise      | TA Thắng     | 231112   |       |
+| 13/11/23| <span class="badge rounded-pill bg-success">Assignment</span>       | Convolutional Neural Network Exercise  | TA Thắng     | [solution] |       |
+| 15/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | CNN Training     | Dr. Vinh     | 231115   | [VGG Paper]      |
+| 17/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | CNN Generalization          | Dr. Vinh     | 231117   |       |
+| 19/11/23| <span class="badge rounded-pill bg-info">Exercise Session</span>       | TA-Exercise      | TA Thắng     | 231119   |       |
+| 20/11/23| <span class="badge rounded-pill bg-success">Assignment</span>       | Pretrained Models for Image Exercise   | TA Thắng     | [solution] |       |
+| 22/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Advanced CNN Architecture   | Dr. Vinh     | 231122   |       |
+| 24/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Transfer Learning for CNN   | Dr. Vinh     | 231124   |       |
+| 26/11/23| <span class="badge rounded-pill bg-info">Exercise Session</span>       | TA-Exercise      | TA Thái      | 231126   |       |
+| 27/11/23| <span class="badge rounded-pill bg-success">Assignment</span>       | Recurrent Neural Network Exercise      | TA Thắng     |          |       |
+| 29/11/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Basic RNN/LSTM (Time series and Text)  | Dr. Vinh     | 231129   |       |
+| 01/12/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Basic RNN/LSTM (Time series and Text)  | Dr. Vinh     | 231201   |       |
+| 03/12/23| <span class="badge rounded-pill bg-info">Exercise Session</span>       | TA-Exercise      | TA Thắng     | 231203   |       |
+| 04/12/23| <span class="badge rounded-pill bg-success">Assignment</span>       | Transformer Application Exercise       |   |          |       |
+| 06/12/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Transformer (Encoder - Text Classification)       | Dr. Vinh     | 231206   | BERT Readings    |
+| 08/12/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>  | Transformer for Image and Time series Data        | Dr. Vinh     | 231208   |       |
+| 13/12/23| Project Tutorial | Image Project: OCR with YOLOv8 and CNN (Scene Text Recognition) | TA Thắng     | 231213   |       |
+| 15/12/23| Project Tutorial | Image-text Project: VQA     | TA Thắng     | 231215   |       |
+| 17/12/23| Project Tutorial | Time-series forecasting project        | Dr. Đình Vinh| 231217   |       |
+
+## CompetitionTraining
+
+| Date       | Type  | Content          | Instructor   | Handout  | Further Reading  |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|----------|----------------------------------------|
+| 09/11/23| <span class="badge rounded-pill bg-warning">Competition</span>      | Zalo AI          | TA Hùng      | 231109   |       |
+| 16/11/23| <span class="badge rounded-pill bg-warning">Competition</span>      | Zalo AI          |   | 231116   |       |
+
+## Python Review
+| Date       | Type  | Content          | Instructor   | Handout  | Further Reading  |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|----------|----------------------------------------|       
+| 07/11/23| <span class="badge rounded-pill bg-primary">Preview</span>          | Introduction to CNN         | TA Thái      | 231107   |       |
+| 14/11/23| <span class="badge rounded-pill bg-primary">Preview</span>          | Advanced CNN     |   | 231114   |       |
+| 21/11/23| <span class="badge rounded-pill bg-primary">Preview</span>          | Introduction to LSTM        |   | 231121   |       |
+| 28/11/23| <span class="badge rounded-pill bg-primary">Preview</span>          | Introduction to Transfer Learning      |   | 231128   |       |
+| 05/12/23| <span class="badge rounded-pill bg-primary">Preview</span>          | Introduction to Transformer |   | 231205   | Generative AI exists because of the transformer |
+
+
+## Extra class: Research & Paper Writing
+| Date       | Type  | Content          | Instructor   | Handout  | Further Reading  |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|----------|----------------------------------------|        
+| 11/11/23| <span class="badge rounded-pill bg-info">Research & Paper</span>          | Research Idea - Brainstorming (1)      | Dr. Đình Vinh| 231111   |       |
+| 18/11/23| <span class="badge rounded-pill bg-info">Research & Paper</span>          | Research Idea - Brainstorming (2)      |   | 231118   |       |
+| 25/11/23| <span class="badge rounded-pill bg-info">Research & Paper</span>          | How to do Research (1)      |   | 231125   |       |
+| 02/12/23| <span class="badge rounded-pill bg-info">Research & Paper</span>          | How to do Research (2)      |   | 231202   |       |
+| 09/12/23| <span class="badge rounded-pill bg-info">Research & Paper</span>          | How to do Research (3)      |   | 231209   |       |
+|
+
+## Seminar
+| Date       | Type  | Content          | Instructor   | Handout  | Further Reading  |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|----------|----------------------------------------|  
+| 10/12/23| Seminar          | Transformers for Time series data      | Dr. Vinh     | 231210-1 |       |
+| 17/12/23| Seminar          | Scholarship and Feature Extraction in Time Series Data       |   |          |       |
