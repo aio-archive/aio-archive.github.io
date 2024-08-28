@@ -39,6 +39,8 @@ website:
         text: Misc
       - href: ainews.qmd
         text: AI News
+      - href: seminars.qmd
+        text: Seminars
       - href: memes.qmd
         text: Memes
   back-to-top-navigation: true

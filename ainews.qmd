@@ -8,6 +8,7 @@ format:
     css: styles.css
 ---
 
+<div style="overflow:auto; height:800px;">
 # Papers
 
 - <span class="badge rounded-pill bg-info">NLP</span> [MMToM-QA: Multimodal Theory of Mind Question Answering](https://arxiv.org/abs/2401.08743) at ACL2024, **Outstanding Paper Award**.
@@ -23,3 +24,5 @@ format:
   - ACL is not an AI conference.
   - [GloVe](https://aclanthology.org/D14-1162/) wins the test-of-time award.
   - [3rd Workshop on Advances in Language and Vision Research (ALVR)](https://alvr-workshop.github.io/)
+
+</div>
