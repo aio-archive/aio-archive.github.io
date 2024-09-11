@@ -1,2 +1,13 @@
 /*-- scss:defaults --*/
 $link-color: #3b9ced;
+
+img, video {
+    &.img-shadow {
+      @extend .shadow;
+    }
+  }
+  
+  code.sourceCode,
+  pre.console code {
+    padding: 0.5rem;
+  }

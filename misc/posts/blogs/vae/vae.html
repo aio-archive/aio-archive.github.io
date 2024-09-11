@@ -57,12 +57,10 @@ div.csl-indent {
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,9 +119,10 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -146,49 +145,50 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="../../../../module1.html">
+    <a class="dropdown-item" href="../../../../modules/module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module2.html">
+    <a class="dropdown-item" href="../../../../modules/module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module3.html">
+    <a class="dropdown-item" href="../../../../modules/module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module4.html">
+    <a class="dropdown-item" href="../../../../modules/module4.html">
  <span class="dropdown-text">Module 4 | Machine Learning and Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module5.html">
+    <a class="dropdown-item" href="../../../../modules/module5.html">
  <span class="dropdown-text">Module 5 | Deep Learning Prerequisites</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module6.html">
+    <a class="dropdown-item" href="../../../../modules/module6.html">
  <span class="dropdown-text">Module 6 | Introduction to Deep Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module7.html">
+    <a class="dropdown-item" href="../../../../modules/module7.html">
  <span class="dropdown-text">Module 7 | Advanced Model Architectures for Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module8.html">
+    <a class="dropdown-item" href="../../../../modules/module8.html">
  <span class="dropdown-text">Module 8 | Applications of Deep Learning for NLP</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module9.html">
+    <a class="dropdown-item" href="../../../../modules/module9.html">
  <span class="dropdown-text">Module 9 | Generative Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../module10.html">
+    <a class="dropdown-item" href="../../../../modules/module10.html">
  <span class="dropdown-text">Module 10 | Reinforcement Learning, GNN, and LLMs</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../../../resources/resources.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../resources/resources.html"> <i class="bi bi-house" role="img">
+</i> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -200,32 +200,29 @@ window.Quarto = {
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../../../seminars.html"> 
+<span class="menu-text">Seminars</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../ml-glossary/ml-glossary.html"> 
+<span class="menu-text">ML Glossary</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Variational Autoencoders - Fundamental concepts</h1>
-        </a>     
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Variational Autoencoders - Fundamental concepts</h1>
+      <h1 class="title">Variational Autoencoders - Fundamental concepts</h1>
                   <div>
         <div class="description">
           In this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.
@@ -254,120 +251,14 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Course content</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 4</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 6</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 7</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 8</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 9</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../module10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 10</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Others</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../resources/resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Resources</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../misc/misc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Misc</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link active" data-scroll-target="#preliminaries">Preliminaries</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries">Preliminaries</a>
   <ul class="collapse">
   <li><a href="#jensens-inequality" id="toc-jensens-inequality" class="nav-link" data-scroll-target="#jensens-inequality">Jensen’s inequality</a></li>
   <li><a href="#kl-divergence" id="toc-kl-divergence" class="nav-link" data-scroll-target="#kl-divergence">KL Divergence</a></li>
@@ -377,17 +268,15 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#proxy-distributions" id="toc-proxy-distributions" class="nav-link" data-scroll-target="#proxy-distributions">Proxy distributions</a></li>
   </ul></li>
-  <li><a href="#evidence-lower-bound-elbo" id="toc-evidence-lower-bound-elbo" class="nav-link" data-scroll-target="#evidence-lower-bound-elbo">Evidence Lower Bound (ELBO)</a></li>
+  <li><a href="#sec-elbo" id="toc-sec-elbo" class="nav-link" data-scroll-target="#sec-elbo">Evidence Lower Bound (ELBO)</a></li>
   <li><a href="#training-vae" id="toc-training-vae" class="nav-link" data-scroll-target="#training-vae">Training VAE</a>
   <ul class="collapse">
   <li><a href="#encoder" id="toc-encoder" class="nav-link" data-scroll-target="#encoder">Encoder</a></li>
   <li><a href="#decoder" id="toc-decoder" class="nav-link" data-scroll-target="#decoder">Decoder</a></li>
   </ul></li>
   <li><a href="#loss-function" id="toc-loss-function" class="nav-link" data-scroll-target="#loss-function">Loss function</a></li>
-  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">Inference</a></li>
-  <li><a href="#vae-implementation" id="toc-vae-implementation" class="nav-link" data-scroll-target="#vae-implementation">VAE Implementation</a></li>
-  
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#sec-appA" id="toc-sec-appA" class="nav-link" data-scroll-target="#sec-appA">Appendix A: Proof of Jensen’s inequality</a></li>
+  <li><a href="#sec-kl" id="toc-sec-kl" class="nav-link" data-scroll-target="#sec-kl">Appendix B: Proof of KL Nonnegativity</a></li>
   </ul>
 </nav>
     </div>
@@ -398,8 +287,11 @@ window.Quarto = {
 
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Variational Autoencoder, or VAE, is one of the most important class of the generative model family, where later generateive models are built upon. The paper by <span class="citation" data-cites="kingma2013autoencoding">Kingma and Welling (<a href="#ref-kingma2013autoencoding" role="doc-biblioref">2013</a>)</span> which proposes the VAE model has recently won the ICLR 2024 Test of Time award, which indicates the important impact of VAE model. To quote their comment:</p>
 <blockquote class="blockquote">
-<p><em>Probabilistic modeling is one of the most fundamental ways in which we reason about the world. This paper spearheaded the integration of deep learning with scalable probabilistic inference (amortized mean-field variational inference via a so-called reparameterization trick), giving rise to the Variational Autoencoder (VAE). The lasting value of this work is rooted in its elegance. The principles used to develop VAEs deepened our understanding of the interplay between deep learning and probabilistic modeling, and sparked the development of many subsequent interesting probabilistic models and encoding approaches. </em></p>
+<p><em>Probabilistic modeling is one of the most fundamental ways in which we reason about the world. This (VAE) paper spearheaded the integration of deep learning with scalable probabilistic inference (amortized mean-field variational inference via a so-called reparameterization trick), giving rise to the Variational Autoencoder (VAE). The lasting value of this work is rooted in its elegance. The principles used to develop VAEs deepened our understanding of the interplay between deep learning and probabilistic modeling, and sparked the development of many subsequent interesting probabilistic models and encoding approaches.</em></p>
 </blockquote>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -414,12 +306,11 @@ Note
 <p>This article is an excerpt from Tutorial on Diffusion Models for Imaging and Vision by <span class="citation" data-cites="chan2024tutorial">(<a href="#ref-chan2024tutorial" role="doc-biblioref">Chan 2024</a>)</span> with some add-ons and modifications.</p>
 </div>
 </div>
-<div class="no-row-height column-margin column-container"><div id="ref-chan2024tutorial" class="csl-entry" role="listitem">
-Chan, Stanley H. 2024. <span>“Tutorial on <span>Diffusion</span> <span>Models</span> for <span>Imaging</span> and <span>Vision</span>.”</span> <em>arXiv</em> abs/2403.18103.
-</div></div><section id="preliminaries" class="level1 page-columns page-full">
+</section>
+<section id="preliminaries" class="level1">
 <h1>Preliminaries</h1>
 <p>Before diving into VAE, we first explore about the (statistical) tools that are useful later to understand how VAE works.</p>
-<section id="jensens-inequality" class="level2 page-columns page-full">
+<section id="jensens-inequality" class="level2">
 <h2 class="anchored" data-anchor-id="jensens-inequality">Jensen’s inequality</h2>
 <p>Jensen’s inequality is a useful concept for any <em>convex function</em> that has many applications in generative models. A convex function can be defined as follows:</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -436,10 +327,8 @@ Definition of convex function <span class="citation" data-cites="boyd2004convex"
 <p><span class="math display">\[f(\theta x + (1-\theta) y) \leq \theta f(x) + (1-\theta) f(y)\]</span></p>
 </div>
 </div>
-<div class="no-row-height column-margin column-container"><div id="ref-boyd2004convex" class="csl-entry" role="listitem">
-Boyd, Stephen, and Lieven Vandenberghe. 2004. <em>Convex Optimization</em>. Cambridge University Press.
-</div></div><p>For example, consider the figure below where the figure on the left is the graph of a convex function <span class="math inline">\(f(x) = x^2\)</span>, the line (sometimes also referred to as chord) between any two points <span class="math inline">\(x,y\)</span> on the graph lies above the graph, <em>i.e.</em> every chord is below the function. In contrast, the function on the right does not have such property so it is not a convex function. The <a href="#callout-1">definition</a> that we have for a convex function is just a generalization and mathematical expression of this property.</p>
-<iframe src="cvx.html" width="800" height="400">
+<p>For example, consider the figure below where the figure on the left is the graph of a convex function <span class="math inline">\(f(x) = x^2\)</span>, the line (sometimes also referred to as chord) between any two points <span class="math inline">\(x,y\)</span> on the graph lies above the graph, <em>i.e.</em> every chord is below the function. In contrast, the function on the right does not have such property so it is not a convex function. The <a href="#callout-1">definition</a> that we have for a convex function is just a generalization and mathematical expression of this property.</p>
+<iframe src="cvx.html" width="800" height="400" class="shadowed">
 </iframe>
 <p>Given a convex function <span class="math inline">\(f\)</span> and a random variable <span class="math inline">\(X\)</span>, Jensen’s inequality states that:</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -455,12 +344,12 @@ Jensen’s inequality
 <p><span class="math display">\[\mathbb{E}[f(X)] \geq f(\mathbb{E}[X])\]</span></p>
 </div>
 </div>
-<p>Later in this section, we will apply the Jensen’s inequality to derive the Evidence Lower Bound, which is the workhorse of VAE.</p>
+<p>The probabilistic proof of this inequality is given in <a href="#sec-appA" class="quarto-xref">Section&nbsp;7</a>. Later in this section, we will apply the Jensen’s inequality to derive the Evidence Lower Bound, which is the workhorse of VAE.</p>
 </section>
-<section id="kl-divergence" class="level2 page-columns page-full">
+<section id="kl-divergence" class="level2">
 <h2 class="anchored" data-anchor-id="kl-divergence">KL Divergence</h2>
 <p>Sometimes it is useful for us to have a <em>measure</em> <span class="math inline">\(D\)</span> to quantify the difference between two distributions. We require that measure to have the following properties <span class="citation" data-cites="pml2Book">(<a href="#ref-pml2Book" role="doc-biblioref">Murphy 2023</a>)</span>:</p>
-<div class="no-row-height column-margin column-container"></div><ul>
+<ul>
 <li>Continuous in its arguments</li>
 <li>Nonnegativity</li>
 <li>Permutation invariant</li>
@@ -481,24 +370,25 @@ KL Divergence
 <p><span class="math display">\[D_{KL} = \int p(x) \log \dfrac{p(x)}{q(x)} dx\]</span></p>
 </div>
 </div>
-<p>Interested readers can refer to <span class="citation" data-cites="pml2Book">(<a href="#ref-pml2Book" role="doc-biblioref">Murphy 2023</a>)</span> to see the proof that KL Divergence satisfies all of the desiderata.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-pml2Book" class="csl-entry" role="listitem">
-Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press. <a href="http://probml.github.io/book2">http://probml.github.io/book2</a>.
-</div></div></section>
-<section id="autoencoder" class="level2 page-columns page-full">
+<p>Interested readers can refer to <span class="citation" data-cites="pml2Book">(<a href="#ref-pml2Book" role="doc-biblioref">Murphy 2023</a>)</span> to see the proof that KL Divergence satisfies all of the desiderata. Here, we’ll only give a proof of the nonnegativity of the KL Divergence in <a href="#sec-kl" class="quarto-xref">Section&nbsp;8</a> because this property will be useful later when we derive the ELBO in <a href="#sec-elbo" class="quarto-xref">Section&nbsp;4</a>.</p>
+</section>
+<section id="autoencoder" class="level2">
 <h2 class="anchored" data-anchor-id="autoencoder">Autoencoder</h2>
+<p>Autoencoder was traditionally used for dimensionality reduction or feature learning <span class="citation" data-cites="hinton2006reducing">Hinton and Salakhutdinov (<a href="#ref-hinton2006reducing" role="doc-biblioref">2006</a>)</span>. This is the case because learning an <em>undercomplete</em> representation forces the autoencoder to capture the most salient features of the training data .It was not until recently when theoretical connections between autoencoder and latent variable models were established that brought autoencoder to the forefront of generative models.</p>
 <p>While VAEs <span class="citation" data-cites="kingma2013autoencoding">(<a href="#ref-kingma2013autoencoding" role="doc-biblioref">Kingma and Welling 2013</a>)</span> and the deterministic autoencoder (AE) are very similar, there are two main differences:</p>
-<div class="no-row-height column-margin column-container"><div id="ref-kingma2013autoencoding" class="csl-entry" role="listitem">
-Kingma, Diederik P., and M. Welling. 2013. <span>“Auto-<span>Encoding</span> <span>Variational</span> <span>Bayes</span>.”</span> In <em>International <span>Conference</span> on <span>Learning</span> <span>Representations</span></em>. Vol. abs/1312.6114. 1. Explorandum Ltd.
-</div></div><ol type="1">
+<ol type="1">
 <li><p>in the AE, the objective is the log likelihood of the reconstruction without any KL term</p></li>
 <li><p>The encoding is deterministic, so that the encoder network just needs to compute <span class="math inline">\(\mathbb{E}[\mathbf{z} \vert \mathbf{x}]\)</span> and not <span class="math inline">\(\text{Var}[\mathbf{z} \vert \mathbf{x}]\)</span>.</p></li>
 </ol>
-<p>The main advantage of VAE over a deterministic autoencoder is that it defines a proper generative model that can create natural-looking novel images by decoding prior samples <span class="math inline">\(\mathbf{z} \sim \mathcal{N}(0, \mathbf{I})\)</span>. This is in constrast with the autoencoder, where it only knows how to decode the latent codes derived from the training set, so it does poorly on random inputs, as shown in Figure</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Screenshot 2024-08-21 at 18.42.43.png" class="img-fluid figure-img" width="700"></p>
-<figcaption>celebA produced by Autoencoder, VAE, and beta-VAE</figcaption>
+<p>The main advantage of VAE over a deterministic autoencoder is that it defines a proper generative model that can create natural-looking novel images by decoding prior samples <span class="math inline">\(\mathbf{z} \sim \mathcal{N}(0, \mathbf{I})\)</span>. This is in constrast with the autoencoder, where it only knows how to decode the latent codes derived from the training set, so it does poorly on random inputs, as shown in Figure <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="fig-1" class="shadowed quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Screenshot 2024-08-21 at 18.42.43.png" class="shadowed img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: celebA produced by Autoencoder, VAE, and beta-VAE
+</figcaption>
 </figure>
 </div>
 </section>
@@ -506,12 +396,18 @@ Kingma, Diederik P., and M. Welling. 2013. <span>“Auto-<span>Encoding</span> <
 <section id="vae-setting" class="level1 page-columns page-full">
 <h1>VAE Setting</h1>
 <p>The <em>autoencoder</em> has an input variable <span class="math inline">\(\mathbf{x}\)</span> and a latent variable <span class="math inline">\(\mathbf{z}\)</span>, where <span class="math inline">\(\mathbf{x}\)</span> is an input image and <span class="math inline">\(\mathbf{z}\)</span> is some latent vector in high dimensional space.</p>
-<p><img src="Screenshot 2024-08-21 at 19.19.47.png" class="img-fluid" width="800"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-08-21 at 19.19.47.png" class="shadowed img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
 <p>The term <em>variational</em> in Variational Autoencoder refers to the fact that we use probability distributions to describe <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{z}\)</span>.</p>
 <p>There are four main distributions that we need to consider for VAE</p>
 <ul>
-<li><p><span class="math inline">\(p(\mathbf{x})\)</span> is the distribution of <span class="math inline">\(\mathbf{x}\)</span>, we never have access to this distribution and the goal of generative models in general is to find ways to draw samples from <span class="math inline">\(p(\mathbf{x})\)</span>.</p></li>
-<li><p><span class="math inline">\(p(\mathbf{z})\)</span> is the distribution of the latent vector <span class="math inline">\(\mathbf{z}\)</span>. We assume that <span class="math inline">\(p(\mathbf{z}) \sim \mathcal{N}(0, \mathbf{I})\)</span>.</p></li>
+<li><p><span class="math inline">\(p(\mathbf{x})\)</span> is the distribution of <span class="math inline">\(\mathbf{x}\)</span>, we never have access to this distribution and the goal of generative models in general is to find ways to draw samples from <span class="math inline">\(p(\mathbf{x})\)</span>.<br>
+</p></li>
+<li><p><span class="math inline">\(p(\mathbf{z})\)</span> is the distribution of the latent vector <span class="math inline">\(\mathbf{z}\)</span>. We assume that <span class="math inline">\(p(\mathbf{z}) \sim \mathcal{N}(0, \mathbf{I})\)</span>.<br>
+</p></li>
 <li><p><span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span> is the conditional distribution that is associated with the encoder, which tells us the likelihood of <span class="math inline">\(\mathbf{z}\)</span> given <span class="math inline">\(\mathbf{x}\)</span>.</p></li>
 <li><p><span class="math inline">\(p(\mathbf{x} \vert \mathbf{z})\)</span> is the conditional distribution that is associated with the decoder that tells us the likelihood of <span class="math inline">\(\mathbf{x}\)</span> given <span class="math inline">\(\mathbf{z}\)</span>.</p></li>
 </ul>
@@ -522,11 +418,15 @@ Kingma, Diederik P., and M. Welling. 2013. <span>“Auto-<span>Encoding</span> <
 <li><span class="math inline">\(q_{\phi}(\mathbf{z} \vert \mathbf{x})\)</span>, which is the proxy for <span class="math inline">\(p(\mathbf{z} \vert \mathbf{x})\)</span> and we assume this to be a Gaussian distribution.</li>
 <li><span class="math inline">\(p_{\theta}(\mathbf{x} \vert \mathbf{z})\)</span>, which is the proxy for <span class="math inline">\(p(\mathbf{x} \vert \mathbf{z})\)</span>, and we also assume this to be a Gaussian distribution.</li>
 </ul>
-<p>![[Screenshot 2024-08-11 at 19.31.17.png]]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-08-28 at 15.51.33.png" class="shadowed img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
 <div class="page-columns page-full"><p>Here, <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\theta\)</span> are the parameters that we need to optimize. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><em>Proxy distributions</em> are ditributions that are approximate of other true distributions.</span></div></div>
 </section>
 </section>
-<section id="evidence-lower-bound-elbo" class="level1">
+<section id="sec-elbo" class="level1">
 <h1>Evidence Lower Bound (ELBO)</h1>
 <div class="callout callout-style-default callout-tip callout-titled" title="Evidence Lower Bound (ELBO)">
 <div class="callout-header d-flex align-content-center">
@@ -590,7 +490,11 @@ ELBO Derivation using KL Divergence
 </blockquote>
 </div>
 </div>
-<p>![[Screenshot 2024-08-13 at 10.05.37.png]]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-08-28 at 15.57.16.png" class="shadowed img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
 <p>While the ELBO is useful, still, we can not use it because of the term <span class="math inline">\(p(\mathbf{x}, \mathbf{z})\)</span>, which we don’t know. Therefore we need to do further derivation so that the ELBO only contain the terms that we know and can work with. Consider the following derivation: <span class="math display">\[
 \begin{aligned}
 \text{ELBO}(\mathbf{x}) &amp;= \mathbb{E}_{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\left[\log \dfrac{p(\mathbf{x},\mathbf{z})}{q_{\phi}(\mathbf{z} \vert \mathbf{x})}\right] \\
@@ -636,23 +540,25 @@ Training loss of VAE
 </div>
 </div>
 </section>
-<section id="inference" class="level1">
-<h1>Inference</h1>
-<p>For inference, we can simply feed a latent vector <span class="math inline">\(\mathbf{z}\)</span> which we sampled from <span class="math inline">\(p(\mathbf{z}) = \mathcal{N}(0, \mathbf{I})\)</span> into the decoder <span class="math inline">\(\text{decode}_\theta\)</span> and get an image <span class="math inline">\(\mathbf{x}\)</span>.</p>
+<section id="sec-appA" class="level1">
+<h1>Appendix A: Proof of Jensen’s inequality</h1>
+<div class="proof-inequality">
+<p>Suppose we have a random variable <span class="math inline">\(X\)</span> and a convex function <span class="math inline">\(f\)</span>, and suppose that <span class="math inline">\(X\)</span> takes on the value of <span class="math inline">\(x\)</span> with probability <span class="math inline">\(\theta\)</span> and takes on the value of <span class="math inline">\(y\)</span> with probability <span class="math inline">\(1-\theta\)</span>, <em>i.e.</em></p>
+<p><span class="math display">\[
+X =
+\begin{cases}
+x, &amp; \text{with probability } \theta \\
+y, &amp; \text{with probability } 1-\theta
+\end{cases}
+\]</span></p>
+<p>We have that the expectation of <span class="math inline">\(f(X)\)</span> is given by <span class="math display">\[\mathbb{E}[f(X)] = \theta f(x) + (1-\theta)f(y)\]</span>.</p>
+<p>Furthermore, we also have that</p>
+<p><span class="math display">\[f(\mathbb{E}[X]) = f(\theta x + (1-\theta)y)\]</span>.</p>
+<p>Since <span class="math inline">\(f\)</span> is a convex function, by <a href="#callout-1">definition</a>, we must have that <span class="math inline">\(f(\theta x + (1-\theta) y) \leq \theta f(x) + (1-\theta) f(y)\)</span>, which is equivalent to <span class="math inline">\(f(\mathbb{E}[X])  \leq \mathbb{E}[f(X)]\)</span>, which exactly is the Jensen’s inequality.</p>
+</div>
 </section>
-<section id="vae-implementation" class="level1">
-<h1>VAE Implementation</h1>
-</section>
-
-<section id="further-reading" class="level1">
-<h1>Further Reading</h1>
-
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="appendix-a-proof-of-kl-nonnegativity" class="level1 appendix"><h2 class="anchored quarto-appendix-heading">Appendix A: Proof of KL Nonnegativity</h2><div class="quarto-appendix-contents">
-
+<section id="sec-kl" class="level1">
+<h1>Appendix B: Proof of KL Nonnegativity</h1>
 <p><span class="math inline">\(D_{KL}(p \| q) \geq 0\)</span> with equality iff <span class="math inline">\(p=q\)</span>.</p>
 <p><span class="math display">\[\begin{aligned}
 D_{\mathrm{KL}}(P\|Q)&amp; =\sum_{x\in\mathcal{X}}P(x)\log\frac{P(x)}{Q(x)} &amp;&amp; \text{(by definition for discrete case)}  \\
@@ -663,6 +569,27 @@ D_{\mathrm{KL}}(P\|Q)&amp; =\sum_{x\in\mathcal{X}}P(x)\log\frac{P(x)}{Q(x)} &amp
 &amp;=-\log\sum_{x\in\mathcal{X}}Q(x) &amp;&amp; \text{(cancelling out the $P(x)$)}\\
 &amp;=-\log1 =0
 \end{aligned}\]</span></p>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-boyd2004convex" class="csl-entry" role="listitem">
+Boyd, Stephen, and Lieven Vandenberghe. 2004. <em>Convex Optimization</em>. Cambridge University Press.
+</div>
+<div id="ref-chan2024tutorial" class="csl-entry" role="listitem">
+Chan, Stanley H. 2024. <span>“Tutorial on <span>Diffusion</span> <span>Models</span> for <span>Imaging</span> and <span>Vision</span>.”</span> <em>arXiv</em> abs/2403.18103.
+</div>
+<div id="ref-hinton2006reducing" class="csl-entry" role="listitem">
+Hinton, G. E., and R. R. Salakhutdinov. 2006. <span>“Reducing the <span>Dimensionality</span> of <span>Data</span> with <span>Neural</span> <span>Networks</span>.”</span> <em>Science</em> 313 (5786): 504–7.
+</div>
+<div id="ref-kingma2013autoencoding" class="csl-entry" role="listitem">
+Kingma, Diederik P., and M. Welling. 2013. <span>“Auto-<span>Encoding</span> <span>Variational</span> <span>Bayes</span>.”</span> In <em>International <span>Conference</span> on <span>Learning</span> <span>Representations</span></em>. Vol. abs/1312.6114.
+</div>
+<div id="ref-pml2Book" class="csl-entry" role="listitem">
+Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press. <a href="http://probml.github.io/book2">http://probml.github.io/book2</a>.
+</div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -684,150 +611,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

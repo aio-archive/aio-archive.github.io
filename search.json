@@ -511,9 +511,9 @@
     "href": "resources/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Warning\n\n\nThis website is still under construction. Some contents and functions might temporarily not be available or not working properly.\n\n\nNEW: Generative AI course by Stanford\n\nBooks\nBlogs\nCourses\nFundamental Papers\nGitHub repository\n\n\n\n\n Back to top",
+    "text": "Books\nBlogs\nCourses\nFundamental Papers\nGitHub repository\nResearch and Paper Writing / Graduate life\n\n\n\n\n Back to top",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Others",
       "Resources"
     ]
@@ -530,21 +530,21 @@
     "href": "resources/books.html",
     "title": "Books and other preprint materials",
     "section": "",
-    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media.\n\n\n\n\n\nLinear Algebra and Learning from Data by Gilbert Strang\n\n\n\n\n\nConvex Optimization by Stephen Boyd and Lieven Vandenberghe\nIntroductory Lectures on Stochastic Convex Optimization by John C. Duchi\n\n\n\n\n\nInformation Theory and Statistics by John C. Duchi\nInformation-Theoretic Foundations for Machine Learning by Hong Jun Jeon and Benjamin Van Roy\n\n\n\n\n\nMathematics for Machine Learning by Garret Thomas"
+    "text": "“I do believe something very magical can happen when you read a good book.” - J.K. Rowling"
   },
   {
     "objectID": "resources/books.html#probability-and-statistics",
     "href": "resources/books.html#probability-and-statistics",
     "title": "Books and other preprint materials",
-    "section": "",
-    "text": "Introduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media."
+    "section": "Probability and Statistics",
+    "text": "Probability and Statistics\n\nIntroduction to Probability for Data Science by Stanley H. Chan\nWasserman, L. (2013). All of statistics: a concise course in statistical inference. Springer Science & Business Media."
   },
   {
     "objectID": "resources/books.html#others",
     "href": "resources/books.html#others",
     "title": "Books and other preprint materials",
-    "section": "",
-    "text": "Mathematics for Machine Learning by Garret Thomas"
+    "section": "Others",
+    "text": "Others\n\nMathematics for Machine Learning by Garret Thomas"
   },
   {
     "objectID": "resources/books.html#nlp",
@@ -579,7 +579,7 @@
     "href": "resources/blogs.html",
     "title": "Blogs",
     "section": "",
-    "text": "Fabian Pedregosa’s blog\nhttps://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\nhttps://andrewcharlesjones.github.io/menu/blog.html\n\n\n\n\n Back to top"
+    "text": "Fabian Pedregosa’s blog, technical, math-rigorous\nhttps://leimao.github.io/blog/\nhttps://francisbach.com/\nhttps://davidstutz.de/category/blog/\nhttps://ai.stanford.edu/~gwthomas/notes/index.html\nhttps://andrewcharlesjones.github.io/menu/blog.html\n\n\n\n\n Back to top"
   },
   {
     "objectID": "misc/misc.html",
@@ -588,7 +588,7 @@
     "section": "",
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n \n\n\nKL Divergence\n\n\n\n\n\n\n\n \n\n\nFisher Information\n\n\n\n\n\n\n\n \n\n\nCentral Limit Theorem\n\n\n\n\n\n\n\n \n\n\nScore Matching Reading\n\n\n\n\n\n\n\nAug 20, 2024\n\n\nVariational Autoencoders - Fundamental concepts\n\n\nIn this article we’re going to explore Variational Autoencoder (VAE), a class of generative models. This is the first part of a two-series blogpost that cover the fundamnetal concepts behind VAE.\n\n\n\n\nAug 14, 2024\n\n\nSpelled-out Introduction to Simple Self-Attention mechanism, in code\n\n\nThe backbone mechanism of almost all modern LLMs. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.\n\n\n\n\nAug 14, 2024\n\n\nTokenization and Word Embeddings\n\n\nThe two essential steps before training any language models. This is an excerpt from an excellent book entitled Build a Large Language Model (From Scratch) by Sebastian Raschka.\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Others",
       "Misc"
     ]
@@ -619,7 +619,7 @@
     "href": "ainews.html",
     "title": "AI News",
     "section": "",
-    "text": "Papers\n\nNLP MMToM-QA: Multimodal Theory of Mind Question Answering at ACL2024, Outstanding Paper Award.\n\n\n\nPress\n\nEvent Jeff Dean and other prestigious guests are arriving to Vietnam to attend the GenAI Summit.\nPodcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\n\n\n\nConferences\n\n11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024).\nACL is not an AI conference.\nGloVe wins the test-of-time award.\n3rd Workshop on Advances in Language and Vision Research (ALVR)\n\n\n\n\n\n\n Back to top"
+    "text": "Papers\n\nModel Mixtral dropped Pixtral 12B, their first-ever multimodal model: Tweet.\nNLP MMToM-QA: Multimodal Theory of Mind Question Answering at ACL2024, Outstanding Paper Award.\n\n\n\nPress\n\nPodcast 10 Sep, 2024: Decoding Google Gemini with Jeff Dean, a podcast of Google’s Chief Scientist Jeff Dean, hosted by Prof. Hannah Fry\nEvent Jeff Dean and other prestigious guests are arriving to Vietnam to attend the GenAI Summit.\nPodcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\n\n\n\nConferences\n\nList of accepted papers at Coference on Language Modeling (COLM) 2024 is now available. Visit here.\n11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024).\n\nACL is not an AI conference.\nGloVe wins the test-of-time award.\n3rd Workshop on Advances in Language and Vision Research (ALVR)\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "memes.html",
@@ -720,8 +720,8 @@
     "objectID": "resources/books.html#optimization",
     "href": "resources/books.html#optimization",
     "title": "Books and other preprint materials",
-    "section": "",
-    "text": "Convex Optimization by Stephen Boyd and Lieven Vandenberghe\nIntroductory Lectures on Stochastic Convex Optimization by John C. Duchi"
+    "section": "Optimization",
+    "text": "Optimization\n\nConvex Optimization by Stephen Boyd and Lieven Vandenberghe\nIntroductory Lectures on Stochastic Convex Optimization by John C. Duchi"
   },
   {
     "objectID": "module3.html#project-tutorial",
@@ -787,15 +787,15 @@
     "objectID": "resources/books.html#linear-algebra",
     "href": "resources/books.html#linear-algebra",
     "title": "Books and other preprint materials",
-    "section": "",
-    "text": "Linear Algebra and Learning from Data by Gilbert Strang"
+    "section": "Linear Algebra",
+    "text": "Linear Algebra\n\nLinear Algebra and Learning from Data by Gilbert Strang"
   },
   {
     "objectID": "resources/books.html#information-theory",
     "href": "resources/books.html#information-theory",
     "title": "Books and other preprint materials",
-    "section": "",
-    "text": "Information Theory and Statistics by John C. Duchi\nInformation-Theoretic Foundations for Machine Learning by Hong Jun Jeon and Benjamin Van Roy"
+    "section": "Information Theory",
+    "text": "Information Theory\n\nInformation Theory and Statistics by John C. Duchi\nInformation-Theoretic Foundations for Machine Learning by Hong Jun Jeon and Benjamin Van Roy"
   },
   {
     "objectID": "misc/posts/vae/vae.html",
@@ -950,35 +950,35 @@
     "href": "misc/posts/blogs/vae/vae.html",
     "title": "Variational Autoencoders - Fundamental concepts",
     "section": "",
-    "text": "Probabilistic modeling is one of the most fundamental ways in which we reason about the world. This paper spearheaded the integration of deep learning with scalable probabilistic inference (amortized mean-field variational inference via a so-called reparameterization trick), giving rise to the Variational Autoencoder (VAE). The lasting value of this work is rooted in its elegance. The principles used to develop VAEs deepened our understanding of the interplay between deep learning and probabilistic modeling, and sparked the development of many subsequent interesting probabilistic models and encoding approaches."
+    "text": "Variational Autoencoder, or VAE, is one of the most important class of the generative model family, where later generateive models are built upon. The paper by Kingma and Welling (2013) which proposes the VAE model has recently won the ICLR 2024 Test of Time award, which indicates the important impact of VAE model. To quote their comment:\n\nProbabilistic modeling is one of the most fundamental ways in which we reason about the world. This (VAE) paper spearheaded the integration of deep learning with scalable probabilistic inference (amortized mean-field variational inference via a so-called reparameterization trick), giving rise to the Variational Autoencoder (VAE). The lasting value of this work is rooted in its elegance. The principles used to develop VAEs deepened our understanding of the interplay between deep learning and probabilistic modeling, and sparked the development of many subsequent interesting probabilistic models and encoding approaches.\n\n\n\n\n\n\n\nNote\n\n\n\nThis article is an excerpt from Tutorial on Diffusion Models for Imaging and Vision by (Chan 2024) with some add-ons and modifications."
   },
   {
     "objectID": "misc/posts/blogs/vae/vae.html#jensens-inequality",
     "href": "misc/posts/blogs/vae/vae.html#jensens-inequality",
     "title": "Variational Autoencoders - Fundamental concepts",
     "section": "Jensen’s inequality",
-    "text": "Jensen’s inequality\nJensen’s inequality is a useful concept for any convex function that has many applications in generative models. A convex function can be defined as follows:\n\n\n\n\n\n\nDefinition of convex function (Boyd and Vandenberghe 2004)\n\n\n\nA function \\(f: \\mathbb{R}^n \\mapsto \\mathbb{R}\\) is said to be convex if its domain \\(\\textbf{dom}f\\) is a convex set and if for all \\(x,y \\in \\textbf{dom}f\\), \\(\\theta \\in [0,1]\\), we have:\n\\[f(\\theta x + (1-\\theta) y) \\leq \\theta f(x) + (1-\\theta) f(y)\\]\n\n\n\nBoyd, Stephen, and Lieven Vandenberghe. 2004. Convex Optimization. Cambridge University Press.\nFor example, consider the figure below where the figure on the left is the graph of a convex function \\(f(x) = x^2\\), the line (sometimes also referred to as chord) between any two points \\(x,y\\) on the graph lies above the graph, i.e. every chord is below the function. In contrast, the function on the right does not have such property so it is not a convex function. The definition that we have for a convex function is just a generalization and mathematical expression of this property.\n\n\nGiven a convex function \\(f\\) and a random variable \\(X\\), Jensen’s inequality states that:\n\n\n\n\n\n\nJensen’s inequality\n\n\n\n\\[\\mathbb{E}[f(X)] \\geq f(\\mathbb{E}[X])\\]\n\n\nLater in this section, we will apply the Jensen’s inequality to derive the Evidence Lower Bound, which is the workhorse of VAE."
+    "text": "Jensen’s inequality\nJensen’s inequality is a useful concept for any convex function that has many applications in generative models. A convex function can be defined as follows:\n\n\n\n\n\n\nDefinition of convex function (Boyd and Vandenberghe 2004)\n\n\n\nA function \\(f: \\mathbb{R}^n \\mapsto \\mathbb{R}\\) is said to be convex if its domain \\(\\textbf{dom}f\\) is a convex set and if for all \\(x,y \\in \\textbf{dom}f\\), \\(\\theta \\in [0,1]\\), we have:\n\\[f(\\theta x + (1-\\theta) y) \\leq \\theta f(x) + (1-\\theta) f(y)\\]\n\n\nFor example, consider the figure below where the figure on the left is the graph of a convex function \\(f(x) = x^2\\), the line (sometimes also referred to as chord) between any two points \\(x,y\\) on the graph lies above the graph, i.e. every chord is below the function. In contrast, the function on the right does not have such property so it is not a convex function. The definition that we have for a convex function is just a generalization and mathematical expression of this property.\n\n\nGiven a convex function \\(f\\) and a random variable \\(X\\), Jensen’s inequality states that:\n\n\n\n\n\n\nJensen’s inequality\n\n\n\n\\[\\mathbb{E}[f(X)] \\geq f(\\mathbb{E}[X])\\]\n\n\nThe probabilistic proof of this inequality is given in Section 7. Later in this section, we will apply the Jensen’s inequality to derive the Evidence Lower Bound, which is the workhorse of VAE."
   },
   {
     "objectID": "misc/posts/blogs/vae/vae.html#kl-divergence",
     "href": "misc/posts/blogs/vae/vae.html#kl-divergence",
     "title": "Variational Autoencoders - Fundamental concepts",
     "section": "KL Divergence",
-    "text": "KL Divergence\nSometimes it is useful for us to have a measure \\(D\\) to quantify the difference between two distributions. We require that measure to have the following properties (Murphy 2023):\n\nContinuous in its arguments\nNonnegativity\nPermutation invariant\nMonotonic\nSatisfy the natural chain rule\n\nKL divergence turns out to be that useful tool and it is defined as follows:\n\n\n\n\n\n\nKL Divergence\n\n\n\n\\[D_{KL} = \\int p(x) \\log \\dfrac{p(x)}{q(x)} dx\\]\n\n\nInterested readers can refer to (Murphy 2023) to see the proof that KL Divergence satisfies all of the desiderata.\n\nMurphy, Kevin P. 2023. Probabilistic Machine Learning: Advanced Topics. MIT Press. http://probml.github.io/book2."
+    "text": "KL Divergence\nSometimes it is useful for us to have a measure \\(D\\) to quantify the difference between two distributions. We require that measure to have the following properties (Murphy 2023):\n\nContinuous in its arguments\nNonnegativity\nPermutation invariant\nMonotonic\nSatisfy the natural chain rule\n\nKL divergence turns out to be that useful tool and it is defined as follows:\n\n\n\n\n\n\nKL Divergence\n\n\n\n\\[D_{KL} = \\int p(x) \\log \\dfrac{p(x)}{q(x)} dx\\]\n\n\nInterested readers can refer to (Murphy 2023) to see the proof that KL Divergence satisfies all of the desiderata. Here, we’ll only give a proof of the nonnegativity of the KL Divergence in Section 8 because this property will be useful later when we derive the ELBO in Section 4."
   },
   {
     "objectID": "misc/posts/blogs/vae/vae.html#autoencoder",
     "href": "misc/posts/blogs/vae/vae.html#autoencoder",
     "title": "Variational Autoencoders - Fundamental concepts",
     "section": "Autoencoder",
-    "text": "Autoencoder\nWhile VAEs (Kingma and Welling 2013) and the deterministic autoencoder (AE) are very similar, there are two main differences:\n\nKingma, Diederik P., and M. Welling. 2013. “Auto-Encoding Variational Bayes.” In International Conference on Learning Representations. Vol. abs/1312.6114. 1. Explorandum Ltd.\n\nin the AE, the objective is the log likelihood of the reconstruction without any KL term\nThe encoding is deterministic, so that the encoder network just needs to compute \\(\\mathbb{E}[\\mathbf{z} \\vert \\mathbf{x}]\\) and not \\(\\text{Var}[\\mathbf{z} \\vert \\mathbf{x}]\\).\n\nThe main advantage of VAE over a deterministic autoencoder is that it defines a proper generative model that can create natural-looking novel images by decoding prior samples \\(\\mathbf{z} \\sim \\mathcal{N}(0, \\mathbf{I})\\). This is in constrast with the autoencoder, where it only knows how to decode the latent codes derived from the training set, so it does poorly on random inputs, as shown in Figure\n\n\n\ncelebA produced by Autoencoder, VAE, and beta-VAE"
+    "text": "Autoencoder\nAutoencoder was traditionally used for dimensionality reduction or feature learning Hinton and Salakhutdinov (2006). This is the case because learning an undercomplete representation forces the autoencoder to capture the most salient features of the training data .It was not until recently when theoretical connections between autoencoder and latent variable models were established that brought autoencoder to the forefront of generative models.\nWhile VAEs (Kingma and Welling 2013) and the deterministic autoencoder (AE) are very similar, there are two main differences:\n\nin the AE, the objective is the log likelihood of the reconstruction without any KL term\nThe encoding is deterministic, so that the encoder network just needs to compute \\(\\mathbb{E}[\\mathbf{z} \\vert \\mathbf{x}]\\) and not \\(\\text{Var}[\\mathbf{z} \\vert \\mathbf{x}]\\).\n\nThe main advantage of VAE over a deterministic autoencoder is that it defines a proper generative model that can create natural-looking novel images by decoding prior samples \\(\\mathbf{z} \\sim \\mathcal{N}(0, \\mathbf{I})\\). This is in constrast with the autoencoder, where it only knows how to decode the latent codes derived from the training set, so it does poorly on random inputs, as shown in Figure Figure 1.\n\n\n\n\n\n\nFigure 1: celebA produced by Autoencoder, VAE, and beta-VAE"
   },
   {
     "objectID": "misc/posts/blogs/vae/vae.html#proxy-distributions",
     "href": "misc/posts/blogs/vae/vae.html#proxy-distributions",
     "title": "Variational Autoencoders - Fundamental concepts",
     "section": "Proxy distributions",
-    "text": "Proxy distributions\nSince we don’t have access to the two high-dimensional distributions associated with the encoder \\(p(\\mathbf{z} \\vert \\mathbf{x})\\) and the decoder \\(p(\\mathbf{x} \\vert \\mathbf{z})\\), we need to come up with a way to approximate it. Consider the following two distributions:\n\n\\(q_{\\phi}(\\mathbf{z} \\vert \\mathbf{x})\\), which is the proxy for \\(p(\\mathbf{z} \\vert \\mathbf{x})\\) and we assume this to be a Gaussian distribution.\n\\(p_{\\theta}(\\mathbf{x} \\vert \\mathbf{z})\\), which is the proxy for \\(p(\\mathbf{x} \\vert \\mathbf{z})\\), and we also assume this to be a Gaussian distribution.\n\n![[Screenshot 2024-08-11 at 19.31.17.png]]\nHere, \\(\\phi\\) and \\(\\theta\\) are the parameters that we need to optimize. Proxy distributions are ditributions that are approximate of other true distributions."
+    "text": "Proxy distributions\nSince we don’t have access to the two high-dimensional distributions associated with the encoder \\(p(\\mathbf{z} \\vert \\mathbf{x})\\) and the decoder \\(p(\\mathbf{x} \\vert \\mathbf{z})\\), we need to come up with a way to approximate it. Consider the following two distributions:\n\n\\(q_{\\phi}(\\mathbf{z} \\vert \\mathbf{x})\\), which is the proxy for \\(p(\\mathbf{z} \\vert \\mathbf{x})\\) and we assume this to be a Gaussian distribution.\n\\(p_{\\theta}(\\mathbf{x} \\vert \\mathbf{z})\\), which is the proxy for \\(p(\\mathbf{x} \\vert \\mathbf{z})\\), and we also assume this to be a Gaussian distribution.\n\n\n\n\n\n\nHere, \\(\\phi\\) and \\(\\theta\\) are the parameters that we need to optimize. Proxy distributions are ditributions that are approximate of other true distributions."
   },
   {
     "objectID": "misc/posts/blogs/vae/vae.html#encoder",
@@ -1355,5 +1355,692 @@
     "title": "Seminars",
     "section": "",
     "text": "Content\nInstructor\nHandout\nFurther Reading\n\n\n\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\nTransformers for Time series data\nDr. Vinh\n231210-1\n\n\n\nScholarship and Feature Extraction in Time Series Data\n\n\n\n\n\nAdvanced UNet and LLMs Introduction\nDr. Vinh\n231224-23M07-EC3\n\n\n\nSeminar: Multimodal Language Models\n\n231231-23M07-EC3\n\n\n\nSeminar: Visual Instruction Tuning (LlaVa) and QLoRA\n\n240107-23M07-EC3\n\n\n\nData Augmentation and Imbalanced Data\n\n240114-23M07-EC3\n\n\n\nRNN-based Forecasting and Toolformer\n\n240121-23M07-EC3\n\n\n\nCLIP\nTA Đức\n240128-23M08-EC3\n\n\n\nDetecting violation of helmet rule for motorcyclists (CVPRW2024)\nDr. Vinh\n240204-23M08-EC3\n\n\n\nDirect Preference Optimization\nDr. Vinh\n240225-23M08-EC3\n\n\n\nStudy and Job in the USA\n\n\n\n\n\nSeminar: XAI\nDr. Anh Nguyen\n240405-23M09-MC\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ml-glossary/entropy.html",
+    "href": "ml-glossary/entropy.html",
+    "title": "Entropy",
+    "section": "",
+    "text": "Entropy is the term that has its root from the field of information theory and it is extremely useful in machine learning. The entropy helps us quantify the average amount of surprise of a probability distribution. We first consider the concept of surprise.\n\nIntuition\nSurprise in probability\nImagine three of the following the cases:\n\nyou ask your friend to predict whether a coin will land head or tail when being tossed and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice three times in a row, and your friend’s prediction is, again, correct for all the rolls.\n\nWe all know now that with those three cases, the extent of surprise differs, from scenario 1 having the least amount of surprise to scenario 3 being the most surprised situation. The question for us now is how to quantify this amount of surprise in a mathematical sense with the following properties:\n\nIt has an additive nature, i.e. the surprise value for correctly predicting the value of 3 dices in a row (as in scenario 3) should be larger than that of correctly predicting the value of 1 dice. In particular, when the probability value multiply, the amount of surprise should add up.\nIt have to be negatively proportional to the probability value \\(p\\). In other words, your amount of surprise should equals to 0 when the probability of some event happening is 1 (absolutely certain).\n\n\n\nEntropy definition\nLet \\(h(s)\\) denotes the surprisal of state \\(s\\), and \\(p_s\\) be the probability that the state \\(s\\) happen. The second desideratum is easy to satisfied, where \\(h(s) \\propto \\dfrac{1}{p_s}\\). For the first desideratum, we know from high school math that the \\(\\log()\\) have such property: \\[\\log \\left(\\prod_{i=1}^N s_i\\right) = \\sum_{i=1}^{N} \\log (s_i)\\] With that, we can now formally defined the surprise term:\n\n[!definition] Surprise \\[h(s)  = \\dfrac{1}{\\log (s)}\\]\n\nNow, we want to compute the average of the surprise term for the whole distribution, this is called entropy: \\[H = \\sum_{s} p_{s} \\log \\left(\\dfrac{1}{p_{s}}\\right)\\] In plain English, what we are doing with this formula is to sum over all possible states and multiply the probability of each state by the surprisal value.\n\n\nRelated concepts:\n[[Cross-entropy]] [[KL Divergence]]\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ml-glossary/ml-glossary.html",
+    "href": "ml-glossary/ml-glossary.html",
+    "title": "ML Glossary",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ml-glossary.html",
+    "href": "ml-glossary.html",
+    "title": "ML Glossary",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "modules/module3.html",
+    "href": "modules/module3.html",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "There’s no question that learning probability and statistics is a crucial step for anyone who wants to become an AI expert.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#main-lesson",
+    "href": "modules/module3.html#main-lesson",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "Main lesson",
+    "text": "Main lesson\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nAssignment\nDue: 23/07/2023 Probability Exercise\nDr. Đình Vinh\n[solution]\n\n\n\n19/07/23\nMain Lesson\nBasic Probability, Histogram and Image Enhancement\nDr. Vinh\n230719\n\n\n\n21/07/23\nMain Lesson\nNaive Bayes Classifier\nDr. Vinh\n230721\n\n\n\n23/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230723\n\n\n\n31/07/23\nAssignment\nStatistic Exercise\nDr. Đình Vinh\nSolution\n\n\n\n26/07/23\nMain Lesson\nBasic Statistics and Correlation Coefficient (Basic Tracking)\nDr. Vinh\n230726\n\n\n\n28/07/23\nMain Lesson\nTemplate Matching (Cosine Similarity vs. Correlation Coefficient)\nDr. Đình Vinh\n230728\n\n\n\n30/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230730\n\n\n\n31/07/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n02/08/23\nMain Lesson\nRandomness and Genetic Algorithms\nDr. Vinh\n230802\n\n\n\n04/08/23\nMain Lesson\nGenetic Algorithms (Optimization and Linear Regression)\nDr. Vinh\n230804\n\n\n\n06/08/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230806\n\n\n\n07/08/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n[solution]\n\n\n\n07/08/23\nExercise Session\nData Analysis Exercise\nTA Thắng\n[solution]\n\n\n\n09/08/23\nMain Lesson\nData visualization and Data Analysis (1)\nDr. Vinh\n230809\n[note]\n\n\n11/08/23\nMain Lesson\nData visualization and Data Analysis (2)\nDr. Vinh\n230811\n\n\n\n13/08/23\nExercise Session\nTA-Exercise (Polar)\nTA Thắng\n230813\n[Polar doc]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#project-tutorial",
+    "href": "modules/module3.html#project-tutorial",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "Project Tutorial",
+    "text": "Project Tutorial\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n\n\n\n\n17/08/23\nProject tutorial - PT\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n[LSFS and MapReduce]\n\n\n20/08/23\n\nBig Data Frameworks (2)\nDr. Đình Vinh\n230820\n\n\n\n22/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n\n\n\n\n23/08/23\n\nBig Data Frameworks (3)\nDr. Đình Vinh\n230823\n[C9, Feng 2021]\n\n\n25/08/23\n\nImage Data Project: Image Retrieval\nTA Thắng\n230825\n[VIT paper (Dosovitskiy et al., 2021)]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#extra-class-introduction-to-nlp",
+    "href": "modules/module3.html#extra-class-introduction-to-nlp",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "Extra class: Introduction to NLP",
+    "text": "Extra class: Introduction to NLP\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n29/07/23\nNLP Introduction\nIntroduction, Preprocessing\nTA Thái\n230729\n\n\n\n05/08/23\nNLP Introduction\nPreprocessing, Tokenization\nTA Thái\n230805\n[note] [C2, Jurafsky et al., 2023]\n\n\n12/08/23\nNLP Introduction\nStatistical Language Model\nTA Thái\n230812\n[C3, Jurafsky et al., 2023] [Andrej Karpathy’s Lecture]\n\n\n18/08/23\nNLP Introduction\nPart-of-Speech Tagging\nTA Thái\n230819\n[CA Jurafsky et al., 2023]\n\n\n26/08/23\nNLP Introduction\nConstituency Parsing\nTA Thái\n230826",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#python-tutorial-session",
+    "href": "modules/module3.html#python-tutorial-session",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "Python Tutorial Session",
+    "text": "Python Tutorial Session\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nPython Support\nProbability\nTA Tiềm\n230718\n\n\n\n25/07/23\nPython Support\nStatistics\nTA Bảo\n230725\n\n\n\n01/08/23\nPython Support\nGenetic Algorithms\nTA Tiềm\n230801\n\n\n\n08/08/23\nPython Support\nPandas (1)\nTA Bảo\n230808\n\n\n\n14/08/23\nPython Support\nPandas (2)\nTA Bảo\n230815\n[C7, McKinney 2023]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#competition-training",
+    "href": "modules/module3.html#competition-training",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "Competition Training",
+    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n20/07/23\nCompetition\nTricks to improve performance\nTA Hùng\n230720\n\n\n\n27/07/23\nCompetition\nHCM AI Challenge\nTA Hùng\n230727\n\n\n\n03/08/23\nCompetition\nWeb API + Docker\nTA Hùng\n230803\n\n\n\n17/08/23\nCompetition\nOnnx\nTA Hùng\n230817\n\n\n\n24/08/23\nCompetition\nSemi-supervised Learning\nTA Hùng\n230824\n[Lil’Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html",
+    "href": "modules/module1.html",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#projects",
+    "href": "modules/module1.html#projects",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Projects",
+    "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#competition-training",
+    "href": "modules/module1.html#competition-training",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition Training",
+    "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#extra-class",
+    "href": "modules/module1.html#extra-class",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class",
+    "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#main-lessons",
+    "href": "modules/module1.html#main-lessons",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\n[solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\nNote\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\nNote\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\n[solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\n[solution]\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#project-handout-and-material",
+    "href": "modules/module1.html#project-handout-and-material",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Project handout and material",
+    "text": "Project handout and material\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n22/05/23\nProject handout\nObject Detection with YOLOv8 Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nData Manipulation and Crawling Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nChatGPT Applications Project\nTA Thái\n[solution]\n\n\n\n24/05/23\nProject Tutorial\nImage Project: Yolov8 for Object Detection\nTA Thắng\n230524 - M01PT01\n\n\n\n26/05/23\nProject Tutorial\nData Manipulation using Python Libraries\nTA Thắng\n230526 - M01PT02\n\n\n\n28/05/23\nProject Tutorial\nText Project: ChatGPT-based Application\nTA Thái\n230528 - M01PT03\n\n\n\n23/05/23\nPython Support\nFor, List and Dictionary\nTA Tiềm\n230523 - M02CR01",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#competition-training-1",
+    "href": "modules/module1.html#competition-training-1",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition training",
+    "text": "Competition training\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n11/05/23\nCompetition\nData Visualization\nTA Hùng\n230511 - M01AC01\n\n\n\n18/05/23\nCompetition\nCompetition tasks and metrics\nTA Hùng\n230518 - M01AC02\n\n\n\n25/05/23\nCompetition\nDesign Validation\nTA Hùng\n230525 - M01AC03",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#extra-class-algorithms-and-complexity",
+    "href": "modules/module1.html#extra-class-algorithms-and-complexity",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class: Algorithms and Complexity",
+    "text": "Extra class: Algorithms and Complexity\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n06/05/23\nAlgorithms & Complexity\nBig-O (Time analysis)\nTA Thái\n230506 - M01EC01\n\n\n\n13/05/23\nAlgorithms & Complexity\nBrute-force Exhaustive\nTA Thái\n230513 - M01EC02\n\n\n\n20/05/23\nAlgorithms & Complexity\nRecursion and Two Pointer\nTA Thái\n230520 - M01EC03\n\n\n\n27/05/23\nAlgorithms & Complexity\nDynamic Programming\nTA Thái\n230527 - M01EC04",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html",
+    "href": "modules/module4.html",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "",
+    "text": "Hi, welcome to Module 4: Machine Learning and Data Science of the AIO2023 course. The main lessons of this module involves around traditional machine learning algorithms, ranging from simple to complex one such as kNN, Decision tree, Random Forest, XGBoost, and Support Vector Machines (SVMs). There are two projects, including one where we’d work with tabular type of data for the problem of heart disease protection. The second project is on Object detection.\nAs of the extra class for this module, it aims is to provide you with the knowledge involving around Large Language Models (LLMs), from the most fundamental knowledge to more recent techniques such as Prompting and Fine-tuning.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#main-lessons",
+    "href": "modules/module4.html#main-lessons",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n\n\n\n\n\n\n\n\n28/08/23\nAssignment\nK-Nearest Neighbor and Decision Tree Exercise\nTA Thái\n[solution]\n\n\n\n30/08/23\nMain Lesson\nK-Nearest Neighbors\nDr. Đình Vinh\n230830\n[note] [CS4780 Lecture 3]\n\n\n01/09/23\nMain Lesson\nDecision Tree for Classification\nDr. Đình Vinh\n230901\n\n\n\n03/09/23\nExercise Session\nTA Exercise\nTA Thái\n230903\n\n\n\n06/09/23\nMain Lesson\nDecision Tree for Regression\nDr. Đình Vinh\n230906\n[Choi et al., 2017]\n\n\n08/09/23\nMain Lesson\nRandom Forest\nDr. Đình Vinh\n230908\n[Louppe et al., 2015]\n\n\n10/09/23\nExercise Session\nTA Exercise\nTA Thắng\n230910\n\n\n\n11/09/23\nAssignment\nXGBoost\nTA Khoa\n[solution]\n\n\n\n13/09/23\nMain Lesson\nBasic XGBoost: Understanding Gradient Boost and AdaBoost\nDr. Đình Vinh\n230913\n[note] [Trevor Lecture]\n\n\n15/09/23\nMain Lesson\nAdvanced XGBoost: Fully XGBoost and its mathematics\nDr. Đình Vinh\n230915\n\n\n\n17/09/23\nExercise Session\nTA Exercise\nTA Khoa\n230917\n\n\n\n18/09/23\nAssignment\nSupport Vector Machine Exercise\nTA Thắng\n[solution]\n\n\n\n20/09/23\nMain Lesson\nReview on Tree-based Approaches and Discussion\nDr. Đình Vinh\n230920\n\n\n\n22/09/23\nMain Lesson\nSupport Vector Machine (1)\nDr. Đình Vinh\n230922\n[CS229 Note] [MLCB]\n\n\n24/09/23\nMain Lesson\nSupport Vector Machine (2)\nDr. Đình Vinh\n230924\n\n\n\n27/09/23\nExercise Session\nTA-Exercise\nTA Thắng\n230927\n\n\n\n29/09/23\nProject Tutorial\nTabular Data Project: Heart Disease Prediction\nDr. Đình Vinh\n230929\n\n\n\n01/10/23\nProject Tutorial\nImage Project: Object Detection\nTA Thắng\n231001\n[HoG paper]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#python-support",
+    "href": "modules/module4.html#python-support",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Python Support",
+    "text": "Python Support\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n\n\n\n\n\n\n\n\n29/08/23\nPython Support\nK-Nearest Neighbors (Warm-up)\nDr. Vinh\n230829\n[STAT451 Note]\n\n\n05/09/23\nPython Support\nDecision Tree\nDr. Vinh\n230905\n\n\n\n12/09/23\nPython Support\nRandom Forest and AdaBoost (Warm-up)\nDr. Vinh\n230912\n\n\n\n21/09/23\nPython Support\nSVM\nTA Thắng\n230921\n[CS4780 Note]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#extra-class-advanced-nlp",
+    "href": "modules/module4.html#extra-class-advanced-nlp",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Extra class: Advanced NLP",
+    "text": "Extra class: Advanced NLP\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n\n\n\n\n\n\n\n\n09/09/23\nAdvanced NLP\nFoundations for an NLP topic\nTA Thái\n230909\n[note] [CS324 note]\n\n\n16/09/23\nAdvanced NLP\nLanguage Models and Prompting Techniques\n\n230916\n\n\n\n23/09/23\nAdvanced NLP\nParameter-Efficient Fine-tuning\n\n230923\n[Houlsby et al., 2019] [COS597G Slides]\n\n\n30/09/23\nAdvanced NLP\nEfficient Fine-tuning of quantized LLMs\n\n230930\n[LoRA paper]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html",
+    "href": "modules/module7.html",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nDomain Conversion Exercise\nTA Khoa\nDue: 24/12/2024 [solution]\n\n\n\nMain Lesson\nDomain Conversion - Denoising and Segmentation\nDr. Vinh\n231220-23M07MC\n\n\n\nMain Lesson\nDomain Conversion - Colorization and Super Resolution\nDr. Vinh\n231222-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n231224-23M07MC\n\n\n\nAssignment\nObject Detection Project\nTA Hùng\n\n\n\n\nMain Lesson\nObject Detection (1)\nDr. Đình Vinh\n231227-23M07MC\n\n\n\nMain Lesson\nObject Detection (2)\nDr. Đình Vinh\n231229-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Hùng\n231231-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240103-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240105-23M07MC\n\n\n\nExercise Session\nTA-Exercise\nTA Hùng\n240107-23M07MC\n\n\n\nAssignment\nImbalanced Data Exercise\nDr. Vinh\n[solution]\n\n\n\nMain Lesson\nAdvanced Topic: Imbalanced Data\nDr. Vinh\n240110-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Self/semi-supervised Learning\nDr. Hưng\n240112-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Knowledge Distillation\nDr. Hưng\n240114-23M07MC\n\n\n\nProject tutorial\nImage Project: Tracking by Detection\nTA Thắng\n240117-23M07MC [Handout] [Solution]\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (1)\nTA Huy\n240119-23M07MC [Handout] [Solution]\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (2)\nTA Huy\n240121-23M07MC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nPreview\nUNet\nTA Thái\n231219-23M07-EC2\n\n\n\nPreview\nObject Detection using Pretrained Models\nTA Thái\n231226-23M07-EC2\n\n\n\nPreview\nYolov1\nTA Thái\n240102-23M07-EC2\n\n\n\nPreview\nIntroduction to Imbalanced Data\nTA Thái\n240109-23M07-EC2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch & Paper\nGroup Report (1)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nGroup Report (2)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nHow to Write a Paper (1)\nDr. Đình Vinh\n240106-23M07-EC1\n\n\n\nResearch & Paper\nHow to Write a Paper (2)\nDr. Đình Vinh\n240113-23M07-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nAdvanced UNet and LLMs Introduction\nDr. Vinh\n231224-23M07-EC3\n\n\n\nSeminar\nSeminar: Multimodal Language Models\n\n231231-23M07-EC3\n\n\n\nSeminar\nSeminar: Visual Instruction Tuning (LlaVa) and QLoRA\n\n240107-23M07-EC3\n\n\n\nSeminar\nData Augmentation and Imbalanced Data\n\n240114-23M07-EC3\n\n\n\nSeminar\nRNN-based Forecasting and Toolformer\n\n240121-23M07-EC3",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#main-lessons",
+    "href": "modules/module7.html#main-lessons",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nDomain Conversion Exercise\nTA Khoa\nDue: 24/12/2024 [solution]\n\n\n\nMain Lesson\nDomain Conversion - Denoising and Segmentation\nDr. Vinh\n231220-23M07MC\n\n\n\nMain Lesson\nDomain Conversion - Colorization and Super Resolution\nDr. Vinh\n231222-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n231224-23M07MC\n\n\n\nAssignment\nObject Detection Project\nTA Hùng\n\n\n\n\nMain Lesson\nObject Detection (1)\nDr. Đình Vinh\n231227-23M07MC\n\n\n\nMain Lesson\nObject Detection (2)\nDr. Đình Vinh\n231229-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Hùng\n231231-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240103-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240105-23M07MC\n\n\n\nExercise Session\nTA-Exercise\nTA Hùng\n240107-23M07MC\n\n\n\nAssignment\nImbalanced Data Exercise\nDr. Vinh\n[solution]\n\n\n\nMain Lesson\nAdvanced Topic: Imbalanced Data\nDr. Vinh\n240110-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Self/semi-supervised Learning\nDr. Hưng\n240112-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Knowledge Distillation\nDr. Hưng\n240114-23M07MC\n\n\n\nProject tutorial\nImage Project: Tracking by Detection\nTA Thắng\n240117-23M07MC [Handout] [Solution]\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (1)\nTA Huy\n240119-23M07MC [Handout] [Solution]\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (2)\nTA Huy\n240121-23M07MC",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#lesson-preview",
+    "href": "modules/module7.html#lesson-preview",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nPreview\nUNet\nTA Thái\n231219-23M07-EC2\n\n\n\nPreview\nObject Detection using Pretrained Models\nTA Thái\n231226-23M07-EC2\n\n\n\nPreview\nYolov1\nTA Thái\n240102-23M07-EC2\n\n\n\nPreview\nIntroduction to Imbalanced Data\nTA Thái\n240109-23M07-EC2",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#extra-class-research-and-paper-writing",
+    "href": "modules/module7.html#extra-class-research-and-paper-writing",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch & Paper\nGroup Report (1)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nGroup Report (2)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nHow to Write a Paper (1)\nDr. Đình Vinh\n240106-23M07-EC1\n\n\n\nResearch & Paper\nHow to Write a Paper (2)\nDr. Đình Vinh\n240113-23M07-EC1",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#seminars",
+    "href": "modules/module7.html#seminars",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nAdvanced UNet and LLMs Introduction\nDr. Vinh\n231224-23M07-EC3\n\n\n\nSeminar\nSeminar: Multimodal Language Models\n\n231231-23M07-EC3\n\n\n\nSeminar\nSeminar: Visual Instruction Tuning (LlaVa) and QLoRA\n\n240107-23M07-EC3\n\n\n\nSeminar\nData Augmentation and Imbalanced Data\n\n240114-23M07-EC3\n\n\n\nSeminar\nRNN-based Forecasting and Toolformer\n\n240121-23M07-EC3",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html",
+    "href": "modules/module9.html",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain Lesson \n\n\n\n\n\n\nAssignment\nStyle Transfer Exercise\nTA Khoa\n\n\n\n\nMain Lesson\nBasic Style Transfer\nDr. Vinh\n240306-23M09-MC\n\n\n\nMain Lesson\nMultimodal Style Transfer\nDr. Vinh\n240308-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n240310-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thái\n240317-23M09-MC\n\n\n\nMain Lesson\nGAN and DCGAN\nDr. Vinh\n240320-23M09-MC\n\n\n\nMain Lesson\nPix2Pix and CycleGAN\nDr. Vinh\n240322-23M09-MC\n\n\n\nExercise Session\nText to Image Synthesis with DCGAN\nTA Thái\n240324-23M09-MC\n\n\n\nAssignment\nImage Inpainting with DDPMs\nTA Thái\n[solution]\n\n\n\nMain Lesson\nDiffusion Models (1)\nDr. Đình Vinh\n240327-23M09-MC\nTutorial on Diffusion Models for Imaging and Vision\n\n\nMain Lesson\nDiffusion Models (2)\nDr. Đình Vinh\n240329-23M09-MC\n\n\n\nExercise Session\nDiffusion-based Image Inpainting\nTA Thái\n240331-23M09-MC\n\n\n\nMain Lesson\nProject: VAE-based Image Colorization\nDr. Tài\n240403-23M09-MC\n\n\n\nProject tutorial - PT\nProject: Diffusion-based Image Colorization\nDr. Tài\n240407-23M09-MC\n\n\n\nAssignment\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n\n\n\n\nMain Lesson\nStable Diffusion\nDr. Đình Vinh\n240410-23M09-MC\n\n\n\nMain Lesson\nIntroduction to OpenAI’s Sora\nDr. Đình Vinh\n240412-23M09-MC\n\n\n\nProject tutorial - PT\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n240414-23M09-MC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nTraining a minChatGPT\nTA Thái\n240406-23M10-EC1\n\n\n\nLLMs\nLLM Finetuning for Math Solver\nTA Thắng\n240413-23M10-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Pruning\nTA Bách\n240309-23M09-EC1\n\n\n\nMLOps\nMobile Deployment\nDr. Đình Vinh\n240316-23M09-EC1\n\n\n\nMLOps\nWeb Deployment\nDr. Đình Vinh\n240323-23M09-EC1\n\n\n\nMLOps\nDeployment as a Service (API)\nTA Thắng\n240330-23M09-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nSeminar: XAI\nDr. Anh Nguyen\n240405-23M09-MC",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#main-lessons",
+    "href": "modules/module9.html#main-lessons",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain Lesson \n\n\n\n\n\n\nAssignment\nStyle Transfer Exercise\nTA Khoa\n\n\n\n\nMain Lesson\nBasic Style Transfer\nDr. Vinh\n240306-23M09-MC\n\n\n\nMain Lesson\nMultimodal Style Transfer\nDr. Vinh\n240308-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n240310-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thái\n240317-23M09-MC\n\n\n\nMain Lesson\nGAN and DCGAN\nDr. Vinh\n240320-23M09-MC\n\n\n\nMain Lesson\nPix2Pix and CycleGAN\nDr. Vinh\n240322-23M09-MC\n\n\n\nExercise Session\nText to Image Synthesis with DCGAN\nTA Thái\n240324-23M09-MC\n\n\n\nAssignment\nImage Inpainting with DDPMs\nTA Thái\n[solution]\n\n\n\nMain Lesson\nDiffusion Models (1)\nDr. Đình Vinh\n240327-23M09-MC\nTutorial on Diffusion Models for Imaging and Vision\n\n\nMain Lesson\nDiffusion Models (2)\nDr. Đình Vinh\n240329-23M09-MC\n\n\n\nExercise Session\nDiffusion-based Image Inpainting\nTA Thái\n240331-23M09-MC\n\n\n\nMain Lesson\nProject: VAE-based Image Colorization\nDr. Tài\n240403-23M09-MC\n\n\n\nProject tutorial - PT\nProject: Diffusion-based Image Colorization\nDr. Tài\n240407-23M09-MC\n\n\n\nAssignment\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n\n\n\n\nMain Lesson\nStable Diffusion\nDr. Đình Vinh\n240410-23M09-MC\n\n\n\nMain Lesson\nIntroduction to OpenAI’s Sora\nDr. Đình Vinh\n240412-23M09-MC\n\n\n\nProject tutorial - PT\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n240414-23M09-MC",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module9.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nTraining a minChatGPT\nTA Thái\n240406-23M10-EC1\n\n\n\nLLMs\nLLM Finetuning for Math Solver\nTA Thắng\n240413-23M10-EC1",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#extra-class-mlops",
+    "href": "modules/module9.html#extra-class-mlops",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Pruning\nTA Bách\n240309-23M09-EC1\n\n\n\nMLOps\nMobile Deployment\nDr. Đình Vinh\n240316-23M09-EC1\n\n\n\nMLOps\nWeb Deployment\nDr. Đình Vinh\n240323-23M09-EC1\n\n\n\nMLOps\nDeployment as a Service (API)\nTA Thắng\n240330-23M09-EC1",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#seminar",
+    "href": "modules/module9.html#seminar",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nSeminar: XAI\nDr. Anh Nguyen\n240405-23M09-MC",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html",
+    "href": "modules/module8.html",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain lesson\n\n\n\n\n\n\nAssignment\nPOS and Medical NER Exercise\nTA Thái\n[solution]\n\n\n\nPreview\nIntroduction to POS Tagging\nTA Khoa\n240130-23M08-EC2\n\n\n\nMain Lesson\nFrom Text Classification to POS Tagging\nDr. Vinh\n240131-23M08MC\n\n\n\nMain Lesson\nNER for Medical Data\nDr. Vinh\n240202-23M08MC\n\n\n\nExercise Session - ES\nTA-Exercise\nTA Thái\n240204-23M08MC\n\n\n\nProject handout\nAspect-based Sentiment Analysis Project\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: Aspect Extraction and Content Classification (Text Classification + NER)\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: QA for Content Inquiry (Text Classification + NER)\nTA Thắng\n240216-23M08MC\n\n\n\nProject tutorial\nText Project: End-to-end Question Answering (Building a Searching System)\nTA Thắng\n240218-23M08MC [Handout] [Solution]\n\n\n\nMain Lesson\nText Generation\nDr. Vinh\n240221-23M08MC\n\n\n\nMain Lesson\nMachine Translation\nDr. Vinh\n240223-23M08MC\n\n\n\nExercise Session - ES\nTA Exercise (Neural Machine Translation)\nTA Thái\n240225-23M08MC\n\n\n\nProject handout\nNeural Machine Translation\nTA Thái\n[handout]\n\n\n\nProject tutorial\nPoem Generation Project\nTA Thắng\n240228-23M08MC\n\n\n\nProject tutorial\nLow-resource Machine Translation Project\nTA Thái\n240301-23M08MC\n\n\n\nProject tutorial\nText classification with Mamba Project\nTA Đức\n\n\n\n\nProject handout\nText Project: Poem Generation\nTA Thái\n240228-23M08MC\n\n\n\nProject handout\nText Project: Low-resource Machine Translation\nTA Thắng\n240301-23M08MC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch and Paper\nHow to write a paper (3)\nDr. Đình Vinh\n240127-23M08-EC1\n\n\n\nResearch and Paper\nHow to write a paper (4)\nDr. Đình Vinh\n240203-23M08-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Quantization\nTA Bách\n240302-23M09-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nCLIP\nTA Đức\n240128-23M08-EC3\n\n\n\nSeminar\nDetecting violation of helmet rule for motorcyclists (CVPRW2024)\nDr. Vinh\n240204-23M08-EC3\n\n\n\nSeminar\nDirect Preference Optimization\nDr. Vinh\n240225-23M08-EC3\n\n\n\nSeminar\nStudy and Job in the USA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nIntroduction to Text Generation\nDr. Vinh\n240220-23M08-EC2",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#main-lessons",
+    "href": "modules/module8.html#main-lessons",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain lesson\n\n\n\n\n\n\nAssignment\nPOS and Medical NER Exercise\nTA Thái\n[solution]\n\n\n\nPreview\nIntroduction to POS Tagging\nTA Khoa\n240130-23M08-EC2\n\n\n\nMain Lesson\nFrom Text Classification to POS Tagging\nDr. Vinh\n240131-23M08MC\n\n\n\nMain Lesson\nNER for Medical Data\nDr. Vinh\n240202-23M08MC\n\n\n\nExercise Session - ES\nTA-Exercise\nTA Thái\n240204-23M08MC\n\n\n\nProject handout\nAspect-based Sentiment Analysis Project\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: Aspect Extraction and Content Classification (Text Classification + NER)\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: QA for Content Inquiry (Text Classification + NER)\nTA Thắng\n240216-23M08MC\n\n\n\nProject tutorial\nText Project: End-to-end Question Answering (Building a Searching System)\nTA Thắng\n240218-23M08MC [Handout] [Solution]\n\n\n\nMain Lesson\nText Generation\nDr. Vinh\n240221-23M08MC\n\n\n\nMain Lesson\nMachine Translation\nDr. Vinh\n240223-23M08MC\n\n\n\nExercise Session - ES\nTA Exercise (Neural Machine Translation)\nTA Thái\n240225-23M08MC\n\n\n\nProject handout\nNeural Machine Translation\nTA Thái\n[handout]\n\n\n\nProject tutorial\nPoem Generation Project\nTA Thắng\n240228-23M08MC\n\n\n\nProject tutorial\nLow-resource Machine Translation Project\nTA Thái\n240301-23M08MC\n\n\n\nProject tutorial\nText classification with Mamba Project\nTA Đức\n\n\n\n\nProject handout\nText Project: Poem Generation\nTA Thái\n240228-23M08MC\n\n\n\nProject handout\nText Project: Low-resource Machine Translation\nTA Thắng\n240301-23M08MC",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-research-and-paper-writing",
+    "href": "modules/module8.html#extra-class-research-and-paper-writing",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch and Paper\nHow to write a paper (3)\nDr. Đình Vinh\n240127-23M08-EC1\n\n\n\nResearch and Paper\nHow to write a paper (4)\nDr. Đình Vinh\n240203-23M08-EC1",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-mlops",
+    "href": "modules/module8.html#extra-class-mlops",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Quantization\nTA Bách\n240302-23M09-EC1",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#seminar",
+    "href": "modules/module8.html#seminar",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nCLIP\nTA Đức\n240128-23M08-EC3\n\n\n\nSeminar\nDetecting violation of helmet rule for motorcyclists (CVPRW2024)\nDr. Vinh\n240204-23M08-EC3\n\n\n\nSeminar\nDirect Preference Optimization\nDr. Vinh\n240225-23M08-EC3\n\n\n\nSeminar\nStudy and Job in the USA",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module8.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nIntroduction to Text Generation\nDr. Vinh\n240220-23M08-EC2",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module10.html",
+    "href": "modules/module10.html",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain Lesson\nAssignment: Reinforcement Learning Exercise\nTA Thắng\n\n\n\n\nPreview\nIntroduction to Reinforcement Learning\nTA Thuận\n240416-23M10-EC2\n\n\n\nMain Lesson\nReinforcement Learning (CartPole)\nDr. Hoàng\n240417-23M10-MC\n\n\n\nMain Lesson\nReinforcement Learning (Deep Deterministic Policy Gradient)\nDr. Hoàng\n240419-23M10-MC\n\n\n\nExercise\nTA Exercise\nTA Thắng\n240421-23M10-MC\n\n\n\nAssignment\nPoint Cloud Techniques and Applications Project\nDr. Tuấn\n\n\n\n\nAssignment\nMultimodal Large Language Models Exercise\nTA Thái\n\n\n\n\nMain Lesson\nClassification for 3D Point Cloud Data\nDr. Tuấn\n240424-23M10-MC\n\n\n\nMain Lesson\nAdvances in 3D Point Cloud Data\nDr. Tuấn\n240426-23M10-MC\n\n\n\nMain Lesson\nGNN Node Classification\nDr. Đình Vinh\n240428-23M10-MC\n\n\n\nMain Lesson\nGNN (Molecular Property Prediction)\nDr. Đình Vinh\n240501-23M10-MC\n\n\n\nExercise\nTA Exercise\nTA Đức\n240503-23M10-MC\n\n\n\nProject PT\nMultitasking networks for Vision\nTA Thái\n240505-23M10-MC\n[Exercise]\n\n\nProject PT\nVideoCLIP for Video Classification\nTA Đức\n240508-23M10-MC\n\n\n\nProject PT\nMulti-agent LLM\nTA Thắng\n240510-23M10-MC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nExtra class\nLLM RAG for Applications\nTA Bách\n240421-23M10-MC\n\n\n\nExtra class\nLLMs for Multimodal Data\nTA Thái\n240427-23M10-EC1\n[Modaverse] [BLIP-2] [NExT-GPT]\n\n\nExtra class\nLLM Deployment with LangChain\nTA Thắng\n240504-23M10-EC1"
+  },
+  {
+    "objectID": "modules/module10.html#main-lessons",
+    "href": "modules/module10.html#main-lessons",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMain Lesson\nAssignment: Reinforcement Learning Exercise\nTA Thắng\n\n\n\n\nPreview\nIntroduction to Reinforcement Learning\nTA Thuận\n240416-23M10-EC2\n\n\n\nMain Lesson\nReinforcement Learning (CartPole)\nDr. Hoàng\n240417-23M10-MC\n\n\n\nMain Lesson\nReinforcement Learning (Deep Deterministic Policy Gradient)\nDr. Hoàng\n240419-23M10-MC\n\n\n\nExercise\nTA Exercise\nTA Thắng\n240421-23M10-MC\n\n\n\nAssignment\nPoint Cloud Techniques and Applications Project\nDr. Tuấn\n\n\n\n\nAssignment\nMultimodal Large Language Models Exercise\nTA Thái\n\n\n\n\nMain Lesson\nClassification for 3D Point Cloud Data\nDr. Tuấn\n240424-23M10-MC\n\n\n\nMain Lesson\nAdvances in 3D Point Cloud Data\nDr. Tuấn\n240426-23M10-MC\n\n\n\nMain Lesson\nGNN Node Classification\nDr. Đình Vinh\n240428-23M10-MC\n\n\n\nMain Lesson\nGNN (Molecular Property Prediction)\nDr. Đình Vinh\n240501-23M10-MC\n\n\n\nExercise\nTA Exercise\nTA Đức\n240503-23M10-MC\n\n\n\nProject PT\nMultitasking networks for Vision\nTA Thái\n240505-23M10-MC\n[Exercise]\n\n\nProject PT\nVideoCLIP for Video Classification\nTA Đức\n240508-23M10-MC\n\n\n\nProject PT\nMulti-agent LLM\nTA Thắng\n240510-23M10-MC"
+  },
+  {
+    "objectID": "modules/module10.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module10.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nExtra class\nLLM RAG for Applications\nTA Bách\n240421-23M10-MC\n\n\n\nExtra class\nLLMs for Multimodal Data\nTA Thái\n240427-23M10-EC1\n[Modaverse] [BLIP-2] [NExT-GPT]\n\n\nExtra class\nLLM Deployment with LangChain\nTA Thắng\n240504-23M10-EC1"
+  },
+  {
+    "objectID": "modules/module6.html",
+    "href": "modules/module6.html",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n06/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thái\nDue: 12/11/2023 [solution]\n\n\n\n08/11/23\nMain Lesson\nBasic CNN (1)\nDr. Vinh\n231108\n[CS231N Note] [CNN Explainer]\n\n\n10/11/23\nMain Lesson\nBasic CNN (2)\nDr. Vinh\n231110\n\n\n\n12/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231112\n\n\n\n13/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thắng\n[solution]\n\n\n\n15/11/23\nMain Lesson\nCNN Training\nDr. Vinh\n231115\n[VGG Paper]\n\n\n17/11/23\nMain Lesson\nCNN Generalization\nDr. Vinh\n231117\n\n\n\n19/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231119\n\n\n\n20/11/23\nAssignment\nPretrained Models for Image Exercise\nTA Thắng\n[solution]\n\n\n\n22/11/23\nMain Lesson\nAdvanced CNN Architecture\nDr. Vinh\n231122\n\n\n\n24/11/23\nMain Lesson\nTransfer Learning for CNN\nDr. Vinh\n231124\n\n\n\n26/11/23\nExercise Session\nTA-Exercise\nTA Thái\n231126\n\n\n\n27/11/23\nAssignment\nRecurrent Neural Network Exercise\nTA Thắng\n[solution]\n\n\n\n29/11/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231129\n\n\n\n01/12/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231201\n\n\n\n03/12/23\nExercise Session\nTA-Exercise\nTA Thắng\n231203\n\n\n\n04/12/23\nAssignment\nTransformer Application Exercise\n\n\n\n\n\n06/12/23\nMain Lesson\nTransformer (Encoder - Text Classification)\nDr. Vinh\n231206\nBERT Readings\n\n\n10/12/23\nAssignment\nTransformer and its applications\nTA Thái\n[solution]\n\n\n\n08/12/23\nMain Lesson\nTransformer for Image and Time series Data\nDr. Vinh\n231208\n\n\n\n13/12/23\nProject Tutorial\nImage Project: OCR with YOLOv8 and CNN (Scene Text Recognition)\nTA Thắng\n231213 [Handout] [Solution]\n\n\n\n15/12/23\nProject Tutorial\nImage-text Project: VQA\nTA Thắng\n231215 [Handout] [Solution]\n\n\n\n17/12/23\nProject Tutorial\nTime-series forecasting project\nDr. Đình Vinh\n231217 [Handout] [Solution]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/11/23\nCompetition\nZalo AI\nTA Hùng\n231109\n\n\n\n16/11/23\nCompetition\nZalo AI\n\n231116\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n07/11/23\nPreview\nIntroduction to CNN\nTA Thái\n231107\n\n\n\n14/11/23\nPreview\nAdvanced CNN\n\n231114\n\n\n\n21/11/23\nPreview\nCNN and its variants\n\n231121\n\n\n\n28/11/23\nPreview\nIntroduction to Transfer Learning\n\n231128\n\n\n\n05/12/23\nPreview\nIntroduction to Transformer\n\n231205\nGenerative AI exists because of the transformer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n11/11/23\nResearch & Paper\nResearch Idea - Brainstorming (1)\nDr. Đình Vinh\n231111\n\n\n\n18/11/23\nResearch & Paper\nResearch Idea - Brainstorming (2)\n\n231118\n\n\n\n25/11/23\nResearch & Paper\nHow to do Research (1)\n\n231125\n\n\n\n02/12/23\nResearch & Paper\nHow to do Research (2)\n\n231202\n\n\n\n09/12/23\nResearch & Paper\nHow to do Research (3)\n\n231209\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n10/12/23\nSeminar\nTransformers for Time series data\nDr. Vinh\n23121v0-1\n\n\n\n17/12/23\nSeminar\nScholarship and Feature Extraction in Time Series Data\n231217",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#main-lessons",
+    "href": "modules/module6.html#main-lessons",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n06/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thái\nDue: 12/11/2023 [solution]\n\n\n\n08/11/23\nMain Lesson\nBasic CNN (1)\nDr. Vinh\n231108\n[CS231N Note] [CNN Explainer]\n\n\n10/11/23\nMain Lesson\nBasic CNN (2)\nDr. Vinh\n231110\n\n\n\n12/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231112\n\n\n\n13/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thắng\n[solution]\n\n\n\n15/11/23\nMain Lesson\nCNN Training\nDr. Vinh\n231115\n[VGG Paper]\n\n\n17/11/23\nMain Lesson\nCNN Generalization\nDr. Vinh\n231117\n\n\n\n19/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231119\n\n\n\n20/11/23\nAssignment\nPretrained Models for Image Exercise\nTA Thắng\n[solution]\n\n\n\n22/11/23\nMain Lesson\nAdvanced CNN Architecture\nDr. Vinh\n231122\n\n\n\n24/11/23\nMain Lesson\nTransfer Learning for CNN\nDr. Vinh\n231124\n\n\n\n26/11/23\nExercise Session\nTA-Exercise\nTA Thái\n231126\n\n\n\n27/11/23\nAssignment\nRecurrent Neural Network Exercise\nTA Thắng\n[solution]\n\n\n\n29/11/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231129\n\n\n\n01/12/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231201\n\n\n\n03/12/23\nExercise Session\nTA-Exercise\nTA Thắng\n231203\n\n\n\n04/12/23\nAssignment\nTransformer Application Exercise\n\n\n\n\n\n06/12/23\nMain Lesson\nTransformer (Encoder - Text Classification)\nDr. Vinh\n231206\nBERT Readings\n\n\n10/12/23\nAssignment\nTransformer and its applications\nTA Thái\n[solution]\n\n\n\n08/12/23\nMain Lesson\nTransformer for Image and Time series Data\nDr. Vinh\n231208\n\n\n\n13/12/23\nProject Tutorial\nImage Project: OCR with YOLOv8 and CNN (Scene Text Recognition)\nTA Thắng\n231213 [Handout] [Solution]\n\n\n\n15/12/23\nProject Tutorial\nImage-text Project: VQA\nTA Thắng\n231215 [Handout] [Solution]\n\n\n\n17/12/23\nProject Tutorial\nTime-series forecasting project\nDr. Đình Vinh\n231217 [Handout] [Solution]",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#competition-training",
+    "href": "modules/module6.html#competition-training",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n09/11/23\nCompetition\nZalo AI\nTA Hùng\n231109\n\n\n\n16/11/23\nCompetition\nZalo AI\n\n231116",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#python-review",
+    "href": "modules/module6.html#python-review",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n07/11/23\nPreview\nIntroduction to CNN\nTA Thái\n231107\n\n\n\n14/11/23\nPreview\nAdvanced CNN\n\n231114\n\n\n\n21/11/23\nPreview\nCNN and its variants\n\n231121\n\n\n\n28/11/23\nPreview\nIntroduction to Transfer Learning\n\n231128\n\n\n\n05/12/23\nPreview\nIntroduction to Transformer\n\n231205\nGenerative AI exists because of the transformer",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#extra-class-research-paper-writing",
+    "href": "modules/module6.html#extra-class-research-paper-writing",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n11/11/23\nResearch & Paper\nResearch Idea - Brainstorming (1)\nDr. Đình Vinh\n231111\n\n\n\n18/11/23\nResearch & Paper\nResearch Idea - Brainstorming (2)\n\n231118\n\n\n\n25/11/23\nResearch & Paper\nHow to do Research (1)\n\n231125\n\n\n\n02/12/23\nResearch & Paper\nHow to do Research (2)\n\n231202\n\n\n\n09/12/23\nResearch & Paper\nHow to do Research (3)\n\n231209",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#seminar",
+    "href": "modules/module6.html#seminar",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n10/12/23\nSeminar\nTransformers for Time series data\nDr. Vinh\n23121v0-1\n\n\n\n17/12/23\nSeminar\nScholarship and Feature Extraction in Time Series Data\n231217",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#main-lessons",
+    "href": "modules/module5.html#main-lessons",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Main lessons",
+    "text": "Main lessons\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n02/10/23\nAssignment\nLogistic Regression Exercise\nTA Thắng\nDue: 08/10/2023 [solution]\n\n\n\n04/10/23\nMain Lesson\nFrom Linear Regression to Logistic Regression\nDr. Vinh\n231004\n\n\n\n06/10/23\nMain Lesson\nLogistic Regression - Vectorization and Applications\nDr. Vinh\n231006\n[Jurafsky et al., C5, 2023]\n\n\n08/10/23\nExercise Session\nTA Exercise\nTA Thắng\n231008\n\n\n\n09/10/23\nAssignment\nSoftmax Regression Exercise\nTA Thắng\n[solution]\n\n\n\n11/10/23\nMain Lesson\nSoftmax Regression (Multiclass Classification)\nDr. Vinh\n231011\n\n\n\n13/10/23\nMain Lesson\nPytorch Framework (Implementation for regression)\nDr. Vinh\n231013\n\n\n\n15/10/23\nExercise Session\nTA Exercise\nTA Khoa\n231015\n\n\n\n16/10/23\nAssignment\nMLP Exercise\nTA Thắng\nDue: 22/10/2023 [solution]\n\n\n\n18/10/23\nMain Lesson\nMultilayer Perceptron\nDr. Vinh\n231018\n\n\n\n20/10/23\nMain Lesson\nActivations and Initializers\nDr. Vinh\n231020\n\n\n\n22/10/23\nExercise Session\nTA Exercise\nTA Khoa\n231022\n\n\n\n25/10/23\nMain Lesson\nOptimizers for Neural Network (1)\nDr. Vinh\n231025\n\n\n\n27/10/23\nMain Lesson\nOptimizers for Neural Networks (2)\nDr. Vinh\n231027\n\n\n\n29/10/23\nExercise Session\nTA-Exercise (Optimization methods)\nTA Khoa\n231029\n\n\n\n01/11/23\nProject Tutorial\nText data: Sentiment Analysis\nTA Thái\n231101 [Proposal] [Solution]\n\n\n\n03/11/23\nProject Tutorial\nTime-series Data Project: Music Genre Classification\nTA Bảo\n231103 [Proposal] [Solution]\n\n\n\n05/11/23\nProject Tutorial\nImage Data Project: Gradient Vanishing in MLP\nTA Khoa\n231105 [Proposal] [Solution]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#python-tutorial-session",
+    "href": "modules/module5.html#python-tutorial-session",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Python Tutorial Session",
+    "text": "Python Tutorial Session\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n03/10/23\nPreview\nLogistic Regression\nTA Thái\n231003\n\n\n\n10/10/23\nPreview\nSoftmax Regression\n\n231010\n\n\n\n17/10/23\nPreview\nMultilayer Perceptron\n\n231017\n\n\n\n24/10/23\nPreview\nSGD+Momentum\n\n231024",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#extra-class-introduction-to-computer-vision",
+    "href": "modules/module5.html#extra-class-introduction-to-computer-vision",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Extra class: Introduction to Computer Vision",
+    "text": "Extra class: Introduction to Computer Vision\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n07/10/23\nComputer Vision\nIntroduction to CV and Background subtraction\nDr. Đình Vinh\n231007\n\n\n\n14/10/23\nComputer Vision\nLane Detection\nDr. Đình Vinh\n231014\n\n\n\n21/10/23\nComputer Vision\nImage Stitching (panorama)\nDr. Đình Vinh\n231021\n\n\n\n28/10/23\nComputer Vision\nFace Detection\nDr. Đình Vinh\n231028\n\n\n\n04/11/23\nComputer Vision\nObject Tracking using Mean Shift/Cam Shift\nDr. Đình Vinh\n231104 [Proposal] [Solution]",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#competition-training",
+    "href": "modules/module5.html#competition-training",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Competition Training",
+    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\nDate\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\n05/10/23\nCompetition\nIntroduction to Imbalance Data\nTA Hùng\n231005\n\n\n\n12/10/23\nCompetition\nModel Evaluation\nTA Hùng\n231012\n\n\n\n19/10/23\nCompetition\nKalapa Challenge\nTA Hùng\n231019\n\n\n\n02/11/23\nCompetition\nData Sampling\nTA Hùng\n231102",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html",
+    "href": "modules/module2.html",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#main-lessons",
+    "href": "modules/module2.html#main-lessons",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\nDue: 04/06/2023 solution\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\nDue: 11/06/2023 [solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES0\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\nDue: 02/07/2023 [solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#project-tutorial",
+    "href": "modules/module2.html#project-tutorial",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Project Tutorial",
+    "text": "Project Tutorial\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n09/07/23\nProject Tutorial\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n[solution]\n\n\n10/07/23\nProject handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject Tutorial\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject Tutorial\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject Tutorial\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#python-tutorial-sessions",
+    "href": "modules/module2.html#python-tutorial-sessions",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Python Tutorial Sessions",
+    "text": "Python Tutorial Sessions\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n30/05/23\nPython Support\nList for 2D Data\nTA Tiềm\n230530 - M02CR02\n\n\n\n06/06/23\nPython Support\nList for 3D data\n\n230606 - M02CR03\n\n\n\n13/06/23\nPython Support\nArray 1D using NumPy\n\n230613 - M02CR04\n\n\n\n20/06/23\nPython Support\nArray 2D and 3D using NumPy\n\n230620 - M02CR05\n\n\n\n27/06/23\nPython Support\nBasic Numpy\n\n230627 - M02CR06",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#extra-classes-database-and-sql",
+    "href": "modules/module2.html#extra-classes-database-and-sql",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Extra Classes: Database and SQL",
+    "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n03/06/23\nDatabase and SQL\nDatabase-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nDatabase and SQL\nDatabase-SQL (2)\nTA Bảo\n230610 - M02ES02\n\n\n\n17/06/23\nDatabase and SQL\nDatabase-SQL (3)\nTA Bảo\n230617 - M02EC03\n\n\n\n24/06/23\nNoSQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nNoSQL\nDatabase-NoSQL (2)\nTA Thái\n230701 - M02EC05\n\n\n\n08/07/23\nBig Data\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#competition",
+    "href": "modules/module2.html#competition",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Competition",
+    "text": "Competition\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling (Voting, Averaging, and Stacked Generalization)\nTA Hùng\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\nTA Hùng\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\nTA Hùng\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\nTA Hùng\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\nTA Hùng\n230706 - M02AC06",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#summer-school-on-deep-learning",
+    "href": "modules/module2.html#summer-school-on-deep-learning",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Summer School on Deep Learning",
+    "text": "Summer School on Deep Learning\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n05/07/23\nSummer school on Deep Learning\nVIASM Summer school on Recent Advances in Deep Learning\n\nSildes",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "login_portal/a2fd87338037fe28bd289eab3fecc8bfd1a3e0410/about.html",
+    "href": "login_portal/a2fd87338037fe28bd289eab3fecc8bfd1a3e0410/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "login_portal/a2fd87338037fe28bd289eab3fecc8bfd1a3e0410/index.html",
+    "href": "login_portal/a2fd87338037fe28bd289eab3fecc8bfd1a3e0410/index.html",
+    "title": "a2fd87338037fe28bd289eab3fecc8bfd1a3e0410",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "modules/module5.html#further-resources",
+    "href": "modules/module5.html#further-resources",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Further Resources",
+    "text": "Further Resources",
+    "crumbs": [
+      "Resources",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "resources/research.html",
+    "href": "resources/research.html",
+    "title": "Resources for Research and Paper Writing",
+    "section": "",
+    "text": "“No research without action, no action without research.” Kurt Lewin\n: Youtube Video | : Paper/preprint | : Website/ Blogpost # General\n\n Hamming, “You and Your Research” (June 6, 1995)\n Bí kíp nâng cao KĨ NĂNG NGHIÊN CỨU KHOA HỌC | 🎙️PhD Whisperer Ep 4\n\n\nResearch Paper Writing\n\n Research Communication is IMPORTANT so DO BETTER\n How to write an okay research paper.\n How to effortlessly write a high quality scientific paper in the field of computational engineering and sciences\n Guidelines for Writing a Good NIPS Paper\n\n\n\n\n\n Back to top"
   }
 ]

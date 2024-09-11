@@ -2,6 +2,7 @@
 title: AI News
 title-block-banner: true
 description: A compilation of latest AI news and updates.
+date-modified: 2024 Sep 10
 format:
   html:
     toc: true
@@ -9,20 +10,29 @@ format:
 ---
 
 <div style="overflow:auto; height:800px;">
+
+
 # Papers
+
+- <span class="badge rounded-pill bg-warning">Model</span> Mixtral dropped Pixtral 12B, their first-ever multimodal model: [Tweet](https://x.com/MistralAI/status/1833758285167722836).
 
 - <span class="badge rounded-pill bg-info">NLP</span> [MMToM-QA: Multimodal Theory of Mind Question Answering](https://arxiv.org/abs/2401.08743) at ACL2024, **Outstanding Paper Award**.
 
 # Press
 
+- <span class="badge rounded-pill bg-success">Podcast</span> **10 Sep, 2024:** [Decoding Google Gemini with Jeff Dean](https://www.youtube.com/watch?v=lH74gNeryhQ&ab_channel=GoogleDeepMind), a podcast of Google's Chief Scientist Jeff Dean, hosted by Prof. Hannah Fry
+
 - <span class="badge rounded-pill bg-primary">Event</span> Jeff Dean and other prestigious guests are arriving to Vietnam to attend the [GenAI Summit](https://summit.newturing.ai/).
 
-- <span class="badge rounded-pill bg-primary">Podcast</span> **14 Aug, 2024:** [Unreasonably Effective AI](https://www.youtube.com/watch?v=pZybROKrj2Q), a podcast by Google DeepMind's CEO Demis Hassabis, hosted by Prof. Hannah Fry
+- <span class="badge rounded-pill bg-success">Podcast</span> **14 Aug, 2024:** [Unreasonably Effective AI](https://www.youtube.com/watch?v=pZybROKrj2Q), a podcast by Google DeepMind's CEO Demis Hassabis, hosted by Prof. Hannah Fry
 
 # Conferences
+- List of accepted papers at Coference on Language Modeling (COLM) 2024 is now available. Visit [here](https://colmweb.org/AcceptedPapers.html).
+  
 -  **11 Aug, 2024:** [The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)](https://2024.aclweb.org/).
-  - ACL is not an AI conference.
-  - [GloVe](https://aclanthology.org/D14-1162/) wins the test-of-time award.
-  - [3rd Workshop on Advances in Language and Vision Research (ALVR)](https://alvr-workshop.github.io/)
+     - ACL is not an AI conference.
+  
+     - [GloVe](https://aclanthology.org/D14-1162/) wins the test-of-time award.
+  
+     - [3rd Workshop on Advances in Language and Vision Research (ALVR)](https://alvr-workshop.github.io/)
 
-</div>

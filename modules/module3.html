@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A compilation of AI learning resources.">
 
-<title>Resources – AIO Course</title>
+<title>Module 3 - Probability and Statistics for AI – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../misc/misc.html" rel="next">
-<link href="../modules/module10.html" rel="prev">
+<link href="../modules/module4.html" rel="next">
+<link href="../modules/module2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,9 +67,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -137,31 +138,13 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="../resources/research.html">
- <span class="dropdown-text">Research and Paper Writing</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/repo.html">
- <span class="dropdown-text">GitHub Repository</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/graduate.qmd">
- <span class="dropdown-text">Graduate life</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/books.html">
- <span class="dropdown-text">Books</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../misc/misc.html" aria-current="page"> 
+    <a class="nav-link active" href="../resources/resources.html" aria-current="page"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
@@ -192,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Resources</h1>
+          <h1 class="quarto-secondary-nav-title">Module 3 - Probability and Statistics for AI</h1>
         </a>     
     </div>
   </nav>
@@ -201,13 +184,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Resources</h1>
-                  <div>
-        <div class="description">
-          A compilation of AI learning resources.
-        </div>
-      </div>
-                </div>
+      <h1 class="title d-none d-lg-block">Module 3 - Probability and Statistics for AI</h1>
+                      </div>
   </div>
     
   
@@ -253,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Module 3</span></a>
   </div>
 </li>
@@ -312,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/resources.html" class="sidebar-item-text sidebar-link active">
+  <a href="../resources/resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
@@ -329,8 +307,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#course-schedule-and-resources" id="toc-course-schedule-and-resources" class="nav-link" data-scroll-target="#course-schedule-and-resources">Course Schedule and Resources</a>
+  <ul class="collapse">
+  <li><a href="#main-lesson" id="toc-main-lesson" class="nav-link" data-scroll-target="#main-lesson">Main lesson</a></li>
+  <li><a href="#project-tutorial" id="toc-project-tutorial" class="nav-link" data-scroll-target="#project-tutorial">Project Tutorial</a></li>
+  <li><a href="#extra-class-introduction-to-nlp" id="toc-extra-class-introduction-to-nlp" class="nav-link" data-scroll-target="#extra-class-introduction-to-nlp">Extra class: Introduction to NLP</a></li>
+  <li><a href="#python-tutorial-session" id="toc-python-tutorial-session" class="nav-link" data-scroll-target="#python-tutorial-session">Python Tutorial Session</a></li>
+  <li><a href="#competition-training" id="toc-competition-training" class="nav-link" data-scroll-target="#competition-training">Competition Training</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -339,16 +331,457 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<ul>
-<li><p><a href="../resources/books.html">Books</a></p></li>
-<li><p><a href="../resources/blogs.html">Blogs</a></p></li>
-<li><p><a href="../resources/courses.html">Courses</a></p></li>
-<li><p><a href="../resources/papers.html">Fundamental Papers</a></p></li>
-<li><p><a href="../resources/repo.html">GitHub repository</a></p></li>
-<li><p><a href="../resources/research.html">Research and Paper Writing / Graduate life</a></p></li>
-</ul>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>There’s no question that learning probability and statistics is a crucial step for anyone who wants to become an AI expert.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="stat-meme.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="course-schedule-and-resources" class="level1">
+<h1>Course Schedule and Resources</h1>
+<section id="main-lesson" class="level2">
+<h2 class="anchored" data-anchor-id="main-lesson">Main lesson</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journal-text"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>18/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Due: 23/07/2023 <a href="https://drive.google.com/file/d/1YapqiBo4w4OoyKBtGNYp_RAhqot1Pvl3/view?usp=drive_link">Probability Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>[solution]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>19/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=_3Geo5GvqBk">Basic Probability, Histogram and Image Enhancement</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/11y0jzKVJvBzSIGSVxl1g1ljvYRcywfLf?usp=drive_link">230719</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=6VLK-lCWLVQ">Naive Bayes Classifier</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1XAIStROw6WxXP-M5NWntfx69B6lwhzxC?usp=drive_link">230721</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>23/07/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=KwUBo4nKQpA">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1RJyEJM47lQXhiw4NVherABZP2rsPKBt_?usp=drive_link">230723</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>31/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/17AnFwSTvae3i7UplxB2LpQZA8NP0dOjm/view?usp=drive_link">Statistic Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/file/d/1Y8iEw1uoJxCxKqPVHPe0orxox-sEOVIi/view?usp=drive_link">Solution</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>26/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=jJyKPBKCZQI">Basic Statistics and Correlation Coefficient (Basic Tracking)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1EPHOyuwIuYlYBV993OBXkf8GipsG7UpU?usp=drive_link">230726</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>28/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://youtu.be/x5z0TNgjlLU">Template Matching (Cosine Similarity vs.&nbsp;Correlation Coefficient)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1bgFYIVV-e4OBxwZDnycA0qXERnzSb6uI?usp=drive_link">230728</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>30/07/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=SkeI4eFR6KQ">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Ww5Fkak79eQTGewH3bEjTBMSBL4GIS_E?usp=drive_link">230730</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>31/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1j6GrKkqXnXyvFScnTEc0nR8zf1h_Up27/view">Genetic Algorithms and its Applications Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://youtu.be/vkjCagePwkk">Randomness and Genetic Algorithms</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/173kJmQgxrcaQq2qZPVmpbiwfFfz8KBRu?usp=drive_link">230802</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=ujlajSEnMOk&amp;feature=youtu.be">Genetic Algorithms (Optimization and Linear Regression)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Hkh_GZkh7dW06W8riE24eHrKdL9DRHF8?usp=drive_link">230804</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=lXlROjef-6s">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1cTasfdBRvLkkPgcNB4aOIzdeEdlI7LL3?usp=drive_link">230806</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>07/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/12w4mEED8_eVQncVMGTGm_wZ6z6gt4QQs/view?usp=drive_link">Genetic Algorithms and its Applications Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>[<a href="https://drive.google.com/file/d/1Qfq4FOcv7q6Kef-BgxacM4aR3XdppFl5/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>07/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://drive.google.com/file/d/14kjwLyFHxU01wM02AMg0qDss5qVs5dhf/view?usp=drive_link">Data Analysis Exercise</a></td>
+<td>TA Thắng</td>
+<td>[<a href="https://drive.google.com/file/d/1TwUFXa066pY_x3dLI_gVP8udeYXh0yKS/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>09/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=qylk5_xJJ3E">Data visualization and Data Analysis (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/13GY7R85C86c0ZmPwxu7kGxWKGmy7jLkR?usp=drive_link">230809</a></td>
+<td>[note]</td>
+</tr>
+<tr class="even">
+<td>11/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=WO7tyfpt-Kc">Data visualization and Data Analysis (2)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ciRVtn5aSWzeO18LmanzDXVXsVQGtEa9?usp=drive_link">230811</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://youtu.be/VvBjgYkdN5w">TA-Exercise (Polar)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1-KJy92a5fEL1-V7H6k89j-z_cEQgRVeU?usp=drive_link">230813</a></td>
+<td>[<a href="https://pola-rs.github.io/polars-book/getting-started/intro/">Polar doc</a>]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="project-tutorial">Project Tutorial</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journal-text"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Big Data Frameworks (1)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Big Data Frameworks (1)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>17/08/23</td>
+<td>Project tutorial - PT</td>
+<td><a href="https://www.youtube.com/watch?v=Bv-_9yoj2LY">Big Data Frameworks (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>230818</td>
+<td>[<a href="http://infolab.stanford.edu/~ullman/mmds/ch2n.pdf">LSFS and MapReduce</a>]</td>
+</tr>
+<tr class="even">
+<td>20/08/23</td>
+<td></td>
+<td><a href="https://www.youtube.com/watch?v=gV-KJNPBIsI">Big Data Frameworks (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>230820</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>22/08/23</td>
+<td></td>
+<td><a href="https://drive.google.com/file/d/1KjZ6VHiehGOoB_ZlrOAUkBJzyTO0IooM/view?usp=drivesdk">Image Data Project: Image Retrieval</a></td>
+<td>TA Thắng</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>23/08/23</td>
+<td></td>
+<td><a href="https://www.youtube.com/watch?v=wLdHXNNDeh0">Big Data Frameworks (3)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>230823</td>
+<td>[<a href="https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf#page=125">C9, Feng 2021</a>]</td>
+</tr>
+<tr class="odd">
+<td>25/08/23</td>
+<td></td>
+<td><a href="https://www.youtube.com/watch?v=kqy-HF5moQM">Image Data Project: Image Retrieval</a></td>
+<td>TA Thắng</td>
+<td>230825</td>
+<td>[<a href="https://arxiv.org/abs/2010.11929">VIT paper (Dosovitskiy et al., 2021)</a>]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="extra-class-introduction-to-nlp" class="level2">
+<h2 class="anchored" data-anchor-id="extra-class-introduction-to-nlp">Extra class: Introduction to NLP</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journal-text"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>29/07/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=Mhr0Bsj0gDo">Introduction, Preprocessing</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1YywYYHR8_IucSFj9cxuFH51JoUTH2_OE?usp=drive_link">230729</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>05/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=QEXrwFc7gzQ">Preprocessing, Tokenization</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1oy2P4-j8uLSZiYDMo0-7YDNtsyYXmQfq?usp=drive_link">230805</a></td>
+<td>[<a href="https://vietqnguyen.notion.site/AIO2023-Introduction-to-NLP-Notes-f97570244fef4fea9f85520fbe864832">note</a>] [<a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">C2, Jurafsky et al., 2023</a>]</td>
+</tr>
+<tr class="odd">
+<td>12/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=WxHTNG4EvRo">Statistical Language Model</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1tx5dxWwG9ec-hc8PNOzRwMbxxr_uDS5m?usp=drive_link">230812</a></td>
+<td>[<a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">C3, Jurafsky et al., 2023</a>] [<a href="https://www.youtube.com/watch?v=PaCmpygFfXo">Andrej Karpathy’s Lecture</a>]</td>
+</tr>
+<tr class="even">
+<td>18/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=t90KOh4gvg4">Part-of-Speech Tagging</a></td>
+<td>TA Thái</td>
+<td>230819</td>
+<td>[<a href="https://web.stanford.edu/~jurafsky/slp3/A.pdf">CA Jurafsky et al., 2023</a>]</td>
+</tr>
+<tr class="odd">
+<td>26/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=bye0wJatGQA">Constituency Parsing</a></td>
+<td>TA Thái</td>
+<td>230826</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="python-tutorial-session" class="level2">
+<h2 class="anchored" data-anchor-id="python-tutorial-session">Python Tutorial Session</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journal-text"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>18/07/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=qE5GcysXX_0">Probability</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1NMOFel0S2mTnRzwXDQlAkmUYJdAV7bZX?usp=drive_link">230718</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>25/07/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=2_Ec_GkaQdQ">Statistics</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/10X_-Nfojn9Vfsl0_Hf-C6aiNqRgY2k4a?usp=drive_link">230725</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=QKkgphZDLlI">Genetic Algorithms</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1GWuzCuvbfiHcHG9vkQe-thmsMvXR2pDi?usp=drive_link">230801</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>08/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=mNC8xgpqr6g">Pandas (1)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1D9Mazy9tfgtIDfEyihBQUpq9tHHCEAnS?usp=drive_link">230808</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=Fl6XWH7OP3Y">Pandas (2)</a></td>
+<td>TA Bảo</td>
+<td>230815</td>
+<td>[<a href="https://wesmckinney.com/book/data-cleaning">C7, McKinney 2023</a>]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="competition-training" class="level2">
+<h2 class="anchored" data-anchor-id="competition-training">Competition Training</h2>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar2-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-card-text"></i> Content</th>
+<th><i class="bi bi-person-lines-fill"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-code"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20/07/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=Qc-pbbcVZak">Tricks to improve performance</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1anvZ8Jz3eCO5CoQFRRAHdoECYfdMCneA?usp=drive_link">230720</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>27/07/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=0y6PKxh9_K4">HCM AI Challenge</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/19OvLRrdojvra6iat0x1oph2R5DZr1YA9?usp=drive_link">230727</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=GmarNkuwMyI">Web API + Docker</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/15ACtPJ7Jrz14u3citmA5SBVXZt7p7c2E?usp=drive_link">230803</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=qAZImjn6omw">Onnx</a></td>
+<td>TA Hùng</td>
+<td>230817</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>24/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=XC4OKloWlD8">Semi-supervised Learning</a></td>
+<td>TA Hùng</td>
+<td>230824</td>
+<td>[<a href="https://lilianweng.github.io/posts/2021-12-05-semi-supervised/">Lil’Log</a>] [<a href="https://github.com/yassouali/awesome-semi-supervised-learning">GitHub repo</a>] [<a href="https://arxiv.org/abs/1610.02242">Laine et al., 2016</a>] [<a href="https://arxiv.org/abs/1703.01780">Tarvainen et al., 2017</a>]</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -773,13 +1206,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/module10.html" class="pagination-link" aria-label="Module 10">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 10</span>
+      <a href="../modules/module2.html" class="pagination-link" aria-label="Module 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 2</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../misc/misc.html" class="pagination-link" aria-label="Misc">
-        <span class="nav-page-text">Misc</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/module4.html" class="pagination-link" aria-label="Module 4">
+        <span class="nav-page-text">Module 4</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -801,4 +1234,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

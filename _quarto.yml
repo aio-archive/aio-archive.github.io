@@ -13,34 +13,44 @@ website:
     left:
       - text: "Lectures"
         menu:
-          - href: module1.qmd
+          - href: modules/module1.qmd
             text: Module 1 | Introduction to Python Programming
-          - href: module2.qmd
+          - href: modules/module2.qmd
             text: Module 2 | Calculus and Linear Algebra for AI
-          - href: module3.qmd
+          - href: modules/module3.qmd
             text: Module 3 | Probability and Statistics for AI
-          - href: module4.qmd
+          - href: modules/module4.qmd
             text: Module 4 | Machine Learning and Data Science
-          - href: module5.qmd
+          - href: modules/module5.qmd
             text: Module 5 | Deep Learning Prerequisites
-          - href: module6.qmd
+          - href: modules/module6.qmd
             text: Module 6 | Introduction to Deep Learning
-          - href: module7.qmd
+          - href: modules/module7.qmd
             text: Module 7 | Advanced Model Architectures for Computer Vision
-          - href: module8.qmd
+          - href: modules/module8.qmd
             text: Module 8 | Applications of Deep Learning for NLP
-          - href: module9.qmd
+          - href: modules/module9.qmd
             text: Module 9 | Generative Models
-          - href: module10.qmd
+          - href: modules/module10.qmd
             text: Module 10 | Reinforcement Learning, GNN, and LLMs
-      - href: resources/resources.qmd
-        text: Resources
+      - text: Resources      
+        menu:
+          - href: resources/research.qmd
+            text: Research and Paper Writing
+          - href: resources/repo.qmd
+            text: GitHub Repository
+          - href: resources/research.qmd
+            text: Graduate life
+          - href: resources/books.qmd
+            text: Books
       - href: misc/misc.qmd
         text: Misc
       - href: ainews.qmd
         text: AI News
       - href: seminars.qmd
         text: Seminars
+      - href:  ml-glossary/ml-glossary.qmd
+        text: ML Glossary
       - href: memes.qmd
         text: Memes
   back-to-top-navigation: true
@@ -48,32 +58,38 @@ website:
   page-footer: 
     ' "*(AI) will rank among our greatest technological achievements, and everyone deserves to play a role in shaping it*". — Fei-Fei Li' 
   sidebar:
+  - id: ml-glossary
     style: "docked"
-    border: false
+    title: "ML Glossary"
+    contents:
+      - text: Entropy
+        href: entropy.qmd
+  - id: main
+    style: "docked"
     contents:
       - text: "Introduction"
         href: index.qmd
       - section: "Course content"
         contents:
-          - href: module1.qmd
+          - href: modules/module1.qmd
             text: Module 1
-          - href: module2.qmd
+          - href: modules/module2.qmd
             text: Module 2
-          - href: module3.qmd
+          - href: modules/module3.qmd
             text: Module 3
-          - href: module4.qmd
+          - href: modules/module4.qmd
             text: Module 4
-          - href: module5.qmd
+          - href: modules/module5.qmd
             text: Module 5
-          - href: module6.qmd
+          - href: modules/module6.qmd
             text: Module 6
-          - href: module7.qmd
+          - href: modules/module7.qmd
             text: Module 7
-          - href: module8.qmd
+          - href: modules/module8.qmd
             text: Module 8
-          - href: module9.qmd
+          - href: modules/module9.qmd
             text: Module 9
-          - href: module10.qmd
+          - href: modules/module10.qmd
             text: Module 10
       - section: "Others"
         contents:
@@ -81,13 +97,19 @@ website:
             href: resources/resources.qmd
           - text: Misc 
             href: misc/misc.qmd
+    sidebar-nav-files-sidebar: custom
+    sidebar-nav-files-sidebar-custom: |
+      if (path.startsWith('ml-glossary')) {
+        return 'ml-glossary';
+      } else {
+        return 'main';
+      }
 language:
   search-box-placeholder: Search this website
 format:
   html:
     theme:
       light: [flatly, custom-theme.scss]
-      dark: [darkly, custom-theme.scss]
     css: styles.css
     toc: true
     linkcolor: "#3b9ced"
