@@ -43,6 +43,10 @@ website:
             text: Graduate life
           - href: resources/books.qmd
             text: Books
+          - href: resources/courses.qmd
+            text: Courses
+          - href: resources/papers.qmd
+            text: Fundamental Papers
       - href: misc/misc.qmd
         text: Misc
       - href: ainews.qmd

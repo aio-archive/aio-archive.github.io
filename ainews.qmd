@@ -14,6 +14,8 @@ format:
 
 # Papers
 
+- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arc.net/l/quote/yzhgvegv)
+
 - <span class="badge rounded-pill bg-warning">Model</span> Mixtral dropped Pixtral 12B, their first-ever multimodal model: [Tweet](https://x.com/MistralAI/status/1833758285167722836).
 
 - <span class="badge rounded-pill bg-info">NLP</span> [MMToM-QA: Multimodal Theory of Mind Question Answering](https://arxiv.org/abs/2401.08743) at ACL2024, **Outstanding Paper Award**.
