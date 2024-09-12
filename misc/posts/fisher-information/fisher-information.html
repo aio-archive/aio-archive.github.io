@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Seminars – AIO Course</title>
+<title>Fisher Information – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,20 +65,48 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -94,96 +122,69 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./modules/module1.html">
+    <a class="dropdown-item" href="../../../module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module2.html">
+    <a class="dropdown-item" href="../../../module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module3.html">
+    <a class="dropdown-item" href="../../../module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module4.html">
+    <a class="dropdown-item" href="../../../module4.html">
  <span class="dropdown-text">Module 4 | Machine Learning and Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module5.html">
+    <a class="dropdown-item" href="../../../module5.html">
  <span class="dropdown-text">Module 5 | Deep Learning Prerequisites</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module6.html">
+    <a class="dropdown-item" href="../../../module6.html">
  <span class="dropdown-text">Module 6 | Introduction to Deep Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module7.html">
+    <a class="dropdown-item" href="../../../module7.html">
  <span class="dropdown-text">Module 7 | Advanced Model Architectures for Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module8.html">
+    <a class="dropdown-item" href="../../../module8.html">
  <span class="dropdown-text">Module 8 | Applications of Deep Learning for NLP</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module9.html">
+    <a class="dropdown-item" href="../../../module9.html">
  <span class="dropdown-text">Module 9 | Generative Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module10.html">
+    <a class="dropdown-item" href="../../../module10.html">
  <span class="dropdown-text">Module 10 | Reinforcement Learning, GNN, and LLMs</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="./resources/research.html">
- <span class="dropdown-text">Research and Paper Writing</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/repo.html">
- <span class="dropdown-text">GitHub Repository</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/research.html">
- <span class="dropdown-text">Graduate life</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/books.html">
- <span class="dropdown-text">Books</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/courses.html">
- <span class="dropdown-text">Courses</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/papers.html">
- <span class="dropdown-text">Fundamental Papers</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../../../resources/resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ainews.html"> 
+    <a class="nav-link" href="../../../ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./seminars.html" aria-current="page"> 
+    <a class="nav-link" href="../../../seminars.html"> 
 <span class="menu-text">Seminars</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml-glossary/ml-glossary.html"> 
+    <a class="nav-link" href="../../../ml-glossary/ml-glossary.html"> 
 <span class="menu-text">ML Glossary</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./memes.html"> 
+    <a class="nav-link" href="../../../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -194,133 +195,99 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Seminars</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries">Preliminaries</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fisher Information</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<table class="caption-top table">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 11%">
-<col style="width: 19%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://youtu.be/UoYSU7ypz4g">Online Office Hour</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://www.youtube.com/watch?v=Y-KDJZq1skI">Transformers for Time series data</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>231210-1</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.youtube.com/watch?v=SHIYAz0uLzw">Scholarship and Feature Extraction in Time Series Data</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/bip6qL9jsZM">Advanced UNet and LLMs Introduction</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>231224-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/rFFXkGvzaVw">Seminar: Multimodal Language Models</a></td>
-<td></td>
-<td>231231-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/_Gfk1EFlOIo">Seminar: Visual Instruction Tuning (LlaVa) and QLoRA</a></td>
-<td></td>
-<td>240107-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/7PikDIQWB6c">Data Augmentation and Imbalanced Data</a></td>
-<td></td>
-<td>240114-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/NkFczM4yz-A">RNN-based Forecasting and Toolformer</a></td>
-<td></td>
-<td>240121-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/6xCgzkkx7So">CLIP</a></td>
-<td>TA Đức</td>
-<td>240128-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/kERiVxH_N-0">Detecting violation of helmet rule for motorcyclists (CVPRW2024)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>240204-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/trhYxMQG47A">Direct Preference Optimization</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>240225-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/tY7OKXm6ApA">Study and Job in the USA</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/RKcPFwzkkLs">Seminar: XAI</a></td>
-<td>Dr.&nbsp;Anh Nguyen</td>
-<td>240405-23M09-MC</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+</header>
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Fisher information provides a way to measure the amount of information that a random variable contains about some parameter&nbsp;<span class="math inline">\(\theta\)</span> (such as the true mean) of the random variable’s assumed probability distribution.</p>
+</section>
+<section id="preliminaries" class="level1">
+<h1>Preliminaries</h1>
+<p>A standard problem in statistical estimation is to determine the parameters of a distribution from a sample of data drawn from that distribution. Let <span class="math inline">\(X_{1}, \cdots, X_{n}\)</span> be drawn i.i.d. from <span class="math inline">\(\mathcal{N}(\theta,1)\)</span>. Suppose we wish to estimate <span class="math inline">\(\theta\)</span> from a sample of size <span class="math inline">\(n\)</span>. We guess that the sample mean <span class="math inline">\(\bar{X}_{n} = \dfrac{1}{n}\sum\limits X_i\)</span> is the best estimate of <span class="math inline">\(\theta\)</span> and we can indeed show that <span class="math inline">\(\bar{X}_{n}\)</span> is the minimum MSE unbiased estimator.</p>
+<p>Let <span class="math inline">\(\{f(x;\theta)\}, \theta \in \Theta\)</span> denote an indexed family of densities so that <span class="math inline">\(f(x;\theta) \geq 0, \int f(x;\theta)dx=1\)</span> for all <span class="math inline">\(\theta \in \Theta\)</span>, where <span class="math inline">\(\Theta\)</span> is called the <em>parameter set</em>.</p>
+<blockquote class="blockquote">
+<p>[!definition] Estimator An estimator for <span class="math inline">\(\theta\)</span> for a sample size <span class="math inline">\(n\)</span> is a function <span class="math inline">\(T\)</span>: <span class="math inline">\(\mathcal{X}^{n}\rightarrow \Theta\)</span>.</p>
+</blockquote>
+<p>An estimator is meant to approximate the value of the parameter, therefore it is desirable to have some idea of the <em>goodness</em> of the approximator. We call the difference <span class="math inline">\(T-\theta\)</span> the <strong>error</strong> of the estimator. This error itself is a random variable.</p>
+<blockquote class="blockquote">
+<p>[!definition] Bias The bias of an estimator <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n})\)</span> for the parameter <span class="math inline">\(\theta\)</span> is the expected value of the error of the estimator, i.e.&nbsp;<span class="math display">\[\mathbb{E}_{\theta}[T(X_{1}, X_{2},\cdots, X_{n})-\theta]\]</span></p>
+</blockquote>
+<p>The estimator is said to be unbiased if the bias is 0 for all <span class="math inline">\(\theta \in \Theta\)</span>.</p>
+<blockquote class="blockquote">
+<p>[!definition] Consistency of probability An estimator <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n})\)</span> for <span class="math inline">\(\theta\)</span> is said to be <em>consistent in probability</em> if <span class="math inline">\(T(X_{1},X_{2},\cdots, X_{n}) \rightarrow \theta\)</span> in probability as <span class="math inline">\(n\rightarrow \theta\)</span>.</p>
+</blockquote>
+<p>While consistency is a desirable asymptotic property, we are also interested in the behavior for small sample size.</p>
+<blockquote class="blockquote">
+<p>[!definition] Dominate An estimator <span class="math inline">\(T_{1}(X_{1},X_{2},\cdots, X_{n})\)</span> is said to dominate another estimator <span class="math inline">\(T_{2}(X_{1},X_{2},\cdots, X_n)\)</span> if for all <span class="math inline">\(\theta\)</span> we have: <span class="math display">\[\mathbb{E}[T_{1}(X_{1},X_{2}, \cdots, X_{n})-\theta ]^{2}\leq \mathbb{E}[T_{2}(X_{1},X_{2}, \cdots, X_{n})-\theta ]^{2}\]</span></p>
+</blockquote>
+<p>This raises a natural question: Is there a best estimator of <span class="math inline">\(\theta\)</span> that dominates every other estimator ? To answer this, we derive the Cramér-Rao lower bound on the MSE of any estimator.</p>
+<blockquote class="blockquote">
+<p>[!definition] Score The score <span class="math inline">\(V\)</span> is a random variable defined by: <span class="math display">\[V = \dfrac{\partial}{\partial \theta} \log f(X;\theta)\]</span></p>
+</blockquote>
+<p>The mean value of the score is: <span class="math display">\[
+\begin{aligned}
+\mathbb{E}[V] &amp;= \int \dfrac{\partial}{\partial \theta}\log f(x;\theta) f(x;\theta)dx \\
+&amp;= \int \dfrac{\frac{\partial}{\partial \theta}f(x;\theta)}{f(x;\theta)} f(x;\theta)dx \\
+&amp;= \int \dfrac{\partial}{\partial \theta}f(x;\theta)dx \\
+&amp;= \dfrac{\partial}{\partial\theta}\int f(x;\theta)dx = 0
+\end{aligned}
+\]</span> therefore <span class="math inline">\(\mathbb{E}[V]^{2}= var(V)\)</span>. The variance of the score has a special significance.</p>
+<blockquote class="blockquote">
+<p>[!definition] Fisher information The Fisher information <span class="math inline">\(J(\theta)\)</span> is the variance of the score: <span class="math display">\[J(\theta) = \mathbb{E}_{\theta}\left[\dfrac{\partial}{\partial \theta}\log f(X;\theta)\right]^2\]</span></p>
+</blockquote>
+<p>If we consider a sample of <span class="math inline">\(n\)</span> random variable <span class="math inline">\(X_{1},X_{2},\cdots, X_{n}\)</span> drawn i.i.d. from <span class="math inline">\(f(x;\theta)\)</span>, we have: <span class="math display">\[
+f(x_{1},x_{2},\cdots, x_{n;\theta)}= \prod_{i=1}^{n}f(x_{i};\theta)
+\]</span> and the score function is the sum of the individual score functions: <span class="math display">\[
+\begin{aligned}
+V(X_{1}, X_{2}, \cdots, X_{n})
+&amp;= \dfrac{\partial}{\partial \theta} \log f(X_{1},X_{2}, \cdots, X_{n}; \theta) \\
+&amp;= \sum\limits_{i=1}^{n}\dfrac{\partial}{\partial \theta} \log f(X_{i}; \theta) \\
+&amp;= \sum\limits_{i=1}^{n}V(X_{i})
+\end{aligned}
+\]</span> where the <span class="math inline">\(V(X_{i})\)</span> are i.i.d. with zero mean, therefore the <span class="math inline">\(n\)</span>-sample Fisher information is: <span class="math display">\[
+\begin{aligned}
+J_{n}(\theta) &amp;= \mathbb{E}_{\theta}\left[\dfrac{\partial}{\partial \theta} \log f(X_{1},X_{2},\cdots, X_{n};\theta)\right]^{2} \\
+&amp;= \mathbb{E}_{\theta}[V^{2}(X_{1},X_{2},\cdots, X_{n})] \\&amp;= \mathbb{E}_{\theta}\left(\sum\limits_{i=1}^{n}V(X_{i})\right)^{2} \\
+&amp;= \sum\limits_{i=1}^{n}\mathbb{E}_{\theta}[V^{2}(X_{i})] = nJ(\theta)
+\end{aligned}
+\]</span></p>
+<hr>
+
+
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -761,5 +728,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

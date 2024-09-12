@@ -6,7 +6,7 @@
     "section": "",
     "text": "“All models are wrong, but some are useful” George Box\n\n\n\n\n Back to top",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Introduction"
     ]
   },
@@ -558,14 +558,14 @@
     "href": "resources/courses.html#nlp",
     "title": "Courses",
     "section": "NLP",
-    "text": "NLP\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS224N: Natural Language Processing with Deep Learning\nStanford University\n\n[ ]\n\n\nMedium\nCS224U: Natural Language Understanding\nStanford University\n\n[ ]\n\n\n\n\nLLMs\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCOS 597G: Understanding Large Language Models\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCOS584: Advanced Natural Language Processing\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCS324: Large Language Models\nStanford University\n\n[ ]\n\n\nMedium\nCS 329X: Human-Centered NLP\nStanford University"
+    "text": "NLP\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS224N: Natural Language Processing with Deep Learning\nStanford University\n\n[ ]\n\n\nMedium\nCS224U: Natural Language Understanding\nStanford University\n\n[ ]\n\n\nDifficult\n11-711 Advanced Natural Language Processing\nCarnegie Mellon University\n\n[ ]\n\n\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCOS 597G: Understanding Large Language Models\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCOS584: Advanced Natural Language Processing\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCS324: Large Language Models\nStanford University\n\n[ ]\n\n\nMedium\nCS 329X: Human-Centered NLP\nStanford University"
   },
   {
     "objectID": "resources/courses.html#computer-vision",
     "href": "resources/courses.html#computer-vision",
     "title": "Courses",
     "section": "Computer Vision",
-    "text": "Computer Vision\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS231N: Deep Learning for Computer Vision\nStanford University\n\n[ ]"
+    "text": "Computer Vision\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS231N: Deep Learning for Computer Vision\nStanford University\n\n[ ]"
   },
   {
     "objectID": "resources/courses.html#multimodal",
@@ -619,7 +619,7 @@
     "href": "ainews.html",
     "title": "AI News",
     "section": "",
-    "text": "Papers\n\nModel Mixtral dropped Pixtral 12B, their first-ever multimodal model: Tweet.\nNLP MMToM-QA: Multimodal Theory of Mind Question Answering at ACL2024, Outstanding Paper Award.\n\n\n\nPress\n\nPodcast 10 Sep, 2024: Decoding Google Gemini with Jeff Dean, a podcast of Google’s Chief Scientist Jeff Dean, hosted by Prof. Hannah Fry\nEvent Jeff Dean and other prestigious guests are arriving to Vietnam to attend the GenAI Summit.\nPodcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\n\n\n\nConferences\n\nList of accepted papers at Coference on Language Modeling (COLM) 2024 is now available. Visit here.\n11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024).\n\nACL is not an AI conference.\nGloVe wins the test-of-time award.\n3rd Workshop on Advances in Language and Vision Research (ALVR)\n\n\n\n\n\n\n\n Back to top"
+    "text": "Papers\n\nCan LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers\nModel Mixtral dropped Pixtral 12B, their first-ever multimodal model: Tweet.\nNLP MMToM-QA: Multimodal Theory of Mind Question Answering at ACL2024, Outstanding Paper Award.\n\n\n\nPress\n\nPodcast 10 Sep, 2024: Decoding Google Gemini with Jeff Dean, a podcast of Google’s Chief Scientist Jeff Dean, hosted by Prof. Hannah Fry\nEvent Jeff Dean and other prestigious guests are arriving to Vietnam to attend the GenAI Summit.\nPodcast 14 Aug, 2024: Unreasonably Effective AI, a podcast by Google DeepMind’s CEO Demis Hassabis, hosted by Prof. Hannah Fry\n\n\n\nConferences\n\nList of accepted papers at Coference on Language Modeling (COLM) 2024 is now available. Visit here.\n11 Aug, 2024: The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024).\n\nACL is not an AI conference.\nGloVe wins the test-of-time award.\n3rd Workshop on Advances in Language and Vision Research (ALVR)\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "memes.html",
@@ -700,21 +700,21 @@
     "href": "resources/courses.html",
     "title": "Courses",
     "section": "",
-    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nLectures\n[x]\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nLectures\n[x]\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nExtreme\nEE364A: Convex Optimization I\nStanford University\nLecture\n\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
+    "text": "“If you think education is expensive, try ignorance.” - Derek Bok"
   },
   {
     "objectID": "resources/courses.html#probability-and-statistics",
     "href": "resources/courses.html#probability-and-statistics",
     "title": "Courses",
-    "section": "",
-    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nLectures\n[x]\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nLectures\n[x]\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]"
+    "section": "Probability and Statistics",
+    "text": "Probability and Statistics\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nProfessor\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nJoe Blitzstein\nYoutube Playlist\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nChris Piech\nYoutube Playlist\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]"
   },
   {
     "objectID": "resources/courses.html#optimization",
     "href": "resources/courses.html#optimization",
     "title": "Courses",
-    "section": "",
-    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nExtreme\nEE364A: Convex Optimization I\nStanford University\nLecture\n\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
+    "section": "Optimization",
+    "text": "Optimization\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nExtreme\nEE364A: Convex Optimization I\nStanford University\nLecture\n\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
   },
   {
     "objectID": "resources/books.html#optimization",
@@ -1361,21 +1361,21 @@
     "href": "ml-glossary/entropy.html",
     "title": "Entropy",
     "section": "",
-    "text": "Entropy is the term that has its root from the field of information theory and it is extremely useful in machine learning. The entropy helps us quantify the average amount of surprise of a probability distribution. We first consider the concept of surprise.\n\nIntuition\nSurprise in probability\nImagine three of the following the cases:\n\nyou ask your friend to predict whether a coin will land head or tail when being tossed and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice three times in a row, and your friend’s prediction is, again, correct for all the rolls.\n\nWe all know now that with those three cases, the extent of surprise differs, from scenario 1 having the least amount of surprise to scenario 3 being the most surprised situation. The question for us now is how to quantify this amount of surprise in a mathematical sense with the following properties:\n\nIt has an additive nature, i.e. the surprise value for correctly predicting the value of 3 dices in a row (as in scenario 3) should be larger than that of correctly predicting the value of 1 dice. In particular, when the probability value multiply, the amount of surprise should add up.\nIt have to be negatively proportional to the probability value \\(p\\). In other words, your amount of surprise should equals to 0 when the probability of some event happening is 1 (absolutely certain).\n\n\n\nEntropy definition\nLet \\(h(s)\\) denotes the surprisal of state \\(s\\), and \\(p_s\\) be the probability that the state \\(s\\) happen. The second desideratum is easy to satisfied, where \\(h(s) \\propto \\dfrac{1}{p_s}\\). For the first desideratum, we know from high school math that the \\(\\log()\\) have such property: \\[\\log \\left(\\prod_{i=1}^N s_i\\right) = \\sum_{i=1}^{N} \\log (s_i)\\] With that, we can now formally defined the surprise term:\n\n[!definition] Surprise \\[h(s)  = \\dfrac{1}{\\log (s)}\\]\n\nNow, we want to compute the average of the surprise term for the whole distribution, this is called entropy: \\[H = \\sum_{s} p_{s} \\log \\left(\\dfrac{1}{p_{s}}\\right)\\] In plain English, what we are doing with this formula is to sum over all possible states and multiply the probability of each state by the surprisal value.\n\n\nRelated concepts:\n[[Cross-entropy]] [[KL Divergence]]\n\n\n\n\n Back to top"
+    "text": "Entropy is the term that has its root from the field of information theory and it is extremely useful in machine learning. The entropy helps us quantify the average amount of surprise of a probability distribution. We first consider the concept of surprise.\n\nIntuition\nSurprise in probability\nImagine three of the following the cases:\n\nyou ask your friend to predict whether a coin will land head or tail when being tossed and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice three times in a row, and your friend’s prediction is, again, correct for all the rolls.\n\nWe all know now that with those three cases, the extent of surprise differs, from scenario 1 having the least amount of surprise to scenario 3 being the most surprised situation. The question for us now is how to quantify this amount of surprise in a mathematical sense with the following properties:\n\nIt has an additive nature, i.e. the surprise value for correctly predicting the value of 3 dices in a row (as in scenario 3) should be larger than that of correctly predicting the value of 1 dice. In particular, when the probability value multiply, the amount of surprise should add up.\nIt have to be negatively proportional to the probability value \\(p\\). In other words, your amount of surprise should equals to 0 when the probability of some event happening is 1 (absolutely certain).\n\n\n\nEntropy definition\nLet \\(h(s)\\) denotes the surprisal of state \\(s\\), and \\(p_s\\) be the probability that the state \\(s\\) happen. The second desideratum is easy to satisfied, where \\(h(s) \\propto \\dfrac{1}{p_s}\\). For the first desideratum, we know from high school math that the \\(\\log()\\) have such property: \\[\\log \\left(\\prod_{i=1}^N s_i\\right) = \\sum_{i=1}^{N} \\log (s_i)\\] With that, we can now formally defined the surprise term:\n\n\n\n\n\n\nDefinition\n\n\n\nSurprise \\[h(s)  = \\dfrac{1}{\\log (s)}\\]\n\n\nNow, we want to compute the average of the surprise term for the whole distribution, this is called entropy: \\[H = \\sum_{s} p_{s} \\log \\left(\\dfrac{1}{p_{s}}\\right)\\] In plain English, what we are doing with this formula is to sum over all possible states and multiply the probability of each state by the surprisal value.\n\n\nRelated concepts:\n[[Cross-entropy]] [[KL Divergence]]\n\n\n\n\n Back to top"
   },
   {
     "objectID": "ml-glossary/ml-glossary.html",
     "href": "ml-glossary/ml-glossary.html",
     "title": "ML Glossary",
     "section": "",
-    "text": "Back to top"
+    "text": "Stay tuned!\n\n\nMore content is coming soon.\n\n\nEntropy\n\n\n\n Back to top"
   },
   {
     "objectID": "ml-glossary.html",
     "href": "ml-glossary.html",
     "title": "ML Glossary",
     "section": "",
-    "text": "Back to top"
+    "text": "Entropy\n\n\n\n Back to top"
   },
   {
     "objectID": "modules/module3.html",
@@ -1456,7 +1456,7 @@
     "section": "",
     "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1468,7 +1468,7 @@
     "section": "Projects",
     "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1480,7 +1480,7 @@
     "section": "Competition Training",
     "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1492,7 +1492,7 @@
     "section": "Extra class",
     "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1504,7 +1504,7 @@
     "section": "Main Lessons",
     "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\n[solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\nNote\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\nNote\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\n[solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\n[solution]\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1516,7 +1516,7 @@
     "section": "Project handout and material",
     "text": "Project handout and material\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n22/05/23\nProject handout\nObject Detection with YOLOv8 Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nData Manipulation and Crawling Project\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nChatGPT Applications Project\nTA Thái\n[solution]\n\n\n\n24/05/23\nProject Tutorial\nImage Project: Yolov8 for Object Detection\nTA Thắng\n230524 - M01PT01\n\n\n\n26/05/23\nProject Tutorial\nData Manipulation using Python Libraries\nTA Thắng\n230526 - M01PT02\n\n\n\n28/05/23\nProject Tutorial\nText Project: ChatGPT-based Application\nTA Thái\n230528 - M01PT03\n\n\n\n23/05/23\nPython Support\nFor, List and Dictionary\nTA Tiềm\n230523 - M02CR01",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1528,7 +1528,7 @@
     "section": "Competition training",
     "text": "Competition training\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n11/05/23\nCompetition\nData Visualization\nTA Hùng\n230511 - M01AC01\n\n\n\n18/05/23\nCompetition\nCompetition tasks and metrics\nTA Hùng\n230518 - M01AC02\n\n\n\n25/05/23\nCompetition\nDesign Validation\nTA Hùng\n230525 - M01AC03",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -1540,7 +1540,7 @@
     "section": "Extra class: Algorithms and Complexity",
     "text": "Extra class: Algorithms and Complexity\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n06/05/23\nAlgorithms & Complexity\nBig-O (Time analysis)\nTA Thái\n230506 - M01EC01\n\n\n\n13/05/23\nAlgorithms & Complexity\nBrute-force Exhaustive\nTA Thái\n230513 - M01EC02\n\n\n\n20/05/23\nAlgorithms & Complexity\nRecursion and Two Pointer\nTA Thái\n230520 - M01EC03\n\n\n\n27/05/23\nAlgorithms & Complexity\nDynamic Programming\nTA Thái\n230527 - M01EC04",
     "crumbs": [
-      "Resources",
+      "Misc",
       "Course content",
       "Module 1"
     ]
@@ -2041,6 +2041,13 @@
     "href": "resources/research.html",
     "title": "Resources for Research and Paper Writing",
     "section": "",
-    "text": "“No research without action, no action without research.” Kurt Lewin\n: Youtube Video | : Paper/preprint | : Website/ Blogpost # General\n\n Hamming, “You and Your Research” (June 6, 1995)\n Bí kíp nâng cao KĨ NĂNG NGHIÊN CỨU KHOA HỌC | 🎙️PhD Whisperer Ep 4\n\n\nResearch Paper Writing\n\n Research Communication is IMPORTANT so DO BETTER\n How to write an okay research paper.\n How to effortlessly write a high quality scientific paper in the field of computational engineering and sciences\n Guidelines for Writing a Good NIPS Paper\n\n\n\n\n\n Back to top"
+    "text": "“No research without action, no action without research.” Kurt Lewin\n: Youtube Video | : Paper/preprint | : Website/ Blogpost\n\nGeneral\n\n Hamming, “You and Your Research” (June 6, 1995)\n Bí kíp nâng cao KĨ NĂNG NGHIÊN CỨU KHOA HỌC | 🎙️PhD Whisperer Ep 4\n Terrence Tao’s advice\n\n\n\nResearch Paper Writing\n\n Research Communication is IMPORTANT so DO BETTER\n How to write an okay research paper.\n How to effortlessly write a high quality scientific paper in the field of computational engineering and sciences\n Guidelines for Writing a Good NIPS Paper\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/courses.html#linear-algebra",
+    "href": "resources/courses.html#linear-algebra",
+    "title": "Courses",
+    "section": "Linear Algebra",
+    "text": "Linear Algebra"
   }
 ]

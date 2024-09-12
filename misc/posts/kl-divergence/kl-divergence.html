@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Seminars – AIO Course</title>
+<title>KL Divergence – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,20 +65,48 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -94,96 +122,70 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lectures">    
         <li>
-    <a class="dropdown-item" href="./modules/module1.html">
+    <a class="dropdown-item" href="../../../modules/module1.html">
  <span class="dropdown-text">Module 1 | Introduction to Python Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module2.html">
+    <a class="dropdown-item" href="../../../modules/module2.html">
  <span class="dropdown-text">Module 2 | Calculus and Linear Algebra for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module3.html">
+    <a class="dropdown-item" href="../../../modules/module3.html">
  <span class="dropdown-text">Module 3 | Probability and Statistics for AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module4.html">
+    <a class="dropdown-item" href="../../../modules/module4.html">
  <span class="dropdown-text">Module 4 | Machine Learning and Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module5.html">
+    <a class="dropdown-item" href="../../../modules/module5.html">
  <span class="dropdown-text">Module 5 | Deep Learning Prerequisites</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module6.html">
+    <a class="dropdown-item" href="../../../modules/module6.html">
  <span class="dropdown-text">Module 6 | Introduction to Deep Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module7.html">
+    <a class="dropdown-item" href="../../../modules/module7.html">
  <span class="dropdown-text">Module 7 | Advanced Model Architectures for Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module8.html">
+    <a class="dropdown-item" href="../../../modules/module8.html">
  <span class="dropdown-text">Module 8 | Applications of Deep Learning for NLP</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module9.html">
+    <a class="dropdown-item" href="../../../modules/module9.html">
  <span class="dropdown-text">Module 9 | Generative Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./modules/module10.html">
+    <a class="dropdown-item" href="../../../modules/module10.html">
  <span class="dropdown-text">Module 10 | Reinforcement Learning, GNN, and LLMs</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="./resources/research.html">
- <span class="dropdown-text">Research and Paper Writing</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/repo.html">
- <span class="dropdown-text">GitHub Repository</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/research.html">
- <span class="dropdown-text">Graduate life</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/books.html">
- <span class="dropdown-text">Books</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/courses.html">
- <span class="dropdown-text">Courses</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./resources/papers.html">
- <span class="dropdown-text">Fundamental Papers</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./misc/misc.html"> 
+    <a class="nav-link" href="../../../resources/resources.html"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../misc/misc.html"> 
 <span class="menu-text">Misc</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ainews.html"> 
+    <a class="nav-link" href="../../../ainews.html"> 
 <span class="menu-text">AI News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./seminars.html" aria-current="page"> 
+    <a class="nav-link" href="../../../seminars.html"> 
 <span class="menu-text">Seminars</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml-glossary/ml-glossary.html"> 
+    <a class="nav-link" href="../../../ml-glossary/ml-glossary.html"> 
 <span class="menu-text">ML Glossary</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./memes.html"> 
+    <a class="nav-link" href="../../../memes.html"> 
 <span class="menu-text">Memes</span></a>
   </li>  
 </ul>
@@ -194,133 +196,92 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Seminars</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#properties" id="toc-properties" class="nav-link active" data-scroll-target="#properties">Properties</a>
+  <ul class="collapse">
+  <li><a href="#nonnegativity" id="toc-nonnegativity" class="nav-link" data-scroll-target="#nonnegativity">Nonnegativity</a></li>
+  <li><a href="#approximating-kl-divergence-with-fisher-information-matrix" id="toc-approximating-kl-divergence-with-fisher-information-matrix" class="nav-link" data-scroll-target="#approximating-kl-divergence-with-fisher-information-matrix">Approximating KL Divergence with Fisher information matrix</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">KL Divergence</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<table class="caption-top table">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 11%">
-<col style="width: 19%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://youtu.be/UoYSU7ypz4g">Online Office Hour</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://www.youtube.com/watch?v=Y-KDJZq1skI">Transformers for Time series data</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>231210-1</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.youtube.com/watch?v=SHIYAz0uLzw">Scholarship and Feature Extraction in Time Series Data</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/bip6qL9jsZM">Advanced UNet and LLMs Introduction</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>231224-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/rFFXkGvzaVw">Seminar: Multimodal Language Models</a></td>
-<td></td>
-<td>231231-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/_Gfk1EFlOIo">Seminar: Visual Instruction Tuning (LlaVa) and QLoRA</a></td>
-<td></td>
-<td>240107-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/7PikDIQWB6c">Data Augmentation and Imbalanced Data</a></td>
-<td></td>
-<td>240114-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/NkFczM4yz-A">RNN-based Forecasting and Toolformer</a></td>
-<td></td>
-<td>240121-23M07-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/6xCgzkkx7So">CLIP</a></td>
-<td>TA Đức</td>
-<td>240128-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/kERiVxH_N-0">Detecting violation of helmet rule for motorcyclists (CVPRW2024)</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>240204-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/trhYxMQG47A">Direct Preference Optimization</a></td>
-<td>Dr.&nbsp;Vinh</td>
-<td>240225-23M08-EC3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://youtu.be/tY7OKXm6ApA">Study and Job in the USA</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://youtu.be/RKcPFwzkkLs">Seminar: XAI</a></td>
-<td>Dr.&nbsp;Anh Nguyen</td>
-<td>240405-23M09-MC</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+</header>
 
 
+<p>#prob-stats #divergence # KL Divergence # Introduction</p>
+<p>The Kullback-Leibler Divergence, or KL Divergence, is defined as follows:</p>
+<blockquote class="blockquote">
+<p>[!definition] <span class="math display">\[D_{KL}(p\|q) \triangleq \int p(x) \log \dfrac{p(x)}{q(x)}dx = \mathbb{E}_{p(x)}\left[\log\dfrac{p(x)}{q(x)}\right]\]</span> , where <span class="math inline">\(p(x)\)</span> and <span class="math inline">\(q(x)\)</span> are two continuous distributions.</p>
+</blockquote>
+<section id="properties" class="level1">
+<h1>Properties</h1>
+<section id="nonnegativity" class="level2">
+<h2 class="anchored" data-anchor-id="nonnegativity">Nonnegativity</h2>
+<p><span class="math inline">\(D_{KL}(p \| q) \geq 0\)</span> with equality iff <span class="math inline">\(p=q\)</span>.</p>
+<p>Before proving this, first recall the [[jensen-inequality |Jensen’s inequality]], which states the following for any convex function <span class="math inline">\(f\)</span>: <span class="math display">\[
+f\left(\sum\limits_{i=1}^{n}\lambda_{i}x_{i}\right)\leq \sum\limits_{i=1}^{n}\lambda_{i}f(x_{i})
+\]</span> where <span class="math inline">\(\lambda_{i} \geq 0\)</span> and <span class="math inline">\(\sum\limits_{i=1}^{n}\lambda_{i}=1\)</span>.</p>
+<p>Proof <span class="math display">\[\begin{aligned}
+D_{\mathrm{KL}}(P\|Q)&amp; =\sum_{x\in\mathcal{X}}P(x)\log\frac{P(x)}{Q(x)} &amp;&amp; \text{(by definition for discrete case)}  \\
+&amp;=-\sum_{x\in\mathcal{X}}P(x)\log\frac{Q(x)}{P(x)} &amp;&amp; \text{(changing the sign of the $\log$)}\\
+&amp;=E\bigg[-\log\frac{Q(x)}{P(x)}\bigg] &amp;&amp; \text{(by Law of Unconscious stastistician)}\\
+&amp;\geq-\log E\Big[\frac{Q(x)}{P(x)}\Big] &amp;&amp; \text{(by Jensen's inequality)}\\
+&amp;=-\log\Big(\sum_{x\in\mathcal{X}}P(x)\frac{Q(x)}{P(x)}\Big) &amp;&amp; \text{(deriving the expectation term)}\\
+&amp;=-\log\sum_{x\in\mathcal{X}}Q(x) &amp;&amp; \text{(cancelling out the $P(x)$)}\\
+&amp;=-\log1 =0
+\end{aligned}\]</span> # KL Divergence and MLE</p>
+<p>Suppose we want to find the distribution <span class="math inline">\(q\)</span> that is as closes as possible to <span class="math inline">\(p\)</span>, as measured by KL Divergence: <span class="math display">\[q^{*}= \underset{q}{\text{argmin}} D_{KL}(p \| q) = \underset{q}{\text{argmin}} \int p(x) \log p(x)dx - \int p(x) \log q(x)dx\]</span></p>
+<p>Suppose we are given the training set <span class="math inline">\(\{x^{(i)}; i=1,\cdots,m\}\)</span>. Let <span class="math inline">\(\hat{P}(x) = \dfrac{1}{m} \sum\limits_{i=1}^{m}1\{x^{(i)}=x\}\)</span> be the empirical distribution and suppose we have some family of distributions <span class="math inline">\(P_{\theta}\)</span>. We can actually show that finding the maximum likelihood estimate for the parameter <span class="math inline">\(\theta\)</span> is equivalent to finding <span class="math inline">\(P_{\theta}\)</span> with minimal KL Divergence from <span class="math inline">\(\hat{P}\)</span>, <em>i.e.</em>: <span class="math display">\[
+\underset{\theta}{\text{argmin}} D_{KL}(\hat{P} \| P_{\theta}) = \underset{\theta}{\text{argmax}} \sum\limits_{i=1}^{m}\log P_{\theta}(x^{(i)})
+\]</span> # Approximating KL Divergence</p>
+<p>http://joschu.net/blog/kl-approx.html</p>
+<p>Sometimes we can not compute analytically the sum over <span class="math inline">\(x\)</span> for various reasons, including (1) high computation cost and memory; (2) no closed-form expression; (3) code simplification (by just storing the log probability rather than the whole distribution itself).</p>
+<p>One of the most common approach to estimate sums or integrals is to use [[Monte-Carlo estimate]]. Given the samples <span class="math inline">\(x_{1}, x_{2}, \cdots \sim q\)</span>, the question is how can we construct a good estimate ?</p>
+<p>A good estimator is one that is unbiased (it has the right mean) and has low variance.</p>
+<p>All <span class="math inline">\(f\)</span>-divergences with differentiable <span class="math inline">\(f\)</span> look like KL divergence up to second order when <span class="math inline">\(q\)</span> is close to <span class="math inline">\(p\)</span>. For a parameterized distribution <span class="math inline">\(p_\theta\)</span>: <span class="math display">\[
+D_{f}(p_{0},p_{\theta}) = \dfrac{f''(1)}{2} \theta^{T}F\theta + O(\theta^3)
+\]</span> where <span class="math inline">\(F\)</span> is the Fisher information matrix for <span class="math inline">\(p_{\theta}\)</span> evaluated at <span class="math inline">\(p_{\theta}= p_{0}\)</span>.</p>
+</section>
+<section id="approximating-kl-divergence-with-fisher-information-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="approximating-kl-divergence-with-fisher-information-matrix">Approximating KL Divergence with Fisher information matrix</h2>
+<p>Let <span class="math inline">\(p_{\theta}(x)\)</span> and <span class="math inline">\(p_{\theta'}(x)\)</span> be two distributions, where <span class="math inline">\(\theta' = \theta + \delta\)</span>. We can measure how close the second distribution is to the first in terms of their <em>predictive distribution</em> (comparing <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\theta\)</span>’ in the parameter space): <span class="math display">\[D_{KL}(p_{\theta} \| p_{\theta'}) = \mathbb{E}_{p_{\theta}(x)}[\log p_{\theta}(x) - \log p_{\theta'}(x)]\]</span> Approximate with a second-order Taylor series expansion: <span class="math display">\[D_{KL}(p_{\theta}\| p_{\theta'}) \approx  -\delta^{T}\mathbb{E}[\nabla \log  p_{\theta}(x)] - \dfrac{1}{2}\delta^{T}\mathbb{E}[\nabla^{2}\log p_{\theta}(x)]\delta\]</span> Since <span class="math inline">\(\mathbb{E}[\nabla \log p_\theta (x)] = 0\)</span>, we have: <span class="math display">\[D_{KL}(p_{\theta}\| p_{\theta'}) \approx \dfrac{1}{2} \delta^{T}F(\theta)\delta\]</span> where F is the Fisher information matrix defined as: <span class="math display">\[F = -\mathbb{E}[\nabla^{2}\log p_{\theta}(x)] = \mathbb{E}[(\nabla \log p_{\theta}(x))(\log p_{\theta}(x))^{T}]\]</span> # KL Divergence and exponential families</p>
+<p>In this section, we’ll show that the KL between two distributions in the exponential family has a nice closed form. Consider <span class="math inline">\(p(x)\)</span> with a natural parameter <span class="math inline">\(\eta\)</span>, base measure <span class="math inline">\(h(x)\)</span> and sufficient statistics <span class="math inline">\(\mathcal{T}(x)\)</span>, i.e. <span class="math display">\[p(x) = h(x) \exp [\eta^{T}\mathcal{T}(x) - A(\eta)]\]</span> where <span class="math inline">\(A(\eta) = \log \int h(x) \exp(\eta^{T}\mathcal{T}(x))dx\)</span> is the log-partition function and is a convex function of <span class="math inline">\(\eta\)</span>.</p>
+<p>The KL divergence between two exponential family distributions from the same family is as follows: <span class="math display">\[
+\begin{aligned}
+D_{KL}(p(x | \eta_{1})\| p(x | \eta_{2})) &amp;= \mathbb{E}_{\eta_{1}}[(\eta_{1}-\eta_{2})^{T}\mathcal{T}(x) - A(\eta_{1})+ A(\eta_{2})] \\
+&amp;= (\eta_{1}-\eta_{2})^{T}\mu_{1}-A(\eta_{1})+A(\eta_{2})
+\end{aligned}
+\]</span></p>
+
+
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -761,5 +722,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
