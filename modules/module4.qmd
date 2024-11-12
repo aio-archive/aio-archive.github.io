@@ -1,0 +1,61 @@
+---
+title: Module 4 - Machine Learning and Data Science
+tbl-colwidths: [25,47,80,40,50,70]
+sidebar: true
+---
+
+# Introduction
+
+Hi, welcome to Module 4: Machine Learning and Data Science of the AIO2023 course. The main lessons of this module involves around *traditional* machine learning algorithms, ranging from simple to complex one such as kNN, Decision tree, Random Forest, XGBoost, and Support Vector Machines (SVMs). There are two projects, including one where we'd work with tabular type of data for the problem of heart disease protection. The second project is on Object detection.
+
+As of the extra class for this module, it aims is to provide you with the knowledge involving around Large Language Models (LLMs), from the most fundamental knowledge to more recent techniques such as Prompting and Fine-tuning.
+
+
+# Course Schedule and Resources
+
+## Main Lessons
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+      |    |    ||  |
+| 28/08/23| <span class="badge rounded-pill bg-success">Assignment</span>         | [K-Nearest Neighbor and Decision Tree Exercise](https://drive.google.com/file/d/1Y9sFwsrT9koOmICyRM5Gq1UaXUgDhY99/view?usp=drive_link)  | TA Thái       | *Due: 03 Sep, 2023* <br/> [[solution](https://drive.google.com/file/d/1P-p15qp-DhoG4Be-mraPowJn22-672IH/view?usp=drive_link)] |  |
+| 30/08/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [K-Nearest Neighbors](https://www.youtube.com/watch?v=kdZilIIK3XI)      | Dr. Đình Vinh | [230830](https://drive.google.com/drive/folders/1mUOYsTP8XYBNsiHiLSCv_4OBDXxRogFn?usp=drive_link)    | [[note](https://drive.google.com/file/d/1z0ByjtVln-KLWpj_iZ_vdE-dJGmCRnvb/view)] [[CS4780 Lecture 3](https://www.youtube.com/watch?v=oymtGlGdT-k)]         |
+| 01/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Decision Tree for Classification](https://www.youtube.com/watch?v=JUV-6puCuuM)    | Dr. Đình Vinh | [230901](https://drive.google.com/drive/folders/1XKn_0uPFNJn4VUrrphMZp4wHfJqEhanH?usp=drive_link)    |  |
+| 03/09/23| <span class="badge rounded-pill bg-info">Exercise Session</span>         | [TA Exercise](https://www.youtube.com/watch?v=JUV-6puCuuM)   | TA Thái       | [230903](https://drive.google.com/drive/folders/1-nra19pIk4-dOyZTJGyuhjbL8W9N7ncW?usp=drive_link)    |  |
+| 06/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Decision Tree for Regression](https://www.youtube.com/watch?v=8Q4yXGP82t8)        | Dr. Đình Vinh | [230906](https://drive.google.com/drive/folders/1Ry56e_68ZTxxeWi48jial3kWLTvKnJA7?usp=drive_link)    | [[Choi et al., 2017](https://www.math.snu.ac.kr/~hichoi/machinelearning/lecturenotes/CART.pdf)]    |
+| 08/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Random Forest](https://www.youtube.com/watch?v=88uBBMau0k0) | Dr. Đình Vinh | [230908](https://drive.google.com/drive/folders/1ZzA8alwFvYkd6e3f-_7u3IMfSiTGoGtx?usp=drive_link)    | [Louppe et al., 2015]  |
+| 10/09/23| <span class="badge rounded-pill bg-info">Exercise Session</span>         | [TA Exercise](https://www.youtube.com/watch?v=23nAt9Mal28)   | TA Thắng      | [230910](https://drive.google.com/drive/folders/1fdXR3iR0ooScR3MOu0WVXPi8rakvf8sE?usp=drive_link)    |  |
+| 11/09/23| <span class="badge rounded-pill bg-success">Assignment</span>         | [XGBoost](https://drive.google.com/file/d/1Xj5fRA21CM6ueGGoskCyNxP91Ubiaqhy/view?usp=drive_link)       | TA Khoa       | *Due: 17 Sep, 2023* <br/> [[solution](https://drive.google.com/file/d/1cYsVNrPMd5_7ZKb6X61otuMt4mBc56xh/view?usp=drive_link)] |  |
+| 13/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Basic XGBoost: Understanding Gradient Boost and AdaBoost](https://www.youtube.com/watch?v=qZ1n0oDQ8eQ)  | Dr. Đình Vinh | [230913](https://drive.google.com/drive/folders/1k5SR9M1JctezNil0VaeOt_B5xDKCMcHz?usp=drive_link)    | [note] [Trevor Lecture]|
+| 15/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Advanced XGBoost: Fully XGBoost and its mathematics](https://www.youtube.com/watch?v=B4B6XtWRacs)       | Dr. Đình Vinh | [230915](https://drive.google.com/drive/folders/1QfluFQlaOQTG5C6_MT6-ruLMd3qv4dLZ?usp=drive_link)    |  |
+| 17/09/23| <span class="badge rounded-pill bg-info">Exercise Session</span>         | [TA Exercise](https://www.youtube.com/watch?v=lBxxuy-MXL0)   | TA Khoa       | [230917](https://drive.google.com/drive/folders/1pmLDRqYN-c4YV414WzMqJ-XeW8w2CzLo?usp=drive_link)    |  |
+| 18/09/23| <span class="badge rounded-pill bg-success">Assignment</span>         | [Support Vector Machine Exercise](https://drive.google.com/file/d/1-21j_iueRM3dWifoh-OzVbrui0NxG3DI/view?usp=drive_link)     | TA Thắng      | *Due: 27 Sep, 2023* <br/> [[solution](https://drive.google.com/file/d/1L31hnfSzmZ7X7uafaCFhfgFQN8j-n4FB/view?usp=drive_link)] |  |
+| 20/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Review on Tree-based Approaches and Discussion](https://www.youtube.com/watch?v=b0na2ulwqfs) | Dr. Đình Vinh | [230920](https://drive.google.com/drive/folders/1QLnFKfmDu-sPVmNAm1i58blBI7PBjGjH?usp=drive_link)    |  |
+| 22/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Support Vector Machine (1)](https://www.youtube.com/watch?v=OHKsqkvTb4E)          | Dr. Đình Vinh | [230922](https://drive.google.com/drive/folders/1pw4b3n8-7pyR2mml64UKbO2IAgYqV3uw?usp=drive_link)    | [CS229 Note] [MLCB]    |
+| 24/09/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>   | [Support Vector Machine (2)](https://www.youtube.com/watch?v=Zlgm2er07zM)          | Dr. Đình Vinh | [230924](https://drive.google.com/drive/folders/1xHzkJr1M03YKW37yZuujOXthcDP6srjd?usp=drive_link)    |  |
+| 27/09/23| <span class="badge rounded-pill bg-info">Exercise Session</span>         | [TA-Exercise](https://www.youtube.com/watch?v=Xmi2Re_VI2k)   | TA Thắng      | [230927](https://drive.google.com/drive/folders/1NwLtjoed22lUIbAtGPgcg-gw1FvbyPDq?usp=drive_link)    |  |
+| 29/09/23| <span class="badge rounded-pill bg-success">Project Tutorial</span>   | [Tabular Data Project: Heart Disease Prediction](https://www.youtube.com/watch?v=tBgS6ccF_RI) | Dr. Đình Vinh | [230929](https://drive.google.com/drive/folders/1ycHCmGlXGD1TU_bd6KpMO-vd6u5OPDyO?usp=drive_link)    |  |
+| 01/10/23| <span class="badge rounded-pill bg-success">Project Tutorial</span>   | [Image Project: Object Detection](https://www.youtube.com/watch?v=W_jUEuetCh8)     | TA Thắng      | [231001](https://drive.google.com/drive/folders/11FQOjpbllD0mbmOxUpnlUr3PRvZZv559?usp=drive_link)    | [HoG paper] |
+:   {.striped .hover}
+
+## Python Support
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+   |    |    ||  |
+| 29/08/23| <span class="badge rounded-pill bg-primary">Python Support</span> | [K-Nearest Neighbors (Warm-up)](https://www.youtube.com/watch?v=q48CIhjqYdA)       | Dr. Vinh      | 230829    | [STAT451 Note](https://sebastianraschka.com/pdf/lecture-notes/stat451fs20/02-knn__notes.pdf)         |
+| 05/09/23| <span class="badge rounded-pill bg-primary">Python Support</span>    | [Decision Tree](https://www.youtube.com/watch?v=2CJAdtMFw9Y) | Dr. Vinh   | [230905](https://drive.google.com/drive/folders/1yQu44nTx5lcsES6-xG7uG83I5FrPu-2j?usp=drive_link)    |  |
+| 12/09/23| <span class="badge rounded-pill bg-primary">Python Support</span>    | [Random Forest and AdaBoost (Warm-up) ](https://www.youtube.com/watch?v=fy4hhYCdz_s)          | Dr. Vinh   | [230912](https://drive.google.com/drive/folders/1_2_6AmqzzU_DF912Nggce-wZGlhPBn-t?usp=drive_link)    |  |
+| 21/09/23| <span class="badge rounded-pill bg-primary">Python Support</span>    | [SVM](https://www.youtube.com/watch?v=ervuznbyj_Q)| TA Thắng      | [230921](https://drive.google.com/drive/folders/1-yTkjuzBy-roVFgnFP0YqNSUig8jutxO?usp=drive_link)    | [CS4780 Lecture 9 Note](https://www.cs.cornell.edu/courses/cs5780/2024sp/lectures/lecturenote09.html)          |
+:   {.striped .hover}
+
+## Extra class: Advanced NLP
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|------------------------------|----------------------------------------------------------------------|---------------|-----------|----------------------------------------------|
+  |    |    ||  |
+| 09/09/23| <span class="badge rounded-pill bg-warning">Advanced NLP</span>       | [Foundations for an NLP topic](https://www.youtube.com/watch?v=D45Ub4E39Pc)        | TA Thái       | [230909](https://drive.google.com/drive/folders/1pGcZP274kg1uQXRqFKUZprAICWg5ZfeP?usp=drive_link)    | [note] [CS324 note]    |
+| 16/09/23| <span class="badge rounded-pill bg-warning">Advanced NLP</span>       | [Language Models and Prompting Techniques](https://www.youtube.com/watch?v=8Jm_KoOkQNI)       |TA Thái    | [230916](https://drive.google.com/drive/folders/1ZDLQWzULXdym4bYxpfQoloSrgapv47k6?usp=drive_link)    |  |
+| 23/09/23| <span class="badge rounded-pill bg-warning">Advanced NLP</span>       | [Parameter-Efficient Fine-tuning](https://www.youtube.com/watch?v=v7ppJh-gi7Y)     |TA Thái    | [230923](https://drive.google.com/drive/folders/124zf6r3XrMYwAvZ4lZsQ6aC1wP3cA7tR?usp=drive_link) | [Houlsby et al., 2019] [COS597G Slides]      |
+| 30/09/23| <span class="badge rounded-pill bg-warning">Advanced NLP</span>       | [Efficient Fine-tuning of quantized LLMs](https://www.youtube.com/watch?v=v4z4dEszvXY)        | TA Thái   | [230930](https://drive.google.com/drive/folders/1rUKFvtUsUr2rkyfXKIHMnoZKgnKOQePy?usp=drive_link)    | [LoRA paper]|
+:   {.striped .hover}

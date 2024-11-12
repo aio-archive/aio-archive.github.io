@@ -1,0 +1,23 @@
+---
+title: Contrastive learning
+description: An unsupervised pre-training approach.
+title-block-banner: true
+categories: Contrastive Learning
+bibliography: references.bib
+---
+
+**Contrastive learning** is a type of **unsupervised pre-training** that aims to learn representations of data by contrasting similar and dissimilar examples. The key intuition behind contrastive learning is that similar examples should have similar representations, while dissimilar examples should have dissimilar representations. This allows the model to learn useful representations even without explicit labels.
+
+Over the years, various approaches have been proposed to develop models based on contrastive learning. Some of the most influential work includes: **(1)** the use of image patches [@cpc], **(2)** augmented versions of the same example [@simclr], and **(3)** the use of nearby video frames.
+
+Given a pre-trained model, such as a vision encoder denoted by $f_\theta$, the objective is to minimize (w.r.t. the parameters $\theta$) the distance between an anchor input $\mathbf{x}$ and another similar sample $\mathbf{x}'$, measured either by Euclidean distance or Cosine similarity:
+
+$$\underset{\theta}{\min}{\|f_{\theta}(x) - f_{\theta}(x')\|_{2}^2}$$
+
+A potential issue with this objective is that the model could collapse by mapping all inputs to a single constant vector, minimizing the loss to zero but yielding no *meaningful* representations. Therefore, it is essential to introduce *contrast* between different samples. The core challenge in contrastive learning lies in two key aspects: **(1)** designing the loss function to ensure that the model learns informative representations, and **(2)** selecting appropriate sample pairs so that the model effectively captures the underlying structure in the data.
+
+# Further resources:
+- [Contrastive Representation Learning](https://lilianweng.github.io/posts/2021-05-31-contrastive/)
+
+
+

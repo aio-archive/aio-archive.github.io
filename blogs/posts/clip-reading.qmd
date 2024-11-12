@@ -1,0 +1,54 @@
+---
+title: CLIP Reading List
+description: A compilation of research papers, blog posts, ... about CLIP.
+date: 23, Sep 2024
+title-block-banner: true
+categories: reading-list
+date-modified: 23, Sep 2024
+---
+
+# Fundamental
+
+- [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020). This is the original CLIP paper. Its main contribution is that (1) extending the [constrastive learning](ml-glossary/contrastive-learning/contrastive-learning.qmd) paradigm to multimodal data (image-text) and (2) train the model on a very large scale over a 400 million image-text pair dataset. The image representation learned by the model is shown to be *transferable*, meaning that it has good performance on downstream visual task.
+
+- [Multimodal Neurons in Artificial Neural Networks](https://distill.pub/2021/multimodal-neurons/). A blogpost that focuses on CLIP's interpretability with stunning visualization.
+
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](https://arxiv.org/abs/2102.05918). This paper basically train CLIP on a larger scale and data (1.8 billion image-text pairs).
+
+# Training
+
+## Large Scale
+
+- PaLI-X | On Scaling up a Multilingual Vision and Language Model
+
+## Efficient
+
+- **FLIP** | [Scaling Language-Image Pre-training via Masking](https://arxiv.org/abs/2212.00794). One of the key element for contrastive learning is large batch size. This paper propose to mask out a large portion of the image, which leads to reduced memory needs, and thus more images being contrast at the same time.
+
+- **SigLIP** | [Sigmoid Loss for Language Image Pre-Training](https://arxiv.org/abs/2303.15343)
+
+- **CyCLIP**
+
+- Image Captioners Are Scalable Vision Learners Too
+
+
+
+# Multimodal Augmentation
+
+- **FuseMix** | [Data-Efficient Multimodal Fusion on a Single GPU](https://openaccess.thecvf.com/content/CVPR2024/html/Vouitsis_Data-Efficient_Multimodal_Fusion_on_a_Single_GPU_CVPR_2024_paper.html)
+
+
+ 
+# Data
+
+# Generalizability and Robustness
+
+# Evaluation
+
+- [CLIPScore: A Reference-free Evaluation Metric for Image Captioning](https://arxiv.org/abs/2104.08718)
+
+# Others
+
+- [Leveraging Cross-Modal Neighbor Representation for Improved CLIP Classification](https://openaccess.thecvf.com/content/CVPR2024/html/Yi_Leveraging_Cross-Modal_Neighbor_Representation_for_Improved_CLIP_Classification_CVPR_2024_paper.html)
+
+- 

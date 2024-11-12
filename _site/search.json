@@ -1,0 +1,1160 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AIO2023 Course",
+    "section": "",
+    "text": "sample\n\n\n\n\nIntroduction\nWelcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It’s best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (eg. linear algebrea concepts, calculus, probability, and basic Python coding skills) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.\n\n\n\nCourse Schedule\nEssentially, there are fours main parts during the course: (1) The main lectures on Wednesday and Friday weekly; (2) the extra classes / TA lessons / Project tutorials on Saturday weekly; (3) the pre-lecture lecture on Tuesday weekly; and (4) the seminars on Sunday occcasionally.\nThe overall course schedule can be wrap up in the following table.\n\n\n\n\n\n\n\n\nDay\nEvent\nFrequency\n\n\n\n\nMonday\nAssignment release\nWeekly\n\n\nTuesday\nPre-lecture lecture\nWeekly\n\n\nWednesday\nMain lecture\nWeekly\n\n\nFriday\nMain lecture\nWeekly\n\n\nSaturday\nExtra classes / TA lessons / Project tutorials\nWeekly\n\n\nSunday\nSeminars\nOccasionally\n\n\n\nOn Monday each week, you will be assigned the homework related to the content of the two main lectures on Wednesday and Friday. This homework is usually due on the Monday of the next week. Before the main lecture on Wednesday, there will be a pre-lecture lesson that covers the prerequisites on Tuesday. After the main lectures, there will be a lecture conducted by the TAs to help you revise and support you regarding the assignment.\n\n\n\nCourse Resources\nThere will be recordings for each lecture as well as the slides.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Blogs",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html",
+    "href": "modules/module1.html",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html",
+    "href": "modules/module3.html",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nAssignment\nProbability Exercise\nDr. Đình Vinh\n\n\n\n\n19/07/23\nMain Lesson\nBasic Probability, Histogram and Image Enhancement\nDr. Vinh\n230719\n\n\n\n21/07/23\nMain Lesson\nNaive Bayes Classifier\nDr. Vinh\n230721\n\n\n\n23/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230723\n\n\n\n31/07/23\nAssignment\nStatistic Exercise\nDr. Đình Vinh\nSolution\n\n\n\n26/07/23\nMain Lesson\nBasic Statistics and Correlation Coefficient (Basic Tracking)\nDr. Vinh\n230726\n\n\n\n28/07/23\nMain Lesson\nTemplate Matching (Cosine Similarity vs. Correlation Coefficient)\nDr. Đình Vinh\n230728\n\n\n\n30/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230730\n\n\n\n31/07/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\nDue: 06 Aug 2023 [solution]\n\n\n\n02/08/23\nMain Lesson\nRandomness and Genetic Algorithms\nDr. Vinh\n230802\n\n\n\n04/08/23\nMain Lesson\nGenetic Algorithms (Optimization and Linear Regression)\nDr. Vinh\n230804\n\n\n\n06/08/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230806\n\n\n\n07/08/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n07/08/23\nExercise Session\nData Analysis Exercise\nTA Thắng\nDue: 13 Aug, 2023 [solution]\n\n\n\n09/08/23\nMain Lesson\nData visualization and Data Analysis (1)\nDr. Vinh\n230809\n\n\n\n11/08/23\nMain Lesson\nData visualization and Data Analysis (2)\nDr. Vinh\n230811\n\n\n\n13/08/23\nExercise Session\nTA-Exercise (Polar)\nTA Thắng\n230813\n[Polar doc]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\nDue: 20 Aug, 2023 [solution]\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n\n\n\n\n17/08/23\nProject Tutorial\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n[LSFS and MapReduce]\n\n\n20/08/23\nProject Tutorial\nBig Data Frameworks (2)\nDr. Đình Vinh\n230820\n\n\n\n22/08/23\nProject Tutorial\nImage Data Project: Image Retrieval\nTA Thắng\n\n\n\n\n23/08/23\nProject Tutorial\nBig Data Frameworks (3)\nDr. Đình Vinh\n230823\n[C9, Feng 2021]\n\n\n25/08/23\nProject Tutorial\nImage Data Project: Image Retrieval\nTA Thắng\n230825\n[solution] [VIT paper (Dosovitskiy et al., 2021)]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n29/07/23\nNLP Introduction\nIntroduction, Preprocessing\nTA Thái\n230729\n\n\n\n05/08/23\nNLP Introduction\nPreprocessing, Tokenization\nTA Thái\n230805\n[note] [C2, Jurafsky et al., 2023]\n\n\n12/08/23\nNLP Introduction\nStatistical Language Model\nTA Thái\n230812\n[C3, Jurafsky et al., 2023] [Andrej Karpathy’s Lecture]\n\n\n18/08/23\nNLP Introduction\nPart-of-Speech Tagging\nTA Thái\n230819\n[CA Jurafsky et al., 2023]\n\n\n26/08/23\nNLP Introduction\nConstituency Parsing\nTA Thái\n230826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nPython Support\nProbability\nTA Tiềm\n230718\n\n\n\n25/07/23\nPython Support\nStatistics\nTA Bảo\n230725\n\n\n\n01/08/23\nPython Support\nGenetic Algorithms\nTA Tiềm\n230801\n\n\n\n08/08/23\nPython Support\nPandas (1)\nTA Bảo\n230808\n\n\n\n14/08/23\nPython Support\nPandas (2)\nTA Bảo\n230814\n[C7, McKinney 2023]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n20/07/23\nCompetition\nTricks to improve performance\nTA Hùng\n230720\n\n\n\n27/07/23\nCompetition\nHCM AI Challenge\nTA Hùng\n230727\n\n\n\n03/08/23\nCompetition\nWeb API + Docker\nTA Hùng\n230803\n\n\n\n17/08/23\nCompetition\nOnnx\nTA Hùng\n230817\n\n\n\n24/08/23\nCompetition\nSemi-supervised Learning\nTA Hùng\n230824\n[Lil’Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html",
+    "href": "modules/module5.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Misc",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html",
+    "href": "modules/module6.html",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n06/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thái\nDue: 12 Nov, 2023  [solution]\n\n\n\n08/11/23\nMain Lesson\nBasic CNN (1)\nDr. Vinh\n231108\n[CS231N Note] [CNN Explainer]\n\n\n10/11/23\nMain Lesson\nBasic CNN (2)\nDr. Vinh\n231110\n\n\n\n12/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231112\n\n\n\n13/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thắng\nDue: 19 Nov, 2023  [solution]\n\n\n\n15/11/23\nMain Lesson\nCNN Training\nDr. Vinh\n231115\n[VGG Paper]\n\n\n17/11/23\nMain Lesson\nCNN Generalization\nDr. Vinh\n231117\n\n\n\n19/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231119\n\n\n\n20/11/23\nAssignment\nPretrained Models for Image Exercise\nTA Thắng\nDue: 26 Nov, 2023  [solution]\n\n\n\n22/11/23\nMain Lesson\nAdvanced CNN Architecture\nDr. Vinh\n231122\n\n\n\n24/11/23\nMain Lesson\nTransfer Learning for CNN\nDr. Vinh\n231124\n\n\n\n26/11/23\nExercise Session\nTA-Exercise\nTA Thái\n231126\n\n\n\n27/11/23\nAssignment\nRecurrent Neural Network Exercise\nTA Thắng\nDue: 03 Dec, 2023  [solution]\n\n\n\n29/11/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231129\n\n\n\n01/12/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231201\n\n\n\n03/12/23\nExercise Session\nTA-Exercise\nTA Thắng\n231203\n\n\n\n04/12/23\nAssignment\nTransformer Application Exercise\nTA Thái\nDue: 10 Dec, 2023  [solution]\n\n\n\n06/12/23\nMain Lesson\nTransformer (Encoder - Text Classification)\nDr. Vinh\n231206\nBERT Readings\n\n\n08/12/23\nMain Lesson\nTransformer for Image and Time series Data\nDr. Vinh\n231208\n\n\n\n13/12/23\nProject Tutorial\nImage Project: OCR with YOLOv8 and CNN (Scene Text Recognition)\nTA Thắng\n231213\nhandout - solution\n\n\n15/12/23\nProject Tutorial\nImage-text Project: VQA\nTA Thắng\n231215\nhandout - solution\n\n\n17/12/23\nProject Tutorial\nTime-series forecasting project\nDr. Đình Vinh\n231217\nhandout - solution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n09/11/23\nCompetition\nZalo AI\nTA Hùng\n231109\n\n\n\n16/11/23\nCompetition\nZalo AI\n\n231116\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n07/11/23\nPreview\nIntroduction to CNN\nTA Thái\n231107\n\n\n\n14/11/23\nPreview\nAdvanced CNN\nTA Thái\n231114\n\n\n\n21/11/23\nPreview\nCNN and its variants\nTA Thái\n231121\n\n\n\n28/11/23\nPreview\nIntroduction to Transfer Learning\nTA Thái\n231128\n\n\n\n05/12/23\nPreview\nIntroduction to Transformer\nTA Thái\n231205\nGenerative AI exists because of the transformer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n11/11/23\nResearch & Paper\nResearch Idea - Brainstorming (1)\nDr. Đình Vinh\n231111\n\n\n\n18/11/23\nResearch & Paper\nResearch Idea - Brainstorming (2)\n\n231118\n\n\n\n25/11/23\nResearch & Paper\nHow to do Research (1)\n\n231125\n\n\n\n02/12/23\nResearch & Paper\nHow to do Research (2)\n\n231202\n\n\n\n09/12/23\nResearch & Paper\nHow to do Research (3)\n\n231209\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n10/12/23\nSeminar\nTransformers for Time series data\nDr. Vinh\n231210-1\n\n\n\n17/12/23\nSeminar\nScholarship and Feature Extraction in Time Series Data\n\n231217-1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module10.html",
+    "href": "modules/module10.html",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nReinforcement Learning Exercise\nTA Thắng\nDue: 21 Apr, 2024  [solution]\n\n\n\nPreview\nIntroduction to Reinforcement Learning\nTA Thuận\n240416-23M10-EC2\n\n\n\nMain Lesson\nReinforcement Learning (CartPole)\nDr. Hoàng\n240417-23M10-MC\n\n\n\nMain Lesson\nReinforcement Learning (Deep Deterministic Policy Gradient)\nDr. Hoàng\n240419-23M10-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thắng\n240421-23M10-MC\n\n\n\nAssignment\nPoint Cloud Techniques and Applications Project\nDr. Tuân\n[project] - [solution]\n\n\n\nAssignment\nMultimodal Large Language Models Exercise\nTA Thái\nDue: 27 Apr, 2024  [solution]\n\n\n\nMain Lesson\nClassification for 3D Point Cloud Data\nDr. Tuân\n240424-23M10-MC\n\n\n\nMain Lesson\nAdvances in 3D Point Cloud Data\nDr. Tuân\n240426-23M10-MC\n\n\n\nAssignment\nGraph Neural Network Exercise\nTA Đức\nDue: 03 May, 2024  [solution]\n\n\n\nMain Lesson\nGNN Node Classification\nDr. Đình Vinh\n240428-23M10-MC\n\n\n\nMain Lesson\nGNN (Molecular Property Prediction)\nDr. Đình Vinh\n240501-23M10-MC\n\n\n\nExercise Session\nTA Exercise\nTA Đức\n240503-23M10-MC\n\n\n\nProject Tutorial\nMultitasking networks for Vision\nTA Thái\n240505-23M10-MC\n[Exercise] - [solution]\n\n\nProject Tutorial\nVideoCLIP for Video Classification\nTA Đức\n240508-23M10-MC\n[handout] - [solution]\n\n\nProject Tutorial\nMulti-agent LLM\nTA Thắng\n240510-23M10-MC\n[handout] - [solution]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nExtra Class\nLLM RAG for Applications\nTA Bách\n240420-23M10-MC\n\n\n\nExtra Class\nLLMs for Multimodal Data\nTA Thái\n240427-23M10-EC1\n[Modaverse] [BLIP-2] [NExT-GPT]\n\n\nExtra Class\nLLM Deployment with LangChain\nTA Thắng\n240504-23M10-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html",
+    "href": "modules/module8.html",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nPreview\nIntroduction to POS Tagging\nTA Khoa\n240130-23M08-EC2\n\n\n\nMain Lesson\nFrom Text Classification to POS Tagging\nDr. Vinh\n240131-23M08MC\n\n\n\nMain Lesson\nNER for Medical Data\nDr. Vinh\n240202-23M08MC\n\n\n\nExercise Session\nTA-Exercise\nTA Thái\n240204-23M08MC\n\n\n\nProject handout\nAspect-based Sentiment Analysis Project\nTA Thái\nDue: 06 Feb, 2024  [solution]\n\n\n\nProject tutorial\nText Project: Aspect Extraction and Content Classification (Text Classification + NER)\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: QA for Content Inquiry (Text Classification + NER)\nTA Thắng\n240216-23M08MC\n\n\n\nProject tutorial\nText Project: End-to-end Question Answering (Building a Searching System)\nTA Thắng\n240218-23M08MC\n[Exercise] - [Solution]\n\n\nMain Lesson\nText Generation\nDr. Vinh\n240221-23M08MC\n\n\n\nMain Lesson\nMachine Translation\nDr. Vinh\n240223-23M08MC\n\n\n\nExercise Session\nTA Exercise (Neural Machine Translation)\nTA Thái\n240225-23M08MC\n\n\n\nProject handout\nNeural Machine Translation\nTA Thái\nDue: 25 Feb, 2024  [Solution]\n\n\n\nProject tutorial\nPoem Generation Project\nTA Thắng\n240228-23M08MC\n[handout] - [solution]\n\n\nProject tutorial\nLow-resource Machine Translation Project\nTA Thái\n240301-23M08MC\n[handout] - [solution]\n\n\nProject tutorial\nText classification with Mamba Project\nTA Đức\n240303-23M08MC\n[handout] - [solution]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch & Paper\nHow to write a paper (3)\nDr. Đình Vinh\n240127-23M08-EC1\n\n\n\nResearch & Paper\nHow to write a paper (4)\nDr. Đình Vinh\n240203-23M08-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Quantization\nTA Bách\n240302-23M09-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nCLIP\nTA Đức\n240128-23M08-EC3\n\n\n\nSeminar\nDetecting violation of helmet rule for motorcyclists (CVPRW2024)\nDr. Vinh\n240204-23M08-EC3\n\n\n\nSeminar\nDirect Preference Optimization\nDr. Vinh\n240224-23M08-EC3\n\n\n\nSeminar\nStudy and Job in the USA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nIntroduction to Text Generation\nDr. Vinh\n240220-23M08-EC2",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html",
+    "href": "modules/module9.html",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nStyle Transfer Exercise\nTA Khoa\nDue: 17 March, 2024  [solution]\n\n\n\nMain Lesson\nBasic Style Transfer\nDr. Vinh\n240306-23M09-MC\n\n\n\nMain Lesson\nMultimodal Style Transfer\nDr. Vinh\n240308-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n240310-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thái\n240317-23M09-MC\n\n\n\nMain Lesson\nGAN and DCGAN\nDr. Vinh\n240320-23M09-MC\n\n\n\nMain Lesson\nPix2Pix and CycleGAN\nDr. Vinh\n240322-23M09-MC\n\n\n\nExercise Session\nText to Image Synthesis with DCGAN\nTA Thái\n240324-23M09-MC\n[handout] - [solution]\n\n\nAssignment\nImage Inpainting with DDPMs\nTA Thái\n[handout] - [solution]\n\n\n\nMain Lesson\nDiffusion Models (1)\nDr. Đình Vinh\n240327-23M09-MC\nTutorial on Diffusion Models for Imaging and Vision\n\n\nMain Lesson\nDiffusion Models (2)\nDr. Đình Vinh\n240329-23M09-MC\n\n\n\nExercise Session\nDiffusion-based Image Inpainting\nTA Thái\n240331-23M09-MC\n[handout]-[solution]\n\n\nMain Lesson\nProject: VAE-based Image Colorization\nDr. Tài\n240403-23M09-MC\n\n\n\nProject Tutorial\nProject: Diffusion-based Image Colorization\nDr. Tài\n240407-23M09-MC\n[handout] - [solution]\n\n\nMain Lesson\nStable Diffusion\nDr. Đình Vinh\n240410-23M09-MC\n\n\n\nMain Lesson\nIntroduction to OpenAI’s Sora\nDr. Đình Vinh\n240412-23M09-MC\n\n\n\nProject Tutorial\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n240414-23M09-MC\n[handout] - [solution]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nTraining a minChatGPT\nTA Thái\n240406-23M10-EC1\n\n\n\nLLMs\nLLM Finetuning for Math Solver\nTA Thắng\n240413-23M10-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Pruning\nTA Bách\n240309-23M09-EC1\n\n\n\nMLOps\nMobile Deployment\nDr. Đình Vinh\n240316-23M09-EC1\n\n\n\nMLOps\nWeb Deployment\nDr. Đình Vinh\n240323-23M09-EC1\n\n\n\nMLOps\nDeployment as a Service (API)\nTA Thắng\n240330-23M09-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nSeminar: XAI\nDr. Anh Nguyen\n240405-23M09-MC",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html",
+    "href": "modules/module7.html",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nAssignment\nDomain Conversion Exercise\nTA Khoa\nDue: 24 Dec, 2023  [solution]\n\n\n\nMain Lesson\nDomain Conversion - Denoising and Segmentation\nDr. Vinh\n231220-23M07MC\n\n\n\nMain Lesson\nDomain Conversion - Colorization and Super Resolution\nDr. Vinh\n231222-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n231224-23M07MC\n\n\n\nAssignment\nObject Detection Project\nTA Hùng\nDue: 31 Dec, 2023  [solution]\n\n\n\nMain Lesson\nObject Detection (1)\nDr. Đình Vinh\n231227-23M07MC\n\n\n\nMain Lesson\nObject Detection (2)\nDr. Đình Vinh\n231229-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Hùng\n231231-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240103-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240105-23M07MC\n\n\n\nExercise Session\nTA-Exercise\nTA Hùng\n240107-23M07MC\n\n\n\nAssignment\nImbalanced Data Exercise\nDr. Vinh\nDue: 10 January, 2024  [solution]\n\n\n\nMain Lesson\nAdvanced Topic: Imbalanced Data\nDr. Vinh\n240110-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Self/semi-supervised Learning\nDr. Hưng\n240112-23M07MC\n[Exercise] - [Solution]\n\n\nMain Lesson\nAdvanced Topic: Knowledge Distillation\nDr. Hưng\n240114-23M07MC\n[Exercise] - [Solution]\n\n\nProject tutorial\nImage Project: Tracking by Detection\nTA Thắng\n240117-23M07MC\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (1)\nTA Huy\n240119-23M07MC\n[Exercise] - [Solution]\n\n\nProject tutorial\nImage Project: Medical Image Analysis (2)\nTA Huy\n240121-23M07MC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nPreview\nUNet\nTA Thái\n231219-23M07-EC2\n\n\n\nPreview\nObject Detection using Pretrained Models\nTA Thái\n231226-23M07-EC2\n\n\n\nPreview\nYolov1\nTA Thái\n240102-23M07-EC2\n\n\n\nPreview\nIntroduction to Imbalanced Data\nTA Thái\n240109-23M07-EC2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nResearch & Paper\nGroup Report (1)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nGroup Report (2)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nHow to Write a Paper (1)\nDr. Đình Vinh\n240106-23M07-EC1\n\n\n\nResearch & Paper\nHow to Write a Paper (2)\nDr. Đình Vinh\n240113-23M07-EC1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nSeminar\nAdvanced UNet and LLMs Introduction\nDr. Vinh\n231224-23M07-EC3\n\n\n\nSeminar\nMultimodal Language Models\n\n231231-23M07-EC3\n\n\n\nSeminar\nVisual Instruction Tuning (LlaVa) and QLoRA\n\n240107-23M07-EC3\n\n\n\nSeminar\nData Augmentation and Imbalanced Data\n\n240114-23M07-EC3\n\n\n\nSeminar\nRNN-based Forecasting and Toolformer\n\n240121-23M07-EC3",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html",
+    "href": "modules/module4.html",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "",
+    "text": "Hi, welcome to Module 4: Machine Learning and Data Science of the AIO2023 course. The main lessons of this module involves around traditional machine learning algorithms, ranging from simple to complex one such as kNN, Decision tree, Random Forest, XGBoost, and Support Vector Machines (SVMs). There are two projects, including one where we’d work with tabular type of data for the problem of heart disease protection. The second project is on Object detection.\nAs of the extra class for this module, it aims is to provide you with the knowledge involving around Large Language Models (LLMs), from the most fundamental knowledge to more recent techniques such as Prompting and Fine-tuning.",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html",
+    "href": "modules/module2.html",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "",
+    "text": "This website is still under construction. Some contents and functions might temporarily not be available or not working properly.",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#projects",
+    "href": "modules/module1.html#projects",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Projects",
+    "text": "Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#competition-training",
+    "href": "modules/module1.html#competition-training",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition Training",
+    "text": "Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#extra-class",
+    "href": "modules/module1.html#extra-class",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class",
+    "text": "Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#main-lessons",
+    "href": "modules/module1.html#main-lessons",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n08/05/23\n\nOnline Office Hour\nDr. Vinh\n\n\n\n\n28/04/23\nMain Lesson\nSinh hoạt lớp\nDr. Phúc\nslide\n\n\n\n01/05/23\nAssignment\nBasic Python Exercise\nTA Khoa\nDue: 07 May 2023 [solution]\n\n\n\n03/05/23\nMain Lesson\nBasic Python 1\nDr. Vinh\n230503 - M01ML01\n\n\n\n05/05/23\nMain Lesson\nBasic Python 2\nDr. Vinh\n230505 - M01ML02\n\n\n\n07/05/23\nExercise Session\nTA-Exercise\nTA Khoa\n230507 - M01ES01\n\n\n\n08/05/23\nAssignment\nData Structure Exercise\nDr. Vinh\nDue: 14 May 2023 [solution]\n\n\n\n10/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230510 - M01ML03\n\n\n\n12/05/23\nMain Lesson\nData Structure\nDr. Đình Vinh\n230512 - M01ML04\n\n\n\n14/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230514 - M01ES02\n\n\n\n14/05/23\nAssignment\nPython OOP Exercise\nDr. Đình Vinh\nDue: 21 May 2023 [solution]\n\n\n\n17/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230517 - M01ML05\nPrevious offering by Dr. Vinh\n\n\n19/05/23\nMain Lesson\nOOP with Python\nDr. Đình Vinh\n230519 - M01ML06\n\n\n\n21/05/23\nExercise Session\nTA-Exercise\nDr. Vinh\n230521 - M01ES03",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#project-handout-and-material",
+    "href": "modules/module1.html#project-handout-and-material",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Project handout and material",
+    "text": "Project handout and material\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n22/05/23\nProject handout\nObject Detection with YOLOv8 Project (Handout)\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nData Manipulation and Crawling Project (Handout)\nTA Thắng\n[solution]\n\n\n\n22/05/23\nProject handout\nChatGPT Applications Project (Handout)\nTA Thái\n[solution]\n\n\n\n24/05/23\nProject Tutorial\nImage Project: Yolov8 for Object Detection\nTA Thắng\n230524 - M01PT01\n\n\n\n26/05/23\nProject Tutorial\nData Manipulation using Python Libraries\nTA Thắng\n230526 - M01PT02\n\n\n\n28/05/23\nProject Tutorial\nText Project: ChatGPT-based Application\nTA Thái\n230528 - M01PT03\n\n\n\n23/05/23\nPython Support\nFor, List and Dictionary\nTA Tiềm\n230523 - M02CR01",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#competition-training-1",
+    "href": "modules/module1.html#competition-training-1",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Competition training",
+    "text": "Competition training\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n11/05/23\nCompetition\nData Visualization\nTA Hùng\n230511 - M01AC01\n\n\n\n18/05/23\nCompetition\nCompetition tasks and metrics\nTA Hùng\n230518 - M01AC02\n\n\n\n25/05/23\nCompetition\nDesign Validation\nTA Hùng\n230525 - M01AC03",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module1.html#extra-class-algorithms-and-complexity",
+    "href": "modules/module1.html#extra-class-algorithms-and-complexity",
+    "title": "Module 1 - Introduction to Python Programming",
+    "section": "Extra class: Algorithms and Complexity",
+    "text": "Extra class: Algorithms and Complexity\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n06/05/23\nAlgorithms & Complexity\nBig-O (Time analysis)\nTA Thái\n230506 - M01EC01\n\n\n\n13/05/23\nAlgorithms & Complexity\nBrute-force Exhaustive\nTA Thái\n230513 - M01EC02\n\n\n\n20/05/23\nAlgorithms & Complexity\nRecursion and Two Pointer\nTA Thái\n230520 - M01EC03\n\n\n\n27/05/23\nAlgorithms & Complexity\nDynamic Programming\nTA Thái\n230527 - M01EC04",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 1"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#main-lessons",
+    "href": "modules/module2.html#main-lessons",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n30/05/23\nAssignment\nInterpolation and Application Exercises\nDr. Đình Vinh\n[solution]\n\n\n\n31/05/23\nMain Lesson\nConstruct loss functions with different targets\nDr. Vinh\n230531 - M02ML01\n\n\n\n02/06/23\nMain Lesson\nInterpolation and Image upsampling\n\n230602 - M02ML02\n\n\n\n04/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230604 - M02ES01\n\n\n\n05/06/23\nAssignment\nCalculus Exercise\n\n[solution]\n\n\n\n07/06/23\nMain Lesson\nUnderstanding Derivative and Gradient\nDr. Vinh\n230607 - M02ML03\n\n\n\n09/06/23\nMain Lesson\nEdge Detection and Gradient-based Optimization\n\n230609 - M02ML04\n\n\n\n11/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230611 - M02ES02\n\n\n\n14/06/23\nMain Lesson\nLinear Regression (1)\nDr. Vinh\n230614 - M02ML05\n\n\n\n16/06/23\nMain Lesson\nLinear Regression (2)\n\n230616 - M02ML06\n\n\n\n18/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230618 - M02ES03\n\n\n\n21/06/23\nMain Lesson\nVectorization for Linear Regression (1)\nDr. Vinh\n230621 - M02ML07\n\n\n\n23/06/23\nMain Lesson\nVectorization for Linear Regression (2)\n\n230623 - M02ML08\n\n\n\n25/06/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230625 - M02ES04\n\n\n\n26/06/23\nAssignment\nCosine Background subtraction Exercise\n\n[solution]\n\n\n\n28/06/23\nMain Lesson\nBasic Linear Algebra and Its Applications\nDr. Vinh\n230628 - M02ML09\n\n\n\n30/06/23\nMain Lesson\nCosine Similarity and Decomposition\n\n230630 - M02ML10\n\n\n\n02/07/23\nExercise Session\nTA Exercise\nDr. Đình Vinh\n230702 - M02ES05",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#project-tutorial",
+    "href": "modules/module2.html#project-tutorial",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Project Tutorial",
+    "text": "Project Tutorial\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n09/07/23\nProject Tutorial\nSVD and its Applications\nDr. Đình Vinh\n230709 - M02ET01\n\n\n\n10/07/23\nProject handout\nImage Project: Depth Information Reconstruction\nTA Thắng\n[proposal]\n\n\n\n10/07/23\nProject handout\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n[solution]\n\n\n\n10/07/23\nProject handout\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n[proposal]\n\n\n\n12/07/23\nProject Tutorial\nTabular Data Project: Sales Prediction (Linear and non-linear regression)\nTA Thái\n230716 - M02PT03\n\n\n\n14/07/23\nProject Tutorial\nText Project: Text Retrieval (using Pretrained Embedding)\nTA Thắng\n230714 - M02PT02\n\n\n\n16/07/23\nProject Tutorial\nImage Project: Depth Information Reconstruction\nTA Thắng\n230712 - M02PT01",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#python-tutorial-sessions",
+    "href": "modules/module2.html#python-tutorial-sessions",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Python Tutorial Sessions",
+    "text": "Python Tutorial Sessions\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n30/05/23\nPython Support\nList for 2D Data\nTA Tiềm\n230530 - M02CR02\n\n\n\n06/06/23\nPython Support\nList for 3D data\n\n230606 - M02CR03\n\n\n\n13/06/23\nPython Support\nArray 1D using NumPy\n\n230613 - M02CR04\n\n\n\n20/06/23\nPython Support\nArray 2D and 3D using NumPy\n\n230620 - M02CR05\n\n\n\n27/06/23\nPython Support\nBasic Numpy\n\n230627 - M02CR06",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#extra-classes-database-and-sql",
+    "href": "modules/module2.html#extra-classes-database-and-sql",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Extra Classes: Database and SQL",
+    "text": "Extra Classes: Database and SQL\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n03/06/23\nDatabase and SQL\nDatabase-SQL (1)\nTA Bảo\n230603 - M02EC01\n\n\n\n10/06/23\nDatabase and SQL\nDatabase-SQL (2)\nTA Bảo\n230611 - M02ES02\n\n\n\n17/06/23\nDatabase and SQL\nDatabase-SQL (3)\nTA Bảo\n230617 - M02EC03\n\n\n\n24/06/23\nNoSQL\nDatabase-NoSQL\nTA Thái\n230624 - M02EC04\n\n\n\n01/07/23\nNoSQL\nDatabase-NoSQL (2)\nTA Thái\n230701 - M02EC05\n\n\n\n08/07/23\nBig Data\nSQL for Big Data\nTA Thắng\n230708 - M02EC06",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#competition",
+    "href": "modules/module2.html#competition",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Competition",
+    "text": "Competition\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n01/06/23\nCompetition\nHyper-parameter optimization\nTA Hùng\n230601 - M02AC01\n\n\n\n08/06/23\nCompetition\nEnsembling (Voting, Averaging, and Stacked Generalization)\nTA Hùng\n230608 - M02AC02\n\n\n\n15/06/23\nCompetition\nAugmentation Strategies and Albumentation\nTA Hùng\n230615 - M02AC03\n\n\n\n22/06/23\nCompetition\nNestquant\nTA Hùng\n230622 - M02AC04\n\n\n\n29/06/23\nCompetition\nOOD-CV\nTA Hùng\n230629 - M02AC05\n\n\n\n06/07/23\nCompetition\nVision Transformer\nTA Hùng\n230706 - M02AC06",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "modules/module2.html#summer-school-on-deep-learning",
+    "href": "modules/module2.html#summer-school-on-deep-learning",
+    "title": "Module 2 - Calculus and Linear Algebra for AI",
+    "section": "Summer School on Deep Learning",
+    "text": "Summer School on Deep Learning\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n05/07/23\nSummer school on Deep Learning\nVIASM Summer school on Recent Advances in Deep Learning\nMany\nSildes",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 2"
+    ]
+  },
+  {
+    "objectID": "ml_glossary/ml-glossary.html",
+    "href": "ml_glossary/ml-glossary.html",
+    "title": "ML Glossary",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Misc",
+      "ML Glossary"
+    ]
+  },
+  {
+    "objectID": "ml_glossary/information-theory/entropy.html",
+    "href": "ml_glossary/information-theory/entropy.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ml-glossary/ml-glossary.html",
+    "href": "ml-glossary/ml-glossary.html",
+    "title": "ML Glossary",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "blogs/blogs.html",
+    "href": "blogs/blogs.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "CLIP Reading List\n\n\n\n\n\n\nreading-list\n\n\n\nA compilation of research papers, blog posts, … about CLIP.\n\n\n\n\n\nSep 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMultimodal Machine Learning\n\n\n\n\n\n\nmultimodal, 11-777\n\n\n\n\n\n\n\n\n\nSep 23, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nTokenization, Word Embedding, and Data Preparation for LLMs\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\nOct 5, 2024\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "crumbs": [
+      "Blogs",
+      "Others",
+      "Blogs"
+    ]
+  },
+  {
+    "objectID": "news/ainews.html",
+    "href": "news/ainews.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "resources/resources.html",
+    "href": "resources/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Graduate life\n\n\n\n Back to top",
+    "crumbs": [
+      "Blogs",
+      "Others",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources/grad-life/grad-life.html",
+    "href": "resources/grad-life/grad-life.html",
+    "title": "Graduate life resources",
+    "section": "",
+    "text": "Preparing\n\nHow to prepared for an application interview\nThe [A-Z] of contacting professors for graduate admissions\nWhat You Need to Know Before Considering a PhD (by fast.ai)\n Demystifying ML PhD Admissions to US Universities\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/grad-life/interview.html",
+    "href": "resources/grad-life/interview.html",
+    "title": "How to prepare graduate school interview?",
+    "section": "",
+    "text": "Be prepared\nSome faculty may say “it’s just chatting”. THEY LIED! They will seriously evaluate the interaction with you during the call and form their opinions. Prepare slides summarizing your work and practice commonly asked questions (e.g., research, goals, why here).\nExpress interest\nDept. often can only admit a limited number of applicants. So they have to strategize who to give out the offers. The level of interests you express plays an important role. You won’t get an offer if the dept. feels that the chance of recruiting you is low.\nBe organized\nThe email correspondences with the faculty send out signals of how organized you are. Send concise, clear, well-formatted emails. Share your availability with specific time slots (converted to their timezone). Help them better manage their time.\nAsk questions\nThe interview is bi-directional. You are also interviewing with the faculty/university. Do your homework. Ask specific questions that matter most to you (see also list of potential questions).\nBe yourself\nDon’t need to freak out. You don’t need to change anything or wear formal suit for these interviews. The potential advisor is interested in knowing about you and your research. Show your true color.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/grad-life/email.html",
+    "href": "resources/grad-life/email.html",
+    "title": "The [A-Z] of contacting professors for graduate admissions",
+    "section": "",
+    "text": "Contacting professors before/ during the admissions cycle is no longer a “hack” but more of a necessity. The competition to secure seats in different programs all over the world is increasing every year which makes this so important. I will be covering a few points one needs to take care of while sending out emails. I have hugely improved my own emails over the past 2 years. This year, I will be starting a fully-funded MSc+PhD at the University of Edinburgh.\nFirst of all, let’s briefly talk about the benefits of contacting professors\n\nIt makes them aware of you and about the fact that you are applying in this admissions cycle.\nIt gives your profile a chance to stand out amongst the heap of applications.\nIt gives you an idea if the professor is looking for new graduate students (MS/ PhD) or if applying to them would be worthwhile\nIt is possible that the professor loved your profile but simply doesn’t have the funding or space in their group.\n\nThere are a few main ideas that one needs to keep in mind while sending out emails\n\nProfessors are extremely busy and their inboxes are flooded with requests. Hence, you need to be brief and clear with your request/ questions.\n\nCheck this tweet by Prof. Gautam Kamath at Waterloo to get an idea about how many emails professors get in a day\nProfessors CANNOT admit your application for a program. This decision is made by the admissions committee. The professors can merely forward your application with interest to them which increases your chances."
+  },
+  {
+    "objectID": "resources/grad-life/email.html#section",
+    "href": "resources/grad-life/email.html#section",
+    "title": "The [A-Z] of contacting professors for graduate admissions",
+    "section": "1",
+    "text": "1\nu/ConfusedCuddlefish had some great points to add\nFor some programs, it is required that a professor vouch and agree to work with a student for them to be admitted, so professors can have their own mini-application process to screen out their list of candidates before your application is even sent to the department for the regular admissions screening. A piece of advice for prospective students is as soon while you’re looking for programs to apply to, pay close attention to their requirements and if you need faculty approval for admission.\nAlso, as for following up on emails, I’ve found that waiting two weeks is a good standard metric, and you can just reply to your original email to keep the same email thread and do:\n“Hello Dr. X, I am greatly interested in your work and would love to talk with you to discuss your research and whether or not you are seeking new graduate students for the  semester.”\nIf you’re emailing during a known exam season, I also found that if I asked if there was a better time to contact them, I seemed to have more responses (anecdotally).\nIf you have a Gmail account, there is a schedule send function that I found immensely helpful to be able to write emails at any time and send them precisely when I wanted to. Again anecdotal but I had a lot more success getting replies and quick replies when I scheduled emails to be sent either late Monday morning or Tuesday morning."
+  },
+  {
+    "objectID": "resources/grad-life/email.html#section-1",
+    "href": "resources/grad-life/email.html#section-1",
+    "title": "The [A-Z] of contacting professors for graduate admissions",
+    "section": "2",
+    "text": "2\nA few thoughts, not necessarily in order of the OP:\n– I wonder if some of this is cultural? The following critiques apply to the U.S.\n– This might be U.S.-centric, but “highly motivated” impresses roughly zero people. It is also redundant. You are demonstrating your motivation by reaching out to the professor.\n– Including links in the initial email might trip spam detection, sending your email to the trash folder. I also seriously doubt a professor is going to bother to look, given how busy they are. If they are curious enough, they will ask. Otherwise, they will just take your word for it.\n– Asking a professor if they will be taking on student[s] is a good idea, but asking if they know which Department you should apply to in the initial inquiry is fishing. If they bother to respond, they will either tell you out-right where you might be a better fit, or, you can pop this question in a later email once rapport has been established. As for asking about the qualities and skills they are looking for, once again this can come up in further correspondence, but is a bit much for the initial email. At least in the U.S., anyways. If you are an international applicant, it might be okay.\n– Including links to the professor’s own works is…. why? They know what they wrote, and when. In the U.S., they will likely have a [short] list of published works on their websites or lab pages. It is also in their CVs, which are also posted on university websites.\n– Pick one: either you are motivated to pursue the MS or the Ph.D. Saying you are ‘highly motivated to pursue an MS/Ph.D.’ sounds like you are not sure which, or that you are desperate. In your case (the OPs), you applied to a combined MS/Ph.D. program, but this is the Internet, and Reddit: some will copy it verbatim (hopefully changing the name, of course). If you are unsure, just state that you are unsure and are considering the MS first. Some professors do not take on Master’s students and some Ph.D. programs prefer to see an MS first.\n– “Cold” inquires are perfectly okay, especially if you mention you are doing so as a first step towards applying.\n– For many of the subfields within Biology, in particular Ecology (where it is mostly required) and for ecology-related fields (marine biology, biological oceanography, animal behavior, zoology, and so on), individual professors can and do admit students directly. In reality, you are being hired by the professor to work in their lab, for them.\n– Once again this might be specific to the U.S.: contacting professors in some fields is the norm (and may be required), while in others it is still unheard of. If you are interested in pursuing an advanced degree in STEM, go ahead and do it. If not looking at STEM, I would suggest contacting the program director or department chair and ask if it would be appropriate before sending off emails.\nA caveat to this is that most professors seem to like talking about their associated programs. So, an initial inquiry into the program in general might be okay."
+  },
+  {
+    "objectID": "resources/research/ernst-writingpaper.html",
+    "href": "resources/research/ernst-writingpaper.html",
+    "title": "How to write a technical paper or a research paper",
+    "section": "",
+    "text": "Know your message, and stay on message Which details to include Make the organization and results clear Getting started: overcoming writer’s block and procrastination Brevity Writing style Figures Computer program source code Naming Numbers and measurements Processing data Related work Feedback When to submit your paper for publication Responding to conference reviews Rejection Norman Ramsey’s advice Other resources This document describes several simple, concrete ways to improve your writing, by avoiding some common mistakes. The end of this document contains more resources for improving your writing.\nSome people believe that writing papers, giving talks, and similar “marketing” activities are not part of research, but an adjunct to it or even an undesirable distraction. This view is inaccurate. The purpose of research is to increase the store of human knowledge, and so even the very best work is useless if you cannot effectively communicate it to the rest of the world. If a paper is poorly written, then readers might conclude you spent as little effort on the research that it describes.\nEqually importantly, writing papers and giving talks will clarify your thinking and thereby improve your research. You may be surprised how difficult it is to clearly communicate your ideas and contributions; doing so will force you to understand them more deeply and enable you to improve them.\nKnow your message, and stay on message The goal of writing a paper is to change people’s behavior: for instance, to change the way they think about a research problem or to convince them to use a new approach. Determine your goal (also known as your thesis), and focus the paper around that goal.\nAs a general rule, your paper needs to convince the audience of three key points. If any of these is missing or unclear, the paper will not be compelling.\nThe problem is important. The problem has a significant impact and consequences. You can buttress your argument by showing that others consider the problem important. The problem is hard. Explain that obvious techniques and existing approaches do not suffice. Showing what others have tried can be effective here. You have solved the problem. This is often demonstrated via experiments. Keep in mind how you expect the behavior of readers to change once they appreciate your contributions. You’ll also need to convince readers that your contributions are novel. When expressing this, it is helpful to explain why no one else thought of your approach before (or why, if they thought of it, they would have rejected the approach) , and whether similar insights apply to other problems. Before you write your paper, you need to understand your audience. Who will read your paper? What are their backgrounds, motivations, interests, and beliefs? What are the key points you want a reader person to take away from your paper? Once you know the thesis and audience, you can determine what points your document should make to achieve its purpose.\nFor each point in your paper, you need to explain both what and why. Start with what, but don’t omit why. For example, it is not enough to state how an algorithm works; you should explain why it works in that way, or why another way of solving the problem would be different. Similarly, it is not sufficient to present a figure or facts. You must also ensure that reader understands the significance or implications of the figure and what parts of it are most important.\nWhich details to include Your purpose is to communicate specific ideas, and everything about your paper should contribute to this goal. If any part of the paper does not support your main point, then delete or change that part. You must be ruthless in cutting every irrelevant detail, however true it may be. Everything in your paper that does not support your main point distracts from it.\nWrite for the readers, rather than writing for yourself. In particular, think about what matters to the intended audience, and focus on that. It is not necessarily what you personally find most intriguing.\nA common mistake is to focus on what you spent the most time on. Do not write your paper as a chronological narrative of all the things that you tried, and do not devote space in the paper proportionately to the amount of time you spent on each task. Most work that you do will never show up in any paper; the purpose of infrastructure-building and exploration of blind alleys is to enable you to do the small amount of work that is worth writing about. Another way of stating this is that the purpose of the paper is not to describe what you have done, but to inform readers of the successful outcome or significant results, and to convince readers of the validity of those conclusions.\nLikewise, do not dwell on details of the implementation or the experiments except insofar as they contribute to your main point. This is a particularly important piece of advice for software documentation, where you need to focus on the software’s benefits to the user, and how to use it, rather than how you implemented it. However, it holds for technical papers as well — and remember that readers expect different things from the two types of writing!\nThe audience is interested in what worked, and why, so start with that. If you discuss approaches that were not successful, do so briefly, and typically only after you have discussed the successful approach. Furthermore, the discussion should focus on differences from the successful technique, and if at all possible should provide general rules or lessons learned that will yield insight and help others to avoid such blind alleys in the future.\nWhenever you introduce a strawman or an inferior approach, say so upfront. A reader will (and should) assume that whatever you write in a paper is something you believe or advocate, unless very clearly marked otherwise. A paper should never first detail a technique, then (without forewarning) indicate that the technique is flawed and proceed to discuss another technique. Such surprises confuse and irritate readers. This mistake is often called “leading the reader down the garden path”.\nWhen there are multiple possible approaches to a problem, it is preferable to give the best or successful one first. Oftentimes it is not even necessary to discuss the alternatives. If you do, they should generally come after, not before, the successful one. Your paper should give the most important details first, and the less important ones afterward. Its main line of argument should flow coherently rather than being interrupted. It can be acceptable to state an imperfect solution first (with a clear indication that it is imperfect) if it is a simpler version of the full solution, and the full solution is a direct modification of the simpler one. Less commonly, it can be acceptable to state an imperfect solution first if it is an obvious solution that every reader will assume is adequate; but use care with this rationalization, since you are usually wrong that every reader will jump to the given conclusion.\nMake the organization and results clear A paper should communicate the main ideas of your research (such as the techniques and results) early and clearly. Then, the body of the paper can expand on these points; a reader who understands the structure and big ideas can better appreciate the details. Another way of saying this is that you should give away the punchline. A technical paper is not a joke or a mystery novel. The reader should not encounter any surprises, only deeper explanations of ideas that have already been introduced. It’s particularly irritating when an abstract or introduction states, “We evaluated the relationship between baldness and beekeeping”, with the key results buried pages later. A better abstract would say, “Male beekeepers are 25% more likely to be bald (p=.04), but there is no statistically significant correlation for female beekeepers.”\nThe same advice applies at the level of sections and paragraphs. It is a bad approach to start with a mass of details and only at the end tell the reader what the main point was or how the details related to one another. Instead, state the point first and then support it. The reader is more likely to appreciate which evidence is important and why, and is less likely to become confused or frustrated.\nFor each section of the paper, consider writing a mini-introduction that says what its organization is, what is in each subpart, and how the parts relate to one another. For the whole paper, this is probably a paragraph. For a section or sub-section, it can be as short as a sentence. This may feel redundant to you (the author), but readers haven’t spent as much time with the paper’s structure as you have, so they will truly appreciate these signposts that orient them within your text.\nSome people like to write the abstract, and often also the introduction, last. Doing so makes them easier to write, because the rest of the paper is already complete and can just be described. However, I prefer to write these sections early in the process (and then revise them as needed), because they frame the paper. If you know the paper’s organization and outlook, then writing the front matter will take little effort. If you don’t, then it is an excellent use of your time to determine that information by writing the front matter. To write the body of the paper without knowing its broad outlines will take more time in the long run. Another way of putting this is that writing the paper first will make writing the abstract faster, and writing the abstract first will make writing the paper faster. There is a lot more paper than abstract, so it makes sense to start with that and to clarify the point of the paper early on.\nIt is a very common error to dive into the technical approach or the implementation details without first appropriately framing the problem and providing motivation and background. Readers need to understand what the task is before they are convinced that they should pay attention to what you are saying about it. You should first say what the problem or goal is, and — even when presenting an algorithm — first state what the output is and probably the key idea, before discussing steps. Avoid providing information that isn’t useful to readers/users. It just distracts from the important content.\nGetting started: overcoming writer’s block and procrastination Some writers are overwhelmed by the emptiness of a blank page or editor buffer, and they have trouble getting started with their writing. Don’t worry! Here are some tricks to help you get started. Once you have begun, you will find it relatively easier to revise your notes or first draft. The key idea is to write something, and you can improve it later.\nStart verbally. Explain what the paper needs to say to another person. After the conversation is over, write down what you just said, focusing on the main points rather than every word you spoke. Many people find it easier to speak than to write. Furthermore, getting feedback and giving clarifications will help you discover problems with your argument, explanation, or word choice.\nOutline. You may not be ready to write full English paragraphs, but you can decide which sections your paper will have and give them descriptive titles. Once you have decided on the section structure, you can write a little outline of each section, which indicates the subsection titles. Now, expand that into a topic sentence for each paragraph. At this point, since you know the exact topic of each paragraph, you will find the paragraph easy to write.\nStream-of-consciousness notes. Write down everything that you know, in no particular order and with no particular formatting. Afterward, organize what you wrote thematically, bringing related points together. Eventually, convert it into an outline and proceed as above. While writing notes, use phrases/keywords, not complete sentences. The phrases are quicker to write and less likely to derail your brainstorming; they are easier to organize; and you will feel less attached to them and more willing to delete them.\nDivide and conquer. Rather than trying to write your entire document, choose some specific part, and write just that part. Then, move on to another part.\nRe-use. Find other text that you have written on the topic and start from that. An excellent source is your progress reports — you are writing them, aren’t you? This can remind you what was hard or interesting, or of points that you might otherwise forget to make. You will rarely want to re-use text verbatim, both because you can probably convey the point better now, and also because writing for different audiences or in different contexts requires a different argument or phrasing. For example, a technical paper and a technical talk have similar aims but rather different forms.\nYou must be willing to delete and/or rewrite your notes and early drafts. If you wrote something once, you can write it again (probably better!). Early on, the point is to organize your ideas, not to create finished sentences.\nBrevity Be brief. Make every word count. If a word does not support your point, cut it out, because excess verbiage and fluff only make it harder for the reader to appreciate your message. Use shorter and more direct phrases wherever possible.\nMake your writing crisp and to the point. Eliminate any text that does not support your point. Here is one way you might go about this; it is time-consuming but extremely effective. First, examine each section of the paper in turn and ask what role it serves and whether it contributes to the paper’s main point. If not, delete it. Next, within each section, examine each paragraph. Ask whether that paragraph has a single point. If not, rewrite the paragraph. Also ask whether that point contributes to the goals of the section. If not, then delete the paragraph. Next, within each paragraph, examine each sentence. If it does not make a single, clear point that strengthens the paragraph, delete or rewrite it. Finally, within each sentence, examine each word, and delete or replace those that do not strengthen their point. You will need to repeat this entire process multiple times, keeping a fresh perspective on the paper.\nSome people find it easier to follow this approach bottom-up, first cutting/rewriting words, then sentences, etc.\nWriting style Passive voice has no place in technical writing. It obscures who the actor was, what caused it, and when it happened. Use active voice and simple, clear, direct phrasing.\nFirst person is rarely appropriate in technical writing.\nFirst person is appropriate when describing something that the author of the paper did manually. Recall that your paper should not be couched as a narrative. Do not use “we” to mean “the author and the reader” or “the paper”. For example, do not write “In this section, we …”. Do not use “we” to describe the operation of a program or system. “We compute a graph” makes it sound like the authors did it by hand. As a related point, do not anthropomorphize computers: they hate it. Anthropomorphism, such as “the program thinks that …”, is unclear and vague. Avoid puffery, self-congratulation, superlatives, and subjective or value judgments: give the objective facts and let the reader judge. Avoid vague terms like “sizable” and “significant” (which are also subjective). Don’t overuse the word “novel”. When I see a paper that is full of these, my rule of thumb is that the paper is trying too hard to cover up for scanty evidence.\nDo not use words like “clearly”, “easily”, “obviously”, and “trivially”, as in “Obviously, this Taylor series sums to π.” If the point is really obvious, then you are just wasting words by pointing it out. And if the point is not obvious to readers who are not intimately familiar with the subject matter the way you are, then you are offending readers by insulting their intelligence, and you are demonstrating your own inability to communicate the intuition.\nPrefer singular to plural number. In “sequences induce graphs”, it is not clear whether the two collections are in one-to-one correspondence, or the set of sequences collectively induces a set of graphs; “each sequence induces a graph” avoids this confusion. Likewise, in “graphs might contain paths”, it is unclear whether a given graph might contain multiple paths, or might contain at most one path.\nWhen describing an experiment or some other event or action that occurred in the past, use past tense. For example, the methodology section might say “We ran the program”. It would be ungrammatical and confusing to use present tense, as in “We run the program”. Present tense is for ongoing events (“I write this letter to inform you…”) or regular events (“I brush my teeth each day”), but not past events (“Yesterday, I eat dinner with my family”). It is also correct to say “Our methodology was to run the program”, where you use past tense “was” and the infinitive “to run”.\nWhen describing the paper itself, use present tense. “This paper shows that …”. The reason for this is that the reader is experiencing the paper in real time.\nAvoid gratuitous use of the future tense “will …”, as in, “switching the red and green wires will cause the bomb to explode”. It is unclear when the action will occur. If it is an immediate effect, use the shorter and more direct “switching the red and green wires causes the bomb to explode”.\nUse “previous work” instead of “existing work”. Your work exists, so “existing work” would refer to it as well.\nIn a list with 3 or more elements list, put a serial comma between each of the items (including the last two). As a simple example of why, consider this 3-element grocery list written without the clarifying last comma: “milk, macaroni and cheese and crackers”. It’s not clear whether that means { milk, macaroni and cheese, crackers } or { milk, macaroni, cheese and crackers }. As another example, “I would like to thank my parents, Rene Descartes and Ayn Rand,” suggests rather unusual parentage, whereas “I would like to thank my parents, Rene Descartes, and Ayn Rand,” shows a debt to four people. I’ve seen real examples that were even more confusing than these.\nIn English, compound adjectives are hyphenated (except those whose first words end with “ly”, in some style guides) but compound nouns are not. Consider “the semantics provide name protection” versus “the name-protection semantics”.\nPrefer unambiguous words to ambiguous ones. Do not use “as” or “since” to mean “because”. Do not use “if” to mean “whether”.\nUse quotations sparingly. A clear paraphrase of the points that are relevant to your own work (along with a proper citation) is usually better than a long quotation from a previous publication.\nAvoid third-person pronouns when you can. The old standard was “he”, which is masculine chauvinist. The new standard is “he or she”, which can be viewed as heteronormative and which some people find clumsy. An emerging standard is “they” as a first-person singular pronoun, which is inclusive but grammatically incorrect and confusing (see comments above about singular vs. plural number).\nSome of the suggestions in this document are about good writing, and that might seem secondary to the research. But writing more clearly will help you think more clearly and often reveals flaws (or ideas!) that had previously been invisible even to you. Furthermore, if your writing is not good, then either readers will not be able to comprehend your good ideas, or readers will be (rightly) suspicious of your technical work. If you do not (or cannot) write well, why should readers believe you were any more careful in the research itself? The writing reflects on you, so make it reflect well.\nFigures Use figures! Different people learn in different ways, so you should complement a textual or mathematical presentation with a graphical one. Even for people whose primary learning modality is textual, another presentation of the ideas can clarify, fill gaps, or enable the reader to verify his or her understanding. Figures can also help to illustrate concepts, draw a skimming reader into the text (or at least communicate a key idea to that reader). Figures make the paper more visually appealing.\nIt is extremely helpful to give an example to clarify your ideas: this can make concrete in the reader’s mind what your technique does (and why it is hard or interesting). A running example used throughout the paper is also helpful in illustrating how your algorithm works, and a single example permits you to amortize the time and space spent explaining the example (and the reader’s time in appreciating it). It’s harder to find or create a single example that you re-use throughout the paper, but it is worth it.\nA figure should stand on its own, containing all the information that is necessary to understand it. Good captions contain multiple sentences; the caption provides context and explanation. For examples of good, informative captions, see the print editions of magazines such as Scientific American and American Scientist. The caption should state what the figure illustrates or what conclusion a reader should draw from it. Don’t write an obvious description of what the figure is, such as “Code example”. Never write a caption like “The Foobar technique”; the caption should also say what the Foobar technique is, what it is good for, or how it works. The caption may also need to explain the meaning of columns in a table or of symbols in a figure. However, it’s even better to put that information in the figure proper; for example, use labels or a legend. When the body of your paper contains information that belongs in a caption, there are several negative effects. The reader is forced to hunt all over the paper in order to understand the figure. The flow of the writing is interrupted with details that are relevant only when one is looking at the figure. The figures become ineffective at drawing in a reader who is scanning the paper — an important constituency that you should cater to!\nAs with naming, use pictorial elements consistently. Only use two different types of arrows (or boxes, shading, etc.) when they denote distinct concepts; do not introduce inconsistency just because it pleases your personal aesthetic sense. Almost any diagram with multiple types of elements requires a legend (either explicitly in the diagram, or in the caption) to explain what each one means; and so do many diagrams with just one type of element, to explain what it means.\nSome writers label all the types of figures differently — some as “figure”, others as “table” or “graph” or “picture”. This differentiation has no benefits, but it does have a drawback: it is very hard for a reader to find “table 3”, which might appear after “figure 7” but before “freehand drawing 1”. You should simply call them all figures and number them sequentially. The body of each figure might be a table, a graph, a diagram, a screenshot, or any other content.\nPut figures at the top of the page, not in the middle or bottom. If a numbered, captioned figure appears in the middle or at the bottom of a page, it is harder for readers to find the next paragraph of text while reading, and harder to find the figure from a reference to it.\nAvoid bitmaps, which are hard to read. Export figures from your drawing program in a vector graphics format. If you must use a bitmap (which is only appropriate for screenshots of a tool), then produce them at very high resolution. Use the biggest-resolution screen you can, and magnify the portion you will capture.\nDon’t waste text in the paper (and tax the reader’s patience) regurgitating information that is expressed more precisely and concisely in a figure. For example, the text should not repeat the numbers from a table or graph. Text in the paper should add insight or explanations, or summarize the conclusions to be drawn from the data in the figure.\nComputer program source code Your code examples should either be real code, or should be close to real code. Never use synthetic examples such as procedures or variables named foo or bar. Made-up examples are much harder for readers to understand and to build intuition regarding. Furthermore, they give the reader the impression that your technique is not applicable in practice — you couldn’t find any real examples to illustrate it, so you had to make something up.\nAny boldface or other highlighting should be used to indicate the most important parts of a text. In code snippets, it should never be used to highlight syntactic elements such as “public” or “int”, because that is not the part to which you want to draw the reader’s eye. (Even if your IDE happens to do that, it isn’t appropriate for a paper.) For example, it would be acceptable to use boldface to indicate the names of procedures (helping the reader find them), but not their return types.\nNaming Give each concept in your paper a descriptive name to make it more memorable to readers. Never use terms like “approach 1”, “approach 2”, or “our approach”, and avoid acronyms when possible. If you can’t think of a good name, then quite likely you don’t really understand the concept. Think harder about it to determine its most important or salient features.\nIt is better to name a technique (or a paper section, etc.) based on what it does rather than how it does it.\nUse terms consistently and precisely. Avoid “elegant variation”, which uses different terms for the same concept to avoid boredom on the part of the reader or to emphasize different aspects of the concept. While elegant variation may be appropriate in poems, novels, and some essays, it is not acceptable in technical writing, where you should clearly define terms when they are first introduced, then use them consistently. If you switch wording gratuitously, you will confuse the reader and muddle your point. A reader of a technical paper expects that use of a different term flags a different meaning, and will wonder what subtle difference you are trying to highlight. Thus, don’t confuse the reader by substituting “program”, “library”, “component”, “system”, and “artifact”, nor by conflating “technique”, “idea”, “method” and “approach”, nor by switching among “program”, “code”, and “source”. Choose the best word for the concept, and stick with it.\nDo not use a single term to refer to multiple concepts. If you use the term “technique” for every last idea that you introduce in your paper, then readers will become confused. This is a place that use of synonyms to distinguish concepts that are unrelated (from the point of view of your paper) is acceptable. For instance, you might always use “phase” when describing an algorithm but “step” when describing how a user uses a tool.\nWhen you present a list, be consistent in how you introduce each element, and either use special formatting to make them stand out or else state the size of the list. Don’t use, “There are several reasons I am smart. I am intelligent. Second, I am bright. Also, I am clever. Finally, I am brilliant.” Instead, use “There are four reasons I am smart. First, I am intelligent. Second, I am bright. Third, I am clever. Fourth, I am brilliant.” Especially when the points are longer, this makes the argument much easier to follow. Some people worry that such consistency and repetition is pedantic or stilted, or it makes the writing hard to follow. There is no need for such concerns: none of these is the case. It’s more important to make your argument clear than to achieve “elegant variation” at the expense of clarity.\nChoose good names not only for the concepts that you present in your paper, but for the document source file. Don’t name the file after the conference to which you are submitting (the paper might be rejected) or the year. Even if the paper is accepted, such a name won’t tell you what the paper is about when you look over your files in later years. Instead, give the paper or its folder/directory a name that reflects its content. Another benefit is that this will also lead you to think about the paper in terms of its content and contributions.\nHere is a piece of advice that is specific to computing: do not use the vague, nontechnical term “bug”. Instead, use one of the standard terms fault, error, or failure. A fault is an underlying defect in a system, introduced by a human. A failure is a user-visible manifestation of the fault or defect. In other circumstances, “bug report” may be more appropriate than “bug”.\nNumbers and measurements Digits of precision:\nDon’t report more digits of precision than the measurement process reliably and reproducibly produces. The 3rd or 4th digit of precision is rarely accurate and generalizable; if you don’t have confidence that it is both repeatable and generalizable to new experiments, omit it. Another way to say this is that if you are not confident that a different set of experiments would produce all the same digits, then don’t report so much precision. Don’t report more digits of precision than needed to convey your message. If the difference between 4.13 and 4 will not make a difference in convincing readers, then don’t report the extra digits. Reporting extra digits can distract readers from the larger trends and the big picture. Including an inappropriate number of digits of precision can cast suspicion on all of your results, by giving readers the impression that you are statistically naive. Use a consistent number of digits of precision. If the measured data are 1.23, 45.67, and 891.23, for example, you might report them as 1.23, 45.7, and 891, or as 1.2, 46, and 890, or as 1, 50, and 900. (An exception is when data are known to sum to a particular value; I would report 93% and 7% rather than either 93% and 7.4% or 90% and 7%. Often it’s appropriate to report percentages as whole numbers rather than using the same precision.) If you do any computations such as ratios, your computations should internally use the full precision of your actual measurements, even though your paper reports only a limited number of digits of precision. If a measurement is exact, such as a count of items, then it can be acceptable to give the entire number even if it has many digits; by contrast, timings and other inexact measurements should always be reported with a limited number of digits of precision. Do not confuse relative and absolute measurements. For instance, suppose your medicine cures 30% of patients, and the placebo cures 25% of patients. You could report that your medicine’s cure rate is .3, the placebo’s cure rate is .25, and your medicine’s cure rate is either .05 greater or 20% greater. (Other correct, but less good, ways to say the same thing are that it cures 20% more, 120% as many, or 1.2 times as many patients.) It would be inaccurate to state that your medicine cures 5% more patients or your medicine cures 120% more patients. Just as you need to correctly use “120% more” versus “120% as many”, you need to correctly use “3 times faster than” versus “3 times as fast as”. A related, also common, confusion is between “3 times faster than and 3 times as fast as”. And, “2 times fewer” makes absolutely no sense. I would avoid these terms entirely. “Half as many” is a much better substitute for “2 times fewer”.\nGiven the great ease of misunderstanding what a percentage means or what its denominator is, I try to avoid percentages and focus on fractions whenever possible, especially for base measurements. For comparisons between techniques, percentages can be acceptable. Avoid presenting two different measurements that are both percentages but have different denominators.\nProcessing data Your paper probably includes tables, bibliographies, or other content that is generated from external data. Your paper may also be written in a text formatting language such as LaTeX. In each of these cases, it is necessary to run some external command to create some of the content or to create the final PDF.\nAll of the steps to create your final paper should be clearly documented — say, in comments or in a notes file that you maintain with the paper. Preferably, they should be automated so that you only have to run one command that collects all the data, creates the tables, and generates the final PDF.\nIf you document and automate these steps, then you can easily regenerate the paper when needed. This is useful if you re-run experiments or analysis, or if you need to defend your results against a criticism by other researchers. If you leave some steps manual, then you or your colleagues are highly likely to make a mistake (leading to a scientific error) or to be unable to reproduce your results later.\nOne good way to automate these tasks is by writing a program or creating a script for a build system such as Ant, Gradle, Make, Maven, etc.\nRelated work A related work section should not only explain what research others have done, but in each case should compare and contrast that to your work and also to other related work. After reading your related work section, a reader should understand the key idea and contribution of each significant piece of related work, how they fit together (what are the common themes or approaches in the research community?), and how your work differs. Don’t write a related work section that is just a list of other papers, with a sentence about each one that was lifted from its abstract, and without any critical analysis nor deep comparison to other work.\nUnless your approach is a small variation on another technique, it is usually best to defer the related work to the end of the paper. When it comes first, it gives readers the impression that your work is rather derivative. (If this is true, it is your responsibility to convey that clearly; if it is not true, then it’s misleading to intimate it.) You need to ensure that readers understand your technique in its entirety, and also understand its relationship to other work; different orders can work in different circumstances.\nJust as you should generally explain your technique first, and later show relationships with other work, it is also usually more effective to defer a detailed discussion of limitations to a later section rather than the main description of your technique. You should be straightforward and honest about the limitations, of course (do mention them early on, even if you don’t detail them then), but don’t destroy the coherence of your narrative or sour the reader on your technique.\nFeedback Get feedback! Finish your paper well in advance, so that you can improve the writing. Even re-reading your own text after being away from it can show you things that you didn’t notice. An outside reader can tell you even more.\nWhen readers misunderstand the paper, that is always at least partly the author’s fault! Even if you think the readers have missed the point, you will learn how your work can be misinterpreted, and eliminating those ambiguities will improve the paper.\nBe considerate to your reviewers, who are spending their time to help you. Here are several ways to do that.\nAs with submission to conferences, don’t waste anyone’s time if there are major flaws. Only ask someone to read (a part of) your paper when you think you will learn something new, because you are not aware of serious problems. If only parts are ready, it is best to indicate this in the paper itself (e.g., a TODO comment that the reader will see or a hand-written annotation on a hardcopy) rather than verbally or in email that can get forgotten or separated from the paper.\nIt is most effective to get feedback sequentially rather than in parallel. Rather than asking 3 people to read the same version of your paper, ask one person to read the paper, then make corrections before asking the next person to read it, and so on. This prevents you from getting the same comments repeatedly — subsequent readers can give you new feedback rather than repeating what you already knew, and you’ll get feedback on something that is closer to the final version. If you ask multiple reviewers at once, you are de-valuing their time — you are indicating that you don’t mind if they waste their time saying something you already know. You might ask multiple reviewers if you are not confident of their judgment or if you are very confident the paper already is in good shape, in which case there are unlikely to be major issues that every reviewer stumbles over.\nIt usually best not to email the document, but to provide a location from which reviewers can obtain the latest version of the paper, such as a version control repository or a URL you will update. That way, you won’t clutter inboxes with many revisions, and readers can always get the most recent copy.\nBe generous with your time when colleagues need comments on their papers: you will help them, you will learn what to emulate or avoid, and they will be more willing to review your writing.\nSome of your best feedback will be from yourself, especially as you get more thoughtful and introspective about your writing. To take advantage of this, start writing early. One good way to do this is to write a periodic progress report that describes your successes and failures. The progress report will give you practice writing about your work, oftentimes trying out new explanations.\nWhereas you should start writing as early as possible, you don’t need to put that writing in the form of a technical paper right away. In fact, it’s usually best to outline the technical paper, and get feedback on that, before you start to fill in the sections with text. (You might think that you can copy existing text into the paper, but it usually works out better to write the information anew. With your knowledge of the overall structure, goals, and audience, you will be able to do a much better job that fits with the paper’s narrative.) When outlining, I like to start with one sentence about the paper; then write one sentence for each section of the paper; then write one sentence for each subsection; then write one sentence for each paragraph (think of this as the topic sentence); and at that point, it’s remarkably easy just to flesh out the paragraphs.\nWhen to submit your paper for publication You should not submit your paper too early, when it does not reflect well on you and a submission would waste the community’s reviewing resources. You should not submit your paper too late, because then the community is deprived of your scientific insights. In general, you should err on the side of submitting too late rather than too early.\nA rule of thumb is to submit only if you are proud for the world to associate your name with the work, in its current form. If you know of significant criticisms that reviewers might raise, then don’t submit the paper.\nSubmitting your paper prematurely has many negative consequences.\nYou will waste the time of hard-working reviewers, who will give you feedback that you could have obtained in other ways. You will get a reputation for shoddy work. You will make the paper less likely to be accepted in the future. Oftentimes the same reviewers may serve two different venues. Reviewing a paper again puts a reviewer in a negative state of mind. I have frequently heard reviewers say, “I read an earlier version of this paper, it was a bad paper, and this version is similar.” (This is unethical because reviewers are not supposed to talk about papers they have reviewed, but nonetheless it is very common.) Now the paper will likely be rejected again, and the whole committee gets a bad impression of you. A reviewer who has read a previous version of the paper may read the resubmission less carefully or make assumptions based on a previous version. To sum up: it’s harder to get a given paper accepted on its second submission, than it would have been to get the identical paper accepted on its first submission. Here are some bad reasons to submit a paper.\nYou need feedback on the paper. It’s true that the feedback from reviewers is extraordinarily valuable to you and will help you improve the paper. However, you should get feedback from other scientists (your friends and colleagues) before submitting for publication.\nSubmitting the paper in its current form means more papers on your c.v. and more opportunities for others to learn about your work. Those are true facts, and some people do “salami-slice” their research into as many papers as possible — such papers are called a “least publishable unit”. However, doing so leads to less impact than publishing fewer papers, each one with more content. If a paper contains few contributions, it is less likely to make a big impression, because it is less exciting. In addition, readers won’t enjoy reading many pages to learn just a few facts.\nNote: This point refers to taking a single research idea or theme and splitting it into multiple publications. When there are multiple distinct research contributions, it can be appropriate to describe them in different papers.\nTo roll the dice for acceptance on a paper that is better than some other published papers. The reviewing process can be frustrating, because it contains a great deal of randomness: the same paper would be rejected by some reviewers and accepted by others. However, all great papers are accepted and all bad papers are rejected. For mediocre papers, luck plays a role. Your goal should not be to write great papers, not mediocre ones. Find a way to improve your paper. Recognize the great value of reviews: they provide a valuable perspective on your work and how to improve it, even if you feel that the reviewer should have done a better job.\nYou are tired of the paper and need a break from it. If you aren’t excited about the paper, it is unlikely that other people will be. Furthermore, the period after submitting the paper is not a time to take a break, but an opportunity to further improve it.\nAfter you submit a paper, don’t stop working on it! You can always improve the research. For instance, you might expand the experiments, improve the implementation, or make other changes. Even if your paper is accepted, you want the accepted version to be as impressive as possible. And if the paper is rejected, you need to have a better paper to submit to the next venue.\nResponding to conference reviews (This section is most relevant to fields like computer science where conferences are the premier publication venue. Responding to journal reviews is different.)\nMany conferences provide an author response period: the authors are shown the reviews and are given limited space (say, 500 words) to respond to the reviews, such as by clarifying misunderstandings or answering questions. The author response is sometimes called a “rebuttal”, but I don’t like that term because it sets an adversarial tone.\nYour paper will only be accepted if there is a champion for the paper: someone who is excited about it and will try to convince the rest of the committee to accept the paper. Your response needs to give information to your champion to overcome objections. If there isn’t a champion, then the main goal of your response is to create that champion. Your response should also give information to detractors to soften their opposition.\nAfter reading the reviews, you may be disappointed or angry. Take a break to overcome this, so that you can think clearly.\nFor every point in the reviews, write a brief response. Do this in email-response style, to ensure that you did not miss any points. You will want to save this for later, so it can be better to do this in the paper’s version control repository, rather than in a WYSIWYG editor such as Google Docs. (This assumes you have a version control repository for the paper, which you should!) Much of this text won’t go in your response, but it is essential for formulating the response.\nSummarize (in 5 or so bullet points, however many make sense) the key concerns of the reviewers. Your review needs to focus on the most important and substantive critiques. The authors of the paper should agree on this structure before you start to write the actual response.\nYour response to each point will be one paragraph in your response. Start the paragraph with a brief heading or title about the point. Do not assume that the reviewers remember everything that was written by every reviewer, nor that they will re-read their reviews before reading your response. A little context will help them determine what you are talking about and will make the review stand on its own. This also lets you frame the issues in your own words, which may be clearer or address a more relevant point than the reviews did.\nOrganize your responses thematically. Group the paragraphs into sections, and have a small heading/title for each section. If a given section has just one paragraph, then you can use the paragraph heading as the section heading. Order the sections from most to least important.\nThis is better than organizing your response by reviewer, first addressing the comments of reviewer 1, then reviewer 2, and so forth. Downsides of by-reviewer organization include:\nIt can encourage you not to give sufficient context. It does not encourage putting related information together nor important information first. You want to encourage all reviewers to read the entire response, rather than encouraging them to just look at one part. When multiple reviewers raised the same issue, then no matter where you address it, it’s possible for a reviewer to overlook it and think you failed to address it. You don’t want to make glaringly obvious which issues in a review you had to ignore (for reasons of space or other reasons). You don’t want to make glaringly obvious that you spent much more time and space on one reviewer than another. In general, it’s best not to mention reviewer names/numbers in your response at all. Make the response be about the science, not about the people.\nIn your responses, admit your errors forthrightly. Don’t ignore or avoid key issues, especially ones that multiple reviewers brought up.\nFinally, be civil and thankful the reviewers. They have spent considerable time and energy to give you feedback (even if it doesn’t seem to you that they have!), and you should be grateful and courteous in return.\nRejection If you submit technical papers, you will experience rejection. In some cases, rejection indicates that you should move on and begin a different line of research. In most cases, the reviews offer an opportunity to improve the work, and so you should be very grateful for a rejection! It is much better for your career if a good paper appears at a later date, rather than a poor paper earlier or a sequence of weak papers.\nEven small flaws or omissions in an otherwise good paper may lead to rejection. This is particularly at the elite venues with small acceptance rates, where you should aim your work. Referees are generally people of good will, but different referees at a conference may have different standards, so the luck of the draw in referees is a factor in acceptance.\nThe wrong lesson to learn from rejection is discouragement or a sense of personal failure. Many papers — even papers that later win awards — are rejected at least once. The feedback you receive, and the opportunity to return to your work, will invariably improve your results.\nDon’t be put off by a negative tone in the reviews. The referees are trying to help you, and the bast way to do that is to point out how your work can be improved. I often write a much longer review, with more suggestions for improvement, for papers that I like; if the paper is terrible, I may not be able to make as many concrete suggestions, or my high-level comments may make detailed comments moot.\nIf a reviewer didn’t understand something, then the main fault almost always lies with your writing. If you blame a lazy or dumb reviewer, you are missing the opportunity to improve. Reviewers are not perfect, but they work hard to give you helpful suggestions, so you should give them the benefit of the doubt. Remember that just as it is hard to convey technical ideas in your paper (and if you are getting a rejection, that is evidence that you did not succeed!), it is hard to convey them in a review, and the review is written in a few hours rather than the weeks you spent on the paper (not to mention months or years of understanding the concepts). You should closely attend to both the explicit comments, and to underlying issues that may have led to those comments — it isn’t always easy to capture every possible comment in a coherent manner. Think about how to improve your research and your writing, even beyond the explicit suggestions in the review — the prime responsibility for your research and writing belongs with you.\nNorman Ramsey’s advice Norman Ramsey’s nice Teach Technical Writing in Two Hours per Week espouses a similar approach to mine: by focusing on clarity in your writing, you will inevitably gain clarity in your thinking.\nDon’t bother to read both the student and instructor manuals — the student one is a subset of the instructor one. You can get much of the benefit from just one part, his excellent “principles and practices of successful writers”:\nPrinciples\nCorrectness. Write correct English, but know that you have more latitude than your high-school English teachers may have given you. Consistent names. Refer to each significant character (algorithm, concept, language) using the same word everywhere. Give a significant new character a proper name. Singular. To distinguish one-to-one relationships from n-to-m relationships, refer to each item in the singular, not the plural. Subjects and verbs. Put your important characters in subjects, and join each subject to a verb that expresses a significant action. Information flow. In each sentence, move your reader from familiar information to new information. Emphasis. For material you want to carry weight or be remembered, use the end of a sentence. Coherence. In a coherent passage, choose subjects that refer to a consistent set of related concepts. Parallel structure. Order your text so your reader can easily see how related concepts are different and how they are similar. Abstract. In an abstract, don’t enumerate a list of topics covered; instead, convey the essential information found in your paper. Practices\nWrite in brief daily sessions. Ignore the common myth that successful writing requires large, uninterrupted blocks of time — instead, practice writing in brief, daily sessions. Focus on the process, not the product. Don’t worry about the size or quality of your output; instead, reward yourself for the consistency and regularity of your input. Prewrite. Don’t be afraid to think before you write, or even jot down notes, diagrams, and so on. Use index cards. Use them to plan a draft or to organize or reorganize a large unit like a section or chapter. Write a Shitty First Draft™. Value a first draft not because it’s great but because it’s there. Don’t worry about page limits. Write the paper you want, then cut it down to size. Cut. Plan a revision session in which your only goal is to cut. Other resources Norman Ramsey’s advice, excerpted immediately above. “Hints on writing an M.Eng. thesis”, by Jeremy Nimmer my notes on reviewing a technical paper, which indicate how to recognize — and thus produce — quality work my notes on choosing a venue for publication my notes on giving a technical talk: a talk has the same goal as a paper, namely to convey technical ideas my notes on making a technical poster Ronald B. Standler’s advice on technical writing Dave Patterson’s Writing Advice Advice on SIGPLAN conference submissions (at bottom of page) The Elements of Style, William Strunk Jr. and E. B. White, is classic book on improving your writing. It focuses at a low level, on English usage. Style: Toward Clarity and Grace, by Joseph M. Williams, is another general-purpose writing guide, with a somewhat higher-level focus than that of Strunk & White. The Sense of Style: The Thinking Person’s Guide to Writing in the 21st Century, by Steven Pinker, is an excellent guide to writing. It gives reasons (from psychology and other scientific fields) for its advice, making it more authoritative than someone’s opinion.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/research/research.html",
+    "href": "resources/research/research.html",
+    "title": "Research and (Paper) Writing",
+    "section": "",
+    "text": "General\n\nDe-mystifying Good Research and Good Papers\n\n\n\nHow to do research\n\n How to do research by Bill Freeman (MIT CSAIL and Google)\n [ACL Mentorship] Identifying promising research directions\n Harvard CS197: AI Research Experiences\n\n\n\nHow to write papers\n\n How to write an okay research paper.\n PhD: How to write a great research paper. This talk is so good that many a times the speech can be used as quotes, like “If you keep your brilliant ideas to yourself and you don’t tell anybody, you might as well not have them.”\n How to write a technical paper or a research paper\n Advice for Better Blog Posts by Rachael Thomas (fast.ai)\n How to write a good research paper by Bill Freeman (MIT CSAIL and Google)\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/talks.html",
+    "href": "resources/talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "https://slideslive.com/library. A place that hosts AI/ML conferences’ workshops.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "seminars.html",
+    "href": "seminars.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Blogs",
+      "Others",
+      "Seminars"
+    ]
+  },
+  {
+    "objectID": "ml-glossary/entropy.html",
+    "href": "ml-glossary/entropy.html",
+    "title": "Entropy",
+    "section": "",
+    "text": "We first consider the concept of surprise.\n\nIntuition\nSurprise in probability\nImagine three of the following the cases:\n\nyou ask your friend to predict whether a coin will land head or tail when being tossed and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice and your friend’s prediction is correct.\nyou ask your friend to predict what value would appear when you roll a dice three times in a row, and your friend’s prediction is, again, correct for all the rolls.\n\n\nWe all know now that with those three cases, the extent of surprise differs, from scenario 1 having the least amount of surprise to scenario 3 being the most surprised situation. The question for us now is how to quantify this amount of surprise in a mathematical sense with the following properties:\n\nIt has an additive nature, i.e. the surprise value for correctly predicting the value of 3 dices in a row (as in scenario 3) should be larger than that of correctly predicting the value of 1 dice. In particular, when the probability value multiply, the amount of surprise should add up.\nIt have to be negatively proportional to the probability value \\(p\\). In other words, your amount of surprise should equals to 0 when the probability of some event happening is 1 (absolutely certain).\n\n\n\nEntropy definition\nLet \\(h(s)\\) denotes the surprisal of state \\(s\\), and \\(p_s\\) be the probability that the state \\(s\\) happen. The second desideratum is easy to satisfied, where \\(h(s) \\propto \\dfrac{1}{p_s}\\). For the first desideratum, we know from high school math that the \\(\\log()\\) have such property:\n\\[\\log \\left(\\prod_{i=1}^N s_i\\right) = \\sum_{i=1}^{N} \\log (s_i)\\] With that, we can now formally defined the surprise term:\n\n\n\n\n\n\nDefinition\n\n\n\nSurprise \\[h(s)  = \\dfrac{1}{\\log (s)}\\]\n\n\nNow, we want to compute the average of the surprise term for the whole distribution, this is called entropy: \\[H = \\sum_{s} p_{s} \\log \\left(\\dfrac{1}{p_{s}}\\right)\\] In plain English, what we are doing with this formula is to sum over all possible states and multiply the probability of each state by the surprisal value.\nRelated concepts: [[Cross-entropy]] [[KL Divergence]]\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Information Theory",
+      "Entropy"
+    ]
+  },
+  {
+    "objectID": "resources/research/feifei.html",
+    "href": "resources/research/feifei.html",
+    "title": "De-mystifying Good Research and Good Papers",
+    "section": "",
+    "text": "Please remember this:\n\n1000+ computer vision papers get published every year!\n\n\nOnly 5-10 are worth reading and remembering!\n\nSince many of you are writing your papers now, I thought that I’d share these thoughts with you. I probably have said all these at various points during our group and individual meetings. But as I continue my AC reviews these days (that’s 70 papers and 200+ reviews — between me and my AC partner), these following points just keep coming up. Not enough people conduct first class research. And not enough people write good papers.\nEvery research project and every paper should be conducted and written with one singular purpose: to genuinely advance the field of computer vision. So when you conceptualize and carry out your work, you need to be constantly asking yourself this question in the most critical way you could – “Would my work define or reshape xxx (problem, field, technique) in the future?” This means publishing papers is NOT about “this has not been published or written before, let me do it”, nor is it about “let me find an arcane little problem that can get me an easy poster”. It’s about “if I do this, I could offer a better solution to this important problem,” or “if I do this, I could add a genuinely new and important piece of knowledge to the field.” You should always conduct research with the goal that it could be directly used by many people (or industry). In other words, your research topic should have many ‘customers’, and your solution would be the one they want to use.\nA good research project is not about the past (i.e. obtaining a higher performance than the previous N papers). It’s about the future (i.e. inspiring N future papers to follow and cite you, N-&gt;inf).\nA CVPR’09 submission with a Caltech101 performance of 95% received 444 (3 weakly rejects) this year, and will be rejected. This is by far the highest performance I’ve seen for Caltech101. So why is this paper rejected? Because it doesn’t teach us anything, and no one will likely be using it for anything. It uses a known technique (at least for many people already) with super tweaked parameters custom-made for the dataset that is no longer a good reflection of real-world image data. It uses a BoW representation without object level understanding. All reviewers (from very different angles) asked the same question “what do we learn from your method?” And the only sensible answer I could come up with is that Caltech101 is no longer a good dataset.\nEinstein used to say: everything should be made as simple as possible, but not simpler. Your method/algorithm should be the most simple, coherent and principled one you could think of for solving this problem. Computer vision research, like many other areas of engineering and science research, is about problems, not equations. No one appreciates a complicated graphical model with super fancy inference techniques that essentially achieves the same result as a simple SVM - unless it offers deeper understanding of your data that no other simpler methods could offer. A method in which you have to manually tune many parameters is not considered principled or coherent.\nThis might sound corny, but it is true. You’re PhD students in one of the best universities in the world. This means you embody the highest level of intellectualism of humanity today. This means you are NOT a technician and you are NOT a coding monkey. When you write your paper, you communicate. That’s what a paper is about. This is how you should approach your writing. You need to feel proud of your paper not just for the day or week it is finished, but many for many years to come.\nSet a high goal for yourself – the truth is, you can achieve it as long as you put your heart in it! When you think of your paper, ask yourself this question: Is this going to be among the 10 papers of 2009 that people will remember in computer vision? If not, why not? The truth is only 10+/-epsilon gets remembered every year. Most of the papers are just meaningless publication games. A long string of mediocre papers on your resume can at best get you a Google software engineer job (if at all – 2009.03 update: no, Google doesn’t hire PhD for this anymore). A couple of seminal papers can get you a faculty job in a top university. This is the truth that most graduate students don’t know, or don’t have a chance to know.\nReview process is highly random. But there is one golden rule that withstands the test of time and randomness — badly written papers get bad reviews. Period. It doesn’t matter if the idea is good, result is good, citations are good. Not at all. Writing is critical — and this is ironic because engineers are the worst trained writers among all disciplines in a university. You need to discipline yourself: leave time for writing, think deeply about writing, and write it over and over again till it’s as polished as you can think of.\nLast but not the least, please remember this rule:\nmportant problem (inspiring idea) + solid and novel theory + convincing and analytical experiments + good writing = seminal research + excellent paper\nIf any of these ingredients is weak, your paper, hence reviewer scores, would suffer.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/research/bill1.html",
+    "href": "resources/research/bill1.html",
+    "title": "How to do research",
+    "section": "",
+    "text": "The jump from problem sets to research can be hard. We sometimes see students who ace their classes struggle with their research. In little bites, here is what I think is important for succeeding in research as a graduate student.\n\nThe first advice can go on a bumper sticker: “Slow down to speed up”. In classes, the world is rigged. There’s a simple correct answer and the problem is structured to let you come to that answer. You get feedback with the correct answer within a day after you submit anything. Research is different. No one tells you the right answer, we don’t know if there is a right answer. We don’t know if something doesn’t work because there’s a silly mistake in the program or because a broad set of assumptions is flawed.\n\nHow do you deal with that? Take things slowly. Verify your assumptions. Understand the thing, whatever it is–the program, the algorithm, or the proof. As you do experiments, only change one thing at a time, so you know what the outcome of the experiment means. It may feel like you’re going slowly, but you’ll be making much more progress than if you flail around, trying different things, but not understanding what’s going on.\n\nPlease don’t tell me “it doesn’t work”. Of course it doesn’t work. If there’s a single mistake in the chain, the whole thing won’t work, and how could you possibly go through all those steps without making a mistake somewhere? What I want to hear instead is something like, “I’ve narrowed down the problem to step B. Until step A, you can see that it works, because you put in X and you get Y out, as we expect. You can see how it fails here at B. I’ve ruled out W and Z as the cause.”\n“This sounds like hard work.” Yes. It’s no longer about being smart. By now, everyone around you is smart. In graduate school, it’s the hard workers who pull ahead. This happens in sports, too. You always read stories about how hard the great players work, being the first ones out to practice, the last ones to leave, etc.\n“How do I get myself to work hard enough to do research well?” It all plays out if you love what you’re doing. You become good at it because you spend time at it and you do that because you enjoy it. So pick something to work on that you can love. If you’re not the type who falls in love with a problem, then just know that working hard is what you have to do to succeed at research.\nI have to note that the above isn’t completely true. Beyond working hard, there’s also steering. We’re like boats. We need motors–that’s the working hard part. But we also need a rudder for steering–that’s stepping back periodically to make sure we’re working on the right thing. On the topic of steering, I find time management books to be very helpful. They teach you how to spend your time solving the right problems. • There’s a concept I want a simple phrase for, and maybe you can help me think up a good name. It’s the simplest toy model that captures the main idea. TSTMTCTMI ? Anyway, simple toy models always help me. With a good one, you can build up intuition about what matters, which is a big advantage in research.Here’s an example. The color constancy problem is to estimate surface reflectance colors when we only get to observe the wavelength-by-wavelength product of the each surface reflectance spectrum and the unknown illuminant spectrum. A toy model for that problem is to try to estimate the scalars a and b from only observing their product, y = ab. There’s a surprising richness even to this simple problem, and thinking about it allows you to think through loss functions and other aspects of Bayesian decision theory. I co-authored a paper that discusses y = ab for much of the manuscript. Another toy model: as a proxy for complicated shaded surfaces, a single bump. You get the idea. Having the intuitions from working Figure 2: A toy model for the color constancy problem: y = ab with toy problems gives you a big advantage in the research, because you can figure out what will work by thinking it through with your toy model. • A parable, as told by my friend Yair Weiss: There is a weak and a strong graduate student. They are both asked by their advisor to try a particular approach to solving a research problem. The weak student does exactly what the advisor has asked. But the advisor’s solution fails, and the student reports that failure. The strong student starts doing what the advisor has asked, sees that it doesn’t work, looks around within some epsilon ball of the original proposal to find what does work, and reports that solution. Figure 3: The parable of the two students • Sometimes it’s useful to think that everyone else is an idiot. This lets you do things that no one else is doing. It’s best not to be too vocal about that. You can say something like “Oh, I just thought I’d try out this direction”. • It’s also sometimes useful to remember that many smart people have worked on this and related problems and written their thoughts and results down in papers. Don’t be caught flat-footed with a large body of closely related literature that you aren’t familiar with. • Here’s how a business school might talk about your research. You have a brand: you. There are many impressions you want to build up about your brand: that person always does great work, they have good ideas, they give great talks, they write wonderful software. Promote your brand. Build up a great reputation for yourself. • Cultivate your strengths and play to those strengths. Some possible strengths: being broad; creative; a great implementer; great at doing theory.Figure 4: Nurture your research brand. • Please don’t report to me, “This instance doesn’t work”. Why doesn’t it work? Why should it work? Is there a simpler case we can make it work? Do you think it’s a general issue that affects all problems of this category? Can you think of what’s not working? Can you contort things to make an example that does work? At least, can you make it fail worse, so we understand some aspects of the system? • I love to hear about progress when I meet with students, but note that I have a very general notion of progress. Progress can include: “I’ve shown why this doesn’t work”, “I’ve simplified the task to get it to start working.”, or “I spent the whole time reading because I know I have to understand this before I can make any progress.” • Please don’t hide from me. Let’s talk. I like it when you track me down and insist that we talk, for example, if I’ve been traveling. • For a presentation to the visiting admitted MIT EECS graduate students, I emailed all CSAIL researchers and faculty members, “Please send me what you think is the most important quality for success in graduate school” I compiled their responses (along with photos of the responders) into slides that are available online: http://people.csail.mit.edu/billf/talks/10minFreeman2013.pdf I think it’s a lot of good advice about research. • One final note about doing research: I hope you love it. I certainly do. The research community is a community of people who are passionate about what they do, and we welcome you to it!\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "modules/module8.html#main-lessons",
+    "href": "modules/module8.html#main-lessons",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nPreview\nIntroduction to POS Tagging\nTA Khoa\n240130-23M08-EC2\n\n\n\nMain Lesson\nFrom Text Classification to POS Tagging\nDr. Vinh\n240131-23M08MC\n\n\n\nMain Lesson\nNER for Medical Data\nDr. Vinh\n240202-23M08MC\n\n\n\nExercise Session\nTA-Exercise\nTA Thái\n240204-23M08MC\n\n\n\nProject handout\nAspect-based Sentiment Analysis Project\nTA Thái\nDue: 06 Feb, 2024  [solution]\n\n\n\nProject tutorial\nText Project: Aspect Extraction and Content Classification (Text Classification + NER)\nTA Thái\n240206-23M08MC\n\n\n\nProject tutorial\nText Project: QA for Content Inquiry (Text Classification + NER)\nTA Thắng\n240216-23M08MC\n\n\n\nProject tutorial\nText Project: End-to-end Question Answering (Building a Searching System)\nTA Thắng\n240218-23M08MC\n[Exercise] - [Solution]\n\n\nMain Lesson\nText Generation\nDr. Vinh\n240221-23M08MC\n\n\n\nMain Lesson\nMachine Translation\nDr. Vinh\n240223-23M08MC\n\n\n\nExercise Session\nTA Exercise (Neural Machine Translation)\nTA Thái\n240225-23M08MC\n\n\n\nProject handout\nNeural Machine Translation\nTA Thái\nDue: 25 Feb, 2024  [Solution]\n\n\n\nProject tutorial\nPoem Generation Project\nTA Thắng\n240228-23M08MC\n[handout] - [solution]\n\n\nProject tutorial\nLow-resource Machine Translation Project\nTA Thái\n240301-23M08MC\n[handout] - [solution]\n\n\nProject tutorial\nText classification with Mamba Project\nTA Đức\n240303-23M08MC\n[handout] - [solution]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-research-and-paper-writing",
+    "href": "modules/module8.html#extra-class-research-and-paper-writing",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nResearch & Paper\nHow to write a paper (3)\nDr. Đình Vinh\n240127-23M08-EC1\n\n\n\nResearch & Paper\nHow to write a paper (4)\nDr. Đình Vinh\n240203-23M08-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-mlops",
+    "href": "modules/module8.html#extra-class-mlops",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Quantization\nTA Bách\n240302-23M09-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#seminar",
+    "href": "modules/module8.html#seminar",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nCLIP\nTA Đức\n240128-23M08-EC3\n\n\n\nSeminar\nDetecting violation of helmet rule for motorcyclists (CVPRW2024)\nDr. Vinh\n240204-23M08-EC3\n\n\n\nSeminar\nDirect Preference Optimization\nDr. Vinh\n240224-23M08-EC3\n\n\n\nSeminar\nStudy and Job in the USA",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "modules/module8.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module8.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 8 - Applications of Deep Learning for NLP",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nIntroduction to Text Generation\nDr. Vinh\n240220-23M08-EC2",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 8"
+    ]
+  },
+  {
+    "objectID": "resources/repo.html",
+    "href": "resources/repo.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "resources/courses.html",
+    "href": "resources/courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nJoe Blitzstein\nYoutube Playlist\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nPDF Note\nYoutube Playlist\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "memes/memes.html",
+    "href": "memes/memes.html",
+    "title": "AIO Course",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "resources/books.html",
+    "href": "resources/books.html",
+    "title": "Books",
+    "section": "",
+    "text": "A Course in Machine Learning by Hal Daumé III\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resources/papers.html",
+    "href": "resources/papers.html",
+    "title": "Fundamental Papers",
+    "section": "",
+    "text": "(Classical) Techniques\n\n\nContrastive Learning\n\nContrastive learning is a new learning paradigm.\n\n\nOord, A. van den, Li, Y., & Vinyals, O. (2018). Representation Learning with Contrastive Predictive Coding. In arXiv.\nMomentum Contrast (MoCo): He, K., Fan, H., Wu, Y., Xie, S., & Girshick, R. B. (2020). Momentum Contrast for Unsupervised Visual Representation Learning. CVPR.\nSimCLR: Chen, T., Kornblith, S., Norouzi, M., & Hinton, G. E. (2020). A Simple Framework for Contrastive Learning of Visual Representations. ICML. https://doi.org/https://doi.org/10.48550/arXiv.2002.05709\nCLIP: Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., & Sutskever, I. (2021). Learning Transferable Visual Models From Natural Language Supervision. ICML.\n\n\n\nGenerative Models\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ml-glossary/contrastive-learning.html",
+    "href": "ml-glossary/contrastive-learning.html",
+    "title": "Contrastive learning",
+    "section": "",
+    "text": "Contrastive learning is a type of unsupervised pre-training that aims to learn representations of data by contrasting similar and dissimilar examples. The core idea of contrastive learning is that similar examples should have similar representations, while dissimilar examples should have dissimilar representations. This allows the model to learn useful features even without explicit labels.\nApproaches Using patches (CPC) Augmented versions of the example: augmentation perserve the class of the image. (SimCLR) Nearby video frames \\[\\underset{\\theta}{\\min}{\\|f_{\\theta}(x) - f_{\\theta}(x')\\|_{2}^2}\\]\nProblem: The model can simply map all of the images to a single constant vector so that the loss has the value of 0, but it produces no useful representation. Therefore, we need to additionally contrast the images.\nKey design choices: (1) implementation of contrastive loss and (2) choosing what to compare/contrast\nAnchor \\(x\\), positive \\(x^+\\), negative \\(x^-\\)\nContrastive learning\nContrastive learning is a self-supervised learning technique that learns representations by maximizing the similarity between different views of the same data point and minimizing the similarity between different data points.\nIn contrastive learning, we are given a set of data points \\(X = {x_1, x_2, ..., x_N}\\). For each data point \\(x_i\\), we generate a set of different views, denoted as \\(V(x_i) = {x_i^1, x_i^2, ..., x_i^K}\\). The goal of contrastive learning is to learn a representation \\(f(x)\\) such that the representations of different views of the same data point are similar, while the representations of different data points are dissimilar.\nThere are many different ways to implement contrastive learning. One common approach is to use a Siamese network. A Siamese network consists of two identical subnetworks, which are used to extract representations from two different views of the same data point. The representations are then compared using a contrastive loss function, such as the cosine similarity or the Euclidean distance.\nContrastive learning has been shown to be effective for a variety of tasks, including image classification, object detection, and natural language processing. It is a powerful technique that can be used to learn representations that are both discriminative and robust.\nAnchor x: The original data point.\nPositive x+: A different view of the same data point.\nNegative x-: A different data point.\nTriplet Loss\nThe triplet loss function aims to minimize the distance between an anchor embedding and a positive embedding while maximizing the distance between the anchor embedding and a negative embedding: \\[\\underset{\\theta}{\\min} \\left\\{ \\|f_{\\theta}(x) - f_{\\theta}(x^{+})\\|_{2}^{2} - \\|f_{\\theta}(x) - f_{\\theta}(x^{-})\\|_{2}^{2} \\right\\}\\] where:\n\n\\(f_{\\theta}\\) is the embedding function parameterized by \\(\\theta\\)\n\\(x\\) is the anchor sample\n\\(x^{+}\\) is a positive sample that is similar to \\(x\\)\n\\(x^{-}\\) is a negative sample that is dissimilar to \\(x\\)\n\nProblem:\nThe triplet loss function can suffer from an unbounded term, as the distance between the anchor and negative embedding can become arbitrarily large. This can lead to unstable training and difficulty in optimizing the model. To address this issue, it is necessary to normalize the embedding function in some way to bound the loss function.\n[[Hinge loss]]\n\\[\\underset{\\theta}{\\min} -\\log \\dfrac{\\exp(-d(f(x), f(x^{+})))}{\\sum \\exp(-d(f(x), f(x^{-})))}\\]\n\nReferences\nSiamese networks CPC\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Contrastive Learning"
+    ]
+  },
+  {
+    "objectID": "ml-glossary/contrastive-learning/contrastive-learning.html",
+    "href": "ml-glossary/contrastive-learning/contrastive-learning.html",
+    "title": "Contrastive learning",
+    "section": "",
+    "text": "Contrastive learning is a type of unsupervised pre-training that aims to learn representations of data by contrasting similar and dissimilar examples. The key intuition behind contrastive learning is that similar examples should have similar representations, while dissimilar examples should have dissimilar representations. This allows the model to learn useful representations even without explicit labels.\nOver the years, various approaches have been proposed to develop models based on contrastive learning. Some of the most influential work includes: (1) the use of image patches (Oord, Li, and Vinyals 2018), (2) augmented versions of the same example (Chen et al. 2020), and (3) the use of nearby video frames.\nGiven a pre-trained model, such as a vision encoder denoted by \\(f_\\theta\\), the objective is to minimize (w.r.t. the parameters \\(\\theta\\)) the distance between an anchor input \\(\\mathbf{x}\\) and another similar sample \\(\\mathbf{x}'\\), measured either by Euclidean distance or Cosine similarity:\n\\[\\underset{\\theta}{\\min}{\\|f_{\\theta}(x) - f_{\\theta}(x')\\|_{2}^2}\\]\nA potential issue with this objective is that the model could collapse by mapping all inputs to a single constant vector, minimizing the loss to zero but yielding no meaningful representations. Therefore, it is essential to introduce contrast between different samples. The core challenge in contrastive learning lies in two key aspects: (1) designing the loss function to ensure that the model learns informative representations, and (2) selecting appropriate sample pairs so that the model effectively captures the underlying structure in the data.\n\nFurther resources:\n\nContrastive Representation Learning\n\n\n\n\n\n\n Back to topReferences\n\nChen, Ting, Simon Kornblith, Mohammad Norouzi, and Geoffrey E. Hinton. 2020. “A Simple Framework for Contrastive Learning of Visual Representations.” In ICML.\n\n\nOord, Aaron van den, Yazhe Li, and Oriol Vinyals. 2018. “Representation Learning with Contrastive Predictive Coding.” arXiv.",
+    "crumbs": [
+      "Contrastive Learning"
+    ]
+  },
+  {
+    "objectID": "ml-glossary/contrastive-learning/triplet-loss.html",
+    "href": "ml-glossary/contrastive-learning/triplet-loss.html",
+    "title": "Triplet Loss",
+    "section": "",
+    "text": "The triplet loss function was originally introduced in the FaceNet paper (Schroff, Kalenichenko, and Philbin 2015). Intuitively, the aim of this loss function is to minimize the distance between an anchor embedding and a positive embedding while maximizing the distance between the anchor embedding and a negative embedding (recall in contrastive learning that we need to constrast the sample in addition to producing similar representations for similar samples).\nGiven an embedding function parameterized by \\(\\theta\\), denoted as \\(f_{\\theta}\\), where \\(x\\) is the anchor sample, \\(x^{+}\\) is a positive sample (similar to \\(x\\)), and \\(x^{-}\\) is a negative sample (dissimilar to \\(x\\)), the objective can be formulated as the following optimization problem:\n\\[\n\\underset{\\theta}{\\min} \\left\\{ \\|f_{\\theta}(x) - f_{\\theta}(x^{+})\\|_{2}^{2} - \\|f_{\\theta}(x) - f_{\\theta}(x^{-})\\|_{2}^{2} \\right\\}\n\\]\nThe triplet loss function can suffer from an unbounded term, as the distance between the anchor and negative embedding can become arbitrarily large. This can lead to unstable training and difficulty in optimizing the model. To address this issue, it is necessary to normalize the embedding function in some way to bound the loss function. Therefore, we could introduce a new margin \\(\\epsilon\\) to create a bound for our loss function as follows:\n\\[\n\\underset{\\theta}{\\min} \\max \\left\\{ \\|f_{\\theta}(x) - f_{\\theta}(x^{+})\\|_{2}^{2} - \\|f_{\\theta}(x) - f_{\\theta}(x^{-})\\|_{2}^{2}, \\epsilon  \\right\\}\n\\]\nThis formulation prevents excessive penalization of the negative distance, stabilizing the training process and making the optimization more tractable.\n\n\n\n\n Back to topReferences\n\nSchroff, Florian, Dmitry Kalenichenko, and James Philbin. 2015. “FaceNet: A Unified Embedding for Face Recognition and Clustering.” In Computer Vision and Pattern Recognition (CVPR), 815–23.",
+    "crumbs": [
+      "Triplet Loss"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#main-lessons",
+    "href": "modules/module4.html#main-lessons",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Main Lessons",
+    "text": "Main Lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n\n\n\n\n\n\n\n\n28/08/23\nAssignment\nK-Nearest Neighbor and Decision Tree Exercise\nTA Thái\nDue: 03 Sep, 2023  [solution]\n\n\n\n30/08/23\nMain Lesson\nK-Nearest Neighbors\nDr. Đình Vinh\n230830\n[note] [CS4780 Lecture 3]\n\n\n01/09/23\nMain Lesson\nDecision Tree for Classification\nDr. Đình Vinh\n230901\n\n\n\n03/09/23\nExercise Session\nTA Exercise\nTA Thái\n230903\n\n\n\n06/09/23\nMain Lesson\nDecision Tree for Regression\nDr. Đình Vinh\n230906\n[Choi et al., 2017]\n\n\n08/09/23\nMain Lesson\nRandom Forest\nDr. Đình Vinh\n230908\n[Louppe et al., 2015]\n\n\n10/09/23\nExercise Session\nTA Exercise\nTA Thắng\n230910\n\n\n\n11/09/23\nAssignment\nXGBoost\nTA Khoa\nDue: 17 Sep, 2023  [solution]\n\n\n\n13/09/23\nMain Lesson\nBasic XGBoost: Understanding Gradient Boost and AdaBoost\nDr. Đình Vinh\n230913\n[note] [Trevor Lecture]\n\n\n15/09/23\nMain Lesson\nAdvanced XGBoost: Fully XGBoost and its mathematics\nDr. Đình Vinh\n230915\n\n\n\n17/09/23\nExercise Session\nTA Exercise\nTA Khoa\n230917\n\n\n\n18/09/23\nAssignment\nSupport Vector Machine Exercise\nTA Thắng\nDue: 27 Sep, 2023  [solution]\n\n\n\n20/09/23\nMain Lesson\nReview on Tree-based Approaches and Discussion\nDr. Đình Vinh\n230920\n\n\n\n22/09/23\nMain Lesson\nSupport Vector Machine (1)\nDr. Đình Vinh\n230922\n[CS229 Note] [MLCB]\n\n\n24/09/23\nMain Lesson\nSupport Vector Machine (2)\nDr. Đình Vinh\n230924\n\n\n\n27/09/23\nExercise Session\nTA-Exercise\nTA Thắng\n230927\n\n\n\n29/09/23\nProject Tutorial\nTabular Data Project: Heart Disease Prediction\nDr. Đình Vinh\n230929\n\n\n\n01/10/23\nProject Tutorial\nImage Project: Object Detection\nTA Thắng\n231001\n[HoG paper]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#python-support",
+    "href": "modules/module4.html#python-support",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Python Support",
+    "text": "Python Support\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n\n\n\n\n\n\n\n\n29/08/23\nPython Support\nK-Nearest Neighbors (Warm-up)\nDr. Vinh\n230829\nSTAT451 Note\n\n\n05/09/23\nPython Support\nDecision Tree\nDr. Vinh\n230905\n\n\n\n12/09/23\nPython Support\nRandom Forest and AdaBoost (Warm-up)\nDr. Vinh\n230912\n\n\n\n21/09/23\nPython Support\nSVM\nTA Thắng\n230921\nCS4780 Lecture 9 Note",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "modules/module4.html#extra-class-advanced-nlp",
+    "href": "modules/module4.html#extra-class-advanced-nlp",
+    "title": "Module 4 - Machine Learning and Data Science",
+    "section": "Extra class: Advanced NLP",
+    "text": "Extra class: Advanced NLP\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n\n\n\n\n\n\n\n\n09/09/23\nAdvanced NLP\nFoundations for an NLP topic\nTA Thái\n230909\n[note] [CS324 note]\n\n\n16/09/23\nAdvanced NLP\nLanguage Models and Prompting Techniques\nTA Thái\n230916\n\n\n\n23/09/23\nAdvanced NLP\nParameter-Efficient Fine-tuning\nTA Thái\n230923\n[Houlsby et al., 2019] [COS597G Slides]\n\n\n30/09/23\nAdvanced NLP\nEfficient Fine-tuning of quantized LLMs\nTA Thái\n230930\n[LoRA paper]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 4"
+    ]
+  },
+  {
+    "objectID": "resources/courses.html#probability-and-statistics",
+    "href": "resources/courses.html#probability-and-statistics",
+    "title": "Courses",
+    "section": "",
+    "text": "Difficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nStat110: Probability\nHarvard University\nJoe Blitzstein\nYoutube Playlist\n\n\nEasy\nCS109: Probability for Computer Scientists\nStanford University\nPDF Note\nYoutube Playlist\n\n\nMedium\nStats 116: Introduction to Probability\nStanford University\n\n[ ]\n\n\nMedium\nMath 131B: Introduction to Probability and Statistics\nUC Irvine\nLectures\n[x]\n\n\nDifficult\nStats 300B: Theory of Statistics II\nStanford University\n\n[ ]\n\n\nDifficult\nStatistics 305a: Applied Statistics (Linear Models and More)\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#optimization",
+    "href": "resources/courses.html#optimization",
+    "title": "Courses",
+    "section": "Optimization",
+    "text": "Optimization\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nExtreme\nEE364A: Convex Optimization I\nStanford University\n\nLecture\n\n\nDifficult\nEE364m: The Mathematics of Convexity\nStanford University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#machine-learning",
+    "href": "resources/courses.html#machine-learning",
+    "title": "Courses",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS189/289A Introduction to Machine Learning\nUC Berkeley\n\n[ ]\n\n\nMedium\nCS 4/5780: Intro to Machine Learning\nCornell University\n\n[ ]\n\n\nMedium\n10-301 Introduction to Machine Learning\nCarnegie Mellon University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#deep-learning-nlp",
+    "href": "resources/courses.html#deep-learning-nlp",
+    "title": "Courses",
+    "section": "Deep Learning / NLP",
+    "text": "Deep Learning / NLP\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS224N: Natural Language Processing with Deep Learning\nStanford University\n\n[ ]\n\n\nMedium\nCS224U: Natural Language Understanding\nStanford University\n\n[ ]\n\n\nDifficult\n11-711 Advanced Natural Language Processing\nCarnegie Mellon University\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#llms",
+    "href": "resources/courses.html#llms",
+    "title": "Courses",
+    "section": "LLMs",
+    "text": "LLMs\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCOS 597G: Understanding Large Language Models\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCOS584: Advanced Natural Language Processing\nPrinceton University\n(No lecture video)\n[ ]\n\n\nMedium\nCS324: Large Language Models\nStanford University\n\n[ ]\n\n\nMedium\nCS 329X: Human-Centered NLP\nStanford University"
+  },
+  {
+    "objectID": "resources/courses.html#computer-vision",
+    "href": "resources/courses.html#computer-vision",
+    "title": "Courses",
+    "section": "Computer Vision",
+    "text": "Computer Vision\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS231N: Deep Learning for Computer Vision\nStanford University\n\n[ ]\n\n\nMedium\nCS280: Graduate Computer Vision\nUC Berkeley\n\n[ ]"
+  },
+  {
+    "objectID": "resources/courses.html#multimodal-others",
+    "href": "resources/courses.html#multimodal-others",
+    "title": "Courses",
+    "section": "Multimodal / Others",
+    "text": "Multimodal / Others\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS236: Generative Models\nStanford University\n\n[ ]\n\n\nDifficult\nStat 241B / CS 281B: Advanced Topics in Statistical Learning\nUC Berkeley\n\n[ ]"
+  },
+  {
+    "objectID": "modules/module3.html#main-lesson",
+    "href": "modules/module3.html#main-lesson",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nAssignment\nProbability Exercise\nDr. Đình Vinh\n\n\n\n\n19/07/23\nMain Lesson\nBasic Probability, Histogram and Image Enhancement\nDr. Vinh\n230719\n\n\n\n21/07/23\nMain Lesson\nNaive Bayes Classifier\nDr. Vinh\n230721\n\n\n\n23/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230723\n\n\n\n31/07/23\nAssignment\nStatistic Exercise\nDr. Đình Vinh\nSolution\n\n\n\n26/07/23\nMain Lesson\nBasic Statistics and Correlation Coefficient (Basic Tracking)\nDr. Vinh\n230726\n\n\n\n28/07/23\nMain Lesson\nTemplate Matching (Cosine Similarity vs. Correlation Coefficient)\nDr. Đình Vinh\n230728\n\n\n\n30/07/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230730\n\n\n\n31/07/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\nDue: 06 Aug 2023 [solution]\n\n\n\n02/08/23\nMain Lesson\nRandomness and Genetic Algorithms\nDr. Vinh\n230802\n\n\n\n04/08/23\nMain Lesson\nGenetic Algorithms (Optimization and Linear Regression)\nDr. Vinh\n230804\n\n\n\n06/08/23\nExercise Session\nTA-Exercise\nDr. Đình Vinh\n230806\n\n\n\n07/08/23\nAssignment\nGenetic Algorithms and its Applications Exercise\nDr. Đình Vinh\n\n\n\n\n07/08/23\nExercise Session\nData Analysis Exercise\nTA Thắng\nDue: 13 Aug, 2023 [solution]\n\n\n\n09/08/23\nMain Lesson\nData visualization and Data Analysis (1)\nDr. Vinh\n230809\n\n\n\n11/08/23\nMain Lesson\nData visualization and Data Analysis (2)\nDr. Vinh\n230811\n\n\n\n13/08/23\nExercise Session\nTA-Exercise (Polar)\nTA Thắng\n230813\n[Polar doc]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#project-tutorial",
+    "href": "modules/module3.html#project-tutorial",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\nDue: 20 Aug, 2023 [solution]\n\n\n\n17/08/23\nAssignment\nBig Data Frameworks (1)\nDr. Đình Vinh\n\n\n\n\n17/08/23\nProject Tutorial\nBig Data Frameworks (1)\nDr. Đình Vinh\n230818\n[LSFS and MapReduce]\n\n\n20/08/23\nProject Tutorial\nBig Data Frameworks (2)\nDr. Đình Vinh\n230820\n\n\n\n22/08/23\nProject Tutorial\nImage Data Project: Image Retrieval\nTA Thắng\n\n\n\n\n23/08/23\nProject Tutorial\nBig Data Frameworks (3)\nDr. Đình Vinh\n230823\n[C9, Feng 2021]\n\n\n25/08/23\nProject Tutorial\nImage Data Project: Image Retrieval\nTA Thắng\n230825\n[solution] [VIT paper (Dosovitskiy et al., 2021)]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#extra-class-introduction-to-nlp",
+    "href": "modules/module3.html#extra-class-introduction-to-nlp",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n29/07/23\nNLP Introduction\nIntroduction, Preprocessing\nTA Thái\n230729\n\n\n\n05/08/23\nNLP Introduction\nPreprocessing, Tokenization\nTA Thái\n230805\n[note] [C2, Jurafsky et al., 2023]\n\n\n12/08/23\nNLP Introduction\nStatistical Language Model\nTA Thái\n230812\n[C3, Jurafsky et al., 2023] [Andrej Karpathy’s Lecture]\n\n\n18/08/23\nNLP Introduction\nPart-of-Speech Tagging\nTA Thái\n230819\n[CA Jurafsky et al., 2023]\n\n\n26/08/23\nNLP Introduction\nConstituency Parsing\nTA Thái\n230826",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#python-tutorial-session",
+    "href": "modules/module3.html#python-tutorial-session",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n18/07/23\nPython Support\nProbability\nTA Tiềm\n230718\n\n\n\n25/07/23\nPython Support\nStatistics\nTA Bảo\n230725\n\n\n\n01/08/23\nPython Support\nGenetic Algorithms\nTA Tiềm\n230801\n\n\n\n08/08/23\nPython Support\nPandas (1)\nTA Bảo\n230808\n\n\n\n14/08/23\nPython Support\nPandas (2)\nTA Bảo\n230814\n[C7, McKinney 2023]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module3.html#competition-training",
+    "href": "modules/module3.html#competition-training",
+    "title": "Module 3 - Probability and Statistics for AI",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n20/07/23\nCompetition\nTricks to improve performance\nTA Hùng\n230720\n\n\n\n27/07/23\nCompetition\nHCM AI Challenge\nTA Hùng\n230727\n\n\n\n03/08/23\nCompetition\nWeb API + Docker\nTA Hùng\n230803\n\n\n\n17/08/23\nCompetition\nOnnx\nTA Hùng\n230817\n\n\n\n24/08/23\nCompetition\nSemi-supervised Learning\nTA Hùng\n230824\n[Lil’Log] [GitHub repo] [Laine et al., 2016] [Tarvainen et al., 2017]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 3"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#main-lessons",
+    "href": "modules/module5.html#main-lessons",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Main lessons",
+    "text": "Main lessons\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n02/10/23\nAssignment\nLogistic Regression Exercise\nTA Thắng\nDue: 08 Oct, 2023  [solution]\n\n\n\n04/10/23\nMain Lesson\nFrom Linear Regression to Logistic Regression\nDr. Vinh\n231004\n\n\n\n06/10/23\nMain Lesson\nLogistic Regression - Vectorization and Applications\nDr. Vinh\n231006\n[Jurafsky et al., C5, 2023]\n\n\n08/10/23\nExercise Session\nTA Exercise\nTA Thắng\n231008\n\n\n\n09/10/23\nAssignment\nSoftmax Regression Exercise\nTA Thắng\nDue 15 Oct, 2023  [solution]\n\n\n\n11/10/23\nMain Lesson\nSoftmax Regression (Multiclass Classification)\nDr. Vinh\n231011\n\n\n\n13/10/23\nMain Lesson\nPytorch Framework (Implementation for regression)\nDr. Vinh\n231013\n\n\n\n15/10/23\nExercise Session\nTA Exercise\nTA Khoa\n231015\n\n\n\n16/10/23\nAssignment\nMLP Exercise\nTA Thắng\nDue: 22 Oct, 2023 [Solution]\n\n\n\n18/10/23\nMain Lesson\nMultilayer Perceptron\nDr. Vinh\n231018\n\n\n\n20/10/23\nMain Lesson\nActivations and Initializers\nDr. Vinh\n231020\n\n\n\n22/10/23\nExercise Session\nTA Exercise\nTA Khoa\n231022\n\n\n\n24/10/23\nAssignment\nOptimization Algorithm Exercise\nTA Khoa\nDue: 29 Oct, 2023  [Solution]\n\n\n\n25/10/23\nMain Lesson\nOptimizers for Neural Network (1)\nDr. Vinh\n231025\n\n\n\n27/10/23\nMain Lesson\nOptimizers for Neural Networks (2)\nDr. Vinh\n231027\n\n\n\n29/10/23\nExercise Session\nTA-Exercise (Optimization methods)\nTA Khoa\n231029\n\n\n\n01/11/23\nProject Tutorial\nText data: Sentiment Analysis\nTA Thái\n231101 - handout\n\n\n\n03/11/23\nProject Tutorial\nTime-series Data Project: Music Genre Classification\nTA Bảo\n231103 - handout\n\n\n\n05/11/23\nProject Tutorial\nImage Data Project: Gradient Vanishing in MLP\nTA Khoa\n231105 - handout",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#python-tutorial-session",
+    "href": "modules/module5.html#python-tutorial-session",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Python Tutorial Session",
+    "text": "Python Tutorial Session\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n03/10/23\nPreview\nLogistic Regression\nTA Thái\n231003\n\n\n\n10/10/23\nPreview\nSoftmax Regression\n\n231010\n\n\n\n17/10/23\nPreview\nMultilayer Perceptron\n\n231017\n\n\n\n24/10/23\nPreview\nSGD+Momentum\n\n231024",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#extra-class-introduction-to-computer-vision",
+    "href": "modules/module5.html#extra-class-introduction-to-computer-vision",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Extra class: Introduction to Computer Vision",
+    "text": "Extra class: Introduction to Computer Vision\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n07/10/23\nComputer Vision\nIntroduction to CV and Background subtraction\nDr. Đình Vinh\n231007\n\n\n\n14/10/23\nComputer Vision\nLane Detection\nDr. Đình Vinh\n231014\n\n\n\n21/10/23\nComputer Vision\nImage Stitching (panorama)\nDr. Đình Vinh\n231021\n\n\n\n28/10/23\nComputer Vision\nFace Detection\nDr. Đình Vinh\n231028\n\n\n\n04/11/23\nComputer Vision\nObject Tracking using Mean Shift/Cam Shift\nDr. Đình Vinh\n231104 - handout",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module5.html#competition-training",
+    "href": "modules/module5.html#competition-training",
+    "title": "Module 5 - Deep Learning Prerequisites",
+    "section": "Competition Training",
+    "text": "Competition Training\n\n\n\n\n\n\n\n\n\n\n\n Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n05/10/23\nCompetition\nIntroduction to Imbalance Data\nTA Hùng\n231005\n\n\n\n12/10/23\nCompetition\nModel Evaluation\nTA Hùng\n231012\n\n\n\n19/10/23\nCompetition\nKalapa Challenge\nTA Hùng\n231019\n\n\n\n02/11/23\nCompetition\nData Sampling\nTA Hùng\n231102",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 5"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#main-lessons",
+    "href": "modules/module6.html#main-lessons",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n06/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thái\nDue: 12 Nov, 2023  [solution]\n\n\n\n08/11/23\nMain Lesson\nBasic CNN (1)\nDr. Vinh\n231108\n[CS231N Note] [CNN Explainer]\n\n\n10/11/23\nMain Lesson\nBasic CNN (2)\nDr. Vinh\n231110\n\n\n\n12/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231112\n\n\n\n13/11/23\nAssignment\nConvolutional Neural Network Exercise\nTA Thắng\nDue: 19 Nov, 2023  [solution]\n\n\n\n15/11/23\nMain Lesson\nCNN Training\nDr. Vinh\n231115\n[VGG Paper]\n\n\n17/11/23\nMain Lesson\nCNN Generalization\nDr. Vinh\n231117\n\n\n\n19/11/23\nExercise Session\nTA-Exercise\nTA Thắng\n231119\n\n\n\n20/11/23\nAssignment\nPretrained Models for Image Exercise\nTA Thắng\nDue: 26 Nov, 2023  [solution]\n\n\n\n22/11/23\nMain Lesson\nAdvanced CNN Architecture\nDr. Vinh\n231122\n\n\n\n24/11/23\nMain Lesson\nTransfer Learning for CNN\nDr. Vinh\n231124\n\n\n\n26/11/23\nExercise Session\nTA-Exercise\nTA Thái\n231126\n\n\n\n27/11/23\nAssignment\nRecurrent Neural Network Exercise\nTA Thắng\nDue: 03 Dec, 2023  [solution]\n\n\n\n29/11/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231129\n\n\n\n01/12/23\nMain Lesson\nBasic RNN/LSTM (Time series and Text)\nDr. Vinh\n231201\n\n\n\n03/12/23\nExercise Session\nTA-Exercise\nTA Thắng\n231203\n\n\n\n04/12/23\nAssignment\nTransformer Application Exercise\nTA Thái\nDue: 10 Dec, 2023  [solution]\n\n\n\n06/12/23\nMain Lesson\nTransformer (Encoder - Text Classification)\nDr. Vinh\n231206\nBERT Readings\n\n\n08/12/23\nMain Lesson\nTransformer for Image and Time series Data\nDr. Vinh\n231208\n\n\n\n13/12/23\nProject Tutorial\nImage Project: OCR with YOLOv8 and CNN (Scene Text Recognition)\nTA Thắng\n231213\nhandout - solution\n\n\n15/12/23\nProject Tutorial\nImage-text Project: VQA\nTA Thắng\n231215\nhandout - solution\n\n\n17/12/23\nProject Tutorial\nTime-series forecasting project\nDr. Đình Vinh\n231217\nhandout - solution",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#competition-training",
+    "href": "modules/module6.html#competition-training",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n09/11/23\nCompetition\nZalo AI\nTA Hùng\n231109\n\n\n\n16/11/23\nCompetition\nZalo AI\n\n231116",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#python-review",
+    "href": "modules/module6.html#python-review",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n07/11/23\nPreview\nIntroduction to CNN\nTA Thái\n231107\n\n\n\n14/11/23\nPreview\nAdvanced CNN\nTA Thái\n231114\n\n\n\n21/11/23\nPreview\nCNN and its variants\nTA Thái\n231121\n\n\n\n28/11/23\nPreview\nIntroduction to Transfer Learning\nTA Thái\n231128\n\n\n\n05/12/23\nPreview\nIntroduction to Transformer\nTA Thái\n231205\nGenerative AI exists because of the transformer",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#extra-class-research-paper-writing",
+    "href": "modules/module6.html#extra-class-research-paper-writing",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n11/11/23\nResearch & Paper\nResearch Idea - Brainstorming (1)\nDr. Đình Vinh\n231111\n\n\n\n18/11/23\nResearch & Paper\nResearch Idea - Brainstorming (2)\n\n231118\n\n\n\n25/11/23\nResearch & Paper\nHow to do Research (1)\n\n231125\n\n\n\n02/12/23\nResearch & Paper\nHow to do Research (2)\n\n231202\n\n\n\n09/12/23\nResearch & Paper\nHow to do Research (3)\n\n231209",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module6.html#seminar",
+    "href": "modules/module6.html#seminar",
+    "title": "Module 6 - Introduction to Deep Learning",
+    "section": "",
+    "text": "Date\n Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\n10/12/23\nSeminar\nTransformers for Time series data\nDr. Vinh\n231210-1\n\n\n\n17/12/23\nSeminar\nScholarship and Feature Extraction in Time Series Data\n\n231217-1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 6"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#main-lessons",
+    "href": "modules/module7.html#main-lessons",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nAssignment\nDomain Conversion Exercise\nTA Khoa\nDue: 24 Dec, 2023  [solution]\n\n\n\nMain Lesson\nDomain Conversion - Denoising and Segmentation\nDr. Vinh\n231220-23M07MC\n\n\n\nMain Lesson\nDomain Conversion - Colorization and Super Resolution\nDr. Vinh\n231222-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n231224-23M07MC\n\n\n\nAssignment\nObject Detection Project\nTA Hùng\nDue: 31 Dec, 2023  [solution]\n\n\n\nMain Lesson\nObject Detection (1)\nDr. Đình Vinh\n231227-23M07MC\n\n\n\nMain Lesson\nObject Detection (2)\nDr. Đình Vinh\n231229-23M07MC\n\n\n\nExercise Session\nTA Exercise\nTA Hùng\n231231-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240103-23M07MC\n\n\n\nMain Lesson\nObject Detection\nDr. Đình Vinh\n240105-23M07MC\n\n\n\nExercise Session\nTA-Exercise\nTA Hùng\n240107-23M07MC\n\n\n\nAssignment\nImbalanced Data Exercise\nDr. Vinh\nDue: 10 January, 2024  [solution]\n\n\n\nMain Lesson\nAdvanced Topic: Imbalanced Data\nDr. Vinh\n240110-23M07MC\n\n\n\nMain Lesson\nAdvanced Topic: Self/semi-supervised Learning\nDr. Hưng\n240112-23M07MC\n[Exercise] - [Solution]\n\n\nMain Lesson\nAdvanced Topic: Knowledge Distillation\nDr. Hưng\n240114-23M07MC\n[Exercise] - [Solution]\n\n\nProject tutorial\nImage Project: Tracking by Detection\nTA Thắng\n240117-23M07MC\n\n\n\nProject tutorial\nImage Project: Medical Image Analysis (1)\nTA Huy\n240119-23M07MC\n[Exercise] - [Solution]\n\n\nProject tutorial\nImage Project: Medical Image Analysis (2)\nTA Huy\n240121-23M07MC",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#lesson-preview",
+    "href": "modules/module7.html#lesson-preview",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nPreview\nUNet\nTA Thái\n231219-23M07-EC2\n\n\n\nPreview\nObject Detection using Pretrained Models\nTA Thái\n231226-23M07-EC2\n\n\n\nPreview\nYolov1\nTA Thái\n240102-23M07-EC2\n\n\n\nPreview\nIntroduction to Imbalanced Data\nTA Thái\n240109-23M07-EC2",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#extra-class-research-and-paper-writing",
+    "href": "modules/module7.html#extra-class-research-and-paper-writing",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nResearch & Paper\nGroup Report (1)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nGroup Report (2)\nDr. Đình Vinh\nN/A\n\n\n\nResearch & Paper\nHow to Write a Paper (1)\nDr. Đình Vinh\n240106-23M07-EC1\n\n\n\nResearch & Paper\nHow to Write a Paper (2)\nDr. Đình Vinh\n240113-23M07-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "modules/module7.html#seminars",
+    "href": "modules/module7.html#seminars",
+    "title": "Module 7 - Advanced Model Architectures for Computer Vision",
+    "section": "",
+    "text": "Type\n Content\n Instructor\n Handout\n Further Reading\n\n\n\n\nSeminar\nAdvanced UNet and LLMs Introduction\nDr. Vinh\n231224-23M07-EC3\n\n\n\nSeminar\nMultimodal Language Models\n\n231231-23M07-EC3\n\n\n\nSeminar\nVisual Instruction Tuning (LlaVa) and QLoRA\n\n240107-23M07-EC3\n\n\n\nSeminar\nData Augmentation and Imbalanced Data\n\n240114-23M07-EC3\n\n\n\nSeminar\nRNN-based Forecasting and Toolformer\n\n240121-23M07-EC3",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 7"
+    ]
+  },
+  {
+    "objectID": "resources/courses.html#deep-learning",
+    "href": "resources/courses.html#deep-learning",
+    "title": "Courses",
+    "section": "Deep Learning",
+    "text": "Deep Learning\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS W182/282A Designing, Visualizing and Understanding Deep Neural Networks\nUC Berkeley\n\n[ ]\n\n\nDifficult\nCS294-158 Deep Unsupervised Learning\nUC Berkeley\n\nYoutube PLaylist"
+  },
+  {
+    "objectID": "resources/courses.html#nlp",
+    "href": "resources/courses.html#nlp",
+    "title": "Courses",
+    "section": "NLP",
+    "text": "NLP\n\n\n\n\n\n\n\n\n\n\nDifficulty\nCourse\nUniversity\nAdditional Resources\nLecture\n\n\n\n\nMedium\nCS224N: Natural Language Processing with Deep Learning\nStanford University\n\n[ ]\n\n\nMedium\nCS224U: Natural Language Understanding\nStanford University\n\n[ ]\n\n\nMedium\nCS288: Natural Language Processing\nCaltech\n\n[ ]\n\n\nDifficult\n11-711 Advanced Natural Language Processing\nCarnegie Mellon University\n\n[ ]"
+  },
+  {
+    "objectID": "blogs/multimodal101.html",
+    "href": "blogs/multimodal101.html",
+    "title": "Multimodal Machine Learning",
+    "section": "",
+    "text": "The content of this blog post is based on 11-777 Multimodal Machine Learning course taught by LP Morency and Paul Liang.\nVideo |  Slide"
+  },
+  {
+    "objectID": "blogs/multimodal101.html#heterogenenous-modalities",
+    "href": "blogs/multimodal101.html#heterogenenous-modalities",
+    "title": "Multimodal Machine Learning",
+    "section": "Heterogenenous modalities",
+    "text": "Heterogenenous modalities\nHeterogeneous modalities refer to information being expressed or perceived through different forms, each with its own unique qualities, structures, and representations. For example, a single concept can be communicated through text, images, sounds, or physical gestures, each modality offering a distinct way of understanding the information.\nIn contrast, abstract modalities—such as mathematical formulas or logical statements—tend to be more homogeneous because they rely on consistent, symbolic representations that abstract away from the sensory diversity of more concrete forms. These abstract representations often prioritize precision and consistency across contexts, unlike heterogeneous modalities, which vary based on the form in which the information is presented.\nDimensions of heterogeneity Information present in different modalities will often show diverse qualities, structures and representations.\nWhat is the fundamental unit or element in the new modality that will carry enough meaningful information, while also ensuring sufficient distinction between elements (such as objects in an image)?\nElement representations (discrete, continuous, granularity) Element distributions (density, frequency) Stucture (temporal, spatial, latent, explicit) Information (abstraction, entropy) Noise (uncertainy, noise, missing data) Relevance (task, context dependence)\nConnection refers to the overlap of information between different modalities. For example, if we consider language and vision, how much information is shared between the two?"
+  },
+  {
+    "objectID": "blogs/multimodal101.html#definition",
+    "href": "blogs/multimodal101.html#definition",
+    "title": "Multimodal Machine Learning",
+    "section": "Definition",
+    "text": "Definition\nMultiple modalities refer to the different ways information can be expressed or perceived, such as through vision, sound, taste, touch, or other senses. Some modalities, like vision or sound, are more concrete, as they directly engage with sensory experiences. Other modalities are more abstract. These include things like object categories (grouping objects based on shared characteristics), mathematical expressions (using symbols to convey numerical relationships), or logical structures (like reasoning and relationships in abstract problem-solving). Abstract modalities are often more removed from direct sensory experience, relying on symbolic or conceptual representations instead of perceptual input. A more research-oriented defintion of multimodal is:\n\n\n\n\n\n\nDefinition\n\n\n\nMultimodal is the scientific study of heterogeneous and interconnected data.\n\n\nwhere interconnected refers to connected and interacting between modalities."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#dimensions-of-modality-heterogeneity",
+    "href": "blogs/multimodal101.html#dimensions-of-modality-heterogeneity",
+    "title": "Multimodal Machine Learning",
+    "section": "Dimensions of modality heterogeneity",
+    "text": "Dimensions of modality heterogeneity\n\nHeterogenenous modalities\nHeterogeneous modalities refer to information being expressed or perceived through different forms, each with its own unique qualities, structures, and representations. For example, a single concept can be communicated through text, images, sounds, or physical gestures, each modality offering a distinct way of understanding the information.\nIn contrast, abstract modalities—such as mathematical formulas or logical statements—tend to be more homogeneous because they rely on consistent, symbolic representations that abstract away from the sensory diversity of more concrete forms. These abstract representations often prioritize precision and consistency across contexts, unlike heterogeneous modalities, which vary based on the form in which the information is presented.\n\n\nDimensions of heterogeneity\nInformation present in different modalities will often show diverse qualities, structures and representations.\nWhat is the fundamental unit or element in the new modality that will carry enough meaningful information, while also ensuring sufficient distinction between elements (such as objects in an image)?\nElement representations (discrete, continuous, granularity)\nElement distributions (density, frequency)\nStucture (temporal, spatial, latent, explicit)\nInformation (abstraction, entropy)\nNoise (uncertainy, noise, missing data)\nRelevance (task, context dependence)\nConnection refers to the overlap of information between different modalities. For example, if we consider language and vision, how much information is shared between the two?"
+  },
+  {
+    "objectID": "blogs/multimodal101.html#dimensions-of-heterogeneity",
+    "href": "blogs/multimodal101.html#dimensions-of-heterogeneity",
+    "title": "Multimodal Machine Learning",
+    "section": "Dimensions of heterogeneity",
+    "text": "Dimensions of heterogeneity\nInformation present in different modalities will often show diverse qualities, structures and representations.\nWhat is the fundamental unit or element in the new modality that will carry enough meaningful information, while also ensuring sufficient distinction between elements (such as objects in an image)?\nElement representations (discrete, continuous, granularity)\nElement distributions (density, frequency)\nStucture (temporal, spatial, latent, explicit)\nInformation (abstraction, entropy)\nNoise (uncertainy, noise, missing data)\nRelevance (task, context dependence)\nConnection refers to the overlap of information between different modalities. For example, if we consider language and vision, how much information is shared between the two?"
+  },
+  {
+    "objectID": "blogs/multimodal101.html#modality-connections-and-interactions",
+    "href": "blogs/multimodal101.html#modality-connections-and-interactions",
+    "title": "Multimodal Machine Learning",
+    "section": "Modality connections and interactions",
+    "text": "Modality connections and interactions\n\nConnected modalities\nThe strength of the connection between modalities can be understood in different ways:\nStatistical connections involve patterns in data. For instance, there may be an association, where two modalities co-occur or are correlated. An example of this is when the word “dog” often appears in descriptions of images containing dogs. There’s also dependency, where one event or signal in one modality depends on another, such as a sound following a specific visual action (like a door slamming shut after someone pushes it).\n![[Pasted image 20240923172923.png]]\nOn the other hand, semantic connections focus on the meaning shared between modalities. Grounding refers to how concepts are anchored across modalities, like the word “tree” referring to the same object that is visually recognized as a tree. Relationships involve deeper connections, where modalities interact on a meaningful level, such as how the visual depiction of a smiling face might semantically relate to the word “happiness.”\nFor example, in a video, the connection between a speaker’s words (“It’s raining”) and the visual of raindrops outside might be statistically strong due to the co-occurrence of the word “rain” and the visual of rain, while also being semantically grounded because both modalities refer to the same concept—rain.\n\n\nInteracting modalities\nThe modality comes together and create something new that neither the modalities have by itself.\nThe taxonomy of interacting modalities distinguishes between redundant and non-redundant relationships.\nIn redundant interactions, modalities overlap in the information they provide. If the interaction is equivalent, they convey the same information without influencing each other, like seeing and hearing the word “apple” simultaneously. In enhancement, the modalities complement each other, adding depth or clarity, as in watching a video with matching audio. ![[Pasted image 20240923174232.png]] For non-redundant interactions, the modalities offer different information. In independence, they function separately, while in dominance, one modality overtakes the other, such as language overriding visual input. Modulation occurs when one modality alters the perception of another, and emergence happens when combining modalities creates something entirely new, producing an effect that neither could achieve alone."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#representation",
+    "href": "blogs/multimodal101.html#representation",
+    "title": "Multimodal Machine Learning",
+    "section": "Representation",
+    "text": "Representation\nThis challenge focuses on how to learn representations that effectively capture the interactions between elements from different modalities. The main question is how to represent the relationships between local elements (like objects in an image) and global structures. Sub-challenges include:\n\nFusion, where multiple inputs are combined into one representation (fewer representations than modalities).\nCoordination, where each modality is represented individually, but their connections are maintained (modalities and representations are equal).\nFission, where more representations than modalities are created (factorizing into multiple representations for richer understanding)."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#alignment",
+    "href": "blogs/multimodal101.html#alignment",
+    "title": "Multimodal Machine Learning",
+    "section": "Alignment",
+    "text": "Alignment\nThe challenge of alignment involves identifying and modeling cross-modal relationships at a granular level, where elements from different modalities (like words in language or objects in images) must be connected. This often requires working with structured data, such as breaking an image into a list of objects for grounding and linking it to textual descriptions."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#reasoning",
+    "href": "blogs/multimodal101.html#reasoning",
+    "title": "Multimodal Machine Learning",
+    "section": "Reasoning",
+    "text": "Reasoning\nReasoning in multimodal systems refers to the ability to perform inference by integrating knowledge from multiple modalities. This often requires multiple inferential steps, building on the aligned elements of different modalities, and solving tasks that require a deeper understanding of the relationships between modalities."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#generation",
+    "href": "blogs/multimodal101.html#generation",
+    "title": "Multimodal Machine Learning",
+    "section": "Generation",
+    "text": "Generation\nThe generation challenge involves creating new content based on multimodal inputs. This could involve tasks such as:\n\nSummarization, where the system compresses multimodal data into a coherent summary.\nTranslation, converting information from one modality to another (e.g., image-to-text).\nCreation, where entirely new content is generated from multimodal inputs."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#transference",
+    "href": "blogs/multimodal101.html#transference",
+    "title": "Multimodal Machine Learning",
+    "section": "Transference",
+    "text": "Transference\nThis challenge focuses on transferring knowledge between modalities. Often, one modality may have more data or higher quality data than another. The goal is to leverage the stronger modality to help the weaker one. Sub-challenges include:\n\nCo-learning via representation, where shared representations help both modalities.\nCo-learning via generation, where generation techniques help bridge gaps.\nTransfer, where knowledge from one modality aids another."
+  },
+  {
+    "objectID": "blogs/multimodal101.html#quantification",
+    "href": "blogs/multimodal101.html#quantification",
+    "title": "Multimodal Machine Learning",
+    "section": "Quantification",
+    "text": "Quantification\nFinally, quantification involves understanding and evaluating how multimodal learning works, both empirically and theoretically. This challenge includes studying the interactions between modalities, measuring heterogeneity, and assessing the effectiveness of cross-modal learning processes."
+  },
+  {
+    "objectID": "blogs/posts/clip-reading.html",
+    "href": "blogs/posts/clip-reading.html",
+    "title": "CLIP Reading List",
+    "section": "",
+    "text": "Learning Transferable Visual Models From Natural Language Supervision. This is the original CLIP paper. Its main contribution is that (1) extending the constrastive learning paradigm to multimodal data (image-text) and (2) train the model on a very large scale over a 400 million image-text pair dataset. The image representation learned by the model is shown to be transferable, meaning that it has good performance on downstream visual task.\nMultimodal Neurons in Artificial Neural Networks. A blogpost that focuses on CLIP’s interpretability with stunning visualization.\nScaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision. This paper basically train CLIP on a larger scale and data (1.8 billion image-text pairs)."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html",
+    "href": "blogs/posts/multimodal101.html",
+    "title": "Multimodal Machine Learning",
+    "section": "",
+    "text": "The content of this blog post is based on 11-777 Multimodal Machine Learning course taught by LP Morency and Paul Liang.\nVideo |  Slide"
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#definition",
+    "href": "blogs/posts/multimodal101.html#definition",
+    "title": "Multimodal Machine Learning",
+    "section": "Definition",
+    "text": "Definition\nMultiple modalities refer to the different ways information can be expressed or perceived, such as through vision, sound, taste, touch, or other senses. Some modalities, like vision or sound, are more concrete, as they directly engage with sensory experiences. Other modalities are more abstract. These include things like object categories (grouping objects based on shared characteristics), mathematical expressions (using symbols to convey numerical relationships), or logical structures (like reasoning and relationships in abstract problem-solving). Abstract modalities are often more removed from direct sensory experience, relying on symbolic or conceptual representations instead of perceptual input. A more research-oriented defintion of multimodal is:\n\n\n\n\n\n\nDefinition\n\n\n\nMultimodal is the scientific study of heterogeneous and interconnected data.\n\n\nwhere interconnected refers to connected and interacting between modalities."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#dimensions-of-modality-heterogeneity",
+    "href": "blogs/posts/multimodal101.html#dimensions-of-modality-heterogeneity",
+    "title": "Multimodal Machine Learning",
+    "section": "Dimensions of modality heterogeneity",
+    "text": "Dimensions of modality heterogeneity\n\nHeterogenenous modalities\nHeterogeneous modalities refer to information being expressed or perceived through different forms, each with its own unique qualities, structures, and representations. For example, a single concept can be communicated through text, images, sounds, or physical gestures, each modality offering a distinct way of understanding the information.\nIn contrast, abstract modalities—such as mathematical formulas or logical statements—tend to be more homogeneous because they rely on consistent, symbolic representations that abstract away from the sensory diversity of more concrete forms. These abstract representations often prioritize precision and consistency across contexts, unlike heterogeneous modalities, which vary based on the form in which the information is presented.\n\n\nDimensions of heterogeneity\nInformation present in different modalities will often show diverse qualities, structures and representations.\nWhat is the fundamental unit or element in the new modality that will carry enough meaningful information, while also ensuring sufficient distinction between elements (such as objects in an image)?\nElement representations (discrete, continuous, granularity)\nElement distributions (density, frequency)\nStucture (temporal, spatial, latent, explicit)\nInformation (abstraction, entropy)\nNoise (uncertainy, noise, missing data)\nRelevance (task, context dependence)\nConnection refers to the overlap of information between different modalities. For example, if we consider language and vision, how much information is shared between the two?"
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#modality-connections-and-interactions",
+    "href": "blogs/posts/multimodal101.html#modality-connections-and-interactions",
+    "title": "Multimodal Machine Learning",
+    "section": "Modality connections and interactions",
+    "text": "Modality connections and interactions\n\nConnected modalities\nThe strength of the connection between modalities can be understood in different ways:\nStatistical connections involve patterns in data. For instance, there may be an association, where two modalities co-occur or are correlated. An example of this is when the word “dog” often appears in descriptions of images containing dogs. There’s also dependency, where one event or signal in one modality depends on another, such as a sound following a specific visual action (like a door slamming shut after someone pushes it).\n![[Pasted image 20240923172923.png]]\nOn the other hand, semantic connections focus on the meaning shared between modalities. Grounding refers to how concepts are anchored across modalities, like the word “tree” referring to the same object that is visually recognized as a tree. Relationships involve deeper connections, where modalities interact on a meaningful level, such as how the visual depiction of a smiling face might semantically relate to the word “happiness.”\nFor example, in a video, the connection between a speaker’s words (“It’s raining”) and the visual of raindrops outside might be statistically strong due to the co-occurrence of the word “rain” and the visual of rain, while also being semantically grounded because both modalities refer to the same concept—rain.\n\n\nInteracting modalities\nThe modality comes together and create something new that neither the modalities have by itself.\nThe taxonomy of interacting modalities distinguishes between redundant and non-redundant relationships.\nIn redundant interactions, modalities overlap in the information they provide. If the interaction is equivalent, they convey the same information without influencing each other, like seeing and hearing the word “apple” simultaneously. In enhancement, the modalities complement each other, adding depth or clarity, as in watching a video with matching audio. ![[Pasted image 20240923174232.png]] For non-redundant interactions, the modalities offer different information. In independence, they function separately, while in dominance, one modality overtakes the other, such as language overriding visual input. Modulation occurs when one modality alters the perception of another, and emergence happens when combining modalities creates something entirely new, producing an effect that neither could achieve alone."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#representation",
+    "href": "blogs/posts/multimodal101.html#representation",
+    "title": "Multimodal Machine Learning",
+    "section": "Representation",
+    "text": "Representation\nThis challenge focuses on how to learn representations that effectively capture the interactions between elements from different modalities. The main question is how to represent the relationships between local elements (like objects in an image) and global structures. Sub-challenges include:\n\nFusion, where multiple inputs are combined into one representation (fewer representations than modalities).\nCoordination, where each modality is represented individually, but their connections are maintained (modalities and representations are equal).\nFission, where more representations than modalities are created (factorizing into multiple representations for richer understanding)."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#alignment",
+    "href": "blogs/posts/multimodal101.html#alignment",
+    "title": "Multimodal Machine Learning",
+    "section": "Alignment",
+    "text": "Alignment\nThe challenge of alignment involves identifying and modeling cross-modal relationships at a granular level, where elements from different modalities (like words in language or objects in images) must be connected. This often requires working with structured data, such as breaking an image into a list of objects for grounding and linking it to textual descriptions."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#reasoning",
+    "href": "blogs/posts/multimodal101.html#reasoning",
+    "title": "Multimodal Machine Learning",
+    "section": "Reasoning",
+    "text": "Reasoning\nReasoning in multimodal systems refers to the ability to perform inference by integrating knowledge from multiple modalities. This often requires multiple inferential steps, building on the aligned elements of different modalities, and solving tasks that require a deeper understanding of the relationships between modalities."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#generation",
+    "href": "blogs/posts/multimodal101.html#generation",
+    "title": "Multimodal Machine Learning",
+    "section": "Generation",
+    "text": "Generation\nThe generation challenge involves creating new content based on multimodal inputs. This could involve tasks such as:\n\nSummarization, where the system compresses multimodal data into a coherent summary.\nTranslation, converting information from one modality to another (e.g., image-to-text).\nCreation, where entirely new content is generated from multimodal inputs."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#transference",
+    "href": "blogs/posts/multimodal101.html#transference",
+    "title": "Multimodal Machine Learning",
+    "section": "Transference",
+    "text": "Transference\nThis challenge focuses on transferring knowledge between modalities. Often, one modality may have more data or higher quality data than another. The goal is to leverage the stronger modality to help the weaker one. Sub-challenges include:\n\nCo-learning via representation, where shared representations help both modalities.\nCo-learning via generation, where generation techniques help bridge gaps.\nTransfer, where knowledge from one modality aids another."
+  },
+  {
+    "objectID": "blogs/posts/multimodal101.html#quantification",
+    "href": "blogs/posts/multimodal101.html#quantification",
+    "title": "Multimodal Machine Learning",
+    "section": "Quantification",
+    "text": "Quantification\nFinally, quantification involves understanding and evaluating how multimodal learning works, both empirically and theoretically. This challenge includes studying the interactions between modalities, measuring heterogeneity, and assessing the effectiveness of cross-modal learning processes."
+  },
+  {
+    "objectID": "blogs/posts/clip-reading.html#large-scale",
+    "href": "blogs/posts/clip-reading.html#large-scale",
+    "title": "CLIP Reading List",
+    "section": "Large Scale",
+    "text": "Large Scale\n\nPaLI-X | On Scaling up a Multilingual Vision and Language Model"
+  },
+  {
+    "objectID": "blogs/posts/clip-reading.html#efficient",
+    "href": "blogs/posts/clip-reading.html#efficient",
+    "title": "CLIP Reading List",
+    "section": "Efficient",
+    "text": "Efficient\n\nFLIP | Scaling Language-Image Pre-training via Masking. One of the key element for contrastive learning is large batch size. This paper propose to mask out a large portion of the image, which leads to reduced memory needs, and thus more images being contrast at the same time.\nSigLIP | Sigmoid Loss for Language Image Pre-Training\nCyCLIP\nImage Captioners Are Scalable Vision Learners Too"
+  },
+  {
+    "objectID": "resources/youtube.html",
+    "href": "resources/youtube.html",
+    "title": "Youtube Channels for AI (and Math) Learning",
+    "section": "",
+    "text": "3Blue1Brown\nYuxiang “Shawn” Wang\nPieter Abbeel\nSasha Rush\nGabriel Mongaras\nMiles Chen\nVery Normal\nReducible\nArtem Kirsanov\nPolylog\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "modules/module9.html#main-lessons",
+    "href": "modules/module9.html#main-lessons",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nStyle Transfer Exercise\nTA Khoa\nDue: 17 March, 2024  [solution]\n\n\n\nMain Lesson\nBasic Style Transfer\nDr. Vinh\n240306-23M09-MC\n\n\n\nMain Lesson\nMultimodal Style Transfer\nDr. Vinh\n240308-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Khoa\n240310-23M09-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thái\n240317-23M09-MC\n\n\n\nMain Lesson\nGAN and DCGAN\nDr. Vinh\n240320-23M09-MC\n\n\n\nMain Lesson\nPix2Pix and CycleGAN\nDr. Vinh\n240322-23M09-MC\n\n\n\nExercise Session\nText to Image Synthesis with DCGAN\nTA Thái\n240324-23M09-MC\n[handout] - [solution]\n\n\nAssignment\nImage Inpainting with DDPMs\nTA Thái\n[handout] - [solution]\n\n\n\nMain Lesson\nDiffusion Models (1)\nDr. Đình Vinh\n240327-23M09-MC\nTutorial on Diffusion Models for Imaging and Vision\n\n\nMain Lesson\nDiffusion Models (2)\nDr. Đình Vinh\n240329-23M09-MC\n\n\n\nExercise Session\nDiffusion-based Image Inpainting\nTA Thái\n240331-23M09-MC\n[handout]-[solution]\n\n\nMain Lesson\nProject: VAE-based Image Colorization\nDr. Tài\n240403-23M09-MC\n\n\n\nProject Tutorial\nProject: Diffusion-based Image Colorization\nDr. Tài\n240407-23M09-MC\n[handout] - [solution]\n\n\nMain Lesson\nStable Diffusion\nDr. Đình Vinh\n240410-23M09-MC\n\n\n\nMain Lesson\nIntroduction to OpenAI’s Sora\nDr. Đình Vinh\n240412-23M09-MC\n\n\n\nProject Tutorial\nText to Image Synthesis with Stable Diffusion (and CLIP)\nTA Thái\n240414-23M09-MC\n[handout] - [solution]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module9.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nLLMs\nTraining a minChatGPT\nTA Thái\n240406-23M10-EC1\n\n\n\nLLMs\nLLM Finetuning for Math Solver\nTA Thắng\n240413-23M10-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#extra-class-mlops",
+    "href": "modules/module9.html#extra-class-mlops",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nMLOps\nModel Pruning\nTA Bách\n240309-23M09-EC1\n\n\n\nMLOps\nMobile Deployment\nDr. Đình Vinh\n240316-23M09-EC1\n\n\n\nMLOps\nWeb Deployment\nDr. Đình Vinh\n240323-23M09-EC1\n\n\n\nMLOps\nDeployment as a Service (API)\nTA Thắng\n240330-23M09-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "modules/module9.html#seminar",
+    "href": "modules/module9.html#seminar",
+    "title": "Module 9 - Generative Models",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nSeminar\nSeminar: XAI\nDr. Anh Nguyen\n240405-23M09-MC",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 9"
+    ]
+  },
+  {
+    "objectID": "blogs/posts/tokenization.html",
+    "href": "blogs/posts/tokenization.html",
+    "title": "Tokenization, Word Embedding, and Data Preparation for LLMs",
+    "section": "",
+    "text": "Before we implement and train an LLM, we first need to prepare the training dataset, which typically include the following steps:"
+  },
+  {
+    "objectID": "blogs/posts/tokenization.html#motivation",
+    "href": "blogs/posts/tokenization.html#motivation",
+    "title": "Tokenization, Word Embedding, and Data Preparation for LLMs",
+    "section": "Motivation",
+    "text": "Motivation\nRaw text cannot be processed directly by deep neural network models. Since text is categorical type of data, it is not compatible for mathematical operations. Therefore, we need a way to represent words as continuous-valued vectors, which is often referred to as embedding. This embedding step is typically done by either using a particular neural network layer or a pre-trained neural network. Different data formats require different embedding model.\n\n\n\n\n\n\nDefinition\n\n\n\n\nEmbedding is a way of mapping from non-numeric or categorical data to continuous-valued vector representation, which is a format that neural network can process.\n\n\n\nNote that there are also embeddings for sentences, paragraphs, or even whole documents. For example, sentence or paragraph embeddings are popular for retrieval-augmented generation. However, here we mainly focus on word embeddings."
+  },
+  {
+    "objectID": "blogs/posts/tokenization.html#word-embeddings",
+    "href": "blogs/posts/tokenization.html#word-embeddings",
+    "title": "Tokenization, Word Embedding, and Data Preparation for LLMs",
+    "section": "Word embeddings",
+    "text": "Word embeddings\nThe number of dimension for word embeddings can be varied. While a higher dimensionality might capture more complex pattern, it has high computational requirement. When visualizing a two-dimensional word embedding, one observation is that similar words seem to close to each other.\n\n\n\nt-SNE projection of word sense embeddings\n\n\nIn the past, different word embeddings have been proposed, including Word2Vec or GloVe. However, LLMs often use their own embeddings (instead of training a separate neural network) which are updated during the training stage and is part of the input layer. This comes with the benefit that the embeddings are optimized to the specific task as well as data. Embeddings in modern LLMs often have very high dimensionality. For example, the smallest GPT-2 model have an embedding size of 768 dimensions, and the largest GPT-3 model uses the embedding size of 12288 dimensions."
+  },
+  {
+    "objectID": "modules/module10.html#main-lessons",
+    "href": "modules/module10.html#main-lessons",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nAssignment\nReinforcement Learning Exercise\nTA Thắng\nDue: 21 Apr, 2024  [solution]\n\n\n\nPreview\nIntroduction to Reinforcement Learning\nTA Thuận\n240416-23M10-EC2\n\n\n\nMain Lesson\nReinforcement Learning (CartPole)\nDr. Hoàng\n240417-23M10-MC\n\n\n\nMain Lesson\nReinforcement Learning (Deep Deterministic Policy Gradient)\nDr. Hoàng\n240419-23M10-MC\n\n\n\nExercise Session\nTA Exercise\nTA Thắng\n240421-23M10-MC\n\n\n\nAssignment\nPoint Cloud Techniques and Applications Project\nDr. Tuân\n[project] - [solution]\n\n\n\nAssignment\nMultimodal Large Language Models Exercise\nTA Thái\nDue: 27 Apr, 2024  [solution]\n\n\n\nMain Lesson\nClassification for 3D Point Cloud Data\nDr. Tuân\n240424-23M10-MC\n\n\n\nMain Lesson\nAdvances in 3D Point Cloud Data\nDr. Tuân\n240426-23M10-MC\n\n\n\nAssignment\nGraph Neural Network Exercise\nTA Đức\nDue: 03 May, 2024  [solution]\n\n\n\nMain Lesson\nGNN Node Classification\nDr. Đình Vinh\n240428-23M10-MC\n\n\n\nMain Lesson\nGNN (Molecular Property Prediction)\nDr. Đình Vinh\n240501-23M10-MC\n\n\n\nExercise Session\nTA Exercise\nTA Đức\n240503-23M10-MC\n\n\n\nProject Tutorial\nMultitasking networks for Vision\nTA Thái\n240505-23M10-MC\n[Exercise] - [solution]\n\n\nProject Tutorial\nVideoCLIP for Video Classification\nTA Đức\n240508-23M10-MC\n[handout] - [solution]\n\n\nProject Tutorial\nMulti-agent LLM\nTA Thắng\n240510-23M10-MC\n[handout] - [solution]",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "modules/module10.html#extra-class-introduction-to-large-language-models-llms",
+    "href": "modules/module10.html#extra-class-introduction-to-large-language-models-llms",
+    "title": "Module 10 - Reinforcement Learning, GNN, and LLMs",
+    "section": "",
+    "text": "Type\nContent\nInstructor\nHandout\nFurther Reading\n\n\n\n\nExtra Class\nLLM RAG for Applications\nTA Bách\n240420-23M10-MC\n\n\n\nExtra Class\nLLMs for Multimodal Data\nTA Thái\n240427-23M10-EC1\n[Modaverse] [BLIP-2] [NExT-GPT]\n\n\nExtra Class\nLLM Deployment with LangChain\nTA Thắng\n240504-23M10-EC1",
+    "crumbs": [
+      "Blogs",
+      "Course content",
+      "Module 10"
+    ]
+  }
+]

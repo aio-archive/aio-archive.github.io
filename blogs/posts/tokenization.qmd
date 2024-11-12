@@ -1,0 +1,54 @@
+---
+title: Tokenization, Word Embedding, and Data Preparation for LLMs
+date: 05, Oct 2024
+title-block-banner: true
+categories: nlp
+format:
+  html:
+    grid:
+      body-width: 800px
+date-modified: 06, Oct 2024
+---
+
+Before we implement and train an LLM, we first need to prepare the training dataset, which typically include the following steps:
+
+- splitting text into individual word/subword tokens
+  
+- encode the tokens into vector representation
+  
+- implement a sampling and data-loading scheme to produce input-output pairs for training LLMs
+
+# Understanding word embeddings
+
+## Motivation
+
+Raw text cannot be processed directly by deep neural network models. Since text is categorical type of data, it is not compatible for mathematical operations. Therefore, we need a way to represent words as continuous-valued vectors, which is often referred to as **embedding**. This embedding step is typically done by either using a particular neural network layer or a pre-trained neural network. Different data formats require different embedding model.
+
+:::{.callout-tip}
+## Definition
+>Embedding is a way of mapping from non-numeric or categorical data to continuous-valued vector representation, which is a format that neural network can process.
+:::
+
+Note that there are also embeddings for sentences, paragraphs, or even whole documents. For example, sentence or paragraph embeddings are popular for *retrieval-augmented generation*. However, here we mainly focus on word embeddings.
+
+## Word embeddings
+
+The number of dimension for word embeddings can be varied. While a higher dimensionality might capture more complex pattern, it has high computational requirement. When visualizing a two-dimensional word embedding, one observation is that similar words seem to close to each other.
+
+![t-SNE projection of word sense embeddings](../BlogAssets/t-SNE-projection-of-word-sense-embeddings-Green-labels-show-the-two-sense-embeddings-for.png){width=300}
+
+In the past, different word embeddings have been proposed, including Word2Vec or GloVe. However, LLMs often use their own embeddings (instead of training a separate neural network) which are updated during the training stage and is part of the input layer. This comes with the benefit that the embeddings are optimized to the specific task as well as data. Embeddings in modern LLMs often have very high dimensionality. For example, the smallest GPT-2 model have an embedding size of 768 dimensions, and the largest GPT-3 model uses the embedding size of 12288 dimensions.
+
+# Text tokenization
+
+Work with a small datset to illustrate the tokenization process.
+
+```python
+import urllib.request
+url = ("https://raw.githubusercontent.com/rasbt/"
+"LLMs-from-scratch/main/ch02/01_main-chapter-code/"
+"the-verdict.txt")
+file_path = "the-verdict.txt"
+urllib.request.urlretrieve(url, file_path)
+```
+

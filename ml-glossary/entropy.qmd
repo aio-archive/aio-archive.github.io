@@ -1,0 +1,57 @@
+---
+title: Entropy
+title-block-banner: true
+description: Entropy is the term that has its root from the field of information theory and it is extremely useful in machine learning. The entropy helps us quantify the average amount of *surprise* of a probability distribution. 
+categories: information-theory
+format:
+  html: 
+    grid:
+      body-width: 600px
+---
+
+We first consider the concept of surprise.
+
+# Intuition
+**Surprise in probability**
+
+Imagine three of the following the cases:
+
+1. you ask your friend to predict whether a coin will land head or tail when being tossed and your friend's prediction is correct.
+2. you ask your friend to predict what value would appear when you roll a dice and your friend's prediction is correct.
+3. you ask your friend to predict what value would appear when you roll a dice three times in a row, and your friend's prediction is, again, correct for all the rolls.
+
+![](entropy.png)
+
+We all know now that with those three cases, the extent of surprise differs, from scenario 1 having the least amount of surprise to scenario 3 being the most surprised situation. The question for us now is **how to quantify this amount of surprise** in a mathematical sense with the following properties:
+
+1. It has an **additive** nature, *i.e.* the surprise value for correctly predicting the value of 3 dices in a row (as in scenario 3) should be larger than that of correctly predicting the value of 1 dice. In particular, when the probability value multiply, the amount of surprise should add up.
+   
+2. It have to be **negatively proportional** to the probability value $p$. In other words, your amount of surprise should equals to 0 when the probability of some event happening is 1 (absolutely certain).
+
+# Entropy definition
+
+Let $h(s)$ denotes the surprisal of state $s$, and $p_s$ be the probability that the state $s$ happen. The second desideratum is easy to satisfied, where $h(s) \propto \dfrac{1}{p_s}$. For the first desideratum, we know from high school math that the $\log()$ have such property:
+
+$$\log \left(\prod_{i=1}^N s_i\right) = \sum_{i=1}^{N} \log (s_i)$$
+With that, we can now formally defined the surprise term:
+
+
+::: {.callout-note}
+## Definition
+**Surprise**
+$$h(s)  = \dfrac{1}{\log (s)}$$
+:::
+
+Now, we want to compute the average of the surprise term for the whole distribution, this is called **entropy**:
+$$H = \sum_{s} p_{s} \log \left(\dfrac{1}{p_{s}}\right)$$
+In plain English, what we are doing with this formula is to sum over all possible states and multiply the probability of each state by the surprisal value.
+
+Related concepts:
+[[Cross-entropy]]
+[[KL Divergence]]
+
+
+
+
+
+

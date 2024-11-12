@@ -3,6 +3,7 @@ project:
 
 website:
   title: "AIO Course"
+  favicon: logo.png
   bread-crumbs: false
   search:
     location: navbar
@@ -35,11 +36,11 @@ website:
             text: Module 10 | Reinforcement Learning, GNN, and LLMs
       - text: Resources      
         menu:
-          - href: resources/research.qmd
+          - href: resources/research/research.qmd
             text: Research and Paper Writing
           - href: resources/repo.qmd
             text: GitHub Repository
-          - href: resources/research.qmd
+          - href: resources/grad-life/grad-life.qmd
             text: Graduate life
           - href: resources/books.qmd
             text: Books
@@ -47,27 +48,41 @@ website:
             text: Courses
           - href: resources/papers.qmd
             text: Fundamental Papers
-      - href: misc/misc.qmd
-        text: Misc
-      - href: ainews.qmd
+          - href: resources/talks.qmd
+            text: Talks
+      - href: blogs/blogs.qmd
+        text: Blogs
+      - href: news/ainews.qmd
         text: AI News
       - href: seminars.qmd
         text: Seminars
-      - href:  ml-glossary/ml-glossary.qmd
+      - href: ml-glossary/ml-glossary.qmd
         text: ML Glossary
-      - href: memes.qmd
+      - href: memes/memes.qmd
         text: Memes
   back-to-top-navigation: true
   page-navigation: true
   page-footer: 
-    ' "*(AI) will rank among our greatest technological achievements, and everyone deserves to play a role in shaping it*". — Fei-Fei Li' 
+    ' "*(AI) will rank among our greatest technological achievements,
+     and everyone deserves to play a role in shaping it*". — Fei-Fei Li' 
   sidebar:
   - id: ml-glossary
     style: "docked"
+    search: true
+    border: true
+    pinned: true
     title: "ML Glossary"
     contents:
-      - text: Entropy
-        href: entropy.qmd
+    - section: "Information Theory"
+      contents:
+          - text: Entropy
+            href: ml-glossary/entropy.qmd
+    - href: ml-glossary/contrastive-learning/contrastive-learning.qmd
+      text: Contrastive Learning
+    - href: ml-glossary/contrastive-learning/triplet-loss.qmd
+      text: Triplet Loss
+    
+    
   - id: main
     style: "docked"
     contents:
@@ -99,8 +114,16 @@ website:
         contents:
           - text: Resources
             href: resources/resources.qmd
-          - text: Misc 
-            href: misc/misc.qmd
+          - text: Blogs 
+            href: blogs/blogs.qmd
+          - href: ainews.qmd
+            text: AI News
+          - href: seminars.qmd
+            text: Seminars
+          - href: ml-glossary/ml-glossary.qmd
+            text: ML Glossary
+          - href: memes.qmd
+            text: Memes
     sidebar-nav-files-sidebar: custom
     sidebar-nav-files-sidebar-custom: |
       if (path.startsWith('ml-glossary')) {
@@ -112,17 +135,20 @@ language:
   search-box-placeholder: Search this website
 format:
   html:
+    include-in-header: 
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     theme:
       light: [flatly, custom-theme.scss]
     css: styles.css
     toc: true
+    smooth-scroll: true
+    fontsize: 1em
     linkcolor: "#3b9ced"
-    fontsize: 0.85em
     grid:
-      sidebar-width: 220px
-      body-width: 1000px
+      sidebar-width: 300px
+      body-width: 1200px
       margin-width: 220px
       gutter-width: 1.4rem
-
 
 

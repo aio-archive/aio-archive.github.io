@@ -1,9 +1,42 @@
 ---
 title: "AIO2023 Course"
 sidebar: false
+format:
+  html: 
+    grid:
+      body-width: 700px
 ---
 
-*"All models are wrong, but some are useful"* George Box
+![sample](assets/cover.gif)
 
-![](intro_2.gif)
+---
+
+# Introduction
+
+Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It's best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (*eg. linear algebrea concepts, calculus, probability, and basic Python coding skills*) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.
+
+---
+
+# Course Schedule
+
+Essentially, there are fours main parts during the course: (1) The main lectures on **Wednesday** and **Friday** weekly; (2) the extra classes / TA lessons / Project tutorials on **Saturday** weekly; (3) the pre-lecture lecture on **Tuesday** weekly; and (4) the seminars on **Sunday** occcasionally.
+
+The overall course schedule can be wrap up in the following table.
+
+| Day        | Event                                          | Frequency   |
+|------------|------------------------------------------------|-------------|
+| Monday     | Assignment release                             | Weekly      |
+| Tuesday    | Pre-lecture lecture                            | Weekly      |
+| Wednesday  | Main lecture                                   | Weekly      |
+| Friday     | Main lecture                                   | Weekly      |
+| Saturday   | Extra classes / TA lessons / Project tutorials | Weekly      |
+| Sunday     | Seminars                                       | Occasionally|
+
+On Monday each week, you will be assigned the homework related to the content of the two main lectures on Wednesday and Friday. This homework is usually due on the Monday of the next week. Before the main lecture on Wednesday, there will be a pre-lecture lesson that covers the prerequisites on Tuesday. After the main lectures, there will be a lecture conducted by the TAs to help you revise and support you regarding the assignment. 
+
+---
+
+# Course Resources
+
+There will be recordings for each lecture as well as the slides.
 

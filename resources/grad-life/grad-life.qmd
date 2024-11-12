@@ -1,0 +1,16 @@
+---
+title: Graduate life resources
+---
+
+# Preparing
+
+- [How to prepared for an application interview](interview.qmd)
+
+- [The [A-Z] of contacting professors for graduate admissions](email.qmd)
+
+- [What You Need to Know Before Considering a PhD](https://www.fast.ai/posts/2018-08-27-grad-school.html) (by fast.ai)
+
+- <i class="bi bi-youtube"></i> [Demystifying ML PhD Admissions to US Universities](https://youtu.be/z6TkkdlRWcU?si=EM2XMa5sUbteegJS)
+
+
+  

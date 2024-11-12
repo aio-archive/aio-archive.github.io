@@ -1,0 +1,67 @@
+---
+title: Module 5 - Deep Learning Prerequisites
+tbl-colwidths: [25,35,105,40,40,70]
+title-block-banner: true
+---
+
+# Introduction
+
+# Course Schedule and Material
+
+## Main lessons
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|---------|-----------------------------------| 
+| 02/10/23| <span class="badge rounded-pill bg-success">Assignment</span>| [Logistic Regression Exercise](https://drive.google.com/file/d/1v9ECOoetlGuufTa8kHBcO63togelH9Cm/view?usp=drive_link) | TA Thắng| Due: 08 Oct, 2023 <br/> [[solution](https://drive.google.com/file/d/1WJO35GbJ-38BCwswr5_ZcXT3e5GaH_ey/view?usp=drive_link)] |  |
+| 04/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [From Linear Regression to Logistic Regression](https://www.youtube.com/watch?v=77Jo-MGfCpQ) | Dr. Vinh| [231004](https://drive.google.com/drive/folders/18h0V19bru5D9Qm-4kjINb7lkjw5Jom6p?usp=drive_link)  |  |
+| 06/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Logistic Regression - Vectorization and Applications](https://www.youtube.com/watch?v=DuCyzgXdsGg)| Dr. Vinh| [231006](https://drive.google.com/drive/folders/1NFFiw-iEzR4Ina3fWtqfyZYc0xd-Yg5x?usp=drive_link)  | [Jurafsky et al., C5, 2023]|
+| 08/10/23| <span class="badge rounded-pill bg-info">Exercise Session</span></span>| [TA Exercise](https://www.youtube.com/watch?v=ngK3XWEsihY)| TA Thắng| [231008](https://drive.google.com/drive/folders/1iR9NrPUqyf48Vv9nA0fVxpiR6E6mfFHF?usp=drive_link)  |  |
+| 09/10/23| <span class="badge rounded-pill bg-success">Assignment</span>| [Softmax Regression Exercise](https://drive.google.com/file/d/14Hs_t1cmZcyRRIxSM3RV-T3XewRdDK9W/view?usp=drive_link)  | TA Thắng| Due 15 Oct, 2023 <br/> [[solution](https://drive.google.com/file/d/1NH62oE-GjeGTA0OnEiLe5gxJUKMqzYZt/view?usp=drive_link)] |  |
+| 11/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Softmax Regression (Multiclass Classification)](https://www.youtube.com/watch?v=h1k_WvkSOAk)| Dr. Vinh| [231011](https://drive.google.com/drive/folders/1S5C22cljSQb96Q7rkFUzVd8XZ_5ZQtYA?usp=drive_link)  |  |
+| 13/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>|[ Pytorch Framework (Implementation for regression)](https://www.youtube.com/watch?v=SmN9nNY_EdU)  | Dr. Vinh| [231013](https://drive.google.com/drive/folders/1H0WeIlWUAfpkdRrYcIOwAsU4ACGNAuBM?usp=drive_link)  |  |
+| 15/10/23| <span class="badge rounded-pill bg-info">Exercise Session<span> | [TA Exercise](https://www.youtube.com/watch?v=CogEVblthW4)| TA Khoa | [231015](https://drive.google.com/drive/folders/1wOVGEhY-quvVpxGCLM2GUZhcX_HvG7qA?usp=drive_link)  |  |
+| 16/10/23| <span class="badge rounded-pill bg-success">Assignment</span>| [MLP Exercise](https://drive.google.com/file/d/14a0LysFjkNhrNuzEZOm1SXGvrAJLEuLt/view?usp=drive_link) | TA Thắng| Due: 22 Oct, 2023 [[Solution](https://drive.google.com/file/d/1SxzfxZMKYQqIBBcrfJCzXz5AzWm_cFHD/view?usp=drive_link)] |  |
+| 18/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Multilayer Perceptron](https://www.youtube.com/watch?v=oHI-wneEUCM) | Dr. Vinh| [231018](https://drive.google.com/drive/folders/1FOCFXL1G2Yum14P6Nsx0WOxQn7JhglAs?usp=drive_link)  |  |
+| 20/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Activations and Initializers](https://www.youtube.com/watch?v=x0EeokfjStg) | Dr. Vinh| [231020](https://drive.google.com/drive/folders/1Ci5i0Zu1IE5td8U3P3zrvZubrT2GQDbb?usp=drive_link)  |  |
+| 22/10/23| <span class="badge rounded-pill bg-info">Exercise Session<span>| [TA Exercise](https://www.youtube.com/watch?v=YsQwmjb0x-Y)| TA Khoa | [231022](https://drive.google.com/drive/folders/1QYbNmMjCKeC0m-m_PnQU2cvkqYpW-YQy?usp=drive_lin)  |  |
+| 24/10/23| <span class="badge rounded-pill bg-success">Assignment</span>| [Optimization Algorithm Exercise](https://drive.google.com/file/d/1GblB0nYQInrZt7jqQLKxgPwy4g_t2b_l/view?usp=drive_link)| TA Khoa | Due: 29 Oct, 2023 <br/> [[Solution](https://drive.google.com/file/d/1T_XqdA3NKcWSwe2JWvZMGToPEnNsU83r/view?usp=drive_link)]  |  |
+| 25/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Optimizers for Neural Network (1)](https://www.youtube.com/watch?v=pyA-wXMYzKQ)| Dr. Vinh| [231025](https://drive.google.com/drive/folders/1TzlzPuJ1pBvBh_V9WqAXd9lUXo_2I3e1?usp=drive_link)  |  |
+| 27/10/23| <span class="badge rounded-pill bg-primary">Main Lesson</span>| [Optimizers for Neural Networks (2)](https://www.youtube.com/watch?v=VinG-BqGlu4) | Dr. Vinh| [231027](https://drive.google.com/drive/folders/10f3j1Fv1T3iQlrzlJC2uW0_6EAqRYsKT?usp=drive_link)  |  |
+| 29/10/23| <span class="badge rounded-pill bg-info">Exercise Session</span>    | [TA-Exercise (Optimization methods)](https://www.youtube.com/watch?v=sdHnsRY4YKs)| TA Khoa | [231029](https://drive.google.com/drive/folders/1qwvR7g1dNTX85smJdO3GZ_HfnYU_cnLJ?usp=drive_link)  |  |
+| 01/11/23| <span class="badge rounded-pill bg-success">Project Tutorial</span> | [Text data: Sentiment Analysis](https://www.youtube.com/watch?v=2twDuxyITrk)| TA Thái | [231101](https://drive.google.com/drive/folders/1R_Is7cv34wccN8BLA2DlrG5KawMC0kjM?usp=drive_link) - [handout](https://drive.google.com/file/d/13o3BEedvRYPIa2seA6WGPWq8Dmg28T4x/view?usp=drive_link)  |  |
+| 03/11/23| <span class="badge rounded-pill bg-success">Project Tutorial</span> | [Time-series Data Project: Music Genre Classification](https://www.youtube.com/watch?v=Ud9BKnL3PpE)| TA Bảo| [231103](https://drive.google.com/drive/folders/1tHVwgwpY3CKLtCFYcvY0MUGo_jHp_kKd?usp=drive_link) - [handout](https://drive.google.com/file/d/1Nmp_V5Y4NcdZH8zWQ3W2j2HozGjuiHYO/view?usp=drive_link)  |  |
+| 05/11/23| <span class="badge rounded-pill bg-success">Project Tutorial</span> | [Image Data Project: Gradient Vanishing in MLP](https://www.youtube.com/watch?v=ii7dSVQcBHI) | TA Khoa | [231105](https://drive.google.com/drive/folders/13tvGZtOiGoZ8hN0j5UfY2grXMWEcaF4v?usp=drive_link) - [handout](https://drive.google.com/file/d/1Lo2MtpY0x7hCL5ayUw8kW7NqKeB9v5sv/view?usp=drive_link) |  |
+:   {.striped .hover}
+
+## Python Tutorial Session 
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|---------|-----------------------------------|   
+| 03/10/23| <span class="badge rounded-pill bg-primary">Preview</span>| [Logistic Regression](https://www.youtube.com/watch?v=aRde10ggswo)| TA Thái | [231003](https://drive.google.com/drive/folders/1I5q5Ump-7_nAbjMuPHa1YqEq-mOJQhY5?usp=drive_link)  |  |
+| 10/10/23| <span class="badge rounded-pill bg-primary">Preview</span>| [Softmax Regression](https://www.youtube.com/watch?v=79rw9-xp23M)|   | [231010](https://drive.google.com/drive/folders/1BT1XNBOepYcQzxE0CTaXdyfv6TDJKdB9?usp=drive_link)  |  |
+| 17/10/23| <span class="badge rounded-pill bg-primary">Preview</span>| [Multilayer Perceptron](https://www.youtube.com/watch?v=-rPw8CrHlpM) |   | [231017](https://drive.google.com/drive/folders/1zyC7BMdopkzsNAp9NP5Vz_kbiZoWsQ0E?usp=drive_link)  |  |
+| 24/10/23| <span class="badge rounded-pill bg-primary">Preview</span>| [SGD+Momentum](https://www.youtube.com/watch?v=_ST8NTvuCZw) |   | [231024](https://drive.google.com/drive/folders/1QxvH86zwGK_2dverUwkypnyRTs2MSCp8?usp=drive_link)  |  |
+:   {.striped .hover}
+
+## Extra class: Introduction to Computer Vision 
+      
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|---------|-----------------------------------|   
+| 07/10/23|  <span class="badge rounded-pill bg-info">Computer Vision</span>| [Introduction to CV and Background subtraction](https://www.youtube.com/watch?v=PNb4b4UalzM) | Dr. Đình Vinh| [231007](https://drive.google.com/drive/folders/1Dg2bmrjtGr_wWQbrFOfzX8qiUYyGxlja?usp=drive_link)  |  |
+| 14/10/23|  <span class="badge rounded-pill bg-info">Computer Vision</span>| [Lane Detection](https://www.youtube.com/watch?v=1s4zpNKhc0M)    |Dr. Đình Vinh   | [231014](https://drive.google.com/drive/folders/1scGUAQ-eDtqCbEQ9IQRDDF-foaFRJRyO?usp=drive_link)  |  |
+| 21/10/23|  <span class="badge rounded-pill bg-info">Computer Vision</span>| [Image Stitching (panorama)](https://www.youtube.com/watch?v=W0w_9X51MGs)   |Dr. Đình Vinh   | [231021](https://drive.google.com/drive/folders/10g34z7a6iHzcZu1wcGj_Xh7C4KOb2QUD?usp=drive_link)  |  |
+| 28/10/23|  <span class="badge rounded-pill bg-info">Computer Vision</span>| [Face Detection](https://www.youtube.com/watch?v=yVIF_5JC1RA)    | Dr. Đình Vinh  | [231028](https://drive.google.com/drive/folders/1kBIxhOeWHJEgEDChp4Hh51TIqDxuacwq?usp=drive_link)  |  |
+| 04/11/23|  <span class="badge rounded-pill bg-info">Computer Vision</span>| [Object Tracking using Mean Shift/Cam Shift](https://www.youtube.com/watch?v=o_RLl9rV320)  | Dr. Đình Vinh  | [231104](https://drive.google.com/drive/folders/1_H4uRmO3etSdqoc5uMMr4bfdOhpMPmPZ?usp=drive_link) - [handout](https://drive.google.com/file/d/1O9N_49tNF1naChnuFY7AYK9xh2ecHPwE/view?usp=drive_link)  |  |
+:   {.striped .hover}
+
+## Competition Training
+
+| <i class="bi bi-calendar-check"></i> Date| <i class="bi bi-bar-chart-steps"></i> Type| <i class="bi bi-journals"></i> Content   | <i class="bi bi-person"></i> Instructor     | <i class="bi bi-file-earmark-text"></i> Handout  | <i class="bi bi-book"></i> Further Reading |
+|------------|-----------------------------|--------------------------------------------------------------|--------------|---------|-----------------------------------| 
+| 05/10/23| <span class="badge rounded-pill bg-warning">Competition</span>    | [Introduction to Imbalance Data](https://www.youtube.com/watch?v=u8iO6_gRq24)| TA Hùng | [231005](https://drive.google.com/drive/folders/1BurmYa0eEz6XjwThmgsP8JnUi0r66lNY?usp=drive_link)  |  |
+| 12/10/23| <span class="badge rounded-pill bg-warning">Competition</span>    | [Model Evaluation](https://www.youtube.com/watch?v=1E-qylhIoWg)  |TA Hùng   | [231012](https://drive.google.com/drive/folders/1kIK_oeGvpCRUtsLzvS1FuhOjrKOpIhE5?usp=drive_link)  |  |
+| 19/10/23| <span class="badge rounded-pill bg-warning">Competition</span>    | [Kalapa Challenge](https://www.youtube.com/watch?v=DlPeejlTRQo)  | TA Hùng  | [231019](https://drive.google.com/drive/folders/1n3VkD4isznupvPlRr3VKFHi_63hbH2sA?usp=drive_link)  |  |
+| 02/11/23| <span class="badge rounded-pill bg-warning">Competition</span>    | [Data Sampling](https://www.youtube.com/watch?v=E8y6uNJBUa8)| TA Hùng  | [231102](https://drive.google.com/drive/folders/13OB3NxF_aPRnTcEMxjUcDeozfO1fc_hH?usp=drive_link)  |  |
+:   {.striped .hover}
+
+# Further Resources

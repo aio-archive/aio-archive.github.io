@@ -1,0 +1,5 @@
+---
+title: Talks
+---
+
+<https://slideslive.com/library>. A place that hosts AI/ML conferences' workshops.

@@ -1,0 +1,22 @@
+---
+title: Triplet Loss
+title-block-banner: true
+categories: Contrastive Learning
+bibliography: references.bib
+---
+
+The triplet loss function was originally introduced in the FaceNet paper [@facenet]. Intuitively, the aim of this loss function is to minimize the distance between an anchor embedding and a positive embedding while maximizing the distance between the anchor embedding and a negative embedding (recall in [contrastive learning](contrastive-learning.qmd) that we need to constrast the sample in addition to producing similar representations for similar samples). 
+
+Given an embedding function parameterized by $\theta$, denoted as $f_{\theta}$, where $x$ is the anchor sample, $x^{+}$ is a positive sample (similar to $x$), and $x^{-}$ is a negative sample (dissimilar to $x$), the objective can be formulated as the following optimization problem:
+
+$$
+\underset{\theta}{\min} \left\{ \|f_{\theta}(x) - f_{\theta}(x^{+})\|_{2}^{2} - \|f_{\theta}(x) - f_{\theta}(x^{-})\|_{2}^{2} \right\}
+$$
+
+The triplet loss function can suffer from an unbounded term, as the distance between the anchor and negative embedding can become arbitrarily large. This can lead to unstable training and difficulty in optimizing the model. To address this issue, it is necessary to normalize the embedding function in some way to bound the loss function. Therefore, we could introduce a new margin $\epsilon$ to create a bound for our loss function as follows:
+
+$$
+\underset{\theta}{\min} \max \left\{ \|f_{\theta}(x) - f_{\theta}(x^{+})\|_{2}^{2} - \|f_{\theta}(x) - f_{\theta}(x^{-})\|_{2}^{2}, \epsilon  \right\}
+$$
+
+This formulation prevents excessive penalization of the negative distance, stabilizing the training process and making the optimization more tractable.

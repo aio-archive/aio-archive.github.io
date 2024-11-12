@@ -1,0 +1,25 @@
+---
+title: Youtube Channels for AI (and Math) Learning
+date-modified: 23, Sep 2024
+---
+
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown)
+
+- [Yuxiang "Shawn" Wang](https://www.youtube.com/@yuxiangwang9624)
+
+- [Pieter Abbeel](https://www.youtube.com/@PieterAbbeel)
+
+- [Sasha Rush](https://www.youtube.com/@srush_nlp)
+
+- [Gabriel Mongaras](https://www.youtube.com/@gabrielmongaras)
+
+- [Miles Chen](https://www.youtube.com/@smileschen/videos)
+
+- [Very Normal](https://www.youtube.com/@very-normal)
+
+- [Reducible](https://www.youtube.com/@Reducible)
+
+- [Artem Kirsanov](https://www.youtube.com/@ArtemKirsanov)
+
+- [Polylog](https://www.youtube.com/@PolylogCS)
+
