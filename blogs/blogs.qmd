@@ -1,7 +1,0 @@
----
-title: Blogs
-title-block-banner: true
-listing:
-    categories: true
-    contents: posts
----

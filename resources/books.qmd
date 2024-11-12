@@ -1,5 +1,0 @@
----
-title: Books
----
-
-- [A Course in Machine Learning by Hal Daumé III](http://ciml.info/)

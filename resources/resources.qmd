@@ -1,5 +1,0 @@
----
-title: Resources
----
-
-[Graduate life](grad-life/grad-life.qmd)
