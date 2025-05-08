@@ -16,17 +16,56 @@ p {
 #my {
 }
 
+.navbar-brand {
+  color: #87bbec;
+}
+
 .nav-link {
-    color: #3498db;
+    color: #87bbec;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #2980b8;
+    color: #034f7e;
     opacity: 0.8;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
-    color: #2980b9;
+    color: #1976b4;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs  {
+  color: #043351;
+}
+
+.navbar {
+  background-color: white !important;
+  opacity: 0.9;
+}
+
+/* Target tabset nav-links specifically */
+.nav-link {
+  color: #2980b8 !important;
+}
+
+/* Optional: make active tab blue and bold */
+.nav-link.active {
+  color: #2980b8 !important;
+  font-weight: bold;
+}
+
+.quarto-title-block {
+  background-color: white !important;
+}
+
+.quarto-title-banner {
+  margin-bottom: 1em;
+  background: #ffffff;
+}
+
+/* Optional: Change title text color to something visible on white */
+.quarto-title h1,
+.quarto-title p {
+  color: black !important;
 }

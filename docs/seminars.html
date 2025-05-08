@@ -91,8 +91,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./blogs/blog.qmd"> 
+    <a class="nav-link" href="./blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./academia/index.html"> 
+<span class="menu-text">Academia</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -110,6 +114,35 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<!-- progress-bar.html -->
+<style>
+    #progress-bar {
+      position: fixed;
+      top: var(--navbar-height, 60px); /* Adjust depending on your navbar height */
+      left: 0;
+      height: 1px;
+      background: #757677;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s;
+    }
+  
+    body {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+  <div id="progress-bar"></div>
+  
+  <script>
+    window.addEventListener("scroll", function () {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById("progress-bar").style.width = progress + "%";
+    });
+  </script>
+  
 
 
 
