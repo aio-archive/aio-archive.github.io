@@ -1,0 +1,211 @@
+---
+title: "Paper Writing Guidelines"
+title-block-banner: true
+page-layout: article
+format:
+  html:
+    grid:
+        body-width: 800px
+categories: [research, papers]
+include-before: |
+  <style>
+    /* This class enforces the strikethrough and italic style */
+    .done {
+      text-decoration: line-through;
+      font-style: italic;
+      opacity: 0.6;
+    }
+  </style>
+include-after: |
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("li").forEach(function (item) {
+        const checkbox = item.querySelector("input[type=checkbox]");
+        if (checkbox) {
+          // Create a label span using the current item text (without the checkbox)
+          const label = document.createElement("span");
+          // Remove the checkbox HTML from the item's innerHTML
+          label.innerHTML = item.innerHTML.replace(/<input[^>]+>/, "");
+          // Rebuild the list item: checkbox then label
+          item.innerHTML = "";
+          item.appendChild(checkbox);
+          item.appendChild(label);
+
+          function updateStyle() {
+            if (checkbox.checked) {
+              label.style.textDecoration = "line-through";
+              label.style.fontStyle = "italic";
+              label.style.opacity = "0.6";
+            } else {
+              label.style.textDecoration = "none";
+              label.style.fontStyle = "normal";
+              label.style.opacity = "1";
+            }
+          }
+
+          // Attach the event listener for change events on the checkbox
+          checkbox.addEventListener("change", updateStyle);
+          // Apply the style based on the current state
+          updateStyle();
+        }
+      });
+    });
+  </script>
+---
+
+# Disclaimer
+I am nowhere at a place to "advice" everyone about doing research. This list is my personal checklist for writing papers that I compiled by reading/watching advise from others. 
+
+# Abstract
+
+# Related Works
+
+## 3 facets of your work  
+- Explain your method through its contrasts
+
+# Introduction
+
+- [ ] Outline a set of 3 defendable contributions:
+  - [ ] What is the problem that the paper is solving;  
+  - [ ] Why that problem (the importance of the problem);  
+  - [ ] What are the current approaches to solving this problem and what is wrong about them;  
+  - [ ] What are the contributions of the paper;
+
+# Method
+
+- [ ] No new notation. If you need it, add to the background section.  
+- [ ] Anything written in the Method section is expected to be tested
+
+# Experiment
+
+# Results
+
+The goal of the Results section is to verify the contributions of the paper.
+
+- [ ] The tables are the stars.  
+- [ ] One table = one experiment  
+- [ ] Describe the table and the conclusion of the experiment  
+- [ ] Avoid new notation, method, data. Everything must be set up in the Experiment section.
+
+# Discussion / Analysis
+
+- [ ] Check robustness of the contributions  
+- [ ] Ask specific questions that go beyond the core, now-proven results  
+- [ ] Ablation of specific method choices  
+- [ ] Qualitative analysis of known gains  
+- [ ] Avoid random experiment
+
+# Conclusion
+
+- [ ] No new information  
+- [ ] Abstract but more specific  
+- [ ] A brief summary (one or two sentences) of what the paper is about  
+- [ ] A summary of the key findings of the paper  
+- [ ] A list of potential improvements.
+
+# Figures
+
+> “Figures are an important element of reporting the findings of your research. The reader usually starts by reading the abstract, conclusion and figures. If the figures are self-contained and convincing, it is likely that the reviewers will accept the paper without asking a large number of questions. If they have to read the whole text to understand the worth of each figure, this will slow their progress and could make them impatient, hence decrease the chance of giving recommendation for your paper.”
+
+- [ ] Place the figures at the top of the page to save space.  
+- [ ] Should fill the entire `\linewidth` (or `\textwidth`) of the page.  
+- [ ] Must not be stretched disproportionally.  
+- [ ] Use `rcParams` in Matplotlib to adjust the font size of the figure.  
+- [ ] Add `baseline` option in `tikz` package if you have to subfigures and want them to perfectly align (use `\input{fig1}` instead of `\begin{figure}`)  
+- [ ] The captions should be descriptive enough that together with the figure it can be standalone.  
+- [ ] Use vector graphics whenever possible (PDF, SVG, TikZ, ...) 
+- [ ] The text in the figure should be readable without zooming  
+- [ ] The font of the text in the figure should be the same as the font of the body text.
+
+Some examples of good figures (imo):
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGkn9tNXx0/bhrEy8pBzq5Ix8Bzp7WDdA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+# Tables
+
+- [ ] Use thick lines at the top and bottom of the table.  
+- [ ] Avoid using the vertical lines as much as possible.
+- [ ] The caption of the table is **above** the table, not below (like Figures).
+
+# Grammar
+
+- Be consistent on pronouns and tenses
+
+# Misc
+
+## Paragraphs
+
+- [ ] 1 paragraph = 1 idea  
+- [ ] The paragraphs should be short (3–5 sentences)  
+- [ ] The paragraph should have flow:  
+  - [ ] logical flow of ideas — sequential in time, general to specific, logical arguments  
+  - [ ] parallel sentence structures  
+  - [ ] transition words (if necessary, do not overrely on them). Use simple ones (BUT instead of Nevertheless...)  
+- [ ] Pairs of ideas joined by "and", "or", or "but" should be written in parallel form.  
+- [ ] Proofread, proofread, and proofread until you are sick and obsessed with your paper  
+
+## Clutters
+
+> The secret of good writing is to strip every sentence to its cleanest components.
+
+Clutteredness is being precise, not counting the words.
+
+- [ ] Avoid: _successful solution, extremely flabbergasted_  
+- [ ] Avoid: _It is noticeable that..._  
+- [ ] Most of the time you don’t need _there is / there are_  
+- [ ] _Can be regarded as_ vs. _is_  
+- [ ] Use passive voice sparingly and deliberately  
+- [ ] Use strong verbs; avoid: _take, have, get, to be_  
+- [ ] Avoid noun-ifying verbs (e.g., _compare_ → _make a comparison_)  
+- [ ] Eliminate negatives  
+- [ ] Avoid overuse of adverbs (_generally, mostly..._)
+
+## General
+
+- [ ] Use precise verbs  
+- [ ] Quotation marks: Use ``something'' instead of "something"  
+- [ ] Avoid acronyms unless universally known  
+- [ ] Keep the tone balanced between high-level and technical  
+- [ ] Important concepts: explain using text, figures, and math  
+- [ ] Avoid ending paragraphs with only 2–3 words on a line  
+- [ ] Fill the allowed page limit (e.g., write 8 full pages if the limit is 8)  
+- [ ] Use parallelism in lists and structures
+
+# Citation / Bibliography
+
+- [ ] Dirty, inconsistent references imply you don’t care  
+- [ ] Don’t copy-paste from Google Scholar—check and clean  
+- [ ] Cite original papers, not derivative ones  
+- [ ] Avoid massive citation lists like “[1–20]”  
+- [ ] Prefer grouped author-year references in chronological order, e.g.,  
+  [ ] > “Books and articles on writing scientific papers exist [Day, 1998; Ashby, 2000; Plaxco, 2010].”  
+- [ ] Use “?” search to check for missing citations
+
+# Useful Stuff
+
+- [Pub-Ready Plots GitHub](https://github.com/wiseodd/pub-ready-plots?tab=readme-ov-file#creating-a-figure-with-multiple-subplots)  
+- PaperLib for managing papers. Scrape feature helps make proper BibTeX entries.
+
+# References
+
+## Figures
+
+- [https://agustinus.kristia.de/blog/plotting/](https://agustinus.kristia.de/blog/plotting/)
+
+## Tables
+
+- [https://nhigham.com/2019/11/19/better-latex-tables-with-booktabs/](https://nhigham.com/2019/11/19/better-latex-tables-with-booktabs/)  
+- Small Guide to Making Nice Tables
+
+## General
+
+- _Writing in the Sciences_ (Coursera)  
+- _On Writing Well_  
+- _The Elements of Style_  
+- [The Science of Scientific Writing (Gopen & Swan)](https://www.usenix.org/sites/default/files/gopen_and_swan_science_of_scientific_writing.pdf)
