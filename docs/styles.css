@@ -69,3 +69,101 @@ p {
 .quarto-title p {
   color: black !important;
 }
+
+/* --- Dark mode overrides --- */
+.quarto-dark {
+  background-color: #000 !important;
+  color: #f1f1f1 !important;
+}
+
+.quarto-dark .navbar {
+  background-color: #111 !important;
+  opacity: 0.98;
+}
+
+.quarto-dark .navbar-brand,
+.quarto-dark .nav-link {
+  color: #4fc3f7 !important;
+}
+
+.quarto-dark .nav-link:hover {
+  color: #81d4fa !important;
+  opacity: 1;
+}
+
+.quarto-dark .nav-link.active {
+  color: #00bcd4 !important;
+  font-weight: bold;
+}
+
+.quarto-dark .navbar-brand:hover, .quarto-dark .navbar-brand:focus {
+  color: #00bcd4 !important;
+}
+
+.quarto-dark .quarto-title-block,
+.quarto-dark .quarto-title-banner {
+  background-color: #181a1b !important;
+}
+
+.quarto-dark .quarto-title h1,
+.quarto-dark .quarto-title p {
+  color: #f1f1f1 !important;
+}
+
+/* Remove underline from links in tables */
+table a, table a:visited {
+  text-decoration: none !important;
+}
+
+/* Remove grey for visited/active links, use blue and lighter blue */
+a, a:visited, a:active {
+  color: #2980b8 !important;
+}
+a:hover {
+  color: #81d4fa !important;
+}
+
+.quarto-dark a, .quarto-dark a:visited, .quarto-dark a:active {
+  color: #4fc3f7 !important;
+}
+.quarto-dark a:hover {
+  color: #81d4fa !important;
+}
+
+/* Sidebar and title block/banner background for light mode */
+.sidebar, .quarto-title-block, .quarto-title-banner {
+  background-color: white !important;
+}
+
+/* Sidebar and title block/banner background for dark mode */
+.quarto-dark .sidebar,
+.quarto-dark .quarto-title-block,
+.quarto-dark .quarto-title-banner {
+  background-color: #000 !important;
+}
+
+/* Bolder borders for table header and bottom line */
+table thead tr {
+  border-top: 1px solid #656565 !important;
+  border-bottom: 0.8px solid #222 !important;
+  background-color: #f5f5f5 !important;
+}
+table thead th {
+  border-bottom: 1px solid #222 !important;
+}
+table tr:last-child {
+  border-bottom: 1px solid #222 !important;
+}
+
+/* Dark mode: table header row background and borders */
+.quarto-dark table thead tr {
+  background-color: #222 !important;
+  border-top: 1px solid #444 !important;
+  border-bottom: 0.8px solid #666 !important;
+}
+.quarto-dark table thead th {
+  border-bottom: 1px solid #666 !important;
+}
+.quarto-dark table tr:last-child {
+  border-bottom: 1px solid #666 !important;
+}
