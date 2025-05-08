@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AIO2023 Lectures – AIO Archive</title>
+<title>AIO2023 Lectures – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,12 +24,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-65a5ee581041d3eb49133d696263671f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-885a16fc605b5c70bb669689df66c4bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,56 +74,57 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">AIO Course</span>
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">AIO</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-aio">    
-        <li class="dropdown-header">aio/aio2023.qmd</li>
-        <li class="dropdown-header">aio/aioextra.qmd</li>
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources.qmd"> 
-<span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="./blogs/blog.qmd"> 
+<span class="menu-text">Blog</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stanford-courses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Stanford Courses</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
-        <li class="dropdown-header">stanford/cs336/cs336.qmd</li>
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">AIO2023 Lectures</h1>
+        </a>     
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">AIO2023 Lectures</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">AIO2023 Lectures</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-body">
 
       
     
@@ -133,6 +134,24 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -153,18 +172,13 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
 
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/cover.gif" class="img-fluid figure-img"></p>
-<figcaption>sample</figcaption>
-</figure>
-</div>
+<p><img src="assets/cover.gif" class="img-fluid"></p>
 <hr>
 <p>Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It’s best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (<em>eg. linear algebrea concepts, calculus, probability, and basic Python coding skills</em>) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.</p>
 <p>Essentially, there are fours main parts during the course: (1) The main lectures on <strong>Wednesday</strong> and <strong>Friday</strong> weekly; (2) the extra classes / TA lessons / Project tutorials on <strong>Saturday</strong> weekly; (3) the pre-lecture lecture on <strong>Tuesday</strong> weekly; and (4) the seminars on <strong>Sunday</strong> occcasionally.</p>
@@ -275,7 +289,7 @@ Goals
 </ul>
 </div>
 </div>
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -403,7 +417,7 @@ Goals
 </table>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -475,7 +489,7 @@ Goals
 </table>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -515,7 +529,7 @@ Goals
 </table>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -593,10 +607,10 @@ Module Description
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Project Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Python Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Database and SQL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Competition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Summer School</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Further Resources</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Project Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Python Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Databases</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Competition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Summer School</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Further Resources</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -756,7 +770,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -828,7 +842,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -884,7 +898,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -948,7 +962,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1012,7 +1026,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1054,7 +1068,7 @@ Module Description
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Main lesson</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Project Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Introduction to NLP</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Python Tutorial Session</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Competition Training</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1206,7 +1220,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1278,7 +1292,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1334,7 +1348,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1390,7 +1404,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1454,7 +1468,7 @@ Module Description
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python Support</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Advanced NLP</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1622,7 +1636,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1678,7 +1692,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1742,7 +1756,7 @@ Module Description
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Python Tutorial Session</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Computer Vision</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Competition Training</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1910,7 +1924,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -1958,7 +1972,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -2014,7 +2028,7 @@ Module Description
 </table>
 </div>
 <div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
-<table class="table-striped table-hover caption-top table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th><i class="bi bi-calendar-check"></i> Date</th>
@@ -2749,11 +2763,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -2869,11 +2883,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -2898,11 +2912,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -2920,11 +2934,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -2963,11 +2977,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -2993,11 +3007,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><strong>Type</strong></th>
-<th><strong>Content</strong></th>
-<th><strong>Instructor</strong></th>
-<th><strong>Handout</strong></th>
-<th><strong>Further Reading</strong></th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3069,7 +3083,7 @@ Module Description
 <td><a href="https://www.google.com/url?q=https://youtu.be/e_TYyoBkHus&amp;sa=D&amp;source=editors&amp;ust=1724832556758835&amp;usg=AOvVaw3nEMxpJNeaIcuPd3g0bklT">Diffusion Models (1)</a></td>
 <td>Dr.&nbsp;Đình Vinh</td>
 <td><a href="https://drive.google.com/drive/folders/1EaLZOeNHN6RH4N_IrPRtSjA0hIElX3_K?usp=drive_link">240327-23M09-MC</a></td>
-<td>Tutorial on Diffusion Models for Imaging and Vision</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
@@ -3127,11 +3141,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><strong>Type</strong></th>
-<th><strong>Content</strong></th>
-<th><strong>Instructor</strong></th>
-<th><strong>Handout</strong></th>
-<th><strong>Further Reading</strong></th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3156,11 +3170,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><strong>Type</strong></th>
-<th><strong>Content</strong></th>
-<th><strong>Instructor</strong></th>
-<th><strong>Handout</strong></th>
-<th><strong>Further Reading</strong></th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3199,11 +3213,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><strong>Type</strong></th>
-<th><strong>Content</strong></th>
-<th><strong>Instructor</strong></th>
-<th><strong>Handout</strong></th>
-<th><strong>Further Reading</strong></th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3229,11 +3243,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3356,11 +3370,11 @@ Module Description
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Type</th>
-<th>Content</th>
-<th>Instructor</th>
-<th>Handout</th>
-<th>Further Reading</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
 </tr>
 </thead>
 <tbody>
@@ -3394,7 +3408,7 @@ Module Description
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script>
     function abbrv_toc() {
       let toc = document.querySelectorAll('nav#TOC li>a');
@@ -3813,19 +3827,6 @@ Module Description
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Created by Viet Nguyen.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 
