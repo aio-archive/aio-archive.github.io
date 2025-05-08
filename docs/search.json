@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "academia/paperChecklist.html",
+    "href": "academia/paperChecklist.html",
+    "title": "Paper Writing Guidelines",
+    "section": "",
+    "text": "I am nowhere at a place to “advice” everyone about doing research. This list is my personal checklist for writing papers that I compiled by reading/watching advise from others."
+  },
+  {
+    "objectID": "academia/paperChecklist.html#facets-of-your-work",
+    "href": "academia/paperChecklist.html#facets-of-your-work",
+    "title": "Paper Writing Guidelines",
+    "section": "3 facets of your work",
+    "text": "3 facets of your work\n\nExplain your method through its contrasts"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#paragraphs",
+    "href": "academia/paperChecklist.html#paragraphs",
+    "title": "Paper Writing Guidelines",
+    "section": "Paragraphs",
+    "text": "Paragraphs\n\n1 paragraph = 1 idea\n\nThe paragraphs should be short (3–5 sentences)\n\nThe paragraph should have flow:\n\nlogical flow of ideas — sequential in time, general to specific, logical arguments\n\nparallel sentence structures\n\ntransition words (if necessary, do not overrely on them). Use simple ones (BUT instead of Nevertheless…)\n\n\nPairs of ideas joined by “and”, “or”, or “but” should be written in parallel form.\n\nProofread, proofread, and proofread until you are sick and obsessed with your paper"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#clutters",
+    "href": "academia/paperChecklist.html#clutters",
+    "title": "Paper Writing Guidelines",
+    "section": "Clutters",
+    "text": "Clutters\n\nThe secret of good writing is to strip every sentence to its cleanest components.\n\nClutteredness is being precise, not counting the words.\n\nAvoid: successful solution, extremely flabbergasted\n\nAvoid: It is noticeable that…\n\nMost of the time you don’t need there is / there are\n\nCan be regarded as vs. is\n\nUse passive voice sparingly and deliberately\n\nUse strong verbs; avoid: take, have, get, to be\n\nAvoid noun-ifying verbs (e.g., compare → make a comparison)\n\nEliminate negatives\n\nAvoid overuse of adverbs (generally, mostly…)"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#general",
+    "href": "academia/paperChecklist.html#general",
+    "title": "Paper Writing Guidelines",
+    "section": "General",
+    "text": "General\n\nUse precise verbs\n\nQuotation marks: Use ``something’’ instead of “something”\n\nAvoid acronyms unless universally known\n\nKeep the tone balanced between high-level and technical\n\nImportant concepts: explain using text, figures, and math\n\nAvoid ending paragraphs with only 2–3 words on a line\n\nFill the allowed page limit (e.g., write 8 full pages if the limit is 8)\n\nUse parallelism in lists and structures"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#figures-1",
+    "href": "academia/paperChecklist.html#figures-1",
+    "title": "Paper Writing Guidelines",
+    "section": "Figures",
+    "text": "Figures\n\nhttps://agustinus.kristia.de/blog/plotting/"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#tables-1",
+    "href": "academia/paperChecklist.html#tables-1",
+    "title": "Paper Writing Guidelines",
+    "section": "Tables",
+    "text": "Tables\n\nhttps://nhigham.com/2019/11/19/better-latex-tables-with-booktabs/\n\nSmall Guide to Making Nice Tables"
+  },
+  {
+    "objectID": "academia/paperChecklist.html#general-1",
+    "href": "academia/paperChecklist.html#general-1",
+    "title": "Paper Writing Guidelines",
+    "section": "General",
+    "text": "General\n\nWriting in the Sciences (Coursera)\n\nOn Writing Well\n\nThe Elements of Style\n\nThe Science of Scientific Writing (Gopen & Swan)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AIO2023 Lectures",
@@ -65,5 +121,12 @@
     "title": "AIO Course",
     "section": "",
     "text": "Back to top"
+  },
+  {
+    "objectID": "academia/index.html",
+    "href": "academia/index.html",
+    "title": "Academia",
+    "section": "",
+    "text": "Paper Writing Guidelines\n\n\n\n\n Back to top"
   }
 ]
