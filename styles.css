@@ -1,9 +1,32 @@
 /* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+    zoom: 90%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 
 p {
     text-align: justify;
-  }
+}
 
-  #my{
-    zoom: 90%;
-    }
+#my {
+}
+
+.nav-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2980b9;
+    opacity: 0.8;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #2980b9;
+}
