@@ -1,0 +1,19 @@
+/* css styles */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+#my {
+  zoom: 90%;
+}
+
+/* Ensure proper font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

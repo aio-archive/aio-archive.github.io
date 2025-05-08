@@ -1,0 +1,3834 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AIO2023 Lectures – AIO Archive</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-65a5ee581041d3eb49133d696263671f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">AIO</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-aio">    
+        <li class="dropdown-header">aio/aio2023.qmd</li>
+        <li class="dropdown-header">aio/aioextra.qmd</li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.qmd"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stanford-courses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stanford Courses</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
+        <li class="dropdown-header">stanford/cs336/cs336.qmd</li>
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">AIO2023 Lectures</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title"><i class="bi bi-card-list"></i> <b>On this page</b></h2>
+   
+  <ul>
+  <li><a href="#module-1---introduction-to-python-programming" id="toc-module-1---introduction-to-python-programming" class="nav-link active" data-scroll-target="#module-1---introduction-to-python-programming"><span class="header-section-number">1</span> Module 1 - Introduction to Python Programming</a></li>
+  <li><a href="#module-2---calculus-and-linear-algebra-for-ai" id="toc-module-2---calculus-and-linear-algebra-for-ai" class="nav-link" data-scroll-target="#module-2---calculus-and-linear-algebra-for-ai"><span class="header-section-number">2</span> Module 2 - Calculus and Linear Algebra for AI</a></li>
+  <li><a href="#module-3---probability-and-statistics-for-ai" id="toc-module-3---probability-and-statistics-for-ai" class="nav-link" data-scroll-target="#module-3---probability-and-statistics-for-ai"><span class="header-section-number">3</span> Module 3 - Probability and Statistics for AI</a></li>
+  <li><a href="#module-4---machine-learning-and-data-science" id="toc-module-4---machine-learning-and-data-science" class="nav-link" data-scroll-target="#module-4---machine-learning-and-data-science"><span class="header-section-number">4</span> Module 4 - Machine Learning and Data Science</a></li>
+  <li><a href="#module-5---deep-learning-prerequisites" id="toc-module-5---deep-learning-prerequisites" class="nav-link" data-scroll-target="#module-5---deep-learning-prerequisites"><span class="header-section-number">5</span> Module 5 - Deep Learning Prerequisites</a></li>
+  <li><a href="#module-6---introduction-to-deep-learning" id="toc-module-6---introduction-to-deep-learning" class="nav-link" data-scroll-target="#module-6---introduction-to-deep-learning"><span class="header-section-number">6</span> Module 6 - Introduction to Deep Learning</a></li>
+  <li><a href="#module-7---advanced-model-architectures-for-computer-vision" id="toc-module-7---advanced-model-architectures-for-computer-vision" class="nav-link" data-scroll-target="#module-7---advanced-model-architectures-for-computer-vision"><span class="header-section-number">7</span> Module 7 - Advanced Model Architectures for Computer Vision</a></li>
+  <li><a href="#module-8---applications-of-deep-learning-for-nlp" id="toc-module-8---applications-of-deep-learning-for-nlp" class="nav-link" data-scroll-target="#module-8---applications-of-deep-learning-for-nlp"><span class="header-section-number">8</span> Module 8 - Applications of Deep Learning for NLP</a></li>
+  <li><a href="#module-9---generative-models" id="toc-module-9---generative-models" class="nav-link" data-scroll-target="#module-9---generative-models"><span class="header-section-number">9</span> Module 9 - Generative Models</a></li>
+  <li><a href="#module-10---reinforcement-learning-gnn-and-llms" id="toc-module-10---reinforcement-learning-gnn-and-llms" class="nav-link" data-scroll-target="#module-10---reinforcement-learning-gnn-and-llms"><span class="header-section-number">10</span> Module 10 - Reinforcement Learning, GNN, and LLMs</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/cover.gif" class="img-fluid figure-img"></p>
+<figcaption>sample</figcaption>
+</figure>
+</div>
+<hr>
+<p>Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It’s best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (<em>eg. linear algebrea concepts, calculus, probability, and basic Python coding skills</em>) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.</p>
+<p>Essentially, there are fours main parts during the course: (1) The main lectures on <strong>Wednesday</strong> and <strong>Friday</strong> weekly; (2) the extra classes / TA lessons / Project tutorials on <strong>Saturday</strong> weekly; (3) the pre-lecture lecture on <strong>Tuesday</strong> weekly; and (4) the seminars on <strong>Sunday</strong> occcasionally.</p>
+<p>The overall course schedule can be wrap up in the following table.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 65%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Event</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monday</td>
+<td>Assignment release</td>
+<td>Weekly</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>Pre-lecture lecture</td>
+<td>Weekly</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td>Main lecture</td>
+<td>Weekly</td>
+</tr>
+<tr class="even">
+<td>Friday</td>
+<td>Main lecture</td>
+<td>Weekly</td>
+</tr>
+<tr class="odd">
+<td>Saturday</td>
+<td>Extra classes / TA lessons / Project tutorials</td>
+<td>Weekly</td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td>Seminars</td>
+<td>Occasionally</td>
+</tr>
+</tbody>
+</table>
+<section id="module-1---introduction-to-python-programming" class="level1" data-toc-text="Python Programming" data-number="1">
+<h1 data-toc-text="Python Programming" data-number="1"><span class="header-section-number">1</span> Module 1 - Introduction to Python Programming</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Module Description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>Welcome to <strong><em>Module 1: Introduction to Python Programming</em></strong> of the AIO course. The goal of this module is to teach you basic Python programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture.</p>
+</section>
+<section id="projects" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="projects"><span class="header-section-number">1.2</span> Projects</h2>
+<p>Regarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:</p>
+<ul>
+<li>Object Detection with YOLOv8</li>
+<li>Data Manipulation and Crawling</li>
+<li>ChatGPT Applications</li>
+</ul>
+</section>
+<section id="competition-training" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="competition-training"><span class="header-section-number">1.3</span> Competition Training</h2>
+<p>As for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.</p>
+</section>
+<section id="extra-class" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="extra-class"><span class="header-section-number">1.4</span> Extra class</h2>
+<p>The central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.</p>
+</section>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Project handout and material</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Competition training</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Algorithms and Complexity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Further Resources</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Goals
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Understand the structure and expectations of the course.</p></li>
+<li><p>Learn the basics of Python programming.</p></li>
+<li><p>Study fundamental data structures in Python.</p></li>
+<li><p>Learn and apply object-oriented programming (OOP) in Python.</p></li>
+</ul>
+</div>
+</div>
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>08/05/23</td>
+<td></td>
+<td><a href="https://youtu.be/UoYSU7ypz4g">Online Office Hour</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/04/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=95IE3oETJJ0">Sinh hoạt lớp</a></td>
+<td>Dr.&nbsp;Phúc</td>
+<td>slide</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/05/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/17tpfZ1hhia0Q36iaaBAJ_WhEKzEeqjnQ/view?usp=drive_link">Basic Python Exercise</a></td>
+<td>TA Khoa</td>
+<td>Due: 07 May 2023<br>[<a href="https://drive.google.com/file/d/1Ymi8GeUE-HEKBe4m5RBEVq6Yw1ymhg8i/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>03/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=SrICKnWd4gM">Basic Python 1</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/11hUQyr1_YDeTXyZV_q8MAbTEQ0OcEe-H?usp=drive_link">230503 - M01ML01</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>05/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=tKws9MOQ89Y">Basic Python 2</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1hNonHmEAVIxeSsQuuCGpkz1VN2S1RaU9?usp=drive_link">230505 - M01ML02</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>07/05/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=Aq48Nf6lCVY">TA-Exercise</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1DWuYFZ7RU-SUERdOnEQxy-TA0syIo1Bz?usp=drive_link">230507 - M01ES01</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>08/05/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1hcz6jpIrT2Ak93tGdCNb2CrZeg6ieSsR/view?usp=drive_link">Data Structure Exercise</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td>Due: 14 May 2023<br>[<a href="(https://drive.google.com/file/d/1Z3DhVzbTTSIATfh3XC685f1pdKWc0F4G/view?usp=drive_link)">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=TK42WCKiiDw">Data Structure</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Ge9SvXnm3nZzTBXaijp5vBVXZlSZgPVb?usp=drive_link">230510 - M01ML03</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=BUueswpSwVc&amp;feature=youtu.be">Data Structure</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1A3p4oU9g_KGJppJWM88TPzLh7JHrwFg-?usp=drive_link">230512 - M01ML04</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14/05/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=NsB9PjZR6G0&amp;feature=youtu.be">TA-Exercise</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1IKsB9zfS7ULmr308AdWssFejiAjIYg_9?usp=drive_link">230514 - M01ES02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14/05/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1oOAq8lqZpoPozvxz9BY62n1zbixFzduY/view?usp=drive_link">Python OOP Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>Due: 21 May 2023<br>[<a href="https://drive.google.com/file/d/129jTHw-ViP3DoKuZRJfu4JdoqezyWTkh/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=xdvi9Dzr6Qw">OOP with Python</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1fNtOYrNlWKh33dhtefaq6eqhy1kaHJHj?usp=drive_link">230517 - M01ML05</a></td>
+<td><a href="https://www.youtube.com/watch?si=L9C_yrUrpA1pRFH_&amp;v=jgHnlmbr2C8&amp;feature=youtu.be">Previous offering by Dr.&nbsp;Vinh</a></td>
+</tr>
+<tr class="odd">
+<td>19/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=8oDDxWeiL8A&amp;feature=youtu.be">OOP with Python</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1SRBWu1kC4Kz1j4xVrCwgbMQUJWTrBXyh?usp=drive_link">230519 - M01ML06</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/05/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=RGPQgXzOqhg">TA-Exercise</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1MMOpN4rhss-bUPKXI3KuDadBQDwCOPMD?usp=drive_link">230521 - M01ES03</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>22/05/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://drive.google.com/file/d/1mr_Gt4iEJeRt9jrjK_dL_m4Vdm3SKTLb/view?usp=drive_link">Object Detection with YOLOv8 Project (Handout)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/file/d/18WCMnLcpkxXfDPj3iRB37bzZ9WnwN9i_/view?usp=drive_link">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>22/05/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://drive.google.com/file/d/1D6l8s8RASiqRsUAT8c5R9FCQbhNxpGnm/view?usp=drive_link">Data Manipulation and Crawling Project (Handout)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/file/d/1OkW72k2fJcXmmR61Jgdo4OZOQGF8YlHO/view?usp=drive_link">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>22/05/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://drive.google.com/file/d/17XKeXMU7KmD0YniDUrkQ4-EiWgfQqety/view?usp=drive_link">ChatGPT Applications Project (Handout)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/file/d/1tzBVmIe96rS3RmGtx1auX0YD2r7N53X_/view?usp=drive_link">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>24/05/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=L6Sin-ieEfM">Image Project: Yolov8 for Object Detection</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1oBaQTtDJNJZTzICpAOO-0k1-qlg205Hc?usp=drive_link">230524 - M01PT01</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>26/05/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=LRiMeQdzDPA">Data Manipulation using Python Libraries</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1K_Z_nPD8TQjtPbCEu9z7B9tGPNLN6HC5?usp=drive_link">230526 - M01PT02</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/05/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=i-fXB0CFOMY">Text Project: ChatGPT-based Application</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/16e51KFthsLs4CKq1Yrmj_JKokrjozZCZ?usp=drive_link">230528 - M01PT03</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>23/05/23</td>
+<td><span class="badge rounded-pill bg-light">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=_WkMMGINOVA">For, List and Dictionary</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1TlL50eBOpBuzfdTzo83BzLcfgNAfDqie?usp=drive_link">230523 - M02CR01</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11/05/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=BtAIW83TCvc">Data Visualization</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1yrpbk6rvm-x-kNFdoKW62Aq_9znxKC8-?usp=drive_link">230511 - M01AC01</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>18/05/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=98JL_UFpxlQ">Competition tasks and metrics</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1TZvYRpntsLQdYhKieewtItkAo3YhfBbp">230518 - M01AC02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>25/05/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=TyVCXo45c1Y">Design Validation</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1pMw3pKwOPipnU7vyHGhhPVdgToqvpsJe?usp=drive_link">230525 - M01AC03</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>06/05/23</td>
+<td><span class="badge rounded-pill bg-dark">Algorithms &amp; Complexity</span></td>
+<td><a href="https://www.youtube.com/watch?v=i97kAPZtq4A">Big-O (Time analysis)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1Y8Q664kROlQJFLkucwaWbXWqTWJAqsbO?usp=drive_link">230506 - M01EC01</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13/05/23</td>
+<td><span class="badge rounded-pill bg-dark">Algorithms &amp; Complexity</span></td>
+<td><a href="https://www.youtube.com/watch?v=4J3D5it9ugA">Brute-force Exhaustive</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1CPvnrrTogPGj7ylMO4CxCFx6NCm9wne3?usp=drive_link">230513 - M01EC02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>20/05/23</td>
+<td><span class="badge rounded-pill bg-dark">Algorithms &amp; Complexity</span></td>
+<td><a href="https://www.youtube.com/watch?v=dOrQveeQz90">Recursion and Two Pointer</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1_S49gULs5kv8LtERaNNHUt_uiKGv7Ka3?usp=drive_link">230520 - M01EC03</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>27/05/23</td>
+<td><span class="badge rounded-pill bg-dark">Algorithms &amp; Complexity</span></td>
+<td><a href="https://www.youtube.com/watch?v=38gV3ggD0Pg">Dynamic Programming</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/197P11czKtXw09oLDwJDoEbGANmqJvAE2?usp=drive_link">230527 - M01EC04</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<ul>
+<li><p>Sweigart, Al. <em>Beyond the basic stuff with python: Best practices for writing clean code</em>. No Starch Press, 2020.</p></li>
+<li><p><a href="https://realpython.com/python3-object-oriented-programming/">Object-Oriented Programming (OOP) in Python 3</a></p></li>
+<li><p><a href="https://github.com/chiphuyen/python-is-cool">Huyen Chip’s GitHub repository</a></p></li>
+<li><p><a href="https://web.stanford.edu/class/archive/cs/cs161/cs161.1138/">Stanford’s CS161 Design and Analysis of Algorithms course</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="module-2---calculus-and-linear-algebra-for-ai" class="level1" data-toc-text="Calculus &amp; Linear Algebra" data-number="2">
+<h1 data-toc-text="Calculus &amp; Linear Algebra" data-number="2"><span class="header-section-number">2</span> Module 2 - Calculus and Linear Algebra for AI</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Module Description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<section id="introduction-1" class="level2 callout-body-container callout-body" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>Welcome to the second module of the AIO2023 course. The central theme of this module is about Calculus and Linear Algebra, the two subfields of mathematics that I cannot emphasize enough the importance of them in understanding and developing machine learning models. My take on whether to learn math when you want to learn AI is that although it is often the case that many modern ready-made libraries (<em>eg</em> Numpy, Sklearn, Tensorflow, PyTorch, JAX, …) already support the underlying math, having a thorough understanding of the math behind the machine learning models makes you significantly more efficient in debugging , <em>i.e.</em> knowing what’s wrong with the model, or what particular model specification to apply for your specific problem.</p>
+</section>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Project Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Python Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Database and SQL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Competition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Summer School</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Further Resources</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>30/05/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/172-dNwjMsx7o80lD69K3jDQCUMPv3aL4/view">Interpolation and Application Exercises</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/file/d/1ydigi-L45x7psF6yAXR6tk2w965yVuhq/view">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>31/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=CGz55B04ENY">Construct loss functions with different targets</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1tq87w8zWS-NWS8Vvh0GxNQ-KygW7l2-A">230531 - M02ML01</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>02/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=rJ_5xIq2PtI">Interpolation and Image upsampling</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/11U_atSj5XlegbZ9vhGB7y3EZ5P_8Z2Mz">230602 - M02ML02</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>04/06/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=ARNTc7Ler5I">TA Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1BFTmS0JFsFyw6wsg358ZVGpx7E61VAoY">230604 - M02ES01</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>05/06/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1VuI4k1NB5tWoNMZrKRqQrqzMrAY30nPD/view">Calculus Exercise</a></td>
+<td></td>
+<td><a href="https://drive.google.com/file/d/114d7oDMEFs7YCY3_QPiEtMhvpYoh9SBX/view">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>07/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=oDukLU4f97o">Understanding Derivative and Gradient</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1OJFbnm6SKOPMx3CVzlssf89C1RlmOhvq">230607 - M02ML03</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>09/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=mF8XR7KfnUM">Edge Detection and Gradient-based Optimization</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1PMhyNKd1x25PPvhIgRVBhToBekFZULP4">230609 - M02ML04</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11/06/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=gP1Ki14Bz8A">TA Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc">230611 - M02ES02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=MG4JZIQcUGk">Linear Regression (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1BF_cGNrZWy2gKWr-92ra5JpTEJ0ocSip">230614 - M02ML05</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>16/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=6j3Dkb4dD_k">Linear Regression (2)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1lcdigaepT1grAPZB1ltPM6IDdJ4dirNg">230616 - M02ML06</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>18/06/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=nUavRivww30&amp;feature=youtu.be">TA Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1mf_Qku7PAIbU7x0fZOAKQd3sZGYDvof1">230618 - M02ES03</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=kZbTAmmWngc&amp;feature=youtu.be">Vectorization for Linear Regression (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/14d29aV_WNvJ9seOCEgEcy4rYYGYUq1-_">230621 - M02ML07</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>23/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=6j3Dkb4dD_k&amp;feature=youtu.be">Vectorization for Linear Regression (2)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1k1aoklmarP9RzpS0gk7v2xNI_OzzPFCy">230623 - M02ML08</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>25/06/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=2mcr-uQUkyw">TA Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/17wPKwX5UR5bSpmd-WTIxv61RCHtu8R4x">230625 - M02ES04</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>26/06/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view">Cosine Background subtraction Exercise</a></td>
+<td></td>
+<td><a href="https://drive.google.com/file/d/1AMqO6fVdyjMK_GakeYnSTtpD1TIl9cqD/view">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=04MiYSvuay4">Basic Linear Algebra and Its Applications</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1-Q-XeI9r0bGIcn82V4ttU9kczp_dVTL1">230628 - M02ML09</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>30/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=1mag0t9xN38">Cosine Similarity and Decomposition</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1W1wTFw4rpFi3BK_m7RvZIslpmBuPGwM1">230630 - M02ML10</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/07/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=7jvTTLx1Hp0">TA Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ScS_voc1D4G4jLLLrl-I1_7Fs3XpoHs7">230702 - M02ES05</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>09/07/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=5NTdCNYof-8&amp;feature=youtu.be">SVD and its Applications</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/19_yKWCIYHAlVeptABt45bX8BdHRDO8mE">230709 - M02ET01</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10/07/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://www.youtube.com/watch?v=i-fXB0CFOMY">Image Project: Depth Information Reconstruction</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/file/d/1r87T7EfRPHDg84ZaCkWXtdsM_hqgWtHn/view">[proposal]</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10/07/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://drive.google.com/file/d/1L7H0FJKrtLG1YaS633t9xtGNE0AJxMlP/view">Text Project: Text Retrieval (using Pretrained Embedding)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/file/d/1BQvZFPuFpE8D8zcsd24CXeHHiDxOsT0s/view">[solution]</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10/07/23</td>
+<td><span class="badge rounded-pill bg-danger">Project handout</span></td>
+<td><a href="https://www.youtube.com/watch?v=dowyGFU-3Js">Tabular Data Project: Sales Prediction (Linear and non-linear regression)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/file/d/1wJkcwxmgk0wgUlQQDilQ_nv4WAIjblsc/view">[proposal]</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12/07/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=_WkMMGINOVA">Tabular Data Project: Sales Prediction (Linear and non-linear regression)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1YPuN5HMD8di90z6otMGrZwV-swTCUQZW">230716 - M02PT03</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14/07/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=dbRLrAkaE5U">Text Project: Text Retrieval (using Pretrained Embedding)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/13JQ7DreVfI_vvwz7jmKZaIjZXZtJdxac">230714 - M02PT02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16/07/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=8znPv3xhQsc">Image Project: Depth Information Reconstruction</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1rvXAcRdN7HQyuLHNIjU5aDHSJ-XAp2us">230712 - M02PT01</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>30/05/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=YcWIexC_Eas">List for 2D Data</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1fC86gbjNcTpsd90vVKseut0wZyZVVxxT">230530 - M02CR02</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=c8ziannz3fI">List for 3D data</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1SO4-iYC9-vQvJkuK3yzxO6ImtQvnE6gB">230606 - M02CR03</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=WD8eP-44IyQ">Array 1D using NumPy</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1XKjGWdgmHbCAxet43KgsK2Y781HuxvTi">230613 - M02CR04</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=PLwvP1gmuxM">Array 2D and 3D using NumPy</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1DD87KbYIr7ac2z0KLd8hxVEpLprxqxMY">230620 - M02CR05</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>27/06/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=_Qe_IZeJi8U">Basic Numpy</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/10UMs015f318PV3pJYObKrrK8nY7YSzmm">230627 - M02CR06</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>03/06/23</td>
+<td><span class="badge rounded-pill bg-info">Database and SQL</span></td>
+<td><a href="https://www.youtube.com/watch?v=BG4-tWchfWg">Database-SQL (1)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1mcU9_cP77SrcCaqSr6fNOkHXi-l7IWoa">230603 - M02EC01</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10/06/23</td>
+<td><span class="badge rounded-pill bg-info">Database and SQL</span></td>
+<td><a href="https://www.youtube.com/watch?v=kkbPzohUJ5U">Database-SQL (2)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1q36f6HHICz-qmNdhA0RjciKj9YDE_Xwc">230611 - M02ES02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>17/06/23</td>
+<td><span class="badge rounded-pill bg-info">Database and SQL</span></td>
+<td><a href="https://www.youtube.com/watch?v=KLlLPcyhTrM">Database-SQL (3)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1fXl7f3QLJ_UlpA70vgMe9j9ZbaFT9YYs">230617 - M02EC03</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>24/06/23</td>
+<td><span class="badge rounded-pill bg-success">NoSQL</span></td>
+<td><a href="https://www.youtube.com/watch?v=qIhsAYTsUn8">Database-NoSQL</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1XJO22ynk-iPOtGqRpSoUXjKCaVYfzTAY?usp=drive_link">230624 - M02EC04</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/07/23</td>
+<td><span class="badge rounded-pill bg-success">NoSQL</span></td>
+<td><a href="https://www.youtube.com/watch?v=QdMSN0jPrwE">Database-NoSQL (2)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/18sm5zyzmFwljGWyz1acEdVOl9oPS60QL?usp=drive_link">230701 - M02EC05</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>08/07/23</td>
+<td><span class="badge rounded-pill bg-success">Big Data</span></td>
+<td><a href="https://www.youtube.com/watch?v=bjMdetZq69o">SQL for Big Data</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1u1XuOcIiGh1yCW4ypUX-IgqGmPmv2CN4?usp=drive_link">230708 - M02EC06</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01/06/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=Cps2e1Y2W8o">Hyper-parameter optimization</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1jvcirpEWUlUgpqqvYmm56UqtiERiJMY3">230601 - M02AC01</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>08/06/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=Gfa7UkBjm_w&amp;feature=youtu.be">Ensembling (Voting, Averaging, and Stacked Generalization)</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/17YPmCN1SgcnQba5wBnyf7hClX0Jf0Sws">230608 - M02AC02</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15/06/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=Gfa7UkBjm_w">Augmentation Strategies and Albumentation</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/19rg8MpzE02CIGmMYF30hPGtJskqbX1Ew">230615 - M02AC03</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>22/06/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=5RZAYlfnqSI">Nestquant</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1TxUeUSJJQd1WaM7x6aXEQhWnOKEiKFFj">230622 - M02AC04</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>29/06/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=mJ4HQa69cqI">OOD-CV</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1G1h5U3AjPbtmJpjP6llG3ucleOMKJFDQ">230629 - M02AC05</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/07/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=9toC7w9BqKk">Vision Transformer</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1SH5yW3QZg_kpgRkU8yQtZmNRi0wwhDjG">230706 - M02AC06</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>05/07/23</td>
+<td>Summer school on Deep Learning</td>
+<td><a href="https://youtube.com/playlist?list=PLPbtQr3ZQ6L02px09JN8K38GjYx0zuWbQ">VIASM Summer school on Recent Advances in Deep Learning</a></td>
+<td>Many</td>
+<td><a href="https://drive.google.com/drive/folders/1NzxzO2GrtEWibtyjxY0b7gOHG_QUhTIy">Sildes</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
+<ul>
+<li><p><a href="https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;si=SCgFbDbQyRlICl1f">Essence of linear algebra by 3Blue1Brown</a></p></li>
+<li><p><a href="https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&amp;si=-dyLAYqwnV2y4oel">Esssence of calculus by 3Blue1Brown</a></p></li>
+<li><p><a href="https://mml-book.github.io/">Mathematics for Machine Learning</a></p></li>
+<li><p><a href="https://gwthomas.github.io/docs/math4ml.pdf">Mathematics for Machine Learning</a> by Garret Thomas</p></li>
+<li><p><a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf">The Matrix Cookbook</a></p></li>
+<li><p>[For the NLP extra class]: <a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing (3rd ed.&nbsp;draft)</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="module-3---probability-and-statistics-for-ai" class="level1" data-toc-text="Probability and Statistics" data-number="3">
+<h1 data-toc-text="Probability and Statistics" data-number="3"><span class="header-section-number">3</span> Module 3 - Probability and Statistics for AI</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Main lesson</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Project Tutorial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Introduction to NLP</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Python Tutorial Session</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Competition Training</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>18/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1QWfngARqyx2b9a6A04HyhOKmsWmre7rG/view">Probability Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>19/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=_3Geo5GvqBk">Basic Probability, Histogram and Image Enhancement</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/11y0jzKVJvBzSIGSVxl1g1ljvYRcywfLf?usp=drive_link">230719</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=6VLK-lCWLVQ">Naive Bayes Classifier</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1XAIStROw6WxXP-M5NWntfx69B6lwhzxC?usp=drive_link">230721</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>23/07/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=KwUBo4nKQpA">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1RJyEJM47lQXhiw4NVherABZP2rsPKBt_?usp=drive_link">230723</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>31/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/15yY-SPtzUwl_4jl3Bnfg6CtzCShlh0rp/view">Statistic Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/file/d/19jcxudMDeis2394OdHvup673KhdxZD8u/view?usp=drive_link">Solution</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>26/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=jJyKPBKCZQI">Basic Statistics and Correlation Coefficient (Basic Tracking)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1EPHOyuwIuYlYBV993OBXkf8GipsG7UpU?usp=drive_link">230726</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>28/07/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://youtu.be/x5z0TNgjlLU">Template Matching (Cosine Similarity vs.&nbsp;Correlation Coefficient)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1bgFYIVV-e4OBxwZDnycA0qXERnzSb6uI?usp=drive_link">230728</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>30/07/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=SkeI4eFR6KQ">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Ww5Fkak79eQTGewH3bEjTBMSBL4GIS_E?usp=drive_link">230730</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>31/07/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1j6GrKkqXnXyvFScnTEc0nR8zf1h_Up27/view">Genetic Algorithms and its Applications Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>Due: 06 Aug 2023 [<a href="https://drive.google.com/file/d/1Qfq4FOcv7q6Kef-BgxacM4aR3XdppFl5/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://youtu.be/vkjCagePwkk">Randomness and Genetic Algorithms</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/173kJmQgxrcaQq2qZPVmpbiwfFfz8KBRu?usp=drive_link">230802</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=ujlajSEnMOk&amp;feature=youtu.be">Genetic Algorithms (Optimization and Linear Regression)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Hkh_GZkh7dW06W8riE24eHrKdL9DRHF8?usp=drive_link">230804</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=lXlROjef-6s">TA-Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1cTasfdBRvLkkPgcNB4aOIzdeEdlI7LL3?usp=drive_link">230806</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>07/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1j6GrKkqXnXyvFScnTEc0nR8zf1h_Up27/view">Genetic Algorithms and its Applications Exercise</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>07/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://drive.google.com/file/d/1pW6pdMDjPFrf4X1OG676DaIncS3xYWBo/view">Data Analysis Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 13 Aug, 2023 [<a href="https://drive.google.com/file/d/1TwUFXa066pY_x3dLI_gVP8udeYXh0yKS/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>09/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=qylk5_xJJ3E">Data visualization and Data Analysis (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/13GY7R85C86c0ZmPwxu7kGxWKGmy7jLkR?usp=drive_link">230809</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=WO7tyfpt-Kc">Data visualization and Data Analysis (2)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ciRVtn5aSWzeO18LmanzDXVXsVQGtEa9?usp=drive_link">230811</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13/08/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://youtu.be/VvBjgYkdN5w">TA-Exercise (Polar)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1-KJy92a5fEL1-V7H6k89j-z_cEQgRVeU?usp=drive_link">230813</a></td>
+<td>[<a href="https://pola-rs.github.io/polars-book/getting-started/intro/">Polar doc</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1MCqtplXmS95CvjaUh95GPlyMw-lilNe5/view?usp=drive_link">Big Data Frameworks (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>Due: 20 Aug, 2023 [<a href="https://drive.google.com/file/d/1HKCBDE7wRi9inZlRB7Iii7cbI6YuG6Go/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td>Big Data Frameworks (1)</td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=Bv-_9yoj2LY">Big Data Frameworks (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1F7Fq_KcN0dLMkh3S-iNp7b-49-30hJ_U?usp=drive_link">230818</a></td>
+<td>[<a href="http://infolab.stanford.edu/~ullman/mmds/ch2n.pdf">LSFS and MapReduce</a>]</td>
+</tr>
+<tr class="even">
+<td>20/08/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=gV-KJNPBIsI">Big Data Frameworks (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/19_SqIZKQPnGuJmHbhQ9qtQC5EX9nnxqU?usp=drive_link">230820</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>22/08/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://drive.google.com/file/d/1KjZ6VHiehGOoB_ZlrOAUkBJzyTO0IooM/view?usp=drivesdk">Image Data Project: Image Retrieval</a></td>
+<td>TA Thắng</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>23/08/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=wLdHXNNDeh0">Big Data Frameworks (3)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/18vEiTBJ9Q2SOelrW30rD08JCMt0u5X3d?usp=drive_link">230823</a></td>
+<td>[<a href="https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf#page=125">C9, Feng 2021</a>]</td>
+</tr>
+<tr class="odd">
+<td>25/08/23</td>
+<td><span class="badge rounded-pill bg-info">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=kqy-HF5moQM">Image Data Project: Image Retrieval</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1lPx522ThpI_0997u1gTFpjdNJLmRhr4k?usp=drive_link">230825</a></td>
+<td>[<a href="https://drive.google.com/file/d/1n2umD5Vv-hEqW2dF58gtkmwsJRHlD1KP/view?usp=drive_link">solution</a>] [<a href="https://arxiv.org/abs/2010.11929">VIT paper (Dosovitskiy et al., 2021)</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>29/07/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=Mhr0Bsj0gDo">Introduction, Preprocessing</a></td>
+<td>TA Thái</td>
+<td>230729</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>05/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=QEXrwFc7gzQ">Preprocessing, Tokenization</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1oy2P4-j8uLSZiYDMo0-7YDNtsyYXmQfq?usp=drive_link">230805</a></td>
+<td>[<a href="https://vietqnguyen.notion.site/AIO2023-Introduction-to-NLP-Notes-f97570244fef4fea9f85520fbe864832">note</a>] [<a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">C2, Jurafsky et al., 2023</a>]</td>
+</tr>
+<tr class="odd">
+<td>12/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=WxHTNG4EvRo">Statistical Language Model</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1tx5dxWwG9ec-hc8PNOzRwMbxxr_uDS5m?usp=drive_link">230812</a></td>
+<td>[<a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">C3, Jurafsky et al., 2023</a>] [<a href="https://www.youtube.com/watch?v=PaCmpygFfXo">Andrej Karpathy’s Lecture</a>]</td>
+</tr>
+<tr class="even">
+<td>18/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=t90KOh4gvg4">Part-of-Speech Tagging</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1rtW1m4QuG-WNGz3dlq3wXjakAG-tgKQ-?usp=drive_link">230819</a></td>
+<td>[<a href="https://web.stanford.edu/~jurafsky/slp3/A.pdf">CA Jurafsky et al., 2023</a>]</td>
+</tr>
+<tr class="odd">
+<td>26/08/23</td>
+<td><span class="badge rounded-pill bg-info">NLP Introduction</span></td>
+<td><a href="https://www.youtube.com/watch?v=bye0wJatGQA">Constituency Parsing</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1J_dpvmghOrRCHDChvSv2c_qP1X7xMg0H?usp=drive_link">230826</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>18/07/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=qE5GcysXX_0">Probability</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1NMOFel0S2mTnRzwXDQlAkmUYJdAV7bZX?usp=drive_link">230718</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>25/07/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=2_Ec_GkaQdQ">Statistics</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/10X_-Nfojn9Vfsl0_Hf-C6aiNqRgY2k4a?usp=drive_link">230725</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=QKkgphZDLlI">Genetic Algorithms</a></td>
+<td>TA Tiềm</td>
+<td><a href="https://drive.google.com/drive/folders/1GWuzCuvbfiHcHG9vkQe-thmsMvXR2pDi?usp=drive_link">230801</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>08/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=mNC8xgpqr6g">Pandas (1)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1D9Mazy9tfgtIDfEyihBQUpq9tHHCEAnS?usp=drive_link">230808</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14/08/23</td>
+<td><span class="badge rounded-pill bg-dark">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=Fl6XWH7OP3Y">Pandas (2)</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1oeWRYoHqfCl2wErQ0cHXpg9P2Wnzhwlj?usp=drive_link">230814</a></td>
+<td>[<a href="https://wesmckinney.com/book/data-cleaning">C7, McKinney 2023</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20/07/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=Qc-pbbcVZak">Tricks to improve performance</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1anvZ8Jz3eCO5CoQFRRAHdoECYfdMCneA?usp=drive_link">230720</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>27/07/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=0y6PKxh9_K4">HCM AI Challenge</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/19OvLRrdojvra6iat0x1oph2R5DZr1YA9?usp=drive_link">230727</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=GmarNkuwMyI">Web API + Docker</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/15ACtPJ7Jrz14u3citmA5SBVXZt7p7c2E?usp=drive_link">230803</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=qAZImjn6omw">Onnx</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1KdEQoDp00jAraMvLGrB4tmvA8xJfFULD?usp=drive_link">230817</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>24/08/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=XC4OKloWlD8">Semi-supervised Learning</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1UO1nOMuSd6BNHNwiWvDtIHCrBA5mM6zA?usp=drive_link">230824</a></td>
+<td>[<a href="https://lilianweng.github.io/posts/2021-12-05-semi-supervised/">Lil’Log</a>] [<a href="https://github.com/yassouali/awesome-semi-supervised-learning">GitHub repo</a>] [<a href="https://arxiv.org/abs/1610.02242">Laine et al., 2016</a>] [<a href="https://arxiv.org/abs/1703.01780">Tarvainen et al., 2017</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-4---machine-learning-and-data-science" class="level1" data-toc-text="Machine Learning &amp; Data Science" data-number="4">
+<h1 data-toc-text="Machine Learning &amp; Data Science" data-number="4"><span class="header-section-number">4</span> Module 4 - Machine Learning and Data Science</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Main Lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python Support</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Advanced NLP</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/08/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1Y9sFwsrT9koOmICyRM5Gq1UaXUgDhY99/view?usp=drive_link">K-Nearest Neighbor and Decision Tree Exercise</a></td>
+<td>TA Thái</td>
+<td><em>Due: 03 Sep, 2023</em> <br> [<a href="https://drive.google.com/file/d/1P-p15qp-DhoG4Be-mraPowJn22-672IH/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>30/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=kdZilIIK3XI">K-Nearest Neighbors</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1mUOYsTP8XYBNsiHiLSCv_4OBDXxRogFn?usp=drive_link">230830</a></td>
+<td>[<a href="https://drive.google.com/file/d/1z0ByjtVln-KLWpj_iZ_vdE-dJGmCRnvb/view">note</a>] [<a href="https://www.youtube.com/watch?v=oymtGlGdT-k">CS4780 Lecture 3</a>]</td>
+</tr>
+<tr class="even">
+<td>01/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=JUV-6puCuuM">Decision Tree for Classification</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1XKn_0uPFNJn4VUrrphMZp4wHfJqEhanH?usp=drive_link">230901</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/09/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=JUV-6puCuuM">TA Exercise</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1-nra19pIk4-dOyZTJGyuhjbL8W9N7ncW?usp=drive_link">230903</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=8Q4yXGP82t8">Decision Tree for Regression</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Ry56e_68ZTxxeWi48jial3kWLTvKnJA7?usp=drive_link">230906</a></td>
+<td>[<a href="https://www.math.snu.ac.kr/~hichoi/machinelearning/lecturenotes/CART.pdf">Choi et al., 2017</a>]</td>
+</tr>
+<tr class="odd">
+<td>08/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=88uBBMau0k0">Random Forest</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ZzA8alwFvYkd6e3f-_7u3IMfSiTGoGtx?usp=drive_link">230908</a></td>
+<td>[Louppe et al., 2015]</td>
+</tr>
+<tr class="even">
+<td>10/09/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=23nAt9Mal28">TA Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1fdXR3iR0ooScR3MOu0WVXPi8rakvf8sE?usp=drive_link">230910</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11/09/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1Xj5fRA21CM6ueGGoskCyNxP91Ubiaqhy/view?usp=drive_link">XGBoost</a></td>
+<td>TA Khoa</td>
+<td><em>Due: 17 Sep, 2023</em> <br> [<a href="https://drive.google.com/file/d/1cYsVNrPMd5_7ZKb6X61otuMt4mBc56xh/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=qZ1n0oDQ8eQ">Basic XGBoost: Understanding Gradient Boost and AdaBoost</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1k5SR9M1JctezNil0VaeOt_B5xDKCMcHz?usp=drive_link">230913</a></td>
+<td>[note] [Trevor Lecture]</td>
+</tr>
+<tr class="odd">
+<td>15/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=B4B6XtWRacs">Advanced XGBoost: Fully XGBoost and its mathematics</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1QfluFQlaOQTG5C6_MT6-ruLMd3qv4dLZ?usp=drive_link">230915</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/09/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=lBxxuy-MXL0">TA Exercise</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1pmLDRqYN-c4YV414WzMqJ-XeW8w2CzLo?usp=drive_link">230917</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>18/09/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1-21j_iueRM3dWifoh-OzVbrui0NxG3DI/view?usp=drive_link">Support Vector Machine Exercise</a></td>
+<td>TA Thắng</td>
+<td><em>Due: 27 Sep, 2023</em> <br> [<a href="https://drive.google.com/file/d/1L31hnfSzmZ7X7uafaCFhfgFQN8j-n4FB/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=b0na2ulwqfs">Review on Tree-based Approaches and Discussion</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1QLnFKfmDu-sPVmNAm1i58blBI7PBjGjH?usp=drive_link">230920</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>22/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=OHKsqkvTb4E">Support Vector Machine (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1pw4b3n8-7pyR2mml64UKbO2IAgYqV3uw?usp=drive_link">230922</a></td>
+<td>[CS229 Note] [MLCB]</td>
+</tr>
+<tr class="even">
+<td>24/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=Zlgm2er07zM">Support Vector Machine (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1xHzkJr1M03YKW37yZuujOXthcDP6srjd?usp=drive_link">230924</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>27/09/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=Xmi2Re_VI2k">TA-Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1NwLtjoed22lUIbAtGPgcg-gw1FvbyPDq?usp=drive_link">230927</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>29/09/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=tBgS6ccF_RI">Tabular Data Project: Heart Disease Prediction</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ycHCmGlXGD1TU_bd6KpMO-vd6u5OPDyO?usp=drive_link">230929</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/10/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=W_jUEuetCh8">Image Project: Object Detection</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/11FQOjpbllD0mbmOxUpnlUr3PRvZZv559?usp=drive_link">231001</a></td>
+<td>[HoG paper]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>29/08/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=q48CIhjqYdA">K-Nearest Neighbors (Warm-up)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td>230829</td>
+<td><a href="https://sebastianraschka.com/pdf/lecture-notes/stat451fs20/02-knn__notes.pdf">STAT451 Note</a></td>
+</tr>
+<tr class="odd">
+<td>05/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=2CJAdtMFw9Y">Decision Tree</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1yQu44nTx5lcsES6-xG7uG83I5FrPu-2j?usp=drive_link">230905</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=fy4hhYCdz_s">Random Forest and AdaBoost (Warm-up)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1_2_6AmqzzU_DF912Nggce-wZGlhPBn-t?usp=drive_link">230912</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/09/23</td>
+<td><span class="badge rounded-pill bg-primary">Python Support</span></td>
+<td><a href="https://www.youtube.com/watch?v=ervuznbyj_Q">SVM</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1-yTkjuzBy-roVFgnFP0YqNSUig8jutxO?usp=drive_link">230921</a></td>
+<td><a href="https://www.cs.cornell.edu/courses/cs5780/2024sp/lectures/lecturenote09.html">CS4780 Lecture 9 Note</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>09/09/23</td>
+<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
+<td><a href="https://www.youtube.com/watch?v=D45Ub4E39Pc">Foundations for an NLP topic</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1pGcZP274kg1uQXRqFKUZprAICWg5ZfeP?usp=drive_link">230909</a></td>
+<td>[note] [CS324 note]</td>
+</tr>
+<tr class="odd">
+<td>16/09/23</td>
+<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
+<td><a href="https://www.youtube.com/watch?v=8Jm_KoOkQNI">Language Models and Prompting Techniques</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1ZDLQWzULXdym4bYxpfQoloSrgapv47k6?usp=drive_link">230916</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>23/09/23</td>
+<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
+<td><a href="https://www.youtube.com/watch?v=v7ppJh-gi7Y">Parameter-Efficient Fine-tuning</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/124zf6r3XrMYwAvZ4lZsQ6aC1wP3cA7tR?usp=drive_link">230923</a></td>
+<td>[Houlsby et al., 2019] [COS597G Slides]</td>
+</tr>
+<tr class="odd">
+<td>30/09/23</td>
+<td><span class="badge rounded-pill bg-warning">Advanced NLP</span></td>
+<td><a href="https://www.youtube.com/watch?v=v4z4dEszvXY">Efficient Fine-tuning of quantized LLMs</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1rUKFvtUsUr2rkyfXKIHMnoZKgnKOQePy?usp=drive_link">230930</a></td>
+<td>[LoRA paper]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-5---deep-learning-prerequisites" class="level1" data-toc-text="Deep Learning Prerequisites" data-number="5">
+<h1 data-toc-text="Deep Learning Prerequisites" data-number="5"><span class="header-section-number">5</span> Module 5 - Deep Learning Prerequisites</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Python Tutorial Session</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Computer Vision</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Competition Training</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>02/10/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1v9ECOoetlGuufTa8kHBcO63togelH9Cm/view?usp=drive_link">Logistic Regression Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 08 Oct, 2023 <br> [<a href="https://drive.google.com/file/d/1WJO35GbJ-38BCwswr5_ZcXT3e5GaH_ey/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>04/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=77Jo-MGfCpQ">From Linear Regression to Logistic Regression</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/18h0V19bru5D9Qm-4kjINb7lkjw5Jom6p?usp=drive_link">231004</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>06/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=DuCyzgXdsGg">Logistic Regression - Vectorization and Applications</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1NFFiw-iEzR4Ina3fWtqfyZYc0xd-Yg5x?usp=drive_link">231006</a></td>
+<td>[Jurafsky et al., C5, 2023]</td>
+</tr>
+<tr class="even">
+<td>08/10/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=ngK3XWEsihY">TA Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1iR9NrPUqyf48Vv9nA0fVxpiR6E6mfFHF?usp=drive_link">231008</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>09/10/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/14Hs_t1cmZcyRRIxSM3RV-T3XewRdDK9W/view?usp=drive_link">Softmax Regression Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due 15 Oct, 2023 <br> [<a href="https://drive.google.com/file/d/1NH62oE-GjeGTA0OnEiLe5gxJUKMqzYZt/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=h1k_WvkSOAk">Softmax Regression (Multiclass Classification)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1S5C22cljSQb96Q7rkFUzVd8XZ_5ZQtYA?usp=drive_link">231011</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=SmN9nNY_EdU">Pytorch Framework (Implementation for regression)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1H0WeIlWUAfpkdRrYcIOwAsU4ACGNAuBM?usp=drive_link">231013</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>15/10/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session<span></span></span></td>
+<td><a href="https://www.youtube.com/watch?v=CogEVblthW4">TA Exercise</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1wOVGEhY-quvVpxGCLM2GUZhcX_HvG7qA?usp=drive_link">231015</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16/10/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/14a0LysFjkNhrNuzEZOm1SXGvrAJLEuLt/view?usp=drive_link">MLP Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 22 Oct, 2023 [<a href="https://drive.google.com/file/d/1SxzfxZMKYQqIBBcrfJCzXz5AzWm_cFHD/view?usp=drive_link">Solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>18/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=oHI-wneEUCM">Multilayer Perceptron</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1FOCFXL1G2Yum14P6Nsx0WOxQn7JhglAs?usp=drive_link">231018</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>20/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=x0EeokfjStg">Activations and Initializers</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Ci5i0Zu1IE5td8U3P3zrvZubrT2GQDbb?usp=drive_link">231020</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>22/10/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session<span></span></span></td>
+<td><a href="https://www.youtube.com/watch?v=YsQwmjb0x-Y">TA Exercise</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1QYbNmMjCKeC0m-m_PnQU2cvkqYpW-YQy?usp=drive_lin">231022</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>24/10/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1GblB0nYQInrZt7jqQLKxgPwy4g_t2b_l/view?usp=drive_link">Optimization Algorithm Exercise</a></td>
+<td>TA Khoa</td>
+<td>Due: 29 Oct, 2023 <br> [<a href="https://drive.google.com/file/d/1T_XqdA3NKcWSwe2JWvZMGToPEnNsU83r/view?usp=drive_link">Solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>25/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=pyA-wXMYzKQ">Optimizers for Neural Network (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1TzlzPuJ1pBvBh_V9WqAXd9lUXo_2I3e1?usp=drive_link">231025</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>27/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=VinG-BqGlu4">Optimizers for Neural Networks (2)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/10f3j1Fv1T3iQlrzlJC2uW0_6EAqRYsKT?usp=drive_link">231027</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>29/10/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=sdHnsRY4YKs">TA-Exercise (Optimization methods)</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1qwvR7g1dNTX85smJdO3GZ_HfnYU_cnLJ?usp=drive_link">231029</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/11/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=2twDuxyITrk">Text data: Sentiment Analysis</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1R_Is7cv34wccN8BLA2DlrG5KawMC0kjM?usp=drive_link">231101</a> - <a href="https://drive.google.com/file/d/13o3BEedvRYPIa2seA6WGPWq8Dmg28T4x/view?usp=drive_link">handout</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>03/11/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=Ud9BKnL3PpE">Time-series Data Project: Music Genre Classification</a></td>
+<td>TA Bảo</td>
+<td><a href="https://drive.google.com/drive/folders/1tHVwgwpY3CKLtCFYcvY0MUGo_jHp_kKd?usp=drive_link">231103</a> - <a href="https://drive.google.com/file/d/1Nmp_V5Y4NcdZH8zWQ3W2j2HozGjuiHYO/view?usp=drive_link">handout</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>05/11/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=ii7dSVQcBHI">Image Data Project: Gradient Vanishing in MLP</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/13tvGZtOiGoZ8hN0j5UfY2grXMWEcaF4v?usp=drive_link">231105</a> - <a href="https://drive.google.com/file/d/1Lo2MtpY0x7hCL5ayUw8kW7NqKeB9v5sv/view?usp=drive_link">handout</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>03/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=aRde10ggswo">Logistic Regression</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1I5q5Ump-7_nAbjMuPHa1YqEq-mOJQhY5?usp=drive_link">231003</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=79rw9-xp23M">Softmax Regression</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1BT1XNBOepYcQzxE0CTaXdyfv6TDJKdB9?usp=drive_link">231010</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>17/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=-rPw8CrHlpM">Multilayer Perceptron</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1zyC7BMdopkzsNAp9NP5Vz_kbiZoWsQ0E?usp=drive_link">231017</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>24/10/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=_ST8NTvuCZw">SGD+Momentum</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1QxvH86zwGK_2dverUwkypnyRTs2MSCp8?usp=drive_link">231024</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>07/10/23</td>
+<td><span class="badge rounded-pill bg-info">Computer Vision</span></td>
+<td><a href="https://www.youtube.com/watch?v=PNb4b4UalzM">Introduction to CV and Background subtraction</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Dg2bmrjtGr_wWQbrFOfzX8qiUYyGxlja?usp=drive_link">231007</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14/10/23</td>
+<td><span class="badge rounded-pill bg-info">Computer Vision</span></td>
+<td><a href="https://www.youtube.com/watch?v=1s4zpNKhc0M">Lane Detection</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1scGUAQ-eDtqCbEQ9IQRDDF-foaFRJRyO?usp=drive_link">231014</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/10/23</td>
+<td><span class="badge rounded-pill bg-info">Computer Vision</span></td>
+<td><a href="https://www.youtube.com/watch?v=W0w_9X51MGs">Image Stitching (panorama)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/10g34z7a6iHzcZu1wcGj_Xh7C4KOb2QUD?usp=drive_link">231021</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/10/23</td>
+<td><span class="badge rounded-pill bg-info">Computer Vision</span></td>
+<td><a href="https://www.youtube.com/watch?v=yVIF_5JC1RA">Face Detection</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1kBIxhOeWHJEgEDChp4Hh51TIqDxuacwq?usp=drive_link">231028</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/11/23</td>
+<td><span class="badge rounded-pill bg-info">Computer Vision</span></td>
+<td><a href="https://www.youtube.com/watch?v=o_RLl9rV320">Object Tracking using Mean Shift/Cam Shift</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1_H4uRmO3etSdqoc5uMMr4bfdOhpMPmPZ?usp=drive_link">231104</a> - <a href="https://drive.google.com/file/d/1O9N_49tNF1naChnuFY7AYK9xh2ecHPwE/view?usp=drive_link">handout</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>05/10/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=u8iO6_gRq24">Introduction to Imbalance Data</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1BurmYa0eEz6XjwThmgsP8JnUi0r66lNY?usp=drive_link">231005</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12/10/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=1E-qylhIoWg">Model Evaluation</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1kIK_oeGvpCRUtsLzvS1FuhOjrKOpIhE5?usp=drive_link">231012</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>19/10/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=DlPeejlTRQo">Kalapa Challenge</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1n3VkD4isznupvPlRr3VKFHi_63hbH2sA?usp=drive_link">231019</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/11/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=E8y6uNJBUa8">Data Sampling</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/13OB3NxF_aPRnTcEMxjUcDeozfO1fc_hH?usp=drive_link">231102</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-6---introduction-to-deep-learning" class="level1" data-toc-text="Deep Learning" data-number="6">
+<h1 data-toc-text="Deep Learning" data-number="6"><span class="header-section-number">6</span> Module 6 - Introduction to Deep Learning</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Competition Training</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Python Review</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Research &amp; Paper Writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false">Seminar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>06/11/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1YmC4RllUrfV8LWyHyEogMQg6NBIKhh24/view?usp=drive_link">Convolutional Neural Network Exercise</a></td>
+<td>TA Thái</td>
+<td>Due: 12 Nov, 2023 <br> [<a href="https://drive.google.com/file/d/1N6nWE5n-slequYA0_SfNl9Ink5LjTMCh/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>08/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=6pC_uYiwb1s">Basic CNN (1)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/18RDEw9VxQO97FHSHGkLokHSE2GsnXukm?usp=drive_link">231108</a></td>
+<td>[CS231N Note] [CNN Explainer]</td>
+</tr>
+<tr class="odd">
+<td>10/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=K2h27Nd9cFc">Basic CNN (2)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/10UXl7r217T296hn60UMgrZR8Hgl-U6PH?usp=drive_link">231110</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12/11/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=FojbBIDACD8">TA-Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/11-GChRVSStsuRWJSYrNjAcpzW7sLLmFz?usp=drive_link">231112</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13/11/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1xYeWQ8iFWlzoHxS70TF5rmsWXktVrKUJ/view?usp=drive_link">Convolutional Neural Network Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 19 Nov, 2023 <br> [<a href="https://drive.google.com/file/d/1y28QsZqnTvrgazWCqb3zmZSfNw57UJ17/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>15/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=WScW5CWOagE">CNN Training</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/16glvYyEv-Q3v6tkEKezrpIcrvAgVNYio?usp=drive_link">231115</a></td>
+<td>[VGG Paper]</td>
+</tr>
+<tr class="odd">
+<td>17/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=Tcdw6E8Q_as">CNN Generalization</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ccxvcWjG71R5qq0a79BrbUnOOQchsIkP?usp=drive_link">231117</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>19/11/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://youtu.be/ZZ67uJBQKJI">TA-Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1c-arzuTYMR5gay2tGdHkiTqULSrt5joc?usp=drive_link">231119</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>20/11/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1GlX4ZZPoMfs29d1BlqXNh5oqnL7MZenP/view?usp=drive_link">Pretrained Models for Image Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 26 Nov, 2023 <br> [<a href="https://drive.google.com/file/d/1J-96S5yF2PNOTYhUmvvU15cPDiCR4FaE/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>22/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=GFMbC1HdMsM">Advanced CNN Architecture</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1jCmr-C0SEe4pChdGkTEAj1MNkZVrxJK-?usp=drive_link">231122</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>24/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=xPdmbOfzqNA">Transfer Learning for CNN</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1ti302PbenG4eIUi27P2ZgceMgeVRw7nd?usp=drive_link">231124</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>26/11/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=9naw1lJrKl4">TA-Exercise</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1tP0LTbKv1e85c37Lt-vkhiAaTPxXvESz?usp=drive_link">231126</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>27/11/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1V4cZAt-SxdIKDpcJ2aQ-axQMWLTPTDDf/view?usp=drive_link">Recurrent Neural Network Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 03 Dec, 2023 <br> [<a href="https://drive.google.com/file/d/12Ce5LvmZ2qluuRXcevZ3DGGUY0XMgpHb/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>29/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=jH3h_FrncU8">Basic RNN/LSTM (Time series and Text)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1z7Af-ge9yoZv1OKIHc7iJm1PvsQepl0E?usp=drive_link">231129</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>01/12/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=b3dVz7d7Qt0">Basic RNN/LSTM (Time series and Text)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1OaE2PZQcA5I_tJYoKphbtw2B37bt_I8t?usp=drive_link">231201</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>03/12/23</td>
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.youtube.com/watch?v=N05jwQLMdyc">TA-Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1cwHRPBo93i-TpWmbstFnYgwkIjkYajto?usp=drive_link">231203</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/12/23</td>
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1hfu0x762s8rUT8WvhGHreeJQ5ACdt1ib/view?usp=drive_link">Transformer Application Exercise</a></td>
+<td>TA Thái</td>
+<td>Due: 10 Dec, 2023 <br> [<a href="https://drive.google.com/file/d/1ig_WMTcRWUl5MQjABd1zHwn6Xtapxixy/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>06/12/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=V_WnoOvYxMQ">Transformer (Encoder - Text Classification)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1YrgeE3DmEHQAZ2Gr8Ap0nFs8ZB_II24_?usp=drive_link">231206</a></td>
+<td>BERT Readings</td>
+</tr>
+<tr class="odd">
+<td>08/12/23</td>
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.youtube.com/watch?v=Sql8bAPGI_U">Transformer for Image and Time series Data</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1C8UQd8T6ISEjfFJomJICY7od8JEL1nnw?usp=drive_link">231208</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13/12/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=SnYz7k5fRwM">Image Project: OCR with YOLOv8 and CNN (Scene Text Recognition)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/19c0A5nIN62H2QOm1TB6F0hNIWRE7MXhe?usp=drive_link">231213</a></td>
+<td><a href="https://drive.google.com/file/d/1gWovZUKSHli3KqInnIzqjZfxgX9Ebw5i/view?usp=drive_link">handout</a> - <a href="https://drive.google.com/file/d/1c5Gh5hgu2zToQglJKthhEzp5lpW0ZTAu/view?usp=drive_link">solution</a></td>
+</tr>
+<tr class="odd">
+<td>15/12/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=FKCr83VpQ4w">Image-text Project: VQA</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1YjunCkx7BsxMkAe6Ld_2h-nym-2t79II?usp=drive_link">231215</a></td>
+<td><a href="https://drive.google.com/file/d/13CLe4ZGw7Ut5NHPONbx7LyPinsvdiX00/view?usp=drive_link">handout</a> - <a href="https://drive.google.com/file/d/1GYnNTdTER9-b6UANDb-YcSLjLNEsWnmP/view?usp=drive_link">solution</a></td>
+</tr>
+<tr class="even">
+<td>17/12/23</td>
+<td><span class="badge rounded-pill bg-success">Project Tutorial</span></td>
+<td><a href="https://www.youtube.com/watch?v=3jxk1udOBik">Time-series forecasting project</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1FsOigyi37v95OVi9NRwktItKTRtxs5eT?usp=drive_link">231217</a></td>
+<td><a href="https://drive.google.com/file/d/1wcpWm5URs80Y0KnQw3XW8CCyu7FJgseK/view?usp=drive_link">handout</a> - <a href="https://drive.google.com/file/d/1NO7A4LX1CQ5TW4OfEnB-PHF6g-TRkI2i/view?usp=drive_link">solution</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>09/11/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=sEbWP2JmUtM">Zalo AI</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1CkGOlJTDjBZ132AvzNT8xD73iKR3TF4b?usp=drive_link">231109</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>16/11/23</td>
+<td><span class="badge rounded-pill bg-warning">Competition</span></td>
+<td><a href="https://www.youtube.com/watch?v=VJpZBriXPog">Zalo AI</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/11LiFiYoGMlnQPzvvvDxFYdh9w3KSNTcT?usp=drive_link">231116</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>07/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=R2z38h40sGI">Introduction to CNN</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1Z61LQxSdLXEo3Pv_pr2mymjDIXaH9ccO?usp=drive_link">231107</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=hgDSSIT5xdo">Advanced CNN</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1T-9LzUnAsvelq73GxnpOxmNtEDtyaGRs?usp=drive_link">231114</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=iF0bjYTA20E">CNN and its variants</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1LHbMsWZ8NoZYv5EJkwHdaSEYlnaYyYyt?usp=drive_link">231121</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>28/11/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=WzbPAPAs1r4">Introduction to Transfer Learning</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/18q8OFiLF87gj4bCIolRYLEFNX9oxGdI8?usp=drive_link">231128</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>05/12/23</td>
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.youtube.com/watch?v=m-nTyZ8AH1U">Introduction to Transformer</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1zyYeXRxVIOzJCFwa8U5SvxPNmJCUmLov?usp=drive_link">231205</a></td>
+<td>Generative AI exists because of the transformer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11/11/23</td>
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.youtube.com/watch?v=txoSTaozyMM">Research Idea - Brainstorming (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1GYTeCt5swU8X6H8UnVRBcmPTUe_g2-sm?usp=drive_link">231111</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>18/11/23</td>
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.youtube.com/watch?v=wNcnxaTTckc">Research Idea - Brainstorming (2)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/13t1EwgbnqoeWtv5sVByVgdgPYUFwRwJg?usp=drive_link">231118</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>25/11/23</td>
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.youtube.com/watch?v=iDILV4nI3tM">How to do Research (1)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1cCP1orVZDUQR_Qcxf9BSMf--Letd1ALE?usp=drive_link">231125</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/12/23</td>
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.youtube.com/watch?v=f4J1pHjQNdU">How to do Research (2)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/11zVxxS7FqwcR24KyFkzFBOVM1lbY5UO1?usp=drive_link">231202</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>09/12/23</td>
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.youtube.com/watch?v=zzOKcKvPx-0">How to do Research (3)</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1g7XeWRMDKKKVS9eej30n95hEn1htfYtc?usp=drive_link">231209</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-calendar-check"></i> Date</th>
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10/12/23</td>
+<td><span class="badge rounded-pill bg-info">Seminar</span></td>
+<td><a href="https://www.youtube.com/watch?v=Y-KDJZq1skI">Transformers for Time series data</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1SSE9fW8MAPARGy7Nl9gdp2nSpZ4QBNpK?usp=drive_link">231210-1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>17/12/23</td>
+<td><span class="badge rounded-pill bg-info">Seminar</span></td>
+<td><a href="https://www.youtube.com/watch?v=SHIYAz0uLzw">Scholarship and Feature Extraction in Time Series Data</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1gKRphEDWy0UTqHBGBM18f6ObOEAF7teD?usp=drive_link">231217-1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-7---advanced-model-architectures-for-computer-vision" class="level1" data-toc-text="Computer Vision" data-number="7">
+<h1 data-toc-text="Computer Vision" data-number="7"><span class="header-section-number">7</span> Module 7 - Advanced Model Architectures for Computer Vision</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Lesson preview</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">Research and Paper Writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false">Seminars</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1OO8ObobhfTkkb6EU3qeU6YVCH3hfHpNR/view?usp=drive_link">Domain Conversion Exercise</a></td>
+<td>TA Khoa</td>
+<td>Due: 24 Dec, 2023 <br> [<a href="https://drive.google.com/file/d/1quIlAEQ82X6SAKujt__BmJTHfTVkXp0b/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/lMs32sF7Ayo&amp;sa=D&amp;source=editors&amp;ust=1724832556752327&amp;usg=AOvVaw2nPS3yrULkk3EoPzpkn_9D">Domain Conversion - Denoising and Segmentation</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1AkjYbMboEnf4mLO7dNqpqaioPRDIRHjO?usp=drive_link">231220-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/HqrKcKr7BO0&amp;sa=D&amp;source=editors&amp;ust=1724832556752684&amp;usg=AOvVaw25WYU9ymXVUyjBW4HTr5__">Domain Conversion - Colorization and Super Resolution</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1KfKrrjalVzD2RXo9HpHCVjXJabLok2lT?usp=drive_link">231222-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/SdLFbq0lYwc&amp;sa=D&amp;source=editors&amp;ust=1724832556753025&amp;usg=AOvVaw0L-_lVsg99GtcsY1NvfzGm">TA Exercise</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1JRSXx1G5QIPc1SLaqjfbfC0DnPrAOnZ8?usp=drive_link">231224-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/12_mQkl8eWTYshUWiAW39FzvzZfoDRHGi/view?usp=drive_link">Object Detection Project</a></td>
+<td>TA Hùng</td>
+<td>Due: 31 Dec, 2023 <br> [<a href="https://drive.google.com/file/d/1A_jf0yo1lYZvWEcubzUOLrB99fqkNrGy/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/1lCS9lpqcwo&amp;sa=D&amp;source=editors&amp;ust=1724832556753477&amp;usg=AOvVaw05TT_aybHs4-mc0gXGpGcD">Object Detection (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1QMpL3Zg2UcP0L-1NyEfpEH1yqT0-Z3xl?usp=drive_link">231227-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/0S3NRo118pA&amp;sa=D&amp;source=editors&amp;ust=1724832556753747&amp;usg=AOvVaw1dFqs2hpS84f_q-CkDq4Lr">Object Detection (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1yTimAYEEPBEUo44xvjQA0GoMVhQs8bpt?usp=drive_link">231229-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/MC0g875zbZU&amp;sa=D&amp;source=editors&amp;ust=1724832556754002&amp;usg=AOvVaw2wPVT9yvyzpWcCz56yVGli">TA Exercise</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/1FVHg6pMmYkXcNJrAaf5YldaRPUWzDnjY?usp=drive_link">231231-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/BoXXy_24Lc4&amp;sa=D&amp;source=editors&amp;ust=1724832556754261&amp;usg=AOvVaw3YcTNTXecEgD89iyJ9pNlu">Object Detection</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1FcvfuRDxLxL1tvnmRhIYQlrIs0yJY3xg?usp=drive_link">240103-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/vqhLNzVFPN4&amp;sa=D&amp;source=editors&amp;ust=1724832556754478&amp;usg=AOvVaw3_dqLha10ZCEje5MkjVXWk">Object Detection</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1fud9bDmE_BnP_bnarc2A6HGXMwJbjv0H?usp=drive_link">240105-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/I_4SNAs2l0w&amp;sa=D&amp;source=editors&amp;ust=1724832556754724&amp;usg=AOvVaw1CGcyQHJDsv8SJIlmX2RUS">TA-Exercise</a></td>
+<td>TA Hùng</td>
+<td><a href="https://drive.google.com/drive/folders/10uGvOnhjBzhLpub_J0Bq8nmKCW0IjJSL?usp=drive_link">240107-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1RwBdIgymEoUGDyCFIGKrYyzvYqEZfmiJ/view?usp=drive_link">Imbalanced Data Exercise</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td>Due: 10 January, 2024 <br> [<a href="https://drive.google.com/file/d/1RwBdIgymEoUGDyCFIGKrYyzvYqEZfmiJ/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/TXl74SdQys0&amp;sa=D&amp;source=editors&amp;ust=1724832556755242&amp;usg=AOvVaw3voqJI8kulgr0fty9gvCtr">Advanced Topic: Imbalanced Data</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1bxBy7VytmZdJSjTi8lzgvieWMZ9aFC73?usp=drive_link">240110-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/VYcjApR35lo&amp;sa=D&amp;source=editors&amp;ust=1724832556755674&amp;usg=AOvVaw1rbuCRijlOhp3NVL5Se5du">Advanced Topic: Self/semi-supervised Learning</a></td>
+<td>Dr.&nbsp;Hưng</td>
+<td><a href="https://drive.google.com/drive/folders/1Ectw8AOy2WujgssLdipMEDZFEUTWTsZd?usp=drive_link">240112-23M07MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1hXaW9YzP1smmM8eIHy6QY25lz0YS_OXA/view?usp=drive_link">Exercise</a>] - [<a href="https://drive.google.com/file/d/1XuT_S73j9ui_2goHLYQ2DgTXJAVHbxOd/view?usp=drive_link">Solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/nZIo5YtcwU4&amp;sa=D&amp;source=editors&amp;ust=1724832556755972&amp;usg=AOvVaw3Ahk7_yQcB548Y598ys27_">Advanced Topic: Knowledge Distillation</a></td>
+<td>Dr.&nbsp;Hưng</td>
+<td><a href="https://drive.google.com/drive/folders/1R-3KZ4oAlgeO2wFT0wsRhQsKaTDiiT2L?usp=drive_link">240114-23M07MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1hayy7jxxRUdmd9k_pt2CN4yVU5gM4ER0/view?usp=drive_link">Exercise</a>] - [<a href="https://drive.google.com/file/d/1s8JHlzf1TaxnwezzAO2WU1XsOBGGt1WB/view?usp=drive_link">Solution</a>]</td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/TIZ5VBodinM&amp;sa=D&amp;source=editors&amp;ust=1724832556756257&amp;usg=AOvVaw1SQxTyBhFLR5zAoY8O0qe3">Image Project: Tracking by Detection</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1DBAulIrQHF2s8neEGfe5abdvf2pOAhhB?usp=drive_link">240117-23M07MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/bHqXK3_0aBY&amp;sa=D&amp;source=editors&amp;ust=1724832556756644&amp;usg=AOvVaw2M5s_PG76UDtpUI9GxBi8b">Image Project: Medical Image Analysis (1)</a></td>
+<td>TA Huy</td>
+<td><a href="https://drive.google.com/drive/folders/187HKrS06ToAH84-5aDBeYDMtuOYWs6rm?usp=drive_link">240119-23M07MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1OVb-hjNZKXUnz2awdGSl5TBzzUl-63Ch/view?usp=drive_link">Exercise</a>] - [<a href="https://drive.google.com/file/d/1V17sPMuKlEPqXX4x10AwAbwerKG_bPk-/view?usp=drive_link">Solution</a>]</td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/EMbMuSw8-EU&amp;sa=D&amp;source=editors&amp;ust=1724832556756906&amp;usg=AOvVaw2ziZisD133bi-pBZDvg7bd">Image Project: Medical Image Analysis (2)</a></td>
+<td>TA Huy</td>
+<td><a href="https://drive.google.com/drive/folders/1pgu1kZPkvBItE3fyNpYuYU1TiPZFoZk9?usp=drive_link">240121-23M07MC</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/q3HfysdFV-U&amp;sa=D&amp;source=editors&amp;ust=1724832556757226&amp;usg=AOvVaw2p0S1NWf1AoUVsA6HnxZjs">UNet</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1WCeKmWrz-mBJ0xxNDrlIuem8kj_Mwvpl?usp=drive_link">231219-23M07-EC2</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/2hf3t_cRc7A&amp;sa=D&amp;source=editors&amp;ust=1724832556757522&amp;usg=AOvVaw1Z0GzfqQJKdpZETBEezCx4">Object Detection using Pretrained Models</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1KPF83ydKYENEpnIWCSh6xsY7LseAKCj1?usp=drive_link">231226-23M07-EC2</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/3ABkT9mFPZU&amp;sa=D&amp;source=editors&amp;ust=1724832556757744&amp;usg=AOvVaw0M2qRU_8IWSc3hAF679kIf">Yolov1</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1xNNP62_f9s5niy34RXrxuKUJHj09HH02?usp=drive_link">240102-23M07-EC2</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Preview</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/nQMrb7ySnIk&amp;sa=D&amp;source=editors&amp;ust=1724832556757910&amp;usg=AOvVaw3h4TXjckQU2nTSbF8w8oBz">Introduction to Imbalanced Data</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1DeY9KWgWsq323bRwQQilR8E5FBv28ovc?usp=drive_link">240109-23M07-EC2</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/G48uhvxE4hY&amp;sa=D&amp;source=editors&amp;ust=1724832556758243&amp;usg=AOvVaw00rTYaaJOQsx8idQATEg7K">Group Report (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/BoGSS29KXuU&amp;sa=D&amp;source=editors&amp;ust=1724832556758437&amp;usg=AOvVaw3gXuUW36v4aD0tTeEVXg-P">Group Report (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/Ptmf7UQMsuU&amp;sa=D&amp;source=editors&amp;ust=1724832556758642&amp;usg=AOvVaw2eSi_ZC9gBovPvKbLxVRur">How to Write a Paper (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1GJ3gmt2TBVzvHD059jhtUnsCZh82sNyf?usp=drive_link">240106-23M07-EC1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/gjjX-6QoGvo&amp;sa=D&amp;source=editors&amp;ust=1724832556758904&amp;usg=AOvVaw0AosTO3gzffzTe1LahpVyi">How to Write a Paper (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1dqtr3AtNxT5rDsqwf8I6ZcXcjY8WVnGJ?usp=drive_link">240113-23M07-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><i class="bi bi-bar-chart-steps"></i> Type</th>
+<th><i class="bi bi-journals"></i> Content</th>
+<th><i class="bi bi-person"></i> Instructor</th>
+<th><i class="bi bi-file-earmark-text"></i> Handout</th>
+<th><i class="bi bi-book"></i> Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/bip6qL9jsZM&amp;sa=D&amp;source=editors&amp;ust=1724832556759145&amp;usg=AOvVaw3mDXVXsQzjovpxqMZPLCnP">Advanced UNet and LLMs Introduction</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1LEJViWi5RWxvEwQcfd0JtAAuklvUUTIl?usp=drive_link">231224-23M07-EC3</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/rFFXkGvzaVw&amp;sa=D&amp;source=editors&amp;ust=1724832556759442&amp;usg=AOvVaw34zm135l8ihXRwj8ooQnE1">Multimodal Language Models</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1BAn4TCQSQpIEGG5-AjV9JS1Nug-wqlRz?usp=drive_link">231231-23M07-EC3</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/_Gfk1EFlOIo&amp;sa=D&amp;source=editors&amp;ust=1724832556759755&amp;usg=AOvVaw2K0iG5QBFhF3mKLii7c-SS">Visual Instruction Tuning (LlaVa) and QLoRA</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1Cp_YloUAPoVVN2udSSLv4mZaRX8KjePx?usp=drive_link">240107-23M07-EC3</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/7PikDIQWB6c&amp;sa=D&amp;source=editors&amp;ust=1724832556760026&amp;usg=AOvVaw1CCsVBU9JbEoZ5wsPIpqUy">Data Augmentation and Imbalanced Data</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1TrxedfyjGIft606rHU0022a7AvEM3jWi?usp=drive_link">240114-23M07-EC3</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/NkFczM4yz-A&amp;sa=D&amp;source=editors&amp;ust=1724832556760277&amp;usg=AOvVaw2blH_AYhhpf3hcg_jL-lCJ">RNN-based Forecasting and Toolformer</a></td>
+<td></td>
+<td><a href="https://drive.google.com/drive/folders/1RzFI9SuQpsS2NJVp3gR44PinZeE9WutL?usp=drive_link">240121-23M07-EC3</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-8---applications-of-deep-learning-for-nlp" class="level1" data-toc-text="NLP" data-number="8">
+<h1 data-toc-text="NLP" data-number="8"><span class="header-section-number">8</span> Module 8 - Applications of Deep Learning for NLP</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Research and Paper Writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false">MLOps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-4" role="tab" aria-controls="tabset-8-4" aria-selected="false">Seminar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-5" role="tab" aria-controls="tabset-8-5" aria-selected="false">Large Language Models (LLMs)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preview</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/B3uINL6U25c&amp;sa=D&amp;source=editors&amp;ust=1724832556752652&amp;usg=AOvVaw1a_jF9fm_jJ2DNaBUG05MI">Introduction to POS Tagging</a></td>
+<td>TA Khoa</td>
+<td><a href="https://drive.google.com/drive/folders/1b5Xxz3btiTpIFZyLHnmbG19N9YJVwvBK?usp=drive_link">240130-23M08-EC2</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/4TSRPGbgU8E&amp;sa=D&amp;source=editors&amp;ust=1724832556753082&amp;usg=AOvVaw0oCk8Bc_2ZG-zgsqaSuZJu">From Text Classification to POS Tagging</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1GmaVb_YYT5EuA543F3OL6B-7-l5O2y2X?usp=drive_link">240131-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/Wm3Zun-AL8s&amp;sa=D&amp;source=editors&amp;ust=1724832556753491&amp;usg=AOvVaw2w3jc68F8tbWQgbjzjBfbp">NER for Medical Data</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1fSoKLb7UckQhs7wSAybWu1LLexFKnyZ7?usp=drive_link">240202-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/wig6pC03o8I&amp;sa=D&amp;source=editors&amp;ust=1724832556753921&amp;usg=AOvVaw2Vm3mcxtw1aNndNgpDvOlq">TA-Exercise</a></td>
+<td>TA Thái</td>
+<td><a href="">240204-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Project handout</span></td>
+<td>Aspect-based Sentiment Analysis Project</td>
+<td>TA Thái</td>
+<td>Due: 06 Feb, 2024 <br> [<a href="https://drive.google.com/file/d/1gJGeBVuFY1h6dQod9tZPIEEr6fqDKhix/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/aZX31G8JYTQ&amp;sa=D&amp;source=editors&amp;ust=1724832556754658&amp;usg=AOvVaw0lV5FFQC47nGR8E7ZPQb9c">Text Project: Aspect Extraction and Content Classification (Text Classification + NER)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/file/d/1JhgLUZSW8nCbuzpG4conbqdeVR703GFW/view?usp=drive_link">240206-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/igo1Gcsskmo&amp;sa=D&amp;source=editors&amp;ust=1724832556755059&amp;usg=AOvVaw1UxLbQV0dgRL6mFK2HuYfn">Text Project: QA for Content Inquiry (Text Classification + NER)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1H6Ui_ZbWOSWJVv-TOywlOavXBS_5OF6t?usp=drive_link">240216-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/-o_xEU0142s&amp;sa=D&amp;source=editors&amp;ust=1724832556755463&amp;usg=AOvVaw3lU663uBCjLF8mb_WKO0UN">Text Project: End-to-end Question Answering (Building a Searching System)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1dcPKUp1O4ZhTSuno06m_8Q5xCd1KGelq?usp=drive_link">240218-23M08MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1nfRCQ01AEG_wyL1PyUdcO2aDw36JWwwb/view?usp=drive_link">Exercise</a>] - [<a href="https://drive.google.com/file/d/1FbbdrWPu1Jndbr6CLMIip1O5aIv35Ddo/view?usp=drive_link">Solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/WHUHvUZoAu0&amp;sa=D&amp;source=editors&amp;ust=1724832556755867&amp;usg=AOvVaw3WL_W7WkaAYnL0caWp48aD">Text Generation</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1_Iszx-jhBj9afDqv3EJDsH0HTiGVaODl?usp=drive_link">240221-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/SKxjf_xCUco&amp;sa=D&amp;source=editors&amp;ust=1724832556756261&amp;usg=AOvVaw3EWyOyuZgvfTfZ0NACnSkZ">Machine Translation</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1WUVuBokSJKDMXhzp_4zBp_xplR0QMTxP?usp=drive_link">240223-23M08MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/YoJaVEWFu5s&amp;sa=D&amp;source=editors&amp;ust=1724832556756660&amp;usg=AOvVaw1bt3nn0zBwgzL5FBx-WD9E">TA Exercise (Neural Machine Translation)</a></td>
+<td>TA Thái</td>
+<td>240225-23M08MC</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Project handout</span></td>
+<td><a href="https://drive.google.com/file/d/1iwcGmteLgiHK6bjPrkeHESJ0Ou72pog_/view?usp=drive_link">Neural Machine Translation</a></td>
+<td>TA Thái</td>
+<td>Due: 25 Feb, 2024 <br> [<a href="https://drive.google.com/file/d/109WVkM1VjJ4KPk3i8jSMghVfn-EvJC4S/view?usp=drive_link">Solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/1xbsKZ4D2D-IotpGS3UH4PLYI7NGbb2XR/view&amp;sa=D&amp;source=editors&amp;ust=1724832556757447&amp;usg=AOvVaw3bjeHwHmWvaUatReLuT4YM">Poem Generation Project</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1Lq67LkhT2ttVMi3199-k7mjALCD7Cucl?usp=drive_link">240228-23M08MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1rGBYnGJ4hum3_Wsqhb_lsKQkou5jUiaA/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/19clunVS32mKVMQZ1grSdh1oNiiGJ-ZXB/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/1y54kDnjqkc7n9gWYQmoRK3k-Bg3yHP9_/view&amp;sa=D&amp;source=editors&amp;ust=1724832556757842&amp;usg=AOvVaw346CP7hgSd26KDK8yzsLu3">Low-resource Machine Translation Project</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/11KuB6GI2GnPKpdiSN2n3LWQYCym8gCmw?usp=drive_link">240301-23M08MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1Ak7U0Il1hZ526khNK89x2OWeJtNLXD8v/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/1szQ2EQfJZSr4UZnFlQBgTRJ95De4MUR1/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Project tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/1slYK6jHlGKnXyEAAAOrFx0J3oe8iC_p_/view&amp;sa=D&amp;source=editors&amp;ust=1724832556758394&amp;usg=AOvVaw2nQEhtFT1E4gPibqyIr0YF">Text classification with Mamba Project</a></td>
+<td>TA Đức</td>
+<td><a href="https://drive.google.com/drive/folders/1p26eq3_VbXoreexdeNDkoqUsyGgFuLwT?usp=drive_link">240303-23M08MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1OAEbXu2KZanmQsmne3C1ufoFtpwOFQTT/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/1QREsQeGnPu_lzthdMbslkc_Sc_RIEnYG/view?usp=drive_link">solution</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/0ozStzOZJZA&amp;sa=D&amp;source=editors&amp;ust=1724832556759573&amp;usg=AOvVaw3TN4jItpvigiFP7F0SRrjd">How to write a paper (3)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Dd9v8dMLL4dorDioAKVibY-RbK5YVIMs?usp=drive_link">240127-23M08-EC1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Research &amp; Paper</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/tg_TQPDMKa0&amp;sa=D&amp;source=editors&amp;ust=1724832556759993&amp;usg=AOvVaw3J7OLTwzpNeLDEqCDgUaA2">How to write a paper (4)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1GPN288V7BBUsO_Cpe9vLlX05d9pG5fra?usp=drive_link">240203-23M08-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MLOps</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/-UENe8cARMQ&amp;sa=D&amp;source=editors&amp;ust=1724832556760446&amp;usg=AOvVaw28IUT8hC3R-Z76kK4YtxlM">Model Quantization</a></td>
+<td>TA Bách</td>
+<td><a href="https://drive.google.com/drive/folders/19K_raciKlh8BU0Ig5aNWAqVVMIQ0NJAr?usp=drive_link">240302-23M09-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-8-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-4-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/6xCgzkkx7So&amp;sa=D&amp;source=editors&amp;ust=1724832556760901&amp;usg=AOvVaw2rOBVEG93Doqe7kbFtSbcn">CLIP</a></td>
+<td>TA Đức</td>
+<td>240128-23M08-EC3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/kERiVxH_N-0&amp;sa=D&amp;source=editors&amp;ust=1724832556761288&amp;usg=AOvVaw3dyQeA_PRj8QIoKyuWUPhT">Detecting violation of helmet rule for motorcyclists (CVPRW2024)</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Z6oO5mUSIMBsJ7-8TVou519VyDBzTtI8?usp=drive_link">240204-23M08-EC3</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/trhYxMQG47A&amp;sa=D&amp;source=editors&amp;ust=1724832556761683&amp;usg=AOvVaw2d1N5WbqKz0IVcOmdiSqIA">Direct Preference Optimization</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1mi1qEzGIkbCwqyf2frARqkQ0d5v2BqIC?usp=drive_link">240224-23M08-EC3</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Seminar</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/tY7OKXm6ApA&amp;sa=D&amp;source=editors&amp;ust=1724832556762072&amp;usg=AOvVaw1MDq7OHQXdU80gsE8Uf2kL">Study and Job in the USA</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-8-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-5-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LLMs</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/ShhDaN_Z6Es&amp;sa=D&amp;source=editors&amp;ust=1724832556762440&amp;usg=AOvVaw39HN684y0wA0IwLu5v_DT3">Introduction to Text Generation</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Kn4o8edOayZt0tsFHReRkN2UclQ90Tew?usp=drive_link">240220-23M08-EC2</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-9---generative-models" class="level1" data-toc-text="Generative models" data-number="9">
+<h1 data-toc-text="Generative models" data-number="9"><span class="header-section-number">9</span> Module 9 - Generative Models</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false">Large Language Models (LLMs)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false">MLOps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-4" role="tab" aria-controls="tabset-9-4" aria-selected="false">Seminar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Content</strong></th>
+<th><strong>Instructor</strong></th>
+<th><strong>Handout</strong></th>
+<th><strong>Further Reading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1QPK7vA82XTC3tUaNfPAiFeD8VFZDAu7s/view?usp=drive_link">Style Transfer Exercise</a></td>
+<td>TA Khoa</td>
+<td>Due: 17 March, 2024 <br> [<a href="https://drive.google.com/file/d/1X5THF7DzEwyabheAi56cFn4bjFp2iOs2/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/YktF-L5Y4eE&amp;sa=D&amp;source=editors&amp;ust=1724832556756434&amp;usg=AOvVaw0PO2w8W5IMVUiqK719sVNa">Basic Style Transfer</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1JVrMc3X0O1o6RAq0iqSPd_lKfHMsIzxm?usp=drive_link">240306-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/NYYZi3y_GcU&amp;sa=D&amp;source=editors&amp;ust=1724832556756743&amp;usg=AOvVaw1o0959BFb5Of-7TFiY650x">Multimodal Style Transfer</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1muadwqQQ2w1_6v9suVfNHD5A7VxlLg12?usp=drive_link">240308-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/fmWOQo_ru2c&amp;sa=D&amp;source=editors&amp;ust=1724832556757041&amp;usg=AOvVaw1URvhQeOMpbB9MxvRDalxd">TA Exercise</a></td>
+<td>TA Khoa</td>
+<td>240310-23M09-MC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/TNDtPtHz7Wo&amp;sa=D&amp;source=editors&amp;ust=1724832556757323&amp;usg=AOvVaw1ogn1fod5EboUIyGGWrwYl">TA Exercise</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1GtIy16him1HvNEgasqHY3YwFLp4G-zY9?usp=drive_link">240317-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/Lpj4j8Vw_H8&amp;sa=D&amp;source=editors&amp;ust=1724832556757650&amp;usg=AOvVaw24V7DSybYICOi_4vFFu6mE">GAN and DCGAN</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Bc_1dzxUJ8_DvUv58ocuTNkUMeu02aIZ?usp=drive_link">240320-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/eEMzZKA8suw&amp;sa=D&amp;source=editors&amp;ust=1724832556757958&amp;usg=AOvVaw23eULYRNbrwPASwIj9kwlT">Pix2Pix and CycleGAN</a></td>
+<td>Dr.&nbsp;Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1pbTCg1Fvga4EGGhI-t0KVs3bYSio-CE6?usp=drive_link">240322-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/rAsKchlROVY&amp;sa=D&amp;source=editors&amp;ust=1724832556758245&amp;usg=AOvVaw2aActh47cOnEGU5sGpQKjn">Text to Image Synthesis with DCGAN</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1SI_rxQ7yDB976ZAVXnpKHY6p1s6nsmNZ?usp=drive_link">240324-23M09-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1aF96yqaWLzDwQwEf1jLUQmJ4j9_c45Y1/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/1dtDpfWb1XypRUYOIA4MavXsMkVr-A1ZM/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/137VozceS2H8V2tR1QOJDaTJ0b8SrXsxN/view?usp%3Ddrivesdk&amp;sa=D&amp;source=editors&amp;ust=1724832556758541&amp;usg=AOvVaw2EZUSnpWAYCeDtGC-ZY4-J">Image Inpainting with DDPMs</a></td>
+<td>TA Thái</td>
+<td>[<a href="https://drive.google.com/file/d/1EApa6e51uBDoSlN8oQAFTvIGEv7vaikv/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/1KISqbu-2Dn6uGHPGgLM3JPrOL-wmGLvG/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/e_TYyoBkHus&amp;sa=D&amp;source=editors&amp;ust=1724832556758835&amp;usg=AOvVaw3nEMxpJNeaIcuPd3g0bklT">Diffusion Models (1)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1EaLZOeNHN6RH4N_IrPRtSjA0hIElX3_K?usp=drive_link">240327-23M09-MC</a></td>
+<td>Tutorial on Diffusion Models for Imaging and Vision</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/3ucd3fsVaIk&amp;sa=D&amp;source=editors&amp;ust=1724832556759188&amp;usg=AOvVaw3p0D2QLqOy6VYhSDryy79Q">Diffusion Models (2)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1QWKTj7IxxTbTAkjf40FE09M0scOSwqMR?usp=drive_link">240329-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/9Y_sRfsEKdI&amp;sa=D&amp;source=editors&amp;ust=1724832556759475&amp;usg=AOvVaw0rtuVfY3ZpOAHoNi3ryDl2">Diffusion-based Image Inpainting</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1pZDxNjzfJ4qnCHKfB1Cb_IaYIxZEpIPp?usp=drive_link">240331-23M09-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1MQQcXm-N0X1Ja3ezPDZLshB4JF0MBAFY/view?usp=drive_link">handout</a>]-[<a href="https://drive.google.com/file/d/11Q0SGDngxbD0yXAYTFr0I5toKS0PAjON/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/aZVRG_ybkr0&amp;sa=D&amp;source=editors&amp;ust=1724832556759762&amp;usg=AOvVaw0IWhKLQO5Uc6qvg8ooyinJ">Project: VAE-based Image Colorization</a></td>
+<td>Dr.&nbsp;Tài</td>
+<td><a href="https://drive.google.com/drive/folders/18nd8N3fENCYCcFdYPiq5mfuOAERfErKM?usp=drive_link">240403-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Project Tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/EniYKDr10mg&amp;sa=D&amp;source=editors&amp;ust=1724832556760062&amp;usg=AOvVaw0LazRuYOc7sIcWwT5Sh_TX">Project: Diffusion-based Image Colorization</a></td>
+<td>Dr.&nbsp;Tài</td>
+<td><a href="https://drive.google.com/drive/folders/185nRgQAl79oDkTeYM1fTxehe43fXBIaz?usp=drive_link">240407-23M09-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1jTYIKAK3HeUJEGaEt5MDLZ9uSl4wde-9/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/15kauLW5LHcj0H099CJiFJPn6eOu26Vm2/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/y4P7JDgKCvU&amp;sa=D&amp;source=editors&amp;ust=1724832556760562&amp;usg=AOvVaw37RV_Bp8RVueNm7TrTZDvZ">Stable Diffusion</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/17WIzMu57Ilqf4n9iUSv4F4isCGQ22Eus?usp=drive_link">240410-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/4aDFyY8dAkI&amp;sa=D&amp;source=editors&amp;ust=1724832556760868&amp;usg=AOvVaw2jmMs7nqKsxzTz8HfjNhYT">Introduction to OpenAI’s Sora</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/17W4NtSvVuArPxGVcPbZPrO_FUdIOVqyw?usp=drive_link">240412-23M09-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Project Tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/5JPrVLhkQjo&amp;sa=D&amp;source=editors&amp;ust=1724832556761158&amp;usg=AOvVaw0KHPXkgADVKvAnDVDkuNwb">Text to Image Synthesis with Stable Diffusion (and CLIP)</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/12l5fe9R08z7qW-tgHBZ3XSoK4dUDQGll?usp=drive_link">240414-23M09-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1pZTyPXpMzBHGlwcdLbdlS6P0HVGyh9cJ/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/16SVm1Hti-tgnaM2sLXu6RlcZwsJn9iz7/view?usp=drive_link">solution</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Content</strong></th>
+<th><strong>Instructor</strong></th>
+<th><strong>Handout</strong></th>
+<th><strong>Further Reading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LLMs</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/kEzLMnpw5zE&amp;sa=D&amp;source=editors&amp;ust=1724832556761518&amp;usg=AOvVaw0xX0tfQ4TMfKqRPXPVSXk1">Training a minChatGPT</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1bHEvixDSp_Ya-M1tzUUYwDGMR0i7IRpv?usp=drive_link">240406-23M10-EC1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>LLMs</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/pB2gb7e_N18&amp;sa=D&amp;source=editors&amp;ust=1724832556761827&amp;usg=AOvVaw1kyLx6mvb9-nK__-Kwzu7h">LLM Finetuning for Math Solver</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1RkdzGkCMmMGisZRJ11btzXGhjiu0nmyD?usp=drive_link">240413-23M10-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Content</strong></th>
+<th><strong>Instructor</strong></th>
+<th><strong>Handout</strong></th>
+<th><strong>Further Reading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">MLOps</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/dOgaMtt_fhM&amp;sa=D&amp;source=editors&amp;ust=1724832556762176&amp;usg=AOvVaw082dQxxMvW5E1ErDrW_CVH">Model Pruning</a></td>
+<td>TA Bách</td>
+<td><a href="https://drive.google.com/drive/folders/1EIEFV1dWoqZ10IzZn8H1a3mYwAdIBxFD?usp=drive_link">240309-23M09-EC1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">MLOps</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/z5w0806ThLU&amp;sa=D&amp;source=editors&amp;ust=1724832556762460&amp;usg=AOvVaw2ve77WcUxRREQEchr1d1zx">Mobile Deployment</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/17rUkFODK3HmdI_s7Scys0y1kqbKrmbmj?usp=drive_link">240316-23M09-EC1</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">MLOps</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/B55Jb7enrq8&amp;sa=D&amp;source=editors&amp;ust=1724832556762742&amp;usg=AOvVaw1aVpcvXHuHsI8toB8o4OHE">Web Deployment</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1d6ChPC8Ri2l-O7YMEJ67SetHREqCdPLm?usp=drive_link">240323-23M09-EC1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">MLOps</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/o0FacL81Azo&amp;sa=D&amp;source=editors&amp;ust=1724832556763026&amp;usg=AOvVaw336AdobiV4bLKxLtSA3SJq">Deployment as a Service (API)</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1Suv0cTn4bEbfJ4rEcCiPwRW54IPRDslG?usp=drive_link">240330-23M09-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-9-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-4-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Content</strong></th>
+<th><strong>Instructor</strong></th>
+<th><strong>Handout</strong></th>
+<th><strong>Further Reading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Seminar</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/RKcPFwzkkLs&amp;sa=D&amp;source=editors&amp;ust=1724832556763354&amp;usg=AOvVaw1KED7sW6alNyrjUl1QF8Gh">Seminar: XAI</a></td>
+<td>Dr.&nbsp;Anh Nguyen</td>
+<td><a href="https://drive.google.com/drive/folders/1_KoRgGcEat4gt-wqA63rksHoFbFo_gpU?usp=drive_link">240405-23M09-MC</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="module-10---reinforcement-learning-gnn-and-llms" class="level1" data-toc-text="Advanced topics" data-number="10">
+<h1 data-toc-text="Advanced topics" data-number="10"><span class="header-section-number">10</span> Module 10 - Reinforcement Learning, GNN, and LLMs</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true">Main lessons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false">Large Language Models (LLMs)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1XGn_6XpZBOPLkUDg_iODBOxwVkJxSvcM/view?usp=drive_link">Reinforcement Learning Exercise</a></td>
+<td>TA Thắng</td>
+<td>Due: 21 Apr, 2024 <br> [<a href="https://drive.google.com/file/d/1XGn_6XpZBOPLkUDg_iODBOxwVkJxSvcM/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Preview</td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/67cUGpOdwjI&amp;sa=D&amp;source=editors&amp;ust=1724832556757768&amp;usg=AOvVaw1ZKGSFwGyq_pYtQjufI0k8">Introduction to Reinforcement Learning</a></td>
+<td>TA Thuận</td>
+<td><a href="https://drive.google.com/drive/folders/1BEbvm_MJJ-8-UYrRcqzNgsiZVjO_7b46?usp=drive_link">240416-23M10-EC2</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/OgYC_dXWyc8&amp;sa=D&amp;source=editors&amp;ust=1724832556758230&amp;usg=AOvVaw26cP3G_j_j-AYw3tSn6veP">Reinforcement Learning (CartPole)</a></td>
+<td>Dr.&nbsp;Hoàng</td>
+<td><a href="https://drive.google.com/drive/folders/10PS5HhNbD-SdC0lW7Yi8eLPdjqqTZOt0?usp=drive_link">240417-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/0KOuk0VVxYo&amp;sa=D&amp;source=editors&amp;ust=1724832556758621&amp;usg=AOvVaw2C_t_jlZJEwuo0WyPqnvHs">Reinforcement Learning (Deep Deterministic Policy Gradient)</a></td>
+<td>Dr.&nbsp;Hoàng</td>
+<td><a href="https://drive.google.com/drive/folders/1Fo1K71u6gnhK1YTGXzTBXZbElCnxbCXq?usp=drive_link">240419-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/LWBdqHG1Hw0&amp;sa=D&amp;source=editors&amp;ust=1724832556758947&amp;usg=AOvVaw3jUsTGp48gtfP6kL6rny2T">TA Exercise</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1bFlS0xLGIpZSJJ8hyK0UYXGH_xpb4IvK?usp=drive_link">240421-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/1lFg_T25zN6mFtfVip9ZgzpQCQ_zs3Kml/view&amp;sa=D&amp;source=editors&amp;ust=1724832556759379&amp;usg=AOvVaw2nitD77Jb_ojpjlJ_15ob1">Point Cloud Techniques and Applications Project</a></td>
+<td>Dr.&nbsp;Tuân</td>
+<td>[<a href="https://drive.google.com/file/d/1wvdTXB20LfPqdoGDbFCngo2z3BfDYRZp/view?usp=drive_link">project</a>] - [<a href="https://drive.google.com/file/d/1UrfwYZX0T4ShXN15aD7JoagKU_FHARTG/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://www.google.com/url?q=https://drive.google.com/file/d/18TSBb1upiJkj3H8CxXD8MYV10LK7M1cj/view&amp;sa=D&amp;source=editors&amp;ust=1724832556759677&amp;usg=AOvVaw0EAXIP7rj04ZoIlsdXGY10">Multimodal Large Language Models Exercise</a></td>
+<td>TA Thái</td>
+<td>Due: 27 Apr, 2024 <br> [<a href="https://drive.google.com/file/d/1uim9UDpyXz3MCdzeRrcBUA6ut8wWyk1r/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/ebQ3e8pGSSE&amp;sa=D&amp;source=editors&amp;ust=1724832556760032&amp;usg=AOvVaw3xftg57Gb9hORBWYqSfUcI">Classification for 3D Point Cloud Data</a></td>
+<td>Dr.&nbsp;Tuân</td>
+<td><a href="https://drive.google.com/drive/folders/1p9f3MqjSh52WMEP8tRctMwbK_7H7EnGi?usp=drive_link">240424-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/US2o866dCh8&amp;sa=D&amp;source=editors&amp;ust=1724832556760424&amp;usg=AOvVaw1wHJ2Jk2LwHAEECszJiJwu">Advances in 3D Point Cloud Data</a></td>
+<td>Dr.&nbsp;Tuân</td>
+<td><a href="https://drive.google.com/drive/folders/1_c3umUx0NY89is_B4gTS2nw_JKds6sVS?usp=drive_link">240426-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-success">Assignment</span></td>
+<td><a href="https://drive.google.com/file/d/1UjVRXIOowiloz5soQCmKSjOdLmTDMQ02/view?usp=drive_link">Graph Neural Network Exercise</a></td>
+<td>TA Đức</td>
+<td>Due: 03 May, 2024 <br> [<a href="https://drive.google.com/file/d/1F6H4GqApK1pBx8NzN6qM7H1A_3i7S0Kd/view?usp=drive_link">solution</a>]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/f1YQCJ9OfgI&amp;sa=D&amp;source=editors&amp;ust=1724832556760734&amp;usg=AOvVaw0t7NuHJBqThc1VIUxnkjKC">GNN Node Classification</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1S5aVka7tVVK9vdGlEsroj1o2m6s9hqzg?usp=drive_link">240428-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-primary">Main Lesson</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/OXxorkP-GKg&amp;sa=D&amp;source=editors&amp;ust=1724832556761121&amp;usg=AOvVaw0_05w28OfjzjKRMll9Ev5k">GNN (Molecular Property Prediction)</a></td>
+<td>Dr.&nbsp;Đình Vinh</td>
+<td><a href="https://drive.google.com/drive/folders/1Wjc4OivDo56pt9j7oBnlVjmtpPheb2nn?usp=drive_link">240501-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-success">Exercise Session</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/wlwqCc3kgUY&amp;sa=D&amp;source=editors&amp;ust=1724832556761471&amp;usg=AOvVaw3LCvMLSrE6z6Dy9O4GjQPv">TA Exercise</a></td>
+<td>TA Đức</td>
+<td><a href="https://drive.google.com/drive/folders/1FM_1YHFEtUJjvxmMOqeqNxwupZfBOFTZ?usp=drive_link">240503-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Project Tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/zEEeuu6cA80&amp;sa=D&amp;source=editors&amp;ust=1724832556761794&amp;usg=AOvVaw2GHRbS3SlwvMrD4cbw4c6j">Multitasking networks for Vision</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1RSEztxAHuPcfS6DWqw7LbVn2rT1DCBiD?usp=drive_link">240505-23M10-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1YdghVcvBqNRxBodsdM_n5R0fWCnjqiZ9/view?usp=drive_link">Exercise</a>] - [<a href="https://drive.google.com/file/d/1Z8XGSROMPyaNy9AjORkzsebjxtwJJHCz/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-warning">Project Tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/mB0nSmeDWLs&amp;sa=D&amp;source=editors&amp;ust=1724832556762206&amp;usg=AOvVaw3eA3yVr2aqPIpRpGx8YXuQ">VideoCLIP for Video Classification</a></td>
+<td>TA Đức</td>
+<td><a href="https://drive.google.com/drive/folders/18SDA8o9LI9D0v6VfQxLABc6oEz1jJ6wa?usp=drive_link">240508-23M10-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1UFGQdhQZyZnpM43jji1GiZTcnlo26Llf/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/18FexSPAycsWfnw9MCAPcenPAvR6A3wBy/view?usp=drive_link">solution</a>]</td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-warning">Project Tutorial</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/TPc3ZGj4vZs&amp;sa=D&amp;source=editors&amp;ust=1724832556762512&amp;usg=AOvVaw3-dK_8oIDqDk98DTijAuZW">Multi-agent LLM</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1urJmD8SiAos_3S2xWxAtsWMtLKIoVsQM?usp=drive_link">240510-23M10-MC</a></td>
+<td>[<a href="https://drive.google.com/file/d/1SA5muWBshQtsqgxiYBwnx2U34PvDwv9A/view?usp=drive_link">handout</a>] - [<a href="https://drive.google.com/file/d/1x7h834-mIFEXMvodZf-Fsc6bChaYUI1U/view?usp=drive_link">solution</a>]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Content</th>
+<th>Instructor</th>
+<th>Handout</th>
+<th>Further Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Extra Class</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/QM7_Xq6SzdE&amp;sa=D&amp;source=editors&amp;ust=1724832556762972&amp;usg=AOvVaw1l34gxUvn2cWrQhVIvNu2r">LLM RAG for Applications</a></td>
+<td>TA Bách</td>
+<td><a href="https://drive.google.com/drive/folders/1QeD4iEOqtPpvtntHnybq6NComjMk3uQ3?usp=drive_link">240420-23M10-MC</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="badge rounded-pill bg-info">Extra Class</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/14NHUCkTntk&amp;sa=D&amp;source=editors&amp;ust=1724832556763321&amp;usg=AOvVaw2ZozFP7k1w1U8e3tPMOQA7">LLMs for Multimodal Data</a></td>
+<td>TA Thái</td>
+<td><a href="https://drive.google.com/drive/folders/1BTwYLzcLm8E5DKwoYxVAywXKsbONlfiO?usp=drive_link">240427-23M10-EC1</a></td>
+<td>[Modaverse] [BLIP-2] [NExT-GPT]</td>
+</tr>
+<tr class="odd">
+<td><span class="badge rounded-pill bg-info">Extra Class</span></td>
+<td><a href="https://www.google.com/url?q=https://youtu.be/ndwR4byDvbQ&amp;sa=D&amp;source=editors&amp;ust=1724832556763803&amp;usg=AOvVaw06ILRVWpJDXkgCGFCXRa8k">LLM Deployment with LangChain</a></td>
+<td>TA Thắng</td>
+<td><a href="https://drive.google.com/drive/folders/1mJV-qgoU8knIQCZfqYs_LUMbIr10Xsaq?usp=drive_link">240504-23M10-EC1</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+    function abbrv_toc() {
+      let toc = document.querySelectorAll('nav#TOC li>a');
+      toc.forEach(e => {
+        let id = e.id.substring(4);
+        let sec = document.getElementById(id);
+        let toc_text = sec.getAttribute('data-toc-text');
+        if(toc_text != null) {
+          let new_toc_text = e.querySelector('span').outerHTML + ' ' + toc_text;
+          e.innerHTML = new_toc_text;
+        }
+      })
+    };
+  
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      abbrv_toc();
+    });
+  </script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Created by Viet Nguyen.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
