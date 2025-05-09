@@ -13,10 +13,12 @@ website:
     background: '#434445'
     search: true
     left:
-      - href: blogs/blog.qmd
+      - href: blogs/index.qmd
         text: Blog
       - href: academia/index.qmd
         text: Academia
+      - href: faq.qmd
+        text: FAQ
   back-to-top-navigation: true
   page-navigation: true
   sidebar:
@@ -44,11 +46,14 @@ website:
         href: index.qmd
 format:
   html:
+    include-before-body: assets/bar.html
     include-in-header: 
       text: |
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     theme:
-      light: flatly
+      light: [flatly, theme.scss]
+      dark: [darkly, theme.scss]
+    respect-user-color-scheme: true
     css: styles.css
     toc: true
     smooth-scroll: true

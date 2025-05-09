@@ -15,6 +15,12 @@ include-before: |
       font-style: italic;
       opacity: 0.6;
     }
+    /* Cross out label when checkbox is checked */
+    li input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      font-style: italic;
+      opacity: 0.6;
+    }
   </style>
 include-after: |
   <script>
@@ -33,13 +39,9 @@ include-after: |
 
           function updateStyle() {
             if (checkbox.checked) {
-              label.style.textDecoration = "line-through";
-              label.style.fontStyle = "italic";
-              label.style.opacity = "0.6";
+              label.classList.add("done");
             } else {
-              label.style.textDecoration = "none";
-              label.style.fontStyle = "normal";
-              label.style.opacity = "1";
+              label.classList.remove("done");
             }
           }
 
@@ -53,59 +55,94 @@ include-after: |
   </script>
 ---
 
+::: {.boxed}
 # Disclaimer
 I am nowhere at a place to "advice" everyone about doing research. This list is my personal checklist for writing papers that I compiled by reading/watching advise from others. 
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Abstract
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Related Works
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 ## 3 facets of your work  
 - Explain your method through its contrasts
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Introduction
-
 - [ ] Outline a set of 3 defendable contributions:
   - [ ] What is the problem that the paper is solving;  
   - [ ] Why that problem (the importance of the problem);  
   - [ ] What are the current approaches to solving this problem and what is wrong about them;  
   - [ ] What are the contributions of the paper;
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Method
-
 - [ ] No new notation. If you need it, add to the background section.  
 - [ ] Anything written in the Method section is expected to be tested
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Experiment
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Results
-
 The goal of the Results section is to verify the contributions of the paper.
-
 - [ ] The tables are the stars.  
 - [ ] One table = one experiment  
 - [ ] Describe the table and the conclusion of the experiment  
 - [ ] Avoid new notation, method, data. Everything must be set up in the Experiment section.
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Discussion / Analysis
-
 - [ ] Check robustness of the contributions  
 - [ ] Ask specific questions that go beyond the core, now-proven results  
 - [ ] Ablation of specific method choices  
 - [ ] Qualitative analysis of known gains  
 - [ ] Avoid random experiment
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Conclusion
-
 - [ ] No new information  
 - [ ] Abstract but more specific  
 - [ ] A brief summary (one or two sentences) of what the paper is about  
 - [ ] A summary of the key findings of the paper  
 - [ ] A list of potential improvements.
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Figures
 
-> “Figures are an important element of reporting the findings of your research. The reader usually starts by reading the abstract, conclusion and figures. If the figures are self-contained and convincing, it is likely that the reviewers will accept the paper without asking a large number of questions. If they have to read the whole text to understand the worth of each figure, this will slow their progress and could make them impatient, hence decrease the chance of giving recommendation for your paper.”
+> "Figures are an important element of reporting the findings of your research. The reader usually starts by reading the abstract, conclusion and figures. If the figures are self-contained and convincing, it is likely that the reviewers will accept the paper without asking a large number of questions. If they have to read the whole text to understand the worth of each figure, this will slow their progress and could make them impatient, hence decrease the chance of giving recommendation for your paper."
 
 - [ ] Place the figures at the top of the page to save space.  
 - [ ] Should fill the entire `\linewidth` (or `\textwidth`) of the page.  
@@ -126,17 +163,28 @@ Some examples of good figures (imo):
     src="https://www.canva.com/design/DAGkn9tNXx0/bhrEy8pBzq5Ix8Bzp7WDdA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
+:::
+<div style="height:2em;"></div>
 
+::: {.boxed}
 # Tables
 
 - [ ] Use thick lines at the top and bottom of the table.  
 - [ ] Avoid using the vertical lines as much as possible.
 - [ ] The caption of the table is **above** the table, not below (like Figures).
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}    
 # Grammar
 
 - Be consistent on pronouns and tenses
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Misc
 
 ## Paragraphs
@@ -158,7 +206,7 @@ Clutteredness is being precise, not counting the words.
 
 - [ ] Avoid: _successful solution, extremely flabbergasted_  
 - [ ] Avoid: _It is noticeable that..._  
-- [ ] Most of the time you don’t need _there is / there are_  
+- [ ] Most of the time you don't need _there is / there are_  
 - [ ] _Can be regarded as_ vs. _is_  
 - [ ] Use passive voice sparingly and deliberately  
 - [ ] Use strong verbs; avoid: _take, have, get, to be_  
@@ -176,22 +224,34 @@ Clutteredness is being precise, not counting the words.
 - [ ] Avoid ending paragraphs with only 2–3 words on a line  
 - [ ] Fill the allowed page limit (e.g., write 8 full pages if the limit is 8)  
 - [ ] Use parallelism in lists and structures
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Citation / Bibliography
 
-- [ ] Dirty, inconsistent references imply you don’t care  
-- [ ] Don’t copy-paste from Google Scholar—check and clean  
+- [ ] Dirty, inconsistent references imply you don't care  
+- [ ] Don't copy-paste from Google Scholar—check and clean  
 - [ ] Cite original papers, not derivative ones  
-- [ ] Avoid massive citation lists like “[1–20]”  
+- [ ] Avoid massive citation lists like "[1–20]".  
 - [ ] Prefer grouped author-year references in chronological order, e.g.,  
-  [ ] > “Books and articles on writing scientific papers exist [Day, 1998; Ashby, 2000; Plaxco, 2010].”  
-- [ ] Use “?” search to check for missing citations
+  [ ] > "Books and articles on writing scientific papers exist [Day, 1998; Ashby, 2000; Plaxco, 2010]."  
+- [ ] Use "?" search to check for missing citations
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # Useful Stuff
 
 - [Pub-Ready Plots GitHub](https://github.com/wiseodd/pub-ready-plots?tab=readme-ov-file#creating-a-figure-with-multiple-subplots)  
 - PaperLib for managing papers. Scrape feature helps make proper BibTeX entries.
+:::
 
+<div style="height:2em;"></div>
+
+::: {.boxed}
 # References
 
 ## Figures
@@ -209,3 +269,8 @@ Clutteredness is being precise, not counting the words.
 - _On Writing Well_  
 - _The Elements of Style_  
 - [The Science of Scientific Writing (Gopen & Swan)](https://www.usenix.org/sites/default/files/gopen_and_swan_science_of_scientific_writing.pdf)
+:::
+
+<div style="height:2em;"></div>
+
+::: {.boxed}
