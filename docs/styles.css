@@ -7,10 +7,18 @@ html {
 
 body {
     font-family: 'Quicksand', sans-serif;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 p {
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 #my {
@@ -166,4 +174,36 @@ table tr:last-child {
 }
 .quarto-dark table tr:last-child {
   border-bottom: 1px solid #666 !important;
+}
+
+/* Enable automatic hyphenation for justified text */
+body, p, .justify {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Navbar link hover and active background and corner rounding */
+.navbar .nav-link:hover,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+  background-color: #e3f2fd;
+  border-radius: 0.7em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.quarto-dark .navbar .nav-link:hover,
+.quarto-dark .navbar .nav-link:active,
+.quarto-dark .navbar .nav-link.active {
+  background-color: #263238;
+  border-radius: 0.7em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.boxed {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 6px;
+  background-color: #f9f9f9;
 }
