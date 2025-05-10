@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress) – AIO Course</title>
+<title>Modality Gap in CLIP Embedding Space – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../logo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d7379c9860a5bb28b32f5cc53684069d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-cd9672976cce3f5ce54ee3746d7edfde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,17 +90,17 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -91,15 +111,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../mlops/index.html"> 
+    <a class="nav-link" href="../mlops/index.html"> 
 <span class="menu-text">MLOps</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html"> 
+    <a class="nav-link" href="../blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../academia/index.html"> 
+    <a class="nav-link" href="../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,13 +128,13 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../stanford/cs336/cs336.html">
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../faq.html"> 
+    <a class="nav-link" href="../faq.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
@@ -127,14 +147,59 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Modality Gap in CLIP Embedding Space</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#understanding-and-mitigating-the-modality-gap-in-multimodal-learning" id="toc-understanding-and-mitigating-the-modality-gap-in-multimodal-learning" class="nav-link active" data-scroll-target="#understanding-and-mitigating-the-modality-gap-in-multimodal-learning">Understanding and Mitigating the Modality Gap in Multimodal Learning</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-modality-gap" id="toc-what-is-the-modality-gap" class="nav-link" data-scroll-target="#what-is-the-modality-gap">What is the Modality Gap?</a></li>
+  <li><a href="#causes-of-the-modality-gap" id="toc-causes-of-the-modality-gap" class="nav-link" data-scroll-target="#causes-of-the-modality-gap">Causes of the Modality Gap</a>
+  <ul class="collapse">
+  <li><a href="#neural-network-architecture-and-initialization" id="toc-neural-network-architecture-and-initialization" class="nav-link" data-scroll-target="#neural-network-architecture-and-initialization">1. Neural Network Architecture and Initialization</a></li>
+  <li><a href="#contrastive-learning-dynamics" id="toc-contrastive-learning-dynamics" class="nav-link" data-scroll-target="#contrastive-learning-dynamics">2. Contrastive Learning Dynamics</a></li>
+  <li><a href="#temperature-parameter-effects" id="toc-temperature-parameter-effects" class="nav-link" data-scroll-target="#temperature-parameter-effects">3. Temperature Parameter Effects</a></li>
+  </ul></li>
+  <li><a href="#mitigation-strategies" id="toc-mitigation-strategies" class="nav-link" data-scroll-target="#mitigation-strategies">Mitigation Strategies</a>
+  <ul class="collapse">
+  <li><a href="#objective-and-loss-function-modifications" id="toc-objective-and-loss-function-modifications" class="nav-link" data-scroll-target="#objective-and-loss-function-modifications">Objective and Loss Function Modifications</a></li>
+  <li><a href="#modality-swapping-approaches" id="toc-modality-swapping-approaches" class="nav-link" data-scroll-target="#modality-swapping-approaches">Modality Swapping Approaches</a></li>
+  <li><a href="#regularization-techniques" id="toc-regularization-techniques" class="nav-link" data-scroll-target="#regularization-techniques">Regularization Techniques</a></li>
+  <li><a href="#representation-space-engineering" id="toc-representation-space-engineering" class="nav-link" data-scroll-target="#representation-space-engineering">Representation Space Engineering</a></li>
+  </ul></li>
+  <li><a href="#relationship-to-downstream-task-performance" id="toc-relationship-to-downstream-task-performance" class="nav-link" data-scroll-target="#relationship-to-downstream-task-performance">Relationship to Downstream Task Performance</a>
+  <ul class="collapse">
+  <li><a href="#positive-impacts" id="toc-positive-impacts" class="nav-link" data-scroll-target="#positive-impacts">Positive Impacts</a></li>
+  <li><a href="#nuanced-effects" id="toc-nuanced-effects" class="nav-link" data-scroll-target="#nuanced-effects">Nuanced Effects</a></li>
+  </ul></li>
+  <li><a href="#open-research-questions-and-future-directions" id="toc-open-research-questions-and-future-directions" class="nav-link" data-scroll-target="#open-research-questions-and-future-directions">Open Research Questions and Future Directions</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 <!-- progress-bar.html -->
 <style>
     #progress-bar {
@@ -173,36 +238,124 @@ ul.task-list li input[type="checkbox"] {
   </script>
   
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress)</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<section id="understanding-and-mitigating-the-modality-gap-in-multimodal-learning" class="level1">
+<h1>Understanding and Mitigating the Modality Gap in Multimodal Learning</h1>
+<p>This report explores the modality gap phenomenon in multimodal representation learning, examining its causes, mitigation strategies, impact on downstream tasks, and identifying open research questions. The modality gap presents an important challenge in multimodal learning that researchers are actively working to understand and address.</p>
+<section id="what-is-the-modality-gap" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-modality-gap">What is the Modality Gap?</h2>
+<p>The modality gap refers to a geometric phenomenon in the representation space of multimodal models where embeddings from different modalities (e.g., images and text) occupy distinct, separated regions rather than being fully integrated in the shared representation space <span class="citation" data-cites="liang2022mind">(<a href="#ref-liang2022mind" role="doc-biblioref">Liang et al. 2022</a>)</span>. This separation creates a clear geometric distance between different modalities, despite these models being explicitly trained to align cross-modal representations. For example, in CLIP (Contrastive Language-Image Pre-training), image and text embeddings are systematically located in completely separate regions of the embedding space, even though they are supposed to represent semantically similar concepts[2].</p>
+</section>
+<section id="causes-of-the-modality-gap" class="level2">
+<h2 class="anchored" data-anchor-id="causes-of-the-modality-gap">Causes of the Modality Gap</h2>
+<p>Research has identified several key factors that contribute to the emergence and persistence of the modality gap:</p>
+<section id="neural-network-architecture-and-initialization" class="level3">
+<h3 class="anchored" data-anchor-id="neural-network-architecture-and-initialization">1. Neural Network Architecture and Initialization</h3>
+<p>The general inductive bias of deep neural architectures creates a “cone effect” where the effective embedding space is restricted to a narrow cone for both pre-trained models and models with random weights[7][15]. Different random initializations create different embedding cones, and since multimodal models typically use two separate encoders, the representations of the two modalities are already clearly apart at initialization[1]. Theoretical analysis shows that each neural network layer shrinks the angle between embedding vectors with high probability, creating narrower cones in deeper architectures[7].</p>
+</section>
+<section id="contrastive-learning-dynamics" class="level3">
+<h3 class="anchored" data-anchor-id="contrastive-learning-dynamics">2. Contrastive Learning Dynamics</h3>
+<p>The contrastive learning objective commonly used in multimodal models preserves or even enlarges the gap during training[1][15]. Research has demonstrated that:</p>
 <ul>
-<li><p><a href="../../stanford/cs336/assignments/a1/a1.html">Assignment 1: Building a Transformer LM</a></p></li>
-<li><p><a href="../../stanford/cs336/l1.html">Lecture 1: Overview</a> | <a href="../../stanford/cs336/tokenization.html">Tokenization</a></p></li>
-<li><p><a href="../../stanford/cs336/l2.html">Lecture 2: Resources</a></p></li>
-<li><p><a href="../../stanford/cs336/l3.html">Lecture 3: Architectures and Hyperparameters</a></p></li>
-<li><p><a href="l4.qmd">Lecture 4: Mixture of Experts (MOEs)</a></p></li>
+<li>The learnable temperature parameter in the contrastive loss function significantly influences the modality gap persistence[2][4]</li>
+<li>Mismatched data pairs, especially at early training stages, cause the modality gap to enlarge before potentially beginning to close[4][10]</li>
+<li>Gradient flow analysis reveals that the modality gap diminishes at an extremely slow rate (O(1/√t) in training time t), explaining why it persists in trained models[10]</li>
 </ul>
+</section>
+<section id="temperature-parameter-effects" class="level3">
+<h3 class="anchored" data-anchor-id="temperature-parameter-effects">3. Temperature Parameter Effects</h3>
+<p>Small temperature settings in fixed temperature mode and almost invariably under learned temperature mode settings lead to consistent emergence of modality gaps, regardless of the initial temperature value[12]. The choice of temperature parameterization affects the rate at which the gap closes or widens[4].</p>
+</section>
+</section>
+<section id="mitigation-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="mitigation-strategies">Mitigation Strategies</h2>
+<p>Researchers have proposed various approaches to mitigate the modality gap:</p>
+<section id="objective-and-loss-function-modifications" class="level3">
+<h3 class="anchored" data-anchor-id="objective-and-loss-function-modifications">Objective and Loss Function Modifications</h3>
+<ol type="1">
+<li><strong>Temperature Control Strategies</strong>:
+<ul>
+<li>Temperature Scheduling (TS): Enforcing a linearly increasing schedule for temperature during training[4]</li>
+<li>Temperature Reparameterization (TR): Replacing the original parameterization with alternatives that yield a higher gap closing rate[4]</li>
+<li>Smaller Learning Rate of Temperature (SLRT): Using a smaller learning rate for the temperature parameter compared to other learnable parameters[4]</li>
+<li>Fixed on Large Temperature (FLT): Fixing the temperature at a high value throughout training[4]</li>
+</ul></li>
+<li><strong>Removing Repulsive Structure</strong>: Modifying the contrastive loss by removing the repulsive structure (which pushes negative examples away) helps close the modality gap[10]. This approach retains only the mechanism of pulling positive samples together.</li>
+</ol>
+</section>
+<section id="modality-swapping-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="modality-swapping-approaches">Modality Swapping Approaches</h3>
+<ol type="1">
+<li><strong>Hard Swapping Between Modalities (HS)</strong>: Randomly selecting image-text pairs and exchanging their features in the shared feature space[4]</li>
+<li><strong>Soft Swapping Between Modalities (SS)</strong>: Mixing the features of image-text pairs to create new pairs[4]</li>
+</ol>
+<p>These approaches prevent the two modalities from remaining segregated into parallel planes, thereby reducing overall repulsion between them[4].</p>
+</section>
+<section id="regularization-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="regularization-techniques">Regularization Techniques</h3>
+<p>Studies in speech translation have found that regularization plays a more important role than well-designed modality adaptation methods in addressing the modality gap[3][9][11]. Regularization helps prevent overfitting, which can exacerbate the modality gap, especially when transferring from high-resource to low-resource tasks[11].</p>
+</section>
+<section id="representation-space-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="representation-space-engineering">Representation Space Engineering</h3>
+<ol type="1">
+<li><strong>Semantic Enhancement</strong>: Improving both inter-modality semantic consistency and intra-modality semantic completion[10]</li>
+<li><strong>Inter-MCR Alignment</strong>: Aligning semantically-enhanced embeddings across different multimodal contrastive representation (MCR) spaces[10]</li>
+<li><strong>Intra-MCR Alignment</strong>: Realigning semantically similar embeddings across modalities within each MCR space to alleviate the modality gap[10]</li>
+</ol>
+</section>
+</section>
+<section id="relationship-to-downstream-task-performance" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-downstream-task-performance">Relationship to Downstream Task Performance</h2>
+<p>The relationship between modality gap and downstream task performance is complex and task-dependent:</p>
+<section id="positive-impacts" class="level3">
+<h3 class="anchored" data-anchor-id="positive-impacts">Positive Impacts</h3>
+<ul>
+<li>Reducing the modality gap shows consistent improvement in image-text retrieval accuracy[4][10]</li>
+<li>Some research indicates that varying the modality gap distance can improve zero-shot classification performance and fairness[1][7]</li>
+</ul>
+</section>
+<section id="nuanced-effects" class="level3">
+<h3 class="anchored" data-anchor-id="nuanced-effects">Nuanced Effects</h3>
+<ul>
+<li>Reducing the gap does not consistently improve all downstream task performance, suggesting its role may be more nuanced than previously understood[12]</li>
+<li>While smaller modality gaps clearly lead to higher retrieval accuracy, they may not significantly affect zero-shot and linear probe classification accuracy[10]</li>
+<li>Feature space uniformity appears more important than modality gap reduction for visual classification tasks, including zero-shot and linear probing[10]</li>
+<li>For challenging vision-language question-answering tasks, neither modality gap nor uniformity shows a strong correlation with performance[10]</li>
+</ul>
+<p>This evidence suggests that the modality gap might be a geometric by-product of learning methods rather than a critical determinant of representation quality across all tasks[12].</p>
+</section>
+</section>
+<section id="open-research-questions-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="open-research-questions-and-future-directions">Open Research Questions and Future Directions</h2>
+<p>Several important research gaps remain in understanding and addressing the modality gap:</p>
+<ol type="1">
+<li><p><strong>Task-Specific Impacts</strong>: Further research is needed to understand why modality gap reduction benefits certain tasks (like retrieval) more than others (like classification)[10][12]</p></li>
+<li><p><strong>Relationship to Other Representation Properties</strong>: The interplay between modality gap and other properties of the representation space, such as uniformity, remains underexplored[10]</p></li>
+<li><p><strong>Dataset Characteristics</strong>: The role of dataset characteristics in influencing the modality gap needs deeper investigation, as individual dataset characteristics significantly influence the gap’s manifestation[12]</p></li>
+<li><p><strong>Theoretical Understanding</strong>: Extending gradient flow analysis to study the difficulty of closing the gap with varying levels of shared information between modalities by modeling data distributions[4]</p></li>
+<li><p><strong>Application to Finetuning</strong>: Applying insights to finetuning scenarios where domain differences between pretraining and finetuning data need to be considered[4]</p></li>
+<li><p><strong>Compressibility of Dynamics</strong>: Investigating the compressibility of the Riemannian dynamics trajectory in multimodal learning to enhance efficiency and performance[4]</p></li>
+<li><p><strong>Fairness and Bias</strong>: Understanding how modality gap relates to fairness concerns and modality bias in recommendation systems and other applications[5]</p></li>
+</ol>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The modality gap represents a fundamental challenge in multimodal representation learning. While significant progress has been made in understanding its causes and developing mitigation strategies, the relationship between modality gap and model performance remains complex and task-dependent. Future research should focus on a more nuanced understanding of when and how to address the modality gap based on specific applications and desired outcomes, rather than assuming its reduction is universally beneficial.</p>
+<p>The field would benefit from a reevaluation of the modality gap’s significance in multimodal contrastive learning, with greater emphasis on dataset characteristics, contrastive learning methodology, and task-specific requirements[12]. As multimodal systems continue to advance, addressing these open questions will be crucial for developing more effective and robust models.</p>
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-liang2022mind" class="csl-entry" role="listitem">
+Liang, Weixin, Yuhui Zhang, Yongchan Kwon, Serena Yeung, and James Y. Zou. 2022. <span>“Mind the <span>Gap</span>: Understanding the <span>Modality</span> <span>Gap</span> in <span>Multi</span>-Modal <span>Contrastive</span> <span>Representation</span> <span>Learning</span>.”</span> In <em>NeurIPS</em>.
+</div>
+</div></section></div></main> <!-- /main -->
 <style>
     #chatbot-button {
       position: fixed;
@@ -677,5 +830,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

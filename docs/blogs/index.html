@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -152,16 +151,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../mlops/index.html"> 
+<span class="menu-text">MLOps</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="../blogs/index.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../faq.html"> 
-<span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stanford-courses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -174,6 +173,10 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../faq.html"> 
+<span class="menu-text">FAQ</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 </ul>
@@ -196,7 +199,7 @@ window.Quarto = {
 <style>
     #progress-bar {
       position: fixed;
-      top: var(--navbar-height, 57px);
+      top: var(--navbar-height, 70px);
       left: 50%;
       transform: translateX(-50%);
       height: 2px;
@@ -255,7 +258,26 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1746723600000" data-listing-file-modified-sort="1746859811510" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="768">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1746873809536" data-listing-reading-time-sort="6" data-listing-word-count-sort="1079">
+<a href="../blogs/modality-gap.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modality Gap in CLIP Embedding Space
+</h5>
+<div class="card-text listing-description delink">
+This report explores the modality gap phenomenon in multimodal representation learning, examining its causes, mitigation strategies, impact on downstream tasks, and…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1746723600000" data-listing-file-modified-sort="1746859811510" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="768">
 <a href="../blogs/tools.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="paperlib-ext.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -280,6 +302,76 @@ May 9, 2025
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<style>
+    #chatbot-button {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: none;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      cursor: pointer;
+      box-shadow: none;
+      z-index: 1000;
+      padding: 0;
+    }
+  
+    #chatbot-button .chatbot-icon-bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #99cff1;
+      border-radius: 50%;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+  
+    #chatbot-button .bi {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    #chatbot-button:hover .chatbot-icon-bg {
+      background: #1976b4;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.30);
+    }
+  
+    #chatbot-iframe {
+      position: fixed;
+      bottom: 90px;
+      right: 24px;
+      width: 360px;
+      height: 500px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1000;
+    }
+  </style>
+  
+  <button id="chatbot-button" aria-label="Open chat">
+    <span class="chatbot-icon-bg">
+      <i class="bi bi-chat-dots-fill"></i>
+    </span>
+  </button>
+  
+  <iframe id="chatbot-iframe" src="https://chatbot-tan-chi-38.vercel.app/examples/all">
+  </iframe>
+  
+  <script>
+    const btn = document.getElementById("chatbot-button");
+    const iframe = document.getElementById("chatbot-iframe");
+  
+    btn.addEventListener("click", () => {
+      iframe.style.display = (iframe.style.display === "none" || !iframe.style.display) ? "block" : "none";
+    });
+  </script>
+  
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

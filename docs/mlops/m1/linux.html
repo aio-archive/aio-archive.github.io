@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress) – AIO Course</title>
+<title>Linux – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -130,8 +165,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#understand-gnu-linux" id="toc-understand-gnu-linux" class="nav-link active" data-scroll-target="#understand-gnu-linux">Understand GNU / Linux</a></li>
+  <li><a href="#linux-directory-structure" id="toc-linux-directory-structure" class="nav-link" data-scroll-target="#linux-directory-structure">Linux Directory Structure</a></li>
+  <li><a href="#basic-commands" id="toc-basic-commands" class="nav-link" data-scroll-target="#basic-commands">Basic Commands</a></li>
+  <li><a href="#shell-console-and-terminal" id="toc-shell-console-and-terminal" class="nav-link" data-scroll-target="#shell-console-and-terminal">Shell, Console, and Terminal</a></li>
+  <li><a href="#shell-console-and-terminal-1" id="toc-shell-console-and-terminal-1" class="nav-link" data-scroll-target="#shell-console-and-terminal-1">Shell, Console, and Terminal</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress)</h1>
+<h1 class="title">Linux</h1>
 </div>
 
 
@@ -192,15 +238,128 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="sticky-iframe">
+<iframe width="1200" height="615" src="https://www.youtube.com/embed/_KB_FL-ilxk?si=wNfvJ2mft6S59cSf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<section id="understand-gnu-linux" class="level1">
+<h1>Understand GNU / Linux</h1>
+<p>An alternative solution to AT&amp;T Unix OS — which is not a free OS. GNU is an OS, often used with the Linux kernel. An OS kernel is a program allocating a computer resources (CPU, memory, etc.) to programs.</p>
+<p>There are many variants of GNU/Linux, including:</p>
 <ul>
-<li><p><a href="../../stanford/cs336/assignments/a1/a1.html">Assignment 1: Building a Transformer LM</a></p></li>
-<li><p><a href="../../stanford/cs336/l1.html">Lecture 1: Overview</a> | <a href="../../stanford/cs336/tokenization.html">Tokenization</a></p></li>
-<li><p><a href="../../stanford/cs336/l2.html">Lecture 2: Resources</a></p></li>
-<li><p><a href="../../stanford/cs336/l3.html">Lecture 3: Architectures and Hyperparameters</a></p></li>
-<li><p><a href="l4.qmd">Lecture 4: Mixture of Experts (MOEs)</a></p></li>
+<li><p>Ubuntu</p></li>
+<li><p>Kali Linux</p></li>
+<li><p>MacOS (yes, MacOS)</p></li>
+</ul>
+</section>
+<section id="linux-directory-structure" class="level1">
+<h1>Linux Directory Structure</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> home</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> usr</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── bin</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── sbin</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── local</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├── bin      <span class="co"># executable programs such as ssh, telnet, kill, and less</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├── sbin     <span class="co"># commands to boot the system such as reboot and shutdown</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       └── local</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>           ├── bin  <span class="co"># user's executable programs</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>           └── sbin <span class="co"># system administration commands belong to users</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> proc             <span class="co"># files for monitoring processes such as /proc/cpuinfo</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> etc              <span class="co"># configuration files</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> tmp              <span class="co"># temporary files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For example, if you use <code>ls /usr/bin</code>, you will see a list of executable programs on your computer:</p>
+<p><img src="ls_usr_bin.png" class="img-fluid" style="width:70.0%"></p>
+</section>
+<section id="basic-commands" class="level1">
+<h1>Basic Commands</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cd</code>, <code>pwd</code>, <code>ls</code></td>
+<td>Navigate and list files</td>
+</tr>
+<tr class="even">
+<td><code>cp</code>, <code>mv</code>, <code>rm</code></td>
+<td>Copy, move, and remove files</td>
+</tr>
+<tr class="odd">
+<td><code>cat</code>, <code>head</code>, <code>tail</code></td>
+<td>Display the contents of a file</td>
+</tr>
+<tr class="even">
+<td><code>echo</code></td>
+<td>Display a message</td>
+</tr>
+<tr class="odd">
+<td><code>wget</code>, <code>curl</code></td>
+<td>Download a file from the internet</td>
+</tr>
+<tr class="even">
+<td><code>tar</code></td>
+<td>Archive and compress files</td>
+</tr>
+<tr class="odd">
+<td><code>find .name ".log" -size +1G</code></td>
+<td>Search for files with name containing “.log” and size larger than 1G</td>
+</tr>
+<tr class="even">
+<td><code>grep</code></td>
+<td>Search for patterns in files</td>
+</tr>
+<tr class="odd">
+<td><code>chmod</code>, <code>chown</code></td>
+<td>Change file permissions</td>
+</tr>
+<tr class="even">
+<td><code>history</code>, <code>exit</code>, <code>shutdown</code>, <code>uptime</code></td>
+<td>Others</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fun fact (directory)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A directory is just a file containing the names of other files.</p>
+</div>
+</div>
+</section>
+<section id="shell-console-and-terminal" class="level1">
+<h1>Shell, Console, and Terminal</h1>
+<ul>
+<li>Shell: a program that interprets the commands you type (bash, zsh, etc.).</li>
+<li>Console: a physical device that allows you to interact with the computer. (keyboard, mouse, etc.)</li>
+<li>Terminal: a program that allows you to interact with the computer. (xterm, gnome-terminal, etc.)</li>
+</ul>
+</section>
+<section id="shell-console-and-terminal-1" class="level1">
+<h1>Shell, Console, and Terminal</h1>
+</section>
+<section id="further-reading" class="level1">
+<h1>Further reading</h1>
+<ul>
+<li><a href="https://www.gnu.org/gnu/linux-and-gnu">gnu.org/gnu/linux-and-gnu</a></li>
 </ul>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <style>
