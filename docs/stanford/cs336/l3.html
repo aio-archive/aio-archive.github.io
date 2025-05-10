@@ -177,6 +177,8 @@ window.Quarto = {
   <li><a href="#surprising-consensus-hyperparameter-1" id="toc-surprising-consensus-hyperparameter-1" class="nav-link" data-scroll-target="#surprising-consensus-hyperparameter-1">Surprising (?) consensus hyperparameter 1</a></li>
   <li><a href="#surprising-consensus-hyperparameter-2" id="toc-surprising-consensus-hyperparameter-2" class="nav-link" data-scroll-target="#surprising-consensus-hyperparameter-2">Surprising (?) consensus hyperparameter 2</a></li>
   </ul></li>
+  <li><a href="#vocabulary-size" id="toc-vocabulary-size" class="nav-link" data-scroll-target="#vocabulary-size">Vocabulary size</a></li>
+  <li><a href="#dropout-and-other-regularization" id="toc-dropout-and-other-regularization" class="nav-link" data-scroll-target="#dropout-and-other-regularization">Dropout and other regularization</a></li>
   </ul>
 </nav>
     </div>
@@ -186,13 +188,13 @@ window.Quarto = {
 <style>
     #progress-bar {
       position: fixed;
-      top: var(--navbar-height, 65px);
+      top: var(--navbar-height, 57px);
       left: 50%;
       transform: translateX(-50%);
       height: 2px;
       background: rgba(135, 187, 236, 0.8);
       width: 0%;
-      max-width: 1600px;
+      max-width: 1500px;
       z-index: 9999;
       transition: width 0.1s ease;
       border-radius: 2px;
@@ -532,9 +534,81 @@ d_{ff} = 4\, d_{model}
 </blockquote>
 <p>This doesn’t <em>have to</em> be true: we can have head-dimensions <span class="math inline">\(&gt;\)</span> model-dim / num-heads.</p>
 <p>But most models do follow this guideline.</p>
-
-
 </section>
+</section>
+<section id="vocabulary-size" class="level1">
+<h1>Vocabulary size</h1>
+<p>Monolingual models: 30-50k vocab (GPT, GPT2/3, T5, LLaMA)</p>
+<p>Multilingual models: 100k-250k vocab (mT5, PaLM, GPT4, DeepSeek, …)</p>
+</section>
+<section id="dropout-and-other-regularization" class="level1">
+<h1>Dropout and other regularization</h1>
+<p>Do we need regularization during pre-training ?</p>
+<p>Argument against: - there is a lot of data, more than parameters</p>
+<ul>
+<li>SGD only does a single pass on a corpus (hard to memorize)</li>
+</ul>
+<p>In practice…</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Dropout*</th>
+<th>Weight decay</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Original transformer</td>
+<td>0.1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>GPT2</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="odd">
+<td>T5</td>
+<td>0.1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>GPT3</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="odd">
+<td>T5 v1.1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>PaLM</td>
+<td>0</td>
+<td>(variable)</td>
+</tr>
+<tr class="odd">
+<td>OPT</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>LLaMA</td>
+<td>0</td>
+<td>0.1</td>
+</tr>
+<tr class="odd">
+<td>Qwen 14B</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+<p>Many older models used dropout during pretraining</p>
+<p>Newer models (except Qwen) rely only on weight decay</p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
