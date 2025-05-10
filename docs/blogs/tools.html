@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-05-09">
 
-<title>Engineer – AIO Course</title>
+<title>Tools I use for (AI) research – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -126,8 +162,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#paperlib" id="toc-paperlib" class="nav-link active" data-scroll-target="#paperlib">PaperLib</a></li>
+  <li><a href="#paper-visualizer" id="toc-paper-visualizer" class="nav-link" data-scroll-target="#paper-visualizer">Paper Visualizer</a></li>
+  <li><a href="#ai2paperfinder" id="toc-ai2paperfinder" class="nav-link" data-scroll-target="#ai2paperfinder">Ai2PaperFinder</a></li>
+  <li><a href="#google-scholar-pdf-reader" id="toc-google-scholar-pdf-reader" class="nav-link" data-scroll-target="#google-scholar-pdf-reader">Google Scholar PDF Reader</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineer</h1>
+<h1 class="title">Tools I use for (AI) research</h1>
 </div>
 
 
@@ -179,6 +224,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 9, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -188,11 +239,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is not a typical SEO-optimized blog post that you’d find that suggest using obvious tools like Google Scholar, ResearchGate, EndNote, Zotero, etc. (Though those are great too!) All of these tools listed here tools that I actually use, and are free.</p>
+</div>
+</div>
+<section id="paperlib" class="level1">
+<h1>PaperLib</h1>
+<p>If you have ever written research papers and have to cite sources, one of the biggest problems you might encounter is that you have to manually search for the right citation. Google Scholar is sometimes provide the citation for the pre-print version of the paper, not the published version (with actual conference and journals). For example, if you search for the paper “Lxmert: Learning cross-modality encoder representations from transformers” on Google Scholar, you will get the following BibTeX entry:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">tan2019lxmert</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>={Lxmert: Learning cross-modality encoder representations from transformers},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>={Tan, Hao and Bansal, Mohit},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">journal</span>={arXiv preprint arXiv:1908.07490},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>={2019}</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>whereas what I want is the version of the paper that is published in EMNLP 2019. PaperLib’s <code>fuzzily scrape</code> feature allows me do this. Here’s the citation for the published version:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">@inproceedings</span>{<span class="ot">tan2019lxmert</span>,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Tan, Hao Hao and Bansal, Mohit},</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">booktitle</span> = {EMNLP},</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2019},</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {5099--5110},</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">organization</span> = {},</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {LXMERT: Learning {Cross}-{Modality} {Encoder} {Representations} from {Transformers}},</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {},</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice how it subtlely but every word in the brackers <code>{}</code>. This is to ensure that the citation is properly capitalized when you used the BibTex entry in your LaTeX document.</p>
+<p>The second feature that I love about PaperLib is that it has an extension that allows me to directly import the paper. When I was reading a paper on my browser, I can just right click and import the paper into PaperLib (with the proper tag if you like). There are also other extensions built for PaperLib that you could explore by yourself.</p>
+<p><img src="paperlib-ext.png" class="img-fluid" style="width:70.0%"></p>
+<p>Another feature I find useful is you can abbreviate the publication venue. In machine learning, top-tier conferences like Advances in Neural Information Processing Systems (NeurIPS) and International Conference on Learning Representations (ICLR) are abbreviated as <code>NeurIPS</code> and <code>ICLR</code> respectively. Sometime these can be inconsistent, like “Advances in Neural Information Processing Systems” vs.&nbsp;“Conference on Neural Information Processing Systems”. PaperLib allows you to abbreviate the venue name so that the BibTeX entry is more consistent. Here’s the list that I use:</p>
 <ul>
-<li><a href="https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi">Computer Networking Fundamentals</a></li>
+<li><p>Conference on Computer Vision and Pattern Recognition -&gt; CVPR</p></li>
+<li><p>International Conference on Computer Vision -&gt; ICCV</p></li>
+<li><p>European Conference on Computer Vision -&gt; ECCV</p></li>
+<li><p>Conference on Neural Information Processing Systems -&gt; NeurIPS</p></li>
+<li><p>International Conference on Machine Learning -&gt; ICML</p></li>
+<li><p>International Conference on Learning Representations -&gt; ICLR</p></li>
+<li><p>AAAI Conference on Artificial Intelligence -&gt; AAAI</p></li>
+<li><p>International Joint Conference on Artificial Intelligence -&gt; IJCAI</p></li>
+<li><p>Annual Meeting of the Association for Computational Linguistics -&gt; ACL</p></li>
+<li><p>Conference on Empirical Methods in Natural Language Processing -&gt; EMNLP</p></li>
+<li><p>North American Chapter of the ACL -&gt; NAACL</p></li>
 </ul>
+<p>You can add yours in <code>PaperLib -&gt; Settings -&gt; Export -&gt; Publication Abbreviation</code>.</p>
+<p>The best of all ? PaperLib is <strong>free</strong>!</p>
+</section>
+<section id="paper-visualizer" class="level1">
+<h1>Paper Visualizer</h1>
+<p>If you have ever drown into research paper with too many details (of architecture, training, etc.) and want to get a quick overview, <a href="https://arxiv-viz.ianhsiao.xyz/?login_success=true">Paper Visualizer</a> is the tool for you. It helps create a big picture using diagrams. I started using it for roughly two weeks and still exploring the other available features, but it’s already a game changer for me.</p>
+<p>Here’s a diagram that Paper Visualizer creates for the “Attention is All You Need” paper:</p>
+<p><img src="papervisualizer1.png" class="img-fluid" style="width:70.0%"></p>
+<p>This is really useful because it creates immediate hypothesis, how the authors tested it, and what the results are, etc.</p>
+<p>Zooming in, you get an AI features for each node to further explain the concepts:</p>
+<p><img src="papervisualizer2.png" class="img-fluid" style="width:70.0%"></p>
+<p>And you can also embed it into your website to easily share it with others, like I did below for the <a href="https://arxiv.org/abs/2304.09172">MERU</a> paper:</p>
+<iframe src="https://arxiv-viz.ianhsiao.xyz/shared/1ea8dfed-b9c1-497b-8e40-d2840d4ad134" width="100%" height="500px">
+</iframe>
+<p>The best part ? Paper Visualizer is <strong>free</strong> (for now)!</p>
+</section>
+<section id="ai2paperfinder" class="level1">
+<h1>Ai2PaperFinder</h1>
+<p>Just as the name suggest, this tool, developed by Ai2, is an AI-powered tool that allows you to find the right paper for your research. It’s a great tool for getting a quick overview of the paper, and it’s free! Just enter the keyword and it will give you a list of papers that are related to your query (with different levels of Relevance).</p>
+<p><img src="ai2.png" class="img-fluid" style="width:70.0%"></p>
+</section>
+<section id="google-scholar-pdf-reader" class="level1">
+<h1>Google Scholar PDF Reader</h1>
+<p>Google Scholar PDF Reader is an extension for reading PDF right on your browser. The selling-point of this from other PDF viewer is that it allows me to <em>preview</em> the citation without having to scroll all the way to the bottom of the page and then re-scroll back to where I was.</p>
+<p><img src="scholarpdf.png" class="img-fluid" style="width:70.0%"></p>
+<p>It does come with an AI-generated outline, but I don’t use it much.</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

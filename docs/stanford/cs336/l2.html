@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Engineer – AIO Course</title>
+<title>CS336 Lecture 2 – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -91,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../blogs/index.html"> 
+    <a class="nav-link" href="../../blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../academia/index.html"> 
+    <a class="nav-link" href="../../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../faq.html"> 
+    <a class="nav-link" href="../../faq.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
@@ -126,8 +161,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#memory-accounting" id="toc-memory-accounting" class="nav-link active" data-scroll-target="#memory-accounting">Memory accounting</a></li>
+  <li><a href="#compute-accounting" id="toc-compute-accounting" class="nav-link" data-scroll-target="#compute-accounting">Compute accounting</a>
+  <ul class="collapse">
+  <li><a href="#model-flops-ultilization-mfu" id="toc-model-flops-ultilization-mfu" class="nav-link" data-scroll-target="#model-flops-ultilization-mfu">Model FLOPs ultilization (MFU)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineer</h1>
+<h1 class="title">CS336 Lecture 2</h1>
 </div>
 
 
@@ -188,11 +233,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi">Computer Networking Fundamentals</a></li>
+<li><p>Mechanics</p></li>
+<li><p>Resource accounting</p></li>
+<li><p>Intuitions</p></li>
 </ul>
+</div>
+</div>
+<p>Types of resources:</p>
+<ul>
+<li><p>Memory (GB)</p></li>
+<li><p>Compute (FLOPS)</p></li>
+</ul>
+<hr>
+<em>How long would it take to train a 70B parameter model on 15T tokens on 1024 H100s ?</em>
+
+<p>Total FLOPS</p>
+<p>H100 80GB HBM memory</p>
+<section id="memory-accounting" class="level2">
+<h2 class="anchored" data-anchor-id="memory-accounting">Memory accounting</h2>
+<p>Tensors are the basic building block for storing everything: parameters, gradients, optimizer state, data, activations, …</p>
+<p>How much memory tensors take up ?</p>
+<ul>
+<li><code>float32</code> (fp32, single precision, full precision)
+<ul>
+<li>Default way of storing numbers (standard).</li>
+</ul></li>
+</ul>
+<p>Memory: number of values and data type of each value.</p>
+<p>32 bits = 4 bytes</p>
+<p>One matrix in the feedforward layer of GPT-3: 12288*4, 12288 ~ 2.3GB</p>
+<ul>
+<li><code>float16</code> (fp16, half precision)
+<ul>
+<li>16 bits = 2 bytes</li>
+<li>not great for representing very small numbers (1e-8) or very big numbers.</li>
+</ul></li>
+<li><code>bfloat16</code> (brain floating point, developed by Google Brain).
+<ul>
+<li>allocates more number to the exponent and more to the fraction</li>
+</ul></li>
+</ul>
+<div id="7e270210" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>float32_info <span class="op">=</span> torch.finfo(torch.float32)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>float16_info <span class="op">=</span> torch.finfo(torch.float16)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>bfloat16_info <span class="op">=</span> torch.finfo(torch.bfloat16)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(float32_info)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(float16_info)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bfloat16_info)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>finfo(resolution=1e-06, min=-3.40282e+38, max=3.40282e+38, eps=1.19209e-07, smallest_normal=1.17549e-38, tiny=1.17549e-38, dtype=float32)
+finfo(resolution=0.001, min=-65504, max=65504, eps=0.000976562, smallest_normal=6.10352e-05, tiny=6.10352e-05, dtype=float16)
+finfo(resolution=0.01, min=-3.38953e+38, max=3.38953e+38, eps=0.0078125, smallest_normal=1.17549e-38, tiny=1.17549e-38, dtype=bfloat16)</code></pre>
+</div>
+</div>
+<ul>
+<li><code>fp8</code> (developed by NVIDIA)
+<ul>
+<li>H100s support two variants of FP8</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Implication
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>training with float32 works but requires lots of memory</p></li>
+<li><p>training with fp8, float16 and even bfloat16 is risky (you can get instability)</p></li>
+<li><p>mixed precision training</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="compute-accounting" class="level2">
+<h2 class="anchored" data-anchor-id="compute-accounting">Compute accounting</h2>
+<p>By default, Tensors are stored on CPU. To take advantage of parallelisms of GPUs, we need to move them to GPU memory.</p>
+<p><img src="assets/figs/gpu1.png" class="img-fluid" width="400"></p>
+<ul>
+<li><p>Tensors</p>
+<ul>
+<li><p>Mathematical objects</p></li>
+<li><p>PyTorch tensors are pointed into allocated memory with metadata describing how to get to any element of the tensor.</p></li>
+</ul></li>
+</ul>
+<p>Views are free, copying take both computing and memory resource.</p>
+<p>FLOPs (floating-point operations per second)</p>
+<ul>
+<li>Training GPT-3 took 3.14e23</li>
+<li>Training GPT-4 took 2e25 (speculated)</li>
+</ul>
+<p>A100 peak performance: 312 teraFLOPs H100 peak performance: 1979 teraFLOPs</p>
+<section id="model-flops-ultilization-mfu" class="level3">
+<h3 class="anchored" data-anchor-id="model-flops-ultilization-mfu">Model FLOPs ultilization (MFU)</h3>
+<p>actual FLOPs/promised FLOPs</p>
+<p>MFU &gt;= 0.5 is good.</p>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -599,5 +756,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

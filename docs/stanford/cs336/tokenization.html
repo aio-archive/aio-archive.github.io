@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Engineer – AIO Course</title>
+<title>Tokenization – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7ce468c04faa59f77586de66bb674ad8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -91,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../blogs/index.html"> 
+    <a class="nav-link" href="../../blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../academia/index.html"> 
+    <a class="nav-link" href="../../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../faq.html"> 
+    <a class="nav-link" href="../../faq.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
@@ -126,8 +161,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#byte-based-tokenization" id="toc-byte-based-tokenization" class="nav-link active" data-scroll-target="#byte-based-tokenization">Byte-based tokenization</a></li>
+  <li><a href="#word-based-tokenization" id="toc-word-based-tokenization" class="nav-link" data-scroll-target="#word-based-tokenization">Word-based tokenization</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineer</h1>
+<h1 class="title">Tokenization</h1>
 </div>
 
 
@@ -188,11 +230,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li><a href="https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi">Computer Networking Fundamentals</a></li>
-</ul>
+<iframe src="https://tiktokenizer.vercel.app/" width="100%" height="600px" style="border:none;" title="Tiktokenizer">
+</iframe>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Basic chr() usage</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="cf">assert</span> <span class="bu">chr</span>(<span class="dv">97</span>) <span class="op">==</span> <span class="st">"a"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="cf">assert</span> <span class="bu">chr</span>(<span class="dv">127757</span>) <span class="op">==</span> <span class="st">"🌍"</span>  <span class="co"># 127757 is actually the Earth Globe Europe-Africa emoji</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># Build a simple Character Tokenizer and test round-trip encoding/decoding</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>tokenizer <span class="op">=</span> CharacterTokenizer()</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>string <span class="op">=</span> <span class="st">"Hello, 🌍! 1rt7!"</span>  <span class="co"># @inspect string</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>indices <span class="op">=</span> tokenizer.encode(string)  <span class="co"># @inspect indices</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>reconstructed_string <span class="op">=</span> tokenizer.decode(indices)  <span class="co"># @inspect reconstructed_string</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="cf">assert</span> string <span class="op">==</span> reconstructed_string</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Unicode has approximately 150K characters</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="co"># [Wikipedia: List of Unicode characters]</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co"># Vocabulary size estimation</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>vocabulary_size <span class="op">=</span> <span class="bu">max</span>(indices) <span class="op">+</span> <span class="dv">1</span>  <span class="co"># This is a lower bound</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co"># @inspect vocabulary_size</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="co"># Problems:</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="co"># Problem 1: This is a very large vocabulary.</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co"># Problem 2: Many characters are quite rare (e.g., 🌍), making vocabulary inefficient.</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="co"># Compression ratio</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>compression_ratio <span class="op">=</span> get_compression_ratio(string, indices)  <span class="co"># @inspect compression_ratio</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="byte-based-tokenization" class="level1">
+<h1>Byte-based tokenization</h1>
+<p>Unicode strings can be represented as a sequence of bytes (integers between 0 and 255).</p>
+<p>The most common Unicode encoding is UTF-8.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Some Unicode characters are represented by one byte:</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="cf">assert</span> <span class="bu">bytes</span>(<span class="st">"a"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="op">==</span> <span class="st">b"a"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># Others take multiple bytes:</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="cf">assert</span> <span class="bu">bytes</span>(<span class="st">"🌍"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="op">==</span> <span class="st">b"</span><span class="ch">\xf0\x9f\x8c\x8d</span><span class="st">"</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># Now let's build a Byte-based Tokenizer and test round-trip encoding/decoding</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>tokenizer <span class="op">=</span> ByteTokenizer()</span>
+<span id="cb2-9"><a href="#cb2-9"></a></span>
+<span id="cb2-10"><a href="#cb2-10"></a>string <span class="op">=</span> <span class="st">"Hello, 🌍！你好！"</span>  <span class="co"># @inspect string</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>indices <span class="op">=</span> tokenizer.encode(string)  <span class="co"># @inspect indices</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>reconstructed_string <span class="op">=</span> tokenizer.decode(indices)  <span class="co"># @inspect reconstructed_string</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="cf">assert</span> string <span class="op">==</span> reconstructed_string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="word-based-tokenization" class="level1">
+<h1>Word-based tokenization</h1>
+<p>Byte Pair Encoding (BPE) [Wikipedia] The BPE algorithm was introduced by Philip Gage in 1994 for data compression. [article] It was adapted to NLP for neural machine translation. [Sennrich+ 2015] (Previously, papers had been using word-based tokenization.) BPE was then used by GPT-2. [Radford+ 2019] Basic idea: train the tokenizer on raw text to automatically determine the vocabulary. Intuition: common sequences of characters are represented by a single token, rare sequences are represented by many tokens. The GPT-2 paper used word-based tokenizatich to break up the text into inital segments and run the original BPE algorithm on each segment. Sketcl n byte as a l token, and successively merge the most common pair of adjacent tokens.</p>
+<div class="sourceCode" id="cb3" data-tidy="styler"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">from</span> collections <span class="im">import</span> defaultdict</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="im">from</span> typing <span class="im">import</span> Dict, Tuple</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">class</span> BETokenizerParams:</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, merges: Dict[Tuple[<span class="bu">int</span>, <span class="bu">int</span>], <span class="bu">int</span>], vocab: Dict[<span class="bu">int</span>, <span class="bu">bytes</span>]):</span>
+<span id="cb3-6"><a href="#cb3-6"></a>        <span class="va">self</span>.merges <span class="op">=</span> merges  <span class="co"># pair -&gt; new index</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>        <span class="va">self</span>.vocab <span class="op">=</span> vocab    <span class="co"># index -&gt; bytes</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="kw">def</span> train_bpe(string: <span class="bu">str</span>, num_merges: <span class="bu">int</span>) <span class="op">-&gt;</span> BETokenizerParams:</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="co"># @inspect string, @inspect num_merges</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    </span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="co"># Start with the list of bytes of string</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>    indices <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="bu">int</span>, string.encode(<span class="st">"utf-8"</span>)))  <span class="co"># @inspect indices</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>    </span>
+<span id="cb3-15"><a href="#cb3-15"></a>    merges: Dict[Tuple[<span class="bu">int</span>, <span class="bu">int</span>], <span class="bu">int</span>] <span class="op">=</span> {}  <span class="co"># (index1, index2) -&gt; merged index</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>    vocab: Dict[<span class="bu">int</span>, <span class="bu">bytes</span>] <span class="op">=</span> {x: <span class="bu">bytes</span>([x]) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">256</span>)}  <span class="co"># index -&gt; bytes</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a></span>
+<span id="cb3-18"><a href="#cb3-18"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_merges):</span>
+<span id="cb3-19"><a href="#cb3-19"></a>        <span class="co"># Count the number of occurrences of each pair of tokens</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>        counts <span class="op">=</span> defaultdict(<span class="bu">int</span>)</span>
+<span id="cb3-21"><a href="#cb3-21"></a>        <span class="cf">for</span> index1, index2 <span class="kw">in</span> <span class="bu">zip</span>(indices, indices[<span class="dv">1</span>:]):  <span class="co"># For each adjacent pair</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>            counts[(index1, index2)] <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># @inspect counts</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a></span>
+<span id="cb3-24"><a href="#cb3-24"></a>        <span class="co"># Find the most common pair</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>        <span class="cf">if</span> <span class="kw">not</span> counts:</span>
+<span id="cb3-26"><a href="#cb3-26"></a>            <span class="cf">break</span>  <span class="co"># No more pairs to merge</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a></span>
+<span id="cb3-28"><a href="#cb3-28"></a>        pair <span class="op">=</span> <span class="bu">max</span>(counts, key<span class="op">=</span>counts.get)  <span class="co"># @inspect pair</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>        index1, index2 <span class="op">=</span> pair</span>
+<span id="cb3-30"><a href="#cb3-30"></a></span>
+<span id="cb3-31"><a href="#cb3-31"></a>        <span class="co"># Create a new index for the merged pair</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>        new_index <span class="op">=</span> <span class="bu">max</span>(vocab.keys()) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>        vocab[new_index] <span class="op">=</span> vocab[index1] <span class="op">+</span> vocab[index2]</span>
+<span id="cb3-34"><a href="#cb3-34"></a>        merges[(index1, index2)] <span class="op">=</span> new_index</span>
+<span id="cb3-35"><a href="#cb3-35"></a></span>
+<span id="cb3-36"><a href="#cb3-36"></a>        <span class="co"># Update the sequence (merge occurrences of the pair)</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a>        new_indices <span class="op">=</span> []</span>
+<span id="cb3-38"><a href="#cb3-38"></a>        skip <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb3-39"><a href="#cb3-39"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(indices)):</span>
+<span id="cb3-40"><a href="#cb3-40"></a>            <span class="cf">if</span> skip:</span>
+<span id="cb3-41"><a href="#cb3-41"></a>                skip <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb3-42"><a href="#cb3-42"></a>                <span class="cf">continue</span></span>
+<span id="cb3-43"><a href="#cb3-43"></a>            <span class="cf">if</span> j <span class="op">&lt;</span> <span class="bu">len</span>(indices) <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> (indices[j], indices[j<span class="op">+</span><span class="dv">1</span>]) <span class="op">==</span> pair:</span>
+<span id="cb3-44"><a href="#cb3-44"></a>                new_indices.append(new_index)</span>
+<span id="cb3-45"><a href="#cb3-45"></a>                skip <span class="op">=</span> <span class="va">True</span>  <span class="co"># Skip next index because it's merged</span></span>
+<span id="cb3-46"><a href="#cb3-46"></a>            <span class="cf">else</span>:</span>
+<span id="cb3-47"><a href="#cb3-47"></a>                new_indices.append(indices[j])</span>
+<span id="cb3-48"><a href="#cb3-48"></a>        indices <span class="op">=</span> new_indices  <span class="co"># Update for next iteration</span></span>
+<span id="cb3-49"><a href="#cb3-49"></a></span>
+<span id="cb3-50"><a href="#cb3-50"></a>    <span class="cf">return</span> BETokenizerParams(merges<span class="op">=</span>merges, vocab<span class="op">=</span>vocab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -599,5 +739,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

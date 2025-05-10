@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-26">
 
-<title>Engineer – AIO Course</title>
+<title>CS336 Lecture 1 Overview – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +70,37 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -91,15 +121,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../blogs/index.html"> 
+    <a class="nav-link" href="../../blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../academia/index.html"> 
+    <a class="nav-link" href="../../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../faq.html"> 
+    <a class="nav-link" href="../../faq.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
@@ -126,8 +156,34 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#current-landscape" id="toc-current-landscape" class="nav-link active" data-scroll-target="#current-landscape">Current Landscape</a>
+  <ul class="collapse">
+  <li><a href="#before-2010s" id="toc-before-2010s" class="nav-link" data-scroll-target="#before-2010s">Before 2010s</a></li>
+  <li><a href="#neural-ingredients-2010s" id="toc-neural-ingredients-2010s" class="nav-link" data-scroll-target="#neural-ingredients-2010s">Neural ingredients (2010s)</a></li>
+  <li><a href="#early-foundation-models" id="toc-early-foundation-models" class="nav-link" data-scroll-target="#early-foundation-models">Early foundation models</a></li>
+  <li><a href="#embracing-scaling" id="toc-embracing-scaling" class="nav-link" data-scroll-target="#embracing-scaling">Embracing scaling</a></li>
+  <li><a href="#open-models" id="toc-open-models" class="nav-link" data-scroll-target="#open-models">Open models</a></li>
+  </ul></li>
+  <li><a href="#tokenization" id="toc-tokenization" class="nav-link" data-scroll-target="#tokenization">Tokenization</a></li>
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
+  <li><a href="#systems" id="toc-systems" class="nav-link" data-scroll-target="#systems">Systems</a>
+  <ul class="collapse">
+  <li><a href="#kernels" id="toc-kernels" class="nav-link" data-scroll-target="#kernels">Kernels</a></li>
+  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">Inference</a></li>
+  </ul></li>
+  <li><a href="#scaling-laws" id="toc-scaling-laws" class="nav-link" data-scroll-target="#scaling-laws">Scaling laws</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#data-curation" id="toc-data-curation" class="nav-link" data-scroll-target="#data-curation">Data curation</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a></li>
+  <li><a href="#alignment" id="toc-alignment" class="nav-link" data-scroll-target="#alignment">Alignment</a></li>
+  <li><a href="#efficiency-drives-design-decisions" id="toc-efficiency-drives-design-decisions" class="nav-link" data-scroll-target="#efficiency-drives-design-decisions">Efficiency drives design decisions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineer</h1>
+<h1 class="title">CS336 Lecture 1 Overview</h1>
 </div>
 
 
@@ -179,6 +235,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 26, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -188,11 +250,124 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><a href="https://www.youtube.com/watch?v=SQ3fZ1sAqXI&amp;t=25s">Lecture Recording</a></p>
+<p>Three types of knowledge:</p>
 <ul>
-<li><a href="https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi">Computer Networking Fundamentals</a></li>
+<li><p>mechanics: how things work (what a Transformer is, …)</p></li>
+<li><p>mindset: squeeze out the most out of the hardware</p></li>
+<li><p>intuitions: which data and modeling decisions yields good accuracy.</p></li>
 </ul>
+<p>accuracy = effciency <span class="math inline">\(\times\)</span> resources</p>
+<p>efficiency is way more important at larger scale (can not be wasteful).</p>
+<p>-&gt; What is the best model that we con build given a certain compute and budget ?</p>
+<section id="current-landscape" class="level1">
+<h1>Current Landscape</h1>
+<section id="before-2010s" class="level2">
+<h2 class="anchored" data-anchor-id="before-2010s">Before 2010s</h2>
+<ul>
+<li><p>Language model to measure the entropy of English (Shannon, 1950)</p></li>
+<li><p>n-gram language model (for machine translation, speech recognition)</p></li>
+</ul>
+</section>
+<section id="neural-ingredients-2010s" class="level2">
+<h2 class="anchored" data-anchor-id="neural-ingredients-2010s">Neural ingredients (2010s)</h2>
+<ul>
+<li><p>First language model (Bengio, 2003)</p></li>
+<li><p>Sequence-to-sequence modeling</p></li>
+<li><p>Attention mechanism (Bahdanau, 2014)</p></li>
+<li><p>Transformer architecture</p></li>
+<li><p>Mixture of Experts</p></li>
+<li><p>Model parallelism</p></li>
+</ul>
+</section>
+<section id="early-foundation-models" class="level2">
+<h2 class="anchored" data-anchor-id="early-foundation-models">Early foundation models</h2>
+<ul>
+<li>ELMO, BERT, Google’s T5</li>
+</ul>
+</section>
+<section id="embracing-scaling" class="level2">
+<h2 class="anchored" data-anchor-id="embracing-scaling">Embracing scaling</h2>
+<ul>
+<li>OpenAI’s GPT-2 (1.5B), GPT-3, PaLM, Chinchilla.</li>
+</ul>
+<p><em>these are all closed models.</em></p>
+</section>
+<section id="open-models" class="level2">
+<h2 class="anchored" data-anchor-id="open-models">Open models</h2>
+<p>BLOOM, Llama, Qwen, OLMo</p>
+<ul>
+<li><p>Closed model</p></li>
+<li><p>Open-weight models (DeepSeek)</p></li>
+<li><p>Open-source models (OLMo)</p></li>
+</ul>
+<p><img src="assets/figs/design.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="tokenization" class="level1">
+<h1>Tokenization</h1>
+<p>break up string into popular segments.</p>
+<p>Byte-pair encoding (BPE) tokenizer</p>
+<p>Tokenizer-free approaches: use bytes directly.</p>
+<p>Variants:</p>
+<p><img src="assets/figs/variants.png" class="img-fluid"></p>
+</section>
+<section id="training" class="level1">
+<h1>Training</h1>
+<p>Optimizer (Muon, SOAP)</p>
+<p>Learning rate schedule (cosine, WSD)</p>
+<p>Batch size</p>
+<p>Regularization (dropout, weight decay)</p>
+<p>Hyperparameters</p>
+<p>There might be vast difference between well-tuned model and vanila Transformer.</p>
+</section>
+<section id="systems" class="level1">
+<h1>Systems</h1>
+<section id="kernels" class="level2">
+<h2 class="anchored" data-anchor-id="kernels">Kernels</h2>
+<p><img src="assets/figs/gpu-analogy.png" class="img-fluid"></p>
+<p><img src="assets/figs/parallelism.png" class="img-fluid"></p>
+<p>Data movement between GPUs is even slower, but same ‘minimize data movement’ principle holds Use collective operations (e.g., gather, reduce, all-reduce) Shard (parameters, activations, gradients, optimizer states) across GPUs How to split computation: {data,tensor, pipeline,sequence) parallelism</p>
+</section>
+<section id="inference" class="level2">
+<h2 class="anchored" data-anchor-id="inference">Inference</h2>
+<p>Goals: generate tokens given a prompt. Inference is also needed for reinforment learning, test-time compute, evaluation, …</p>
+<p><img src="assets/figs/inference.png" class="img-fluid"></p>
+<p>Prefill (similar to training): tokens are given, can process all at once (compute-bound) Decode: need to generate one token at a time (memory-bound) Methods to speed up decoding: • Use cheaper model (via model pruning, quantization, distillation) • Speculative decoding: use a cheaper “draft” model to generate multiple tokens, then use the full model to score in parallel (exact decoding!) • Systems optimizations: KV caching, batching</p>
+</section>
+</section>
+<section id="scaling-laws" class="level1">
+<h1>Scaling laws</h1>
+<ul>
+<li>Do experiments at small scale, predict hyperparameters/loss at large scale.</li>
+</ul>
+<p>Compute-optimal scaling laws (Chinchilla paper)</p>
+<p><img src="assets/figs/chinchila.png" class="img-fluid"></p>
+</section>
+<section id="evaluation" class="level1">
+<h1>Evaluation</h1>
+<p>• Perplexity: textbook evaluation for language models • Standardized testing (e.g., MMLU, HellaSwag, GSM8K) • Instruction following (e.g., AlpacaEval, IFEval, WildBench) • Scaling test-time compute: chain-of-thought, ensembling • LM-as-a-judge: evaluate generative tasks • Full system: RAG, agents</p>
+<p>Common Crawl is NOISY.</p>
+</section>
+<section id="data-curation" class="level1">
+<h1>Data curation</h1>
+<p>• Data does not just fall from the sky. look_at_web_data ( ) • Sources: webpages crawled from the Internet, books, arXiv papers, GitHub code, etc. • Appeal to fair use to train on copyright data? [Henderson+ 2023] • Might have to license data (e.g., Google with Reddit data) [article] • Formats: HTML, PDF, directories (not text!)</p>
+</section>
+<section id="data-processing" class="level1">
+<h1>Data processing</h1>
+<p>• Transformation: convert HTML/PDF to text (preserve content, some structure, rewriting) • Filtering: keep high quality data, remove harmful content (via classifiers) Deduplication: save compute, avoid memorization; use Bloom filters or MinHash</p>
+</section>
+<section id="alignment" class="level1">
+<h1>Alignment</h1>
+<p>Make the models actually useful</p>
+<p>DPO, PPO, GRPO, …</p>
+</section>
+<section id="efficiency-drives-design-decisions" class="level1">
+<h1>Efficiency drives design decisions</h1>
+<p>Today, we are compute-constrilined, so design decisions will reflect squeezing the most out of given hardware. Data processing: avoid wasting precious compute updating on bad / irrelevant data • Tokenization: working with raw bytes is elegant, but compute-inefficient with today’s model architectures. • Model architecture: many changes motivated by reducing memory or FLOPS (e.g., sharing KV caches, sliding window attention) • Training: we can get away with a single epoch! • Scaling laws: use less compute on smaller models to do hyperparameter tuning • Alignment: if tune model more to desired use cases, require smaller base models</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -599,5 +774,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

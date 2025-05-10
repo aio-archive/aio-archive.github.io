@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Engineer – AIO Course</title>
+<title>CS336 Lecture 3: Architectures and Hyperparameters – AIO Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-809e81bf6991994cb8fe67a049f3f60b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +69,37 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">AIO Course</span>
     </a>
   </div>
@@ -91,15 +120,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../blogs/index.html"> 
+    <a class="nav-link" href="../../blogs/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../academia/index.html"> 
+    <a class="nav-link" href="../../academia/index.html"> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../faq.html"> 
+    <a class="nav-link" href="../../faq.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
@@ -126,8 +155,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#starting-point-the-original-transformer" id="toc-starting-point-the-original-transformer" class="nav-link active" data-scroll-target="#starting-point-the-original-transformer">Starting point: the “original” Transformer</a>
+  <ul class="collapse">
+  <li><a href="#gated-activations-glu" id="toc-gated-activations-glu" class="nav-link" data-scroll-target="#gated-activations-glu">Gated activations (*GLU)</a></li>
+  <li><a href="#gated-variants-of-standard-ff-layers" id="toc-gated-variants-of-standard-ff-layers" class="nav-link" data-scroll-target="#gated-variants-of-standard-ff-layers">Gated variants of standard FF layers</a>
+  <ul class="collapse">
+  <li><a href="#geglu" id="toc-geglu" class="nav-link" data-scroll-target="#geglu"><strong>GeGLU</strong></a></li>
+  <li><a href="#swiglu" id="toc-swiglu" class="nav-link" data-scroll-target="#swiglu"><strong>SwiGLU</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#serial-vs.-parallel-layers" id="toc-serial-vs.-parallel-layers" class="nav-link" data-scroll-target="#serial-vs.-parallel-layers">Serial vs.&nbsp;parallel layers</a></li>
+  <li><a href="#variations-in-position-embeddings" id="toc-variations-in-position-embeddings" class="nav-link" data-scroll-target="#variations-in-position-embeddings">Variations in position embeddings</a>
+  <ul class="collapse">
+  <li><a href="#hyperparameters" id="toc-hyperparameters" class="nav-link" data-scroll-target="#hyperparameters">Hyperparameters</a></li>
+  <li><a href="#surprising-consensus-hyperparameter-1" id="toc-surprising-consensus-hyperparameter-1" class="nav-link" data-scroll-target="#surprising-consensus-hyperparameter-1">Surprising (?) consensus hyperparameter 1</a></li>
+  <li><a href="#surprising-consensus-hyperparameter-2" id="toc-surprising-consensus-hyperparameter-2" class="nav-link" data-scroll-target="#surprising-consensus-hyperparameter-2">Surprising (?) consensus hyperparameter 2</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineer</h1>
+<h1 class="title">CS336 Lecture 3: Architectures and Hyperparameters</h1>
 </div>
 
 
@@ -188,11 +238,303 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="starting-point-the-original-transformer" class="level1">
+<h1>Starting point: the “original” Transformer</h1>
+<p>Choices in the standard Transformer:</p>
 <ul>
-<li><a href="https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi">Computer Networking Fundamentals</a></li>
+<li><p>Positional encoding vs.&nbsp;absolute/relative positional encoding</p></li>
+<li><p>Multi-head attention vs.&nbsp;single-head attention</p></li>
+<li><p>Feed-forward network (FFN) vs.&nbsp;Gated FFN</p></li>
+<li><p>Embedding size vs.&nbsp;sequence length</p></li>
+<li><p>Learning rate schedule vs.&nbsp;constant learning rate</p></li>
+<li><p>Dropout rate vs.&nbsp;no dropout</p></li>
 </ul>
+<p>Architecture variations: - Pre vs.&nbsp;post-norm: almost all modern LMs use pre-norm (but BERT was post-norm)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Post-LN Transformer</strong></th>
+<th><strong>Pre-LN Transformer</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x_{l,i}^{\text{post},1} = \text{MultiHeadAtt}(x_{l,i}^{\text{post}}, [x_{l,1}^{\text{post}}, \ldots, x_{l,n}^{\text{post}}])\)</span></td>
+<td><span class="math inline">\(x_{l,i}^{\text{pre},1} = \text{LayerNorm}(x_{l,i}^{\text{pre}})\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_{l,i}^{\text{post},2} = x_{l,i}^{\text{post}} + x_{l,i}^{\text{post},1}\)</span></td>
+<td><span class="math inline">\(x_{l,i}^{\text{pre},2} = \text{MultiHeadAtt}(x_{l,i}^{\text{pre},1}, [x_{l,1}^{\text{pre},1}, \ldots, x_{l,n}^{\text{pre},1}])\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(x_{l,i}^{\text{post},3} = \text{LayerNorm}(x_{l,i}^{\text{post},2})\)</span></td>
+<td><span class="math inline">\(x_{l,i}^{\text{pre},3} = x_{l,i}^{\text{pre}} + x_{l,i}^{\text{pre},2}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_{l,i}^{\text{post},4} = \text{ReLU}(x_{l,i}^{\text{post},3} W^{1,l} + b^{1,l}) W^{2,l} + b^{2,l}\)</span></td>
+<td><span class="math inline">\(x_{l,i}^{\text{pre},4} = \text{LayerNorm}(x_{l,i}^{\text{pre},3})\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(x_{l,i}^{\text{post},5} = x_{l,i}^{\text{post},3} + x_{l,i}^{\text{post},4}\)</span></td>
+<td><span class="math inline">\(x_{l,i}^{\text{pre},5} = \text{ReLU}(x_{l,i}^{\text{pre},4} W^{1,l} + b^{1,l}) W^{2,l} + b^{2,l}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_{l+1,i}^{\text{post}} = \text{LayerNorm}(x_{l,i}^{\text{post},5})\)</span></td>
+<td><span class="math inline">\(x_{l+1,i}^{\text{pre}} = x_{l,i}^{\text{pre},5} + x_{l,i}^{\text{pre},3}\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>Final LayerNorm:</strong><span class="math inline">\(x_{\text{Final},i}^{\text{pre}} \leftarrow \text{LayerNorm}(x_{L+1,i}^{\text{pre}})\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Pre-norm is a more stable architecture to train.</p>
+<ul>
+<li><p>New things: “double” norm: Grok, Gemma2</p></li>
+<li><p>LayerNorm vs.&nbsp;RMSNorm:</p></li>
+</ul>
+<p>Original Transformer: LayerNorm - normalizes the mean and variance across <span class="math inline">\(d_\text{model}\)</span>: <span class="math display">\[
+y = \dfrac{x - \mathbb{E}[x]}{\sqrt{\mathbb{E}[(x - \mathbb{E}[x])^2] + \epsilon}}
+\]</span></p>
+<p>Notable models: GPT3/2/1, OPT, GPT-J, BLOOM</p>
+<p>RMSNorm: normalizes the root mean square across <span class="math inline">\(d_\text{model}\)</span>: <span class="math display">\[
+y = \dfrac{x}{\sqrt{\dfrac{1}{d_\text{model}} \sum_{i=1}^{d_\text{model}} x_i^2 + \epsilon}}
+\]</span></p>
+<p>Why RMSNorm?</p>
+<ul>
+<li><p>faster than LayerNorm but just as good (fewer operations, no mean calculation)</p></li>
+<li><p>fewer parameters (no bias)</p></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 17%">
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Params</th>
+<th>Ops</th>
+<th>Step/s</th>
+<th>Early loss</th>
+<th>Final loss</th>
+<th>SGLUE</th>
+<th>XSum</th>
+<th>WebQ</th>
+<th>WMT EnDe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vanilla Transformer</td>
+<td>223M</td>
+<td>11.1T</td>
+<td>3.50</td>
+<td>2.182 ± 0.005</td>
+<td>1.838</td>
+<td>71.66</td>
+<td>17.78</td>
+<td>23.02</td>
+<td>26.62</td>
+</tr>
+<tr class="even">
+<td><strong>RMS Norm</strong></td>
+<td>223M</td>
+<td>11.1T</td>
+<td>3.68</td>
+<td>2.167 ± 0.008</td>
+<td><strong>1.821</strong></td>
+<td><strong>75.45</strong></td>
+<td><strong>17.94</strong></td>
+<td><strong>24.07</strong></td>
+<td><strong>27.14</strong></td>
+</tr>
+<tr class="odd">
+<td>Rezero</td>
+<td>223M</td>
+<td>11.1T</td>
+<td>3.51</td>
+<td>2.262 ± 0.003</td>
+<td>1.939</td>
+<td>61.69</td>
+<td>15.64</td>
+<td>20.90</td>
+<td>26.37</td>
+</tr>
+<tr class="even">
+<td>Rezero + LayerNorm</td>
+<td>223M</td>
+<td>11.1T</td>
+<td>3.26</td>
+<td>2.223 ± 0.006</td>
+<td>1.858</td>
+<td>70.42</td>
+<td>17.58</td>
+<td>23.02</td>
+<td>26.29</td>
+</tr>
+<tr class="odd">
+<td>Rezero + RMS Norm</td>
+<td>223M</td>
+<td>11.1T</td>
+<td>3.34</td>
+<td>2.221 ± 0.009</td>
+<td>1.875</td>
+<td>70.33</td>
+<td>17.32</td>
+<td>23.02</td>
+<td>26.19</td>
+</tr>
+<tr class="even">
+<td>Fixup</td>
+<td>223M</td>
+<td>11.1T</td>
+<td>2.95</td>
+<td>2.382 ± 0.012</td>
+<td>2.067</td>
+<td>58.56</td>
+<td>14.42</td>
+<td>23.02</td>
+<td>26.31</td>
+</tr>
+</tbody>
+</table>
+<p>More generally: dropping the bias term</p>
+<p>Original Transformer: <span class="math display">\[
+FFN(x) = max(0, xW_1 + b_1)W_2 + b_2
+\]</span></p>
+<p>Most implementations:</p>
+<p><span class="math display">\[
+FFN(x) = \sigma(xW_1 + b_1)W_2
+\]</span></p>
+<p>Reasons: memory (similar to RMSNorm), better optimization stability.</p>
+<p>Basically everyone does pre-norm:</p>
+<ul>
+<li><p>Observations - nicer gradient propagation, fewer spike</p></li>
+<li><p>Intuition - keep the good parts of residual connections</p></li>
+<li><p>Some people add a second norm outside the residual stream (NOT post-norm)</p></li>
+</ul>
+<p>Most people do RMSnorm:</p>
+<ul>
+<li><p>In practice, works as well as LayerNorm</p></li>
+<li><p>But, has fewer parameters to move around, which saves on wallclock time</p></li>
+<li><p>People more generally drop bias terms since the compute/param tradeoffs are not great.</p></li>
+</ul>
+<p>“Zoo” of activations: ReLU, GELU, <strong>SwiGLU</strong>, GeGLU, ReGLU, SeLU, LiGLU, Swish, …</p>
+<ul>
+<li><p>ReLU: Original Transformer, T5, Gopher, Chinchilla, OPT</p></li>
+<li><p>GeLU: GPT1/2/3, GPT-J, BLOOM</p></li>
+<li><p>SwiGLU: Llama, PaLM, T5, most models post-2023</p></li>
+</ul>
+<section id="gated-activations-glu" class="level2">
+<h2 class="anchored" data-anchor-id="gated-activations-glu">Gated activations (*GLU)</h2>
+<p>GLUs modify the ‘first part’ of a FF layer</p>
+<p><span class="math display">\[
+FF(x) = \max(0, xW_1) W_2
+\]</span></p>
+<p>Instead of a linear + ReLU, augment the above with an (entrywise) linear term</p>
+<p><span class="math display">\[
+\max(0, xW_1) \rightarrow \max(0, xW_1) \otimes (xV)
+\]</span></p>
+<p>This gives the gated variant (ReGLU) – note that we have an extra parameter (V)</p>
+<p><span class="math display">\[
+FF_{\mathrm{ReGLU}}(x) = (\max(0, xW_1) \otimes xV) W_2
+\]</span></p>
+</section>
+<section id="gated-variants-of-standard-ff-layers" class="level2">
+<h2 class="anchored" data-anchor-id="gated-variants-of-standard-ff-layers">Gated variants of standard FF layers</h2>
+<section id="geglu" class="level3">
+<h3 class="anchored" data-anchor-id="geglu"><strong>GeGLU</strong></h3>
+<p><span class="math display">\[
+\mathrm{FFN}_{\mathrm{GeGLU}}(x, W, V, W_2) = (\mathrm{GELU}(xW) \otimes xV) W_2
+\]</span></p>
+<p><strong>Notable models:</strong><br>
+T5 v1.1, mT5, LaMDA, Phi3, Gemma 2, Gemma 3</p>
+<hr>
+</section>
+<section id="swiglu" class="level3">
+<h3 class="anchored" data-anchor-id="swiglu"><strong>SwiGLU</strong></h3>
+<p>(swish is <span class="math inline">\(x * \mathrm{sigmoid}(x)\)</span>)</p>
+<p><span class="math display">\[
+\mathrm{FFN}_{\mathrm{SwiGLU}}(x, W, V, W_2) = (\mathrm{Swish}_1(xW) \otimes xV) W_2
+\]</span></p>
+<p><strong>Notable models:</strong><br>
+LLaMa 1/2/3, PaLM, Mistral, OLMo, <em>most models post 2023</em></p>
+<hr>
+<p><em>Note: Gated models use smaller dimensions for the <span class="math inline">\(d_{ff}\)</span> by <span class="math inline">\(2/3\)</span></em></p>
+</section>
+</section>
+</section>
+<section id="serial-vs.-parallel-layers" class="level1">
+<h1>Serial vs.&nbsp;parallel layers</h1>
+<p>Normal Transformer blocks are serial: they compute attention, then FFN. Could we parallelize the transformer block ?</p>
+</section>
+<section id="variations-in-position-embeddings" class="level1">
+<h1>Variations in position embeddings</h1>
+<ul>
+<li><p>Sine embedding</p></li>
+<li><p>Absolute embedding</p></li>
+<li><p>Relative embedding</p></li>
+<li><p>Rope embedding (most models converge to this)</p></li>
+</ul>
+<section id="hyperparameters" class="level2">
+<h2 class="anchored" data-anchor-id="hyperparameters">Hyperparameters</h2>
+<p>Transformer hyperparameter questions you might have had in 224n..</p>
+<ul>
+<li>How much bigger should the feedforward size be compared to hidden size?</li>
+<li>How many heads, and should num_heads always divide hidden size?</li>
+<li>What should my vocab size be?</li>
+</ul>
+<p>And other model setting questions</p>
+<ul>
+<li>Do people even regularize these huge LMs?</li>
+<li>How do people scale these models – very deep or very wide?</li>
+</ul>
+</section>
+<section id="surprising-consensus-hyperparameter-1" class="level2">
+<h2 class="anchored" data-anchor-id="surprising-consensus-hyperparameter-1">Surprising (?) consensus hyperparameter 1</h2>
+<p>Feedforward – model dimension ratio.</p>
+<p><span class="math display">\[
+\mathrm{FFN}(x) = \max(0, xW_1 + b_1) W_2 + b_2
+\]</span></p>
+<p>There are two dimensions that are relevant – the feedforward dim (<span class="math inline">\(d_{ff}\)</span>) and model dim (<span class="math inline">\(d_{model}\)</span>). What should their relationship be?</p>
+<p><span class="math display">\[
+d_{ff} = 4\, d_{model}
+\]</span></p>
+<p>This is <em>almost always</em> true. There’s just a few exceptions.</p>
+</section>
+<section id="surprising-consensus-hyperparameter-2" class="level2">
+<h2 class="anchored" data-anchor-id="surprising-consensus-hyperparameter-2">Surprising (?) consensus hyperparameter 2</h2>
+<p>Head-dim <span class="math inline">\(\times\)</span> num-heads to model-dim ratio. As a reminder, slide from 224n.</p>
+<blockquote class="blockquote">
+<h3 id="multi-head-self-attention-is-computationally-efficient" class="anchored"><strong>Multi-head self-attention is computationally efficient</strong></h3>
+<ul>
+<li>Even though we compute <span class="math inline">\(h\)</span> many attention heads, it’s not <em>really</em> more costly.
+<ul>
+<li>We compute <span class="math inline">\(XQ \in \mathbb{R}^{n \times d}\)</span>, and then reshape to <span class="math inline">\(\mathbb{R}^{n \times h \times d/h}\)</span>. (Likewise for <span class="math inline">\(XK\)</span>, <span class="math inline">\(XV\)</span>.)</li>
+<li>Then we transpose to <span class="math inline">\(\mathbb{R}^{h \times n \times d/h}\)</span>; now the head axis is like a batch axis.</li>
+<li>Almost everything else is identical, and <strong>the matrices are the same sizes.</strong></li>
+</ul></li>
+</ul>
+</blockquote>
+<p>This doesn’t <em>have to</em> be true: we can have head-dimensions <span class="math inline">\(&gt;\)</span> model-dim / num-heads.</p>
+<p>But most models do follow this guideline.</p>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -599,5 +941,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

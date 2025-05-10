@@ -74,11 +74,158 @@
     ]
   },
   {
+    "objectID": "stanford/cs336/moe.html",
+    "href": "stanford/cs336/moe.html",
+    "title": "Mixture of Experts",
+    "section": "",
+    "text": "What’s MOE ?\n\n\nParallelizable to many devices (expert parallelism)\nBut MOEs infrastructure is complex; advantages on multi node.\nTraining objectives are somewhat heuristic (and unstable).\n\n\n\nMOE Variations\n\nRouting function\n\nRouting algorithms: token chooses expert, expert chooses token, global routing via optimization.\nAlmost all MOEs boils down to choose “\\(\\text{top}-K\\)”.\n\nExpert sizes\nTraining objectives\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html",
+    "href": "stanford/cs336/l1.html",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "",
+    "text": "Lecture Recording\nThree types of knowledge:\naccuracy = effciency \\(\\times\\) resources\nefficiency is way more important at larger scale (can not be wasteful).\n-&gt; What is the best model that we con build given a certain compute and budget ?"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#before-2010s",
+    "href": "stanford/cs336/l1.html#before-2010s",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Before 2010s",
+    "text": "Before 2010s\n\nLanguage model to measure the entropy of English (Shannon, 1950)\nn-gram language model (for machine translation, speech recognition)"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#neural-ingredients-2010s",
+    "href": "stanford/cs336/l1.html#neural-ingredients-2010s",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Neural ingredients (2010s)",
+    "text": "Neural ingredients (2010s)\n\nFirst language model (Bengio, 2003)\nSequence-to-sequence modeling\nAttention mechanism (Bahdanau, 2014)\nTransformer architecture\nMixture of Experts\nModel parallelism"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#early-foundation-models",
+    "href": "stanford/cs336/l1.html#early-foundation-models",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Early foundation models",
+    "text": "Early foundation models\n\nELMO, BERT, Google’s T5"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#embracing-scaling",
+    "href": "stanford/cs336/l1.html#embracing-scaling",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Embracing scaling",
+    "text": "Embracing scaling\n\nOpenAI’s GPT-2 (1.5B), GPT-3, PaLM, Chinchilla.\n\nthese are all closed models."
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#open-models",
+    "href": "stanford/cs336/l1.html#open-models",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Open models",
+    "text": "Open models\nBLOOM, Llama, Qwen, OLMo\n\nClosed model\nOpen-weight models (DeepSeek)\nOpen-source models (OLMo)"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#kernels",
+    "href": "stanford/cs336/l1.html#kernels",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Kernels",
+    "text": "Kernels\n\n\nData movement between GPUs is even slower, but same ‘minimize data movement’ principle holds Use collective operations (e.g., gather, reduce, all-reduce) Shard (parameters, activations, gradients, optimizer states) across GPUs How to split computation: {data,tensor, pipeline,sequence) parallelism"
+  },
+  {
+    "objectID": "stanford/cs336/l1.html#inference",
+    "href": "stanford/cs336/l1.html#inference",
+    "title": "CS336 Lecture 1 Overview",
+    "section": "Inference",
+    "text": "Inference\nGoals: generate tokens given a prompt. Inference is also needed for reinforment learning, test-time compute, evaluation, …\n\nPrefill (similar to training): tokens are given, can process all at once (compute-bound) Decode: need to generate one token at a time (memory-bound) Methods to speed up decoding: • Use cheaper model (via model pruning, quantization, distillation) • Speculative decoding: use a cheaper “draft” model to generate multiple tokens, then use the full model to score in parallel (exact decoding!) • Systems optimizations: KV caching, batching"
+  },
+  {
+    "objectID": "stanford/cs336/l3.html#gated-activations-glu",
+    "href": "stanford/cs336/l3.html#gated-activations-glu",
+    "title": "CS336 Lecture 3: Architectures and Hyperparameters",
+    "section": "Gated activations (*GLU)",
+    "text": "Gated activations (*GLU)\nGLUs modify the ‘first part’ of a FF layer\n\\[\nFF(x) = \\max(0, xW_1) W_2\n\\]\nInstead of a linear + ReLU, augment the above with an (entrywise) linear term\n\\[\n\\max(0, xW_1) \\rightarrow \\max(0, xW_1) \\otimes (xV)\n\\]\nThis gives the gated variant (ReGLU) – note that we have an extra parameter (V)\n\\[\nFF_{\\mathrm{ReGLU}}(x) = (\\max(0, xW_1) \\otimes xV) W_2\n\\]"
+  },
+  {
+    "objectID": "stanford/cs336/l3.html#gated-variants-of-standard-ff-layers",
+    "href": "stanford/cs336/l3.html#gated-variants-of-standard-ff-layers",
+    "title": "CS336 Lecture 3: Architectures and Hyperparameters",
+    "section": "Gated variants of standard FF layers",
+    "text": "Gated variants of standard FF layers\n\nGeGLU\n\\[\n\\mathrm{FFN}_{\\mathrm{GeGLU}}(x, W, V, W_2) = (\\mathrm{GELU}(xW) \\otimes xV) W_2\n\\]\nNotable models:\nT5 v1.1, mT5, LaMDA, Phi3, Gemma 2, Gemma 3\n\n\n\nSwiGLU\n(swish is \\(x * \\mathrm{sigmoid}(x)\\))\n\\[\n\\mathrm{FFN}_{\\mathrm{SwiGLU}}(x, W, V, W_2) = (\\mathrm{Swish}_1(xW) \\otimes xV) W_2\n\\]\nNotable models:\nLLaMa 1/2/3, PaLM, Mistral, OLMo, most models post 2023\n\nNote: Gated models use smaller dimensions for the \\(d_{ff}\\) by \\(2/3\\)"
+  },
+  {
+    "objectID": "stanford/cs336/l3.html#hyperparameters",
+    "href": "stanford/cs336/l3.html#hyperparameters",
+    "title": "CS336 Lecture 3: Architectures and Hyperparameters",
+    "section": "Hyperparameters",
+    "text": "Hyperparameters\nTransformer hyperparameter questions you might have had in 224n..\n\nHow much bigger should the feedforward size be compared to hidden size?\nHow many heads, and should num_heads always divide hidden size?\nWhat should my vocab size be?\n\nAnd other model setting questions\n\nDo people even regularize these huge LMs?\nHow do people scale these models – very deep or very wide?"
+  },
+  {
+    "objectID": "stanford/cs336/l3.html#surprising-consensus-hyperparameter-1",
+    "href": "stanford/cs336/l3.html#surprising-consensus-hyperparameter-1",
+    "title": "CS336 Lecture 3: Architectures and Hyperparameters",
+    "section": "Surprising (?) consensus hyperparameter 1",
+    "text": "Surprising (?) consensus hyperparameter 1\nFeedforward – model dimension ratio.\n\\[\n\\mathrm{FFN}(x) = \\max(0, xW_1 + b_1) W_2 + b_2\n\\]\nThere are two dimensions that are relevant – the feedforward dim (\\(d_{ff}\\)) and model dim (\\(d_{model}\\)). What should their relationship be?\n\\[\nd_{ff} = 4\\, d_{model}\n\\]\nThis is almost always true. There’s just a few exceptions."
+  },
+  {
+    "objectID": "stanford/cs336/l3.html#surprising-consensus-hyperparameter-2",
+    "href": "stanford/cs336/l3.html#surprising-consensus-hyperparameter-2",
+    "title": "CS336 Lecture 3: Architectures and Hyperparameters",
+    "section": "Surprising (?) consensus hyperparameter 2",
+    "text": "Surprising (?) consensus hyperparameter 2\nHead-dim \\(\\times\\) num-heads to model-dim ratio. As a reminder, slide from 224n.\n\nMulti-head self-attention is computationally efficient\n\nEven though we compute \\(h\\) many attention heads, it’s not really more costly.\n\nWe compute \\(XQ \\in \\mathbb{R}^{n \\times d}\\), and then reshape to \\(\\mathbb{R}^{n \\times h \\times d/h}\\). (Likewise for \\(XK\\), \\(XV\\).)\nThen we transpose to \\(\\mathbb{R}^{h \\times n \\times d/h}\\); now the head axis is like a batch axis.\nAlmost everything else is identical, and the matrices are the same sizes.\n\n\n\nThis doesn’t have to be true: we can have head-dimensions \\(&gt;\\) model-dim / num-heads.\nBut most models do follow this guideline."
+  },
+  {
+    "objectID": "stanford/cs336/assignments/a1/a1.html",
+    "href": "stanford/cs336/assignments/a1/a1.html",
+    "title": "CS336 Assignment 1 - Building a Transformer LM",
+    "section": "",
+    "text": "PDF\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blogs/tools.html",
+    "href": "blogs/tools.html",
+    "title": "Tools I use for (AI) research",
+    "section": "",
+    "text": "Warning\n\n\n\nThis is not a typical SEO-optimized blog post that you’d find that suggest using obvious tools like Google Scholar, ResearchGate, EndNote, Zotero, etc. (Though those are great too!) All of these tools listed here tools that I actually use, and are free.\n\n\n\nPaperLib\nIf you have ever written research papers and have to cite sources, one of the biggest problems you might encounter is that you have to manually search for the right citation. Google Scholar is sometimes provide the citation for the pre-print version of the paper, not the published version (with actual conference and journals). For example, if you search for the paper “Lxmert: Learning cross-modality encoder representations from transformers” on Google Scholar, you will get the following BibTeX entry:\n@article{tan2019lxmert,\n  title={Lxmert: Learning cross-modality encoder representations from transformers},\n  author={Tan, Hao and Bansal, Mohit},\n  journal={arXiv preprint arXiv:1908.07490},\n  year={2019}\n}\nwhereas what I want is the version of the paper that is published in EMNLP 2019. PaperLib’s fuzzily scrape feature allows me do this. Here’s the citation for the published version:\n@inproceedings{tan2019lxmert,\n    author = {Tan, Hao Hao and Bansal, Mohit},\n    booktitle = {EMNLP},\n    year = {2019},\n    pages = {5099--5110},\n    organization = {},\n    title = {LXMERT: Learning {Cross}-{Modality} {Encoder} {Representations} from {Transformers}},\n    volume = {},\n}\nNotice how it subtlely but every word in the brackers {}. This is to ensure that the citation is properly capitalized when you used the BibTex entry in your LaTeX document.\nThe second feature that I love about PaperLib is that it has an extension that allows me to directly import the paper. When I was reading a paper on my browser, I can just right click and import the paper into PaperLib (with the proper tag if you like). There are also other extensions built for PaperLib that you could explore by yourself.\n\nAnother feature I find useful is you can abbreviate the publication venue. In machine learning, top-tier conferences like Advances in Neural Information Processing Systems (NeurIPS) and International Conference on Learning Representations (ICLR) are abbreviated as NeurIPS and ICLR respectively. Sometime these can be inconsistent, like “Advances in Neural Information Processing Systems” vs. “Conference on Neural Information Processing Systems”. PaperLib allows you to abbreviate the venue name so that the BibTeX entry is more consistent. Here’s the list that I use:\n\nConference on Computer Vision and Pattern Recognition -&gt; CVPR\nInternational Conference on Computer Vision -&gt; ICCV\nEuropean Conference on Computer Vision -&gt; ECCV\nConference on Neural Information Processing Systems -&gt; NeurIPS\nInternational Conference on Machine Learning -&gt; ICML\nInternational Conference on Learning Representations -&gt; ICLR\nAAAI Conference on Artificial Intelligence -&gt; AAAI\nInternational Joint Conference on Artificial Intelligence -&gt; IJCAI\nAnnual Meeting of the Association for Computational Linguistics -&gt; ACL\nConference on Empirical Methods in Natural Language Processing -&gt; EMNLP\nNorth American Chapter of the ACL -&gt; NAACL\n\nYou can add yours in PaperLib -&gt; Settings -&gt; Export -&gt; Publication Abbreviation.\nThe best of all ? PaperLib is free!\n\n\nPaper Visualizer\nIf you have ever drown into research paper with too many details (of architecture, training, etc.) and want to get a quick overview, Paper Visualizer is the tool for you. It helps create a big picture using diagrams. I started using it for roughly two weeks and still exploring the other available features, but it’s already a game changer for me.\nHere’s a diagram that Paper Visualizer creates for the “Attention is All You Need” paper:\n\nThis is really useful because it creates immediate hypothesis, how the authors tested it, and what the results are, etc.\nZooming in, you get an AI features for each node to further explain the concepts:\n\nAnd you can also embed it into your website to easily share it with others, like I did below for the MERU paper:\n\n\nThe best part ? Paper Visualizer is free (for now)!\n\n\nAi2PaperFinder\nJust as the name suggest, this tool, developed by Ai2, is an AI-powered tool that allows you to find the right paper for your research. It’s a great tool for getting a quick overview of the paper, and it’s free! Just enter the keyword and it will give you a list of papers that are related to your query (with different levels of Relevance).\n\n\n\nGoogle Scholar PDF Reader\nGoogle Scholar PDF Reader is an extension for reading PDF right on your browser. The selling-point of this from other PDF viewer is that it allows me to preview the citation without having to scroll all the way to the bottom of the page and then re-scroll back to where I was.\n\nIt does come with an AI-generated outline, but I don’t use it much.\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "blogs/index.html",
     "href": "blogs/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Coming soon!\n\n\n\n Back to top"
+    "text": "Tools I use for (AI) research\n\n\n\n\n\n\n\n\n\nMay 9, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "stanford/cs336/tokenization.html",
+    "href": "stanford/cs336/tokenization.html",
+    "title": "Tokenization",
+    "section": "",
+    "text": "# Basic chr() usage\nassert chr(97) == \"a\"\nassert chr(127757) == \"🌍\"  # 127757 is actually the Earth Globe Europe-Africa emoji\n\n# Build a simple Character Tokenizer and test round-trip encoding/decoding\ntokenizer = CharacterTokenizer()\n\nstring = \"Hello, 🌍! 1rt7!\"  # @inspect string\nindices = tokenizer.encode(string)  # @inspect indices\nreconstructed_string = tokenizer.decode(indices)  # @inspect reconstructed_string\n\nassert string == reconstructed_string\n\n# Unicode has approximately 150K characters\n# [Wikipedia: List of Unicode characters]\n\n# Vocabulary size estimation\nvocabulary_size = max(indices) + 1  # This is a lower bound\n# @inspect vocabulary_size\n\n# Problems:\n# Problem 1: This is a very large vocabulary.\n# Problem 2: Many characters are quite rare (e.g., 🌍), making vocabulary inefficient.\n\n# Compression ratio\ncompression_ratio = get_compression_ratio(string, indices)  # @inspect compression_ratio\n\nByte-based tokenization\nUnicode strings can be represented as a sequence of bytes (integers between 0 and 255).\nThe most common Unicode encoding is UTF-8.\n# Some Unicode characters are represented by one byte:\nassert bytes(\"a\", encoding=\"utf-8\") == b\"a\"\n\n# Others take multiple bytes:\nassert bytes(\"🌍\", encoding=\"utf-8\") == b\"\\xf0\\x9f\\x8c\\x8d\"\n\n# Now let's build a Byte-based Tokenizer and test round-trip encoding/decoding\ntokenizer = ByteTokenizer()\n\nstring = \"Hello, 🌍！你好！\"  # @inspect string\nindices = tokenizer.encode(string)  # @inspect indices\nreconstructed_string = tokenizer.decode(indices)  # @inspect reconstructed_string\n\nassert string == reconstructed_string\n\n\nWord-based tokenization\nByte Pair Encoding (BPE) [Wikipedia] The BPE algorithm was introduced by Philip Gage in 1994 for data compression. [article] It was adapted to NLP for neural machine translation. [Sennrich+ 2015] (Previously, papers had been using word-based tokenization.) BPE was then used by GPT-2. [Radford+ 2019] Basic idea: train the tokenizer on raw text to automatically determine the vocabulary. Intuition: common sequences of characters are represented by a single token, rare sequences are represented by many tokens. The GPT-2 paper used word-based tokenizatich to break up the text into inital segments and run the original BPE algorithm on each segment. Sketcl n byte as a l token, and successively merge the most common pair of adjacent tokens.\nfrom collections import defaultdict\nfrom typing import Dict, Tuple\n\nclass BETokenizerParams:\n    def __init__(self, merges: Dict[Tuple[int, int], int], vocab: Dict[int, bytes]):\n        self.merges = merges  # pair -&gt; new index\n        self.vocab = vocab    # index -&gt; bytes\n\ndef train_bpe(string: str, num_merges: int) -&gt; BETokenizerParams:\n    # @inspect string, @inspect num_merges\n    \n    # Start with the list of bytes of string\n    indices = list(map(int, string.encode(\"utf-8\")))  # @inspect indices\n    \n    merges: Dict[Tuple[int, int], int] = {}  # (index1, index2) -&gt; merged index\n    vocab: Dict[int, bytes] = {x: bytes([x]) for x in range(256)}  # index -&gt; bytes\n\n    for i in range(num_merges):\n        # Count the number of occurrences of each pair of tokens\n        counts = defaultdict(int)\n        for index1, index2 in zip(indices, indices[1:]):  # For each adjacent pair\n            counts[(index1, index2)] += 1  # @inspect counts\n\n        # Find the most common pair\n        if not counts:\n            break  # No more pairs to merge\n\n        pair = max(counts, key=counts.get)  # @inspect pair\n        index1, index2 = pair\n\n        # Create a new index for the merged pair\n        new_index = max(vocab.keys()) + 1\n        vocab[new_index] = vocab[index1] + vocab[index2]\n        merges[(index1, index2)] = new_index\n\n        # Update the sequence (merge occurrences of the pair)\n        new_indices = []\n        skip = False\n        for j in range(len(indices)):\n            if skip:\n                skip = False\n                continue\n            if j &lt; len(indices) - 1 and (indices[j], indices[j+1]) == pair:\n                new_indices.append(new_index)\n                skip = True  # Skip next index because it's merged\n            else:\n                new_indices.append(indices[j])\n        indices = new_indices  # Update for next iteration\n\n    return BETokenizerParams(merges=merges, vocab=vocab)\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "stanford/cs336/l2.html",
+    "href": "stanford/cs336/l2.html",
+    "title": "CS336 Lecture 2",
+    "section": "",
+    "text": "Types of resources:\nTotal FLOPS\nH100 80GB HBM memory"
+  },
+  {
+    "objectID": "stanford/cs336/l2.html#memory-accounting",
+    "href": "stanford/cs336/l2.html#memory-accounting",
+    "title": "CS336 Lecture 2",
+    "section": "Memory accounting",
+    "text": "Memory accounting\nTensors are the basic building block for storing everything: parameters, gradients, optimizer state, data, activations, …\nHow much memory tensors take up ?\n\nfloat32 (fp32, single precision, full precision)\n\nDefault way of storing numbers (standard).\n\n\nMemory: number of values and data type of each value.\n32 bits = 4 bytes\nOne matrix in the feedforward layer of GPT-3: 12288*4, 12288 ~ 2.3GB\n\nfloat16 (fp16, half precision)\n\n16 bits = 2 bytes\nnot great for representing very small numbers (1e-8) or very big numbers.\n\nbfloat16 (brain floating point, developed by Google Brain).\n\nallocates more number to the exponent and more to the fraction\n\n\n\nimport torch\n\nfloat32_info = torch.finfo(torch.float32)\nfloat16_info = torch.finfo(torch.float16)\nbfloat16_info = torch.finfo(torch.bfloat16)\n\nprint(float32_info)\nprint(float16_info)\nprint(bfloat16_info)\n\nfinfo(resolution=1e-06, min=-3.40282e+38, max=3.40282e+38, eps=1.19209e-07, smallest_normal=1.17549e-38, tiny=1.17549e-38, dtype=float32)\nfinfo(resolution=0.001, min=-65504, max=65504, eps=0.000976562, smallest_normal=6.10352e-05, tiny=6.10352e-05, dtype=float16)\nfinfo(resolution=0.01, min=-3.38953e+38, max=3.38953e+38, eps=0.0078125, smallest_normal=1.17549e-38, tiny=1.17549e-38, dtype=bfloat16)\n\n\n\nfp8 (developed by NVIDIA)\n\nH100s support two variants of FP8\n\n\n\n\n\n\n\n\nImplication\n\n\n\n\ntraining with float32 works but requires lots of memory\ntraining with fp8, float16 and even bfloat16 is risky (you can get instability)\nmixed precision training"
+  },
+  {
+    "objectID": "stanford/cs336/l2.html#compute-accounting",
+    "href": "stanford/cs336/l2.html#compute-accounting",
+    "title": "CS336 Lecture 2",
+    "section": "Compute accounting",
+    "text": "Compute accounting\nBy default, Tensors are stored on CPU. To take advantage of parallelisms of GPUs, we need to move them to GPU memory.\n\n\nTensors\n\nMathematical objects\nPyTorch tensors are pointed into allocated memory with metadata describing how to get to any element of the tensor.\n\n\nViews are free, copying take both computing and memory resource.\nFLOPs (floating-point operations per second)\n\nTraining GPT-3 took 3.14e23\nTraining GPT-4 took 2e25 (speculated)\n\nA100 peak performance: 312 teraFLOPs H100 peak performance: 1979 teraFLOPs\n\nModel FLOPs ultilization (MFU)\nactual FLOPs/promised FLOPs\nMFU &gt;= 0.5 is good."
+  },
+  {
+    "objectID": "stanford/cs336/cs336.html",
+    "href": "stanford/cs336/cs336.html",
+    "title": "Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress)",
+    "section": "",
+    "text": "Assignment 1: Building a Transformer LM\nLecture 1: Overview | Tokenization\nLecture 2: Resources\nLecture 3: Architectures and Hyperparameters\nLecture 4: Mixture of Experts (MOEs)\n\n\n\n\n Back to top"
   },
   {
     "objectID": "seminars.html",
