@@ -18,60 +18,42 @@
     "href": "index.html",
     "title": "AIO2023 Lectures",
     "section": "",
-    "text": "Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It’s best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (eg. linear algebrea concepts, calculus, probability, and basic Python coding skills) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.\nEssentially, there are fours main parts during the course: (1) The main lectures on Wednesday and Friday weekly; (2) the extra classes / TA lessons / Project tutorials on Saturday weekly; (3) the pre-lecture lecture on Tuesday weekly; and (4) the seminars on Sunday occcasionally.\nThe overall course schedule can be wrap up in the following table.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It’s best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (eg. linear algebrea concepts, calculus, probability, and basic Python coding skills) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.\nEssentially, there are fours main parts during the course: (1) The main lectures on Wednesday and Friday weekly; (2) the extra classes / TA lessons / Project tutorials on Saturday weekly; (3) the pre-lecture lecture on Tuesday weekly; and (4) the seminars on Sunday occcasionally.\nThe overall course schedule can be wrap up in the following table."
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "AIO2023 Lectures",
     "section": "1.1 Introduction",
-    "text": "1.1 Introduction\nWelcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "1.1 Introduction\nWelcome to Module 1: Introduction to Python Programming of the AIO course. The goal of this module is to teach you basic Python programming skills, spanning from the very fundamental things like variables, functions, … to Object-oriented Programming using Python and as well as the basic data structures. There are in total 3 assignments for the main lessons. There will also be one lecture that acts as a supplemnentary before the main lecture."
   },
   {
     "objectID": "index.html#projects",
     "href": "index.html#projects",
     "title": "AIO2023 Lectures",
     "section": "1.2 Projects",
-    "text": "1.2 Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "1.2 Projects\nRegarding the projects, there are three projects where you will respectively learn how to use YOLOv8, an object detection model as well as how to use Python to manipulate and crawl data from a website. Finally, the last project is about developing simple applications using ChatGPT. In particular, the three projects are:\n\nObject Detection with YOLOv8\nData Manipulation and Crawling\nChatGPT Applications"
   },
   {
     "objectID": "index.html#competition-training",
     "href": "index.html#competition-training",
     "title": "AIO2023 Lectures",
     "section": "1.3 Competition Training",
-    "text": "1.3 Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "1.3 Competition Training\nAs for competition training, this module contains three lectures with the goal of teaching you the basic skills and knowledge you need before joining an AI competition, including visualizing data, knowledge about competition tasks and metrics, and design validation."
   },
   {
     "objectID": "index.html#extra-class",
     "href": "index.html#extra-class",
     "title": "AIO2023 Lectures",
     "section": "1.4 Extra class",
-    "text": "1.4 Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "1.4 Extra class\nThe central theme of the extra class for this module is about Algorithms and Complexity. In the age of AI, still, the knowledge about algorithms and their complexity including Big-O, Brute-force exhaustive, recursion, two pointer, and dynamic programming still plays an immensely important role."
   },
   {
     "objectID": "index.html#introduction-1",
     "href": "index.html#introduction-1",
     "title": "AIO2023 Lectures",
     "section": "2.1 Introduction",
-    "text": "2.1 Introduction\nWelcome to the second module of the AIO2023 course. The central theme of this module is about Calculus and Linear Algebra, the two subfields of mathematics that I cannot emphasize enough the importance of them in understanding and developing machine learning models. My take on whether to learn math when you want to learn AI is that although it is often the case that many modern ready-made libraries (eg Numpy, Sklearn, Tensorflow, PyTorch, JAX, …) already support the underlying math, having a thorough understanding of the math behind the machine learning models makes you significantly more efficient in debugging , i.e. knowing what’s wrong with the model, or what particular model specification to apply for your specific problem.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "2.1 Introduction\nWelcome to the second module of the AIO2023 course. The central theme of this module is about Calculus and Linear Algebra, the two subfields of mathematics that I cannot emphasize enough the importance of them in understanding and developing machine learning models. My take on whether to learn math when you want to learn AI is that although it is often the case that many modern ready-made libraries (eg Numpy, Sklearn, Tensorflow, PyTorch, JAX, …) already support the underlying math, having a thorough understanding of the math behind the machine learning models makes you significantly more efficient in debugging , i.e. knowing what’s wrong with the model, or what particular model specification to apply for your specific problem."
   },
   {
     "objectID": "stanford/cs336/moe.html",
