@@ -126,30 +126,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../mlops/index.html"> 
+    <a class="nav-link" href="../../mlops/index.html"> <i class="bi bi-gear" role="img">
+</i> 
 <span class="menu-text">MLOps</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html"> 
+    <a class="nav-link" href="../../blogs/index.html"> <i class="bi bi-journal-text" role="img">
+</i> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../academia/index.html"> 
+    <a class="nav-link" href="../../academia/index.html"> <i class="bi bi-mortarboard" role="img">
+</i> 
 <span class="menu-text">Academia</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stanford-courses" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-collection" role="img">
+</i> 
  <span class="menu-text">Stanford Courses</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-stanford-courses">    
         <li>
-    <a class="dropdown-item" href="../../stanford/cs336/cs336.html">
+    <a class="dropdown-item" href="../../stanford/cs336/cs336.html"><i class="bi bi-book-half" role="img">
+</i> 
  <span class="dropdown-text">CS336 Language Modeling From Scratch</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../faq.html"> 
+    <a class="nav-link" href="../../faq.html"> <i class="bi bi-question-circle" role="img">
+</i> 
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
@@ -174,7 +181,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#linux-directory-structure" id="toc-linux-directory-structure" class="nav-link" data-scroll-target="#linux-directory-structure">Linux Directory Structure</a></li>
   <li><a href="#basic-commands" id="toc-basic-commands" class="nav-link" data-scroll-target="#basic-commands">Basic Commands</a></li>
   <li><a href="#shell-console-and-terminal" id="toc-shell-console-and-terminal" class="nav-link" data-scroll-target="#shell-console-and-terminal">Shell, Console, and Terminal</a></li>
-  <li><a href="#shell-console-and-terminal-1" id="toc-shell-console-and-terminal-1" class="nav-link" data-scroll-target="#shell-console-and-terminal-1">Shell, Console, and Terminal</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   </ul>
 </nav>
@@ -183,6 +189,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 <!-- progress-bar.html -->
 <style>
+  #progress-bar {
+    position: fixed;
+    top: var(--navbar-height, 70px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: rgba(135, 187, 236, 0.8);
+    width: 0%;
+    max-width: 1500px;
+    z-index: 9999;
+    transition: width 0.1s ease;
+    border-radius: 2px;
+  }
+
+  /* Dark mode styles */
+  .quarto-dark #progress-bar {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  body {
+    scroll-behavior: smooth;
+  } 
+</style>
+  
+  <div id="progress-bar"></div>
+  <script>
+    window.addEventListener("scroll", function () {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById("progress-bar").style.width = progress + "%";
+    });
+  </script>
+<!-- <style>
     #progress-bar {
       position: fixed;
       top: var(--navbar-height, 70px);
@@ -205,18 +245,286 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     body {
       scroll-behavior: smooth;
     }
-  </style>
+
+    /* Password protection styles
+    body.is-protected {
+      overflow: hidden;
+    }
+
+    #main-content-container {
+      filter: blur(10px);
+      pointer-events: none;
+      user-select: none;
+      transition: filter 0.5s ease;
+    }
+
+    #main-content-container.unlocked {
+      filter: none;
+      pointer-events: all;
+      user-select: auto;
+    }
+
+    /* Ensure navbar is never blurred - use multiple selectors to catch it */
+    /* .navbar, 
+    nav, 
+    header nav,
+    div[class*="navbar"],
+    div[class*="nav-"],
+    .quarto-navbar,
+    #quarto-header,
+    #quarto-header *,
+    header, 
+    header * {
+      filter: none !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+      z-index: 10001 !important; /* Make navbar appear above the password overlay */
+    }
+
+    #password-overlay {
+      position: fixed;
+      top: 80px; /* Position below navbar height */
+      left: 0;
+      width: 100%;
+      height: calc(100% - 80px); /* Adjust height to account for navbar */
+      background-color: rgba(255, 255, 255, 0.95);
+      z-index: 10000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      /* Ensure overlay is not blurred */
+      filter: none !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+    }
+
+    #password-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    #password-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      /* Ensure container is not blurred */
+      filter: none !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+    }
+
+    #password-container h2 {
+      margin-top: 0;
+      color: #2980b8;
+    }
+
+    #password-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #password-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    #password-submit {
+      background-color: #2980b8;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    #password-submit:hover {
+      background-color: #1976b4;
+    }
+
+    #password-error {
+      color: #e74c3c;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      min-height: 1.2rem;
+    }
+  </style> -->
   
-  <div id="progress-bar"></div>
+  <!-- <div id="progress-bar"></div> -->
+
+  <!-- Password Protection Overlay -->
+  <!-- <div id="password-overlay">
+    <div id="password-container">
+      <h2>Protected Content</h2>
+      <p>This page is password protected. Please enter the password to continue (hint: Viet's birthday).</p>
+      <div id="password-form">
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="password-submit">Submit</button>
+        <div id="password-error"></div>
+      </div>
+    </div>
+  </div> -->
   
-  <script>
+  <!-- <script>
     window.addEventListener("scroll", function () {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
       const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const progress = (scrollTop / scrollHeight) * 100;
       document.getElementById("progress-bar").style.width = progress + "%";
     });
-  </script>
+
+    // Password protection functionality
+    document.addEventListener("DOMContentLoaded", function() {
+      // Only apply password protection to index.qmd page
+      const currentPath = window.location.pathname;
+      const isIndexPage = currentPath === '/' || 
+                          currentPath.endsWith('/index.html') || 
+                          currentPath.includes('/index') ||
+                          currentPath === '';
+      
+      if (!isIndexPage) {
+        return; // Don't apply password protection on other pages
+      }
+
+      const correctPassword = "220403"; // Change this to your desired password
+      const passwordOverlay = document.getElementById("password-overlay");
+      const passwordInput = document.getElementById("password-input");
+      const passwordSubmit = document.getElementById("password-submit");
+      const passwordError = document.getElementById("password-error");
+      
+      // Check if password is already stored in session
+      if (sessionStorage.getItem("indexPasswordEntered") === "true") {
+        return; // Already authenticated for index page
+      }
+
+      // Make sure password overlay is a direct child of body
+      if (passwordOverlay.parentNode !== document.body) {
+        document.body.appendChild(passwordOverlay);
+      }
+
+      // Explicitly exclude navbar from blur effects
+      function protectNavbar() {
+        // Try to find the navbar by common selectors
+        const navbarElements = document.querySelectorAll('.navbar, nav, [class*="navbar"], [class*="nav-"], header, #quarto-header');
+        
+        navbarElements.forEach(nav => {
+          if (nav) {
+            // Ensure it has the right styles
+            nav.style.filter = "none";
+            nav.style.pointerEvents = "auto";
+            nav.style.userSelect = "auto";
+            nav.style.zIndex = "10001";
+            
+            // Remove it from any container that might be blurred
+            if (nav.parentElement && nav.parentElement.id === 'main-content-container') {
+              document.body.appendChild(nav);
+            }
+          }
+        });
+      }
+
+      // Create main content container
+      function createMainContentContainer() {
+        // Don't create container if it already exists
+        if (document.getElementById('main-content-container')) {
+          return;
+        }
+        
+        // First protect navbar elements
+        protectNavbar();
+        
+        // Create wrapper
+        const wrapper = document.createElement('div');
+        wrapper.id = 'main-content-container';
+        
+        // Get all body elements except the progress-bar, password-overlay, and navbar-related elements
+        const bodyElements = [];
+        
+        Array.from(document.body.children).forEach(element => {
+          // Check if the element is part of the navbar
+          const isNavbarElement = 
+            element.classList && (
+              element.classList.contains('navbar') || 
+              element.id === 'quarto-header' || 
+              element.tagName.toLowerCase() === 'nav' || 
+              element.tagName.toLowerCase() === 'header' ||
+              (element.className && element.className.includes && (
+                element.className.includes('navbar') || 
+                element.className.includes('nav-')
+              ))
+            );
+          
+          // Keep these elements outside the blurred container
+          if (element.id !== 'password-overlay' && 
+              element.id !== 'progress-bar' && 
+              !isNavbarElement) {
+            bodyElements.push(element);
+          }
+        });
+        
+        // Move elements to wrapper
+        bodyElements.forEach(element => {
+          wrapper.appendChild(element);
+        });
+        
+        // Add wrapper to body
+        document.body.appendChild(wrapper);
+      }
+      
+      // Function to show password prompt
+      function showPasswordPrompt() {
+        createMainContentContainer(); // Create container first
+        protectNavbar(); // Apply navbar protection again to be sure
+        document.body.classList.add('is-protected');
+        passwordOverlay.style.display = "flex";
+        setTimeout(() => passwordInput.focus(), 200);
+      }
+      
+      // Function to unlock the page
+      function unlockPage() {
+        const mainContent = document.getElementById('main-content-container');
+        if (mainContent) {
+          mainContent.classList.add('unlocked');
+        }
+        passwordOverlay.classList.add('hidden');
+        document.body.classList.remove('is-protected');
+      }
+
+      // Password validation
+      passwordSubmit.addEventListener("click", validatePassword);
+      passwordInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          validatePassword();
+        }
+      });
+
+      function validatePassword() {
+        if (passwordInput.value === correctPassword) {
+          unlockPage();
+          sessionStorage.setItem("indexPasswordEntered", "true");
+          passwordError.textContent = "";
+        } else {
+          passwordError.textContent = "Incorrect password. Please try again.";
+          passwordInput.value = "";
+          passwordInput.focus();
+        }
+      }
+      
+      // Show password prompt with slight delay to ensure page is loaded
+      setTimeout(showPasswordPrompt, 200);
+    });
+  </script> -->
   
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -348,9 +656,6 @@ Fun fact (directory)
 <li>Console: a physical device that allows you to interact with the computer. (keyboard, mouse, etc.)</li>
 <li>Terminal: a program that allows you to interact with the computer. (xterm, gnome-terminal, etc.)</li>
 </ul>
-</section>
-<section id="shell-console-and-terminal-1" class="level1">
-<h1>Shell, Console, and Terminal</h1>
 </section>
 <section id="further-reading" class="level1">
 <h1>Further reading</h1>

@@ -63,11 +63,39 @@
     "text": "Module 1\n\nLinux\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "stanford/cs336/moe.html",
-    "href": "stanford/cs336/moe.html",
+    "objectID": "stanford/cs336/moe.html#routing-function",
+    "href": "stanford/cs336/moe.html#routing-function",
     "title": "Mixture of Experts",
-    "section": "",
-    "text": "What’s MOE ?\n\n\nParallelizable to many devices (expert parallelism)\nBut MOEs infrastructure is complex; advantages on multi node.\nTraining objectives are somewhat heuristic (and unstable).\n\n\n\nMOE Variations\n\nRouting function\n\nRouting algorithms: token chooses expert, expert chooses token, global routing via optimization.\nAlmost all MOEs boils down to choose “\\(\\text{top}-K\\)”.\n\nExpert sizes\nTraining objectives\n\n\n\n\n\n Back to top"
+    "section": "Routing function",
+    "text": "Routing function\nRouting algorithms:\n\ntoken chooses expert: choose top-K experts for each token\nexpert chooses token: each expert chooses top-K tokens\nglobal routing via optimization: solve a global optimization problem to find the best routing.\n\nAlmost all MOEs boils down to choose “\\(\\text{top}-K\\)”.\n\n\nExpert sizes\nTraining objectives"
+  },
+  {
+    "objectID": "stanford/cs336/moe.html#top-k-routing",
+    "href": "stanford/cs336/moe.html#top-k-routing",
+    "title": "Mixture of Experts",
+    "section": "Top-K Routing",
+    "text": "Top-K Routing\nMost papers do the old and classic top-k routing. How does this work?"
+  },
+  {
+    "objectID": "stanford/cs336/moe.html#gating",
+    "href": "stanford/cs336/moe.html#gating",
+    "title": "Mixture of Experts",
+    "section": "Gating",
+    "text": "Gating\n\\[\n\\mathbf{h}_t^l = \\sum_{i=1}^{N} \\left( g_{i,t} \\text{FFN}_i \\left( \\mathbf{u}_t^l \\right) \\right) + \\mathbf{u}_t^l,\n\\]\n\\[\ng_{i,t} = \\begin{cases}\ns_{i,t}, & s_{i,t} \\in \\text{Topk}(\\{s_{j,t}|1 \\leq j \\leq N\\}, K), \\\\\n0, & \\text{otherwise},\n\\end{cases}\n\\]\n\\[\ns_{i,t} = \\text{Softmax}_i \\left( \\mathbf{u}_t^{lT} \\mathbf{e}_i^l \\right),\n\\]\nGates selected by a logistic regressor\nThis is the DeepSeek (V1-2) router (Grok, Qwen do this too)\nMixtral, DBRX, DeepSeek v3 softmaxes after the TopK"
+  },
+  {
+    "objectID": "stanford/cs336/moe.html#rl-for-moes",
+    "href": "stanford/cs336/moe.html#rl-for-moes",
+    "title": "Mixture of Experts",
+    "section": "RL for MoEs",
+    "text": "RL for MoEs\nRL via REINFORCE, but not so much better."
+  },
+  {
+    "objectID": "stanford/cs336/moe.html#stochastic-approximations",
+    "href": "stanford/cs336/moe.html#stochastic-approximations",
+    "title": "Mixture of Experts",
+    "section": "Stochastic approximations",
+    "text": "Stochastic approximations\n\\[G(x) = Softmax(KeepTopK(H(x), k))\\]\n\\[H(x)_i = (x \\cdot W_g)_i + StandardNormal() \\cdot Softplus((x \\cdot W_{noise})_i)\\]\n\\[KeepTopK(v, k)_i = \\begin{cases}\nv_i & \\text{if } v_i \\text{ is in the top } k \\text{ elements of } v. \\\\\n-\\infty & \\text{otherwise.}\n\\end{cases}\\]\nFrom Shazeer et al 2017 - routing decisions are stochastic with gaussian perturbations.\n\nThis naturally leads to experts that are a bit more robust.\nThe softmax means that the model learns how to rank K experts"
   },
   {
     "objectID": "stanford/cs336/l1.html",
@@ -263,7 +291,7 @@
     "href": "mlops/m1/linux.html",
     "title": "Linux",
     "section": "",
-    "text": "Understand GNU / Linux\nAn alternative solution to AT&T Unix OS — which is not a free OS. GNU is an OS, often used with the Linux kernel. An OS kernel is a program allocating a computer resources (CPU, memory, etc.) to programs.\nThere are many variants of GNU/Linux, including:\n\nUbuntu\nKali Linux\nMacOS (yes, MacOS)\n\n\n\nLinux Directory Structure\n/\n├── home\n├── usr\n│   ├── bin\n│   ├── sbin\n│   └── local\n│       ├── bin      # executable programs such as ssh, telnet, kill, and less\n│       ├── sbin     # commands to boot the system such as reboot and shutdown\n│       └── local\n│           ├── bin  # user's executable programs\n│           └── sbin # system administration commands belong to users\n├── proc             # files for monitoring processes such as /proc/cpuinfo\n├── etc              # configuration files\n└── tmp              # temporary files\nFor example, if you use ls /usr/bin, you will see a list of executable programs on your computer:\n\n\n\nBasic Commands\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd, pwd, ls\nNavigate and list files\n\n\ncp, mv, rm\nCopy, move, and remove files\n\n\ncat, head, tail\nDisplay the contents of a file\n\n\necho\nDisplay a message\n\n\nwget, curl\nDownload a file from the internet\n\n\ntar\nArchive and compress files\n\n\nfind .name \".log\" -size +1G\nSearch for files with name containing “.log” and size larger than 1G\n\n\ngrep\nSearch for patterns in files\n\n\nchmod, chown\nChange file permissions\n\n\nhistory, exit, shutdown, uptime\nOthers\n\n\n\n\n\n\n\n\n\nFun fact (directory)\n\n\n\nA directory is just a file containing the names of other files.\n\n\n\n\nShell, Console, and Terminal\n\nShell: a program that interprets the commands you type (bash, zsh, etc.).\nConsole: a physical device that allows you to interact with the computer. (keyboard, mouse, etc.)\nTerminal: a program that allows you to interact with the computer. (xterm, gnome-terminal, etc.)\n\n\n\nShell, Console, and Terminal\n\n\nFurther reading\n\ngnu.org/gnu/linux-and-gnu\n\n\n\n\n\n Back to top"
+    "text": "Understand GNU / Linux\nAn alternative solution to AT&T Unix OS — which is not a free OS. GNU is an OS, often used with the Linux kernel. An OS kernel is a program allocating a computer resources (CPU, memory, etc.) to programs.\nThere are many variants of GNU/Linux, including:\n\nUbuntu\nKali Linux\nMacOS (yes, MacOS)\n\n\n\nLinux Directory Structure\n/\n├── home\n├── usr\n│   ├── bin\n│   ├── sbin\n│   └── local\n│       ├── bin      # executable programs such as ssh, telnet, kill, and less\n│       ├── sbin     # commands to boot the system such as reboot and shutdown\n│       └── local\n│           ├── bin  # user's executable programs\n│           └── sbin # system administration commands belong to users\n├── proc             # files for monitoring processes such as /proc/cpuinfo\n├── etc              # configuration files\n└── tmp              # temporary files\nFor example, if you use ls /usr/bin, you will see a list of executable programs on your computer:\n\n\n\nBasic Commands\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd, pwd, ls\nNavigate and list files\n\n\ncp, mv, rm\nCopy, move, and remove files\n\n\ncat, head, tail\nDisplay the contents of a file\n\n\necho\nDisplay a message\n\n\nwget, curl\nDownload a file from the internet\n\n\ntar\nArchive and compress files\n\n\nfind .name \".log\" -size +1G\nSearch for files with name containing “.log” and size larger than 1G\n\n\ngrep\nSearch for patterns in files\n\n\nchmod, chown\nChange file permissions\n\n\nhistory, exit, shutdown, uptime\nOthers\n\n\n\n\n\n\n\n\n\nFun fact (directory)\n\n\n\nA directory is just a file containing the names of other files.\n\n\n\n\nShell, Console, and Terminal\n\nShell: a program that interprets the commands you type (bash, zsh, etc.).\nConsole: a physical device that allows you to interact with the computer. (keyboard, mouse, etc.)\nTerminal: a program that allows you to interact with the computer. (xterm, gnome-terminal, etc.)\n\n\n\nFurther reading\n\ngnu.org/gnu/linux-and-gnu\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "seminars.html",
