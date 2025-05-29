@@ -1,0 +1,135 @@
+---
+title: Tokenization
+code-overflow: wrap
+code-line-numbers: true
+---
+
+<iframe 
+    src="https://tiktokenizer.vercel.app/" 
+    width="100%" 
+    height="600px" 
+    style="border:none;"
+    title="Tiktokenizer">
+</iframe>
+
+```{.python}
+# Basic chr() usage
+assert chr(97) == "a"
+assert chr(127757) == "🌍"  # 127757 is actually the Earth Globe Europe-Africa emoji
+
+# Build a simple Character Tokenizer and test round-trip encoding/decoding
+tokenizer = CharacterTokenizer()
+
+string = "Hello, 🌍! 1rt7!"  # @inspect string
+indices = tokenizer.encode(string)  # @inspect indices
+reconstructed_string = tokenizer.decode(indices)  # @inspect reconstructed_string
+
+assert string == reconstructed_string
+
+# Unicode has approximately 150K characters
+# [Wikipedia: List of Unicode characters]
+
+# Vocabulary size estimation
+vocabulary_size = max(indices) + 1  # This is a lower bound
+# @inspect vocabulary_size
+
+# Problems:
+# Problem 1: This is a very large vocabulary.
+# Problem 2: Many characters are quite rare (e.g., 🌍), making vocabulary inefficient.
+
+# Compression ratio
+compression_ratio = get_compression_ratio(string, indices)  # @inspect compression_ratio
+```
+# Byte-based tokenization
+
+Unicode strings can be represented as a sequence of bytes (integers between 0 and 255).
+
+The most common Unicode encoding is UTF-8.
+
+```{.python}
+# Some Unicode characters are represented by one byte:
+assert bytes("a", encoding="utf-8") == b"a"
+
+# Others take multiple bytes:
+assert bytes("🌍", encoding="utf-8") == b"\xf0\x9f\x8c\x8d"
+
+# Now let's build a Byte-based Tokenizer and test round-trip encoding/decoding
+tokenizer = ByteTokenizer()
+
+string = "Hello, 🌍！你好！"  # @inspect string
+indices = tokenizer.encode(string)  # @inspect indices
+reconstructed_string = tokenizer.decode(indices)  # @inspect reconstructed_string
+
+assert string == reconstructed_string
+```
+
+
+# Word-based tokenization
+
+Byte Pair Encoding (BPE)
+[Wikipedia]
+The BPE algorithm was introduced by Philip Gage in 1994 for data compression. [article]
+It was adapted to NLP for neural machine translation. [Sennrich+ 2015]
+(Previously, papers had been using word-based tokenization.)
+BPE was then used by GPT-2. [Radford+ 2019]
+Basic idea: train the tokenizer on raw text to automatically determine the vocabulary.
+Intuition: common sequences of characters are represented by a single token, rare sequences are represented by many tokens.
+The GPT-2 paper used word-based tokenizatich to break up the text into inital segments and run the original
+BPE algorithm on each segment.
+Sketcl
+n byte as a l
+token, and successively merge the most common pair of adjacent tokens.
+
+
+```{.python tidy='styler'}
+from collections import defaultdict
+from typing import Dict, Tuple
+
+class BETokenizerParams:
+    def __init__(self, merges: Dict[Tuple[int, int], int], vocab: Dict[int, bytes]):
+        self.merges = merges  # pair -> new index
+        self.vocab = vocab    # index -> bytes
+
+def train_bpe(string: str, num_merges: int) -> BETokenizerParams:
+    # @inspect string, @inspect num_merges
+    
+    # Start with the list of bytes of string
+    indices = list(map(int, string.encode("utf-8")))  # @inspect indices
+    
+    merges: Dict[Tuple[int, int], int] = {}  # (index1, index2) -> merged index
+    vocab: Dict[int, bytes] = {x: bytes([x]) for x in range(256)}  # index -> bytes
+
+    for i in range(num_merges):
+        # Count the number of occurrences of each pair of tokens
+        counts = defaultdict(int)
+        for index1, index2 in zip(indices, indices[1:]):  # For each adjacent pair
+            counts[(index1, index2)] += 1  # @inspect counts
+
+        # Find the most common pair
+        if not counts:
+            break  # No more pairs to merge
+
+        pair = max(counts, key=counts.get)  # @inspect pair
+        index1, index2 = pair
+
+        # Create a new index for the merged pair
+        new_index = max(vocab.keys()) + 1
+        vocab[new_index] = vocab[index1] + vocab[index2]
+        merges[(index1, index2)] = new_index
+
+        # Update the sequence (merge occurrences of the pair)
+        new_indices = []
+        skip = False
+        for j in range(len(indices)):
+            if skip:
+                skip = False
+                continue
+            if j < len(indices) - 1 and (indices[j], indices[j+1]) == pair:
+                new_indices.append(new_index)
+                skip = True  # Skip next index because it's merged
+            else:
+                new_indices.append(indices[j])
+        indices = new_indices  # Update for next iteration
+
+    return BETokenizerParams(merges=merges, vocab=vocab)
+```

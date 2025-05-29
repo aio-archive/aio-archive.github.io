@@ -5,6 +5,42 @@ format:
   html:
     grid:
         body-width: 800px
+include-before: |
+  <style>
+    /* Dark mode styles */
+    .quarto-dark .boxed {
+      background-color: #1a1a1a !important;
+      border-color: #333 !important;
+      color: #e0e0e0 !important;
+    }
+
+    .quarto-dark .boxed h1,
+    .quarto-dark .boxed h2,
+    .quarto-dark .boxed h3,
+    .quarto-dark .boxed p,
+    .quarto-dark .boxed li,
+    .quarto-dark .boxed strong {
+      color: #e0e0e0 !important;
+    }
+
+    .quarto-dark .boxed a {
+      color: #4fc3f7 !important;
+    }
+
+    .quarto-dark .boxed a:hover {
+      color: #81d4fa !important;
+    }
+
+    /* Light mode boxed styles */
+    .boxed {
+      background-color: #ffffff !important;
+      border: 1px solid #e0e0e0 !important;
+      border-radius: 8px !important;
+      padding: 1.5rem !important;
+      margin: 1rem 0 !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    }
+  </style>
 ---
 
 :::{.boxed}

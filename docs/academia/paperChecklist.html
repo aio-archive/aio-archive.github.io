@@ -163,7 +163,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link active" data-scroll-target="#disclaimer">Disclaimer</a></li>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#title-and-abstract" id="toc-title-and-abstract" class="nav-link" data-scroll-target="#title-and-abstract">Title and Abstract</a></li>
   <li><a href="#related-works" id="toc-related-works" class="nav-link" data-scroll-target="#related-works">Related Works</a></li>
   <li><a href="#facets-of-your-work" id="toc-facets-of-your-work" class="nav-link" data-scroll-target="#facets-of-your-work">3 facets of your work</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
@@ -194,345 +195,34 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-<!-- progress-bar.html -->
 <style>
   #progress-bar {
     position: fixed;
-    top: var(--navbar-height, 70px);
+    top: var(--navbar-height, 72px);
     left: 50%;
     transform: translateX(-50%);
     height: 2px;
-    background: rgba(135, 187, 236, 0.8);
+    background: rgba(59, 156, 237, 0.85); /* vibrant blue */
     width: 0%;
     max-width: 1500px;
     z-index: 9999;
     transition: width 0.1s ease;
     border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   }
-
-  /* Dark mode styles */
   .quarto-dark #progress-bar {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(59, 156, 237, 0.95); /* same blue, more visible in dark */
   }
-
-  body {
-    scroll-behavior: smooth;
-  } 
 </style>
-  
-  <div id="progress-bar"></div>
-  <script>
-    window.addEventListener("scroll", function () {
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const progress = (scrollTop / scrollHeight) * 100;
-      document.getElementById("progress-bar").style.width = progress + "%";
-    });
-  </script>
-<!-- <style>
-    #progress-bar {
-      position: fixed;
-      top: var(--navbar-height, 70px);
-      left: 50%;
-      transform: translateX(-50%);
-      height: 2px;
-      background: rgba(135, 187, 236, 0.8);
-      width: 0%;
-      max-width: 1500px;
-      z-index: 9999;
-      transition: width 0.1s ease;
-      border-radius: 2px;
-    }
-
-    /* Dark mode styles */
-    .quarto-dark #progress-bar {
-      background: rgba(255, 255, 255, 0.9);
-    }
-  
-    body {
-      scroll-behavior: smooth;
-    }
-
-    /* Password protection styles
-    body.is-protected {
-      overflow: hidden;
-    }
-
-    #main-content-container {
-      filter: blur(10px);
-      pointer-events: none;
-      user-select: none;
-      transition: filter 0.5s ease;
-    }
-
-    #main-content-container.unlocked {
-      filter: none;
-      pointer-events: all;
-      user-select: auto;
-    }
-
-    /* Ensure navbar is never blurred - use multiple selectors to catch it */
-    /* .navbar, 
-    nav, 
-    header nav,
-    div[class*="navbar"],
-    div[class*="nav-"],
-    .quarto-navbar,
-    #quarto-header,
-    #quarto-header *,
-    header, 
-    header * {
-      filter: none !important;
-      pointer-events: auto !important;
-      user-select: auto !important;
-      z-index: 10001 !important; /* Make navbar appear above the password overlay */
-    }
-
-    #password-overlay {
-      position: fixed;
-      top: 80px; /* Position below navbar height */
-      left: 0;
-      width: 100%;
-      height: calc(100% - 80px); /* Adjust height to account for navbar */
-      background-color: rgba(255, 255, 255, 0.95);
-      z-index: 10000;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: opacity 0.5s ease, visibility 0.5s ease;
-      /* Ensure overlay is not blurred */
-      filter: none !important;
-      pointer-events: auto !important;
-      user-select: auto !important;
-    }
-
-    #password-overlay.hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-
-    #password-container {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      max-width: 400px;
-      width: 90%;
-      /* Ensure container is not blurred */
-      filter: none !important;
-      pointer-events: auto !important;
-      user-select: auto !important;
-    }
-
-    #password-container h2 {
-      margin-top: 0;
-      color: #2980b8;
-    }
-
-    #password-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    #password-input {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    #password-submit {
-      background-color: #2980b8;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    #password-submit:hover {
-      background-color: #1976b4;
-    }
-
-    #password-error {
-      color: #e74c3c;
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-      min-height: 1.2rem;
-    }
-  </style> -->
-  
-  <!-- <div id="progress-bar"></div> -->
-
-  <!-- Password Protection Overlay -->
-  <!-- <div id="password-overlay">
-    <div id="password-container">
-      <h2>Protected Content</h2>
-      <p>This page is password protected. Please enter the password to continue (hint: Viet's birthday).</p>
-      <div id="password-form">
-        <input type="password" id="password-input" placeholder="Enter password">
-        <button id="password-submit">Submit</button>
-        <div id="password-error"></div>
-      </div>
-    </div>
-  </div> -->
-  
-  <!-- <script>
-    window.addEventListener("scroll", function () {
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const progress = (scrollTop / scrollHeight) * 100;
-      document.getElementById("progress-bar").style.width = progress + "%";
-    });
-
-    // Password protection functionality
-    document.addEventListener("DOMContentLoaded", function() {
-      // Only apply password protection to index.qmd page
-      const currentPath = window.location.pathname;
-      const isIndexPage = currentPath === '/' || 
-                          currentPath.endsWith('/index.html') || 
-                          currentPath.includes('/index') ||
-                          currentPath === '';
-      
-      if (!isIndexPage) {
-        return; // Don't apply password protection on other pages
-      }
-
-      const correctPassword = "220403"; // Change this to your desired password
-      const passwordOverlay = document.getElementById("password-overlay");
-      const passwordInput = document.getElementById("password-input");
-      const passwordSubmit = document.getElementById("password-submit");
-      const passwordError = document.getElementById("password-error");
-      
-      // Check if password is already stored in session
-      if (sessionStorage.getItem("indexPasswordEntered") === "true") {
-        return; // Already authenticated for index page
-      }
-
-      // Make sure password overlay is a direct child of body
-      if (passwordOverlay.parentNode !== document.body) {
-        document.body.appendChild(passwordOverlay);
-      }
-
-      // Explicitly exclude navbar from blur effects
-      function protectNavbar() {
-        // Try to find the navbar by common selectors
-        const navbarElements = document.querySelectorAll('.navbar, nav, [class*="navbar"], [class*="nav-"], header, #quarto-header');
-        
-        navbarElements.forEach(nav => {
-          if (nav) {
-            // Ensure it has the right styles
-            nav.style.filter = "none";
-            nav.style.pointerEvents = "auto";
-            nav.style.userSelect = "auto";
-            nav.style.zIndex = "10001";
-            
-            // Remove it from any container that might be blurred
-            if (nav.parentElement && nav.parentElement.id === 'main-content-container') {
-              document.body.appendChild(nav);
-            }
-          }
-        });
-      }
-
-      // Create main content container
-      function createMainContentContainer() {
-        // Don't create container if it already exists
-        if (document.getElementById('main-content-container')) {
-          return;
-        }
-        
-        // First protect navbar elements
-        protectNavbar();
-        
-        // Create wrapper
-        const wrapper = document.createElement('div');
-        wrapper.id = 'main-content-container';
-        
-        // Get all body elements except the progress-bar, password-overlay, and navbar-related elements
-        const bodyElements = [];
-        
-        Array.from(document.body.children).forEach(element => {
-          // Check if the element is part of the navbar
-          const isNavbarElement = 
-            element.classList && (
-              element.classList.contains('navbar') || 
-              element.id === 'quarto-header' || 
-              element.tagName.toLowerCase() === 'nav' || 
-              element.tagName.toLowerCase() === 'header' ||
-              (element.className && element.className.includes && (
-                element.className.includes('navbar') || 
-                element.className.includes('nav-')
-              ))
-            );
-          
-          // Keep these elements outside the blurred container
-          if (element.id !== 'password-overlay' && 
-              element.id !== 'progress-bar' && 
-              !isNavbarElement) {
-            bodyElements.push(element);
-          }
-        });
-        
-        // Move elements to wrapper
-        bodyElements.forEach(element => {
-          wrapper.appendChild(element);
-        });
-        
-        // Add wrapper to body
-        document.body.appendChild(wrapper);
-      }
-      
-      // Function to show password prompt
-      function showPasswordPrompt() {
-        createMainContentContainer(); // Create container first
-        protectNavbar(); // Apply navbar protection again to be sure
-        document.body.classList.add('is-protected');
-        passwordOverlay.style.display = "flex";
-        setTimeout(() => passwordInput.focus(), 200);
-      }
-      
-      // Function to unlock the page
-      function unlockPage() {
-        const mainContent = document.getElementById('main-content-container');
-        if (mainContent) {
-          mainContent.classList.add('unlocked');
-        }
-        passwordOverlay.classList.add('hidden');
-        document.body.classList.remove('is-protected');
-      }
-
-      // Password validation
-      passwordSubmit.addEventListener("click", validatePassword);
-      passwordInput.addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-          validatePassword();
-        }
-      });
-
-      function validatePassword() {
-        if (passwordInput.value === correctPassword) {
-          unlockPage();
-          sessionStorage.setItem("indexPasswordEntered", "true");
-          passwordError.textContent = "";
-        } else {
-          passwordError.textContent = "Incorrect password. Please try again.";
-          passwordInput.value = "";
-          passwordInput.focus();
-        }
-      }
-      
-      // Show password prompt with slight delay to ensure page is loaded
-      setTimeout(showPasswordPrompt, 200);
-    });
-  </script> -->
-  
+<div id="progress-bar"></div>
+<script>
+  window.addEventListener("scroll", function () {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+  });
+</script>
 <style>
   /* This class enforces the strikethrough and italic style */
   .done {
@@ -597,8 +287,29 @@ ul.task-list li input[type="checkbox"] {
 <div style="height:2em;">
 
 </div>
-<section id="abstract" class="level1 boxed">
-<h1>Abstract</h1>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<ul class="task-list">
+<li><label><input type="checkbox">Decide on a narrative - best done in close collaboration with a mentor</label></li>
+<li><label><input type="checkbox">Decide on a narrative - best done in close collaboration with a mentor</label></li>
+<li><label><input type="checkbox">Draft an abstract</label></li>
+<li><label><input type="checkbox">Do a round of reading through and editing - try reading it aloud to yourself</label></li>
+<li><label><input type="checkbox">Get sign-off from a mentor (if possible)</label></li>
+<li><label><input type="checkbox">Make a bullet point outline of the paper, emphasising sections and section titles, key figures and key experimental results. Do this in a google doc</label></li>
+<li><label><input type="checkbox">Get sign-off from a mentor (if possible)</label></li>
+<li><label><input type="checkbox">Double check exactly when the submission deadline is, ensure you’re converting time zones properly</label></li>
+</ul>
+</section>
+<section id="title-and-abstract" class="level1 boxed">
+<h1>Title and Abstract</h1>
+<ul class="task-list">
+<li><label><input type="checkbox">1.1 Title is ≤ 15 words. Check for generic phrasing (e.g., “A Novel Framework…,” which conveys little information) and overly narrow focus (which may reduce the paper’s audience)—aim for concise but informative.</label></li>
+<li><label><input type="checkbox">1.2 Title clearly reflects both the <strong>problem</strong> and the <strong>solution</strong>, and includes at least one technical keyword (e.g., jailbreak, OOD detection, graph learning).</label></li>
+<li><label><input type="checkbox">1.3 Title avoids rare or ambiguous abbreviations. Terms like LLM, AI, and ML are acceptable in CS venues, but avoid abbreviations like AD (which could refer to advertisement or anomaly detection).</label></li>
+<li><label><input type="checkbox">1.4 Abstract includes at least four key components: (1) problem/task definition, (2) proposed method or idea, (3) main results, and (4) broader impact or significance (some may be combined).</label></li>
+<li><label><input type="checkbox">1.5 Abstract avoids undefined abbreviations and vague descriptors (e.g., “important,” “novel,” “state-of-the-art” without context).</label></li>
+<li><label><input type="checkbox">1.6 Bonus: Abstract includes at least one concrete, quantitative result or insight to make the work stand out. For instance, “our method achieves 11.2× acceleration in test-time inference for jailbreak detection.”</label></li>
+</ul>
 </section>
 <div style="height:2em;">
 
@@ -621,8 +332,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction" class="level1 boxed">
 <h1>Introduction</h1>
 <ul class="task-list">
-<li><label><input type="checkbox">Outline a set of 3 defendable contributions:</label>
-<ul class="task-list">
+<li><label><input type="checkbox">2.1 The main problem or task is clearly defined within the first two paragraphs.</label></li>
+<li><label><input type="checkbox">2.2 Motivation includes either (a) real-world use cases or (b) citations to prior work—ideally both.</label></li>
+<li><label><input type="checkbox">2.3 The introduction ends with a brief overview of the proposed method and its name.</label></li>
+<li><label><input type="checkbox">2.4 Contributions are explicitly itemized (e.g., “(1) first framework for …, (2) new dataset for …, (3) extensive evaluation on …”).</label></li>
+<li><label><input type="checkbox">2.5 Each contribution is specific and verifiable—avoid vague claims such as “we provide insights” or “we improve understanding.”</label></li>
+<li><label><input type="checkbox">2.6 Bonus: Include a compelling figure on the first page—e.g., comparison to prior work, performance highlight, or visual explanation of the core idea.</label></li>
+<li><label><input type="checkbox">Outline a set of 3 defendable contributions:</label></li>
 <li><label><input type="checkbox">What is the problem that the paper is solving;<br>
 </label></li>
 <li><label><input type="checkbox">Why that problem (the importance of the problem);<br>
@@ -630,7 +346,6 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">What are the current approaches to solving this problem and what is wrong about them;<br>
 </label></li>
 <li><label><input type="checkbox">What are the contributions of the paper;</label></li>
-</ul></li>
 </ul>
 </section>
 <div style="height:2em;">
@@ -888,8 +603,127 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 <div class="boxed">
+<hr>
+<section id="title-and-abstract-1" class="level2">
+<h2 class="anchored" data-anchor-id="title-and-abstract-1">1. 🎯 Title and Abstract</h2>
+<hr>
+</section>
+<section id="introduction-1" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-1">2. 📚 Introduction</h2>
+<hr>
+</section>
+<section id="related-work" class="level2">
+<h2 class="anchored" data-anchor-id="related-work">3. 🔍 Related Work</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">3.1 All cited works are connected to your method, baseline, or task.</label></li>
+<li><label><input type="checkbox">3.2 At least one baseline from the top-3 most cited recent papers on the topic is mentioned.</label></li>
+<li><label><input type="checkbox">3.3 Related work does not exceed 1.5 pages (unless survey-style paper).</label></li>
+<li><label><input type="checkbox">3.4 You may use LLMs for searching the related work, but double triple check each of the paper – do not trust LLMs!!!!</label></li>
+<li><label><input type="checkbox">3.5 Bonus: use related work section to introduce baseline algorithms – show a table for your proposal better than the existing ones</label></li>
+</ul>
+<hr>
+</section>
+<section id="method-1" class="level2">
+<h2 class="anchored" data-anchor-id="method-1">4. 🧪 Method</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">4.1 All symbols are defined before use.</label></li>
+<li><label><input type="checkbox">4.2 Each equation is referenced with inline explanation (e.g., “Eq. (3) defines the loss over…”). If an equation is never referenced, consider making it inline to save space.</label></li>
+<li><label><input type="checkbox">4.3 All modules or components of the method are illustrated or described in text or figures.</label></li>
+<li><label><input type="checkbox">4.4 Each subsection ideally aligns with parts of the overview figure. Add a short summary paragraph before diving into subsections.</label></li>
+<li><label><input type="checkbox">4.5 You do not need both overview figure and pseudo code in the main text – move the pseudo code to the appendix</label></li>
+<li><label><input type="checkbox">4.6 The method is reproducible without referring to the appendix or external code—reviewers should understand everything from the main text.</label></li>
+<li><label><input type="checkbox">4.7 Bonus: Can anything be removed from this section without reducing clarity? Do not hesitate to cut: more math ≠ better paper.</label></li>
+</ul>
+<hr>
+</section>
+<section id="experiments" class="level2">
+<h2 class="anchored" data-anchor-id="experiments">5. 📊 Experiments</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">5.1 At least 3 datasets are used (unless the paper introduces a new dataset).</label></li>
+<li><label><input type="checkbox">5.2 At least 3 baseline methods are compared. Are they state-of-the-art? Justify why these baselines are chosen.</label></li>
+<li><label><input type="checkbox">5.3 At least 1 ablation study is included.</label></li>
+<li><label><input type="checkbox">5.4 Standard deviation or confidence intervals are reported where appropriate.</label></li>
+<li><label><input type="checkbox">5.5 Hardware environment, software libraries, and hyperparameter settings are described.</label></li>
+<li><label><input type="checkbox">5.6 Negative results (if any) are explained, not omitted—failure cases are valuable.</label></li>
+<li><label><input type="checkbox">5.7 Evaluation metrics are clearly defined and justified.</label></li>
+<li><label><input type="checkbox">5.8 All figures and tables are referenced in the main text.</label></li>
+<li><label><input type="checkbox">5.9 Beyond showing numbers and saying “we perform well,” at least one deeper insight or analysis is provided (e.g., why it works, where it fails).</label></li>
+<li><label><input type="checkbox">5.10 Bonus: Think about how easy others can reproduce your work? If you have any “dirty tricks” – remove them pls.</label></li>
+</ul>
+<hr>
+</section>
+<section id="writing-quality-and-style" class="level2">
+<h2 class="anchored" data-anchor-id="writing-quality-and-style">6. 🧾 Writing Quality and Style</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">6.1 All abbreviations are defined at first use (even ML, LLM, etc.) – do not redefine them again and again.</label></li>
+<li><label><input type="checkbox">6.2 No sentence exceeds 25 words without a comma or period.</label></li>
+<li><label><input type="checkbox">6.3 No paragraph exceeds 10 lines.</label></li>
+<li><label><input type="checkbox">6.4 Passive voice usage &lt; 30% of the total number of sentences.</label></li>
+<li><label><input type="checkbox">6.5 Bonus: Have you noticed that your paper are full of the fancy LLM words, like encompass, intricate, etc?</label></li>
+</ul>
+<hr>
+</section>
+<section id="figures-and-tables" class="level2">
+<h2 class="anchored" data-anchor-id="figures-and-tables">7. 🖼️ Figures and Tables</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">7.1 Each figure/table has a caption ≥ 2 lines that includes interpretation or context. Do not just place it without explanation—reviewers will get lost.</label></li>
+<li><label><input type="checkbox">7.2 Font size in all figures is ≥ 8pt and all labels are fully visible (not cropped).</label></li>
+<li><label><input type="checkbox">7.3 Plots use colors that remain distinguishable when printed in grayscale—some reviewers will print your paper.</label></li>
+<li><label><input type="checkbox">7.4 Each method mentioned in the results appears in either the legend or table column headers.</label></li>
+<li><label><input type="checkbox">7.5 Figures appear at the top of pages rather than mid-text or at the bottom (soft rule, but improves readability).</label></li>
+<li><label><input type="checkbox">7.6 Figures and tables are not redundant—each provides new or complementary information.</label></li>
+<li><label><input type="checkbox">Bonus: All figures are in <strong>lossless formats</strong> (e.g., PDF for vector graphics). Absolutely no low-resolution images allowed.</label></li>
+</ul>
+<hr>
+</section>
+<section id="structure-and-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="structure-and-formatting">8. 🧱 Structure and Formatting</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">8.1 All LaTeX warnings and bad boxes have been resolved.</label></li>
+<li><label><input type="checkbox">8.2 Section headers follow the standard paper structure (e.g., Introduction, Method, Experiments, etc.).</label></li>
+<li><label><input type="checkbox">8.3 All appendix sections are explicitly referenced in the main text (e.g., “Appendix B.2 shows…”).</label></li>
+<li><label><input type="checkbox">8.4 No <strong>orphan lines</strong> anywhere in the paper—avoid single-line section headers or short lines at the top/bottom of columns.</label></li>
+<li><label><input type="checkbox">8.5 No two figures or tables are placed consecutively without explanatory text between them.</label></li>
+</ul>
+<hr>
+</section>
+<section id="references-1" class="level2">
+<h2 class="anchored" data-anchor-id="references-1">9. 📎 References</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">9.1 All references are in the correct format for the target venue.</label></li>
+<li><label><input type="checkbox">9.2 All datasets, toolkits, and models used are cited.</label></li>
+<li><label><input type="checkbox">9.3 At least one paper from the target venue (conference/journal) is cited.</label></li>
+<li><label><input type="checkbox">9.4 Self-citations ≤ 20% of total citations.</label></li>
+<li><label><input type="checkbox">9.5 BibTeX file has been deduplicated and spell-checked.</label></li>
+</ul>
+<hr>
+</section>
+<section id="citation-sanity-check-llm-generated-risk" class="level2">
+<h2 class="anchored" data-anchor-id="citation-sanity-check-llm-generated-risk">10. 🛑 Citation Sanity Check (LLM-Generated Risk)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">10.1 All citations were <strong>manually verified to exist</strong>—title, authors, venue, and year match a real, published paper.</label></li>
+<li><label><input type="checkbox">10.2 No hallucinated references from LLM tools are included.</label></li>
+<li><label><input type="checkbox">10.3 If a citation was generated by ChatGPT, Copilot, or similar, it has been cross-checked on <strong>Google Scholar</strong>, <strong>Semantic Scholar</strong>, or publisher sites.</label></li>
+</ul>
+<hr>
+</section>
+<section id="sanity-checks-before-submission" class="level2">
+<h2 class="anchored" data-anchor-id="sanity-checks-before-submission">11. 🧠 Sanity Checks Before Submission</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">11.1 PDF compiles in Overleaf/TeX with no errors or bad boxes.</label></li>
+<li><label><input type="checkbox">11.2 File name follows the submission guideline format (e.g., no underscores or author names if anonymized).</label></li>
+<li><label><input type="checkbox">11.3 No author-identifying information exists in metadata, supplementary files, or file names. Check your code repository and images too.</label></li>
+<li><label><input type="checkbox">11.4 The paper length complies with the page limit, including references and appendices (if counted).</label></li>
+<li><label><input type="checkbox">11.5 The paper has been read start-to-finish by someone not on the author list, without them needing to stop for clarification.</label></li>
+<li><label><input type="checkbox">11.6 All co-authors are listed and properly acknowledged—this is surprisingly often overlooked.</label></li>
+<li><label><input type="checkbox">11.7 Bonus: After submission, log in from a different device and OS (e.g., Mac, Windows) to verify that the uploaded version renders correctly.</label></li>
+</ul>
+<p>https://docs.google.com/document/d/1AoF6bPJp-muWnsZLMmfcxo1fmAu1izUzZXDFHar-35o/edit?usp=sharing <a href="https://github.com/yzhao062/cs-paper-checklist"><code>cs-paper-checklist</code></a></p>
+<p>Key Preparation Decide on a narrative - best done in close collaboration with a mentor Draft an abstract Do a round of reading through and editing - try reading it aloud to yourself Get sign-off from a mentor (if possible) Make a bullet point outline of the paper, emphasising sections and section titles, key figures and key experimental results. Do this in a google doc Get sign-off from a mentor (if possible) Double check exactly when the submission deadline is, ensure you’re converting time zones properly Writing Stage Note: These can largely be done in any order Draft the introduction. Do this in Overleaf in the correct conference template Get LLM feedback and edit Get 1+ round of feedback from a mentor &amp; iterate Draft the prose of the main body (excl related work, and excl appendices which can be very last minute). It’s OK to leave some things blank or as placeholders, just make sure you know what’s missing For anything to do with fiddly LaTeX, use an LLM unless you <em>really</em> know what you’re doing, and if you’ve been stuck for &gt;10 mins try to ask someone for help Get the key experimental results and put them into the paper as numbers or figures Make draft figures Draft the related work (if you don’t know what to do, use deep research, then ask a mentor) Do a round of editing and polishing on the whole thing - focus on the intro and figures Run it through multiple LLMs for feedback. Put several good papers in their context window too. Always tell it “here is my colleague’s/someone else’s paper” and ask “what is the biggest problem with this” to avoid sycophancy Ask a mentor to give feedback on the whole thing (if possible) Do this multiple times if possible Get feedback on the whole thing from one person not on the project, eg via a paper swap. Take this seriously. Have them repeat back to you what they think your contribution is, why it matters, and what evidence you provide for it/why that evidence is compelling - if this is wrong, this is a big deal and you need to edit until it’s fixed! Do a second round of editing and polishing on the whole thing Decide on the authorship order: If there are 2 or more main contributors, I recommend being co-first authors By default I recommend randomising the first author order, and putting an asterisk saying it was randomised (do NOT do alphabetical, it’s not standard in ML and screws over people with surnames late in the alphabet) If you both agree one person contributed more, they should go first If there’s disagreement, go and read Chris Olah’s blog post about credit allocation If there’s still disagreement, please co-write an author contributions statement, then see if you now agree If there’s still disagreement, try to get a neutral party to adjudicate Think carefully for anyone who contributed to the project and should maybe be an author, check in with them. Try hard to not snub people. Write the appendices - please leave this to the end as they’re rarely read, and can be cut for time if needed Optional: Make your code available using https://anonymous.4open.science/ and link from the paper - this shows reproducibility/effort The code doesn’t need to be polished (and you can likely get away with it not being runnable) right now, the key thing is that it exists. Make it nice before Arxiv/the camera ready Final Stages Once you have a draft you’re happy with, check how many pages it is. If you’re above the official page limit, start cutting down page count Ask yourself which subsections are least important, and move them to the appendix Condense your figures, eg combining graphs into one figure with several facet plots Do minor tweaks/word level editing for conciseness Ask an LLM how to be more concise I’d guess this can shave down 0.5-1.5 pages of space - if you need more, do the others first! [If NeurIPS] Do the NeurIPS checklist!! Do not leave it to the last minute, it’s long and you get desk rejected without it Sanity check for anonymity There are no github or HuggingFace links that expose a username If you need to share code, use https://anonymous.4open.science/ If you need to share model weights make an anonymous HuggingFace account Ensure your name is not in there, or other identifying information - give it to an LLM and ask Check your paper for TODO and ??, fix them Submission Submit the abstract Do this at least 24 hours before the deadline, and keep re-submitting Choose keywords and topic according to “do I want reviewers who looked for this topic/keyword to be reviewing my paper”, which is not always the same as where it best fits. Submit the paper Do this at least 24 hours before the deadline and keep re-submitting! You do NOT want to have your internet go down or OpenReview to crash at the last minute. Public release You can release your work publicly even during the anonymous peer review process for most ML conferences. But prioritise getting a good conference submission first. Make a list of all the additional polishing/new results you didn’t have time for, and think are worth it Estimate how long each will take, and how valuable it would be Remove the ones that don’t seem worth it Do what remains Put them in the paper If you cut important content to meet the page limit, put it back in - Arxiv does not need to be identical to what is published at the conference Add an acknowledgements section - be generous, thank everyone who gave feedback or otherwise helped Co-write an author contribution section - try to emphasise the parts you’re each proudest of! This is a positive-sum game Have the email of a corresponding author, typically one or both first authors Draft a tweet thread There’s an art to writing good tweet threads. Note that 95% of people only see tweet 1, so it needs to be great and is where most of your effort should go. Tweet 2 matters a bit, later tweets don’t. It needs to: Be accessible to an ML person who has no initial idea that your tweet is about a paper at all Communicate the key insight of the paper in 280 characters with simple language Have an eye catching figure Do not have any links in tweet 1, it de-boosts it Get feedback from someone good at Twitter, if possible Draft a LessWrong post Clean up the code and make it public on Github Link in the LW post and at the end of the paper abstract Make sure to have a license. MIT or Apache 2.0 License are good if you want the code to be easily usable by others Bonus: Have a helpful README Bonus: Have a python notebook showing how to run the basics of your code Optional: Draft a blog post. This is for giving an accessible summary of the work. Begin with a bullet point outline If you think there’s genuinely interesting takeaways, tacit knowledge, nuance, advice for future work, wild speculation, etc, please talk about it! The paper format sadly disincentives this kind of valuable knowledge Release Put the paper on Arxiv Note that it takes about 1 working day for the paper to appear publicly on Arxiv If you have not submitted to Arxiv before you’ll need someone with 3+ papers to endorse you for the ML category (cs.LG), get this out of the way earlier if possible Post the tweet thread once the paper is on Arxiv. Post the blog post</p>
+<p><a href="https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers">https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers</a></p>
 
 
+</section>
 </div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

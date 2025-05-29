@@ -557,6 +557,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script>
+  // Hide navbar if viewing a notebook (URL contains '.ipynb')
+  if (window.location.href.includes('.ipynb')) {
+    var navbar = document.querySelector('.navbar');
+    if (navbar) {
+      navbar.style.display = 'none';
+    }
+  }
+</script>
 </div> <!-- /content -->
 
 

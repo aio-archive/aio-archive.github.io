@@ -1,0 +1,103 @@
+---
+title: CS336 Lecture 2
+---
+
+::: {.callout-note}
+
+- Mechanics
+
+- Resource accounting
+
+- Intuitions
+
+:::
+
+Types of resources: 
+
+- Memory (GB)
+
+- Compute (FLOPS)
+
+<hr>
+*How long would it take to train a 70B parameter model on 15T tokens on 1024 H100s ?*
+</hr>
+
+Total FLOPS
+
+H100
+80GB HBM memory
+
+## Memory accounting
+
+Tensors are the basic building block for storing everything: parameters, gradients, optimizer state, data, activations, ...
+
+How much memory tensors take up ?
+
+- `float32` (fp32, single precision, full precision)
+    - Default way of storing numbers (standard).
+
+Memory: number of values and data type of each value.
+
+32 bits = 4 bytes
+
+One matrix in the feedforward layer of GPT-3: 12288*4, 12288 ~ 2.3GB
+
+- `float16` (fp16, half precision)
+    - 16 bits = 2 bytes
+    - not great for representing very small numbers (1e-8) or very big numbers.
+
+- `bfloat16` (brain floating point, developed by Google Brain).
+    - allocates more number to the exponent and more to the fraction
+
+```{python}
+import torch
+
+float32_info = torch.finfo(torch.float32)
+float16_info = torch.finfo(torch.float16)
+bfloat16_info = torch.finfo(torch.bfloat16)
+
+print(float32_info)
+print(float16_info)
+print(bfloat16_info)
+```
+
+- `fp8` (developed by NVIDIA)
+    - H100s support two variants of FP8
+
+::: {.callout-note}
+# Implication
+
+- training with float32 works but requires lots of memory
+
+- training with fp8, float16 and even bfloat16 is risky (you can get instability)
+
+- mixed precision training
+:::
+
+## Compute accounting
+By default, Tensors are stored on CPU. To take advantage of parallelisms of GPUs, we need to move them to GPU memory.
+
+![](assets/figs/gpu1.png){width=400px}
+
+
+- Tensors
+
+    - Mathematical objects
+
+    - PyTorch tensors are pointed into allocated memory with metadata describing how to get to any element of the tensor.
+
+Views are free, copying take both computing and memory resource.
+
+FLOPs (floating-point operations per second)
+
+- Training GPT-3 took 3.14e23
+- Training GPT-4 took 2e25 (speculated)
+
+A100 peak performance: 312 teraFLOPs
+H100 peak performance: 1979 teraFLOPs
+
+### Model FLOPs ultilization (MFU)
+
+actual FLOPs/promised FLOPs
+
+MFU >= 0.5 is good.

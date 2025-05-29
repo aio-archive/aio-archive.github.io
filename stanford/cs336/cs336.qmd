@@ -1,0 +1,15 @@
+---
+title: Stanford CS336 - Language Models from Scratch (Spring 2025) (in progress)
+category: nlp
+---
+
+- [Assignment 1: Building a Transformer LM](assignments/a1/a1.qmd)
+
+- [Lecture 1: Overview](l1.qmd) | [Tokenization](tokenization.qmd)
+
+- [Lecture 2: Resources](l2.qmd)
+
+- [Lecture 3: Architectures and Hyperparameters](l3.qmd)
+
+- [Lecture 4: Mixture of Experts (MOEs)](moe.qmd)
+

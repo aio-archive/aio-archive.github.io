@@ -1,0 +1,5 @@
+---
+title: CS336 Assignment 1 - Building a Transformer LM
+---
+
+[PDF](cs336_spring2025_assignment1_basics.pdf)

@@ -1,0 +1,52 @@
+<!-- Floating Chatbot Bubble -->
+<div id="bubble-chatbot">
+    <div id="bubble-chatbot-header" onclick="toggleBubbleChatbot()">💬 Sunny</div>
+    <div id="bubble-chatbot-body" style="display:none;">
+      <div id="bubble-chatbot-messages"></div>
+      <form id="bubble-chatbot-form" onsubmit="return sendBubbleChatbotMessage(event)">
+        <input id="bubble-chatbot-input" type="text" placeholder="Type your message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script>
+  function toggleBubbleChatbot() {
+    const body = document.getElementById('bubble-chatbot-body');
+    body.style.display = (body.style.display === 'none' || !body.style.display) ? 'block' : 'none';
+  }
+  
+  async function sendBubbleChatbotMessage(event) {
+    event.preventDefault();
+    const input = document.getElementById('bubble-chatbot-input');
+    const messagesDiv = document.getElementById('bubble-chatbot-messages');
+    const userMsg = input.value.trim();
+    if (!userMsg) return false;
+  
+    // Show user message
+    messagesDiv.innerHTML += `<div style="text-align:right;"><b>You:</b> ${userMsg}</div>`;
+    input.value = '';
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
+    // Call your backend (update the URL to your backend proxy)
+    messagesDiv.innerHTML += `<div><i>Sunny is typing...</i></div>`;
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
+    try {
+      const response = await fetch("http://localhost:5000/chat", { // Change to your backend URL
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "gpt-3.5-turbo",
+          messages: [{role: "user", content: userMsg}]
+        })
+      });
+      const data = await response.json();
+      const reply = data.choices?.[0]?.message?.content || "Sorry, I couldn't get a response.";
+      messagesDiv.innerHTML += `<div style="text-align:left;"><b>Sunny:</b> ${reply}</div>`;
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    } catch (e) {
+      messagesDiv.innerHTML += `<div style="color:red;">Error: ${e.message}</div>`;
+    }
+    return false;
+  }
+  </script>

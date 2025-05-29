@@ -4,7 +4,7 @@ title-block-banner: true
 toc: true
 toc-title: <i class="bi bi-card-list"></i> <b>On this page</b>
 page-layout: full
-include-after-body: assets//abbrv_toc.html
+include-after-body: assets/abbrv_toc.html
 number-sections: true
 format:
   html:
@@ -22,8 +22,6 @@ format:
 ---
 
 ![](assets/cover.gif)
-
----
 
 Welcome to the AIO2023 course! This is an extensive one-year course that cover topics in AI, from the fundamental prerequisites to the most advanced and recent topics (like Generative AI, Diffusion models, CLIP, and Large language models). Note that each module is designed so that they are independent of each other. It's best if you take study the material module in sequential order, however, feel free to jump to the module that you prefer once you are confident about your foundation knowledge. If you already learn the basics (*eg. linear algebrea concepts, calculus, probability, and basic Python coding skills*) and want to learn more about AI, feel free to start from Module 4 to discover more advanced topics.
 
@@ -712,3 +710,28 @@ Welcome to the second module of the AIO2023 course. The central theme of this mo
 | <span class="badge rounded-pill bg-info">Extra Class</span> | [LLM Deployment with LangChain](https://www.google.com/url?q=https://youtu.be/ndwR4byDvbQ&sa=D&source=editors&ust=1724832556763803&usg=AOvVaw06ILRVWpJDXkgCGFCXRa8k)   | TA Thắng| [240504-23M10-EC1](https://drive.google.com/drive/folders/1mJV-qgoU8knIQCZfqYs_LUMbIr10Xsaq?usp=drive_link) |
 
 :::
+
+</div>
+
+<script>
+document.getElementById('submit-password').addEventListener('click', function() {
+  const password = document.getElementById('password-input').value;
+  const correctPassword = "iloveai"; // Change this to your desired password
+  
+  if (password === correctPassword) {
+    document.getElementById('password-protection').style.display = 'none';
+    document.getElementById('protected-content').style.display = 'block';
+    
+    // Save in localStorage so user doesn't have to re-enter password
+    localStorage.setItem('aio2023_auth', 'true');
+  } else {
+    alert('Incorrect password. Please try again.');
+  }
+});
+
+// Check if already authenticated
+if (localStorage.getItem('aio2023_auth') === 'true') {
+  document.getElementById('password-protection').style.display = 'none';
+  document.getElementById('protected-content').style.display = 'block';
+}
+</script>
