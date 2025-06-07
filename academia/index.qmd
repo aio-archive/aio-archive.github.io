@@ -1,5 +1,0 @@
----
-title: Academia
----
-
-- [Paper Writing Guidelines](paperChecklist.qmd)

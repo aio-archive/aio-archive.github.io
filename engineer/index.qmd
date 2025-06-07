@@ -1,7 +1,0 @@
----
-title: Engineer
----
-
-- [Computer Networking Fundamentals](https://labs.iximiuz.com/courses/computer-networking-fundamentals/from-lan-to-vxlan#L3-to-L2-segment-relationshi)
-
-
